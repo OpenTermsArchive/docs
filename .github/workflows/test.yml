@@ -1,0 +1,20 @@
+name: Test
+
+on:
+  push:
+    branches-ignore:
+      - main # tests will be launched by workflow_call from the deploy workflow
+  pull_request:
+    types: [ opened, reopened ]
+  workflow_call:
+
+jobs:
+  lint_markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          cache: npm
+      - run: npm ci
+      - run: npm run lint:markdown
