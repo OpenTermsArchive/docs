@@ -1,4 +1,4 @@
-name: GitHub pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -15,12 +15,12 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Hugo
+      - name: Set Hugo up
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.107.0'
 
-      - name: Build Hugo
+      - name: Build with Hugo
         run: hugo --minify
 
       - name: Deploy ./public directory to the remote gh-pages branch
