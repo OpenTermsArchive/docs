@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'Open Terms Archive documentation'
 theme = 'opentermsarchive'
 
+[params]
+	github_url = "https://github.com/ambanum/OpenTermsArchive/"
+	twitter_url = "https://twitter.com/OpenTerms"
+
 [languages]
 
 	[languages.en]
