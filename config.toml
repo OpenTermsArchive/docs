@@ -35,6 +35,51 @@ theme = 'opentermsarchive'
 				url = "/"
 				weight = 4
 
+			[[languages.en.menu.footer]]
+				name = "Home"
+				url = "https://opentermsarchive.org"
+				weight = 1
+
+			[[languages.en.menu.footer]]
+				name = "Case studies"
+				url = "https://opentermsarchive.org/case-studies"
+				weight = 2
+
+			[[languages.en.menu.footer]]
+				name = "About"
+				url = "https://opentermsarchive.org/about"
+				weight = 3
+
+			[[languages.en.menu.footer]]
+				name = "Media"
+				url = "https://opentermsarchive.org/media"
+				weight = 4
+
+			[[languages.en.menu.first_subfooter]]
+				name = "Statistics"
+				url = "https://opentermsarchive.org/stats"
+				weight = 1
+
+			[[languages.en.menu.first_subfooter]]
+				name = "Source code"
+				url = "https://github.com/ambanum/OpenTermsArchive"
+				weight = 2
+
+			[[languages.en.menu.second_subfooter]]
+				name = "Legal notice"
+				url = "https://opentermsarchive.org/legal-notice"
+				weight = 1
+
+			[[languages.en.menu.second_subfooter]]
+				name = "Privacy policy"
+				url = "https://opentermsarchive.org/privacy-policy"
+				weight = 2
+
+			[[languages.en.menu.second_subfooter]]
+				name = "Accessibility: not compliant"
+				url = "https://opentermsarchive.org/accessibility"
+				weight = 3
+
 	[languages.fr]
 		weight = 1
 		languageName = "Français"
@@ -60,3 +105,48 @@ theme = 'opentermsarchive'
 				name = "Documentation"
 				url = "/fr"
 				weight = 4
+
+			[[languages.fr.menu.footer]]
+				name = "Accueil"
+				url = "https://opentermsarchive.org"
+				weight = 1
+
+			[[languages.fr.menu.footer]]
+				name = "Étude de cas"
+				url = "https://opentermsarchive.org/fr/etudes-de-cas"
+				weight = 2
+
+			[[languages.fr.menu.footer]]
+				name = "A propos"
+				url = "https://opentermsarchive.org/fr/a-propos"
+				weight = 3
+
+			[[languages.fr.menu.footer]]
+				name = "Média"
+				url = "https://opentermsarchive.org/fr/media"
+				weight = 4
+
+			[[languages.fr.menu.first_subfooter]]
+				name = "Statistiques"
+				url = "https://opentermsarchive.org/fr/stats"
+				weight = 1
+
+			[[languages.fr.menu.first_subfooter]]
+				name = "Code source"
+				url = "https://github.com/ambanum/OpenTermsArchive"
+				weight = 2
+
+			[[languages.fr.menu.second_subfooter]]
+				name = "Mentions légales"
+				url = "https://opentermsarchive.org/fr/mentions-legales"
+				weight = 1
+
+			[[languages.fr.menu.second_subfooter]]
+				name = "Politique de confidentialité"
+				url = "https://opentermsarchive.org/fr/politique-de-confidentialite"
+				weight = 2
+
+			[[languages.fr.menu.second_subfooter]]
+				name = "Accessibilité : non conforme"
+				url = "https://opentermsarchive.org/fr/accessibilite"
+				weight = 3

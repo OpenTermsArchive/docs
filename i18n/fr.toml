@@ -3,3 +3,8 @@
 	github_title = "Voir le code source"
 	menu_open = "Menu"
 	menu_close = "Fermer"
+
+[footer]
+	contact = "Contactez-nous"
+	contact_href = "mailto:contact@opentermsarchive.org"
+	follow = "Suivez-nous"
