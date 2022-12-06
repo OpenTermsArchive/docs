@@ -1,6 +1,7 @@
 .logo {
   & svg {
     height: 40px;
+    width: 312px;
   }
 
   &.logo__alternative {
