@@ -1,1 +1,4 @@
 footer.html
+
+{{ $languageSwitcherJs := resources.Get "js/languageSwitcher.js" | js.Build }}
+<script src="{{ $languageSwitcherJs.RelPermalink }}"></script>

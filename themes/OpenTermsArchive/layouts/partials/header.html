@@ -31,7 +31,8 @@
         <nav class="headerMenu headerMenu__secondary">
           <div class="languageSwitcher">
             <button class="languageSwitcher_current">
-              FR
+              {{ $currentLanguage := .Site.Language.Lang }}
+              {{ $currentLanguage | upper }}
               <svg
                 stroke="currentColor"
                 fill="none"
@@ -49,9 +50,13 @@
               </svg>
             </button>
             <div class="languageSwitcher_items">
-              <div class="languageSwitcher_item">
-                <a href="/">EN</a>
-              </div>
+              {{ range $.Site.Home.AllTranslations }}
+                {{ if ne $currentLanguage .Language.Lang }}
+                  <div class="languageSwitcher_item">
+                    <a href="{{ .Permalink }}">{{ .Language.Lang | upper }}</a>
+                  </div>
+                {{ end }}
+              {{ end }}
             </div>
           </div>
           <ul>
