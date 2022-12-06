@@ -2,7 +2,7 @@
   <div class="container container__1211 container__flex container__hasNoPaddingX container__hasNoPaddingY">
     <header class="header">
       <div class="header_logo">
-        <a href="/fr">
+        <a href="{{ "/" | relLangURL }}">
           <div class="logo logo__medium">
             <svg
               fill="#010613"
@@ -65,7 +65,7 @@
                 class="icon_circle"
                 target="_blank"
                 rel="noopener"
-                title="Suivez-nous sur Twitter"
+                title="{{ i18n "header.twitter_title" }}"
                 href="https://twitter.com/OpenTerms"
               >
                 <svg
@@ -90,7 +90,7 @@
                 class="icon_circle"
                 target="_blank"
                 rel="noopener"
-                title="Voir le code source"
+                title="{{ i18n "header.github_title" }}"
                 href="https://github.com/ambanum/OpenTermsArchive/"
               >
                 <svg
@@ -114,10 +114,10 @@
         </nav>
       </div>
       <button type="button" class="header_openLink">
-        Menu
+        {{ i18n "header.menu_open" }}
       </button>
       <button type="button" class="header_closeLink">
-        Fermer
+        {{ i18n "header.menu_close" }}
         <svg
           stroke="currentColor"
           fill="none"
