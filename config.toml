@@ -1,12 +1,58 @@
 baseURL = 'https://docs.opentermsarchive.org/'
 languageCode = 'en-us'
 title = 'Open Terms Archive documentation'
-theme = 'ananke'
+theme = 'opentermsarchive'
 
 [languages]
+
 	[languages.en]
 		weight = 0
 		languageName = "English"
+
+		[languages.en.menu]
+
+			[[languages.en.menu.header]]
+				name = "Home"
+				url = "https://opentermsarchive.org"
+				weight = 1
+
+			[[languages.en.menu.header]]
+				name = "Case studies"
+				url = "https://opentermsarchive.org/case-studies"
+				weight = 2
+
+			[[languages.en.menu.header]]
+				name = "About"
+				url = "https://opentermsarchive.org/about"
+				weight = 3
+
+			[[languages.en.menu.header]]
+				name = "Documentation"
+				url = "/"
+				weight = 4
+
 	[languages.fr]
 		weight = 1
 		languageName = "Français"
+
+		[languages.fr.menu]
+
+			[[languages.fr.menu.header]]
+				name = "Accueil"
+				url = "https://opentermsarchive.org"
+				weight = 1
+
+			[[languages.fr.menu.header]]
+				name = "Étude de cas"
+				url = "https://opentermsarchive.org/fr/etudes-de-cas"
+				weight = 2
+
+			[[languages.fr.menu.header]]
+				name = "A propos"
+				url = "https://opentermsarchive.org/fr/a-propos"
+				weight = 3
+
+			[[languages.fr.menu.header]]
+				name = "Documentation"
+				url = "/fr"
+				weight = 4
