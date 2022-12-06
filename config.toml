@@ -2,3 +2,11 @@ baseURL = 'https://docs.opentermsarchive.org/'
 languageCode = 'en-us'
 title = 'Open Terms Archive documentation'
 theme = 'ananke'
+
+[languages]
+	[languages.en]
+		weight = 0
+		languageName = "English"
+	[languages.fr]
+		weight = 1
+		languageName = "Français"
