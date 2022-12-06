@@ -19,4 +19,8 @@
 @import 'themes/OpenTermsArchive/assets/css/elements/table.css';
 
 //Components
+@import "themes/OpenTermsArchive/assets/css/components/logo/logo.css";
+@import "themes/OpenTermsArchive/assets/css/components/headerMenu/headerMenu.css";
+@import "themes/OpenTermsArchive/assets/css/components/languageSwitcher/languageSwitcher.css";
+@import "themes/OpenTermsArchive/assets/css/components/container/container.css";
 @import "themes/OpenTermsArchive/assets/css/components/header/header.css";
