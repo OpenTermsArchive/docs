@@ -7,6 +7,8 @@ on:
   pull_request:
 
 jobs:
+  test:
+    uses: "OpenTermsArchive/docs/.github/workflows/test.yml@main"
   deploy:
     needs: [ test ]
     runs-on: ubuntu-22.04
