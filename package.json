@@ -13,6 +13,10 @@
   "license": "CC BY-SA 4.0",
   "author": "Open Terms Archive",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint:markdown",
+    "lint:markdown": "markdownlint *.md content/**/*.md"
+  },
+  "devDependencies": {
+    "markdownlint-cli": "^0.32.2"
   }
 }
