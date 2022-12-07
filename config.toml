@@ -51,8 +51,8 @@ theme = 'opentermsarchive'
 				weight = 3
 
 			[[languages.en.menu.footer]]
-				name = "Media"
-				url = "https://opentermsarchive.org/media"
+				name = "Documenation"
+				url = "https://docs.opentermsarchive.org"
 				weight = 4
 
 			[[languages.en.menu.first_subfooter]]
@@ -61,9 +61,14 @@ theme = 'opentermsarchive'
 				weight = 1
 
 			[[languages.en.menu.first_subfooter]]
+				name = "Media"
+				url = "https://opentermsarchive.org/media"
+				weight = 2
+
+			[[languages.en.menu.first_subfooter]]
 				name = "Source code"
 				url = "https://github.com/ambanum/OpenTermsArchive"
-				weight = 2
+				weight = 3
 
 			[[languages.en.menu.second_subfooter]]
 				name = "Legal notice"
@@ -122,8 +127,8 @@ theme = 'opentermsarchive'
 				weight = 3
 
 			[[languages.fr.menu.footer]]
-				name = "Média"
-				url = "https://opentermsarchive.org/fr/media"
+				name = "Documentation"
+				url = "https://docs.opentermsarchive.org"
 				weight = 4
 
 			[[languages.fr.menu.first_subfooter]]
@@ -132,9 +137,14 @@ theme = 'opentermsarchive'
 				weight = 1
 
 			[[languages.fr.menu.first_subfooter]]
+				name = "Média"
+				url = "https://opentermsarchive.org/fr/media"
+				weight = 2
+
+			[[languages.fr.menu.first_subfooter]]
 				name = "Code source"
 				url = "https://github.com/ambanum/OpenTermsArchive"
-				weight = 2
+				weight = 3
 
 			[[languages.fr.menu.second_subfooter]]
 				name = "Mentions légales"
