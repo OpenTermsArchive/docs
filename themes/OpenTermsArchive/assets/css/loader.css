@@ -1,0 +1,35 @@
+//Reset
+@import "node_modules/minireset.css/minireset.css";
+
+//Mixins
+@import "themes/OpenTermsArchive/assets/css/mixins.css";
+
+//Custom media queries and custom properties
+@import "themes/OpenTermsArchive/assets/css/custom-properties.css";
+@import "themes/OpenTermsArchive/assets/css/custom-media-queries.css";
+
+//Base
+@import "themes/OpenTermsArchive/assets/css/base.css";
+
+@import 'themes/OpenTermsArchive/assets/css/elements/utility.css';
+@import 'themes/OpenTermsArchive/assets/css/elements/sprite.css';
+@import 'themes/OpenTermsArchive/assets/css/elements/buttons.css';
+@import 'themes/OpenTermsArchive/assets/css/elements/fonts.css';
+@import 'themes/OpenTermsArchive/assets/css/elements/icons.css';
+@import 'themes/OpenTermsArchive/assets/css/elements/inlines.css';
+@import 'themes/OpenTermsArchive/assets/css/elements/titles.css';
+@import 'themes/OpenTermsArchive/assets/css/elements/links.css';
+@import 'themes/OpenTermsArchive/assets/css/elements/form.css';
+@import 'themes/OpenTermsArchive/assets/css/elements/blockquote.css';
+@import 'themes/OpenTermsArchive/assets/css/elements/table.css';
+
+//Components
+@import "themes/OpenTermsArchive/assets/css/components/logo/logo.css";
+@import "themes/OpenTermsArchive/assets/css/components/headerMenu/headerMenu.css";
+@import "themes/OpenTermsArchive/assets/css/components/languageSwitcher/languageSwitcher.css";
+@import "themes/OpenTermsArchive/assets/css/components/container/container.css";
+@import "themes/OpenTermsArchive/assets/css/components/header/header.css";
+@import "themes/OpenTermsArchive/assets/css/components/footer/footer.css";
+@import "themes/OpenTermsArchive/assets/css/components/footerMenu/footerMenu.css";
+@import "themes/OpenTermsArchive/assets/css/components/divider/divider.css";
+@import "themes/OpenTermsArchive/assets/css/components/textContent/textContent.css";

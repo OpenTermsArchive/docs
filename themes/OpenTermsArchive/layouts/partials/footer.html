@@ -1,0 +1,79 @@
+<div class="container container__hasNoPaddingY container__fluid container__hasNoPaddingX container__isGray">
+  <div class="divider">
+    <hr />
+  </div>
+  <div class="container container__flex container__1211 container__hasNoPaddingX container__hasPaddingYSmall">
+    <footer class="footer">
+      <div class="logo logo__medium">
+        <svg class="icon_logo"><use href="#logo"></use></svg>
+      </div>
+      <div class="footer_menus">
+        <div class="footerMenu">
+          <ul>
+			      {{ range .Site.Menus.footer }}
+              <li>
+                <a  href="{{ .URL }}">
+                  {{ .Name }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                rel="noopener"
+                title="Suivez-nous sur Twitter"
+                class="a_icontext a__small footer_menus_icontext"
+                href="{{ .Param "twitter_url" }}"
+              >
+                <span class="icon_circle icon_circle__medium mr__2XS">
+                  <svg class="icon_twitter"><use href="#twitter"></use></svg>
+                </span>
+                <span>{{ i18n "footer.follow" }}</span>
+              </a>
+            </li>
+            <li>
+              <a
+                title="Contactez nous par email"
+                class="a_icontext a__small footer_menus_icontext"
+                href="{{ i18n "footer.contact_href" }}"
+              >
+                <span class="icon_circle icon_circle__medium mr__2XS">
+                  <svg class="icon_contact"><use href="#contact"></use></svg>
+                </span>
+                <span>{{ i18n "footer.contact" }}</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footerMenu footerMenu__isSmall footerMenu__alignRight">
+          <ul>
+			      {{ range .Site.Menus.first_subfooter }}
+              <li>
+                <a  href="{{ .URL }}">
+                  {{ .Name }}
+                </a>
+              </li>
+            {{ end }}
+		      </ul>
+		      <ul>
+			      {{ range .Site.Menus.second_subfooter }}
+              <li>
+                <a  href="{{ .URL }}">
+                  {{ .Name }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+
+{{ $languageSwitcherJs := resources.Get "js/languageSwitcher.js" | js.Build }}
+<script src="{{ $languageSwitcherJs.RelPermalink }}"></script>
+
+{{ $headerJs := resources.Get "js/header.js" | js.Build }}
+<script src="{{ $headerJs.RelPermalink }}"></script>

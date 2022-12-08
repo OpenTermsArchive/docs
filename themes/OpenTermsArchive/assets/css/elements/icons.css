@@ -1,0 +1,39 @@
+.icon_circle {
+  background-color: var(--colorBlack400);
+  border-radius: 50%;
+  height: 28px;
+  width: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &.icon_circle__medium {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.icon_arrowDown{
+  width:1em;
+  height:1em;
+}
+
+.icon_close{
+  width:1em;
+  height:1em;
+}
+
+.icon_twitter{
+  width:1em;
+  height:1em;
+}
+
+.icon_github{
+  width:1em;
+  height:1em;
+}
+
+.icon_contact{
+  width:1em;
+  height:1em;
+}
