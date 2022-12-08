@@ -19,19 +19,13 @@
       <div class="header_menus">
         <nav class="headerMenu headerMenu__primary">
           <ul>
-            <li>
-              <a title="Revenir à la page d'accueil" href="/fr">
-                Accueil
-              </a>
-            </li>
-            <li>
-              <a title="case-studies:hero.subtitle" href="/fr/etudes-de-cas">
-                Études de cas
-              </a>
-            </li>
-            <li>
-              <a href="/fr/a-propos">À propos</a>
-            </li>
+            {{ range .Site.Menus.header }}
+              <li>
+                <a  href="{{ .URL }}">
+                  {{ .Name }}
+                </a>
+              </li>
+            {{ end }}
           </ul>
         </nav>
         <nav class="headerMenu headerMenu__secondary">
