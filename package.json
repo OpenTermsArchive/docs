@@ -18,5 +18,12 @@
   },
   "devDependencies": {
     "markdownlint-cli": "^0.32.2"
+  },
+  "dependencies": {
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.0.1",
+    "postcss-mixins": "^9.0.4",
+    "postcss-preset-env": "^7.8.3"
   }
 }
