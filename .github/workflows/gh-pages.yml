@@ -28,6 +28,13 @@ jobs:
           hugo-version: '0.107.0'
           extended: true # Prevent error building site: POSTCSS: failed to transform, see https://gohugo.io/troubleshooting/faq/#i-get-this-feature-is-not-available-in-your-current-hugo-version
 
+      - name: Print Hugo info
+        run: |
+          echo "hugo env"
+          hugo env
+          echo "hugo config"
+          hugo config
+
       - name: Build with Hugo
         run: hugo --minify
 
