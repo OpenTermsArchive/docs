@@ -20,6 +20,7 @@
     "markdownlint-cli": "^0.32.2"
   },
   "dependencies": {
+    "minireset.css": "^0.0.7",
     "postcss": "^8.4.19",
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.0.1",
