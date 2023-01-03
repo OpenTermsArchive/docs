@@ -10,19 +10,22 @@
 
 /* Base */
 @import "themes/opentermsarchive/assets/css/base.css";
-@import "themes/opentermsarchive/assets/css/elements/utility.css";
-@import "themes/opentermsarchive/assets/css/elements/sprite.css";
-@import "themes/opentermsarchive/assets/css/elements/buttons.css";
-@import "themes/opentermsarchive/assets/css/elements/fonts.css";
-@import "themes/opentermsarchive/assets/css/elements/icons.css";
-@import "themes/opentermsarchive/assets/css/elements/inlines.css";
-@import "themes/opentermsarchive/assets/css/elements/titles.css";
-@import "themes/opentermsarchive/assets/css/elements/links.css";
-@import "themes/opentermsarchive/assets/css/elements/form.css";
-@import "themes/opentermsarchive/assets/css/elements/blockquote.css";
-@import "themes/opentermsarchive/assets/css/elements/table.css";
 
 /* Components */
+@import 'themes/opentermsarchive/assets/css/elements/utility.css';
+@import 'themes/opentermsarchive/assets/css/elements/sprite.css';
+@import 'themes/opentermsarchive/assets/css/elements/buttons.css';
+@import 'themes/opentermsarchive/assets/css/elements/fonts.css';
+@import 'themes/opentermsarchive/assets/css/elements/icons.css';
+@import 'themes/opentermsarchive/assets/css/elements/inlines.css';
+@import 'themes/opentermsarchive/assets/css/elements/titles.css';
+@import 'themes/opentermsarchive/assets/css/elements/links.css';
+@import 'themes/opentermsarchive/assets/css/elements/form.css';
+@import 'themes/opentermsarchive/assets/css/elements/blockquote.css';
+@import 'themes/opentermsarchive/assets/css/elements/table.css';
+@import 'themes/opentermsarchive/assets/css/elements/syntax.css';
+
+//Components
 @import "themes/opentermsarchive/assets/css/components/logo/logo.css";
 @import "themes/opentermsarchive/assets/css/components/headerMenu/headerMenu.css";
 @import "themes/opentermsarchive/assets/css/components/languageSwitcher/languageSwitcher.css";
