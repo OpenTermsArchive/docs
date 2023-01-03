@@ -1,6 +1,7 @@
 {{ define "main" }}
 	<div class="container container__hasNoPaddingTop">
-		<div class="container container__1211">
+		<div class="container container__1211 container__flex">
+			{{ partial "aside.html" . }}
 			<div class="textContent">
 				{{ .Content }}
 			</div>
