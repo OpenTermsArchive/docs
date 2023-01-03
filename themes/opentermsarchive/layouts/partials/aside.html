@@ -1,0 +1,34 @@
+<aside class="aside">
+	{{ $currentPageTitle := .Title }}
+	{{ $currentPageSection := .Section }}
+	<nav class="aside_nav">
+		<ul class="aside_items">
+			{{ range .Site.Pages.ByWeight }}
+				{{ if eq .Kind slice "section" "page" "home" }}
+					{{ if eq .Type "page" }}
+						<li class="aside_item {{ if eq $currentPageTitle .Title }}aside_item-current{{ end }}">
+							<a href="{{ .Permalink }}">{{ .Title }}</a>
+							{{ if eq $currentPageTitle .Title }}
+								{{ .Page.TableOfContents }}
+							{{ end }}
+						</li>
+					{{ end }}
+					{{ if eq .Kind "section" }}
+						<li class="aside_item {{ if eq $currentPageSection .Section }}aside_item-current{{ end }}"><span class="aside_item_section">{{ .Title }}</span>
+							<ul class="aside_subitems">
+								{{ range where .Pages "Section" .Section }}
+									<li class="aside_subitem">
+										<a href="{{ .Permalink }}">{{ .Title }}</a>
+										{{ if eq $currentPageTitle .Title }}
+											{{ .Page.TableOfContents }}
+										{{ end }}
+									</li>
+								{{ end }}
+							</ul>
+						</li>
+					{{ end }}
+				{{ end }}
+			{{ end }}
+		</ul>
+	</nav>
+</aside>
