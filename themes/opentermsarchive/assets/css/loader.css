@@ -22,6 +22,7 @@
 @import 'themes/opentermsarchive/assets/css/elements/form.css';
 @import 'themes/opentermsarchive/assets/css/elements/blockquote.css';
 @import 'themes/opentermsarchive/assets/css/elements/table.css';
+@import 'themes/opentermsarchive/assets/css/elements/syntax.css';
 
 //Components
 @import "themes/opentermsarchive/assets/css/components/logo/logo.css";
