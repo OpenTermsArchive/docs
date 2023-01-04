@@ -2,6 +2,10 @@ baseURL = 'https://docs.opentermsarchive.org/'
 languageCode = 'en-us'
 title = 'Open Terms Archive documentation'
 theme = 'opentermsarchive'
+pluralizelisttitles = false
+
+[markup.highlight]
+	noClasses = false
 
 [params]
 	github_url = "https://github.com/ambanum/OpenTermsArchive/"
