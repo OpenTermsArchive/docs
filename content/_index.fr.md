@@ -1,5 +1,7 @@
 ---
-title: "Documentation d'Open Terms Archive"
+title: "Pour commencer"
 ---
 
-# Bienvenue sur la documentation d’Open Terms Archive
+_La documentation en français n'est pas encore disponible. Vous pouvez toutefois la consulter en [langue anglaise]({{< relref path="/" lang="en" >}})._
+
+...
