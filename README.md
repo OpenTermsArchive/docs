@@ -1,5 +1,19 @@
 Open Terms Archive documentation.
 
+### Linting JavaScript files
+
+To view errors:
+
+```sh
+npm run lint:js
+```
+
+To automatically fix, where possible, problems reported:
+
+```sh
+npm run lint:js --fix
+```
+
 ---
 
 ## License
