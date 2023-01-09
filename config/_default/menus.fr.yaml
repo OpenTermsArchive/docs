@@ -1,0 +1,46 @@
+header:
+  - name: Accueil
+    url: https://opentermsarchive.org
+    weight: 1
+  - name: Étude de cas
+    url: https://opentermsarchive.org/fr/etudes-de-cas
+    weight: 2
+  - name: A propos
+    url: https://opentermsarchive.org/fr/a-propos
+    weight: 3
+  - name: Documentation
+    url: /fr
+    weight: 4
+footer:
+  - name: Accueil
+    url: https://opentermsarchive.org
+    weight: 1
+  - name: Étude de cas
+    url: https://opentermsarchive.org/fr/etudes-de-cas
+    weight: 2
+  - name: A propos
+    url: https://opentermsarchive.org/fr/a-propos
+    weight: 3
+  - name: Documentation
+    url: https://docs.opentermsarchive.org
+    weight: 4
+first_subfooter:
+  - name: Statistiques
+    url: https://opentermsarchive.org/fr/stats
+    weight: 1
+  - name: Média
+    url: https://opentermsarchive.org/fr/media
+    weight: 2
+  - name: Code source
+    url: https://github.com/ambanum/OpenTermsArchive
+    weight: 3
+second_subfooter:
+  - name: Mentions légales
+    url: https://opentermsarchive.org/fr/mentions-legales
+    weight: 1
+  - name: Politique de confidentialité
+    url: https://opentermsarchive.org/fr/politique-de-confidentialite
+    weight: 2
+  - name: 'Accessibilité : non conforme'
+    url: https://opentermsarchive.org/fr/accessibilite
+    weight: 3

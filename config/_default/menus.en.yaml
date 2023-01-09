@@ -1,0 +1,46 @@
+header:
+  - name: Home
+    url: https://opentermsarchive.org
+    weight: 1
+  - name: Case studies
+    url: https://opentermsarchive.org/case-studies
+    weight: 2
+  - name: About
+    url: https://opentermsarchive.org/about
+    weight: 3
+  - name: Documentation
+    url: /
+    weight: 4
+footer:
+  - name: Home
+    url: https://opentermsarchive.org
+    weight: 1
+  - name: Case studies
+    url: https://opentermsarchive.org/case-studies
+    weight: 2
+  - name: About
+    url: https://opentermsarchive.org/about
+    weight: 3
+  - name: Documenation
+    url: https://docs.opentermsarchive.org
+    weight: 4
+first_subfooter:
+  - name: Statistics
+    url: https://opentermsarchive.org/stats
+    weight: 1
+  - name: Media
+    url: https://opentermsarchive.org/media
+    weight: 2
+  - name: Source code
+    url: https://github.com/ambanum/OpenTermsArchive
+    weight: 3
+second_subfooter:
+  - name: Legal notice
+    url: https://opentermsarchive.org/legal-notice
+    weight: 1
+  - name: Privacy policy
+    url: https://opentermsarchive.org/privacy-policy
+    weight: 2
+  - name: 'Accessibility: not compliant'
+    url: https://opentermsarchive.org/accessibility
+    weight: 3
