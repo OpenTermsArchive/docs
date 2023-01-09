@@ -14,9 +14,12 @@
   "author": "Open Terms Archive",
   "scripts": {
     "test": "npm run lint:markdown",
-    "lint:markdown": "markdownlint *.md content/**/*.md"
+    "lint:markdown": "markdownlint *.md content/**/*.md",
+    "lint:js":"./node_modules/.bin/eslint themes/opentermsarchive/assets/js/"
   },
   "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "markdownlint-cli": "^0.32.2"
   },
   "dependencies": {
