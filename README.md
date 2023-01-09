@@ -1,5 +1,19 @@
 Open Terms Archive documentation.
 
+### Linting CSS files
+
+To view errors:
+
+```sh
+npm run lint:css
+```
+
+To automatically fix, where possible, problems reported:
+
+```sh
+npm run lint:css --fix
+```
+
 ---
 
 ## License

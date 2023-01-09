@@ -9,7 +9,7 @@ on:
   workflow_call:
 
 jobs:
-  lint_markdown:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -17,4 +17,4 @@ jobs:
         with:
           cache: npm
       - run: npm ci
-      - run: npm run lint:markdown
+      - run: npm run test
