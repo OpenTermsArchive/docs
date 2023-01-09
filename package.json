@@ -13,11 +13,14 @@
   "license": "CC BY-SA 4.0",
   "author": "Open Terms Archive",
   "scripts": {
-    "test": "npm run lint:markdown",
-    "lint:markdown": "markdownlint *.md content/**/*.md"
+    "test": "npm run lint:markdown && npm run lint:css",
+    "lint:markdown": "markdownlint *.md content/**/*.md",
+    "lint:css": "./node_modules/.bin/stylelint \"themes/opentermsarchive/assets/css/*.css\""
   },
   "devDependencies": {
-    "markdownlint-cli": "^0.32.2"
+    "markdownlint-cli": "^0.32.2",
+    "stylelint": "^14.16.1",
+    "stylelint-config-standard": "^29.0.0"
   },
   "dependencies": {
     "minireset.css": "^0.0.7",
