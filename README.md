@@ -1,5 +1,52 @@
 Open Terms Archive documentation.
 
+# Installation
+
+## Dependencies
+
+This website is built using [Hugo](https://gohugo.io), a static website editor, and uses [Node.js](https://nodejs.org).
+
+To build it, [install Hugo](https://gohugo.io/getting-started/installing/) and [Node.js](https://nodejs.org), and then:
+
+```sh
+git clone https://github.com/OpenTermsArchive/docs
+cd docs
+hugo
+npm install
+```
+
+## Usage
+
+### Building the site
+
+```sh
+hugo
+```
+
+The website will be built in the `public` directory.
+
+### Serving the app locally
+
+For development purposes:
+
+```sh
+hugo serve --watch --verbose --disableFastRender
+```
+
+### Linting Markdown files
+
+To view errors:
+
+```sh
+npm run lint:markdown
+```
+
+To automatically fix, where possible, problems reported:
+
+```sh
+npm run lint:markdown --fix
+```
+
 ---
 
 ## License
