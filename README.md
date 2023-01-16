@@ -30,7 +30,7 @@ The website will be built in the `public` directory.
 For development purposes:
 
 ```sh
-hugo serve --watch --verbose --disableFastRender
+npm run start:dev
 ```
 
 ### Linting Markdown files
