@@ -14,7 +14,8 @@
   "author": "Open Terms Archive",
   "scripts": {
     "test": "npm run lint:markdown",
-    "lint:markdown": "markdownlint *.md content/**/*.md"
+    "lint:markdown": "markdownlint *.md content/**/*.md",
+    "start:dev": "hugo serve --watch --verbose --disableFastRender"
   },
   "devDependencies": {
     "markdownlint-cli": "^0.32.2"
