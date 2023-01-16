@@ -61,6 +61,20 @@ To automatically fix, where possible, problems reported:
 npm run lint:css --fix
 ```
 
+### Linting JavaScript files
+
+To view errors:
+
+```sh
+npm run lint:js
+```
+
+To automatically fix, where possible, problems reported:
+
+```sh
+npm run lint:js --fix
+```
+
 ---
 
 ## License
