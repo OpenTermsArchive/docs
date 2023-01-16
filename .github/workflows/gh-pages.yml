@@ -39,6 +39,9 @@ jobs:
       - name: Build with Hugo
         run: hugo --minify
 
+      - name: Build JSDoc
+        run: npm run jsdoc
+
       - name: Print public files
         run: |
           cd public
