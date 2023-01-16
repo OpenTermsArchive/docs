@@ -19,7 +19,7 @@
 @define-mixin grid $colNumber, $gutterNumber {
   max-width:
     calc(
-      (var(--gridColWidth) * $(colnumber)) + (var(--gridGutterWidth) * $(gutternumber))
+      (var(--gridColWidth) * $(colNumber)) + (var(--gridGutterWidth) * $(gutterNumber))
     );
   width: 100%;
 }

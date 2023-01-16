@@ -16,6 +16,9 @@
       "ignoreFunctions": ["$"]
     }],
     "property-no-vendor-prefix": null,
-    "import-notation": null
+    "import-notation": null,
+    "value-keyword-case": ["lower", {
+      "ignoreFunctions": ["/^[a-z][a-zA-Z0-9]+$/"]
+    }]
   }
 }
