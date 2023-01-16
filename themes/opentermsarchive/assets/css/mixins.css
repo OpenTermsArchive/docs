@@ -9,17 +9,18 @@
 
 /* Read https://stackoverflow.com/questions/18744164/flex-box-align-last-row-to-grid */
 @define-mixin gridAutoFillSpace {
-  &:after {
-    content: '';
+  &::after {
+    content: "";
     flex: auto;
   }
 }
 
 /* Grid generator */
 @define-mixin grid $colNumber, $gutterNumber {
-  max-width: calc(
-    (var(--gridColWidth) * $(colNumber)) + (var(--gridGutterWidth) * $(gutterNumber))
-  );
+  max-width:
+    calc(
+      (var(--gridColWidth) * $(colnumber)) + (var(--gridGutterWidth) * $(gutternumber))
+    );
   width: 100%;
 }
 
