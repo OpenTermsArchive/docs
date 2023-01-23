@@ -1,0 +1,14 @@
+{
+  "source": {
+    "include": [
+      "./node_modules/@opentermsarchive/engine/src/",
+      "./node_modules/@opentermsarchive/engine/scripts/"
+    ]
+  },
+  "opts": {
+    "verbose": true,
+    "recurse": true,
+    "recurseDepth": 20,
+    "destination": "./public/jsdoc/"
+  }
+}
