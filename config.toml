@@ -8,7 +8,7 @@ pluralizelisttitles = false
 	noClasses = false
 
 [params]
-	github_url = "https://github.com/ambanum/OpenTermsArchive/"
+	github_url = "https://github.com/OpenTermsArchive/engine/"
 	twitter_url = "https://twitter.com/OpenTerms"
 
 [languages]
@@ -71,7 +71,7 @@ pluralizelisttitles = false
 
 			[[languages.en.menu.first_subfooter]]
 				name = "Source code"
-				url = "https://github.com/ambanum/OpenTermsArchive"
+				url = "https://github.com/OpenTermsArchive/engine"
 				weight = 3
 
 			[[languages.en.menu.second_subfooter]]
@@ -147,7 +147,7 @@ pluralizelisttitles = false
 
 			[[languages.fr.menu.first_subfooter]]
 				name = "Code source"
-				url = "https://github.com/ambanum/OpenTermsArchive"
+				url = "https://github.com/OpenTermsArchive/engine"
 				weight = 3
 
 			[[languages.fr.menu.second_subfooter]]

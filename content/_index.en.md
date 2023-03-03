@@ -233,7 +233,7 @@ The `fetch` module gets the MIME type and content of a document from its URL
 import fetch from '@opentermsarchive/engine/fetch';
 ```
 
-Documentation on how to use `fetch` is provided [as JSDoc](https://github.com/ambanum/OpenTermsArchive/blob/main/src/archivist/fetcher/index.js).
+Documentation on how to use `fetch` is provided [as JSDoc](https://github.com/OpenTermsArchive/engine/blob/main/src/archivist/fetcher/index.js).
 
 ##### Headless browser management
 
@@ -259,7 +259,7 @@ The `filter` module transforms HTML or PDF content into a Markdown string accord
 import filter from '@opentermsarchive/engine/filter';
 ```
 
-The `filter` function documentation is available [as JSDoc](https://github.com/ambanum/OpenTermsArchive/blob/main/src/archivist/filter/index.js).
+The `filter` function documentation is available [as JSDoc](https://github.com/OpenTermsArchive/engine/blob/main/src/archivist/filter/index.js).
 
 #### `PageDeclaration`
 
@@ -269,11 +269,11 @@ The `PageDeclaration` class encapsulates information about a page tracked by Ope
 import pageDeclaration from '@opentermsarchive/engine/page-declaration';
 ```
 
-The `PageDeclaration` format is defined [in source code](https://github.com/ambanum/OpenTermsArchive/blob/main/src/archivist/services/pageDeclaration.js).
+The `PageDeclaration` format is defined [in source code](https://github.com/OpenTermsArchive/engine/blob/main/src/archivist/services/pageDeclaration.js).
 
 ### Dataset generation
 
-See the [`dataset` script documentation](https://github.com/ambanum/OpenTermsArchive/blob/main/scripts/dataset/README.md).
+See the [`dataset` script documentation](https://github.com/OpenTermsArchive/engine/blob/main/scripts/dataset/README.md).
 
 ## Configuring
 
@@ -403,7 +403,7 @@ In order to edit the code of the engine itself, an editable and executable copy 
 First of all, follow the [requirements](#requirements) above. Then, clone the repository:
 
 ```sh
-git clone https://github.com/ambanum/OpenTermsArchive.git
+git clone https://github.com/OpenTermsArchive/engine.git
 cd OpenTermsArchive
 ```
 
@@ -425,7 +425,7 @@ If existing features are changed or new ones are added, relevant tests must be a
 
 ### Suggesting changes
 
-To contribute to the core engine of Open Terms Archive, see the [CONTRIBUTING](https://github.com/ambanum/OpenTermsArchive/blob/main/CONTRIBUTING.md) file. You will need knowledge of JavaScript and Node.js.
+To contribute to the core engine of Open Terms Archive, see the [CONTRIBUTING](https://github.com/OpenTermsArchive/engine/blob/main/CONTRIBUTING.md) file. You will need knowledge of JavaScript and Node.js.
 
 ### Sponsorship and partnerships
 

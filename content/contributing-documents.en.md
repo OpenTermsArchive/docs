@@ -56,7 +56,7 @@ The service ID is exposed to developers. It should be easy to handle with script
 
 > If you have a hard time defining the service ID, check out the [practical guidelines to derive the ID from the service name](declarations-guidelines.md#service-id), and feel free to mention your uncertainties in the pull request! We will help you improve the service ID if necessary 🙂
 
-> More details on the ID and naming constraints and recommendations can be found in the relevant [decision record](https://github.com/ambanum/OpenTermsArchive/blob/main/decision-records/0001-service-name-and-id.md).
+> More details on the ID and naming constraints and recommendations can be found in the relevant [decision record](https://github.com/OpenTermsArchive/engine/blob/main/decision-records/0001-service-name-and-id.md).
 
 ### Service declaration
 
@@ -319,11 +319,11 @@ export async function convertImagesToBase64(document, documentDeclaration) {
 
 #### Terms type
 
-Great, your document declaration is now almost complete! We simply need to write it under the appropriate terms type in the `documents` JSON object within the service declaration. In order to distinguish between the many documents that can be associated with a service and enable cross-services comparison of similar terms, we maintain a unique list of terms types. You can find the list of allowed values for the `<terms type>` key in the file [`src/archivist/services/documentTypes.json`](https://github.com/ambanum/OpenTermsArchive/tree/main/src/archivist/services/documentTypes.json) of the Open Terms Archive repository.
+Great, your document declaration is now almost complete! We simply need to write it under the appropriate terms type in the `documents` JSON object within the service declaration. In order to distinguish between the many documents that can be associated with a service and enable cross-services comparison of similar terms, we maintain a unique list of terms types. You can find the list of allowed values for the `<terms type>` key in the file [`src/archivist/services/documentTypes.json`](https://github.com/OpenTermsArchive/engine/tree/main/src/archivist/services/documentTypes.json) of the Open Terms Archive repository.
 
 The types might not always match the exact name given by the service provider. For example, some providers might call their document “Terms and Conditions” or “Terms of Use” instead of “Terms of Service”. The terms type does not have to match the exact name, it only has to match the _commitment_ that is taken.
 
-If the terms you want to add match no existing type, you can [suggest a new one](https://github.com/ambanum/OpenTermsArchive/discussions/categories/document-types).
+If the terms you want to add match no existing type, you can [suggest a new one](https://github.com/OpenTermsArchive/engine/discussions/categories/document-types).
 
 ##### Defining new terms types
 
@@ -351,7 +351,7 @@ A terms type thus looks like:
 }
 ```
 
-Please note that we do not want [service-specific types](https://github.com/ambanum/OpenTermsArchive/pull/89) such as “Twitter Privacy Policy”. Terms types should be generic, even if only one service uses them at a given time. Otherwise, duplication occurs and [important efforts](https://github.com/ambanum/OpenTermsArchive/pull/88) have to be deployed to deduplicate. The triptych form “writer / audience / object” is precisely used to avoid this sort of duplication.
+Please note that we do not want [service-specific types](https://github.com/OpenTermsArchive/engine/pull/89) such as “Twitter Privacy Policy”. Terms types should be generic, even if only one service uses them at a given time. Otherwise, duplication occurs and [important efforts](https://github.com/OpenTermsArchive/engine/pull/88) have to be deployed to deduplicate. The triptych form “writer / audience / object” is precisely used to avoid this sort of duplication.
 
 ### Testing your declaration
 
