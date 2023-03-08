@@ -25,11 +25,11 @@
   }
 
   & p + hr {
-    margin-top: var(--m2XL);
+    margin-top: var(--mXL);
   }
 
   & h1 {
-    margin-bottom: var(--m3XL);
+    margin-bottom: var(--m2XL);
 
     @media (--tabletSmall) {
       margin-bottom: var(--mXL);
@@ -49,11 +49,7 @@
   }
 
   & h2 {
-    margin-bottom: var(--mXL);
-
-    @media (--tabletSmall) {
-      margin-bottom: var(--mL);
-    }
+    margin-bottom: var(--mL);
 
     &:global(.mb__0) {
       margin-bottom: 0;
@@ -61,11 +57,7 @@
   }
 
   & h3 {
-    margin-bottom: var(--mL);
-
-    @media (--tabletSmall) {
-      margin-bottom: var(--mM);
-    }
+    margin-bottom: var(--mM);
 
     &:global(.mb__0) {
       margin-bottom: 0;
@@ -73,11 +65,7 @@
   }
 
   & h4 {
-    margin-bottom: var(--mM);
-
-    @media (--tabletSmall) {
-      margin-bottom: var(--mS);
-    }
+    margin-bottom: var(--mS);
 
     &:global(.mb__0) {
       margin-bottom: 0;
@@ -93,11 +81,7 @@
   }
 
   & h5 {
-    margin-bottom: var(--mS);
-
-    @media (--tabletSmall) {
-      margin-bottom: var(--mXS);
-    }
+    margin-bottom: var(--mXS);
 
     &:global(.mb__0) {
       margin-bottom: 0;
@@ -105,11 +89,7 @@
   }
 
   & h6 {
-    margin-bottom: var(--mXS);
-
-    @media (--tabletSmall) {
-      margin-bottom: var(--m2XS);
-    }
+    margin-bottom: var(--m2XS);
 
     &:global(.mb__0) {
       margin-bottom: 0;
@@ -121,11 +101,7 @@
   & ol + h2,
   & blockquote + h2,
   & .highlight + h2 {
-    margin-top: var(--m3XL);
-
-    @media (--tabletSmall) {
-      margin-top: var(--m2XL);
-    }
+    margin-top: var(--mXL);
   }
 
   & p + h3,
@@ -133,11 +109,7 @@
   & ol + h3,
   & blockquote + h3 ,
   & .highlight + h3 {
-    margin-top: var(--m2XL);
-
-    @media (--tabletSmall) {
-      margin-top: var(--mXL);
-    }
+    margin-top: var(--mL);
   }
 
   & p + h4,
@@ -145,11 +117,7 @@
   & ol + h4,
   & blockquote + h4,
   & .highlight + h4 {
-    margin-top: var(--mXL);
-
-    @media (--tabletSmall) {
-      margin-bottom: var(--mL);
-    }
+    margin-top: var(--mM);
   }
 
   & p + h5,
@@ -157,19 +125,11 @@
   & ol + h5,
   & blockquote + h5,
   & .highlight + h5 {
-    margin-top: var(--mL);
-
-    @media (--tabletSmall) {
-      margin-bottom: var(--mL);
-    }
+    margin-top: var(--mS);
   }
 
   & iframe {
-    margin-bottom: var(--mXL);
-
-    @media (--tabletSmall) {
-      margin-bottom: var(--mL);
-    }
+    margin-bottom: var(--mL);
   }
 
   & ul {
