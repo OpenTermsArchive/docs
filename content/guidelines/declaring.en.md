@@ -2,7 +2,7 @@
 title: "Declaring documents"
 ---
 
-This document presents practical guidelines, is edited collaboratively and is not normative. Normative constraints are exposed in [Contributing Documents]({{< relref "contributing-documents" >}}).
+This document presents practical guidelines, is edited collaboratively and is not normative. Normative constraints are exposed in [Contributing Terms]({{< relref "contributing-terms" >}}).
 
 # Declaring documents
 
