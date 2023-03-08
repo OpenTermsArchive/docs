@@ -431,6 +431,7 @@ If an outgoing HTTP/HTTPS proxy to access the Internet is required, it is possib
 ## Deploying
 
 Deployment recipes are available in a [dedicated repository](https://github.com/OpenTermsArchive/deployment). Look at the [README](https://github.com/OpenTermsArchive/deployment#readme) to know how to deploy the engine.
+
 ## Contributing
 
 ### Getting a copy
