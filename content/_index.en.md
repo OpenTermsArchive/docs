@@ -75,7 +75,7 @@ A **declaration** also contains some metadata on the **service** on which the **
 
 - - -
 
-## How to add terms to a collection
+## Add terms to a collection
 
 Open Terms Archive **acquires** **terms** to deliver an explorable **history** of **changes**. This can be done in two ways:
 
@@ -101,7 +101,7 @@ Such a dataset can be generated from **versions** alone. If **snapshots** and **
 
 - - -
 
-## How to use the engine
+## Use the engine
 
 This documentation describes how to execute the **engine** independently from any specific **instance**. For other use cases, other parts of the documentation could be more relevant:
 
