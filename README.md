@@ -1,8 +1,8 @@
 Open Terms Archive documentation.
 
-# Installation
+## Installation
 
-## Dependencies
+### Dependencies
 
 This website is built using [Hugo](https://gohugo.io), a static website editor, and uses [Node.js](https://nodejs.org).
 
@@ -35,83 +35,6 @@ npm run start:dev
 
 ### Linting Markdown files
 
-To view errors:
-
-```sh
-npm run lint:markdown
-```
-
-To automatically fix, where possible, problems reported:
-
-```sh
-npm run lint:markdown --fix
-```
-
-### Linting CSS files
-
-To view errors:
-
-```sh
-npm run lint:css
-```
-
-To automatically fix, where possible, problems reported:
-
-```sh
-npm run lint:css --fix
-```
-
-### Linting JavaScript files
-
-To view errors:
-
-```sh
-npm run lint:js
-```
-
-To automatically fix, where possible, problems reported:
-
-```sh
-npm run lint:js --fix
-```
-
----
-
-## Installation
-
-### Dependencies
-
-This website is built using [Hugo](https://gohugo.io), a static website editor, and uses [Node.js](https://nodejs.org).
-
-To build it, [install Hugo](https://gohugo.io/getting-started/installing/) and [Node.js](https://nodejs.org), and then:
-
-```sh
-git clone https://github.com/OpenTermsArchive/docs.git
-cd docs
-hugo
-npm install
-```
-
-## Usage
-
-### Building the site
-
-```sh
-hugo
-```
-
-The website will be built in the `public` directory.
-
-### Serving the app locally
-
-For development purposes:
-
-```sh
-hugo serve --watch --verbose --disableFastRender
-```
-
-### Linting Markdown files
-
 To lint the Markdown files use the following command:
 
 ```sh
@@ -123,6 +46,36 @@ To apply automatic corrections use the following command:
 ```sh
 npm run lint:markdown -- --fix
 ```
+
+### Linting CSS files
+
+To lint the CSS files use the following command:
+
+```sh
+npm run lint:css
+```
+
+To apply automatic corrections use the following command:
+
+```sh
+npm run lint:css -- --fix
+```
+
+### Linting JavaScript files
+
+To lint the JavaScript files use the following command:
+
+```sh
+npm run lint:js
+```
+
+To automatically fix, where possible, problems reported:
+
+```sh
+npm run lint:js -- --fix
+```
+
+- - -
 
 ## License
 
