@@ -75,7 +75,6 @@ Reddit User Agreement
 **Wished Markdown file :**
 
 ```markdown
-
 Reddit User Agreement
 =====================
 ```
