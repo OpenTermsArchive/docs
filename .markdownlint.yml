@@ -15,8 +15,7 @@ no-inline-html:
     - abbr
     - i
 
-no-duplicate-header:
-  siblings_only: true
+no-duplicate-header: false
 
 emphasis-style:
   style: underscore

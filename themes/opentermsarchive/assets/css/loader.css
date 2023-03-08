@@ -10,6 +10,8 @@
 
 /* Base */
 @import "themes/opentermsarchive/assets/css/base.css";
+
+/* Elements */
 @import "themes/opentermsarchive/assets/css/elements/utility.css";
 @import "themes/opentermsarchive/assets/css/elements/sprite.css";
 @import "themes/opentermsarchive/assets/css/elements/buttons.css";
@@ -21,6 +23,7 @@
 @import "themes/opentermsarchive/assets/css/elements/form.css";
 @import "themes/opentermsarchive/assets/css/elements/blockquote.css";
 @import "themes/opentermsarchive/assets/css/elements/table.css";
+@import "themes/opentermsarchive/assets/css/elements/syntax.css";
 
 /* Components */
 @import "themes/opentermsarchive/assets/css/components/logo/logo.css";
@@ -32,3 +35,4 @@
 @import "themes/opentermsarchive/assets/css/components/footerMenu/footerMenu.css";
 @import "themes/opentermsarchive/assets/css/components/divider/divider.css";
 @import "themes/opentermsarchive/assets/css/components/textContent/textContent.css";
+@import "themes/opentermsarchive/assets/css/components/aside/aside.css";

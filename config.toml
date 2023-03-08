@@ -1,0 +1,171 @@
+baseURL = 'https://docs.opentermsarchive.org/'
+languageCode = 'en-us'
+title = 'Open Terms Archive documentation'
+theme = 'opentermsarchive'
+pluralizelisttitles = false
+
+[markup.highlight]
+	noClasses = false
+
+[markup.tableOfContents]
+	startLevel = 2
+	endLevel = 2
+	ordered = false
+
+[params]
+	github_url = "https://github.com/OpenTermsArchive/engine/"
+	twitter_url = "https://twitter.com/OpenTerms"
+
+[languages]
+
+	[languages.en]
+		weight = 0
+		languageName = "English"
+
+		[languages.en.menu]
+
+			[[languages.en.menu.header]]
+				name = "Home"
+				url = "https://opentermsarchive.org"
+				weight = 1
+
+			[[languages.en.menu.header]]
+				name = "Case studies"
+				url = "https://opentermsarchive.org/case-studies"
+				weight = 2
+
+			[[languages.en.menu.header]]
+				name = "About"
+				url = "https://opentermsarchive.org/about"
+				weight = 3
+
+			[[languages.en.menu.header]]
+				name = "Documentation"
+				url = "/"
+				weight = 4
+
+			[[languages.en.menu.footer]]
+				name = "Home"
+				url = "https://opentermsarchive.org"
+				weight = 1
+
+			[[languages.en.menu.footer]]
+				name = "Case studies"
+				url = "https://opentermsarchive.org/case-studies"
+				weight = 2
+
+			[[languages.en.menu.footer]]
+				name = "About"
+				url = "https://opentermsarchive.org/about"
+				weight = 3
+
+			[[languages.en.menu.footer]]
+				name = "Documenation"
+				url = "https://docs.opentermsarchive.org"
+				weight = 4
+
+			[[languages.en.menu.first_subfooter]]
+				name = "Statistics"
+				url = "https://opentermsarchive.org/stats"
+				weight = 1
+
+			[[languages.en.menu.first_subfooter]]
+				name = "Media"
+				url = "https://opentermsarchive.org/media"
+				weight = 2
+
+			[[languages.en.menu.first_subfooter]]
+				name = "Source code"
+				url = "https://github.com/OpenTermsArchive/engine"
+				weight = 3
+
+			[[languages.en.menu.second_subfooter]]
+				name = "Legal notice"
+				url = "https://opentermsarchive.org/legal-notice"
+				weight = 1
+
+			[[languages.en.menu.second_subfooter]]
+				name = "Privacy policy"
+				url = "https://opentermsarchive.org/privacy-policy"
+				weight = 2
+
+			[[languages.en.menu.second_subfooter]]
+				name = "Accessibility: not compliant"
+				url = "https://opentermsarchive.org/accessibility"
+				weight = 3
+
+	[languages.fr]
+		weight = 1
+		languageName = "Français"
+
+		[languages.fr.menu]
+
+			[[languages.fr.menu.header]]
+				name = "Accueil"
+				url = "https://opentermsarchive.org"
+				weight = 1
+
+			[[languages.fr.menu.header]]
+				name = "Étude de cas"
+				url = "https://opentermsarchive.org/fr/etudes-de-cas"
+				weight = 2
+
+			[[languages.fr.menu.header]]
+				name = "A propos"
+				url = "https://opentermsarchive.org/fr/a-propos"
+				weight = 3
+
+			[[languages.fr.menu.header]]
+				name = "Documentation"
+				url = "/fr"
+				weight = 4
+
+			[[languages.fr.menu.footer]]
+				name = "Accueil"
+				url = "https://opentermsarchive.org"
+				weight = 1
+
+			[[languages.fr.menu.footer]]
+				name = "Étude de cas"
+				url = "https://opentermsarchive.org/fr/etudes-de-cas"
+				weight = 2
+
+			[[languages.fr.menu.footer]]
+				name = "A propos"
+				url = "https://opentermsarchive.org/fr/a-propos"
+				weight = 3
+
+			[[languages.fr.menu.footer]]
+				name = "Documentation"
+				url = "https://docs.opentermsarchive.org"
+				weight = 4
+
+			[[languages.fr.menu.first_subfooter]]
+				name = "Statistiques"
+				url = "https://opentermsarchive.org/fr/stats"
+				weight = 1
+
+			[[languages.fr.menu.first_subfooter]]
+				name = "Média"
+				url = "https://opentermsarchive.org/fr/media"
+				weight = 2
+
+			[[languages.fr.menu.first_subfooter]]
+				name = "Code source"
+				url = "https://github.com/OpenTermsArchive/engine"
+				weight = 3
+
+			[[languages.fr.menu.second_subfooter]]
+				name = "Mentions légales"
+				url = "https://opentermsarchive.org/fr/mentions-legales"
+				weight = 1
+
+			[[languages.fr.menu.second_subfooter]]
+				name = "Politique de confidentialité"
+				url = "https://opentermsarchive.org/fr/politique-de-confidentialite"
+				weight = 2
+
+			[[languages.fr.menu.second_subfooter]]
+				name = "Accessibilité : non conforme"
+				url = "https://opentermsarchive.org/fr/accessibilite"
+				weight = 3
