@@ -6,6 +6,8 @@ title: "Subscribe by RSS"
 
 An RSS feed is a type of web page that contains information about the latest content published by a website, such as the date of publication and the address where you can view it. When this resource is updated, a feed reader app automatically notifies you and you can see the update. You can receive notification for a specific service or document by subscribing to RSS feeds.
 
+- - -
+
 ## For a specific document
 
 To find out the address of the RSS feed you want to subscribe to:
@@ -18,11 +20,15 @@ To find out the address of the RSS feed you want to subscribe to:
     - For example, for the WhatsApp Privacy Policy of the Contrib instance, this would become `https://github.com/OpenTermsArchive/contrib-versions/commits/main/WhatsApp/Privacy%20Policy.md.atom`.
 4. Subscribe your RSS feed reader to the resulting address.
 
+- - -
+
 ## For all the documents of a service
 
 Simply navigate to the history of changes for the service you are interested in and follow the same procedure as for a specific document.
 
 For example, for all WhatsApp documents of the Contrib instance, you would obtain `https://github.com/OpenTermsArchive/contrib-versions/commits/main/WhatsApp.atom`.
+
+- - -
 
 ## For all the documents of an instance
 

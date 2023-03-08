@@ -71,6 +71,8 @@ Once you have the [service name](#service-name) and the [service ID](#service-id
 
 Within the `documents` JSON object, we will now declare terms.
 
+- - -
+
 ## Declaring terms
 
 Terms are declared in a service declaration file, under the `documents` property. The way in which each type of terms should be obtained is declared as a JSON object.
@@ -377,6 +379,8 @@ In order to achieve this, you can use the following command:
 ```
 npm run lint [$service_id [$another_service_id …]]
 ```
+
+- - -
 
 ## Maintaining declarations
 

@@ -15,6 +15,8 @@ This document presents practical guidelines, is edited collaboratively and is no
 - If it is still ambiguous, rely on Wikipedia as a source. However, make sure to differentiate the _service_ from the _provider_ company's name. Example with “DeviantArt”, a service (which used to be stylized deviantArt until 2014) by the limited liability company “deviantArt”:
 ![deviantArt search](https://user-images.githubusercontent.com/222463/91416936-5b98f500-e850-11ea-80fe-a50be27356e3.png)
 
+- - -
+
 ## Service ID
 
 ### Normalisation
@@ -34,6 +36,8 @@ This document presents practical guidelines, is edited collaboratively and is no
 - As a last resort, rely on the trademark.
 
 Example: Apple's App Store uses only generic terms (“app” and “store”). However, it is of common use to mention “the App Store” as Apple's. To help us decide whether it should be prefixed or not, we can check that [Apple has trademarked “App Store”](https://www.apple.com/legal/intellectual-property/trademark/appletmlist.html). The service can thus be named “App Store”, without prefixing.
+
+- - -
 
 ## Usual noise
 

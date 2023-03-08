@@ -24,7 +24,7 @@
     }
   }
 
-  & p + hr {
+  & p + hr, & blockquote + hr, & pre + hr, & ul + hr {
     margin-top: var(--mXL);
   }
 

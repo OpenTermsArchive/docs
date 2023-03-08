@@ -9,11 +9,15 @@ _The document you are reading now is targeted at developers wanting to use or co
 
 This codebase is a Node.js module enabling downloading, archiving and publishing versions of documents obtained online. It can be used independently from the Open Terms Archive ecosystem.
 
+- - -
+
 ## Motivation
 
 _Words in bold are [business domain names](https://en.wikipedia.org/wiki/Domain-driven_design)._
 
 **Services** have **terms** written in **documents**, contractual (Terms of Services, Privacy Policy…) or not (Community Guidelines, Deceased User Policy…), that can change over time. Open Terms Archive enables users rights advocates, regulatory bodies and interested citizens to follow the **changes** to these **terms**, to be notified whenever a new **version** is published, to explore their entire **history** and to collaborate in analysing them. This free and open-source engine is developed to support these goals.
+
+- - -
 
 ## Main concepts
 
@@ -69,6 +73,8 @@ A **declaration** also contains some metadata on the **service** on which the **
 > }
 > ```
 
+- - -
+
 ## How to add terms to a collection
 
 Open Terms Archive **acquires** **terms** to deliver an explorable **history** of **changes**. This can be done in two ways:
@@ -92,6 +98,8 @@ Preserving **snapshots** enables recovering after the fact information potential
 
 Existing **fonds** can be prepared for easier analysis by unifying their format to the **Open Terms Archive dataset format**. This unique format enables building interoperable tools, fostering collaboration across reusers.
 Such a dataset can be generated from **versions** alone. If **snapshots** and **declarations** can be retrieved from the **fonds** too, then a full-fledged **collection** can be created.
+
+- - -
 
 ## How to use the engine
 
@@ -313,6 +321,8 @@ import SourceDocument from '@opentermsarchive/engine/sourceDocument';
 
 The `SourceDocument` format is defined [in source code](https://github.com/OpenTermsArchive/engine/tree/main/src/archivist/services/sourceDocument.js).
 
+- - -
+
 ## Configuring
 
 ### Configuration file
@@ -428,9 +438,13 @@ Environment variables can be passed in the command-line or provided in a `.env` 
 
 If an outgoing HTTP/HTTPS proxy to access the Internet is required, it is possible to provide it through the `HTTP_PROXY` and `HTTPS_PROXY` environment variable.
 
+- - -
+
 ## Deploying
 
 Deployment recipes are available in a [dedicated repository](https://github.com/OpenTermsArchive/deployment). Look at the [README](https://github.com/OpenTermsArchive/deployment#readme) to know how to deploy the engine.
+
+- - -
 
 ## Contributing
 
