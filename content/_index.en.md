@@ -28,7 +28,7 @@ https://github.com/OpenTermsArchive?q=declarations).
 
 ### Collections
 
-An **instance** **tracks** **documents** of a single **collection**.
+An **instance** **tracks** **terms** of a single **collection**.
 
 A **collection** is characterised by a **scope** across **dimensions** that describe the **terms** it **tracks**, such as **language**, **jurisdiction** and **industry**.
 
@@ -36,8 +36,8 @@ A **collection** is characterised by a **scope** across **dimensions** that desc
 
 #### Example scope
 
-> The documents declared in this collection are:
-> - Related to dating services used in Europe.
+> The terms tracked in this collection are:
+> - Of dating services used in Europe.
 > - In the European Union and Switzerland jurisdictions.
 > - In English, unless no English version exists, in which case the primary official language of the jurisdiction of incorporation of the service operator will be used.
 
@@ -51,9 +51,9 @@ This **type** matches the topic, but not necessarily the title the **service** g
 
 ### Declarations
 
-The **documents** that constitute a **collection** are defined in simple JSON files called **declarations**.
+The **terms** that constitute a **collection** are defined in simple JSON files called **declarations**.
 
-A **declaration** also contains some metadata on the **service** the **documents** relate to.
+A **declaration** also contains some metadata on the **service** on which the **terms** apply.
 
 > Here is an example declaration tracking the Privacy Policy of Open Terms Archive:
 >
@@ -69,26 +69,26 @@ A **declaration** also contains some metadata on the **service** the **documents
 > }
 > ```
 
-## How to add documents to a collection
+## How to add terms to a collection
 
-Open Terms Archive **acquires** **documents** to deliver an explorable **history** of **changes**. This can be done in two ways:
+Open Terms Archive **acquires** **terms** to deliver an explorable **history** of **changes**. This can be done in two ways:
 
-1. For the present and future, by **tracking** **documents**.
+1. For the present and future, by **tracking**.
 2. For the past, by **importing** from an existing **fonds** such as [ToSBack](https://tosback.org), the [Internet Archive](https://archive.org/web/), [Common Crawl](https://commoncrawl.org) or any other in-house format.
 
-### Tracking documents
+### Tracking terms
 
-The **engine** **reads** **declarations** to **record** a **snapshot** by **fetching** the declared web **location** periodically. The **engine** then **extracts** a **version** from this **snapshot** by:
+In order to **track** the **changes** of **terms**, the **engine** **records** a **snapshot** of **documents** that contain them by **fetching** their web **location** several times a day. The **engine** then **extracts** a **version** from this **snapshot** by:
 
-1. **Selecting** the subset of the **snapshot** that contains the **terms** (instead of navigation menus, footers, cookies banners…).
-2. **Removing** residual content in this subset that is not part of the **terms** (ads, illustrative pictures, internal navigation links…).
-3. **Filtering noise** by preventing parts that change frequently from triggering false positives for **changes** (tracker identifiers in links, relative dates…). The **engine** can execute custom **filters** written in JavaScript to that end.
+1. **Selecting** the subset of the **document** (or **documents**) that contains the **terms** (instead of, e.g., navigation menus, footers, cookies banners…).
+2. **Removing insignificant content**, that is residual content in this subset that is not part of the **terms** (e.g. ads, illustrative pictures, internal navigation links…).
+3. **Filtering noise** that can emerge in the **terms** by preventing parts that change frequently from triggering false positives for **changes** (e.g. tracker identifiers in links, relative dates…). The **engine** can execute custom **filters** written in JavaScript to that end.
 
-After these steps, if **changes** are spotted in the resulting **document**, a new **version** is **recorded**.
+After these steps, if **changes** are spotted in the resulting **terms**, a new **version** is **recorded**.
 
 Preserving **snapshots** enables recovering after the fact information potentially lost in the **extraction** step: if **declarations** were wrong, they can be **maintained** and corrected **versions** can be **extracted** from the original **snapshots**.
 
-### Importing documents
+### Importing terms
 
 Existing **fonds** can be prepared for easier analysis by unifying their format to the **Open Terms Archive dataset format**. This unique format enables building interoperable tools, fostering collaboration across reusers.
 Such a dataset can be generated from **versions** alone. If **snapshots** and **declarations** can be retrieved from the **fonds** too, then a full-fledged **collection** can be created.
@@ -97,7 +97,7 @@ Such a dataset can be generated from **versions** alone. If **snapshots** and **
 
 This documentation describes how to execute the **engine** independently from any specific **instance**. For other use cases, other parts of the documentation could be more relevant:
 
-- to contribute **declarations** to an existing **instance**, see [how to contribute documents]({{< relref "contributing-documents" >}});
+- to contribute **declarations** to an existing **instance**, see [how to contribute terms]({{< relref "contributing-documents" >}});
 - to create a new **collection**, see the [collection bootstrap](https://github.com/OpenTermsArchive/template-declarations) script;
 - to create a new public **instance**, see the [governance]({{< relref "governance" >}}) documentation.
 
@@ -135,10 +135,10 @@ In an editor, create the following declaration file in `declarations/Open Terms 
 In the terminal:
 
 ```sh
-npx ota track
+npx ota-track
 ```
 
-The tracked documents can be found in the `data` folder.
+The tracked terms can be found in the `data` folder.
 
 This quick example aimed at letting you try the engine quickly. Most likely, you will simply `npm install` from an existing collection, or create a new collection from the [collection template](https://github.com/OpenTermsArchive/template-declarations).
 
@@ -157,7 +157,7 @@ In these commands:
 npx ota track
 ```
 
-[Track](#tracking-documents) the current terms of services according to provided declarations.
+[Track](#tracking-terms) the current terms of services according to provided declarations.
 
 The declarations, snapshots and versions paths are defined in the [configuration](#configuring).
 
@@ -178,10 +178,10 @@ npx ota track --services "<service_id>" ["<service_id>"...]
 ##### Track specific terms of specific services
 
 ```sh
-npx ota track --services "<service_id>" ["<service_id>"...] --termsTypes "<terms_type>" ["<terms_type>"...]
+npx ota track --services "<service_id>" ["<service_id>"...] --types "<terms_type>" ["<terms_type>"...]
 ```
 
-##### Track documents four times a day
+##### Track terms four times a day
 
 ```sh
 npx ota track --schedule
@@ -190,7 +190,7 @@ npx ota track --schedule
 #### `ota validate`
 
 ```sh
-npx ota validate [--services <service_id>...] [--termsTypes <terms_type>...]
+npx ota validate [--services <service_id>...] [--types <terms_type>...]
 ```
 
 Check that all declarations allow recording a snapshot and a version properly.
@@ -200,26 +200,68 @@ If one or several `<service_id>` are provided, check only those services.
 ##### Validate schema only
 
 ```sh
-npx ota validate --schema-only [--services <service_id>...] [--termsTypes <terms_type>...]
+npx ota validate --schema-only [--services <service_id>...] [--types <terms_type>...]
 ```
 
 Check that all declarations are readable by the engine.
 
-Allows for a much faster check of declarations, but does not check that the documents are actually accessible.
+Allows for a much faster check of declarations, but does not check that the terms are actually accessible.
 
 If one or several `<service_id>` are provided, check only those services.
+
+##### Validate modified terms only
+
+```sh
+npx ota validate --modified
+```
+
+Run [`ota validate`](#ota-validate) only on files that have been modified in Git.
 
 #### `ota lint`
 
 ```sh
-npx ota lint [--services <service_id>...]
+npx ota lint [--services <service_id>...] [--fix] [--modified]
 ```
 
-Normalise the format of declarations.
+Test the the format of declarations' normalisation.
 
-Automatically correct formatting mistakes and ensure that all declarations are standardised.
+Use `--fix` to automatically correct formatting mistakes and ensure that all declarations are standardised.
 
 If one or several `<service_id>` are provided, check only those services.
+
+#### `ota dataset`
+
+Export the versions dataset into a ZIP file and publish it to GitHub releases.
+
+The dataset title and the URL of the versions repository are defined in the [configuration](#configuring).
+
+To export the dataset into a local ZIP file:
+
+```sh
+npx ota dataset [--file <filename>]
+```
+
+To export the dataset into a ZIP file and publish it on GitHub releases:
+
+```sh
+GITHUB_TOKEN=ghp_XXXXXXXXX npx ota dataset --publish
+```
+
+The `GITHUB_TOKEN` can also be defined in a [`.env` file](#environment-variables).
+
+To export, publish the dataset and remove the local copy that was created after it has been uploaded:
+
+```sh
+GITHUB_TOKEN=ghp_XXXXXXXXX npx ota dataset --publish --remove-local-copy
+```
+
+##### Publish dataset on monday every week
+
+To schedule export, publishing and local copy removal:
+
+```sh
+GITHUB_TOKEN=ghp_XXXXXXXXX npx ota dataset --schedule --publish --remove-local-copy
+```
 
 ### API
 
@@ -233,7 +275,7 @@ The `fetch` module gets the MIME type and content of a document from its URL
 import fetch from '@opentermsarchive/engine/fetch';
 ```
 
-Documentation on how to use `fetch` is provided [as JSDoc](https://github.com/OpenTermsArchive/engine/blob/main/src/archivist/fetcher/index.js).
+Documentation on how to use `fetch` is provided [as JSDoc](https://docs.opentermsarchive.org/jsdoc/).
 
 ##### Headless browser management
 
@@ -251,29 +293,25 @@ await stopHeadlessBrowser();
 
 The `fetch` module options are defined as a [`node-config` submodule](https://github.com/node-config/node-config/wiki/Sub-Module-Configuration). The default `fetcher` configuration can be overridden by adding a `fetcher` object to the [local configuration file](#configuration-file).
 
-#### `filter`
+#### `extract`
 
-The `filter` module transforms HTML or PDF content into a Markdown string according to a [declaration](#declarations).
-
-```js
-import filter from '@opentermsarchive/engine/filter';
-```
-
-The `filter` function documentation is available [as JSDoc](https://github.com/OpenTermsArchive/engine/blob/main/src/archivist/filter/index.js).
-
-#### `PageDeclaration`
-
-The `PageDeclaration` class encapsulates information about a page tracked by Open Terms Archive.
+The `extract` module transforms HTML or PDF content into a Markdown string according to a [declaration](#declarations).
 
 ```js
-import pageDeclaration from '@opentermsarchive/engine/page-declaration';
+import extract from '@opentermsarchive/engine/extract';
 ```
 
-The `PageDeclaration` format is defined [in source code](https://github.com/OpenTermsArchive/engine/blob/main/src/archivist/services/pageDeclaration.js).
+The `extract` function documentation is available [as JSDoc](https://docs.opentermsarchive.org/jsdoc/).
 
-### Dataset generation
+#### `SourceDocument`
 
-See the [`dataset` script documentation](https://github.com/OpenTermsArchive/engine/blob/main/scripts/dataset/README.md).
+The `SourceDocument` class encapsulates information about a terms' source document tracked by Open Terms Archive.
+
+```js
+import SourceDocument from '@opentermsarchive/engine/sourceDocument';
+```
+
+The `SourceDocument` format is defined [in source code](https://github.com/OpenTermsArchive/engine/tree/main/src/archivist/services/sourceDocument.js).
 
 ## Configuring
 
@@ -305,7 +343,7 @@ The default configuration can be found in `config/default.json`. The full refere
   },
   "notifier": { // Notify specified mailing lists when new versions are recorded
     "sendInBlue": { // SendInBlue API Key is defined in environment variables, see the “Environment variables” section below
-      "updatesListId": "SendInBlue contacts list ID of persons to notify on document updates",
+      "updatesListId": "SendInBlue contacts list ID of persons to notify on terms updates",
       "updateTemplateId": "SendInBlue email template ID used for updates notifications"
     }
   },
@@ -320,7 +358,7 @@ The default configuration can be found in `config/default.json`. The full refere
       "sendWarnings": "Boolean. Set to true to also send email in case of warning",
     }
   },
-  "tracker": { // Tracking mechanism to create GitHub issues when document content is inaccessible
+  "tracker": { // Tracking mechanism to create GitHub issues when terms content is inaccessible
     "githubIssues": {
       "repository": "GitHub repository where to create isssues",
       "label": {
@@ -337,7 +375,7 @@ The default configuration can be found in `config/default.json`. The full refere
 }
 ```
 
-The default configuration is merged with (and overridden by) environment-specific configuration that can be specified at startup with the `NODE_ENV` environment variable. For example, running `NODE_ENV=vagrant npm start` will load the `vagrant.json` configuration file. See [node-config](https://github.com/node-config/node-config) for more information about configuration files.
+The default configuration is merged with (and overridden by) environment-specific configuration that can be specified at startup with the `NODE_ENV` environment variable. See [node-config](https://github.com/node-config/node-config) for more information about configuration files.
 
 In order to have a local configuration that override all exisiting config, it is recommended to create a `config/development.json` file with overridden values.
 
@@ -356,8 +394,8 @@ Two storage repositories are currently supported: Git and MongoDB. Each one can 
       "publish": "Boolean. Set to true to push changes to the origin of the cloned repository at the end of every run. Recommended for production only.",
       "snapshotIdentiferTemplate": "Text. Template used to explicit where to find the referenced snapshot id. Must contain a %SNAPSHOT_ID that will be replaced by the snapshot ID. Only useful for versions",
       "author": {
-        "name": "Name to which changes in tracked documents will be credited",
-        "email": "Email to which changes in tracked documents will be credited"
+        "name": "Name to which changes in tracked terms will be credited",
+        "email": "Email to which changes in tracked terms will be credited"
       }
     }
   }
@@ -392,8 +430,7 @@ If an outgoing HTTP/HTTPS proxy to access the Internet is required, it is possib
 
 ## Deploying
 
-Deployment is managed with [Ansible](https://www.ansible.com). See the [Open Terms Archive deployment Ansible collection](https://github.com/OpenTermsArchive/ota.deployment-ansible-collection).
-
+Deployment recipes are available in a [dedicated repository](https://github.com/OpenTermsArchive/deployment). Look at the [README](https://github.com/OpenTermsArchive/deployment#readme) to know how to deploy the engine.
 ## Contributing
 
 ### Getting a copy
@@ -425,7 +462,7 @@ If existing features are changed or new ones are added, relevant tests must be a
 
 ### Suggesting changes
 
-To contribute to the core engine of Open Terms Archive, see the [CONTRIBUTING](https://github.com/OpenTermsArchive/engine/blob/main/CONTRIBUTING.md) file. You will need knowledge of JavaScript and Node.js.
+To contribute to the core engine of Open Terms Archive, see the [CONTRIBUTING](ttps://github.com/OpenTermsArchive/engine/blob/main/CONTRIBUTING.md) file. You will need knowledge of JavaScript and Node.js.
 
 ### Sponsorship and partnerships
 
