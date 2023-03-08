@@ -1,5 +1,5 @@
 /* Background */ .bg { background-color: var(--colorBlack200); }
-/* PreWrapper */ .chroma { background-color: var(--colorBlack200); }
+/* PreWrapper */ .chroma { background-color: var(--colorBlack200); font-size: 1.4rem; }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err { color: var(--colorError); }
 /* CodeLine */ .chroma .cl {  }
