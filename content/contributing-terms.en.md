@@ -75,20 +75,24 @@ Within the `documents` JSON object, we will now declare terms.
 
 ## Declaring terms
 
-Terms are declared in a service declaration file, under the `documents` property. The way in which each type of terms should be obtained is declared as a JSON object.
+Terms are declared in a service declaration file, under the `documents` property. 
+
+Most of the time, terms are constituted by only one online source document (for example [Facebook Terms of Service](https://www.facebook.com/legal/terms)) but sometimes terms can be constituted by multiple online source documents (for example [Facebook community guidelines](https://transparency.fb.com/fr-fr/policies/community-standards/)) and it's all theses source documents combined together that finally constitute the terms. 
+
+First of all, let's see what constitute a source document.
+
+#### Source document
+
+A source document is defined by a JSON object:
 
 ```json
-  …
-  "documents": {
-    "<terms type>": {
-      "fetch": "The URL where the document can be found",
-      "executeClientScripts": "A boolean to execute client-side JavaScript loaded by the document before accessing the content, in case the DOM modifications are needed to access the content; defaults to false (fetch HTML only)",
-      "filter": "An array of service specific filter function names",
-      "remove": "A CSS selector, a range selector or an array of selectors that target the insignificant parts of the document that has to be removed. Useful to remove parts that are inside the selected parts",
-      "select": "A CSS selector, a range selector or an array of selectors that target the meaningful parts of the document, excluding elements such as headers, footers and navigation"
-    }
-  }
-  …
+{
+  "fetch": "The URL where the document can be found",
+  "executeClientScripts": "A boolean to execute client-side JavaScript loaded by the document before accessing the content, in case the DOM modifications are needed to access the content; defaults to false (fetch HTML only)",
+  "filter": "An array of service specific filter function names",
+  "remove": "A CSS selector, a range selector or an array of selectors that target the insignificant parts of the document that has to be removed. Useful to remove parts that are inside the selected parts",
+  "select": "A CSS selector, a range selector or an array of selectors that target the meaningful parts of the document, excluding elements such as headers, footers and navigation"
+}
 ```
 
 - For HTML files, `fetch` and `select` are mandatory.
@@ -317,6 +321,74 @@ export async function convertImagesToBase64(document, documentDeclaration) {
     images[index].src = `data:${mimeType};base64,${base64Image}`;
   }));
 }
+```
+
+#### Terms
+
+Now that source documents are defined let's see how to finally declare terms. 
+
+In the case where terms are consituted by only one source document, the declaration of the terms is done by simply declaring the terms as it _was_ the associated source document:
+
+```json
+  …
+  "documents": {
+    "<terms type>": {
+      "fetch": "…",
+      "executeClientScripts": "…",
+      "filter": "…",
+      "remove": "…",
+      "select": "…"
+    }
+  }
+  …
+```
+
+When the terms are distributed across multiple source documents, it should be declared by defining the combination, with `combine`, of theses multiples source documents:
+
+```json
+  …
+  "documents": {
+    "<terms type>": 
+      "combine": [
+        {
+          "fetch": "…",
+          "executeClientScripts": "…",
+          "filter": "…",
+          "remove": "…",
+          "select": "…"
+        },
+        {
+          "fetch": "…",
+          "executeClientScripts": "…",
+          "filter": "…",
+          "remove": "…",
+          "select": "…"
+        }
+      ]
+  }
+  …
+```
+
+Note that if some elements of source documents can be factorized (for example, it is common for the structure of HTML pages to be similar from page to page, so `select`, `remove` and `filter` can be factorized) it can be done like this:
+
+```json
+  …
+  "documents": {
+    "<terms type>": 
+      "executeClientScripts": "…",
+      "filter": "…",
+      "remove": "…",
+      "select": "…",
+      "combine": [
+        {
+          "fetch": "…",
+        },
+        {
+          "fetch": "…",
+        }
+      ]
+  }
+  …
 ```
 
 #### Terms type
