@@ -477,7 +477,7 @@ If existing features are changed or new ones are added, relevant tests must be a
 
 ### Suggesting changes
 
-To contribute to the core engine of Open Terms Archive, see the [CONTRIBUTING](ttps://github.com/OpenTermsArchive/engine/blob/main/CONTRIBUTING.md) file. You will need knowledge of JavaScript and Node.js.
+To contribute to the core engine of Open Terms Archive, see the [CONTRIBUTING](https://github.com/OpenTermsArchive/engine/blob/main/CONTRIBUTING.md) file. You will need knowledge of JavaScript and Node.js.
 
 ### Sponsorship and partnerships
 
