@@ -75,20 +75,22 @@ Within the `documents` JSON object, we will now declare terms.
 
 ## Declaring terms
 
-Terms are declared in a service declaration file, under the `documents` property. The way in which each type of terms should be obtained is declared as a JSON object.
+Terms are declared in a service declaration file, under the `documents` property. 
+
+Most of the time, terms are written in only one source document (for example [Facebook Terms of Service](https://www.facebook.com/legal/terms)) but sometimes terms can be spread across multiple online source documents, and their combination constitutes the terms (for example [Facebook Community Guidelines](https://transparency.fb.com/policies/community-standards/)). 
+
+#### Source document
+
+The way in which a source document is obtained is defined in a JSON object:
 
 ```json
-  …
-  "documents": {
-    "<terms type>": {
-      "fetch": "The URL where the document can be found",
-      "executeClientScripts": "A boolean to execute client-side JavaScript loaded by the document before accessing the content, in case the DOM modifications are needed to access the content; defaults to false (fetch HTML only)",
-      "filter": "An array of service specific filter function names",
-      "remove": "A CSS selector, a range selector or an array of selectors that target the insignificant parts of the document that has to be removed. Useful to remove parts that are inside the selected parts",
-      "select": "A CSS selector, a range selector or an array of selectors that target the meaningful parts of the document, excluding elements such as headers, footers and navigation"
-    }
-  }
-  …
+{
+  "fetch": "The URL where the document can be found",
+  "executeClientScripts": "A boolean to execute client-side JavaScript loaded by the document before accessing the content, in case the DOM modifications are needed to access the content; defaults to false (fetch HTML only)",
+  "filter": "An array of service specific filter function names",
+  "remove": "A CSS selector, a range selector or an array of selectors that target the insignificant parts of the document that has to be removed. Useful to remove parts that are inside the selected parts",
+  "select": "A CSS selector, a range selector or an array of selectors that target the meaningful parts of the document, excluding elements such as headers, footers and navigation"
+}
 ```
 
 - For HTML files, `fetch` and `select` are mandatory.
@@ -317,6 +319,74 @@ export async function convertImagesToBase64(document, documentDeclaration) {
     images[index].src = `data:${mimeType};base64,${base64Image}`;
   }));
 }
+```
+
+#### Terms with a single source document
+
+In the case where terms are extracted from one single source document, they are declared by simply declaring that source document:
+
+```json
+  …
+  "documents": {
+    "<terms type>": {
+      "fetch": "…",
+      "executeClientScripts": "…",
+      "filter": "…",
+      "remove": "…",
+      "select": "…"
+    }
+  }
+  …
+```
+
+#### Terms with multiple source documents
+
+When the terms are spread across multiple source documents, they should be declared by declaring their combination:
+
+```json
+  …
+  "documents": {
+    "<terms type>": 
+      "combine": [
+        {
+          "fetch": "…",
+          "executeClientScripts": "…",
+          "filter": "…",
+          "remove": "…",
+          "select": "…"
+        },
+        {
+          "fetch": "…",
+          "executeClientScripts": "…",
+          "filter": "…",
+          "remove": "…",
+          "select": "…"
+        }
+      ]
+  }
+  …
+```
+
+If some parts of the source documents are repeated, they can be factorised. For example, it is common for the structure of HTML pages to be similar from page to page, so `select`, `remove` and `filter` would be the same. These elements can be shared instead of being duplicated:
+
+```json
+  …
+  "documents": {
+    "<terms type>": 
+      "executeClientScripts": "…",
+      "filter": "…",
+      "remove": "…",
+      "select": "…",
+      "combine": [
+        {
+          "fetch": "…",
+        },
+        {
+          "fetch": "…",
+        }
+      ]
+  }
+  …
 ```
 
 #### Terms type
