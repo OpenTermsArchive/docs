@@ -79,8 +79,6 @@ Terms are declared in a service declaration file, under the `documents` property
 
 Most of the time, terms are written in only one source document (for example [Facebook Terms of Service](https://www.facebook.com/legal/terms)) but sometimes terms can be spread across multiple online source documents, and their combination constitutes the terms (for example [Facebook Community Guidelines](https://transparency.fb.com/policies/community-standards/)). 
 
-First of all, let's see what constitute a source document.
-
 #### Source document
 
 The way in which a source document is obtained is defined in a JSON object:
@@ -323,9 +321,7 @@ export async function convertImagesToBase64(document, documentDeclaration) {
 }
 ```
 
-#### Terms
-
-Now that source documents are defined let's see how to finally declare terms. 
+#### Terms with a single source document
 
 In the case where terms are extracted from one single source document, they are declared by simply declaring that source document:
 
@@ -342,6 +338,8 @@ In the case where terms are extracted from one single source document, they are 
   }
   …
 ```
+
+#### Terms with multiple source documents
 
 When the terms are spread across multiple source documents, they should be declared by declaring their combination:
 
