@@ -77,13 +77,13 @@ Within the `documents` JSON object, we will now declare terms.
 
 Terms are declared in a service declaration file, under the `documents` property. 
 
-Most of the time, terms are constituted by only one online source document (for example [Facebook Terms of Service](https://www.facebook.com/legal/terms)) but sometimes terms can be constituted by multiple online source documents (for example [Facebook community guidelines](https://transparency.fb.com/fr-fr/policies/community-standards/)) and it's all theses source documents combined together that finally constitute the terms. 
+Most of the time, terms are written in only one source document (for example [Facebook Terms of Service](https://www.facebook.com/legal/terms)) but sometimes terms can be spread across multiple online source documents, and their combination constitutes the terms (for example [Facebook Community Guidelines](https://transparency.fb.com/policies/community-standards/)). 
 
 First of all, let's see what constitute a source document.
 
 #### Source document
 
-A source document is defined by a JSON object:
+The way in which a source document is obtained is defined in a JSON object:
 
 ```json
 {
@@ -327,7 +327,7 @@ export async function convertImagesToBase64(document, documentDeclaration) {
 
 Now that source documents are defined let's see how to finally declare terms. 
 
-In the case where terms are consituted by only one source document, the declaration of the terms is done by simply declaring the terms as it _was_ the associated source document:
+In the case where terms are extracted from one single source document, they are declared by simply declaring that source document:
 
 ```json
   …
@@ -343,7 +343,7 @@ In the case where terms are consituted by only one source document, the declarat
   …
 ```
 
-When the terms are distributed across multiple source documents, it should be declared by defining the combination, with `combine`, of theses multiples source documents:
+When the terms are spread across multiple source documents, they should be declared by declaring their combination:
 
 ```json
   …
@@ -369,7 +369,7 @@ When the terms are distributed across multiple source documents, it should be de
   …
 ```
 
-Note that if some elements of source documents can be factorized (for example, it is common for the structure of HTML pages to be similar from page to page, so `select`, `remove` and `filter` can be factorized) it can be done like this:
+If some parts of the source documents are repeated, they can be factorised. For example, it is common for the structure of HTML pages to be similar from page to page, so `select`, `remove` and `filter` would be the same. These elements can be shared instead of being duplicated:
 
 ```json
   …
