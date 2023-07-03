@@ -271,6 +271,20 @@ To schedule export, publishing and local copy removal:
 GITHUB_TOKEN=ghp_XXXXXXXXX npx ota dataset --schedule --publish --remove-local-copy
 ```
 
+#### `ota serve`
+
+```sh
+npx ota serve
+```
+
+Start the collection metadata API server. 
+
+The API will be available with the given base path and server port number defined in the [configuration](#configuring), following the pattern `http://localhost:<port>/<basePath>/<API version>/<ressource>`.
+
+For example, with default configuration, the list of `services` ressources can be found at `http://localhost:3000/api/v1/services`.
+
+The OpenAPI documentation can be explored at `http://localhost:<port>/<basePath>/<API version>/specs`.
+
 ### API
 
 Once added as a dependency, the engine exposes a JavaScript API that can be called in your own code. The following modules are available.
@@ -381,6 +395,10 @@ The default configuration can be found in `config/default.json`. The full refere
   "dataset": { // Release mechanism to create dataset periodically
     "title": "Title of the dataset; recommended to be the name of the instance that generated it",
     "versionsRepositoryURL": "GitHub repository where the dataset will be published as a release; recommended to be the versions repository for discoverability and tagging purposes"
+  },
+  "api": { // Collection metadata API
+    "port": "The port number on which the API will listen for incoming requests",
+    "basePath": "The base path for the API endpoints; it is used to define the root URL for accessing different API resources"
   }
 }
 ```
