@@ -284,7 +284,13 @@ The server `<port>` and `<basePath>` are defined in the [configuration](#configu
 
 For example, with the default configuration, the list of `services` can be found at `http://localhost:3000/api/v1/services`.
 
-The [OpenAPI](https://swagger.io/specification/) specification can be found at `http://localhost:<port>/<basePath>/<API version>/specs` and the visual and interactive documentation at `http://localhost:<port>/<basePath>/<API version>/docs`.
+The [OpenAPI](https://swagger.io/specification/) specification can be found at: 
+
+`http://localhost:<port>/<basePath>/<API version>/specs`
+
+The visual and interactive documentation can be found at:
+
+`http://localhost:<port>/<basePath>/<API version>/docs`
 
 As example, the [visual documentation](http://162.19.74.224/api/v1/docs) of the [Demo collection](https://github.com/OpenTermsArchive/demo-declarations) is publicly available for exploration.
 
