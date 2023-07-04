@@ -279,11 +279,12 @@ npx ota serve
 
 Start the collection metadata API server. 
 
-The API will be available with the given base path and server port number defined in the [configuration](#configuring), following the pattern `http://localhost:<port>/<basePath>/<API version>/<ressource>`.
+The API will be available under `http://localhost:<port>/<basePath>/<apiVersion>/<resource>`.
+The server `<port>` and `<basePath>` are defined in the [configuration](#configuring).
 
-For example, with default configuration, the list of `services` ressources can be found at `http://localhost:3000/api/v1/services`.
+For example, with the default configuration, the list of `services` can be found at `http://localhost:3000/api/v1/services`.
 
-The OpenAPI documentation can be explored at `http://localhost:<port>/<basePath>/<API version>/specs`.
+The [OpenAPI](https://swagger.io/specification/) documentation can be found at `http://localhost:<port>/<basePath>/<API version>/specs`.
 
 ### API
 
@@ -398,7 +399,7 @@ The default configuration can be found in `config/default.json`. The full refere
   },
   "api": { // Collection metadata API
     "port": "The port number on which the API will listen for incoming requests",
-    "basePath": "The base path for the API endpoints; it is used to define the root URL for accessing different API resources"
+    "basePath": "The base path for the API endpoints"
   }
 }
 ```
