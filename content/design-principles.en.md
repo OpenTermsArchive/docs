@@ -16,10 +16,10 @@ A major goal of Open Terms Archive is to enable assessing the loyalty of service
 
 Several services have been observed:
 
-- changing the content of the same page based on user agent properties or source IP geolocation;
 - blocking an IP or a user agent randomly;
 - pretending to encounter technical errors (`500`, `502`…) instead of being explicit about their intention (`robots.txt`, `403`…);
-- to not reflect actual updates in the “last update” date of their contractual documents.
+- to not reflect actual updates in the “last update” date of their contractual documents;
+- changing the content of the same page based on user agent properties or source IP geolocation. When one accesses a supposedly already regionalized policy according to the URL, but gets a different content based on geolocation without any information nor ability to access other regional policies, we [consider](https://github.com/OpenTermsArchive/docs/pull/43#discussion_r1252232131) it misleading and disloyal.
 
 ### Examples of consequential choices
 
@@ -38,7 +38,7 @@ Open Terms Archive data should not need to be trusted by users more than the ser
 
 - Always keep an untouched snapshot of the source documents.
 - Use cryptographic signatures to ensure the database can be authenticated.
-- Enable replication of tracking.
+- Enable terms collection to be replicated by anyone.
 
 ## 3. Obtain documents like a user would
 
