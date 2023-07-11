@@ -277,18 +277,28 @@ GITHUB_TOKEN=ghp_XXXXXXXXX npx ota dataset --schedule --publish --remove-local-c
 npx ota serve
 ```
 
-Start the collection metadata API server. 
+Start the collection [Web API](#web-api) server.
 
-The API will be available under `http://localhost:<port>/<basePath>/<apiVersion>/<resource>`.
+The Web API will be available under `http://localhost:<port>/<basePath>/<apiVersion>/<resource>`.
 The server `<port>` and `<basePath>` are defined in the [configuration](#configuring).
 
-For example, with the default configuration, the list of `services` can be found at `http://localhost:3000/api/v1/services`.
+> For example, with the default configuration, the list of services can be found at [`http://localhost:3000/api/v1/services`](http://localhost:3000/api/v1/services).
 
-The [OpenAPI](https://swagger.io/specification/) documentation can be found at `http://localhost:<port>/<basePath>/<API version>/specs`.
+## API
 
-### API
+Open Terms Archive collections can be explored locally over a [Node.js](#nodejs-api), or remotely over a [Web API](#web-api). As Open Terms Archive is decentralised, each [instance](#instances) embarks its own API. The documentation relevant to the specific version of the engine on that instance is provided on that instance itself.
 
-Once added as a dependency, the engine exposes a JavaScript API that can be called in your own code. The following modules are available.
+### Web API
+
+The Web API exposes JSON data over HTTP(S). Its [OpenAPI](https://swagger.io/specification/) specification can be found at `http://localhost:<port>/<basePath>/<API version>/docs`.
+
+That endpoint exposes both the OpenAPI specification if the requested `Content-Type` is JSON, and a Swagger UI for visual and interactive documentation otherwise.
+
+> For example, the [documentation](http://162.19.74.224/api/v1/docs) of the [Demo collection](https://github.com/OpenTermsArchive/demo-declarations) is publicly available for exploration.
+
+### Node.js API
+
+As a Node module dependency, the engine exposes a JavaScript API that can be called in your own code. The following modules are available.
 
 #### `fetch`
 
