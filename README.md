@@ -10,7 +10,6 @@ To build it, [install Hugo](https://gohugo.io/getting-started/installing/) and [
 
 ```sh
 git clone https://github.com/OpenTermsArchive/docs
-cd docs
 hugo
 npm install
 ```
