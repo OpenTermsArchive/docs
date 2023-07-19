@@ -485,6 +485,7 @@ First of all, follow the [requirements](#requirements) above. Then, clone the re
 
 ```sh
 git clone https://github.com/OpenTermsArchive/engine.git
+cd engine
 ```
 
 Install dependencies:
