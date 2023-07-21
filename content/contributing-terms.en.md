@@ -34,7 +34,7 @@ The service name is exposed to end users. It should reflect as closely as possib
   - _Example: `Firebase` (by Google) → `Firebase`_.
   - _Example: `App Store` (by Apple) → `App Store`_.
 
-> If you have a hard time finding the service name, check out the [practical guidelines to find the service name](declarations-guidelines.md#service-name), and feel free to mention your uncertainties in the pull request! We will help you improve the service name if necessary 🙂
+> If you have a hard time finding the service name, check out the [practical guidelines to find the service name](./guidelines/declaring.en.md#service-name), and feel free to mention your uncertainties in the pull request! We will help you improve the service name if necessary 🙂
 
 ### Service ID
 
