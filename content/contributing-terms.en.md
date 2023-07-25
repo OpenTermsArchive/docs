@@ -12,7 +12,7 @@ Before adding new terms, open the [`declarations`](./declarations) folder and ch
 
 ### Declaring a new service
 
-Before declaring a service, you will need to choose its name and ID. The ID will be the name of the JSON file in which the service will be declared. It is a normalised version of the service name.
+Before declaring a service, you will need to choose the service name and service ID. The service ID will be the name of the JSON file in which the service will be declared. It is a normalised version of the service name.
 
 ### Service name
 

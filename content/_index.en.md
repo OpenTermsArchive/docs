@@ -143,7 +143,7 @@ In an editor, create the following declaration file in `declarations/Open Terms 
 In the terminal:
 
 ```sh
-npx ota-track
+npx ota track
 ```
 
 The tracked terms can be found in the `data` folder.
@@ -485,7 +485,7 @@ First of all, follow the [requirements](#requirements) above. Then, clone the re
 
 ```sh
 git clone https://github.com/OpenTermsArchive/engine.git
-cd OpenTermsArchive
+cd engine
 ```
 
 Install dependencies:
