@@ -77,7 +77,7 @@ npm run lint:js -- --fix
 
 ### Check the broken links
 
-Build the site 
+Build the site
 
 ```sh
 hugo --minify
