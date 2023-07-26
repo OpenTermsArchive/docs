@@ -20,3 +20,20 @@ jobs:
       - run: npm run lint:markdown
       - run: npm run lint:css
       - run: npm run lint:js
+      - name: Set Hugo up
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.108.0'
+          extended: true # Prevent error building site: POSTCSS: failed to transform, see https://gohugo.io/troubleshooting/faq/#i-get-this-feature-is-not-available-in-your-current-hugo-version
+      - name: Clean public dir
+        run: rm -rf public
+      - name: Print Hugo info
+        run: |
+          echo "hugo env"
+          hugo env
+          echo "hugo config"
+          hugo config
+
+      - name: Build with Hugo
+        run: hugo --minify
+      - run: npm run test:links
