@@ -13,7 +13,8 @@
   "license": "CC BY-SA 4.0",
   "author": "Open Terms Archive",
   "scripts": {
-    "test": "npm run lint:markdown && npm run lint:css && npm run lint:js",
+    "test": "npm run lint:markdown && npm run lint:css && npm run lint:js && npm run test:links",
+    "test:links": "linkinator ./public --recurse --skip '^(https://www.linkedin.com/.*|https://twitter.com/.*|http://localhost:3000/api/.*)' --verbosity error",
     "lint:markdown": "markdownlint *.md content/**/*.md",
     "lint:css": "stylelint \"themes/opentermsarchive/assets/css/*.css\"",
     "lint:js": "eslint themes/opentermsarchive/assets/js/",
@@ -24,6 +25,7 @@
     "eslint": "^8.31.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "jsdoc": "^4.0.0",
+    "linkinator": "^5.0.1",
     "markdownlint-cli": "^0.32.2",
     "stylelint": "^14.16.1",
     "stylelint-config-standard": "^29.0.0"
