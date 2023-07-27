@@ -75,7 +75,7 @@ To automatically fix, where possible, problems reported:
 npm run lint:js -- --fix
 ```
 
-### Check the broken links
+### Check for broken links
 
 Build the site
 
