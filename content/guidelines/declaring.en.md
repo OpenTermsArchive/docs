@@ -194,6 +194,7 @@ You can only use our copyrights or [trademarks (or any similar marks)](https://l
 Write a filter in the declaration.
 
 ### Troubleshooting and Communication
+
 If you encounter issues due to the engine's limitations in reading website URL, such as the fetchDocument error, don't worry, either refresh the page or click on the "Let us know" button, in order to get in touch with the team.
 
 There's a possibility that this button leads you to a blank page. This is often caused by your default mailto handler not being set to gmail. We recommend following [these instructions](https://support.google.com/chrome/thread/57026170/how-to-add-gmail-as-default-mailto-handler?hl=en) and trying again.
