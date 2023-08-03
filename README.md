@@ -75,6 +75,20 @@ To automatically fix, where possible, problems reported:
 npm run lint:js -- --fix
 ```
 
+### Check for broken links
+
+Build the site
+
+```sh
+hugo --minify
+```
+
+and run
+
+```sh
+npm run test:links
+```
+
 - - -
 
 ## License
