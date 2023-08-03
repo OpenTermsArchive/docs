@@ -6,9 +6,9 @@ title: "Contributing terms"
 
 ## Tracking new terms
 
-Tracking terms is done by _declaring_ them and the service they are associated with. Such a declaration is achieved by editing JSON files in the [`declarations`](./declarations) folder.
+Tracking terms is done by _declaring_ them and the service they are associated with. Such a declaration is achieved by editing JSON files in the [`declarations`](https://github.com/OpenTermsArchive/contrib-declarations/tree/main/declarations) folder.
 
-Before adding new terms, open the [`declarations`](./declarations) folder and check if the service you want to track terms for is already declared. If a JSON file with the name of the service is already present, you can jump straight to [declaring terms](#declaring-terms). Otherwise, keep reading!
+Before adding new terms, open the [`declarations`]([./declarations](https://github.com/OpenTermsArchive/contrib-declarations/tree/main/declarations)) folder and check if the service you want to track terms for is already declared. If a JSON file with the name of the service is already present, you can jump straight to [declaring terms](#declaring-terms). Otherwise, keep reading!
 
 ### Declaring a new service
 
