@@ -75,6 +75,13 @@ A **declaration** also contains some metadata on the **service** on which the **
 
 - - -
 
+### How it works
+
+1. **Targeting**: The contractual documents of a service are targeted by volunteer contributors or partners.
+2. **Tracking**: Several times a day, our robots download and publicly archive the targeted documents.
+3. **Analysing**: When changes are spotted, they are recorded and exposed for human analysts.
+4. **Disseminating**: All recorded versions are published in datasets enabling reuse and research.
+
 ## Add terms to a collection
 
 Open Terms Archive **acquires** **terms** to deliver an explorable **history** of **changes**. This can be done in two ways:
