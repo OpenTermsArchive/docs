@@ -59,29 +59,19 @@ When reviewing the contributions, your focus should be on two things: accuracy a
 5. Confirm that the selected area of the document contains only one term type and does not include any other types.
 6. Check both the significant and insignificant parts of the document.
     - Ensure that only [simple/basic selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators#basic_selectors) are used and avoid complex selectors like [combinators](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators#combinators) and [pseudo selectors](https://www.w3schools.com/css/css_pseudo_elements.asp). To simplify try to avoid selectors with indexes/numbers e.g `:nth-child(n)` and avoid selectors with long chains e.g. `div > body > .aside > p > span > a )`
-    - Ensure that the significant parts do not include a table of contents, contact links, or other insignificant details that may cause confusion by giving a false impression of change 
+    - Ensure that the significant parts do not include a table of contents, contact links, or other insignificant details that may cause confusion by giving a false impression of change.
 7. Verify the version of the document in the contribution tool to see how it will appear.
 8. If everything is in order, confirm that the term contribution has been made to the correct collection.
 9. Merge the contribution.
 
 #### Contributions FAQ
 
-1. **Why is it important to use simple CSS selectors for selecting and removing significant and insignificant parts respectively?**
+1. **Why is it important to use simple CSS selectors for selecting and removing significant and insignificant parts respectively?** It is important to use simple selectors to have greater stability. The more simple the selectors are the more stable the document will be
 
-> It is important to use simple selectors to have greater stability. The more simple the selectors are the more stable the document will be
+2. **How can we tell if a section is insignificant in the contractual document?** The best way to judge if a section doesn't not fit into the contractual document is by asking yourself if a change made on that section has any legal impact. If not it can be viewed insignificant
 
-2. **How can we tell if a section is insignificant in the contractual document?**
+3. **What should I do if removing a small insignificant part leads to complex CSS selectors?** If you are trying to remove a small insignificant section like a contact part in a document and it brings up complex CSS selectors, we would prefer you leave that minor section. It is better to have more stable documents that accurate ones that are more tideous to maintain.
 
-> The best way to judge if a section doesn't not fit into the contractual document is by asking yourself if a change made on that section has any legal impact. If not it can be viewed insignificant
+4. **How do we give feedback when reviewing a pull request?** Even though there will be contributors who are technically skilled and those who aren't you are encouraged to provide comments line by line in the pull request for more context and to provide suggestions
 
-3. **What should I do if removing a small insignificant part leads to complex CSS selectors?**
-
-> If you are trying to remove a small insignificant section like a contact part in a document and it brings up complex CSS selectors, we would prefer you leave that minor section. It is better to have more stable documents that accurate ones that are more tideous to maintain. 
-
-3. **How do we give feedback when reviewing a pull request?**
-
-> Even though there will be contributors who are technically skilled and those who aren't you are encouraged to provide comments line by line in the pull request for more context and to provide suggestions
-
-4. **Do we suggest changes and leave it up to them to make changes?**
-
-> It is encouraged to empower contributors to make required changes themselves, however for first time contributors, you can make the changes and explain why they are neccessary as they progressively learn. In due time they get better at it and can make changes on their own.
+5. **Do we suggest changes and leave it up to them to make changes?** It is encouraged to empower contributors to make required changes themselves, however for first time contributors, you can make the changes and explain why they are neccessary as they progressively learn. In due time they get better at it and can make changes on their own.
