@@ -108,7 +108,7 @@ When terms coexist in different languages and jurisdictions, please refer to the
 
 _This property is not needed for PDF documents._
 
-Most of the time, contractual documents are exposed as web pages, with a header, a footer, navigation menus, possibly ads… We aim at tracking only the significant parts of the document. In order to achieve that, the `select` property allows to extract only those parts in the process of [converting from snapshot to version](../#how-it-works).
+Most of the time, contractual documents are exposed as web pages, with a header, a footer, navigation menus, possibly ads… We aim at tracking only the significant parts of the document. In order to achieve that, the `select` property allows to extract only those parts in the process of [converting from snapshot to version](https://opentermsarchive.org/#how-it-works).
 
 The `select` value can be either a [CSS selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors), a [range selector](#range-selectors) or an array of those.
 
