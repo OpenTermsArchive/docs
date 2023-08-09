@@ -55,7 +55,7 @@ When reviewing the contributions, your focus should be on two things: accuracy a
 1. Inspect the declaration suggestion
 2. Use the link provided in the contribution tool to check out the original document.
 3. Verify that the name of the service matches the JSON file.
-4. Quickly scan the document to ensure that the correct term type has been selected. To determine the term type, consider who the intended audience is and what the document is discussing.
+4. Quickly scan the document to ensure that the correct term type has been selected. To determine the term type, consider who the intended audience is and what the document is discussing. You can also refer to the [terms type guide](https://github.com/OpenTermsArchive/terms-types/blob/main/termsTypes.json) to find the best term type for the document.
 5. Confirm that the selected area of the document contains only one term type and does not include any other types.
 6. Check both the significant and insignificant parts of the document.
     - Ensure that only [simple/basic selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators#basic_selectors) are used and avoid complex selectors like [combinators](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators#combinators) and [pseudo selectors](https://www.w3schools.com/css/css_pseudo_elements.asp). To simplify try to avoid selectors with indexes/numbers e.g `:nth-child(n)` and avoid selectors with long chains e.g. `div > body > .aside > p > span > a )`
