@@ -9,7 +9,7 @@ Thank you for showing interest in reviewing contributions made to Open Terms Arc
 ## Why is this important?
 
 Open Terms Archive is a open source project that tracks, analyses and disseminates changes to contractual documents with the aim of shiflting the balance of power from big tech to end users.
-As such we get lots of contributions involving various contractual documents.However, we want to make sure that the contributions made to the project are of high quality and that they are in line with the vision of the project. We also want to make sure that the contributions are reviewed in a timely manner so that the contributors can get feedback and continue to contribute to the project.
+As such we get lots of contributions involving various contractual documents. However, we want to make sure that the contributions made to the project are of high quality and that they are in line with the vision of the project. We also want to make sure that the contributions are reviewed in a timely manner so that the contributors can get feedback and continue to contribute to the project.
 This is where volunteer reviewers come in to help. Reviewers are people who have volunteered to review contributions made to the project. They are not paid for their work, but they are given credit for their work.
 
 ## Who can do it?
@@ -40,7 +40,7 @@ The contributions are in the form of pull requests. Pull requests are a way of s
 The pull requests can be opened in 2 ways:
 
 - By a bot. The bot will open a pull request when contributors add documents using the **contribution tool** which is a tool that helps contributors add documents to the project.
-- By the contributor. The contributor can open a pull request manually by following the steps when they track the document by **creating a JSOn file** and adding it via a pull request.
+- By the contributor. The contributor can open a pull request manually by following the steps when they track the document by **creating a JSON file** and adding it via a pull request.
 
 ## How to review
 
