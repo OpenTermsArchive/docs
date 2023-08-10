@@ -347,7 +347,8 @@ When the terms are spread across multiple source documents, they should be decla
   …
   "documents": {
     "<terms type>": 
-      "combine": [
+    {
+        "combine": [
         {
           "fetch": "…",
           "executeClientScripts": "…",
@@ -363,6 +364,7 @@ When the terms are spread across multiple source documents, they should be decla
           "select": "…"
         }
       ]
+    }
   }
   …
 ```
