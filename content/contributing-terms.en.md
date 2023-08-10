@@ -389,6 +389,22 @@ If some parts of the source documents are repeated, they can be factorised. For 
   …
 ```
 
+## Contributing new declarations
+
+This is a step by step guide to help you add declarations to the [contrib-declaration](https://github.com/OpenTermsArchive/contrib-declarations) repository. This repository is dedicated for volunteer contribution of declarations to Open Terms Archive.
+
+Having understood briefly how a declaration is structured in JSON format, we need to look at concrete steps on how you can add these JSON files to the repository. To add them, you need to:
+
+1. Clone the [contrib-declaration](https://github.com/OpenTermsArchive/contrib-declarations) repository to your local machine.
+2. Create a branch that describes your contribution e.g. `add-Open-Terms-Archive-ToS` or `add-firefox-privacy-policy`
+3. Run `npm install`. This is to install all the dependencies including the Open Terms Archive engine which will allow you to test and validate your declaration to make sure it is ok.
+4. Create a JSON file with the name of the service you are adding the declaration for. This JSON file should be in the `declarations` folder of the repository. To learn more about selecting the right service name, please read the [declaring a new service](#declaring-a-new-service) section of our docs.
+5. Visit the declaration URL and use [browser developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools) to inspect the page and find the right selectors for the significant section containing the terms you want to declare.
+6. After you've properly added your selectors and structured your JSON file, you need to test and validate your JSON file to make sure it is ok. To do this, you need to run `npx ota validate --services [service name]` from the root of the repository. This will run a validation on the declaration, highlighting any changes required.
+7. If all tests are good, make a pull request to the main repository.  
+
+You can read more about the [CLI](https://docs.opentermsarchive.org/#cli) to learn more about other tests and linting you can run on your declaration
+
 #### Terms type
 
 Great, your terms declaration is now almost complete! We simply need to write it under the appropriate terms type in the `documents` JSON object within the service declaration. In order to distinguish between the many terms that can be associated with a service and enable cross-services comparison of similar terms, we maintain a unique list of terms types.
