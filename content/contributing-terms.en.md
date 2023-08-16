@@ -346,8 +346,7 @@ When the terms are spread across multiple source documents, they should be decla
 ```json
   …
   "documents": {
-    "<terms type>": 
-    {
+    "<terms type>": {
         "combine": [
         {
           "fetch": "…",
