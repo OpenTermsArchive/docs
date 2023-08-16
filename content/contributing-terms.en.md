@@ -346,8 +346,8 @@ When the terms are spread across multiple source documents, they should be decla
 ```json
   …
   "documents": {
-    "<terms type>": 
-      "combine": [
+    "<terms type>": {
+        "combine": [
         {
           "fetch": "…",
           "executeClientScripts": "…",
@@ -363,6 +363,7 @@ When the terms are spread across multiple source documents, they should be decla
           "select": "…"
         }
       ]
+    }
   }
   …
 ```
