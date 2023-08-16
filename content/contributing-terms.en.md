@@ -8,7 +8,7 @@ title: "Contributing terms"
 
 Tracking terms is done by _declaring_ them and the service they are associated with. Such a declaration is achieved by editing JSON files in the [`declarations`](https://github.com/OpenTermsArchive/contrib-declarations/tree/main/declarations) folder.
 
-Before adding new terms, open the [`declarations`]([./declarations](https://github.com/OpenTermsArchive/contrib-declarations/tree/main/declarations)) folder and check if the service you want to track terms for is already declared. If a JSON file with the name of the service is already present, you can jump straight to [declaring terms](#declaring-terms). Otherwise, keep reading!
+Before adding new terms, open the [`declarations`](https://github.com/OpenTermsArchive/contrib-declarations/tree/main/declarations) folder and check if the service you want to track terms for is already declared. If a JSON file with the name of the service is already present, you can jump straight to [declaring terms](#declaring-terms). Otherwise, keep reading!
 
 ### Declaring a new service
 
@@ -266,7 +266,7 @@ Each filter is exposed as a named function export that takes a `document` parame
 
 > The `document` parameter is actually a [JSDOM](https://github.com/jsdom/jsdom) document instance.
 
-You can learn more about usual noise and ways to handle it [in the guidelines](declarations-guidelines.md#Usual-noise).
+You can learn more about usual noise and ways to handle it [in the guidelines](../guidelines/declaring#usual-noise).
 
 ##### Example
 
@@ -400,7 +400,7 @@ If the terms you want to add match no existing type, you can [suggest a new one]
 
 ##### Defining new terms types
 
-Before defining a new terms type, please note that wanting to multiply terms types is usually a symptom that the service needs to be broken down into several services. For example, rather than considering that Facebook has several specific variations of “Terms of Service”, it is more accurate to declare “Terms of Service” for the services “Facebook” (social network service for the general public), “Facebook Ads” (ads service for advertisers) and “Facebook Payments” (payment service for developers). On the other hand, the “Google Ads” service is a commercial suite acting as an umbrella for several pieces of software that all share the same terms, and there is thus no need to separate each of them. See practical guidelines for [provider prefixing](declarations-guidelines.md#provider-prefixing).
+Before defining a new terms type, please note that wanting to multiply terms types is usually a symptom that the service needs to be broken down into several services. For example, rather than considering that Facebook has several specific variations of “Terms of Service”, it is more accurate to declare “Terms of Service” for the services “Facebook” (social network service for the general public), “Facebook Ads” (ads service for advertisers) and “Facebook Payments” (payment service for developers). On the other hand, the “Google Ads” service is a commercial suite acting as an umbrella for several pieces of software that all share the same terms, and there is thus no need to separate each of them. See practical guidelines for [provider prefixing](../guidelines/declaring#provider-prefixing).
 
 In order to guide usage and disambiguate synonyms, we characterise each terms type along three dimensions of the commitment that is being taken in it:
 
