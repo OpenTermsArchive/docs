@@ -194,13 +194,13 @@ You can only use our copyrights or [trademarks (or any similar marks)](https://l
 Write a filter in the declaration.
 
 - - -
-## Troubleshooting and Communication
 
-While using the graphical user interface for contribution, you may come across a broken page or error while fetching terms due to the engine's limitations, we encourage you to refresh the page or contact the team by tapping the “Let us know” button.
+## Blank page when contacting support
 
-<img width="586" alt="Screen Shot 2023-08-24 at 18 06 08" src="https://github.com/OpenTermsArchive/docs/assets/41474439/6b31580a-8a2a-47cc-88a4-8b02a19cf181">
+While using the graphical user interface for contribution, you may come across a blank page when trying to contact the team.
 
-In some cases, clicking on this button may lead you to a blank page, which is often caused by your default mailto handler not being set to Gmail. 
-We recommend following [these instructions](https://support.google.com/chrome/thread/57026170/how-to-add-gmail-as-default-mailto-handler?hl=en) to add Gmail as your default mailto handler and trying again.
+This may be caused by the lack of a mail program being set up in your browser.
 
+#### Solution
 
+If you use Gmail, for example, [these instructions](https://support.google.com/chrome/thread/57026170/how-to-add-gmail-as-default-mailto-handler) explain how to add Gmail as the default `mailto` handler in Chrome. Try following them and trying again.
