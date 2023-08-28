@@ -195,7 +195,9 @@ Write a filter in the declaration.
 
 - - -
 
-## Blank page when contacting support
+## Using the graphical contribution interface
+
+### Blank page when contacting support
 
 While using the graphical user interface for contribution, you may come across a blank page when trying to contact the team.
 
