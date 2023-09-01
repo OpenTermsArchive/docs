@@ -404,7 +404,7 @@ Having understood briefly how a declaration is structured in JSON format, we nee
 6. After you've properly chosen your selectors and structured your JSON file, you should test and validate your JSON file. To do this, you need to run `npx ota validate --services [service name]` from the root of the repository. This will run a validation on the declaration, highlighting any changes required.
 7. If all tests are good, make a pull request to the main repository.  
 
-You can read more about the [CLI](https://docs.opentermsarchive.org/#cli) to learn more about other tests and linting you can run on your declaration
+You can read more about the [CLI](https://docs.opentermsarchive.org/#cli) to learn more about other tests and linting you can run on your declaration.
 
 #### Terms type
 
