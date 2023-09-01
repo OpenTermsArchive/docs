@@ -392,7 +392,7 @@ If some parts of the source documents are repeated, they can be factorised. For 
 
 ## Contributing new declarations
 
-This is a step by step guide to help you add declarations to the [contrib-declaration](https://github.com/OpenTermsArchive/contrib-declarations) repository. This repository is dedicated for volunteer contribution of declarations to Open Terms Archive.
+This is a step by step guide to help you add declarations to the [Contrib collection](https://github.com/OpenTermsArchive/contrib-declarations). This collection is dedicated to volunteer contribution of declarations to Open Terms Archive.
 
 Having understood briefly how a declaration is structured in JSON format, we need to look at concrete steps on how you can add these JSON files to the repository. To add them, you need to:
 
