@@ -41,7 +41,7 @@ The method used to review each of these types of contribution varies, and you'll
 
 These contributions are housed in the [`contrib-declarations`](https://github.com/OpenTermsArchive/contrib-declarations) repository under the pull requests tab. You can find the pull requests [here](https://github.com/OpenTermsArchive/contrib-declarations/pulls).
 
-## How To Review Addition to Declarations
+## How To Review Pull Requests that Add Declarations
 
 When a contribution is made using the contribution tool, the OTA-bot will create a pull request. This pull request typically consists of several checks, which guides the reviewer on the key things to look out for during the review process, and a link to inspect the delaration. 
 
