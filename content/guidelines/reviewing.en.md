@@ -44,7 +44,7 @@ These contributions are housed in the [`contrib-declarations`](https://github.co
 
 ## How To Review Pull Requests that Add Declarations
 
-When a contribution is made using the contribution tool, the OTA-bot will create a pull request. This pull request typically consists of several checks, which guides the reviewer on the key things to look out for during the review process, and a link to inspect the delaration.
+When a contribution is made using the contribution tool, the OTA-bot will create a pull request. This pull request typically consists of several checks, which guides the reviewer on the key things to look out for during the review process, and a link to inspect the declaration.
 
 You should focus should be on two things: accuracy and quality.
 
