@@ -55,7 +55,6 @@ The service ID is exposed to developers. It should be easy to handle with script
   - _Example: `DeviantArt` → `DeviantArt`_.
 
 > If you have a hard time defining the service ID, check out the [practical guidelines to derive the ID from the service name](declarations-guidelines.md#service-id), and feel free to mention your uncertainties in the pull request! We will help you improve the service ID if necessary 🙂
-
 > More details on the ID and naming constraints and recommendations can be found in the relevant [decision record](https://github.com/OpenTermsArchive/engine/blob/main/decision-records/0001-service-name-and-id.md).
 
 ### Service declaration
@@ -75,11 +74,11 @@ Within the `documents` JSON object, we will now declare terms.
 
 ## Declaring terms
 
-Terms are declared in a service declaration file, under the `documents` property. 
+Terms are declared in a service declaration file, under the `documents` property.
 
-Most of the time, terms are written in only one source document (for example [Facebook Terms of Service](https://www.facebook.com/legal/terms)) but sometimes terms can be spread across multiple online source documents, and their combination constitutes the terms (for example [Facebook Community Guidelines](https://transparency.fb.com/policies/community-standards/)). 
+Most of the time, terms are written in only one source document (for example [Facebook Terms of Service](https://www.facebook.com/legal/terms)) but sometimes terms can be spread across multiple online source documents, and their combination constitutes the terms (for example [Facebook Community Guidelines](https://transparency.fb.com/policies/community-standards/)).
 
-#### Source document
+### Source document
 
 The way in which a source document is obtained is defined in a JSON object:
 
@@ -430,13 +429,13 @@ Please note that we do not want [service-specific types](https://github.com/Open
 
 You can test the declarations you created or changed by running the following command:
 
-```
+```js
 npm test [$service_id [$another_service_id …]]
 ```
 
 Since this operation fetches documents and could be long, you can also validate the declaration structure only:
 
-```
+```js
 npm run test:schema [$service_id [$another_service_id …]]
 ```
 
@@ -446,7 +445,7 @@ In order to ensure consistency across declarations, all declarations files have 
 
 In order to achieve this, you can use the following command:
 
-```
+``` js
 npm run lint [$service_id [$another_service_id …]]
 ```
 
