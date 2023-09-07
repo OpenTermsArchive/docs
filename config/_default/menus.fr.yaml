@@ -11,7 +11,7 @@ header:
   - name: Impact
     url: https://opentermsarchive.org/fr/impact
     weight: 4
-  - name: A propos
+  - name: À propos
     url: https://opentermsarchive.org/fr/a-propos
     weight: 5
 footer:
@@ -30,7 +30,7 @@ footer:
   - name: Impact
     url: https://opentermsarchive.org/fr/impact
     weight: 5
-  - name: A propos
+  - name: À propos
     url: https://opentermsarchive.org/fr/a-propos
     weight: 6
 first_subfooter:
