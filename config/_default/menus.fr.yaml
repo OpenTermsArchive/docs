@@ -2,28 +2,37 @@ header:
   - name: Accueil
     url: https://opentermsarchive.org
     weight: 1
-  - name: Étude de cas
-    url: https://opentermsarchive.org/fr/etudes-de-cas
+  - name: Jeux de données
+    url: https://opentermsarchive.org/fr/jeux-de-donnees
     weight: 2
-  - name: A propos
-    url: https://opentermsarchive.org/fr/a-propos
-    weight: 3
   - name: Documentation
     url: /fr
+    weight: 3
+  - name: Impact
+    url: https://opentermsarchive.org/fr/impact
     weight: 4
+  - name: À propos
+    url: https://opentermsarchive.org/fr/a-propos
+    weight: 5
 footer:
   - name: Accueil
     url: https://opentermsarchive.org
     weight: 1
+  - name: Jeux de données
+    url: https://opentermsarchive.org/fr/jeux-de-donnees
+    weight: 2
   - name: Étude de cas
     url: https://opentermsarchive.org/fr/etudes-de-cas
-    weight: 2
-  - name: A propos
-    url: https://opentermsarchive.org/fr/a-propos
     weight: 3
   - name: Documentation
-    url: https://docs.opentermsarchive.org
+    url: /fr
     weight: 4
+  - name: Impact
+    url: https://opentermsarchive.org/fr/impact
+    weight: 5
+  - name: À propos
+    url: https://opentermsarchive.org/fr/a-propos
+    weight: 6
 first_subfooter:
   - name: Statistiques
     url: https://opentermsarchive.org/fr/stats
