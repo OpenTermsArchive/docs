@@ -2,9 +2,6 @@ header:
   - name: Accueil
     url: https://opentermsarchive.org
     weight: 1
-  - name: Étude de cas
-    url: https://opentermsarchive.org/fr/etudes-de-cas
-    weight: 2
   - name: A propos
     url: https://opentermsarchive.org/fr/a-propos
     weight: 3

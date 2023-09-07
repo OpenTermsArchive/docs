@@ -2,9 +2,6 @@ header:
   - name: Home
     url: https://opentermsarchive.org
     weight: 1
-  - name: Case studies
-    url: https://opentermsarchive.org/case-studies
-    weight: 2
   - name: About
     url: https://opentermsarchive.org/about
     weight: 3
@@ -15,15 +12,12 @@ footer:
   - name: Home
     url: https://opentermsarchive.org
     weight: 1
-  - name: Case studies
-    url: https://opentermsarchive.org/case-studies
-    weight: 2
   - name: About
     url: https://opentermsarchive.org/about
-    weight: 3
+    weight: 2
   - name: Documentation
     url: https://docs.opentermsarchive.org
-    weight: 4
+    weight: 3
 first_subfooter:
   - name: Statistics
     url: https://opentermsarchive.org/stats
