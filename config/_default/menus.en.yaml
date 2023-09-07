@@ -2,22 +2,37 @@ header:
   - name: Home
     url: https://opentermsarchive.org
     weight: 1
-  - name: About
-    url: https://opentermsarchive.org/about
-    weight: 3
+  - name: Datasets
+    url: https://opentermsarchive.org/datasets
+    weight: 2
   - name: Documentation
     url: /
+    weight: 3
+  - name: Impact
+    url: https://opentermsarchive.org/impact
     weight: 4
+  - name: About
+    url: https://opentermsarchive.org/about
+    weight: 5
 footer:
   - name: Home
     url: https://opentermsarchive.org
     weight: 1
+  - name: Datasets
+    url: https://opentermsarchive.org/datasets
+    weight: 2
+  - name: Case studies
+    url: https://opentermsarchive.org/case-studies
+    weight: 3
+  - name: Documentation
+    url: /
+    weight: 4
+  - name: Impact
+    url: https://opentermsarchive.org/impact
+    weight: 5
   - name: About
     url: https://opentermsarchive.org/about
-    weight: 2
-  - name: Documentation
-    url: https://docs.opentermsarchive.org
-    weight: 3
+    weight: 6
 first_subfooter:
   - name: Statistics
     url: https://opentermsarchive.org/stats
