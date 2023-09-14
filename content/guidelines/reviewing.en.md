@@ -44,12 +44,10 @@ These contributions are housed in the [`contrib-declarations`](https://github.co
 
 ## How To Review Pull Requests that Add Declarations
 
-When a contribution is made using the contribution tool, the OTA-bot will create a pull request. This pull request typically consists of several checks, which guides the reviewer on the key things to look out for during the review process, and a link to inspect the declaration.
-
 You should focus should be on two things: accuracy and quality.
 
 - Accuracy is about making sure that the contribution document is accurate and tracks **significant** sections that actually make a legal impact when changed.
-- Quality is about making sure that the contribution is of high quality and uses stable CSS selectors that will make sure the document will need less maintainace over time.
+- Durability is about making sure that the contribution is of high quality and uses stable CSS selectors that will make sure the document will need less maintainace over time.
 
 ### Step-by-step Review Guide
 
@@ -73,10 +71,10 @@ Contributors are then required to help make this fixes to the declaration in ord
 The updates can be made using the contribution tool and it's effects will be similar to the one seen when adding declaration but with a slight change.
 The pull request created will consist of fewer checks than those that add declarations. The checks will guide the reviewer on the key things to look out for during the review process, and a link to inspect the declaration.
 
-For PRs that update declarations, you should focus should be on two things: history file and the declaration.
+For pull requests that update declarations, you should focus should be on two things: history file and the declaration.
 
-- **History file:** The history file is a JSON file that keeps track of a service declaration changes. It contains a `validUntil` property that the date a specific version of a service declaration was last tracked. You have to confirm that this date is the same as the date in the issue opened for the declaration when the bot couldn't track it. This issue is usually included in the PR message. The history file is updated with every `update` PR. You can find more information about the history file [here](https://docs.opentermsarchive.org/contributing-terms/#maintaining-declarations).
-- **Declaration:** for `update` PRs, you only look at the selectors to make sure they are **simple** and also verifiying the **generated declaration** version is relevant and ok.
+- **History file:** The history file is a JSON file that keeps track of a service declaration changes. It contains a `validUntil` property that the date a specific version of a service declaration was last tracked. You have to confirm that this date is the same as the date in the issue opened for the declaration when the bot couldn't track it. This issue is usually included in the pull request message. The history file is updated with every `update` pull request. You can find more information about the history file [here](https://docs.opentermsarchive.org/contributing-terms/#maintaining-declarations).
+- **Declaration:** for `update` pull requests, you only look at the selectors to make sure they are **simple** and also verifiying the **generated declaration** version is relevant and ok.
 
 ### Step-by-step Review Guide
 
@@ -85,7 +83,7 @@ For PRs that update declarations, you should focus should be on two things: hist
     - Ensure that only [simple/basic selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators#basic_selectors) are used and avoid complex selectors like [combinators](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators#combinators) and [pseudo selectors](https://www.w3schools.com/css/css_pseudo_elements.asp). To simplify, try to avoid selectors with indexes/numbers e.g `:nth-child(n)` and long chains e.g. `div > body > .aside > p > span > a )`
 3. Verify the version of the document in the contribution tool by clicking on the `verify version` button.
 4. Open the issue linked with the pull request. Confirm the date when the declaration was last tracked from the bot's comment.
-5. Compare it with the `validUntil` property in the history file under the `Files changes` section of the PR. If the dates are the same, proceed to add approve.
+5. Compare it with the `validUntil` property in the history file under the `Files changes` section of the pull request. If the dates are the same, proceed to add approve.
 6. Merge the contribution.
 
 You can read more about maintaining declarations from the [official documentation](https://docs.opentermsarchive.org/contributing-terms/#maintaining-declarations).
