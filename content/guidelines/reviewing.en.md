@@ -8,8 +8,7 @@ Thank you for showing interest in reviewing contributions made to Open Terms Arc
 
 ## Why is this important?
 
-Open Terms Archive is an open source project that tracks, analyses and disseminates changes to contractual documents with the aim of shiflting the balance of power from big tech to end users.
-As such, we get lots of contributions involving various contractual documents. However, we want to make sure that the contributions made to the project are of high quality and that they are in line with the vision of the project. We also want to make sure that the contributions are reviewed in a timely manner so that the contributors can get feedback and continue to contribute to the project.
+We want to make sure that the contributions made to the project are of high quality and that they are in line with the vision of the project. We also want to make sure that the contributions are reviewed in a timely manner so that the contributors can get feedback and continue to contribute to the project.
 This is where volunteer reviewers come in to help. Reviewers are people who have volunteered to review contributions made to the project. They are not paid for their work, but they are given credit for their work.
 
 ## Who can do it?
@@ -19,62 +18,62 @@ Anyone can review contributions. As hinted before, most of the contributions mad
 ## How long and complex will it be?
 
 It depends on the contribution. Some contributions may be spot on and can be reviewed in a few minutes. Other contributions may require a more detailed review and changes to be made and can take longer.
-However we approximate it to take about 3-15 mins for one to review a document, and getting better with time.
+We estimate it to take 3 to 15 mins for one to review a document. The first reviews might be a bit longer as reviewers get familiar with the process, and will speed up with time.
 
 ## Where to start
 
-To get started, we will need to understand a number things. The nature of the contributions you will be reviewing, where to get the contributions to review and the tools that will help you in reviewing the contributions.
+To get started, we will need to understand a few things. The nature of the contributions you will be reviewing, where to get the contributions to review and the tools that will help you in reviewing the contributions.
 
 ### The nature of the contributions
 
 The contributions you will be reviewing are contractual documents of digital services. These are documents that govern the relationship between two or more parties.
-They are not the original documents, but rather accurate tracking and data about these documents. If the documents are represented accurately, it will be easier to follow on with any subsequent changes in the document. Contributors track these documents (sometimes, anonymously) by submitting a pull request either using the **GUI contributing tool** (A tool that helps contributors add documents to the project), or creating a JSON file and adding it via a pull request. You can find more information about pull requests [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
+They are not the original documents, but rather the terms extracted from these documents. If the terms are represented accurately, it will be easier to follow on with any subsequent changes in the document. Contributors track these documents (sometimes, anonymously) by submitting a pull request either using a tool that helps contributors add documents to the project, the **GUI contributing tool**, or by creating a JSON file and adding it via a pull request. You can find more information about pull requests [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests).
 
 There are three types of contributions you'll come across:
 
-- Adding contributions to declarations
-- Updating contributions to declarations
-- Removal contributions to declarations
+- adding declarations to a collection;
+- updating declarations in a collection;
+- removing declarations from a collection.
 
-The method used to review each of these types of contribution varies, and you'll find a detailed explanation of this as you proceed with this document.
+The method used to review each of these types of contribution varies, and you'll find a detailed explanation below.
 
 ### Where to find the contributions
 
-These contributions are housed in the [`contrib-declarations`](https://github.com/OpenTermsArchive/contrib-declarations) repository under the pull requests tab. You can find the pull requests [here](https://github.com/OpenTermsArchive/contrib-declarations/pulls).
+The contributions can be found in the form of pull requests in the repository of the collection you want to work on. For example, for the Contrib collection, they are visible under the [pull requests](https://github.com/OpenTermsArchive/contrib-declarations/pulls) tab of the [`contrib-declarations`](https://github.com/OpenTermsArchive/contrib-declarations) repository..
 
 ## How To Review Pull Requests that Add Declarations
 
-You should focus should be on two things: accuracy and quality.
+Your focus should be on two aspects: accuracy and quality.
 
-- Accuracy is about making sure that the contribution document is accurate and tracks **significant** sections that actually make a legal impact when changed.
-- Durability is about making sure that the contribution is of high quality and uses stable CSS selectors that will make sure the document will need less maintainace over time.
+- Accuracy is about making sure that the contributed declaration is accurate and tracks **significant** sections of the terms that actually make a legal impact when updated.
+- Durability is about making sure that the contributed declaration is stable over time, with CSS selectors that will make sure the document will need little maintenance over time.
 
 ### Step-by-step Review Guide
 
-1. Click on the inspect the declaration suggestion link to view contribution using the contribution tool.
+1. Click on the _Inspect the declaration_ link to view the declaration in a graphical user interface.
 2. Use the link provided in the URL section of the contribution tool to check out the original document.
 3. Verify that the name of the service matches the JSON file and complies with the [guidelines](https://docs.opentermsarchive.org/guidelines/declaring/#service-name).
-4. Quickly scan the document to ensure that the correct term type has been selected. To determine the term type, consider who the intended audience is and what the document is discussing. You can also refer to the [terms type guide](https://github.com/OpenTermsArchive/terms-types/blob/main/termsTypes.json) to find the best term type for the document.
+4. Quickly scan the document to ensure that the correct term type has been selected. To determine the term type, consider who the intended audience is and what the document is discussing. You can also refer to the [terms types list](https://github.com/OpenTermsArchive/terms-types/blob/main/termsTypes.json) to find the best term type for the document.
 5. Confirm that the selected area of the document contains only one term type and does not include any other types.
 6. Check both the significant and insignificant parts of the document.
-    - Ensure that only [simple/basic selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators#basic_selectors) are used and avoid complex selectors like [combinators](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators#combinators) and [pseudo selectors](https://www.w3schools.com/css/css_pseudo_elements.asp). To simplify, try to avoid selectors with indexes/numbers e.g `:nth-child(n)` and long chains e.g. `div > body > .aside > p > span > a )`
-    - Ensure that the significant parts do not include a table of contents, contact links, or other insignificant details that may cause confusion by giving a false impression of change.
-7. Verify the version of the document in the contribution tool by clicking on the `verify version` button.
+    - Ensure that, as much as possible, only [simple/basic selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators#basic_selectors) are used and avoid complex selectors like [combinators](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators#combinators) and [pseudo selectors](https://www.w3schools.com/css/css_pseudo_elements.asp). To simplify, try to avoid selectors with indexes/numbers e.g `:nth-child(n)` and long chains e.g. `div > body > .aside > p > span > a )`
+    - Ensure that the significant parts do not include a table of contents, contact links, or other insignificant details that may cause confusion by triggering a change detection when the legal terms have actually not been updated.
+7. Verify the version of the document in the contribution tool by clicking on the _Verify version_ button.
 8. Ensure that all checks generated by the OTA-bot are manually checked.
 9. When you confirm that the term contribution has been made to the correct collection, proceed to add a review.
 10. Merge the contribution.
 
 ## How To Review Pull Requests that Update Declarations
 
-When a declaration can no longer be tracked by the Open Terms Archive engine, an issue is created in the collection. This issue contins the details on why the declaration cannot be tracked and the date the challenge was encountered.  
-Contributors are then required to help make this fixes to the declaration in order to maintain the declaration's tracking.
+When some terms can no longer be tracked by the Open Terms Archive engine, an issue is created in the collection repository. This issue contains the details on why the document cannot be tracked and the date the challenge was encountered.
+Contributors are then required to update the declaration in order to bring back the tracking of the terms.
 The updates can be made using the contribution tool and it's effects will be similar to the one seen when adding declaration but with a slight change.
-The pull request created will consist of fewer checks than those that add declarations. The checks will guide the reviewer on the key things to look out for during the review process, and a link to inspect the declaration.
+The pull request created will consist of fewer checks than those that add declarations, as some aspects have already been previously checked, such as the name of the service and its ID. The checks will guide the reviewer on the key things to look out for during the review process, and a link to inspect the declaration.
 
-For pull requests that update declarations, you should focus should be on two things: history file and the declaration.
+For pull requests that update declarations, you should focus should be on two things: history file and declaration.
 
-- **History file:** The history file is a JSON file that keeps track of a service declaration changes. It contains a `validUntil` property that the date a specific version of a service declaration was last tracked. You have to confirm that this date is the same as the date in the issue opened for the declaration when the bot couldn't track it. This issue is usually included in the pull request message. The history file is updated with every `update` pull request. You can find more information about the history file [here](https://docs.opentermsarchive.org/contributing-terms/#maintaining-declarations).
-- **Declaration:** for `update` pull requests, you only look at the selectors to make sure they are **simple** and also verifiying the **generated declaration** version is relevant and ok.
+- **History file:** The history file is a JSON file that keeps track of a service declaration changes. It contains a `validUntil` property that specifies the date a specific version of a service declaration was last effective. You have to confirm that this date is the same as the date in the issue opened for the declaration when the bot couldn't track it for the first time. This issue is usually included in the pull request message. The history file is updated with every `update` pull request. You can find more information about the history file [here](https://docs.opentermsarchive.org/contributing-terms/#maintaining-declarations).
+- **Declaration:** for `update` pull requests, you only look at the selectors to make sure they are **simple** and also verify the **generated version** is ok.
 
 ### Step-by-step Review Guide
 
@@ -83,22 +82,22 @@ For pull requests that update declarations, you should focus should be on two th
     - Ensure that only [simple/basic selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators#basic_selectors) are used and avoid complex selectors like [combinators](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators#combinators) and [pseudo selectors](https://www.w3schools.com/css/css_pseudo_elements.asp). To simplify, try to avoid selectors with indexes/numbers e.g `:nth-child(n)` and long chains e.g. `div > body > .aside > p > span > a )`
 3. Verify the version of the document in the contribution tool by clicking on the `verify version` button.
 4. Open the issue linked with the pull request. Confirm the date when the declaration was last tracked from the bot's comment.
-5. Compare it with the `validUntil` property in the history file under the `Files changes` section of the pull request. If the dates are the same, proceed to add approve.
+5. Compare it with the `validUntil` property in the history file under the `Files changes` section of the pull request. If the dates are the same, proceed to approve the pull request.
 6. Merge the contribution.
 
 You can read more about maintaining declarations from the [official documentation](https://docs.opentermsarchive.org/contributing-terms/#maintaining-declarations).
 
 ## Making Changes to a Contribution
 
-When you spot an error in a contribution, instead of asking them to implement these changes, we usually recommend you fix it, especially for first time contributors,in order to save time. Make your corrections directly through the contribution tool, and send the document. Doing this, will create an update in the already existing pull request and a new comment will be generated by the OTA-bot.
+When you spot an error in a contribution, instead of asking the author to implement these changes, we usually recommend you fix it, especially for first time contributors, in order to speed up the process. You can make your corrections directly through the graphical user interface and send the document. This will create an update in the already existing pull request and a new comment will be generated by the OTA-bot.
 
 In some special cases, the correction may have to do with the service name. Such changes modify the branch name, hence, creating a new pull request instead of updating the initial pull request as their names are now different. In any case, it's always important to let the contributor know about any changes or corrections you make to their contribution.
 
 ## Contributions FAQ
 
-1. **Why is it important to use simple CSS selectors for selecting and removing significant and insignificant parts respectively?** It is important to use simple selectors to have greater stability. The more simple the selectors are the more stable the document will be stable.
+1. **Why is it important to use simple CSS selectors for selecting and removing significant and insignificant parts respectively?** It is important to use simple selectors to have greater stability. The more simple the selectors are the more stable the tracking will be over time as content is updated.
 
-2. **How can we tell if a section is insignificant in the contractual document?** The best way to judge if a section doesn't not fit into the contractual document is by asking yourself if a change made on that section has any legal impact. If not it can be viewed insignificant.
+2. **How can we tell if a section is insignificant in the contractual document?** The best way to judge if a section doesn't not fit into the contractual document is by asking yourself if a change made on that section has any legal impact. If not it can be viewed as insignificant.
 
 3. **What should I do if removing a small insignificant part leads to complex CSS selectors?** If you are trying to remove a small insignificant section like a contact part in a document and it brings up complex CSS selectors, we would prefer you leave that minor section. It is better to have stable documents than accurate ones that are tideous to maintain.
 
