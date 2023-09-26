@@ -5,3 +5,4 @@ theme: opentermsarchive
 disableKinds:
   - taxonomy
   - section
+ignoreErrors: ["error-disable-taxonomy"]
