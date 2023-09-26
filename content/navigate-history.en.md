@@ -1,0 +1,41 @@
+---
+title: "Browsing through terms"
+weight: 10
+---
+
+# Browsing through terms
+
+Every collection offers a public database of versions they recorded. 
+
+For this guide, we will use the example of the demo collection. This collection publishes its history on the [`OpenTermsArchive/demo-versions`](https://github.com/OpenTermsArchive/demo-versions) repository.
+
+- From the [repository page](https://github.com/OpenTermsArchive/demo-versions), open the folder of the service of your choice. For example, [GitHub](https://github.com/OpenTermsArchive/demo-versions/tree/main/GitHub):
+
+  ![Demo-versions repository services list](/images/navigate-history/demo-repository.png)
+
+- You will see the set of documents tracked for that service, now click on the document of your choice. For example, [GitHub's Privacy Policy](https://github.com/OpenTermsArchive/demo-versions/blob/main/GitHub/Privacy%20Policy.md):
+
+  ![GitHub terms list](/images/navigate-history/github-terms.png)
+
+- The latest version will be displayed. To view the history of changes made to this document, click on _History_ at the top right of the document:
+
+  ![GitHub Privacy Policy](/images/navigate-history/github-privacy-policy.png)
+
+- The changes are ordered ante-chronologically. For example, [GitHub Privacy Policy history](https://github.com/OpenTermsArchive/demo-versions/commits/main/GitHub/Privacy%20Policy.md). Click on a change title to see its contents:
+
+  ![GitHub Privacy Policy history](/images/navigate-history/privacy-policy-history.png)
+
+- The red colour shows deleted elements and the green colour shows added elements. For example, here is an entry for [GitHub Privacy Policy](https://github.com/OpenTermsArchive/demo-versions/commit/e9a781797041a6b593967ba9e7bb2c7404390e76).
+
+  ![One GitHub Privacy Policy change with source diff view](/images/navigate-history/source-diff.png)
+
+- You can choose from two types of display with the icons in the grey bar above the document. The first one (which is also the default one), named _source diff_ displays the previous version and the next one [side by side](https://github.com/OpenTermsArchive/demo-versions/commit/e9a781797041a6b593967ba9e7bb2c7404390e76). The second one, named _rich diff_ displays all the changes [in a single document](https://github.com/OpenTermsArchive/demo-versions/commit/e9a781797041a6b593967ba9e7bb2c7404390e76?short_path=060f2c2#diff-060f2c2cc43c2415e0d388f0061c37472277e76eafc9c0df269713b150a52909). In this view, beyond green and red, the yellow color shows modified paragraphs. Be careful, this display does not show some changes such as hyperlinks and text style's changes:
+
+  ![One GitHub Privacy Policy change with rich diff view](/images/navigate-history/rich-diff.png)
+
+- - -
+
+## Notes
+
+- For long documents, unchanged paragraphs will not be displayed by default. You can manually make them appear by clicking on the small arrows just above or just below the displayed paragraphs.
+- You can use the History button anywhere in the repository to display the history of changes made to all documents in the current folder (including sub-folders).
