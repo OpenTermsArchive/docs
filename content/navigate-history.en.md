@@ -37,5 +37,12 @@ For this guide, we will use the example of the demo collection. This collection 
 
 ## Notes
 
-- For long documents, unchanged paragraphs will not be displayed by default. You can manually make them appear by clicking on the small arrows just above or just below the displayed paragraphs.
+- For long documents, unchanged paragraphs will not be displayed by default. You can manually make them appear by clicking on the small arrows just above or just below the displayed paragraphs:
+
+  ![Expand unchanged paragraphs on source diff view](/images/navigate-history/expand-source.png)  
+
+  or
+
+  ![Expand unchanged paragraphs on rich diff view](/images/navigate-history/expand-rich.png)
+  
 - You can use the History button anywhere in the repository to display the history of changes made to all documents in the current folder (including sub-folders).
