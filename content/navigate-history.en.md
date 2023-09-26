@@ -9,7 +9,7 @@ Every collection offers a public database of versions they recorded.
 
 For this guide, we will use the example of the demo collection. This collection publishes its history on the [`OpenTermsArchive/demo-versions`](https://github.com/OpenTermsArchive/demo-versions) repository.
 
-- From the [repository page](https://github.com/OpenTermsArchive/demo-versions), open the folder of the service of your choice. For example, [GitHub](https://github.com/OpenTermsArchive/demo-versions/tree/main/GitHub):
+- From the [repository page](https://github.com/OpenTermsArchive/demo-versions), open the folder of the service of your choice by clicking on it. For example, [GitHub](https://github.com/OpenTermsArchive/demo-versions/tree/main/GitHub):
 
   ![Demo-versions repository services list](/images/navigate-history/demo-repository.png)
 
@@ -25,7 +25,7 @@ For this guide, we will use the example of the demo collection. This collection 
 
   ![GitHub Privacy Policy history](/images/navigate-history/privacy-policy-history.png)
 
-- The red colour shows deleted elements and the green colour shows added elements. For example, here is an entry for [GitHub Privacy Policy](https://github.com/OpenTermsArchive/demo-versions/commit/e9a781797041a6b593967ba9e7bb2c7404390e76).
+- The red colour shows deleted elements and the green colour shows added elements. For example, in this version of [GitHub Privacy Policy](https://github.com/OpenTermsArchive/demo-versions/commit/e9a781797041a6b593967ba9e7bb2c7404390e76), you can see in red the deletion of informations about GitHub data protection officer .
 
   ![One GitHub Privacy Policy change with source diff view](/images/navigate-history/source-diff.png)
 
