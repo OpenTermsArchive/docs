@@ -18,7 +18,7 @@
     "lint:markdown": "markdownlint *.md content/**/*.md",
     "lint:css": "stylelint \"themes/opentermsarchive/assets/css/*.css\"",
     "lint:js": "eslint themes/opentermsarchive/assets/js/",
-    "start:dev": "hugo serve --watch --verbose --disableFastRender",
+    "start:dev": "hugo serve --watch --logLevel debug --disableFastRender",
     "jsdoc": "npm install @opentermsarchive/engine@latest --no-save && jsdoc --configure .jsdoc.json"
   },
   "devDependencies": {
