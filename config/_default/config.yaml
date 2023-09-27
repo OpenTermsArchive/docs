@@ -4,5 +4,4 @@ title: Open Terms Archive documentation
 theme: opentermsarchive
 disableKinds:
   - taxonomy
-  - section
 ignoreErrors: ["error-disable-taxonomy"]
