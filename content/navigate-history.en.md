@@ -7,25 +7,25 @@ weight: 10
 
 Every collection offers a public database of versions they recorded. 
 
-For this guide, we will use the example of the demo collection. This collection publishes its history on the [`OpenTermsArchive/demo-versions`](https://github.com/OpenTermsArchive/demo-versions) repository.
+For this guide, we will use the example of the Demo collection. The terms of this collection are published on the [`OpenTermsArchive/demo-versions`](https://github.com/OpenTermsArchive/demo-versions) repository.
 
 - From the [repository page](https://github.com/OpenTermsArchive/demo-versions), open the folder of the service of your choice by clicking on it. For example, [GitHub](https://github.com/OpenTermsArchive/demo-versions/tree/main/GitHub):
 
   ![Demo-versions repository services list](/images/navigate-history/demo-repository.png)
 
-- You will see the set of documents tracked for that service, now click on the document of your choice. For example, [GitHub's Privacy Policy](https://github.com/OpenTermsArchive/demo-versions/blob/main/GitHub/Privacy%20Policy.md):
+- You will see the set of terms tracked for that service, now click on the terms of your choice. For example, [GitHub's Privacy Policy](https://github.com/OpenTermsArchive/demo-versions/blob/main/GitHub/Privacy%20Policy.md):
 
   ![GitHub terms list](/images/navigate-history/github-terms.png)
 
-- The latest version will be displayed. To view the history of changes made to this document, click on _History_ at the top right of the document:
+- The most recent version will be displayed. To view the history of changes made to these terms, click on _History_ at the top right:
 
   ![GitHub Privacy Policy](/images/navigate-history/github-privacy-policy.png)
 
-- The changes are ordered ante-chronologically. For example, [GitHub Privacy Policy history](https://github.com/OpenTermsArchive/demo-versions/commits/main/GitHub/Privacy%20Policy.md). Click on a change title to see its contents:
+- The changes are presented in reverse chronological order. For example, [GitHub Privacy Policy history](https://github.com/OpenTermsArchive/demo-versions/commits/main/GitHub/Privacy%20Policy.md). Click on a change title to see its contents:
 
   ![GitHub Privacy Policy history](/images/navigate-history/privacy-policy-history.png)
 
-- The red colour shows deleted elements and the green colour shows added elements. For example, in this version of [GitHub Privacy Policy](https://github.com/OpenTermsArchive/demo-versions/commit/e9a781797041a6b593967ba9e7bb2c7404390e76), you can see in red the deletion of informations about GitHub data protection officer .
+- The red colour shows deleted words and the green colour shows added words. For example, in this change of [GitHub Privacy Policy](https://github.com/OpenTermsArchive/demo-versions/commit/e9a781797041a6b593967ba9e7bb2c7404390e76), you can see in red the deletion of information about GitHub data protection officer.
 
   ![One GitHub Privacy Policy change with source diff view](/images/navigate-history/source-diff.png)
 
@@ -45,4 +45,4 @@ For this guide, we will use the example of the demo collection. This collection 
 
   ![Expand unchanged paragraphs on rich diff view](/images/navigate-history/expand-rich.png)
   
-- You can use the History button anywhere in the repository to display the history of changes made to all documents in the current folder (including sub-folders).
+- You can use the History button anywhere in the repository to display the history of changes made to all terms in the current folder.
