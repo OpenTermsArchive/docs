@@ -89,6 +89,12 @@ and run
 npm run test:links
 ```
 
+## Deployment
+
+The `main` branch is used on production and automatically deployed through GitHub pages. Refer to the configuration file `.github/workflows/gh-pages.yml`.
+
+For each pull request, a preview is automatically deployed through Netlify and a comment on the GitHub pull request display the necessary information, such as the preview URL. The configuration can be found in `netlify.toml` file.
+
 - - -
 
 ## License
