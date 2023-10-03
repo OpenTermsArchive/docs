@@ -1,5 +1,6 @@
 ---
 title: "Governance"
+weight: 4
 ---
 
 # Governance

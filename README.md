@@ -6,7 +6,7 @@ Open Terms Archive documentation.
 
 This website is built using [Hugo](https://gohugo.io), a static website editor, and uses [Node.js](https://nodejs.org).
 
-To build it, [install Hugo](https://gohugo.io/getting-started/installing/) and [Node.js](https://nodejs.org), and then:
+To build it, [install Hugo](https://gohugo.io/getting-started/installing/) (>= v0.114.0) and [Node.js](https://nodejs.org), and then:
 
 ```sh
 git clone https://github.com/OpenTermsArchive/docs
@@ -88,6 +88,12 @@ and run
 ```sh
 npm run test:links
 ```
+
+## Deployment
+
+The `main` branch is used on production and automatically deployed through GitHub pages. Refer to the configuration file `.github/workflows/gh-pages.yml`.
+
+For each pull request, a preview is automatically deployed through Netlify and a comment on the GitHub pull request display the necessary information, such as the preview URL. The configuration can be found in `netlify.toml` file.
 
 - - -
 

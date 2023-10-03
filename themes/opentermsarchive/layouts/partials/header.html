@@ -31,7 +31,7 @@
               {{ range $.Site.Home.AllTranslations }}
                 {{ if ne $currentLanguage .Language.Lang }}
                   <div class="languageSwitcher_item">
-                    <a href="{{ .Permalink }}">{{ .Language.Lang | upper }}</a>
+                    <a href="{{ .RelPermalink }}">{{ .Language.Lang | upper }}</a>
                   </div>
                 {{ end }}
               {{ end }}
