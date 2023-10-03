@@ -1,6 +1,6 @@
 ---
 title: "Design principles"
-weight: 3
+weight: 5
 ---
 
 # Design principles

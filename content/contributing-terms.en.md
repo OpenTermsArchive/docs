@@ -1,6 +1,6 @@
 ---
 title: "Contributing terms"
-weight: 2
+weight: 3
 ---
 
 # Contributing terms
