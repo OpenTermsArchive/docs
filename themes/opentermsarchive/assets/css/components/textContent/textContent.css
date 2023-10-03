@@ -5,11 +5,11 @@
   & hr {
     clear: both;
     border: 1px solid var(--colorBlack200);
-    margin-bottom: var(--mXL);
+    margin-bottom: var(--mL);
   }
 
   & p, & .highlight {
-    margin-bottom: var(--mM);
+    margin-bottom: var(--mXS);
 
     &:last-child {
       margin-bottom: 0;
@@ -25,11 +25,11 @@
   }
 
   & p + hr, & blockquote + hr, & pre + hr, & ul + hr {
-    margin-top: var(--mXL);
+    margin-top: var(--m2XL);
   }
 
   & h1 {
-    margin-bottom: var(--m2XL);
+    margin-bottom: var(--mXL);
 
     @media (--tabletSmall) {
       margin-bottom: var(--mXL);
@@ -65,7 +65,7 @@
   }
 
   & h4 {
-    margin-bottom: var(--mS);
+    margin-bottom: var(--mM);
 
     &:global(.mb__0) {
       margin-bottom: 0;
@@ -81,7 +81,7 @@
   }
 
   & h5 {
-    margin-bottom: var(--mXS);
+    margin-bottom: var(--mS);
 
     &:global(.mb__0) {
       margin-bottom: 0;
@@ -89,7 +89,7 @@
   }
 
   & h6 {
-    margin-bottom: var(--m2XS);
+    margin-bottom: var(--mXS);
 
     &:global(.mb__0) {
       margin-bottom: 0;
@@ -101,7 +101,7 @@
   & ol + h2,
   & blockquote + h2,
   & .highlight + h2 {
-    margin-top: var(--mXL);
+    margin-top: var(--m2XL);
   }
 
   & p + h3,
@@ -109,7 +109,7 @@
   & ol + h3,
   & blockquote + h3 ,
   & .highlight + h3 {
-    margin-top: var(--mL);
+    margin-top: var(--mXL);
   }
 
   & p + h4,
@@ -117,7 +117,7 @@
   & ol + h4,
   & blockquote + h4,
   & .highlight + h4 {
-    margin-top: var(--mM);
+    margin-top: var(--mL);
   }
 
   & p + h5,
@@ -125,7 +125,7 @@
   & ol + h5,
   & blockquote + h5,
   & .highlight + h5 {
-    margin-top: var(--mS);
+    margin-top: var(--mL);
   }
 
   & iframe {
@@ -156,7 +156,7 @@
 
   & li {
     position: relative;
-    margin-bottom: var(--mXS);
+    margin-bottom: var(--m2XS);
 
     & svg {
       left: calc(var(--mL) * -1);
@@ -169,7 +169,7 @@
     }
 
     & > ul{
-      margin-top: var(--mXS);
+      margin-top: var(--m2XS);
     }
   }
 
@@ -188,7 +188,7 @@
   & code {
     background-color: var(--colorBlack200);
     white-space: pre-wrap;
-    word-break: break-all;
+    font-size: 0.95em;
   }
 
   & button {
