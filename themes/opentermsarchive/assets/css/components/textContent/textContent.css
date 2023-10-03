@@ -188,7 +188,7 @@
   & code {
     background-color: var(--colorBlack200);
     white-space: pre-wrap;
-    word-break: break-all;
+    font-size: 0.95em;
   }
 
   & button {
