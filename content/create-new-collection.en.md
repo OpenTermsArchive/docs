@@ -88,7 +88,7 @@ Create the snapshot repository by using the [Demo versions](https://github.com/O
 #### Fill the about section
 
 - Set the description: “Documents versions for `<collection_name>`. Maintained by `<maintainer>`.”
-- Set website: https://docs.opentermsarchive.org/how-to/navigate-history/
+- Set website: https://docs.opentermsarchive.org/navigate-history/
 - Add the following tags: `terms-of-service`, `terms-of-service-agreements`, `terms-and-conditions`, `open-terms-archive`.
 - Uncheck “Packages” and “Environments”.
 
