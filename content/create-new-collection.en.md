@@ -21,13 +21,13 @@ First of all, define the scope and metadata of the collection:
 
 Create the collection declarations repository by using the [`demo-declarations`](https://github.com/OpenTermsArchive/demo-declarations) repository as template:
 - Go to the [`demo-declarations` repository](https://github.com/OpenTermsArchive/demo-declarations)
-- Click on the "Use this template" dropdown and select "Create a new repository"
-- In the new "Create a new repository" page that opens up,  fill the field “Repository name” by using the collection ID followed by `-declarations`. For example: `pga-declarations`.
+- Click on the “Use this template” dropdown and select “Create a new repository”
+- In the new “Create a new repository” page that opens up,  fill the field “Repository name” by using the collection ID followed by `-declarations`. For example: `pga-declarations`.
 - When redirected to the newly generated repository, wait a minute or two for the automatic setup to run. You can check the status of the `first-time-setup` GitHub action to make sure that everything ran fine.
 
 #### Fill the about section
 
-- Click on the little cogwheel icon next to the "About" block.
+- Click on the little cogwheel icon next to the “About” block.
 
 - Set the description: “Declarations for `<collection_name>`. Maintained by `<maintainer>`.”
 - Set website: https://opentermsarchive.org
@@ -42,7 +42,7 @@ These settings ease the whole contribution process.
 - Enable “Allow auto-merge”.
 - Enable “Automatically delete head branches”.
 - In the `Branches` section: add a branch protection rule for `main`, check “Require status checks to pass before merging” and add `validate_modified_declarations` and `validate_schema` as required status checks.
-- In the `Actions` section, in the `General` submenu: select "Allow all actions and reusable workflows".
+- In the `Actions` section, in the `General` submenu: select “Allow all actions and reusable workflows”.
 
 #### Update readme
 
@@ -56,8 +56,7 @@ These settings ease the whole contribution process.
 
 Create the snapshots repository by using the [`demo-snapshots` repository](https://github.com/OpenTermsArchive/demo-snapshots) as template:
 - Go to the [`demo-snapshots` repository](https://github.com/OpenTermsArchive/demo-snapshots)
-- Click on the "Use this template" dropdown
-- Select "Create a new repository"
+- Click on the “Use this template” dropdown and select “Create a new repository”
 - Set the repository name to `<collection_id>-snapshots`.
 - When redirected to the newly generated repository, wait a minute or two for the automatic setup to run. You can check the status of the `first-time-setup` GitHub action to make sure that everything ran fine.
 - Give write rights on the repo to the maintenance team.
@@ -74,14 +73,13 @@ Create the snapshots repository by using the [`demo-snapshots` repository](https
 These settings aim at minimising the otherwise overwhelming amount of information and click targets.
 
 - Features: uncheck “Wikis”, “Issues”, “Discussions” and “Projects”.
-- In the `Actions` section, in the `General` submenu: select "Disable actions".
+- In the `Actions` section, in the `General` submenu: select “Disable actions”.
 
 ### Versions
 
 Create the versions repository by using the [`demo-versions` repository](https://github.com/OpenTermsArchive/demo-versions) as template:
 - Go to the [`demo-versions` repository](https://github.com/OpenTermsArchive/demo-versions)
-- Click on the "Use this template" dropdown
-- Select "Create a new repository"
+- Click on the “Use this template” dropdown and select “Create a new repository”
 - Set the repository name to `<collection_id>-versions`.
 - When redirected to the newly generated repository, wait a minute or two for the automatic setup to run. You can check the status of the `first-time-setup` GitHub action to make sure that everything ran fine.
 - Give write rights on the repo to the maintenance team.
@@ -98,7 +96,7 @@ Create the versions repository by using the [`demo-versions` repository](https:/
 These settings aim at minimising the otherwise overwhelming amount of information and click targets.
 
 - Features: uncheck “Wikis”, “Issues”, “Discussions” and “Projects”.
-- In the `Actions` section, in the `General` submenu: select "Disable actions".
+- In the `Actions` section, in the `General` submenu: select “Disable actions”.
 
 ## Set up GitHub maintenance teams
 
