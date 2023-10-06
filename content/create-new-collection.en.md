@@ -21,12 +21,13 @@ First of all, it is strongly recommended to define the scope and metadata of the
 
 Create the collection definition repository by using the [Demo collection](https://github.com/OpenTermsArchive/demo-declarations) as template:
 - Go to the [demo collection repository homepage](https://github.com/OpenTermsArchive/demo-declarations)
-- Click on the "Use this template" dropdown
-- Select "Create a new repository"
-- In the opened page, fill the repository name, it is strongly recommended to use the collection ID
-- When redirected to the newly generated repositroy, please wait until the automatic setup is done (it should be done in less than a minute).
+- Click on the "Use this template" dropdown and select "Create a new repository"
+- In the new "Create a new repository" page that opens up,  fill the field `Repository name` by using the collection `ID` followed by `-declarations`. For example: `demo-declarations`
+- When redirected to the newly generated repository, please wait until the automatic setup is done (it should be done in less than a minute). You can check the status of the `first-time-setup` GitHub action to find out if everything went smoothly.
 
 #### Fill the about section
+
+- Click on the little cogwheel icon next to the "About" block.
 
 - Set the description: “Declarations for `<collection_name>`. Maintained by `<maintainer>`.”
 - Set website: https://opentermsarchive.org
@@ -45,7 +46,7 @@ These settings ease the whole contribution process.
 
 #### Update readme
 
-- Update readme with proper metadata: topic, maintainers, jurisdictions, languages…
+- Update the readme file with proper metadata: topic, maintainers, jurisdictions, languages…
 
 #### Update deployment inventory
 
@@ -99,11 +100,11 @@ These settings aim at minimising the otherwise overwhelming amount of informatio
 - Features: uncheck “Wikis” and “Projects”.
 - In the `Actions` section, in the `General` submenu: select "Disable actions".
 
-## Set up the GitHub maintenance team
+## Set up GitHub maintenance teams
 
 For collections to be included in the Open Terms Archive organisation only. For third parties, handle rights however you see fit.
 
-- [Create a new team](https://github.com/orgs/OpenTermsArchive/new-team)
+- [Create a new collection team](https://github.com/orgs/OpenTermsArchive/new-team)
 - Give it the name of the collection
 - Set as avatar the collection icon from the website
 - Set as description: “Maintainers of the <collection_name> collection”
