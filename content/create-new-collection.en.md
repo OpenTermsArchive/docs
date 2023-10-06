@@ -22,14 +22,13 @@ First of all, define the scope and metadata of the collection:
 Create the collection declarations repository by using the [`demo-declarations`](https://github.com/OpenTermsArchive/demo-declarations) repository as template:
 - Go to the [`demo-declarations` repository](https://github.com/OpenTermsArchive/demo-declarations)
 - Click on the “Use this template” dropdown and select “Create a new repository”
-- In the new “Create a new repository” page that opens up,  fill the field “Repository name” by using the collection ID followed by `-declarations`. For example: `pga-declarations`.
+ - Set the repository name to `<collection_id>-declarations`. For example: `pga-declarations`.
 - When redirected to the newly generated repository, wait a minute or two for the automatic setup to run. You can check the status of the `first-time-setup` GitHub action to make sure that everything ran fine.
 
 #### Fill the about section
 
 - Click on the little cogwheel icon next to the “About” block.
-
-- Set the description: “Declarations for `<collection_name>`. Maintained by `<maintainer>`.”
+- Set the description to “Declarations for `<collection_name>`. Maintained by `<maintainer>`.”
 - Set website: https://opentermsarchive.org
 - Add the following tags: `terms-of-service`, `terms-of-service-agreements`, `terms-and-conditions`, `open-terms-archive`.
 - Uncheck “Releases”, “Packages” and “Environments”.
@@ -44,7 +43,7 @@ These settings ease the whole contribution process.
 - In the `Branches` section: add a branch protection rule for `main`, check “Require status checks to pass before merging” and add `validate_modified_declarations` and `validate_schema` as required status checks.
 - In the `Actions` section, in the `General` submenu: select “Allow all actions and reusable workflows”.
 
-#### Update readme
+#### Update README
 
 - Update the README file with proper metadata: topic, maintainers, jurisdictions, languages…
 
@@ -86,7 +85,7 @@ Create the versions repository by using the [`demo-versions` repository](https:/
 
 #### Fill the “About” section
 
-- Set the description: “Documents versions for `<collection_name>`. Maintained by `<maintainer>`.”
+- Set the description: “Terms versions for `<collection_name>`. Maintained by `<maintainer>`.”
 - Set website: https://docs.opentermsarchive.org/navigate-history/
 - Add the following tags: `terms-of-service`, `terms-of-service-agreements`, `terms-and-conditions`, `open-terms-archive`.
 - Uncheck “Packages” and “Environments”.
