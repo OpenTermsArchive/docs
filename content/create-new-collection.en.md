@@ -7,23 +7,23 @@ weight: 2
 
 ## Define the necessary metadata
 
-First of all, it is strongly recommended to define the scope and metadata of the collection:
+First of all, define the scope and metadata of the collection:
 - Concise description of the collection topic (examples: `Largest global social media`, `Most used social media in France`, `Dating apps`, `Platforms providing services to businesses`…)
 - Collection name (3 words maximum, examples: `Platform Governance Archive`, `France Élections`, `Dating`, `P2B Compliance Assessment`…)
 - Collection ID (examples: `pga`, `France-elections`, `dating`, `p2b-compliance`…)
-- Terms language (examples: `English`, `French`, `English`, `All EU languages`…)
-- Service jurisdiction (examples: `EU`, `France`, `EEA`, `EU`…)
+- Terms language (examples: `English`, `French`, `All EU languages`…)
+- Terms jurisdiction (examples: `EU`, `France`, `EEA`, `USA`, `global`…)
 - Collection maintainer entity (name, logo, url)
 
 ## Create repositories
 
-### Collection definition
+### Declarations
 
-Create the collection definition repository by using the [Demo collection](https://github.com/OpenTermsArchive/demo-declarations) as template:
-- Go to the [demo collection repository homepage](https://github.com/OpenTermsArchive/demo-declarations)
+Create the collection declarations repository by using the [`demo-declarations`](https://github.com/OpenTermsArchive/demo-declarations) repository as template:
+- Go to the [`demo-declarations` repository](https://github.com/OpenTermsArchive/demo-declarations)
 - Click on the "Use this template" dropdown and select "Create a new repository"
-- In the new "Create a new repository" page that opens up,  fill the field `Repository name` by using the collection `ID` followed by `-declarations`. For example: `demo-declarations`
-- When redirected to the newly generated repository, please wait until the automatic setup is done (it should be done in less than a minute). You can check the status of the `first-time-setup` GitHub action to find out if everything went smoothly.
+- In the new "Create a new repository" page that opens up,  fill the field “Repository name” by using the collection ID followed by `-declarations`. For example: `pga-declarations`.
+- When redirected to the newly generated repository, wait a minute or two for the automatic setup to run. You can check the status of the `first-time-setup` GitHub action to make sure that everything ran fine.
 
 #### Fill the about section
 
@@ -46,23 +46,23 @@ These settings ease the whole contribution process.
 
 #### Update readme
 
-- Update the readme file with proper metadata: topic, maintainers, jurisdictions, languages…
+- Update the README file with proper metadata: topic, maintainers, jurisdictions, languages…
 
 #### Update deployment inventory
 
-- Open the `deployment/inventory.yml` and set server information: ip, user, fingerprint…
+- Open the `deployment/inventory.yml` and set the server information: server IP, username, server fingerprint…
 
 ### Snapshots
 
-Create the snapshot repository by using the [Demo snapshots](https://github.com/OpenTermsArchive/demo-snapshots) as template:
-- Go to the [demo snapshots repository homepage](https://github.com/OpenTermsArchive/demo-snapshots)
+Create the snapshots repository by using the [`demo-snapshots` repository](https://github.com/OpenTermsArchive/demo-snapshots) as template:
+- Go to the [`demo-snapshots` repository](https://github.com/OpenTermsArchive/demo-snapshots)
 - Click on the "Use this template" dropdown
 - Select "Create a new repository"
-- In the opened page, fill the repository name, it is strongly recommended to use the `<collection_id>-snapshots`.
-- When redirected to the newly generated repositroy, please wait until the automatic setup is done (it should be done in less than a minute).
+- Set the repository name to `<collection_id>-snapshots`.
+- When redirected to the newly generated repository, wait a minute or two for the automatic setup to run. You can check the status of the `first-time-setup` GitHub action to make sure that everything ran fine.
 - Give write rights on the repo to the maintenance team.
 
-#### Fill the about section
+#### Fill the “About” section
 
 - Set the description: “Documents snapshots for `<collection_name>`. Maintained by `<maintainer>`.”
 - Set website: https://opentermsarchive.org
@@ -73,20 +73,20 @@ Create the snapshot repository by using the [Demo snapshots](https://github.com/
 
 These settings aim at minimising the otherwise overwhelming amount of information and click targets.
 
-- Features: uncheck “Wikis” and “Projects”.
+- Features: uncheck “Wikis”, “Issues”, “Discussions” and “Projects”.
 - In the `Actions` section, in the `General` submenu: select "Disable actions".
 
 ### Versions
 
-Create the snapshot repository by using the [Demo versions](https://github.com/OpenTermsArchive/demo-versions) as template:
-- Go to the [demo versions repository homepage](https://github.com/OpenTermsArchive/demo-versions)
+Create the versions repository by using the [`demo-versions` repository](https://github.com/OpenTermsArchive/demo-versions) as template:
+- Go to the [`demo-versions` repository](https://github.com/OpenTermsArchive/demo-versions)
 - Click on the "Use this template" dropdown
 - Select "Create a new repository"
-- In the opened page, fill the repository name, it is strongly recommended to use the `<collection_id>-versions`.
-- When redirected to the newly generated repositroy, please wait until the automatic setup is done (it should be done in less than a minute).
+- Set the repository name to `<collection_id>-versions`.
+- When redirected to the newly generated repository, wait a minute or two for the automatic setup to run. You can check the status of the `first-time-setup` GitHub action to make sure that everything ran fine.
 - Give write rights on the repo to the maintenance team.
 
-#### Fill the about section
+#### Fill the “About” section
 
 - Set the description: “Documents versions for `<collection_name>`. Maintained by `<maintainer>`.”
 - Set website: https://docs.opentermsarchive.org/navigate-history/
@@ -97,7 +97,7 @@ Create the snapshot repository by using the [Demo versions](https://github.com/O
 
 These settings aim at minimising the otherwise overwhelming amount of information and click targets.
 
-- Features: uncheck “Wikis” and “Projects”.
+- Features: uncheck “Wikis”, “Issues”, “Discussions” and “Projects”.
 - In the `Actions` section, in the `General` submenu: select "Disable actions".
 
 ## Set up GitHub maintenance teams
@@ -122,10 +122,10 @@ For collections to be included in the Open Terms Archive organisation only. For 
 
 - Connect to the server with `ssh <username>@<host>` (example usernames: `debian`, `ubuntu`…)
 - Create a new SSH key: `ssh-keygen -q -N "" -f ~/.ssh/ota-deploy`
-- Add public key to authorized_keys `cat ~/.ssh/ota-deploy.pub >> ~/.ssh/authorized_keys`
-	- Display the public key `cat ~/.ssh/ota-deploy.pub` and keep it temporarily for the next steps
-- Add private key to the SSH authentication agent `ssh-add ~/.ssh/ota-deploy` (start the ssh agent before if necessary `eval \`ssh-agent -s\``)
-	- Display the private key `cat ~/.ssh/ota-deploy` and keep it temporarily for the next steps
+- Add the public key to `authorized_keys`: `cat ~/.ssh/ota-deploy.pub >> ~/.ssh/authorized_keys`
+	- Copy the public key with `cat ~/.ssh/ota-deploy.pub` and keep it temporarily for the next steps
+- Add the private key to the SSH authentication agent: `ssh-add ~/.ssh/ota-deploy` (start the SSH agent before if necessary with `eval \`ssh-agent -s\``)
+	- Copy the private key with `cat ~/.ssh/ota-deploy` and keep it temporarily for the next steps
 
 Note: user must have the right to `sudo`.
 
@@ -154,7 +154,7 @@ Fill `deployment/inventory.yml`:
 
 ### Locally
 
-_To test deployment from your local machine, your SSH keys must be authorized to connect to the server._
+To test deployment from your local machine, your SSH keys must be authorized to connect to the server.
 
 - `cd <path/to/><collection_id>-declarations/deployment`
 - `ansible-playbook opentermsarchive.deployment.deploy`
