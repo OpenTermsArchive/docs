@@ -37,11 +37,11 @@ Create the collection declarations repository by using the [`demo-declarations`]
 
 These settings ease the whole contribution process.
 
-- In the `Pull Requests` section: check only the “Allow squash merging” option, and set it to “Default to pull request title and commit details”.
+- In the “Pull Requests” section: check only the “Allow squash merging” option, and set it to “Default to pull request title and commit details”.
 - Enable “Allow auto-merge”.
 - Enable “Automatically delete head branches”.
-- In the `Branches` section: add a branch protection rule for `main`, check “Require status checks to pass before merging” and add `validate_modified_declarations` and `validate_schema` as required status checks.
-- In the `Actions` section, in the `General` submenu: select “Allow all actions and reusable workflows”.
+- In the “Branches” section: add a branch protection rule for `main`, check “Require status checks to pass before merging” and add `validate_modified_declarations` and `validate_schema` as required status checks.
+- In the “Actions” section, in the “General” submenu: select “Allow all actions and reusable workflows”.
 
 #### Update README
 
@@ -72,7 +72,7 @@ Create the snapshots repository by using the [`demo-snapshots` repository](https
 These settings aim at minimising the otherwise overwhelming amount of information and click targets.
 
 - Features: uncheck “Wikis”, “Issues”, “Discussions” and “Projects”.
-- In the `Actions` section, in the `General` submenu: select “Disable actions”.
+- In the “Actions” section, in the “General” submenu: select “Disable actions”.
 
 ### Versions
 
@@ -95,7 +95,7 @@ Create the versions repository by using the [`demo-versions` repository](https:/
 These settings aim at minimising the otherwise overwhelming amount of information and click targets.
 
 - Features: uncheck “Wikis”, “Issues”, “Discussions” and “Projects”.
-- In the `Actions` section, in the `General` submenu: select “Disable actions”.
+- In the “Actions” section, in the “General” submenu: select “Disable actions”.
 
 ## Set up GitHub maintenance teams
 
