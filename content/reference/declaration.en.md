@@ -34,7 +34,7 @@ The service name is exposed to end users. It should reflect as closely as possib
   - _Example: `Firebase` (by Google) → `Firebase`_.
   - _Example: `App Store` (by Apple) → `App Store`_.
 
-> If you have a hard time finding the service name, check out the [practical guidelines to find the service name](declarations-guidelines.md#service-name), and feel free to mention your uncertainties in the pull request! We will help you improve the service name if necessary 🙂
+> If you have a hard time finding the service name, check out the [practical guidelines to find the service name]({{< relref "guidelines/declaring#service-name" >}}), and feel free to mention your uncertainties in the pull request! We will help you improve the service name if necessary 🙂
 
 ### Service ID
 
@@ -54,7 +54,7 @@ The service ID is exposed to developers. It should be easy to handle with script
   - _Example: `App Store` → `App Store`_.
   - _Example: `DeviantArt` → `DeviantArt`_.
 
-> If you have a hard time defining the service ID, check out the [practical guidelines to derive the ID from the service name](declarations-guidelines.md#service-id), and feel free to mention your uncertainties in the pull request! We will help you improve the service ID if necessary 🙂
+> If you have a hard time defining the service ID, check out the [practical guidelines to derive the ID from the service name]({{< relref "guidelines/declaring#service-id" >}}), and feel free to mention your uncertainties in the pull request! We will help you improve the service ID if necessary 🙂
 > More details on the ID and naming constraints and recommendations can be found in the relevant [decision record](https://github.com/OpenTermsArchive/engine/blob/main/decision-records/0001-service-name-and-id.md).
 
 ### Service declaration
@@ -101,13 +101,13 @@ Let’s start by defining these keys!
 
 This property should simply contain the URL at which the terms you want to track can be downloaded. HTML and PDF files are supported.
 
-When terms coexist in different languages and jurisdictions, please refer to the [scope of the collection](../README.md#collections) to which you are contributing. This scope is usually defined in the README.
+When terms coexist in different languages and jurisdictions, please refer to the [scope of the collection]({{< relref "/#collections" >}}) to which you are contributing. This scope is usually defined in the README.
 
 #### `select`
 
 _This property is not needed for PDF documents._
 
-Most of the time, contractual documents are exposed as web pages, with a header, a footer, navigation menus, possibly ads… We aim at tracking only the significant parts of the document. In order to achieve that, the `select` property allows to extract only those parts in the process of [converting from snapshot to version](../README.md#how-it-works).
+Most of the time, contractual documents are exposed as web pages, with a header, a footer, navigation menus, possibly ads… We aim at tracking only the significant parts of the document. In order to achieve that, the `select` property allows to extract only those parts in the process of [converting from snapshot to version](https://opentermsarchive.org/#how-it-works).
 
 The `select` value can be either a [CSS selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors), a [range selector](#range-selectors) or an array of those.
 
@@ -265,7 +265,7 @@ Each filter is exposed as a named function export that takes a `document` parame
 
 > The `document` parameter is actually a [JSDOM](https://github.com/jsdom/jsdom) document instance.
 
-You can learn more about usual noise and ways to handle it [in the guidelines](declarations-guidelines.md#Usual-noise).
+You can learn more about usual noise and ways to handle it [in the guidelines]({{< relref "guidelines/declaring#usual-noise" >}}).
 
 ##### Example
 
@@ -399,7 +399,7 @@ If the terms you want to add match no existing type, you can [suggest a new one]
 
 ##### Defining new terms types
 
-Before defining a new terms type, please note that wanting to multiply terms types is usually a symptom that the service needs to be broken down into several services. For example, rather than considering that Facebook has several specific variations of “Terms of Service”, it is more accurate to declare “Terms of Service” for the services “Facebook” (social network service for the general public), “Facebook Ads” (ads service for advertisers) and “Facebook Payments” (payment service for developers). On the other hand, the “Google Ads” service is a commercial suite acting as an umbrella for several pieces of software that all share the same terms, and there is thus no need to separate each of them. See practical guidelines for [provider prefixing](declarations-guidelines.md#provider-prefixing).
+Before defining a new terms type, please note that wanting to multiply terms types is usually a symptom that the service needs to be broken down into several services. For example, rather than considering that Facebook has several specific variations of “Terms of Service”, it is more accurate to declare “Terms of Service” for the services “Facebook” (social network service for the general public), “Facebook Ads” (ads service for advertisers) and “Facebook Payments” (payment service for developers). On the other hand, the “Google Ads” service is a commercial suite acting as an umbrella for several pieces of software that all share the same terms, and there is thus no need to separate each of them. See practical guidelines for [provider prefixing]({{< relref "guidelines/declaring#provider-prefixing" >}}).
 
 In order to guide usage and disambiguate synonyms, we characterise each terms type along three dimensions of the commitment that is being taken in it:
 
