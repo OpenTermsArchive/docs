@@ -103,4 +103,4 @@ In some special cases, the correction may have to do with the service name. Such
 
 4. **How do we give feedback when reviewing a pull request?** Even though there will be contributors who are technically skilled and those who aren't, you are encouraged to provide comments line by line in the pull request for more context and to provide suggestions.
 
-5. **How do we suggest changes to a contributor?** It is encouraged to empower contributors to make required changes themselves, however for first time contributors, you can make the changes and explain why they are neccessary as they progressively learn. In due time they get better at it and can make changes on their own.
+5. **How do we suggest changes to a contributor?** It is encouraged to empower contributors to make required changes themselves, however for first time contributors, you can make the changes and explain why they are necessary as they progressively learn. In due time they get better at it and can make changes on their own.
