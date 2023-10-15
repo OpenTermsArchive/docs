@@ -38,6 +38,8 @@ While there is no single right way to choose stable selectors, as it remains int
 - Deep nesting of elements, such as `main > div > #article > .tos`. The likelihood that at least one block in the tree changes on a page update increases, making the selector brittle.
 - Pseudo-classes, such as `div:nth-child(2)`. Such selectors rely not only on the targeted content structure but also on the content around it, making the selector brittle.
 
+## Examples
+
 ### Example 1
 
 For the following HTML code:
