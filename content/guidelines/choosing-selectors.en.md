@@ -53,6 +53,12 @@ Conversely, avoid class names being or containing series of alphanumeric charact
 - `.tos` or `#legal-notice` are better than `main` or `.content`.
 - `.dez68h` or `.tos-cpoxw27` are bad selectors because they are likely automatically generated.
 
+### Accuracy over durability, durability over exhaustiveness
+
+It should be clear that the most important point of a declaration is to track entire terms. Legitimate considerations on selector durability can not be used as arguments justifying not tracking content that impacts users rights and duties.
+
+On the other hand, content that is usually tracked but is not directly impactful on rights and duties, such as last updated date or document title, may be occasionally ignored if it makes selectors excessively brittle.
+
 ## Strategies
 
 ### Start wide, narrow down over time
