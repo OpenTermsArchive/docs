@@ -8,15 +8,17 @@ Selectors are used in Open Terms Archive declarations to specify the parts of 
 
 ## What are selectors
 
-The “selectors” referred to are those defined by the [W3C Selectors standard](https://www.w3.org/TR/selectors/), more commonly known as “CSS Selectors”.
+Selectors are used in the [`select`](../contributing-terms#select) and [`remove`](../contributing-terms#remove) keys of an Open Terms Archive declaration.
 
-A good introduction to CSS Selectors can be found on [mdn web docs](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors).
+The “selectors” referred to are defined by the [W3C Selectors standard](https://www.w3.org/TR/selectors/), more commonly known as “CSS Selectors”.
+
+An easy-to-read introduction to CSS Selectors can be found on [mdn web docs](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors).
 
 ## Choosing durable selectors eases maintenance
 
 The design of web pages containing terms can evolve over time, leading to changes in their HTML (more precisely, to their [DOM](https://en.wikipedia.org/wiki/Document_Object_Model)) which may render ineffective the selectors that were initially chosen. That means they may no longer target the significant parts, breaking the ability to continuously record terms changes. When this happens, selectors must be updated to specify the meaningful parts of the terms.
 
-It is possible to reduce the frequency of human intervention on the selectors by choosing some that are least likely to become obsolete even when changes occur on the document structure.
+It is possible to reduce the frequency of human intervention on the selectors by choosing some that are least likely to become obsolete even when changes occur on the document structure. Decreasing the cost of this maintenance increases the likelihood that terms are continuously tracked.
 
 ## Guidelines
 
