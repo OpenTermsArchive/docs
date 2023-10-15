@@ -12,7 +12,7 @@ The “selectors” referred to are those defined by the [W3C Selectors standard
 
 A good introduction to CSS Selectors can be found on [mdn web docs](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors).
 
-## What's at stake?
+## Choosing durable selectors eases maintenance
 
 The design of web pages containing terms can evolve over time, leading to changes in their HTML (more precisely, to their [DOM](https://en.wikipedia.org/wiki/Document_Object_Model)) which may render ineffective the selectors that were initially chosen. That means they may no longer target the significant parts, breaking the ability to continuously record terms changes. When this happens, selectors must be updated to specify the meaningful parts of the terms.
 
@@ -20,7 +20,7 @@ It is possible to reduce the frequency of human intervention on the selectors by
 
 ## Guidelines
 
-While there is no single right way to choose stable selectors, as it remains intrinsically subjective and dependent on the document itself, following the guidelines below is likely to yield stable selectors.
+While there is no single right way to choose durable selectors, as it remains intrinsically subjective and dependent on the document itself, following the guidelines below is likely to yield durable selectors.
 
 ### Simple
 
@@ -87,7 +87,7 @@ For the following HTML code:
 ...
 ```
 
-✅ Some stable selectors could be:
+✅ Some durable selectors could be:
 
 ```json
 "select": "[role=main]"
@@ -99,7 +99,7 @@ or
 "select": ".tos_title, #tos_content"
 ```
 
-❌ Some unstable selectors could be:
+❌ Some brittle selectors could be:
 
 ```json
 "select": ".clearfix, ._3zdf8p"
@@ -140,7 +140,7 @@ For the following HTML code:
 ...
 ```
 
-✅ A stable selector could be:
+✅ A durable selector could be:
 
 ```json
 "select": [
@@ -152,7 +152,7 @@ For the following HTML code:
 "remove": ".advertising",
 ```
 
-❌ And an unstable selector could be:
+❌ And a brittle selector could be:
 
 ```json
 "select": ".container:first-child > div",

@@ -46,7 +46,7 @@ The contributions can be found in the form of pull requests in the repository of
 Your focus should be on two aspects: accuracy and quality.
 
 - Accuracy is about making sure that the contributed declaration is accurate and tracks **significant** sections of the terms that actually make a legal impact when updated.
-- Durability is about making sure that the contributed declaration is stable over time, with CSS selectors that will make sure the document will need little maintenance over time.
+- Durability is about making sure that the contributed declaration is durable over time, with CSS selectors that will make sure the document will need little maintenance over time.
 
 ### Step-by-step Review Guide
 
@@ -95,11 +95,11 @@ In some special cases, the correction may have to do with the service name. Such
 
 ## Contributions FAQ
 
-1. **Why is it important to use simple CSS selectors for selecting and removing significant and insignificant parts respectively?** It is important to use simple selectors to have greater stability. The more simple the selectors are the more stable the tracking will be over time as content is updated.
+1. **Why is it important to use simple CSS selectors for selecting and removing significant and insignificant parts respectively?** It is important to use simple selectors to have greater stability. The more simple the selectors are the more durable the tracking will be over time as content is updated.
 
 2. **How can we tell if a section is insignificant in the contractual document?** The best way to judge if a section doesn't not fit into the contractual document is by asking yourself if a change made on that section has any legal impact. If not it can be viewed as insignificant.
 
-3. **What should I do if removing a small insignificant part leads to complex CSS selectors?** If you are trying to remove a small insignificant section like a contact part in a document and it brings up complex CSS selectors, we would prefer you leave that minor section. It is better to have stable documents than accurate ones that are tideous to maintain.
+3. **What should I do if removing a small insignificant part leads to complex CSS selectors?** If you are trying to remove a small insignificant section like a contact part in a document and it brings up complex CSS selectors, we would prefer you leave that minor section. It is better to have durable documents than exhaustive ones that are costly to maintain.
 
 4. **How do we give feedback when reviewing a pull request?** Even though there will be contributors who are technically skilled and those who aren't, you are encouraged to provide comments line by line in the pull request for more context and to provide suggestions.
 
