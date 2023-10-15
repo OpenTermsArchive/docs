@@ -29,7 +29,6 @@ While there is no single right way to choose stable selectors, as it remains int
 
 ### Keep in mind
 
-- Making a wide selection and then removing the non-significant parts within this selection is an interesting way to avoid missing some content.
 - Using [range selectors](https://docs.opentermsarchive.org/contributing-terms/#range-selectors) enables to select content that starts in one block and ends in another block that are not in the same tree.
 
 ### Avoid
@@ -37,6 +36,16 @@ While there is no single right way to choose stable selectors, as it remains int
 - Class names being or containing series of alphanumeric characters, such as `.dez68h` or `.toss-cpoxw7`. Those are most likely to be generated and to change on the next page update.
 - Deep nesting of elements, such as `main > div > #article > .tos`. The likelihood that at least one block in the tree changes on a page update increases, making the selector brittle.
 - Pseudo-classes, such as `div:nth-child(2)`. Such selectors rely not only on the targeted content structure but also on the content around it, making the selector brittle.
+
+## Strategies
+
+### Start wide, narrow down over time
+
+If in doubt about a selector, prefer making a wide selection and then removing the non-significant parts within this selection: obsolete selectors that include too much are more likely to be spotted than too specific ones that will not include new content, as anyone reading the versions changes will spot irrelevant content being added, but will not see content that is not tracked.
+
+### “Good enough”
+
+Do not spend too much time trying to find the perfect selectors. Reviewers, in particular, will often have to conclude to “good enough” where their preference or the other authors are equally valid, since assumptions are made about the website DOM structure and how it may change in the future. It is more important to regularly review versions and react quickly to correct selectors than to find the perfect ones up front.
 
 ## Examples
 
