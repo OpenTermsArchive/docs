@@ -14,7 +14,7 @@
   "author": "Open Terms Archive",
   "scripts": {
     "test": "npm run lint:markdown && npm run lint:css && npm run lint:js && npm run test:links",
-    "test:links": "linkinator ./public --recurse --skip '^(https://www.linkedin.com/.*|https://twitter.com/.*|http://localhost:3000/api/.*)' --verbosity error",
+    "test:links": "linkinator ./public --recurse --skip '^https?://(www.linkedin.com|twitter.com|localhost:3000/api/)' --verbosity error",
     "lint:markdown": "markdownlint *.md content/**/*.md",
     "lint:css": "stylelint \"themes/opentermsarchive/assets/css/*.css\"",
     "lint:js": "eslint themes/opentermsarchive/assets/js/",
