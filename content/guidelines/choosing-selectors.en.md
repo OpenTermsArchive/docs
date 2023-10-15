@@ -4,47 +4,51 @@ title: "Choosing selectors"
 
 # Choosing selectors
 
-Selectors are an important part of the Open Terms Archive mechanism to target the meaningful parts of terms that should be stored, those that affect users rights and duties. And they can eventually be used to remove parts we don't want recorded, such as headers, footer and navigation.
+Selectors are used in Open Terms Archive declarations to specify the parts of documents that should be recorded.
 
-These are CSS Selectors, based on [W3C standard](https://www.w3.org/TR/selectors-3/). If you want to learn how to use them, you will find a very wide range of online resources, but definitly that the Mozilla [learning document](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors) could be a good starting point (or reminder).
+## What are selectors
+
+The “selectors” referred to are those defined by the [W3C Selectors standard](https://www.w3.org/TR/selectors/), more commonly known as “CSS Selectors”.
+
+A good introduction to CSS Selectors can be found on [mdn web docs](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors).
 
 ## What's at stake?
 
-The design of terms web pages evolves over time, leads to changes in the [DOM](https://en.wikipedia.org/wiki/Document_Object_Model) which may render ineffective the selectors you choose. That means they may no longer target the desired parts, what we want to avoid in order to continue recording terms changes. When this happens, you will need to redefine a new selector which targets the meaningful parts of the terms, that takes energy and time.
+The design of web pages containing terms can evolve over time, leading to changes in their HTML (more precisely, to their [DOM](https://en.wikipedia.org/wiki/Document_Object_Model)) which may render ineffective the selectors that were initially chosen. That means they may no longer target the significant parts, breaking the ability to continuously record terms changes. When this happens, selectors must be updated to specify the meaningful parts of the terms.
 
-It is possible to reduce the frequency of human intervention on the selectors by choosing those that are the most capable of continuing to target the desired part of the document whatever changes occur on the page.
+It is possible to reduce the frequency of human intervention on the selectors by choosing some that are least likely to become obsolete even when changes occur on the document structure.
 
-Let's take a closer look. **But bear in mind that there's no one right way to do this, it remains intrinsically subjective and page contextual.**
+## How to choose stable selectors?
 
-## How to choose stable selectors ?
+While there is no single right way to choose stable selectors, as it remains intrinsically subjective and dependent on the document itself, following the guidelines below is likely to yield stable selectors.
 
-If it is possible, choose selectors:
+### Choose selectors
 
-- which are the simplest possible, for exemple `#pageContent` or `[role="main"]`. You could find helpful to determine the weight of their [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity), for exemple `#article` (with 1-0-0 specificity) is better than `.bodyClass .sectionClass .parentClass [id="article"]` (with 0-4-0 specificity)
-- whose their names indicate directly what they are targeting, for exemple `.tos` or `#legal-notice` because we can hypothesise that whatever changes are made to the design of the page this type of selector increases the chances to continue to target to the desired content
+- Which are the simplest possible, for example `#pageContent` or `[role="main"]`. You could find helpful to determine the weight of their [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity), for example `#article` (with 1-0-0 specificity) is better than `.bodyClass .sectionClass .parentClass [id="article"]` (with 0-4-0 specificity)
+- Whose names are representative of the parts they select. For example: `.tos` or `#legal-notice`. Indeed, we can assume that no matter which changes are made to the design of the page, this type of selector is most likely to still select the desired content.
 
-You should also keep in mind that:
+### Keep in mind
 
-- making a wide selection and then remove the non-significant parts within this selection is an interesting way to avoid missing out some content
-- using [range selectors](https://docs.opentermsarchive.org/contributing-terms/#range-selectors) enable to not be constrained by the CSS box model and select content that starts in one box and ends in another box that are not in the same tree.
+- Making a wide selection and then removing the non-significant parts within this selection is an interesting way to avoid missing some content.
+- Using [range selectors](https://docs.opentermsarchive.org/contributing-terms/#range-selectors) enables to select content that starts in one block and ends in another block that are not in the same tree.
 
-Avoid, as much as possible:
+### Avoid
 
-- class names being or containing series of alphanumeric characters, for exemple `.dez68h` or `.toss-cpoxw7`
-- deep nesting of elements, for exemple `main > div > #article > .tos`
-- use of CSS pseudo-class, for exemple `.tos > div:nth-child(2)`
+- Class names being or containing series of alphanumeric characters, such as `.dez68h` or `.toss-cpoxw7`. Those are most likely to be generated and to change on the next page update.
+- Deep nesting of elements, such as `main > div > #article > .tos`. The likelihood that at least one block in the tree changes on a page update increases, making the selector brittle.
+- Pseudo-classes, such as `div:nth-child(2)`. Such selectors rely not only on the targeted content structure but also on the content around it, making the selector brittle.
 
-### Exemple 1
+### Example 1
 
-For the following HTML code
+For the following HTML code:
 
 ```html
 ...
   <div id="globalContainer" role="main">
-    <div class="tos_title">Privacy Policy</div>
-    <div class="article_content clearfix" id="tos_content">
+    <div class="tos_title clearfix">Privacy Policy</div>
+    <div class="article_content" id="tos_content">
        <div class="_3zdf8p">
-          <p>Deserunt ea reprehenderit esse dolor adipisicing consectetur aliquip ex magna consequat. Labore eiusmod eiusmod irure enim veniam excepteur commodo laborum et deserunt amet incididunt. Duis id ipsum consequat nulla veniam Lorem elit.<p>
+          <p>Deserunt ea reprehenderit esse dolor adipisicing consectetur aliquip ex magna consequat.<p>
           <p>...</p>
         </div>
     </div>
@@ -55,38 +59,35 @@ For the following HTML code
 ✅ Some stable selectors could be:
 
 ```json
-"select": "[role="main"]"
+"select": "[role=main]"
 ```
 
 or
 
 ```json
-"select": [
-  ".tos_title",
-  "#tos_content"
-]
+"select": ".tos_title, #tos_content"
 ```
 
-❌ And unstable selectors might look like:
+❌ Some unstable selectors could be:
 
 ```json
-"select": "._3zdf8p"
+"select": ".clearfix, ._3zdf8p"
 ```
 
 or
 
 ```json
-"select": "#tos_content > div > p"
+"select": "#globalContainer > div:first-child, div#tos_content > div"
 ```
 
-### Exemple 2
+### Example 2
 
-For the following HTML code
+For the following HTML code:
 
 ```html
 ...
   <div class="container">
-    <div id="navsub">
+    <div id="nav-menu">
       <ul>
         <li class="nav-item">Terms and Conditions of Use</li>
         <li class="nav-item"><a href="/us/legal/copyright-policy/">Copyright Policy</a></li>
@@ -95,13 +96,13 @@ For the following HTML code
     </div>
     <div>
       <h1>Terms and Conditions of Use </h1>
-      <p>Deserunt ea reprehenderit esse dolor adipisicing consectetur aliquip ex magna consequat. Labore eiusmod eiusmod irure enim veniam excepteur commodo laborum et deserunt amet incididunt. Duis id ipsum consequat nulla veniam Lorem elit.<p>
+      <p>Deserunt ea reprehenderit esse dolor adipisicing consectetur aliquip ex magna consequat.<p>
       <p>...</p>
       <div class="advertising">...</div>
     </div>
   </div>
   <div class="container">
-    <footer class=".mh-footer">
+    <footer class=".footer">
       ...
     <footer>
   </div>
@@ -113,14 +114,14 @@ For the following HTML code
 ```json
 "select": [
   {
-    "startAfter": "#navsub",
-    "endBefore": ".mh-footer"
+    "startAfter": "#nav-menu",
+    "endBefore": ".footer"
   }
 ],
 "remove": ".advertising",
 ```
 
-❌ And an unstable selector might look like:
+❌ And an unstable selector could be:
 
 ```json
 "select": ".container:first-child > div",
