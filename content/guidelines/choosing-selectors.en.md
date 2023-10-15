@@ -8,7 +8,7 @@ Selectors are used in Open Terms Archive declarations to specify the parts of 
 
 ## What are selectors
 
-Selectors are used in the [`select`](../contributing-terms#select) and [`remove`](../contributing-terms#remove) keys of an Open Terms Archive declaration.
+Selectors are used in the [`select`](../../contributing-terms#select) and [`remove`](../../contributing-terms#remove) keys of an Open Terms Archive declaration.
 
 The “selectors” referred to are defined by the [W3C Selectors standard](https://www.w3.org/TR/selectors/), more commonly known as “CSS Selectors”.
 
