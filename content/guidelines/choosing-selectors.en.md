@@ -18,24 +18,40 @@ The design of web pages containing terms can evolve over time, leading to change
 
 It is possible to reduce the frequency of human intervention on the selectors by choosing some that are least likely to become obsolete even when changes occur on the document structure.
 
-## How to choose stable selectors?
+## Guidelines
 
 While there is no single right way to choose stable selectors, as it remains intrinsically subjective and dependent on the document itself, following the guidelines below is likely to yield stable selectors.
 
-### Choose selectors
+### Simple
 
-- Which are the simplest possible, for example `#pageContent` or `[role="main"]`. You could find helpful to determine the weight of their [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity), for example `#article` (with 1-0-0 specificity) is better than `.bodyClass .sectionClass .parentClass [id="article"]` (with 0-4-0 specificity)
-- Whose names are representative of the parts they select. For example: `.tos` or `#legal-notice`. Indeed, we can assume that no matter which changes are made to the design of the page, this type of selector is most likely to still select the desired content.
+Prefer [simple selectors](https://www.w3.org/TR/selectors/#simple) over compound ones, and compound ones over [combinator](https://www.w3.org/TR/selectors/#combinators) ones, as they are more readable and make less assumptions on future changes.
 
-### Keep in mind
+In particular, avoid deep nesting of elements and pseudo-classes. Such selectors rely not only on the targeted content structure but also on the content around it. The likelihood that at least one block in the tree changes on a page update increases, making the selector brittle.
 
-- Using [range selectors](https://docs.opentermsarchive.org/contributing-terms/#range-selectors) enables to select content that starts in one block and ends in another block that are not in the same tree.
+#### Examples
 
-### Avoid
+- `#content` or `[role="main"]` are better than `#content .inner` or `[role="main"] > .content-block`.
+- `main > div > #article > .tos` is a bad selector because of deep nesting.
+- `div:nth-child(2)` is a bad selector because of the usage of a pseudo-class.
 
-- Class names being or containing series of alphanumeric characters, such as `.dez68h` or `.toss-cpoxw7`. Those are most likely to be generated and to change on the next page update.
-- Deep nesting of elements, such as `main > div > #article > .tos`. The likelihood that at least one block in the tree changes on a page update increases, making the selector brittle.
-- Pseudo-classes, such as `div:nth-child(2)`. Such selectors rely not only on the targeted content structure but also on the content around it, making the selector brittle.
+### Higher specificity
+
+Prefer selectors with higher [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity), as they are less likely to select other content when the rest of the document changes.
+
+#### Examples
+
+- `#article .section` (with 1-1-0 specificity) is better than `body .section .tos` (with 0-2-1 specificity).
+
+### Named
+
+Prefer selectors whose names are representative of the parts they select, as they are evidence of an intention by the service provider, and thus more likely to stay valid through design changes.
+
+Conversely, avoid class names being or containing series of alphanumeric characters. Those are most likely to be generated and to change on the next page update.
+
+#### Examples
+
+- `.tos` or `#legal-notice` are better than `main` or `.content`.
+- `.dez68h` or `.tos-cpoxw27` are bad selectors because they are likely automatically generated.
 
 ## Strategies
 
@@ -46,6 +62,10 @@ If in doubt about a selector, prefer making a wide selection and then removing t
 ### “Good enough”
 
 Do not spend too much time trying to find the perfect selectors. Reviewers, in particular, will often have to conclude to “good enough” where their preference or the other authors are equally valid, since assumptions are made about the website DOM structure and how it may change in the future. It is more important to regularly review versions and react quickly to correct selectors than to find the perfect ones up front.
+
+### Use range selectors
+
+[Range selectors](../contributing-terms#range-selectors) enable to select content that starts in one block and ends in another block that are not in the same tree. While they are more complex than element selectors, it is preferable to use a range selector whose start and end abide by the guidelines above than to use a bad plain selector.
 
 ## Examples
 
