@@ -64,9 +64,9 @@ Your focus should be on two aspects: accuracy and quality.
 
 ## Merging the Pull Request
 
-Status checks are required to pass before merging can take place. This ensures that the Continuous Integration (CI) is completed successfully before merging the changes into the protected branch (main).
-An additional restriction requires branches to be up to date before merging. This ensures that the pull requests have been tested with the latest code before merging in the protected branch. This usually appears as a "This branch is out-of-date with the base branch" warning on a pull request.
-You can fix this using the Github interface, by clicking on the arrow button next to your `Update Branch` button, and select "Update with Rebase".
+Status checks are required to pass before merging can take place. This ensures that automated tests ( through “Continuous Integration”, or CI) confirm the contribution will be readable by the Open Terms Archive engine.
+An additional restriction requires branches to be up to date before merging. This ensures that the contribution has been tested with the latest version of the collection. This appears as a _“This branch is out-of-date with the base branch”_ warning on a pull request.
+You can fix this using the Github interface, by clicking on the arrow button next to the `Update Branch` button, and select "Update with Rebase".
 
 ## How To Review Pull Requests that Update Declarations
 
