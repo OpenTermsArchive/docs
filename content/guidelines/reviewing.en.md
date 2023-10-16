@@ -63,7 +63,6 @@ Your focus should be on two aspects: accuracy and quality.
 9. When you confirm that the term contribution has been made to the correct collection, proceed to add a review.
 10. Merge the contribution
 
-
 ## How To Review Pull Requests that Update Declarations
 
 When some terms can no longer be tracked by the Open Terms Archive engine, an issue is created in the collection repository. This issue contains the details on why the document cannot be tracked and the date the challenge was encountered.
