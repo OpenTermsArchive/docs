@@ -41,6 +41,7 @@ Open Terms Archive maintainers should not need to be trusted by users more than 
 - Always keep an untouched snapshot of the source documents.
 - Use cryptographic signatures to ensure the database can be authenticated.
 - Enable terms collection to be replicated by anyone.
+- Support duplication across collections as this increases the resilience of the network. It will be up to reusers to decide which source they prefer in case of divergence.
 
 ## 3. Obtain documents like a user would
 
