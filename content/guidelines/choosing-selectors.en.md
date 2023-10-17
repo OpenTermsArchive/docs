@@ -77,7 +77,7 @@ Do not spend too much time trying to find the perfect selectors. Reviewers, in p
 
 ## Examples
 
-### Example 1
+### Simplicity and naming
 
 For the following HTML code:
 
@@ -104,22 +104,31 @@ For the following HTML code:
 or
 
 ```json
-"select": ".tos_title, #tos_content"
+"select": [
+  ".tos_title",
+  "#tos_content"
+]
 ```
 
 ❌ Some brittle selectors could be:
 
 ```json
-"select": ".clearfix, ._3zdf8p"
+"select": [
+  ".clearfix",
+  "._3zdf8p"
+]
 ```
 
 or
 
 ```json
-"select": "#globalContainer > div:first-child, div#tos_content > div"
+"select": [
+  "#globalContainer > div:first-child",
+  "div#tos_content > div"
+]
 ```
 
-### Example 2
+### Range selectors
 
 For the following HTML code:
 
