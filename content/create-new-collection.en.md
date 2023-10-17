@@ -43,6 +43,12 @@ These settings ease the whole contribution process.
 - In the “Branches” section: add a branch protection rule for `main`, check “Require status checks to pass before merging” and add `validate_modified_declarations` and `validate_schema` as required status checks.
 - In the “Actions” section, in the “General” submenu: select “Allow all actions and reusable workflows”.
 
+#### Remove default labels
+
+Issues labels will be added by the engine as problems are encountered when tracking. The default labels offered by GitHub, such as `question` or `wontfix`, are relevant for software development but less so for the process prescribed by Open Terms Archive.
+
+- Remove all default labels.
+
 #### Update README
 
 - Update the README file with proper metadata: topic, maintainers, jurisdictions, languages…
