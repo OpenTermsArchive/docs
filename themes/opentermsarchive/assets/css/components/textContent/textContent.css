@@ -8,7 +8,11 @@
     margin-bottom: var(--mL);
   }
 
-  & p, & .highlight {
+  & details[open] summary {
+    margin-bottom: var(--mXS);
+  }
+
+  & p, & .highlight, & details {
     margin-bottom: var(--mXS);
 
     &:last-child {
@@ -100,15 +104,17 @@
   & ul + h2,
   & ol + h2,
   & blockquote + h2,
-  & .highlight + h2 {
+  & .highlight + h2,
+  & details + h2 {
     margin-top: var(--m2XL);
   }
 
   & p + h3,
   & ul + h3,
   & ol + h3,
-  & blockquote + h3 ,
-  & .highlight + h3 {
+  & blockquote + h3,
+  & .highlight + h3, 
+  & details + h3 {
     margin-top: var(--mXL);
   }
 
@@ -116,7 +122,8 @@
   & ul + h4,
   & ol + h4,
   & blockquote + h4,
-  & .highlight + h4 {
+  & .highlight + h4,
+  & details + h4 {
     margin-top: var(--mL);
   }
 
@@ -124,7 +131,8 @@
   & ul + h5,
   & ol + h5,
   & blockquote + h5,
-  & .highlight + h5 {
+  & .highlight + h5,
+  & details + h5 {
     margin-top: var(--mL);
   }
 
