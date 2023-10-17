@@ -219,3 +219,7 @@
 .textContent__hasNoMarginTop {
   margin-top: 0;
 }
+
+summary {
+  cursor: pointer;
+}
