@@ -93,6 +93,12 @@ When you spot an error in a contribution, instead of asking the author to implem
 
 In some special cases, the correction may have to do with the service name. Such changes modify the branch name, hence, creating a new pull request instead of updating the initial pull request as their names are now different. In any case, it's always important to let the contributor know about any changes or corrections you make to their contribution.
 
+## Merging the Pull Request
+
+Status checks are required to pass before merging can take place. This ensures that automated tests (through “Continuous Integration”, or CI) confirm the contribution will be readable by the Open Terms Archive engine.
+An additional restriction requires branches to be up to date before merging. This ensures that the contribution has been tested with the latest version of the collection. This appears as a _“This branch is out-of-date with the base branch”_ warning on a pull request.
+You can fix this using the Github interface, by clicking on the arrow button next to the “Update Branch” button, and select “Update with Rebase”.
+
 ## Contributions FAQ
 
 1. **Why is it important to use simple CSS selectors for selecting and removing significant and insignificant parts respectively?** It is important to use simple selectors to have greater stability. The more simple the selectors are the more stable the tracking will be over time as content is updated.
