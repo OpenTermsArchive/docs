@@ -174,3 +174,40 @@ For the following HTML code:
 ```json
 "select": ".container:first-child > div",
 ```
+
+### Letting go of non-binding content
+
+For the following HTML code:
+
+```html
+<body>
+  <p>Terms and Conditions of Use </p>
+  <p class="af23jf45">This one weird trick will make your belly thinner! Click here!</p>
+  <div id="inner-container">
+    <p>Deserunt ea reprehenderit esse dolor adipisicing consectetur aliquip ex magna consequat.<p>
+    <p>...</p>
+  </div>
+  <p class="xlms051">For a limited time only, get 50% off our yearly plans!</div>
+  <p>Last update: 11 January 2013</p>
+</body>
+```
+
+✅ A durable selector could be:
+
+```json
+"select": [
+  "#inner-container"
+]
+```
+
+❌ And a brittle selector could be:
+
+```json
+"select": [
+  "body"
+],
+"remove": [
+  ".af23jf45",
+  ".xlms051"
+]
+```
