@@ -393,13 +393,12 @@ The default configuration can be found in `config/default.json`. The full refere
       "sendWarnings": "Boolean. Set to true to also send email in case of warning",
     }
   },
-  "tracker": { // Tracking mechanism to create GitHub issues when terms content is inaccessible
+  "reporter": { // Reporter mechanism to create GitHub issues when terms content is inaccessible
     "githubIssues": {
-      "repository": "GitHub repository where to create isssues",
-      "label": {
-        "name": "Label to attach to bot-created issues. This specific label will be created automatically in the target repository",
-        "color": "The hexadecimal color code for the label, without the leading #",
-        "description": "A short description of the label"
+      "repositories": {
+        "declarations": "GitHub repository where to create issues; expected format: <owner>/<repository>",
+        "versions": "GitHub repository of versions associated with the declarations; expected format: <owner>/<repository>",
+        "snapshots": "GitHub repository of snapshots associated with the declarations; expected format: <owner>/<repository>"
       }
     }
   },
