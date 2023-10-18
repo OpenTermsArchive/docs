@@ -17,7 +17,7 @@ This document presents practical guidelines, is edited collaboratively and is no
 
 ### Shared Terms
 
-- If you want to investigate the terms of a service, which happens to be shared with another service from the same parent company,be specific in naming the exact service you want to track. For instance, you may find that a company like Github uses the same terms for its code hosting and Github Pilot. While this does not mean that the terms for GitHub (code hosting) are GitHub Copilot's only terms, it does mean that these two services have terms that are represented in the same document. In tracking terms for one of these services, say Github pilot, be specific in naming it as the service you want to track. Asuch, if GitHub was to introduce dedicated terms for each of these services in the future, their locations can be updated without having to create new terms since the service existed before already.
+- If you want to add the terms of a service, which happens to be shared with another service from the same parent company,be specific in naming the exact service you want to track. For instance, you may find that a company like Github uses the same terms for its code hosting and Github Pilot. While this does not mean that the terms for GitHub (code hosting) are GitHub Copilot's only terms, it does mean that these two services have terms that are represented in the same document. In tracking terms for one of these services, say Github pilot, be specific in naming it as the service you want to track. Asuch, if GitHub was to introduce dedicated terms for each of these services in the future, their locations can be updated without having to create new terms since the service existed before already.
 
 - - -
 
