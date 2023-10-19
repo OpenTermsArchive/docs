@@ -15,9 +15,9 @@ This document presents practical guidelines, is edited collaboratively and is no
 - If it is still ambiguous, rely on Wikipedia as a source. However, make sure to differentiate the _service_ from the _provider_ company's name. Example with “DeviantArt”, a service (which used to be stylized deviantArt until 2014) by the limited liability company “deviantArt”:
 ![deviantArt search](https://user-images.githubusercontent.com/222463/91416936-5b98f500-e850-11ea-80fe-a50be27356e3.png)
 
-### Shared Terms
+### Terms used by several services
 
-- If you want to add the terms of a service, which happens to be shared with another service from the same parent company,be specific in naming the exact service you want to track. For instance, you may find that a company like Github uses the same terms for its code hosting and Github Pilot. While this does not mean that the terms for GitHub (code hosting) are GitHub Copilot's only terms, it does mean that these two services have terms that are represented in the same document. In tracking terms for one of these services, say Github pilot, be specific in naming it as the service you want to track. Asuch, if GitHub was to introduce dedicated terms for each of these services in the future, their locations can be updated without having to create new terms since the service existed before already.
+- If you want to add terms which happen to be shared with another service from the same parent company, be specific in naming the exact service you want to track. For instance, you may find that a company like Github uses the same terms for its code hosting and its AI assistant. While this does not mean that the terms for GitHub (code hosting) are the only terms of GitHub Copilot (assistant), it does mean that these two services have terms that are represented in the same document. In tracking terms for one of these services, say Github Copilot, be specific in naming it as the service you want to track. This way, if GitHub was to introduce dedicated terms for each of these services in the future, their locations can be updated without having to create new terms since the service already existed before.
 
 - - -
 
