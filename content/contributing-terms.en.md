@@ -70,7 +70,7 @@ Once you have the [service name](#service-name) and the [service ID](#service-id
 }
 ```
 
-Within the `documents` JSON object, we will now declare terms.
+Within the `documents` JSON object, you will now declare terms.
 
 - - -
 
@@ -393,40 +393,13 @@ If some parts of the source documents are repeated, they can be factorised. For 
 
 #### Terms type
 
-Great, your terms declaration is now almost complete! We simply need to write it under the appropriate terms type in the `documents` JSON object within the service declaration. In order to distinguish between the many terms that can be associated with a service and enable cross-services comparison of similar terms, we maintain a unique list of terms types.
-You can find more information and the list of allowed values for the `<terms type>` key in the [dedicated repository](https://github.com/OpenTermsArchive/terms-types).
+Great, your terms declaration is now almost complete! You simply need to write it under the appropriate terms type in the `documents` JSON object within the service declaration.
 
-The types might not always match the exact name given by the service provider. For example, some providers might call “Terms and Conditions” or “Terms of Use” what some others call “Terms of Service”. The terms type does not have to match the exact name, it only has to match the _commitment_ that is taken.
+In order to distinguish between the many terms that can be associated with a service and enable cross-services comparison of similar terms, we maintain a unique list of of allowed values for terms types in the [dedicated repository](https://github.com/OpenTermsArchive/terms-types).
 
-If the terms you want to add match no existing type, you can [suggest a new one](https://github.com/OpenTermsArchive/engine/discussions/categories/document-types).
+Please note, the terms type may differ from the exact name provided by the service, but it should align with the underlying commitment. For example, some providers might call “Terms and Conditions” or “Terms of Use” what some others call “Terms of Service”.
 
-##### Defining new terms types
-
-Before defining a new terms type, please note that wanting to multiply terms types is usually a symptom that the service needs to be broken down into several services. For example, rather than considering that Facebook has several specific variations of “Terms of Service”, it is more accurate to declare “Terms of Service” for the services “Facebook” (social network service for the general public), “Facebook Ads” (ads service for advertisers) and “Facebook Payments” (payment service for developers). On the other hand, the “Google Ads” service is a commercial suite acting as an umbrella for several pieces of software that all share the same terms, and there is thus no need to separate each of them. See practical guidelines for [provider prefixing](../guidelines/declaring#provider-prefixing).
-
-In order to guide usage and disambiguate synonyms, we characterise each terms type along three dimensions of the commitment that is being taken in it:
-
-1. The `writer` of the document;
-2. the targeted `audience`;
-3. the `object` of the commitment.
-
-A terms type thus looks like:
-
-```json
-{
-  …
-  "Privacy Policy": {
-    "commitment": {
-      "writer": "service provider",
-      "audience": "end user",
-      "object": "personal data"
-    }
-  },
-  …
-}
-```
-
-Please note that we do not want [service-specific types](https://github.com/OpenTermsArchive/engine/pull/89) such as “Twitter Privacy Policy”. Terms types should be generic, even if only one service uses them at a given time. Otherwise, duplication occurs and [important efforts](https://github.com/OpenTermsArchive/engine/pull/88) have to be deployed to deduplicate. The triptych form “writer / audience / object” is precisely used to avoid this sort of duplication.
+If the terms you want to add don't match an existing type, you can [suggest a new one](https://github.com/OpenTermsArchive/terms-types/blob/main/CONTRIBUTING.md).
 
 ### Testing your declaration
 
