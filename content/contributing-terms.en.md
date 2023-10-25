@@ -512,3 +512,21 @@ export const removeSharesButton = [
   },
 ];
 ```
+
+### Handling terminated service
+
+If the service provider terminates a service, the associated terms will become unavailable. To apply a service closure in Open Terms Archive you must:
+
+1. Remove declared `<terms type>` in the declarations file. Hereinafter, an example of a service declaration where `documents` key has been emptied of `<terms type>` tracked 
+```json
+{
+  "name": "<service name>",
+  "documents": {}
+}
+```
+
+2. Fill the associated history file, as it is [documented](#terms-declaration-history).
+
+### Renaming a service
+
+If the service provider rename a service, the associated terms will become obsolete because it won't bear the new service name. To apply a service renaming, first proceed as a [terminated service](#handling-terminated-service) and then make a completely new [declaration](#declaring-a-new-service) of service with the new service name.
