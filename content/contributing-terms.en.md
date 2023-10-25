@@ -515,17 +515,17 @@ export const removeSharesButton = [
 
 ### Handling a terminated service
 
-If the service provider stops offering a service, the associated terms will become unavailable. To mark that service termination in Open Terms Archive, move all the terms of the service to its history:
+If the service provider stops offering a service, the associated terms will become unavailable. To mark that service termination in Open Terms Archive:
 
-1. Update the declaration to stop tracking all terms, by removing all the `<terms type>` entries from the  `documents` key in the declaration:
+1. Move the documents declaration to the service [history file](#terms-declaration-history).
+
+2. Update the declaration to stop tracking all terms, by removing all the `<terms type>` entries from the  `documents` key in the declaration:
 ```json
 {
   "name": "<service name>",
   "documents": {}
 }
 ```
-
-2. Move the documents declaration to the service [history file](#terms-declaration-history).
 
 ### Renaming a service
 
