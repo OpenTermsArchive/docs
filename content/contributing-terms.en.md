@@ -513,11 +513,11 @@ export const removeSharesButton = [
 ];
 ```
 
-### Handling terminated service
+### Handling a terminated service
 
-If the service provider terminates a service, the associated terms will become unavailable. To apply a service closure in Open Terms Archive you must:
+If the service provider stops offering a service, the associated terms will become unavailable. To mark that service termination in Open Terms Archive, move all the terms of the service to its history:
 
-1. Remove declared `<terms type>` in the declarations file. Hereinafter, an example of a service declaration where `documents` key has been emptied of `<terms type>` tracked 
+1. Update the declaration to stop tracking all terms, by removing all the `<terms type>` entries from the  `documents` key in the declaration:
 ```json
 {
   "name": "<service name>",
@@ -525,8 +525,8 @@ If the service provider terminates a service, the associated terms will become u
 }
 ```
 
-2. Fill the associated history file, as it is [documented](#terms-declaration-history).
+2. Move the documents declaration to the service [history file](#terms-declaration-history).
 
 ### Renaming a service
 
-If the service provider rename a service, the associated terms will become obsolete because it won't bear the new service name. To apply a service renaming, first proceed as a [terminated service](#handling-terminated-service) and then make a completely new [declaration](#declaring-a-new-service) of service with the new service name.
+We consider that a service provider renaming a service (for example, `Twitter` to `X`) is akin to terminating the previous service and opening a new one. Therefore, to apply a service renaming, open a pull request that both [terminates the previous service](#handling-terminated-service) and adds a new [service declaration](#declaring-a-new-service) with the new service name. You can reuse the `documents` part of the declaration, but should double-check that the selectors and URLs still match, as a service rename is most often accompanied by a new page layout, a new domain name, and sometimes entirely new terms.
