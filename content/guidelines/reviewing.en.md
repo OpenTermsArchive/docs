@@ -103,7 +103,7 @@ If the contribution comes from a fork rather than from the bot, the checks will 
 
 1. Ensure you have the latest version of the code with `git checkout main && git pull`.
 2. Create a new branch, preferably with the name of the service to be added: `git checkout -b <add_service_name_terms_type>`.
-3. Pull the contribution from the fork: `git pull github.com/<contributor_name>/<collection_name> <fork_branch_name>:<local_branch_name>`.
+3. Pull the contribution from the fork: `git pull https://github.com/<contributor_name>/<collection_name> <fork_branch_name>:<local_branch_name>`.
 4. Push your branch to the original collection repository: `git push`.
 
 This should trigger the CI, as the checked-in code is now pushed by a trusted author. And since the commit IDs are the same in the fork and in the original branch, the status checks should update in the pull request. Remember to delete the local branch once the pull request has been merged!
