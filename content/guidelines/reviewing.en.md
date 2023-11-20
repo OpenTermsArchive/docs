@@ -91,10 +91,26 @@ When you spot an error in a contribution, instead of asking the author to implem
 
 In some special cases, the correction may have to do with the service name. Such changes modify the branch name, hence, creating a new pull request instead of updating the initial pull request as their names are now different. In any case, it's always important to let the contributor know about any changes or corrections you make to their contribution.
 
-## Merging the Pull Request
+## Running Tests
 
 Status checks are required to pass before merging can take place. This ensures that automated tests (through “Continuous Integration”, or CI) confirm the contribution will be readable by the Open Terms Archive engine.
-An additional restriction requires branches to be up to date before merging. This ensures that the contribution has been tested with the latest version of the collection. This appears as a _“This branch is out-of-date with the base branch”_ warning on a pull request.
+
+These tests should run automatically. However, under some circumstances, the tests might need to be triggered manually. To that end, navigate to the “Actions” tab of the collections repository, and look for the name of the contribution where tests are not run. Once located in the list, click on the entry name, and click on “Re-run all jobs” at the top right.
+
+### Running Tests From a Fork
+
+If the contribution comes from a fork rather than from the bot, the checks will not appear in the Actions tab, as they cannot be run from a different repository. In order to run checks from a fork, you need to create a new branch in the collection repository, with the contents of the branch in the fork. This operation can only be done through the command-line. Assuming you already have cloned the collection repository:
+
+1. Ensure you have the latest version of the code with `git checkout main && git pull`.
+2. Create a new branch, preferably with the name of the service to be added: `git checkout -b <add_service_name_terms_type>`.
+3. Pull the contribution from the fork: `git pull github.com/<contributor_name>/<collection_name> <fork_branch_name>:<local_branch_name>`.
+4. Push your branch to the original collection repository: `git push`.
+
+This should trigger the CI, as the checked-in code is now pushed by a trusted author. And since the commit IDs are the same in the fork and in the original branch, the status checks should update in the pull request. Remember to delete the local branch once the pull request has been merged!
+
+## Merging the Pull Request
+
+Beyond status checks, additional restriction requires branches to be up to date before merging. This ensures that the contribution has been tested with the latest version of the collection. This appears as a _“This branch is out-of-date with the base branch”_ warning on a pull request.
 You can fix this using the Github interface, by clicking on the arrow button next to the “Update Branch” button, and select “Update with Rebase”.
 
 ## Contributions FAQ
