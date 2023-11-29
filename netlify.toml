@@ -3,7 +3,7 @@
 
 # All deploys generated from a pull/merge request will inherit these settings.
 [context.deploy-preview]
-  command = "hugo --minify -b $DEPLOY_PRIME_URL"
+  command = "hugo --minify -b $DEPLOY_PRIME_URL && npm run jsdoc"
 
 [context.deploy-preview.environment]
   HUGO_ENV = "preview"
