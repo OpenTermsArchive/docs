@@ -308,7 +308,7 @@ The `fetch` module gets the MIME type and content of a document from its URL
 import fetch from '@opentermsarchive/engine/fetch';
 ```
 
-Documentation on how to use `fetch` is provided [as JSDoc](https://docs.opentermsarchive.org/jsdoc/).
+Documentation on how to use `fetch` is provided [as JSDoc](./jsdoc/index.html).
 
 ##### Headless browser management
 
@@ -334,7 +334,7 @@ The `extract` module transforms HTML or PDF content into a Markdown string accor
 import extract from '@opentermsarchive/engine/extract';
 ```
 
-The `extract` function documentation is available [as JSDoc](https://docs.opentermsarchive.org/jsdoc/).
+The `extract` function documentation is available [as JSDoc](./jsdoc/index.html).
 
 #### `SourceDocument`
 
