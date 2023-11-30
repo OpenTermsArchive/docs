@@ -106,7 +106,9 @@ If the contribution comes from a fork rather than from the bot, the checks will 
 3. Pull the contribution from the fork: `git pull https://github.com/<contributor_name>/<collection_name> <branch_name_in_the_fork>:add_<service_name>_<terms_type>`. The branch name used in the fork can be found in the pull request page, right under the title.
 4. Push your branch to the original collection repository: `git push origin add_<service_name>_<terms_type>`.
 
-This should trigger the CI, as the checked-in code is now pushed by a trusted author. And since the commit IDs are the same in the fork and in the original branch, the status checks should update in the pull request. Remember to delete the local branch once the pull request has been merged!
+As you did not push to the source branch but instead created a copy of that branch in the collection repository, the pull request itself will not mention a new push, and GitHub will suggest that you create a new pull request. In order to keep pull request authorship clear for contributors, please keep the original pull request instead: since the checked-in code is now pushed by a trusted author, the CI should run. And since the commit IDs are the same in the fork and in the original branch, the status checks will update in the original pull request when you refresh the page, without the need to create a new pull request.
+
+Once the pull request has been merged, delete the copy you made of the branch with `git push origin -d add_<service_name>_<terms_type>`.
 
 ## Merging the Pull Request
 
