@@ -91,6 +91,18 @@ When you spot an error in a contribution, instead of asking the author to implem
 
 In some special cases, the correction may have to do with the service name. Such changes modify the branch name, hence, creating a new pull request instead of updating the initial pull request as their names are now different. In any case, it's always important to let the contributor know about any changes or corrections you make to their contribution.
 
+### Editing a Service ID
+
+When contributing to the project, reviewers may need to modify the Service ID of a service that is being added for tracking. This is often necessary when the service being tracked is in a language other than English, such as Chinese or French. In these cases, the Service ID usually reflects the transliteration of the service name (written in the native language). The [documentation](../../contributing-terms#service-id) provides more information on this. It is important to note that the contributor can be very crucial in providing an accurate transliteration of the service name especially if the reviewer does not know the service's native language.
+
+Since the Service ID is used as the file name of the JSON file associated with the service, it is necessary to change the file name to reflect the transliteration. Here are the steps to follow:
+
+1. Open the pull request associated with the contribution and service.
+2. Navigate to the "Files changed" tab of the pull request. Here, you will see the files being changed by the contribution, including the JSON file of the service.
+3. To edit the file, click on the three dots button on the right side of the file name and select "Edit file". This will open the file in the Github editor.
+4. From here, you can change the file name from the current Service ID to the new Service ID, which represents the transliteration of the service name.
+5. Once you have made the changes, commit them and review the pull request as usual. If everything checks out, you can merge the pull request.
+
 ## Running Tests
 
 Status checks are required to pass before merging can take place. This ensures that automated tests (through “Continuous Integration”, or CI) confirm the contribution will be readable by the Open Terms Archive engine.
