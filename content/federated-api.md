@@ -3,7 +3,7 @@ title: "Federated API"
 weight: 7
 ---
 
-# Federated API
+# Federated API [Beta]
 
 Open Terms Archive is a decentralised system that tracks collections of services' terms across multiple servers. Each collection operates its [own API](/#api), and the federated API simplify searching across these collections, fostering collaboration with external applications. This provides a simplified method for discovering service terms within the Open Terms Archive decentralized system.
 

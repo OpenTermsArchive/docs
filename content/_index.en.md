@@ -284,7 +284,7 @@ The server `<port>` and `<basePath>` are defined in the [configuration](#configu
 
 > For example, with the default configuration, the list of services can be found at [`http://localhost:3000/api/v1/services`](http://localhost:3000/api/v1/services).
 
-## API
+## API [Beta]
 
 Open Terms Archive collections can be explored locally over a [Node.js](#nodejs-api), or remotely over a [Web API](#web-api). As Open Terms Archive is decentralised, each [instance](#instances) embarks its own API. The documentation relevant to the specific version of the engine on that instance is provided on that instance itself.
 
