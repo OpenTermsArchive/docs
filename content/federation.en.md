@@ -1,17 +1,12 @@
 ---
-title: "Governance"
+title: Federation
 weight: 6
 ---
 
-# Governance
+# Federation
 
-## Instances
-
-### Creating an instance
-
-Each **instance** has an **administrator** who takes responsibility for ensuring that the **engine** is up to date and works properly, and **maintainers** who take responsibility for ensuring the quality of the resulting **versions**.
-
-All of these roles can be either volunteer or funded by **sponsors**. Anyone is free to create their own **collection** using their own **instance**.
+Open Terms Archive is a decentralised system. It aims at enabling any entity to track terms on its own. To that end, the Open Terms Archive engine can be run on any server, thus making it a dedicated instance.
+In order to maximise discoverability, collaboration and political power, public collections are federated within a single ecosystem. This makes their data mutually discoverable and enables mutualising effort.
 
 ### Referencing an instance
 
