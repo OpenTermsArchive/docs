@@ -1,6 +1,5 @@
 ---
-title: "Creating a collection"
-weight: 2
+title: Creating a collection
 ---
 
 # Creating a collection

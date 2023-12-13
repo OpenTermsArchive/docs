@@ -99,7 +99,7 @@ Such a dataset can be generated from **versions** alone. If **snapshots** and **
 This documentation describes how to execute the **engine** independently from any specific **instance**. For other use cases, other parts of the documentation could be more relevant:
 
 - to contribute **declarations** to an existing **instance**, see [how to contribute terms]({{< relref "contributing-terms" >}});
-- to create a new **collection**, see [collection creation]({{< relref "create-new-collection" >}}) documentation;
+- to create a new **collection**, see [collection creation]({{< relref "collections/create" >}}) documentation;
 - to create a new public **instance**, see the [governance]({{< relref "governance" >}}) documentation.
 
 ### Requirements
