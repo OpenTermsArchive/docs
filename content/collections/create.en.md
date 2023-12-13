@@ -6,13 +6,7 @@ title: Creating a collection
 
 ## Define the necessary metadata
 
-First of all, define the scope and metadata of the collection:
-- Concise description of the collection topic (examples: `Largest global social media`, `Most used social media in France`, `Dating apps`, `Platforms providing services to businesses`…)
-- Collection name (3 words maximum, examples: `Platform Governance Archive`, `France Élections`, `Dating`, `P2B Compliance Assessment`…)
-- Collection ID (examples: `pga`, `France-elections`, `dating`, `p2b-compliance`…)
-- Terms language (examples: `English`, `French`, `All EU languages`…)
-- Terms jurisdiction (examples: `EU`, `France`, `EEA`, `USA`, `global`…)
-- Collection maintainer entity (name, logo, url)
+First of all, define the [metadata]({{< relref "collections/metadata" >}}) and [governance]({{< relref "collections/governance" >}}) of the collection.
 
 ## Create repositories
 
