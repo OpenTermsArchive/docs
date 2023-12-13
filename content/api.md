@@ -88,3 +88,7 @@ This API is offered as a preview, based on a first use case [defined](https://gi
 ### Source code
 
 The codebase for the Federated API is available on [`github.com/OpenTermsArchive/federated-api`](https://github.com/OpenTermsArchive/federated-api).
+
+### Deploying
+
+Deployment recipes are available in a [dedicated repository](https://github.com/OpenTermsArchive/deployment). Look at the [Federated API section](https://github.com/OpenTermsArchive/deployment#federated-api-application) on the README to know how to deploy the API.
