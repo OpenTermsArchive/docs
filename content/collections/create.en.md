@@ -1,25 +1,19 @@
 ---
-title: "Creating a collection"
-weight: 2
+title: Creating a collection
 ---
 
 # Creating a collection
 
 ## Define the necessary metadata
 
-First of all, define the scope and metadata of the collection:
-- Concise description of the collection topic (examples: `Largest global social media`, `Most used social media in France`, `Dating apps`, `Platforms providing services to businesses`…)
-- Collection name (3 words maximum, examples: `Platform Governance Archive`, `France Élections`, `Dating`, `P2B Compliance Assessment`…)
-- Collection ID (examples: `pga`, `France-elections`, `dating`, `p2b-compliance`…)
-- Terms language (examples: `English`, `French`, `All EU languages`…)
-- Terms jurisdiction (examples: `EU`, `France`, `EEA`, `USA`, `global`…)
-- Collection maintainer entity (name, logo, url)
+First of all, define the [metadata]({{< relref "collections/metadata" >}}) and [governance]({{< relref "collections/governance" >}}) of the collection.
 
 ## Create repositories
 
 ### Declarations
 
 Create the collection declarations repository by using the [`demo-declarations`](https://github.com/OpenTermsArchive/demo-declarations) repository as template:
+
 - Go to the [`demo-declarations` repository](https://github.com/OpenTermsArchive/demo-declarations)
 - Click on the “Use this template” dropdown and select “Create a new repository”
 - Set the repository name to `<collection_id>-declarations`. For example: `pga-declarations`.
@@ -29,7 +23,7 @@ Create the collection declarations repository by using the [`demo-declarations`]
 
 - Click on the little cogwheel icon next to the “About” block.
 - Set the description to “Declarations for `<collection_name>`. Maintained by `<maintainer>`.”
-- Set website: https://opentermsarchive.org
+- Set website to `https://opentermsarchive.org`, or any other relevant dedicated website.
 - Add the following tags: `terms-of-service`, `terms-of-service-agreements`, `terms-and-conditions`, `open-terms-archive`.
 - Uncheck “Releases”, “Packages” and “Deployments”.
 
@@ -38,20 +32,24 @@ Create the collection declarations repository by using the [`demo-declarations`]
 These settings ease the whole contribution process.
 
 In “General → Features”:
+
 - Disable “Wikis”.
 - Disable “Projects”.
 
 In “General → Pull Requests”:
+
 - Check only the “Allow squash merging” option, and set it to “Default to pull request title and commit details”.
 - Enable “Allow auto-merge”.
 - Enable “Automatically delete head branches”.
 
 In “Branches”:
+
 - Add a branch protection rule for `main`.
   - Check “Require a pull request before merging”, check "Require approvals" and set “Required number of approvals before merging” to 1.
   - Check “Require status checks to pass before merging” and add `validate_modified_declarations` and `validate_schema` as required status checks.
 
 In “Actions → General → Actions permissions”:
+
 - Select “Allow all actions and reusable workflows”.
 
 #### Remove default labels
@@ -67,6 +65,7 @@ Issues labels will be added by the engine as problems are encountered when track
 ### Snapshots
 
 Create the snapshots repository by using the [`demo-snapshots` repository](https://github.com/OpenTermsArchive/demo-snapshots) as template:
+
 - Go to the [`demo-snapshots` repository](https://github.com/OpenTermsArchive/demo-snapshots)
 - Click on the “Use this template” dropdown and select “Create a new repository”
 - Set the repository name to `<collection_id>-snapshots`.
@@ -75,7 +74,7 @@ Create the snapshots repository by using the [`demo-snapshots` repository](https
 #### Fill the “About” section
 
 - Set the description: “Documents snapshots for `<collection_name>`. Maintained by `<maintainer>`.”
-- Set website: https://opentermsarchive.org
+- Set website to `https://opentermsarchive.org`.
 - Add the following tags: `terms-of-service`, `terms-of-service-agreements`, `terms-and-conditions`, `open-terms-archive`.
 - Uncheck “Releases”, “Packages” and “Deployments”.
 
@@ -84,14 +83,17 @@ Create the snapshots repository by using the [`demo-snapshots` repository](https
 These settings aim at minimising the otherwise overwhelming amount of information and click targets.
 
 In “General → Features”:
+
 - Uncheck “Wikis”, “Issues”, “Discussions” and “Projects”.
 
 In “Actions → General → Actions permissions”:
+
 - Select “Disable actions”.
 
 ### Versions
 
 Create the versions repository by using the [`demo-versions` repository](https://github.com/OpenTermsArchive/demo-versions) as template:
+
 - Go to the [`demo-versions` repository](https://github.com/OpenTermsArchive/demo-versions)
 - Click on the “Use this template” dropdown and select “Create a new repository”
 - Set the repository name to `<collection_id>-versions`.
@@ -100,7 +102,7 @@ Create the versions repository by using the [`demo-versions` repository](https:/
 #### Fill the “About” section
 
 - Set the description: “Terms versions for `<collection_name>`. Maintained by `<maintainer>`.”
-- Set website: https://docs.opentermsarchive.org/navigate-history/
+- Set website to `https://docs.opentermsarchive.org/navigate-history/`
 - Add the following tags: `terms-of-service`, `terms-of-service-agreements`, `terms-and-conditions`, `open-terms-archive`.
 - Uncheck “Packages” and “Deployments”.
 
@@ -109,18 +111,18 @@ Create the versions repository by using the [`demo-versions` repository](https:/
 These settings aim at minimising the otherwise overwhelming amount of information and click targets.
 
 In “General → Features”:
+
 - Uncheck “Wikis”, “Issues”, “Discussions” and “Projects”.
 
 In “Actions → General → Actions permissions”:
+
 - Select “Disable actions”.
 
 #### Update README
 
 - Update the README file with proper metadata.
 
-- - -
-
-## Set up GitHub maintenance teams
+## Set up GitHub teams
 
 For collections to be included in the Open Terms Archive organisation only. For third parties, handle rights however you see fit.
 
@@ -134,18 +136,16 @@ For collections to be included in the Open Terms Archive organisation only. For 
 - Add the versions repository to the collection team, with “Triage” access rights (giving them more would enable them to corrupt data)
 - Add the declarations, snapshots and versions repositories to the Bots team with “Write” access
 
-- - -
-
-## Setup deployment
+## Set up deployment
 
 ### On the server
 
-- Connect to the server with `ssh <username>@<host>` (example usernames: `debian`, `ubuntu`…)
+- Connect to the server with `ssh <username>@<host>` (usual usernames: `debian`, `ubuntu`…)
 - Create a new SSH key: `ssh-keygen -q -N "" -f ~/.ssh/ota-deploy`
 - Add the public key to `authorized_keys`: `cat ~/.ssh/ota-deploy.pub >> ~/.ssh/authorized_keys`
-	- Copy the public key with `cat ~/.ssh/ota-deploy.pub` and keep it temporarily for the next steps
+  - Copy the public key with `cat ~/.ssh/ota-deploy.pub` and keep it temporarily for the next steps
 - Add the private key to the SSH authentication agent: `ssh-add ~/.ssh/ota-deploy` (start the SSH agent before if necessary with `eval ${ssh-agent -s}`)
-	- Copy the private key with `cat ~/.ssh/ota-deploy` and keep it temporarily for the next steps
+  - Copy the private key with `cat ~/.ssh/ota-deploy` and keep it temporarily for the next steps
 
 Note: user must have the right to `sudo`.
 
@@ -163,8 +163,6 @@ Fill `deployment/inventory.yml`:
 - `<host>` (example: `162.19.74.224`)
 - `ansible_user: <username>` (example: `debian`)
 - `ed25519_fingerprint: <server_ssh_fingerprint>`
-
-- - -
 
 ## Test
 
