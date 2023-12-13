@@ -1,6 +1,6 @@
 ---
 title: "Subscribing to terms changes"
-weight: 11
+weight: 3
 ---
 
 # Subscribing to terms changes
