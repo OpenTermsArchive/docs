@@ -113,7 +113,7 @@ In “Actions → General → Actions permissions”:
 
 - - -
 
-## Set up GitHub maintenance teams
+## Set up GitHub teams
 
 For collections to be included in the Open Terms Archive organisation only. For third parties, handle rights however you see fit.
 
@@ -127,9 +127,7 @@ For collections to be included in the Open Terms Archive organisation only. For 
 - Add the versions repository to the collection team, with “Triage” access rights (giving them more would enable them to corrupt data)
 - Add the declarations, snapshots and versions repositories to the Bots team with “Write” access
 
-- - -
-
-## Setup deployment
+## Set up deployment
 
 ### On the server
 
@@ -156,8 +154,6 @@ Fill `deployment/inventory.yml`:
 - `<host>` (example: `162.19.74.224`)
 - `ansible_user: <username>` (example: `debian`)
 - `ed25519_fingerprint: <server_ssh_fingerprint>`
-
-- - -
 
 ## Test
 
