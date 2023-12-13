@@ -1,5 +1,11 @@
 Open Terms Archive documentation.
 
+## Styleguide
+
+### Order of menu sections
+
+Pages and sections are ordered on the “end user” to “core team member” spectrum: the more up a page is in the menu, the more it is targeted at consumer end users, the more low it is the more it is targeted at committed contributors.
+
 ## Installation
 
 ### Dependencies
