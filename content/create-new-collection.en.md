@@ -48,8 +48,8 @@ In “General → Pull Requests”:
 
 In “Branches”:
 - Add a branch protection rule for `main`.
-- Check “Require a pull request before merging”, check "Require approvals" and set “Required number of approvals before merging” to 1.
-- Check “Require status checks to pass before merging” and add `validate_modified_declarations` and `validate_schema` as required status checks.
+  - Check “Require a pull request before merging”, check "Require approvals" and set “Required number of approvals before merging” to 1.
+  - Check “Require status checks to pass before merging” and add `validate_modified_declarations` and `validate_schema` as required status checks.
 
 In “Actions → General → Actions permissions”:
 - Select “Allow all actions and reusable workflows”.
