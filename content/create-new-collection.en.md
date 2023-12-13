@@ -22,26 +22,37 @@ First of all, define the scope and metadata of the collection:
 Create the collection declarations repository by using the [`demo-declarations`](https://github.com/OpenTermsArchive/demo-declarations) repository as template:
 - Go to the [`demo-declarations` repository](https://github.com/OpenTermsArchive/demo-declarations)
 - Click on the “Use this template” dropdown and select “Create a new repository”
- - Set the repository name to `<collection_id>-declarations`. For example: `pga-declarations`.
+- Set the repository name to `<collection_id>-declarations`. For example: `pga-declarations`.
 - When redirected to the newly generated repository, wait a minute or two for the automatic setup to run. You can check the status of the `first-time-setup` GitHub action to make sure that everything ran fine.
 
-#### Fill the about section
+#### Fill the “About” section
 
 - Click on the little cogwheel icon next to the “About” block.
 - Set the description to “Declarations for `<collection_name>`. Maintained by `<maintainer>`.”
 - Set website: https://opentermsarchive.org
 - Add the following tags: `terms-of-service`, `terms-of-service-agreements`, `terms-and-conditions`, `open-terms-archive`.
-- Uncheck “Releases”, “Packages” and “Environments”.
+- Uncheck “Releases”, “Packages” and “Deployments”.
 
 #### Define repository settings
 
 These settings ease the whole contribution process.
 
-- In the “Pull Requests” section: check only the “Allow squash merging” option, and set it to “Default to pull request title and commit details”.
+In “General → Features”:
+- Disable “Wikis”.
+- Disable “Projects”.
+
+In “General → Pull Requests”:
+- Check only the “Allow squash merging” option, and set it to “Default to pull request title and commit details”.
 - Enable “Allow auto-merge”.
 - Enable “Automatically delete head branches”.
-- In the “Branches” section: add a branch protection rule for `main`, check “Require status checks to pass before merging” and add `validate_modified_declarations` and `validate_schema` as required status checks.
-- In the “Actions” section, in the “General” submenu: select “Allow all actions and reusable workflows”.
+
+In “Branches”:
+- Add a branch protection rule for `main`.
+  - Check “Require a pull request before merging”, check "Require approvals" and set “Required number of approvals before merging” to 1.
+  - Check “Require status checks to pass before merging” and add `validate_modified_declarations` and `validate_schema` as required status checks.
+
+In “Actions → General → Actions permissions”:
+- Select “Allow all actions and reusable workflows”.
 
 #### Remove default labels
 
@@ -53,10 +64,6 @@ Issues labels will be added by the engine as problems are encountered when track
 
 - Update the README file with proper metadata: topic, maintainers, jurisdictions, languages…
 
-#### Update deployment inventory
-
-- Open the `deployment/inventory.yml` and set the server information: server IP, username, server fingerprint…
-
 ### Snapshots
 
 Create the snapshots repository by using the [`demo-snapshots` repository](https://github.com/OpenTermsArchive/demo-snapshots) as template:
@@ -64,21 +71,23 @@ Create the snapshots repository by using the [`demo-snapshots` repository](https
 - Click on the “Use this template” dropdown and select “Create a new repository”
 - Set the repository name to `<collection_id>-snapshots`.
 - When redirected to the newly generated repository, wait a minute or two for the automatic setup to run. You can check the status of the `first-time-setup` GitHub action to make sure that everything ran fine.
-- Give write rights on the repo to the maintenance team.
 
 #### Fill the “About” section
 
 - Set the description: “Documents snapshots for `<collection_name>`. Maintained by `<maintainer>`.”
 - Set website: https://opentermsarchive.org
 - Add the following tags: `terms-of-service`, `terms-of-service-agreements`, `terms-and-conditions`, `open-terms-archive`.
-- Uncheck “Releases”, “Packages” and “Environments”.
+- Uncheck “Releases”, “Packages” and “Deployments”.
 
 #### Define repository settings
 
 These settings aim at minimising the otherwise overwhelming amount of information and click targets.
 
-- Features: uncheck “Wikis”, “Issues”, “Discussions” and “Projects”.
-- In the “Actions” section, in the “General” submenu: select “Disable actions”.
+In “General → Features”:
+- Uncheck “Wikis”, “Issues”, “Discussions” and “Projects”.
+
+In “Actions → General → Actions permissions”:
+- Select “Disable actions”.
 
 ### Versions
 
@@ -87,21 +96,29 @@ Create the versions repository by using the [`demo-versions` repository](https:/
 - Click on the “Use this template” dropdown and select “Create a new repository”
 - Set the repository name to `<collection_id>-versions`.
 - When redirected to the newly generated repository, wait a minute or two for the automatic setup to run. You can check the status of the `first-time-setup` GitHub action to make sure that everything ran fine.
-- Give write rights on the repo to the maintenance team.
 
 #### Fill the “About” section
 
 - Set the description: “Terms versions for `<collection_name>`. Maintained by `<maintainer>`.”
 - Set website: https://docs.opentermsarchive.org/navigate-history/
 - Add the following tags: `terms-of-service`, `terms-of-service-agreements`, `terms-and-conditions`, `open-terms-archive`.
-- Uncheck “Packages” and “Environments”.
+- Uncheck “Packages” and “Deployments”.
 
 #### Define repository settings
 
 These settings aim at minimising the otherwise overwhelming amount of information and click targets.
 
-- Features: uncheck “Wikis”, “Issues”, “Discussions” and “Projects”.
-- In the “Actions” section, in the “General” submenu: select “Disable actions”.
+In “General → Features”:
+- Uncheck “Wikis”, “Issues”, “Discussions” and “Projects”.
+
+In “Actions → General → Actions permissions”:
+- Select “Disable actions”.
+
+#### Update README
+
+- Update the README file with proper metadata.
+
+- - -
 
 ## Set up GitHub maintenance teams
 
@@ -127,7 +144,7 @@ For collections to be included in the Open Terms Archive organisation only. For 
 - Create a new SSH key: `ssh-keygen -q -N "" -f ~/.ssh/ota-deploy`
 - Add the public key to `authorized_keys`: `cat ~/.ssh/ota-deploy.pub >> ~/.ssh/authorized_keys`
 	- Copy the public key with `cat ~/.ssh/ota-deploy.pub` and keep it temporarily for the next steps
-- Add the private key to the SSH authentication agent: `ssh-add ~/.ssh/ota-deploy` (start the SSH agent before if necessary with `eval \`ssh-agent -s\``)
+- Add the private key to the SSH authentication agent: `ssh-add ~/.ssh/ota-deploy` (start the SSH agent before if necessary with `eval ${ssh-agent -s}`)
 	- Copy the private key with `cat ~/.ssh/ota-deploy` and keep it temporarily for the next steps
 
 Note: user must have the right to `sudo`.
@@ -136,7 +153,7 @@ Note: user must have the right to `sudo`.
 
 Create the following [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository):
 
-- `SERVER_FINGERPRINT`: obtained with `ssh-keyscan -t ed25519 <host>`
+- `SERVER_FINGERPRINT`: obtained with `ssh-keyscan -t ed25519 <host>`, example `AAAAC3NzaC1lZDI1NTE5AAAAIPdUmZPDKAQLEI8dhsW6EsIHdMzLXbQOVdi2OFVfzF8e`
 - `SERVER_SSH_KEY`: use the previously generated server private key
 
 ### On declarations repository
@@ -145,7 +162,7 @@ Fill `deployment/inventory.yml`:
 
 - `<host>` (example: `162.19.74.224`)
 - `ansible_user: <username>` (example: `debian`)
-- `ed25519_fingerprint: <server_ssh_fingerprint>` (example: `AAAAC3NzaC1lZDI1NTE5AAAAIJkjE1KIbUcoClK+iKLR5ZvmdXMD/eXWghHdenFeJz4c` obtained with `ssh-keyscan -t ed25519 <host>`)
+- `ed25519_fingerprint: <server_ssh_fingerprint>`
 
 - - -
 
