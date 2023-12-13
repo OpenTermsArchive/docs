@@ -21,22 +21,11 @@ _Words in bold are [business domain names](https://en.wikipedia.org/wiki/Domain-
 
 ## Main concepts
 
-### Instances
+### Collection
 
-Open Terms Archive is a decentralised system.
-
-It aims at enabling any entity to **track** **terms** on its own and at federating a number of public **instances** in a single ecosystem to maximise discoverability, collaboration and political power. To that end, the Open Terms Archive **engine** can be run on any server, thus making it a dedicated **instance**.
-
-> Federated public instances can be [found on GitHub](
-https://github.com/OpenTermsArchive?q=declarations).
-
-### Collections
-
-An **instance** **tracks** **terms** of a single **collection**.
+Open Terms Archive is a decentralised system. It aims at enabling any entity to **track** **terms** on its own. To that end, the Open Terms Archive **engine** can be run on any server, thus making it a dedicated **instance**. An **instance** **tracks** **terms** within a single **collection**.
 
 A **collection** is characterised by a **scope** across **dimensions** that describe the **terms** it **tracks**, such as **language**, **jurisdiction** and **industry**.
-
-> Federated public collections can be [found on GitHub](https://github.com/OpenTermsArchive?q=versions).
 
 #### Example scope
 
@@ -44,6 +33,10 @@ A **collection** is characterised by a **scope** across **dimensions** that desc
 > - Of dating services used in Europe.
 > - In the European Union and Switzerland jurisdictions.
 > - In English, unless no English version exists, in which case the primary official language of the jurisdiction of incorporation of the service operator will be used.
+
+### Federation
+
+In order to maximise discoverability, collaboration and political power, public **collections** are **federated** within a single ecosystem. This makes their data mutually discoverable and enables mutualising effort.
 
 ### Terms types
 
