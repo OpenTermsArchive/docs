@@ -143,9 +143,8 @@ For collections to be included in the Open Terms Archive organisation only. For 
 - Connect to the server with `ssh <username>@<host>` (usual usernames: `debian`, `ubuntu`…)
 - Create a new SSH key: `ssh-keygen -q -N "" -f ~/.ssh/ota-deploy`
 - Add the public key to `authorized_keys`: `cat ~/.ssh/ota-deploy.pub >> ~/.ssh/authorized_keys`
-  - Copy the public key with `cat ~/.ssh/ota-deploy.pub` and keep it temporarily for the next steps
 - Add the private key to the SSH authentication agent: `ssh-add ~/.ssh/ota-deploy` (start the SSH agent before if necessary with `eval ${ssh-agent -s}`)
-  - Copy the private key with `cat ~/.ssh/ota-deploy` and keep it temporarily for the next steps
+- Copy the public and private keys and back them up in the shared passwords repository
 
 Note: user must have the right to `sudo`.
 
