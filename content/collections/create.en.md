@@ -5,9 +5,15 @@ weight: 3
 
 # Creating a collection
 
-## Define the necessary metadata
+## Define metadata
 
-First of all, define the [metadata]({{< relref "collections/metadata" >}}) and [governance]({{< relref "collections/governance" >}}) of the collection.
+First of all, define the [metadata]({{< relref "collections/metadata" >}}) of the collection you would like to create.
+
+## Define governance
+
+Setting up and maintaining a collection over time needs fulfilling certain tasks on a regular basis. These tasks are handled through roles. To make sure that all these roles are covered, define the [governance]({{< relref "collections/governance" >}}) of your collection.
+
+At any time, feel free to ask for help or partners in the community.
 
 ## Create repositories
 
