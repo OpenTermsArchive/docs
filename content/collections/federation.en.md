@@ -34,6 +34,16 @@ A **collection** can **join** the Open Terms Archive **federation** if it abides
 9. Publicly accessible API with median response time under 20ms, as evidenced by uptime tracking logs.
 10. Abide by all Open Terms Archive software and data licenses.
 
+## How to join
+
+An official request for joining the federation can be sent by the collection administrator or curator to the core team over email, GitHub or instant messages. That request should contain all necessary content or links that enable assessing the criteria.
+
+The core team will confirm reception of the request and assess the criteria within 4 weeks. The result of the assessment will be provided to the requester through the same means the request was sent, along with a positive decision or a list of improvements that need to be done before a new request can be sent.
+
+Once a positive decision has been issued, the core team will provide the requester with a timeline for joining the federation, on which they will jointly agree.
+
 ## Disclaimer
 
 Please note that establishing the federation is an ongoing effort. While criteria are assessed and refined to strike the right balance between accessibility and quality, the Open Terms Archive core team is responsible for assessing which collections may join the federation, and has the right to update the criteria as requests for joining are made.
+
+The core team has the right to re-assess the federated status of any collection at any given time. In case the federated status of a collection is changed, the collection administrator will be informed immediately, and if possible before the action is made.
