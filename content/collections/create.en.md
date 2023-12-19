@@ -5,6 +5,8 @@ weight: 3
 
 # Creating a collection
 
+You are considering creating a new collection to track terms with Open Terms Archive? Amazing!
+
 ## Define metadata
 
 First of all, define the [metadata]({{< relref "collections/metadata" >}}) of the collection you would like to create.
