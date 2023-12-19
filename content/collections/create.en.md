@@ -15,6 +15,12 @@ Now that you have a clear idea what you would like to track, double-check that t
 
 If no existing collection could be a good host for the terms you would like to track, then it is relevant to create your own.
 
+## Inform the community
+
+Starting a new collection is an exciting endeavour, and would strongly benefit from the support of the community who already maintains existing collections. It is strongly recommended to share your intention to create a new collection as early as possible in the process, to get support and identify potential partners.
+
+You can inform the community by posting on the instant messaging system, or [sending an email](mailto:contact@opentermsarchive.org) to the core team.
+
 ## Define governance
 
 Setting up and maintaining a collection over time needs fulfilling certain tasks on a regular basis. These tasks are handled through roles. To make sure that all these roles are covered, define the [governance]({{< relref "collections/governance" >}}) of your collection.
