@@ -62,6 +62,6 @@ The expected jurisdiction in which the terms in the collection apply.
 - `USA`
 - `global`
 
-## Governance
+## Roles
 
-Description of the entities (name, url, logo) that will take responsibility for each of the necessary governance [roles]({{< relref "collections/governance" >}}).
+The name, URL and logo of the entities that will take responsibility for each of the necessary governance [roles]({{< relref "collections/governance" >}}).
