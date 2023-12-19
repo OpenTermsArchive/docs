@@ -130,7 +130,7 @@ For collections to be included in the Open Terms Archive organisation only. For 
 - [Create a new collection team](https://github.com/orgs/OpenTermsArchive/new-team)
 - Give it the name of the collection
 - Set as avatar the collection icon from the website
-- Set as description: “Maintainers of the <collection_name> collection”
+- Set as description: “Maintainers of the `<collection_name>` collection”
 - Add selected members to the team
 - Add the declarations repository to the collection team, with “Maintain” access rights
 - Add the snapshots repository to the collection team, with “Triage” access rights (giving them more would enable them to corrupt data)
