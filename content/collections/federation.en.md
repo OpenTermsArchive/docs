@@ -17,7 +17,10 @@ A collection that **joins** the **federation** enjoys the following benefits:
 2. Access to the Open Terms Archive GitHub organisation, administered by the Open Terms Archive core team.
 3. Collection logo provided by the Open Terms Archive core team.
 4. Referencing in the official [collections list](https://opentermsarchive.org/collections.json), enabling off-the-shelf discovery in the [Federated API]({{< relref "api/federated" >}}).
-5. Public announcement through all Open Terms Archive communication channels upon joining.
+5. Referencing in the official [datasets list](https://opentermsarchive.org/datasets), providing visibility to analysts.
+6. Dedicated channel on the Open Terms Archive instant messaging system.
+7. API uptime tracking.
+8. Public announcement through all Open Terms Archive communication channels upon joining.
 
 ## Criteria
 
