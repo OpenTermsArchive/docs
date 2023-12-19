@@ -12,6 +12,6 @@ Setting up and maintaining a collection is done by fulfilling certain tasks. The
 4. **Maintainers**, who guarantee the quality of the tracked versions by reviewing contributions.
 5. **Contributors**, who add declarations and keep them up to date.
 
-Each of these roles can be volunteer or paid, and all can be handled by one single or many different entities.
+Each of these roles can be volunteer or paid, and all can be handled by one single or several different entities.
 
 The Open Terms Archive core team provides processes and tools to support all of these roles.
