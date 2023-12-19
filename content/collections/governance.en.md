@@ -9,7 +9,7 @@ Setting up and maintaining a collection needs fulfilling certain tasks. These ta
 
 ## Host
 
-This role ensures that a server and internet access is available to run the engine on and fetch the terms.
+This role ensures that a server and internet access is available to run the engine on and fetch the terms, either by using its own infrastructure or renting a space on a cloud.
 
 ## Administrator
 
