@@ -25,14 +25,14 @@ A **collection** can **join** the Open Terms Archive **federation** if it abides
 
 1. Clearly defined [collection metadata]({{< relref "collections/metadata" >}}).
 2. Clearly defined [collection governance]({{< relref "collections/governance" >}}).
-3. The vast majority of **versions** are readable.
-4. **Frequency** of at least one track a day.
-5. Public and open-licensed **declarations**.
-6. Public and open-licensed **snapshots**.
-7. Public and open-licensed **versions**.
-8. Regular, public, and open-licensed **dataset** releases.
-9. Publicly accessible API with median response time under 20ms.
-10. Abide by all software and data licenses.
+3. The vast majority of **versions** are readable, as evidenced by a sample assessment.
+4. **Frequency** of at least one track a day, as evidenced by snapshots.
+5. Public and open-licensed **declarations**, as evidenced by the `LICENSE` file in the declarations repository.
+6. Public and open-licensed **snapshots**, as evidenced by the `LICENSE` file in the snapshots repository.
+7. Public and open-licensed **versions**, as evidenced by the `LICENSE` file in the versions repository.
+8. Regular, public, and open-licensed **dataset** releases, as evidenced by the `LICENSE` file in the datasets.
+9. Publicly accessible API with median response time under 20ms, as evidenced by uptime tracking logs.
+10. Abide by all Open Terms Archive software and data licenses.
 
 ## Disclaimer
 
