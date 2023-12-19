@@ -11,6 +11,10 @@ First of all, define the [metadata]({{< relref "collections/metadata" >}}) and [
 
 ## Create repositories
 
+Collections rely on three git repositories being set up to hold the data.
+
+The instructions below assume the usage of GitHub to host repositories. If you don't use GitHub, try to set up the equivalent metadata in your git hosting platform. Contributions to the documentation to make it independent from GitHub are very welcome!
+
 ### Declarations
 
 Create the collection declarations repository by using the [`demo-declarations`](https://github.com/OpenTermsArchive/demo-declarations) repository as template.
