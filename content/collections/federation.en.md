@@ -34,4 +34,6 @@ A **collection** can **join** the Open Terms Archive **federation** if it abides
 9. Publicly accessible API with median response time under 20ms.
 10. Abide by all software and data licenses.
 
-_Please note that the federation is an ongoing effort. While criteria are assessed and refined to strike the right balance between accessibility and quality, the Open Terms Archive core team is responsible for assessing which collections may join the federation, and has the right to update the criteria as requests for joining are made._
+## Disclaimer
+
+Please note that establishing the federation is an ongoing effort. While criteria are assessed and refined to strike the right balance between accessibility and quality, the Open Terms Archive core team is responsible for assessing which collections may join the federation, and has the right to update the criteria as requests for joining are made.
