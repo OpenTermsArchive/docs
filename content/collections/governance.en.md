@@ -26,3 +26,7 @@ This role guarantees the quality of the tracked versions by reviewing contributi
 ## Contributor
 
 This role adds declarations and keeps them up to date.
+
+## Sponsor
+
+This optional role supports the existence of the collection by funding other roles, providing agent time, political support, or any other relevant non-operational contribution.
