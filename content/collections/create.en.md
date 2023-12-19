@@ -9,6 +9,12 @@ weight: 3
 
 First of all, define the [metadata]({{< relref "collections/metadata" >}}) of the collection you would like to create.
 
+## Check existing collections
+
+Now that you have a clear idea what you would like to track, double-check that there are no [existing federated collections](https://opentermsarchive.org/#collections) that you could contribute to. If you have a doubt about whether some terms you want to track would fit a collection, reach out to the collection maintainers.
+
+If no existing collection could be a good host for the terms you would like to track, then it is relevant to create your own.
+
 ## Define governance
 
 Setting up and maintaining a collection over time needs fulfilling certain tasks on a regular basis. These tasks are handled through roles. To make sure that all these roles are covered, define the [governance]({{< relref "collections/governance" >}}) of your collection.
