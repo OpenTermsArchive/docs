@@ -1,5 +1,6 @@
 ---
 title: Metadata
+weight: 1
 ---
 
 # Collection metadata

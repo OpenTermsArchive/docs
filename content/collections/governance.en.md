@@ -1,5 +1,6 @@
 ---
 title: Governance
+weight: 2
 ---
 
 # Collection governance

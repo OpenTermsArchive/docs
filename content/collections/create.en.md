@@ -1,5 +1,6 @@
 ---
 title: Creating a collection
+weight: 3
 ---
 
 # Creating a collection
