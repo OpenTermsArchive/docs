@@ -1,18 +1,29 @@
 ---
 title: Creating a collection
+weight: 3
 ---
 
 # Creating a collection
 
-## Define the necessary metadata
+## Define metadata
 
-First of all, define the [metadata]({{< relref "collections/metadata" >}}) and [governance]({{< relref "collections/governance" >}}) of the collection.
+First of all, define the [metadata]({{< relref "collections/metadata" >}}) of the collection you would like to create.
+
+## Define governance
+
+Setting up and maintaining a collection over time needs fulfilling certain tasks on a regular basis. These tasks are handled through roles. To make sure that all these roles are covered, define the [governance]({{< relref "collections/governance" >}}) of your collection.
+
+At any time, feel free to ask for help or partners in the community.
 
 ## Create repositories
 
+Collections rely on three git repositories being set up to hold the data.
+
+The instructions below assume the usage of GitHub to host repositories. If you don't use GitHub, try to set up the equivalent metadata in your git hosting platform. Contributions to the documentation to make it independent from GitHub are very welcome!
+
 ### Declarations
 
-Create the collection declarations repository by using the [`demo-declarations`](https://github.com/OpenTermsArchive/demo-declarations) repository as template:
+Create the collection declarations repository by using the [`demo-declarations`](https://github.com/OpenTermsArchive/demo-declarations) repository as template.
 
 - Go to the [`demo-declarations` repository](https://github.com/OpenTermsArchive/demo-declarations)
 - Click on the “Use this template” dropdown and select “Create a new repository”
@@ -31,26 +42,19 @@ Create the collection declarations repository by using the [`demo-declarations`]
 
 These settings ease the whole contribution process.
 
-In “General → Features”:
-
-- Disable “Wikis”.
-- Disable “Projects”.
-
-In “General → Pull Requests”:
-
-- Check only the “Allow squash merging” option, and set it to “Default to pull request title and commit details”.
-- Enable “Allow auto-merge”.
-- Enable “Automatically delete head branches”.
-
-In “Branches”:
-
-- Add a branch protection rule for `main`.
-  - Check “Require a pull request before merging”, check "Require approvals" and set “Required number of approvals before merging” to 1.
-  - Check “Require status checks to pass before merging” and add `validate_modified_declarations` and `validate_schema` as required status checks.
-
-In “Actions → General → Actions permissions”:
-
-- Select “Allow all actions and reusable workflows”.
+- In “General → Features”
+  - Disable “Wikis”.
+  - Disable “Projects”.
+- In “General → Pull Requests”
+  - Check only the “Allow squash merging” option, and set it to “Default to pull request title and commit details”.
+  - Enable “Allow auto-merge”.
+  - Enable “Automatically delete head branches”.
+- In “Branches”
+  - Add a branch protection rule for `main`.
+    - Check “Require a pull request before merging”, check "Require approvals" and set “Required number of approvals before merging” to 1.
+    - Check “Require status checks to pass before merging” and add `validate_modified_declarations` and `validate_schema` as required status checks.
+- In “Actions → General → Actions permissions”
+  - Select “Allow all actions and reusable workflows”.
 
 #### Remove default labels
 
@@ -82,13 +86,13 @@ Create the snapshots repository by using the [`demo-snapshots` repository](https
 
 These settings aim at minimising the otherwise overwhelming amount of information and click targets.
 
-In “General → Features”:
-
-- Uncheck “Wikis”, “Issues”, “Discussions” and “Projects”.
-
-In “Actions → General → Actions permissions”:
-
-- Select “Disable actions”.
+- In “General → Features”
+  - Uncheck “Wikis”.
+  - Uncheck “Issues”.
+  - Uncheck “Discussions”.
+  - Uncheck “Projects”.
+- In “Actions → General → Actions permissions”
+  - Select “Disable actions”.
 
 ### Versions
 
@@ -104,19 +108,20 @@ Create the versions repository by using the [`demo-versions` repository](https:/
 - Set the description: “Terms versions for `<collection_name>`. Maintained by `<maintainer>`.”
 - Set website to `https://docs.opentermsarchive.org/navigate-history/`
 - Add the following tags: `terms-of-service`, `terms-of-service-agreements`, `terms-and-conditions`, `open-terms-archive`.
-- Uncheck “Packages” and “Deployments”.
+- Uncheck “Packages”.
+- Uncheck “Deployments”.
 
 #### Define repository settings
 
 These settings aim at minimising the otherwise overwhelming amount of information and click targets.
 
-In “General → Features”:
-
-- Uncheck “Wikis”, “Issues”, “Discussions” and “Projects”.
-
-In “Actions → General → Actions permissions”:
-
-- Select “Disable actions”.
+- In “General → Features”
+  - Uncheck “Wikis”.
+  - Uncheck “Issues”.
+  - Uncheck “Discussions”.
+  - Uncheck “Projects”.
+- In “Actions → General → Actions permissions”
+  - Select “Disable actions”.
 
 #### Update README
 
@@ -129,7 +134,7 @@ For collections to be included in the Open Terms Archive organisation only. For 
 - [Create a new collection team](https://github.com/orgs/OpenTermsArchive/new-team)
 - Give it the name of the collection
 - Set as avatar the collection icon from the website
-- Set as description: “Maintainers of the <collection_name> collection”
+- Set as description: “Maintainers of the `<collection_name>` collection”
 - Add selected members to the team
 - Add the declarations repository to the collection team, with “Maintain” access rights
 - Add the snapshots repository to the collection team, with “Triage” access rights (giving them more would enable them to corrupt data)
