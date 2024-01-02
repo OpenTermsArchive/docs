@@ -20,7 +20,7 @@ In order to add declarations:
 
 To add a declaration, you need to follow these steps:
 
-1. Clone the [contrib-declaration](https://github.com/OpenTermsArchive/contrib-declarations) repository to your local machine.
+1. Clone the [`contrib-declarations`](https://github.com/OpenTermsArchive/contrib-declarations) repository to your local machine.
 2. Create a branch that describes your contribution e.g. `add-Open-Terms-Archive-ToS` or `add-firefox-privacy-policy`
 3. Run `npm install`. This will install all the dependencies including the Open Terms Archive engine which will allow you to test and validate your declaration.
 4. Create a JSON file with, as filename, the service ID of the service you are adding the declaration for. This JSON file should be in the `declarations` folder of the repository. To learn more about selecting the right service ID, please read the [declaring a new service]({{< relref "reference/declaration#declaring-a-new-service" >}}) section.
