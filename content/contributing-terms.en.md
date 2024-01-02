@@ -13,8 +13,8 @@ Having understood briefly how a declaration is structured in JSON format, we nee
 
 In order to add declarations:
 
-1. You need to have [Node.js](https://nodejs.org/en/) installed on your machine. If you don't have it, you can download it from the official website [here](https://nodejs.org/en/download/).
-2. You need to have git installed on your machine. If you don't have it, you can download it from the official website [here](https://git-scm.com/downloads).
+1. You need to have [Node.js](https://nodejs.org/en/) installed on your machine. If you don't have it, you can [download it](https://nodejs.org/en/download/) from the official website.
+2. You need to have Git installed on your machine. If you don't have it, you can [download it](https://git-scm.com/downloads) from the official website.
 
 ## Adding a declaration
 
