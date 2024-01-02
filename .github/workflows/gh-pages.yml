@@ -43,7 +43,7 @@ jobs:
           hugo config
 
       - name: Build with Hugo
-        run: hugo --minify
+        run: npm run build
 
       - name: Build JSDoc
         run: npm run jsdoc

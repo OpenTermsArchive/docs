@@ -1,6 +1,6 @@
 ---
 title: "Browsing through terms"
-weight: 10
+weight: 2
 ---
 
 # Browsing through terms

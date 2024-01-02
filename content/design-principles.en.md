@@ -1,6 +1,6 @@
 ---
 title: "Design principles"
-weight: 3
+weight: 10
 ---
 
 # Design principles
@@ -26,20 +26,22 @@ Several services have been observed:
 
 - Do not use “last update” date in documents or headers for metadata.
 
-## 2. Do not require trust
+## 2. Do not require trust in maintainers
 
-Open Terms Archive data should not need to be trusted by users more than the services it enables assessing.
+Open Terms Archive maintainers should not need to be trusted by users more than the services it enables assessing.
 
 ### Cases
 
-- Collections can be unmaintained and improperly filter out relevant content.
-- A server can go down and miss updates.
+- Collections can be unmaintained.
+- Maintainers can filter out content that could be relevant from the perspective of other maintainers.
+- A server can encounter technical problems and miss updates.
 
 ### Examples of consequential choices
 
 - Always keep an untouched snapshot of the source documents.
 - Use cryptographic signatures to ensure the database can be authenticated.
 - Enable terms collection to be replicated by anyone.
+- Support duplication across collections as this increases the resilience of the network. It will be up to reusers to decide which source they prefer in case of divergence.
 
 ## 3. Obtain documents like a user would
 

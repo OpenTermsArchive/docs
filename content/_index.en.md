@@ -21,22 +21,11 @@ _Words in bold are [business domain names](https://en.wikipedia.org/wiki/Domain-
 
 ## Main concepts
 
-### Instances
+### Collection
 
-Open Terms Archive is a decentralised system.
-
-It aims at enabling any entity to **track** **terms** on its own and at federating a number of public **instances** in a single ecosystem to maximise discoverability, collaboration and political power. To that end, the Open Terms Archive **engine** can be run on any server, thus making it a dedicated **instance**.
-
-> Federated public instances can be [found on GitHub](
-https://github.com/OpenTermsArchive?q=declarations).
-
-### Collections
-
-An **instance** **tracks** **terms** of a single **collection**.
+Open Terms Archive is a decentralised system. It aims at enabling any entity to **track** **terms** on its own. To that end, the Open Terms Archive **engine** can be run on any server, thus making it a dedicated **instance**. An **instance** **tracks** **terms** within a single **collection**.
 
 A **collection** is characterised by a **scope** across **dimensions** that describe the **terms** it **tracks**, such as **language**, **jurisdiction** and **industry**.
-
-> Federated public collections can be [found on GitHub](https://github.com/OpenTermsArchive?q=versions).
 
 #### Example scope
 
@@ -44,6 +33,10 @@ A **collection** is characterised by a **scope** across **dimensions** that desc
 > - Of dating services used in Europe.
 > - In the European Union and Switzerland jurisdictions.
 > - In English, unless no English version exists, in which case the primary official language of the jurisdiction of incorporation of the service operator will be used.
+
+### Federation
+
+In order to maximise discoverability, collaboration and political power, public **collections** are **federated** within a single ecosystem. This makes their data mutually discoverable and enables mutualising effort.
 
 ### Terms types
 
@@ -105,9 +98,8 @@ Such a dataset can be generated from **versions** alone. If **snapshots** and **
 
 This documentation describes how to execute the **engine** independently from any specific **instance**. For other use cases, other parts of the documentation could be more relevant:
 
-- to contribute **declarations** to an existing **instance**, see [how to contribute terms]({{< relref "contributing-terms" >}});
-- to create a new **collection**, see the [collection bootstrap](https://github.com/OpenTermsArchive/template-declarations) script;
-- to create a new public **instance**, see the [governance]({{< relref "governance" >}}) documentation.
+- to contribute **declarations** to an existing **collection**, see [contributing terms]({{< relref "contributing-terms" >}});
+- to create a new **collection**, see [creating a new collection]({{< relref "collections/create" >}}).
 
 ### Requirements
 
@@ -284,68 +276,6 @@ The server `<port>` and `<basePath>` are defined in the [configuration](#configu
 
 > For example, with the default configuration, the list of services can be found at [`http://localhost:3000/api/v1/services`](http://localhost:3000/api/v1/services).
 
-## API
-
-Open Terms Archive collections can be explored locally over a [Node.js](#nodejs-api), or remotely over a [Web API](#web-api). As Open Terms Archive is decentralised, each [instance](#instances) embarks its own API. The documentation relevant to the specific version of the engine on that instance is provided on that instance itself.
-
-### Web API
-
-The Web API exposes JSON data over HTTP(S). Its [OpenAPI](https://swagger.io/specification/) specification can be found at `http://localhost:<port>/<basePath>/<API version>/docs`.
-
-That endpoint exposes both the OpenAPI specification if the requested `Content-Type` is JSON, and a Swagger UI for visual and interactive documentation otherwise.
-
-> For example, the [documentation](http://162.19.74.224/api/v1/docs) of the [Demo collection](https://github.com/OpenTermsArchive/demo-declarations) is publicly available for exploration.
-
-### Node.js API
-
-As a Node module dependency, the engine exposes a JavaScript API that can be called in your own code. The following modules are available.
-
-#### `fetch`
-
-The `fetch` module gets the MIME type and content of a document from its URL
-
-```js
-import fetch from '@opentermsarchive/engine/fetch';
-```
-
-Documentation on how to use `fetch` is provided [as JSDoc](https://docs.opentermsarchive.org/jsdoc/).
-
-##### Headless browser management
-
-If you pass the `executeClientScripts` option to `fetch`, a headless browser will be used to download and execute the page before serialising its DOM. For performance reasons, the starting and stopping of the browser is your responsibility to avoid instantiating a browser on each fetch. Here is an example on how to use this feature:
-
-```js
-import fetch, { launchHeadlessBrowser, stopHeadlessBrowser } from '@opentermsarchive/engine/fetch';
-
-await launchHeadlessBrowser();
-await fetch({ executeClientScripts: true, ... });
-await fetch({ executeClientScripts: true, ... });
-await fetch({ executeClientScripts: true, ... });
-await stopHeadlessBrowser();
-```
-
-The `fetch` module options are defined as a [`node-config` submodule](https://github.com/node-config/node-config/wiki/Sub-Module-Configuration). The default `fetcher` configuration can be overridden by adding a `fetcher` object to the [local configuration file](#configuration-file).
-
-#### `extract`
-
-The `extract` module transforms HTML or PDF content into a Markdown string according to a [declaration](#declarations).
-
-```js
-import extract from '@opentermsarchive/engine/extract';
-```
-
-The `extract` function documentation is available [as JSDoc](https://docs.opentermsarchive.org/jsdoc/).
-
-#### `SourceDocument`
-
-The `SourceDocument` class encapsulates information about a terms' source document tracked by Open Terms Archive.
-
-```js
-import SourceDocument from '@opentermsarchive/engine/sourceDocument';
-```
-
-The `SourceDocument` format is defined [in source code](https://github.com/OpenTermsArchive/engine/tree/main/src/archivist/services/sourceDocument.js).
-
 - - -
 
 ## Configuring
@@ -393,13 +323,12 @@ The default configuration can be found in `config/default.json`. The full refere
       "sendWarnings": "Boolean. Set to true to also send email in case of warning",
     }
   },
-  "tracker": { // Tracking mechanism to create GitHub issues when terms content is inaccessible
+  "reporter": { // Reporter mechanism to create GitHub issues when terms content is inaccessible
     "githubIssues": {
-      "repository": "GitHub repository where to create isssues",
-      "label": {
-        "name": "Label to attach to bot-created issues. This specific label will be created automatically in the target repository",
-        "color": "The hexadecimal color code for the label, without the leading #",
-        "description": "A short description of the label"
+      "repositories": {
+        "declarations": "GitHub repository where to create issues; expected format: <owner>/<repository>",
+        "versions": "GitHub repository of versions associated with the declarations; expected format: <owner>/<repository>",
+        "snapshots": "GitHub repository of snapshots associated with the declarations; expected format: <owner>/<repository>"
       }
     }
   },

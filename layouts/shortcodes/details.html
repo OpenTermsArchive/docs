@@ -1,0 +1,13 @@
+{{- /*
+  Renders a <details> tag.
+
+  @param {string} [summary] The summary of the details.
+  @param {Markdown string} [inner contents] The contents of the details.
+
+  @returns {template.HTML}
+*/}}
+
+<details>
+  <summary>{{ .Get "summary" }}</summary>
+  {{ .Inner | markdownify }}
+</details>
