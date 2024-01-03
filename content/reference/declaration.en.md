@@ -4,7 +4,7 @@ title: "Declaration"
 
 # Contributing terms
 
-### Declaring a new service
+## Declaring a new service
 
 Before declaring a service, you will need to choose the service name and service ID. The service ID will be the name of the JSON file in which the service will be declared. It is a normalised version of the service name.
 
