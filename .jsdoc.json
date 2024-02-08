@@ -3,6 +3,9 @@
     "include": [
       "./node_modules/@opentermsarchive/engine/src/",
       "./node_modules/@opentermsarchive/engine/scripts/"
+    ],
+    "exclude": [
+      "./node_modules/@opentermsarchive/engine/src/api"
     ]
   },
   "opts": {
