@@ -177,7 +177,7 @@ Note: user must have the right to `sudo`.
 - Go to <https://github.com/settings/personal-access-tokens/new>
 - Set the “Token name”: “Issue creation on `<collection_name>` collection”
 - Set expiration at one year later
-- Select OpenTermsArchive organization in “Resource owner”
+- Select “OpenTermsArchive“ organization in “Resource owner”
 - Select “Only select repositories” in “Repository access”
 - Select “`<collection_name>`-declarations” in “Select repositories”
 - Select “Issues — Access: Read and write” in “Permissions” → “Repository permissions”
@@ -201,10 +201,10 @@ Note: user must have the right to `sudo`.
 - Paste the public key in “Key”
 - Validate with “Add SSH Key”
 
-### On Brevo OpenTermsArchive account
+### On Open Terms Archive Brevo account
 
 - Create an SMTP key to allow sending error notifications by email:
-  - Log in on Brevo as OpenTermsArchive admin user
+  - Log in on Brevo as Open Terms Archive admin user
   - Go to <https://app.brevo.com/settings/keys/smtp>
   - “Generate a new SMTP key”
   - Set the SMTP key name “Name your SMTP key”: `<collection_name>` collection”
