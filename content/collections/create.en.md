@@ -159,6 +159,8 @@ For collections to be included in the Open Terms Archive organisation only. For 
 
 ### On the server
 
+#### Set up a SSH deployment key
+
 - Connect to the server with `ssh <username>@<host>` (usual usernames: `debian`, `ubuntu`…)
 - Create a new SSH key: `ssh-keygen -q -N "" -f ~/.ssh/ota-deploy`
 - Add the public key to `authorized_keys`: `cat ~/.ssh/ota-deploy.pub >> ~/.ssh/authorized_keys`
@@ -167,20 +169,78 @@ For collections to be included in the Open Terms Archive organisation only. For 
 
 Note: user must have the right to `sudo`.
 
-### On GitHub declarations repository settings
+### On GitHub
 
-Create the following [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository):
+#### Create a fine-grained repo-scoped token to allow OTA-Bot to create issues on the declarations repository
 
-- `SERVER_FINGERPRINT`: obtained with `ssh-keyscan -t ed25519 <host>`, example `AAAAC3NzaC1lZDI1NTE5AAAAIPdUmZPDKAQLEI8dhsW6EsIHdMzLXbQOVdi2OFVfzF8e`
-- `SERVER_SSH_KEY`: use the previously generated server private key
+- Log in on GitHub as OTA-Bot user
+- Go to <https://github.com/settings/personal-access-tokens/new>
+- Set the “Token name”: “Issue creation on `<collection_name>` collection”
+- Set expiration at one year later
+- Select “OpenTermsArchive“ organization in “Resource owner”
+- Select “Only select repositories” in “Repository access”
+- Select “`<collection_name>`-declarations” in “Select repositories”
+- Select “Issues — Access: Read and write” in “Permissions” → “Repository permissions”
+- Validate with “Generate token and request access”
+- Copy the token and back it up in the shared passwords repository
+
+#### Validate the token
+
+- Log in on GitHub with an admin account of the OpenTermsArchive organization
+- Go to <https://github.com/organizations/OpenTermsArchive/settings/personal-access-token-requests>
+- Select the pending request
+- Approve it
+
+#### Add an SSH key created for this collection
+
+- Create a new SSH key: `ssh-keygen -t ed25519 -C bot@opentermsarchive.org`
+- Copy the public and private keys and back them up in the shared passwords repository
+- Log in on GitHub as OTA-Bot user
+- Go to <https://github.com/settings/ssh/new>
+- Set the “Title”: “`<collection_name>` collection”
+- Paste the public key in “Key”
+- Validate with “Add SSH Key”
+
+### On Open Terms Archive Brevo account
+
+- Create an SMTP key to allow sending error notifications by email:
+  - Log in on Brevo as Open Terms Archive admin user
+  - Go to <https://app.brevo.com/settings/keys/smtp>
+  - “Generate a new SMTP key”
+  - Set the SMTP key name “Name your SMTP key”: `<collection_name>` collection”
+  - Validate with “Generate”
+  - Copy the key and back it up in the shared passwords repository
+
+### On your machine
+
+#### Encrypt sensistive data
+
+- Generate a new password for encrypting sensitive data
+- Save it in the shared passwords repository
+- [Encrypt sensistive data](https://github.com/OpenTermsArchive/deployment/blob/main/README.md#encrypt-sensitive-configuration-entries)
+
+### On GitHub <collection_name>-declarations settings
+
+#### Add secrets
+
+- Go to `https://github.com/OpenTermsArchive/<collection_name>-declarations/settings/secrets/actions`
+- Create the following [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository):
+  - `ANSIBLE_VAULT_KEY`: use the previously vault key
+  - `SERVER_FINGERPRINT`: obtained with `ssh-keyscan -t ed25519 <host>`, example `AAAAC3NzaC1lZDI1NTE5AAAAIPdUmZPDKAQLEI8dhsW6EsIHdMzLXbQOVdi2OFVfzF8e`
+  - `SERVER_SSH_KEY`: use the previously generated server private key
 
 ### On declarations repository
+
+#### Define the inventory
 
 Fill `deployment/inventory.yml`:
 
 - `<host>` (example: `162.19.74.224`)
 - `ansible_user: <username>` (example: `debian`)
 - `ed25519_fingerprint: <server_ssh_fingerprint>`
+- `ota_engine_github_bot_private_key: !vault | <encrypted private key>`
+- `ota_engine_github_token: !vault | <encrypted GitHub Token>`
+- `ota_engine_smtp_password: !vault | <encrypted SMTP Key>`
 
 ## Test
 

@@ -16,7 +16,7 @@
     "build": "hugo --minify",
     "test": "npm run lint:markdown && npm run lint:css && npm run lint:js && npm run test:links",
     "pretest:links": "npm run build",
-    "test:links": "linkinator ./public --recurse --skip '^https?://(www.linkedin.com|twitter.com|localhost:3000/api/)' --verbosity error",
+    "test:links": "linkinator ./public --recurse --skip '^https?://(www.linkedin.com|twitter.com|localhost:3000/api/|stackoverflow.com|github.com/organizations/OpenTermsArchive/settings/personal-access-token-requests)' --verbosity error",
     "lint:markdown": "markdownlint *.md content/**/*.md",
     "lint:css": "stylelint \"themes/opentermsarchive/assets/css/*.css\"",
     "lint:js": "eslint themes/opentermsarchive/assets/js/",
