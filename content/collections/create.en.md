@@ -179,8 +179,9 @@ Note: user must have the right to `sudo`.
 - Set expiration at one year later
 - Select “OpenTermsArchive“ organization in “Resource owner”
 - Select “Only select repositories” in “Repository access”
-- Select “`<collection_name>`-declarations” in “Select repositories”
+- Select “`<collection_name>`-declarations” and `<collection_name>`-versions” in “Select repositories”
 - Select “Issues — Access: Read and write” in “Permissions” → “Repository permissions”
+- Select “Contents — Access: Read and write” in “Permissions” → “Repository permissions”
 - Validate with “Generate token and request access”
 - Copy the token and back it up in the shared passwords repository
 
@@ -213,7 +214,7 @@ Note: user must have the right to `sudo`.
 
 ### On your machine
 
-#### Encrypt sensistive data
+#### Encrypt sensitive data
 
 - Generate a new password for encrypting sensitive data
 - Save it in the shared passwords repository
