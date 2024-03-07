@@ -177,11 +177,11 @@ Note: user must have the right to `sudo`.
 - Go to <https://github.com/settings/personal-access-tokens/new>
 - Set the “Token name”: “Issue/Release on `<collection_name>` collection”
 - Set expiration at one year later
-- Select “OpenTermsArchive“ organization in “Resource owner”
-- Select “Only select repositories” in “Repository access”
-- Select “`<collection_name>`-declarations” and `<collection_name>`-versions” in “Select repositories”
-- Select “Issues — Access: Read and write” in “Permissions” → “Repository permissions”
-- Select “Contents — Access: Read and write” in “Permissions” → “Repository permissions”
+- In “Resource owner”, select “OpenTermsArchive“ organization
+- In “Repository access”, select “Only select repositories”
+- In “Select repositories”, Select “`<collection_name>`-declarations” and `<collection_name>`-versions”
+- In “Permissions” → “Repository permissions”, Select “Issues — Access: Read and write”
+- In “Permissions” → “Repository permissions”, Select “Contents — Access: Read and write”
 - Validate with “Generate token and request access”
 - Copy the token and back it up in the shared passwords repository
 
