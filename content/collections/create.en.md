@@ -218,7 +218,7 @@ Note: user must have the right to `sudo`.
 
 - Generate a new password for encrypting sensitive data
 - Save it in the shared passwords repository
-- [Encrypt sensistive data](https://github.com/OpenTermsArchive/deployment/blob/main/README.md#encrypt-sensitive-configuration-entries)
+- [Encrypt sensitive data](https://github.com/OpenTermsArchive/deployment/blob/main/README.md#encrypt-sensitive-configuration-entries)
 
 ### On GitHub <collection_name>-declarations settings
 
