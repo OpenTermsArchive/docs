@@ -175,7 +175,7 @@ Note: user must have the right to `sudo`.
 
 - Log in on GitHub as OTA-Bot user
 - Go to <https://github.com/settings/personal-access-tokens/new>
-- Set the “Token name”: “Issue creation on `<collection_name>` collection”
+- Set the “Token name”: “Issue/Release on `<collection_name>` collection”
 - Set expiration at one year later
 - Select “OpenTermsArchive“ organization in “Resource owner”
 - Select “Only select repositories” in “Repository access”
