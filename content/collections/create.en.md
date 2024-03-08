@@ -157,91 +157,173 @@ For collections to be included in the Open Terms Archive organisation only. For 
 
 ## Set up deployment
 
-### On the server
+### Define the inventory
 
-#### Set up a SSH deployment key
+- On your local machine
+- Clone the `<collection_id>-declarations` repository
+- Update following entries in the inventory file `deployment/inventory.yml`:
+  - `<host>` (example: `162.19.74.224`)
+  - `ansible_user: <username>` (example: `debian`)
+  - `ed25519_fingerprint: <server_ssh_fingerprint>` obtained with `ssh-keyscan -t ed25519 <host>`
 
-- Connect to the server with `ssh <username>@<host>` (usual usernames: `debian`, `ubuntu`…)
-- Create a new SSH key: `ssh-keygen -q -N "" -f ~/.ssh/ota-deploy`
+### Add fingerprint to GitHub <collection_name>-declarations settings
+
+- Log in on GitHub with an privileges on the `<collection_name>-declarations` repository
+- Go to `https://github.com/OpenTermsArchive/<collection_name>-declarations/settings/secrets/actions`
+- Create the `SERVER_FINGERPRINT` [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) obtained with `ssh-keyscan -t ed25519 <host>`
+
+### Set up a SSH deployment key
+
+Configure an SSH deployment key to enable the automated deployment process via GitHub actions.
+
+#### Create the SSH key
+
+- Connect to the server with `ssh <username>@<host>`
+- Create a new deployment SSH key: `ssh-keygen -q -N "" -f ~/.ssh/ota-deploy`
 - Add the public key to `authorized_keys`: `cat ~/.ssh/ota-deploy.pub >> ~/.ssh/authorized_keys`
 - Add the private key to the SSH authentication agent: `ssh-add ~/.ssh/ota-deploy` (start the SSH agent before if necessary with `eval ${ssh-agent -s}`)
-- Copy the public and private keys and back them up in the shared passwords repository
 
 Note: user must have the right to `sudo`.
 
-### On GitHub
+#### Add key to GitHub <collection_name>-declarations repository secrets
 
-#### Create a fine-grained repo-scoped token to allow OTA-Bot to create issues on the declarations repository
+- Log in on GitHub using a user account with admin privileges for the `<collection_name>-declarations` repository
+- Go to `https://github.com/OpenTermsArchive/<collection_name>-declarations/settings/secrets/actions`
+- Create the `SERVER_SSH_KEY` secret with the previously generated deployment private key
+
+#### Backup key
+
+- On your local machine
+- Clone the [`engine.wiki`](https://github.com/OpenTermsArchive/engine/wiki)
+- Open the shared passwords database `database.kdbx` with [KeePassXC](https://keepassxc.org)
+- Create the `Collection: <collection_name>` folder
+- Inside this folder, add an entry with the title `Deployment SSH key`
+- Attach public (`ota-deploy.pub`) and private `ota-deploy` keys file to the entry
+- Save
+
+### Allow OTA-Bot to create issues and publish dataset on GitHub
+
+#### Create a fine-grained repo-scoped token
 
 - Log in on GitHub as OTA-Bot user
 - Go to <https://github.com/settings/personal-access-tokens/new>
 - Set the “Token name”: “Issue/Release on `<collection_name>` collection”
-- Set expiration at one year later
+- Leave blank “Description”
+- Set the expiry date one year later
 - In “Resource owner”, select “OpenTermsArchive“ organization
+- Leave blank the following text area: `Describe why your personal access token needs access to the OpenTermsArchive organization.`
 - In “Repository access”, select “Only select repositories”
 - In “Select repositories”, Select “`<collection_name>`-declarations” and `<collection_name>`-versions”
-- In “Permissions” → “Repository permissions”, Select “Issues — Access: Read and write”
-- In “Permissions” → “Repository permissions”, Select “Contents — Access: Read and write”
+- In “Permissions” → “Repository permissions”, select “Contents — Access: Read and write”
+- In “Permissions” → “Repository permissions”, select “Issues — Access: Read and write”
 - Validate with “Generate token and request access”
-- Copy the token and back it up in the shared passwords repository
+
+#### Backup the token
+
+- On your local machine
+- Open the shared passwords database `database.kdbx` with [KeePassXC](https://keepassxc.org)
+- Inside the `Collection: <collection_name>` folder, add an entry with the title `GitHub Token`
+- Copy the previously generated token in the `Password` field
+- Save
 
 #### Validate the token
 
-- Log in on GitHub with an admin account of the OpenTermsArchive organization
+- Log in on GitHub using a user account with admin privileges for the OpenTermsArchive organization
 - Go to <https://github.com/organizations/OpenTermsArchive/settings/personal-access-token-requests>
 - Select the pending request
 - Approve it
 
-#### Add an SSH key created for this collection
+### Update inventory
 
-- Create a new SSH key: `ssh-keygen -t ed25519 -C bot@opentermsarchive.org`
-- Copy the public and private keys and back them up in the shared passwords repository
+#### Generate vault key
+
+- On your local machine
+- Open the shared passwords database `database.kdbx` with [KeePassXC](https://keepassxc.org)
+- Inside the `Collection: <collection_name>` folder, add an entry with the title `Vault key`
+- In the password field, click on the icon on the right to generate a new password
+- Generate a new password (without quote or backtick)
+- Save
+
+#### Create vault key file
+
+- On your local machine
+- Go to the `<collection_id>-declarations` repository
+- Go to `deployment` folder
+- Create a `vault.key` file with the previously generated password inside
+
+#### Encrypt token and update inventory
+
+- On your local machine
+- Go to the `<collection_id>-declarations` repository
+- Go to `deployment` folder
+- Encrypt token: `ansible-vault encrypt_string --name 'ota_engine_github_token' '<GitHub Token>'`
+- Update token the inventory file `deployment/inventory.yml`: `ota_engine_github_token: !vault | <encrypted GitHub Token>`
+
+#### Add secret to GitHub <collection_name>-declarations settings
+
+- Log in on GitHub with an privileges on the `<collection_name>-declarations` repository
+- Go to `https://github.com/OpenTermsArchive/<collection_name>-declarations/settings/secrets/actions`
+- Create the `ANSIBLE_VAULT_KEY` [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) by using the previously vault key
+
+### Set up an OTA-Bot SSH key specific to this collection
+
+#### Create the SSH key
+
+- Create a new SSH key: `ssh-keygen -t ed25519 -C bot@opentermsarchive.org -P "" -f ./<collection_name>-key`
+
+#### Encrypt private and update inventory
+
+- On your local machine
+- Go to the `<collection_id>-declarations` repository
+- Go to `deployment` folder
+- Encrypt token: `ansible-vault encrypt_string --name 'ota_engine_github_bot_private_key' '<SSH PRIVATE KEY content>'`
+- Update token the inventory file `deployment/inventory.yml`: `ota_engine_github_bot_private_key: !vault | <encrypted private key>`
+
+#### Backup key
+
+- On your local machine
+- Inside the [`engine.wiki`](https://github.com/OpenTermsArchive/engine/wiki)
+- Open the shared passwords database `database.kdbx` with [KeePassXC](https://keepassxc.org)
+- Inside the `Collection: <collection_name>` folder, add an entry with the title `OTA-Bot GitHub SSH key`
+- Attach public (`<collection_name>-key.pub`) and private `<collection_name>-key` keys file to the entry
+- Save
+
+#### Attach the key to OTA-Bot GitHub user
+
 - Log in on GitHub as OTA-Bot user
 - Go to <https://github.com/settings/ssh/new>
 - Set the “Title”: “`<collection_name>` collection”
 - Paste the public key in “Key”
 - Validate with “Add SSH Key”
 
-### On Open Terms Archive Brevo account
+### Set up Brevo SMTP
 
-- Create an SMTP key to allow sending error notifications by email:
-  - Log in on Brevo as Open Terms Archive admin user
-  - Go to <https://app.brevo.com/settings/keys/smtp>
-  - “Generate a new SMTP key”
-  - Set the SMTP key name “Name your SMTP key”: `<collection_name>` collection”
-  - Validate with “Generate”
-  - Copy the key and back it up in the shared passwords repository
+#### Create an SMTP key
 
-### On your machine
+Create an SMTP key to allow sending error notifications by email.
 
-#### Encrypt sensitive data
+- Log in on Brevo as Open Terms Archive admin user
+- Go to <https://app.brevo.com/settings/keys/smtp>
+- “Generate a new SMTP key”
+- Set the SMTP key name “Name your SMTP key”: `<collection_name>` collection”
+- Validate with “Generate”
 
-- Generate a new password for encrypting sensitive data
-- Save it in the shared passwords repository
-- [Encrypt sensitive data](https://github.com/OpenTermsArchive/deployment/blob/main/README.md#encrypt-sensitive-configuration-entries)
+#### Backup key
 
-### On GitHub <collection_name>-declarations settings
+- On your local machine
+- Inside the [`engine.wiki`](https://github.com/OpenTermsArchive/engine/wiki)
+- Open the shared passwords database `database.kdbx` with [KeePassXC](https://keepassxc.org)
+- Inside the `Collection: <collection_name>` folder, add an entry with the title `SMTP Key`
+- Copy the previously generated key in the `Password` field
+- Save
 
-#### Add secrets
+#### Encrypt key and update inventory
 
-- Go to `https://github.com/OpenTermsArchive/<collection_name>-declarations/settings/secrets/actions`
-- Create the following [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository):
-  - `ANSIBLE_VAULT_KEY`: use the previously vault key
-  - `SERVER_FINGERPRINT`: obtained with `ssh-keyscan -t ed25519 <host>`, example `AAAAC3NzaC1lZDI1NTE5AAAAIPdUmZPDKAQLEI8dhsW6EsIHdMzLXbQOVdi2OFVfzF8e`
-  - `SERVER_SSH_KEY`: use the previously generated server private key
-
-### On declarations repository
-
-#### Define the inventory
-
-Fill `deployment/inventory.yml`:
-
-- `<host>` (example: `162.19.74.224`)
-- `ansible_user: <username>` (example: `debian`)
-- `ed25519_fingerprint: <server_ssh_fingerprint>`
-- `ota_engine_github_bot_private_key: !vault | <encrypted private key>`
-- `ota_engine_github_token: !vault | <encrypted GitHub Token>`
-- `ota_engine_smtp_password: !vault | <encrypted SMTP Key>`
+- On your local machine
+- Go to the `<collection_id>-declarations` repository
+- Go to `deployment` folder
+- Encrypt token: `ansible-vault encrypt_string --name 'ota_engine_smtp_password' '<SMTP Key>'`
+- Update token the inventory file `deployment/inventory.yml`: `ota_engine_smtp_password: !vault | <encrypted SMTP Key>`
 
 ## Test
 
