@@ -181,9 +181,6 @@ This key will enable automated deployment via GitHub Actions.
 - Connect to the server: `ssh <username>@<host>`
 - Create a new deployment SSH key: `ssh-keygen -q -N "" -f ~/.ssh/ota-deploy`
 - Add the public key to `authorized_keys`: `cat ~/.ssh/ota-deploy.pub >> ~/.ssh/authorized_keys`
-- Add the private key to the SSH authentication agent: `ssh-add ~/.ssh/ota-deploy` (start the SSH agent before if necessary: `eval ${ssh-agent -s}`)
-
-Note: user must have the right to `sudo`.
 
 #### Add key to GitHub <collection_name>-declarations repository secrets
 
