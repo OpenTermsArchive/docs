@@ -168,7 +168,7 @@ For collections to be included in the Open Terms Archive organisation only. For 
 
 ### Add fingerprint to GitHub <collection_name>-declarations settings
 
-- Log in on GitHub with an privileges on the `<collection_name>-declarations` repository
+- Log in on GitHub using a user account with admin privileges for the `<collection_name>-declarations` repository
 - Go to `https://github.com/OpenTermsArchive/<collection_name>-declarations/settings/secrets/actions`
 - Create the `SERVER_FINGERPRINT` [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) obtained with `ssh-keyscan -t ed25519 <host>`
 
@@ -261,7 +261,7 @@ Note: user must have the right to `sudo`.
 
 #### Add secret to GitHub <collection_name>-declarations settings
 
-- Log in on GitHub with an privileges on the `<collection_name>-declarations` repository
+- Log in on GitHub using a user account with admin privileges for the `<collection_name>-declarations` repository
 - Go to `https://github.com/OpenTermsArchive/<collection_name>-declarations/settings/secrets/actions`
 - Create the `ANSIBLE_VAULT_KEY` [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) by using the previously vault key
 
