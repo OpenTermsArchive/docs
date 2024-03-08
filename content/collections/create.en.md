@@ -160,6 +160,7 @@ For collections to be included in the Open Terms Archive organisation only. For 
 ### Define the inventory
 
 On your local machine:
+
 - Clone the `<collection_id>-declarations` repository
 - Update the following entries in the inventory file `deployment/inventory.yml`:
   - `<host>` (example: `162.19.74.224`)
@@ -191,6 +192,7 @@ This key will enable automated deployment via GitHub Actions.
 #### Back key up
 
 On your local machine:
+
 - Clone the [`engine.wiki`](https://github.com/OpenTermsArchive/engine/wiki)
 - Open the shared passwords database `database.kdbx` with [KeePassXC](https://keepassxc.org)
 - Create the `Collection: <collection_name>` folder
@@ -218,6 +220,7 @@ On your local machine:
 #### Backup the token
 
 On your local machine:
+
 - Open the shared passwords database `database.kdbx` with [KeePassXC](https://keepassxc.org)
 - Inside the `Collection: <collection_name>` folder, add an entry with the title `GitHub Token`
 - Copy the previously generated token in the `Password` field
@@ -235,6 +238,7 @@ On your local machine:
 #### Generate vault key
 
 On your local machine:
+
 - Open the shared passwords database `database.kdbx` with [KeePassXC](https://keepassxc.org)
 - Inside the `Collection: <collection_name>` folder, add an entry with the title `Vault key`
 - In the password field, click on the icon on the right to generate a new password
@@ -244,6 +248,7 @@ On your local machine:
 #### Create vault key file
 
 On your local machine:
+
 - Go to the `<collection_id>-declarations` repository
 - Go to `deployment` folder
 - Create a `vault.key` file
@@ -258,6 +263,7 @@ On your local machine:
 #### Encrypt token and update inventory
 
 On your local machine:
+
 - Go to the `<collection_id>-declarations` repository
 - Go to `deployment` folder
 - Encrypt token: `ansible-vault encrypt_string --name 'ota_engine_github_token' '<GitHub Token>'`
@@ -272,6 +278,7 @@ On your local machine:
 #### Encrypt private key and update inventory
 
 On your local machine:
+
 - Go to the `<collection_id>-declarations` repository
 - Go to `deployment` folder
 - Encrypt token: `ansible-vault encrypt_string --name 'ota_engine_github_bot_private_key' '<SSH PRIVATE KEY content>'`
@@ -280,6 +287,7 @@ On your local machine:
 #### Back key up
 
 On your local machine:
+
 - Inside the [`engine.wiki`](https://github.com/OpenTermsArchive/engine/wiki)
 - Open the shared passwords database `database.kdbx` with [KeePassXC](https://keepassxc.org)
 - Inside the `Collection: <collection_name>` folder, add an entry with the title `OTA-Bot GitHub SSH key`
@@ -309,6 +317,7 @@ Create an SMTP key to allow sending error notifications by email.
 #### Backup key
 
 On your local machine:
+
 - Inside the [`engine.wiki`](https://github.com/OpenTermsArchive/engine/wiki)
 - Open the shared passwords database `database.kdbx` with [KeePassXC](https://keepassxc.org)
 - Inside the `Collection: <collection_name>` folder, add an entry with the title `SMTP Key`
@@ -318,6 +327,7 @@ On your local machine:
 #### Encrypt key and update inventory
 
 On your local machine:
+
 - Go to the `<collection_id>-declarations` repository
 - Go to `deployment` folder
 - Encrypt token: `ansible-vault encrypt_string --name 'ota_engine_smtp_password' '<SMTP Key>'`
