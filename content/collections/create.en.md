@@ -178,10 +178,10 @@ Configure an SSH deployment key to enable the automated deployment process via G
 
 #### Create the SSH key
 
-- Connect to the server with `ssh <username>@<host>`
+- Connect to the server: `ssh <username>@<host>`
 - Create a new deployment SSH key: `ssh-keygen -q -N "" -f ~/.ssh/ota-deploy`
 - Add the public key to `authorized_keys`: `cat ~/.ssh/ota-deploy.pub >> ~/.ssh/authorized_keys`
-- Add the private key to the SSH authentication agent: `ssh-add ~/.ssh/ota-deploy` (start the SSH agent before if necessary with `eval ${ssh-agent -s}`)
+- Add the private key to the SSH authentication agent: `ssh-add ~/.ssh/ota-deploy` (start the SSH agent before if necessary: `eval ${ssh-agent -s}`)
 
 Note: user must have the right to `sudo`.
 
@@ -198,7 +198,7 @@ Note: user must have the right to `sudo`.
 - Open the shared passwords database `database.kdbx` with [KeePassXC](https://keepassxc.org)
 - Create the `Collection: <collection_name>` folder
 - Inside this folder, add an entry with the title `Deployment SSH key`
-- Attach public (`ota-deploy.pub`) and private `ota-deploy` keys file to the entry
+- Attach public (`ota-deploy.pub`) and private (`ota-deploy`) key files to the entry
 - Save
 
 ### Allow OTA-Bot to create issues and publish dataset on GitHub
@@ -249,7 +249,14 @@ Note: user must have the right to `sudo`.
 - On your local machine
 - Go to the `<collection_id>-declarations` repository
 - Go to `deployment` folder
-- Create a `vault.key` file with the previously generated password inside
+- Create a `vault.key` file
+- Copy the previously generated password inside
+
+#### Add vault key to GitHub <collection_name>-declarations settings
+
+- Log in on GitHub using a user account with admin privileges for the `<collection_name>-declarations` repository
+- Go to `https://github.com/OpenTermsArchive/<collection_name>-declarations/settings/secrets/actions`
+- Create the `ANSIBLE_VAULT_KEY` [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) by using the previously generated vault key
 
 #### Encrypt token and update inventory
 
@@ -259,19 +266,13 @@ Note: user must have the right to `sudo`.
 - Encrypt token: `ansible-vault encrypt_string --name 'ota_engine_github_token' '<GitHub Token>'`
 - Update token the inventory file `deployment/inventory.yml`: `ota_engine_github_token: !vault | <encrypted GitHub Token>`
 
-#### Add secret to GitHub <collection_name>-declarations settings
-
-- Log in on GitHub using a user account with admin privileges for the `<collection_name>-declarations` repository
-- Go to `https://github.com/OpenTermsArchive/<collection_name>-declarations/settings/secrets/actions`
-- Create the `ANSIBLE_VAULT_KEY` [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) by using the previously vault key
-
 ### Set up an OTA-Bot SSH key specific to this collection
 
 #### Create the SSH key
 
 - Create a new SSH key: `ssh-keygen -t ed25519 -C bot@opentermsarchive.org -P "" -f ./<collection_name>-key`
 
-#### Encrypt private and update inventory
+#### Encrypt private key and update inventory
 
 - On your local machine
 - Go to the `<collection_id>-declarations` repository
