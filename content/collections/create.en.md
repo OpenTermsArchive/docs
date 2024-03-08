@@ -161,20 +161,20 @@ For collections to be included in the Open Terms Archive organisation only. For 
 
 - On your local machine
 - Clone the `<collection_id>-declarations` repository
-- Update following entries in the inventory file `deployment/inventory.yml`:
+- Update the following entries in the inventory file `deployment/inventory.yml`:
   - `<host>` (example: `162.19.74.224`)
   - `ansible_user: <username>` (example: `debian`)
   - `ed25519_fingerprint: <server_ssh_fingerprint>` obtained with `ssh-keyscan -t ed25519 <host>` (example: `AAAAC3NzaC1lZDI1ETE5AAAAIJkjE2KIbUcoClK+lKLR5ZvmdXMD/eXWghHdenFeJz4c`)
 
 ### Add fingerprint to GitHub <collection_name>-declarations settings
 
-- Log in on GitHub using a user account with admin privileges for the `<collection_name>-declarations` repository
+- Log in on GitHub with a user account that has admin privileges for the `<collection_name>-declarations` repository
 - Go to `https://github.com/OpenTermsArchive/<collection_name>-declarations/settings/secrets/actions`
 - Create the `SERVER_FINGERPRINT` [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) by using the previously obtained ed25519 fingerprint
 
 ### Set up a SSH deployment key
 
-Configure an SSH deployment key to enable the automated deployment process via GitHub actions.
+This key will enable automated deployment via GitHub Actions.
 
 #### Create the SSH key
 
@@ -191,7 +191,7 @@ Note: user must have the right to `sudo`.
 - Go to `https://github.com/OpenTermsArchive/<collection_name>-declarations/settings/secrets/actions`
 - Create the `SERVER_SSH_KEY` secret with the previously generated deployment private key
 
-#### Backup key
+#### Back key up
 
 - On your local machine
 - Clone the [`engine.wiki`](https://github.com/OpenTermsArchive/engine/wiki)
@@ -209,8 +209,8 @@ Note: user must have the right to `sudo`.
 - Go to <https://github.com/settings/personal-access-tokens/new>
 - Set the “Token name”: “Issue/Release on `<collection_name>` collection”
 - Leave blank “Description”
-- Set the expiry date one year later
-- In “Resource owner”, select “OpenTermsArchive“ organization
+- Set the expiry date to the maximum possible (one year later at the time of writing)
+- In “Resource owner”, select the “OpenTermsArchive“ organization
 - Leave blank the following text area: `Describe why your personal access token needs access to the OpenTermsArchive organization.`
 - In “Repository access”, select “Only select repositories”
 - In “Select repositories”, Select “`<collection_name>`-declarations” and `<collection_name>`-versions”
@@ -241,7 +241,7 @@ Note: user must have the right to `sudo`.
 - Open the shared passwords database `database.kdbx` with [KeePassXC](https://keepassxc.org)
 - Inside the `Collection: <collection_name>` folder, add an entry with the title `Vault key`
 - In the password field, click on the icon on the right to generate a new password
-- Generate a new password (without quote or backtick)
+- Generate a new password that does not contain any quote or backtick
 - Save, commit and push
 
 #### Create vault key file
@@ -264,7 +264,7 @@ Note: user must have the right to `sudo`.
 - Go to the `<collection_id>-declarations` repository
 - Go to `deployment` folder
 - Encrypt token: `ansible-vault encrypt_string --name 'ota_engine_github_token' '<GitHub Token>'`
-- Update token the inventory file `deployment/inventory.yml`: `ota_engine_github_token: !vault | <encrypted GitHub Token>`
+- Update token in the inventory file `deployment/inventory.yml`: `ota_engine_github_token: !vault | <encrypted GitHub Token>`
 
 ### Set up an OTA-Bot SSH key specific to this collection
 
@@ -280,7 +280,7 @@ Note: user must have the right to `sudo`.
 - Encrypt token: `ansible-vault encrypt_string --name 'ota_engine_github_bot_private_key' '<SSH PRIVATE KEY content>'`
 - Update token the inventory file `deployment/inventory.yml`: `ota_engine_github_bot_private_key: !vault | <encrypted private key>`
 
-#### Backup key
+#### Back key up
 
 - On your local machine
 - Inside the [`engine.wiki`](https://github.com/OpenTermsArchive/engine/wiki)
@@ -297,7 +297,7 @@ Note: user must have the right to `sudo`.
 - Paste the public key in “Key”
 - Validate with “Add SSH Key”
 
-### Set up Brevo SMTP
+### Enable sending error reports over email
 
 #### Create an SMTP key
 
