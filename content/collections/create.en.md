@@ -164,13 +164,13 @@ For collections to be included in the Open Terms Archive organisation only. For 
 - Update following entries in the inventory file `deployment/inventory.yml`:
   - `<host>` (example: `162.19.74.224`)
   - `ansible_user: <username>` (example: `debian`)
-  - `ed25519_fingerprint: <server_ssh_fingerprint>` obtained with `ssh-keyscan -t ed25519 <host>`
+  - `ed25519_fingerprint: <server_ssh_fingerprint>` obtained with `ssh-keyscan -t ed25519 <host>` (example: `AAAAC3NzaC1lZDI1ETE5AAAAIJkjE2KIbUcoClK+lKLR5ZvmdXMD/eXWghHdenFeJz4c`)
 
 ### Add fingerprint to GitHub <collection_name>-declarations settings
 
 - Log in on GitHub using a user account with admin privileges for the `<collection_name>-declarations` repository
 - Go to `https://github.com/OpenTermsArchive/<collection_name>-declarations/settings/secrets/actions`
-- Create the `SERVER_FINGERPRINT` [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) obtained with `ssh-keyscan -t ed25519 <host>`
+- Create the `SERVER_FINGERPRINT` [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) by using the previously obtained ed25519 fingerprint
 
 ### Set up a SSH deployment key
 
@@ -198,8 +198,8 @@ Note: user must have the right to `sudo`.
 - Open the shared passwords database `database.kdbx` with [KeePassXC](https://keepassxc.org)
 - Create the `Collection: <collection_name>` folder
 - Inside this folder, add an entry with the title `Deployment SSH key`
-- Attach public (`ota-deploy.pub`) and private (`ota-deploy`) key files to the entry
-- Save
+- Attach public `ota-deploy.pub` and private `ota-deploy` key files to the entry
+- Save, commit and push
 
 ### Allow OTA-Bot to create issues and publish dataset on GitHub
 
@@ -224,7 +224,7 @@ Note: user must have the right to `sudo`.
 - Open the shared passwords database `database.kdbx` with [KeePassXC](https://keepassxc.org)
 - Inside the `Collection: <collection_name>` folder, add an entry with the title `GitHub Token`
 - Copy the previously generated token in the `Password` field
-- Save
+- Save, commit and push
 
 #### Validate the token
 
@@ -242,7 +242,7 @@ Note: user must have the right to `sudo`.
 - Inside the `Collection: <collection_name>` folder, add an entry with the title `Vault key`
 - In the password field, click on the icon on the right to generate a new password
 - Generate a new password (without quote or backtick)
-- Save
+- Save, commit and push
 
 #### Create vault key file
 
@@ -286,8 +286,8 @@ Note: user must have the right to `sudo`.
 - Inside the [`engine.wiki`](https://github.com/OpenTermsArchive/engine/wiki)
 - Open the shared passwords database `database.kdbx` with [KeePassXC](https://keepassxc.org)
 - Inside the `Collection: <collection_name>` folder, add an entry with the title `OTA-Bot GitHub SSH key`
-- Attach public (`<collection_name>-key.pub`) and private `<collection_name>-key` keys file to the entry
-- Save
+- Attach public `<collection_name>-key.pub` and private `<collection_name>-key` key files to the entry
+- Save, commit and push
 
 #### Attach the key to OTA-Bot GitHub user
 
@@ -316,7 +316,7 @@ Create an SMTP key to allow sending error notifications by email.
 - Open the shared passwords database `database.kdbx` with [KeePassXC](https://keepassxc.org)
 - Inside the `Collection: <collection_name>` folder, add an entry with the title `SMTP Key`
 - Copy the previously generated key in the `Password` field
-- Save
+- Save, commit and push
 
 #### Encrypt key and update inventory
 
