@@ -122,7 +122,7 @@ As you did not push to the source branch but instead created a copy of that bran
 
 Once the pull request has been merged, delete the copy you made of the branch with `git push origin -d add_<service_name>_<terms_type>`.
 
-### Debugging failing Tests
+### Debugging Failing Tests
 
 When tests fail, you can follow these steps to diagnose and address the issue:
 
