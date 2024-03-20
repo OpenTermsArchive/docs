@@ -128,11 +128,11 @@ When tests fail, you can follow these steps to diagnose and address the issue:
 
 1. Begin by analyzing any error messages or warnings provided by the test output. These messages can often provide meaningful information to identify the source of the problem. Pay attention to specific issues such as schema validation errors, inaccessible web locations or inaccessible content selection.
 
-2. For a deeper investigation, you can access the snapshots and versions generated during the test run. Navigate to the summary page of the failing workflow. Scroll down to the "Artifacts" section located at the bottom of the page. Click on `snapshots_and_versions` to download it.
+2. For a deeper investigation, you can access the snapshots and versions generated during the test run. Navigate to the summary page of the failing workflow. Scroll down to the "Artifacts" section located at the bottom of the page. Click on `snapshots_and_versions` to download them.
 
-3. Inside the downloaded archive you will be able to inspect the snapshot file related to the terms that failed. Ensure the document downloaded by the engine is the correct, the terms content is present. Sometimes a login wall or a cookies wall can block access to the content.
+3. Inside the downloaded archive you will be able to inspect the snapshot file related to the terms that failed. Ensure the document downloaded by the engine is the correct one and that the terms content is present. Sometimes a login wall or a cookies wall can block access to the content.
 
-4. If the snapshot is the proper one, you can examine the generated version to check the accuracy of content selection. Ensure that the extracted content reflects the expected one.
+4. If the snapshot is the proper one, you can examine the generated version to check the accuracy of content selection.
 
 ## Merging the Pull Request
 
