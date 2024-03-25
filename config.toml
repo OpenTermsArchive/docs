@@ -14,7 +14,6 @@ pluralizelisttitles = false
 
 [params]
 	github_url = "https://github.com/OpenTermsArchive/engine/"
-	twitter_url = "https://twitter.com/OpenTerms"
 
 [languages]
 

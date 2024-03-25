@@ -43,10 +43,11 @@
                 class="icon_circle"
                 target="_blank"
                 rel="noopener"
-                title="{{ i18n "header.twitter_title" }}"
-                href="{{ .Param "twitter_url" }}"
+                href="{{ site.Params.mastodon.url }}"
               >
-                <svg class="icon_twitter"><use href="#twitter"></use></svg>
+                <svg class="icon icon--fill-white">
+                  <use href="#mastodon"></use>
+                </svg>
               </a>
             </li>
             <li>
