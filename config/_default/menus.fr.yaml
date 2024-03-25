@@ -41,7 +41,7 @@ first_subfooter:
     url: https://opentermsarchive.org/fr/media
     weight: 2
   - name: Code source
-    url: https://github.com/ambanum/OpenTermsArchive
+    url: https://github.com/OpenTermsArchive
     weight: 3
 second_subfooter:
   - name: Mentions légales

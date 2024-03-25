@@ -1,4 +1,5 @@
-github_url: https://github.com/ambanum/OpenTermsArchive/
+github:
+  url: https://github.com/OpenTermsArchive
 mastodon: 
   url: https://mastodon.lescommuns.org/@opentermsarchive
   username: "@opentermsarchive@mastodon.lescommuns.org"
