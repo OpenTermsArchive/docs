@@ -1,3 +1,7 @@
+:root {
+  --svgfill: none;
+}
+
 .icon_circle {
   background-color: var(--colorBlack400);
   border-radius: 50%;
@@ -23,11 +27,6 @@
   height:1em;
 }
 
-.icon_twitter{
-  width:1em;
-  height:1em;
-}
-
 .icon_github{
   width:1em;
   height:1em;
@@ -36,4 +35,13 @@
 .icon_contact{
   width:1em;
   height:1em;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+}
+
+.icon--fill-white {
+  --svgfill: var(--colorWhite);
 }
