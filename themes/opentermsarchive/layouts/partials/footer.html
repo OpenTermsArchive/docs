@@ -23,12 +23,13 @@
               <a
                 target="_blank"
                 rel="noopener"
-                title="Suivez-nous sur Twitter"
                 class="a_icontext a__small footer_menus_icontext"
-                href="{{ .Param "twitter_url" }}"
+                href="{{ .Param "mastodon.url" }}"
               >
                 <span class="icon_circle icon_circle__medium mr__2XS">
-                  <svg class="icon_twitter"><use href="#twitter"></use></svg>
+                  <svg class="icon icon--fill-white">
+                    <use href="#mastodon"></use>
+                  </svg>
                 </span>
                 <span>{{ i18n "footer.follow" }}</span>
               </a>
