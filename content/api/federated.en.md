@@ -49,7 +49,7 @@ For developement, in order to have a local configuration that override exisiting
 
 The `collections` configuration key is an array containing URLs and directly specified collections. Each item in the collections array can be either a URL pointing to a JSON file containing collections or a directly specified collection object.
 
-**Structure**
+#### Structure
 
 - **URLs**: URLs pointing to JSON files containing collections description. Each URL should respond with a JSON array containing collection objects.
 
@@ -67,7 +67,7 @@ The `collections` configuration key is an array containing URLs and directly spe
 }
 ```
 
-**Example**
+#### Example
 
 ```json
 "collections": [
@@ -80,7 +80,7 @@ The `collections` configuration key is an array containing URLs and directly spe
 ]
 ```
 
-**Conflict Resolution** 
+#### Conflict Resolution
 
 If multiple collections share the same `id`, the latest defined collection in the array will be used and others with the same `id` will be ignored.
 
