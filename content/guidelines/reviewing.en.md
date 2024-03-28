@@ -122,6 +122,18 @@ As you did not push to the source branch but instead created a copy of that bran
 
 Once the pull request has been merged, delete the copy you made of the branch with `git push origin -d add_<service_name>_<terms_type>`.
 
+### Debugging Failing Tests
+
+When tests fail, you can follow these steps to diagnose and address the issue:
+
+1. Begin by analyzing any error messages or warnings provided by the test output. These messages can often provide meaningful information to identify the source of the problem. Pay attention to specific issues such as schema validation errors, inaccessible web locations or inaccessible content selection.
+
+2. For a deeper investigation, you can access the snapshots and versions generated during the test run. Navigate to the summary page of the failing workflow. Scroll down to the "Artifacts" section located at the bottom of the page. Click on `snapshots_and_versions` to download them.
+
+3. Inside the downloaded archive you will be able to inspect the snapshot file related to the terms that failed. Ensure the document downloaded by the engine is the correct one and that the terms content is present. Sometimes a login wall or a cookies wall can block access to the content.
+
+4. If the snapshot is the proper one, you can examine the generated version to check the accuracy of content selection.
+
 ## Merging the Pull Request
 
 Beyond status checks, additional restriction requires branches to be up to date before merging. This ensures that the contribution has been tested with the latest version of the collection. This appears as a _“This branch is out-of-date with the base branch”_ warning on a pull request.
