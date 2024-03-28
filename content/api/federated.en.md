@@ -25,10 +25,6 @@ The default configuration can be found in `config/default.json`. The full refere
 
 ```js
 {
-  "port": "Port number on which the server will listen for incoming connections. Default: 3333",
-  "collections": [  // Overriding this value creates a risk of splintering the federation, make sure to fully understand what happens when changing this value
-    "List of collections to federate; see below for how to configure. Default: https://opentermsarchive.org/collections.json"
-  ]
   "logger": { // Logging mechanism to be notified upon error
     "smtp": {
       "host": "SMTP server hostname", // Hostname of the SMTP server for sending emails
@@ -40,6 +36,10 @@ The default configuration can be found in `config/default.json`. The full refere
       "sendWarnings": "Boolean. Set to true to also send email in case of warning. Default: false",
     }
   }
+  "port": "Port number on which the server will listen for incoming connections. Default: 3333",
+  "collections": [  // Overriding this value creates a risk of splintering the federation, make sure to fully understand what happens when changing this value
+    "List of collections to federate; see below for how to configure. Default: https://opentermsarchive.org/collections.json"
+  ]
 }
 ```
 
