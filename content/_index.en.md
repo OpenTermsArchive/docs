@@ -345,7 +345,7 @@ The default configuration can be found in `config/default.json`. The full refere
 
 The default configuration is merged with (and overridden by) environment-specific configuration that can be specified at startup with the `NODE_ENV` environment variable. See [node-config](https://github.com/node-config/node-config) for more information about configuration files.
 
-In order to have a local configuration that override all exisiting config, it is recommended to create a `config/development.json` file with overridden values.
+For development, in order to have a local configuration that overrides the existing config, it is recommended to create a `config/development.json` file.
 
 #### Storage repositories
 
