@@ -25,9 +25,9 @@ The default configuration can be found in `config/default.json`. The full refere
 
 ```js
 {
-  "port": "Port number on which the server will listen for incoming connections",
+  "port": "Port number on which the server will listen for incoming connections. Default: 3333",
   "collections": [  // Overriding this value creates a risk of splintering the federation, make sure to fully understand what happens when changing this value
-    "List of collections to federate; see below for how to configure"
+    "List of collections to federate; see below for how to configure. Default: https://opentermsarchive.org/collections.json"
   ]
   "logger": { // Logging mechanism to be notified upon error
     "smtp": {
@@ -37,7 +37,7 @@ The default configuration can be found in `config/default.json`. The full refere
     "sendMailOnError": { // Can be set to `false` to disable sending email on error
       "to": "The address to send the email to in case of an error",
       "from": "The address from which to send the email",
-      "sendWarnings": "Boolean. Set to true to also send email in case of warning",
+      "sendWarnings": "Boolean. Set to true to also send email in case of warning. Default: false",
     }
   }
 }
