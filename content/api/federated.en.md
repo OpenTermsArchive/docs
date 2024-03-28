@@ -21,23 +21,25 @@ The codebase for the Federated API is available on [`github.com/OpenTermsArchive
 
 ## Configuring
 
-The default configuration can be found in `config/default.json`. The full reference is given below. You are unlikely to want to edit all of these elements.
+The default configuration can be found in `config/default.json`. The full reference is given below. In the vast majority of cases, the default values should be sufficient and only the email sending data should be changed.
 
 ```js
 {
   "port": "Port number on which the server will listen for incoming connections",
-  "collections": "Collections configuration key; see below",
+  "collections": [  // Overriding this value creates a risk of splintering the federation, make sure to fully understand what happens when changing this value
+    "List of collections to federate; see below for how to configure"
+  ]
   "logger": { // Logging mechanism to be notified upon error
     "smtp": {
       "host": "SMTP server hostname", // Hostname of the SMTP server for sending emails
       "username": "User for server authentication" // Password for server authentication is defined in environment variables, see the “Environment variables” section below
     },
-    "sendMailOnError": { // Can be set to `false` if sending email on error is not needed
+    "sendMailOnError": { // Can be set to `false` to disable sending email on error
       "to": "The address to send the email to in case of an error",
       "from": "The address from which to send the email",
       "sendWarnings": "Boolean. Set to true to also send email in case of warning",
     }
-  },
+  }
 }
 ```
 
@@ -47,20 +49,20 @@ For development, in order to have a local configuration that overrides the exist
 
 ### `collections` configuration key
 
-The `collections` configuration key is an array containing URLs and directly specified collections. Each item in the collections array can be either a URL pointing to a JSON file containing collections or a directly specified collection object.
+The `collections` configuration key is an array containing URLs or specific collections. Each item in the collections array can be either a URL pointing to a JSON file containing Collections objects, or a Collection object.
 
 #### Structure
 
 - **URLs**: URLs pointing to JSON files containing collections description. Each URL should respond with a JSON array containing collection objects.
 
-- **Directly specified collections**: Collection objects directly specified within the configuration. These collections must include properties: `name`, `id`, and `endpoint`.
+- **Collection objects**: the description of a collection, in the form of an object with required properties: `name`, `id`, and `endpoint`.
 
 ```json
 {
   …
   {
     "name": "The name of the collection",
-    "id": "A unique identifier for the collection",
+    "id": "An identifier for the collection that must be unique across the whole federation",
     "endpoint": "The endpoint or URL where the collection API can be accessed"
   }
   …
@@ -73,8 +75,8 @@ The `collections` configuration key is an array containing URLs and directly spe
 "collections": [
   "https://opentermsarchive.org/collections.json",
   {
-    "name": "Direct Collection",
-    "id": "directCollection",
+    "name": "My Collection",
+    "id": "mycollection",
     "endpoint": "https://domain.example/api"
   }
 ]
