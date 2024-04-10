@@ -180,7 +180,7 @@ This key will enable automated deployment via GitHub Actions.
 #### Create the SSH key
 
 - Connect to the server: `ssh <username>@<host>`
-- Create a new deployment SSH key: `ssh-keygen -q -N "" -f ~/.ssh/ota-deploy`
+- Create a new deployment SSH key: `ssh-keygen -t ed25519 -q -N "" -f ~/.ssh/ota-deploy`
 - Add the public key to `authorized_keys`: `cat ~/.ssh/ota-deploy.pub >> ~/.ssh/authorized_keys`
 
 #### Add key to GitHub <collection_name>-declarations repository secrets
@@ -281,7 +281,7 @@ On your local machine:
 
 - Go to the `<collection_id>-declarations` repository
 - Go to `deployment` folder
-- Encrypt token: `ansible-vault encrypt_string --name 'ota_engine_github_bot_private_key' '<SSH PRIVATE KEY content>'`
+- Encrypt token: `ansible-vault encrypt_string --name 'ota_engine_github_bot_private_key' '<SSH PRIVATE KEY content>'`. Ensure to copy and paste the entire contents of the `<SSH PRIVATE KEY content>` **including the line breaks at the end of the file**.
 - Update token the inventory file `deployment/inventory.yml`: `ota_engine_github_bot_private_key: !vault | <encrypted private key>`
 
 #### Back key up
@@ -344,4 +344,4 @@ On your local machine:
 To test deployment from your local machine, your SSH keys must be authorized to connect to the server.
 
 - `cd <path/to/><collection_id>-declarations/deployment`
-- `ansible-playbook opentermsarchive.deployment.deploy`
+- `ansible-playbook opentermsarchive.deployment.engine.all`
