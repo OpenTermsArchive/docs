@@ -157,6 +157,14 @@ For collections to be included in the Open Terms Archive organisation only. For 
 
 ## Set up deployment
 
+### Check server configuration
+
+For the deployment to work, the server must:
+- provide a ed25519 fingerprint
+- have configured a non-root user
+- provide `sudo` rights without asking a password to this user
+  - add `<user>  ALL=(ALL) NOPASSWD:ALL` at the end of the section `# Allow members of group sudo to execute any command`of the file `/etc/sudoers`
+
 ### Define the inventory
 
 On your local machine:
