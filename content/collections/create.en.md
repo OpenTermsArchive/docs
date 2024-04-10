@@ -178,8 +178,8 @@ Before proceeding with deployment, ensure that the server meets the following re
     <server_address> ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLe8sKzXq4KReWp0Dz1lC8AKOcYNtPuk7GOqJRSVGkG1xRhP94gReTp7S1WnF6LgFt3vlC2k62BkSoXgryY3+8=
   ```
 
-    - If the server does not have an Ed25519 SSH host key defined, once logged in on your server, you can generate one: `sudo ssh-keygen -t ed25519 -f /etc/ssh/ssh_host_ed25519_key`
-    - Restart the SSH service to apply the changes: `sudo systemctl restart ssh`
+  - If the server does not have an Ed25519 SSH host key defined, once logged in on your server, you can generate one: `sudo ssh-keygen -t ed25519 -f /etc/ssh/ssh_host_ed25519_key`
+  - Restart the SSH service to apply the changes: `sudo systemctl restart ssh`
 
 - Make sure that a non-root user has been set up on the server, if not you can create by following:
 
@@ -192,7 +192,7 @@ Before proceeding with deployment, ensure that the server meets the following re
   - Navigate to the section titled `# Allow members of group sudo to execute any command`.
   - Add the following line at the end of this section:
   
-    ```
+    ```shell
     <user>  ALL=(ALL) NOPASSWD:ALL
     ```
 
