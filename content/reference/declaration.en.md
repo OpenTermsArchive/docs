@@ -1,34 +1,34 @@
 ---
-title: "Contributing terms"
-weight: 4
+title: "Declaration"
 ---
 
-# Contributing new declarations
+# Contributing terms
 
-This is a step by step guide to help you add declarations to the [contrib-declaration](https://github.com/OpenTermsArchive/contrib-declarations) repository. This repository is dedicated for volunteer contribution of declarations to Open Terms Archive.
+## Declaring a new service
 
-Having understood briefly how a declaration is structured in JSON format, we need to look at concrete steps on how you can add these JSON files to the repository.
+Before declaring a service, you will need to choose the service name and service ID. The service ID will be the name of the JSON file in which the service will be declared. It is a normalised version of the service name.
 
-## Prerequisites
+### Service name
 
-In order to add declarations:
+The service name is exposed to end users. It should reflect as closely as possible the official service name, as referenced in the terms or “about” pages, so that it can be recognised easily and unambiguously.
 
-1. You need to have [Node.js](https://nodejs.org/en/) installed on your machine. If you don't have it, you can download it from the official website [here](https://nodejs.org/en/download/).
-2. You need to have git installed on your machine. If you don't have it, you can download it from the official website [here](https://git-scm.com/downloads).
+- The service name should be the one used by the service itself, no matter the alphabet, UTF symbols, spaces, and casing.
+  - _Example: `eBay`_.
+  - _Example: `hi5`_.
+  - _Example: `LINE`_.
+  - _Example: `App Store`_.
+  - _Example: `туту.ру` (Cyrillic)_.
+  - _Example: `抖音短视频` (Simplified Chinese characters)_.
+- Domain name extensions (TLDs) are allowed when they are part of the official service name.
+  - _Example: `Booking.com`_.
+  - _Example: `historielærer.dk`_.
+- Service names can be prefixed by the provider name, separated by a space, when it would otherwise be too generic or ambiguous.
+  - _Example: `Ads` (by Facebook) → `Facebook Ads`_.
+  - _Example: `Analytics` (by Google) → `Google Analytics`_.
+  - _Example: `Firebase` (by Google) → `Firebase`_.
+  - _Example: `App Store` (by Apple) → `App Store`_.
 
-## Adding a declaration
-
-To add a declaration, you need to follow these steps:
-
-1. Clone the [contrib-declaration](https://github.com/OpenTermsArchive/contrib-declarations) repository to your local machine.
-2. Create a branch that describes your contribution e.g. `add-Open-Terms-Archive-ToS` or `add-firefox-privacy-policy`
-3. Run `npm install`. This is to install all the dependencies including the Open Terms Archive engine which will allow you to test and validate your declaration to make sure it is ok.
-4. Create a JSON file with the name of the service you are adding the declaration for. This JSON file should be in the `declarations` folder of the repository. To learn more about selecting the right service name, please read the [declaring a new service](#declaring-a-new-service) section of our docs.
-5. Visit the declaration URL and use [browser developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools) to inspect the page and find the right selectors for the significant section containing the terms you want to declare.
-6. After you've properly added your selectors and structured your JSON file, you need to test and validate your JSON file to make sure it is ok. To do this, you need to run `npx ota validate --services [service name]` from the root of the repository. This will run a validation on the declaration, highlighting any changes required.
-7. If all tests are good, make a pull request to the main repository.  
-
-> If you have a hard time finding the service name, check out the [practical guidelines to find the service name](declarations-guidelines.md#service-name), and feel free to mention your uncertainties in the pull request! We will help you improve the service name if necessary 🙂
+> If you have a hard time finding the service name, check out the [practical guidelines to find the service name]({{< relref "guidelines/declaring#service-name" >}}), and feel free to mention your uncertainties in the pull request! We will help you improve the service name if necessary 🙂
 
 ### Service ID
 
@@ -39,7 +39,7 @@ The service ID is exposed to developers. It should be easy to handle with script
   - _Example: `historielærer.dk` → `historielaerer.dk`_.
   - _Example: `туту.ру` → `tutu.ru`_.
   - _Example: `抖音短视频` → `Douyin`_.
-- Punctuation is supported, except characters that have meaning at filesystem level (`:`, `/`, `\`). These are replaced with a dash (`-`). The dot (`.`) is supported, but the service ID cannot be solely `.` or `..` as these have specific meanings in the filesystem.
+- Punctuation is supported, except characters that have meaning at filesystem level (`:`, `/`, `\`). These are replaced with a dash (`-`).
   - _Example: `Booking.com` → `Booking.com`_.
   - _Example: `Yahoo!` → `Yahoo!`_.
   - _Example: `re:start` → `re-start`_.
@@ -48,8 +48,7 @@ The service ID is exposed to developers. It should be easy to handle with script
   - _Example: `App Store` → `App Store`_.
   - _Example: `DeviantArt` → `DeviantArt`_.
 
-> If you have a hard time defining the service ID, check out the [practical guidelines to derive the ID from the service name](declarations-guidelines.md#service-id), and feel free to mention your uncertainties in the pull request! We will help you improve the service ID if necessary 🙂
-
+> If you have a hard time defining the service ID, check out the [practical guidelines to derive the ID from the service name]({{< relref "guidelines/declaring#service-id" >}}), and feel free to mention your uncertainties in the pull request! We will help you improve the service ID if necessary 🙂
 > More details on the ID and naming constraints and recommendations can be found in the relevant [decision record](https://github.com/OpenTermsArchive/engine/blob/main/decision-records/0001-service-name-and-id.md).
 
 ### Service declaration
@@ -69,11 +68,11 @@ Within the `documents` JSON object, we will now declare terms.
 
 ## Declaring terms
 
-Terms are declared in a service declaration file, under the `documents` property. 
+Terms are declared in a service declaration file, under the `documents` property.
 
-Most of the time, terms are written in only one source document (for example [Facebook Terms of Service](https://www.facebook.com/legal/terms)) but sometimes terms can be spread across multiple online source documents, and their combination constitutes the terms (for example [Facebook Community Guidelines](https://transparency.fb.com/policies/community-standards/)). 
+Most of the time, terms are written in only one source document (for example [Facebook Terms of Service](https://www.facebook.com/legal/terms)) but sometimes terms can be spread across multiple online source documents, and their combination constitutes the terms (for example [Facebook Community Guidelines](https://transparency.fb.com/policies/community-standards/)).
 
-#### Source document
+### Source document
 
 The way in which a source document is obtained is defined in a JSON object:
 
@@ -96,13 +95,13 @@ Let’s start by defining these keys!
 
 This property should simply contain the URL at which the terms you want to track can be downloaded. HTML and PDF files are supported.
 
-When terms coexist in different languages and jurisdictions, please refer to the [scope of the collection](../README.md#collections) to which you are contributing. This scope is usually defined in the README.
+When terms coexist in different languages and jurisdictions, please refer to the [scope of the collection]({{< relref "/#collections" >}}) to which you are contributing. This scope is usually defined in the README.
 
 #### `select`
 
 _This property is not needed for PDF documents._
 
-Most of the time, contractual documents are exposed as web pages, with a header, a footer, navigation menus, possibly ads… We aim at tracking only the significant parts of the document. In order to achieve that, the `select` property allows to extract only those parts in the process of [converting from snapshot to version](../README.md#how-it-works).
+Most of the time, contractual documents are exposed as web pages, with a header, a footer, navigation menus, possibly ads… We aim at tracking only the significant parts of the document. In order to achieve that, the `select` property allows to extract only those parts in the process of [converting from snapshot to version](https://opentermsarchive.org/#how-it-works).
 
 The `select` value can be either a [CSS selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors), a [range selector](#range-selectors) or an array of those.
 
@@ -260,7 +259,7 @@ Each filter is exposed as a named function export that takes a `document` parame
 
 > The `document` parameter is actually a [JSDOM](https://github.com/jsdom/jsdom) document instance.
 
-You can learn more about usual noise and ways to handle it [in the guidelines](declarations-guidelines.md#Usual-noise).
+You can learn more about usual noise and ways to handle it [in the guidelines]({{< relref "guidelines/declaring#usual-noise" >}}).
 
 ##### Example
 
@@ -383,43 +382,54 @@ If some parts of the source documents are repeated, they can be factorised. For 
   …
 ```
 
-## Contributing new declarations
-
-This is a step by step guide to help you add declarations to the [contrib-declaration](https://github.com/OpenTermsArchive/contrib-declarations) repository. This repository is dedicated for volunteer contribution of declarations to Open Terms Archive.
-
-Having understood briefly how a declaration is structured in JSON format, we need to look at concrete steps on how you can add these JSON files to the repository. To add them, you need to:
-
-1. Clone the [contrib-declaration](https://github.com/OpenTermsArchive/contrib-declarations) repository to your local machine.
-2. Create a branch that describes your contribution e.g. `add-Open-Terms-Archive-ToS` or `add-firefox-privacy-policy`
-3. Run `npm install`. This is to install all the dependencies including the Open Terms Archive engine which will allow you to test and validate your declaration to make sure it is ok.
-4. Create a JSON file with the name of the service you are adding the declaration for. This JSON file should be in the `declarations` folder of the repository. To learn more about selecting the right service name, please read the [declaring a new service](#declaring-a-new-service) section of our docs.
-5. Visit the declaration URL and use [browser developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools) to inspect the page and find the right selectors for the significant section containing the terms you want to declare.
-6. After you've properly added your selectors and structured your JSON file, you need to test and validate your JSON file to make sure it is ok. To do this, you need to run `npx ota validate --services [service name]` from the root of the repository. This will run a validation on the declaration, highlighting any changes required.
-7. If all tests are good, make a pull request to the main repository.  
-
-You can read more about the [CLI](https://docs.opentermsarchive.org/#cli) to learn more about other tests and linting you can run on your declaration
-
 #### Terms type
 
-Great, your terms declaration is now almost complete! You simply need to write it under the appropriate terms type in the `documents` JSON object within the service declaration.
+Great, your terms declaration is now almost complete! We simply need to write it under the appropriate terms type in the `documents` JSON object within the service declaration. In order to distinguish between the many terms that can be associated with a service and enable cross-services comparison of similar terms, we maintain a unique list of terms types.
+You can find more information and the list of allowed values for the `<terms type>` key in the [dedicated repository](https://github.com/OpenTermsArchive/terms-types).
 
-In order to distinguish between the many terms that can be associated with a service and enable cross-services comparison of similar terms, we maintain a unique list of terms types in a [dedicated repository](https://github.com/OpenTermsArchive/terms-types).
+The types might not always match the exact name given by the service provider. For example, some providers might call “Terms and Conditions” or “Terms of Use” what some others call “Terms of Service”. The terms type does not have to match the exact name, it only has to match the _commitment_ that is taken.
 
-Please note, the terms type may differ from the exact name provided by the service, but it should align with the underlying commitment. For example, some providers might call “Terms and Conditions” or “Terms of Use” what some others call “Terms of Service”.
+If the terms you want to add match no existing type, you can [suggest a new one](https://github.com/OpenTermsArchive/engine/discussions/categories/document-types).
 
-If the terms you want to add don't match an existing type, you can [suggest a new one](https://github.com/OpenTermsArchive/terms-types/blob/main/CONTRIBUTING.md).
+##### Defining new terms types
+
+Before defining a new terms type, please note that wanting to multiply terms types is usually a symptom that the service needs to be broken down into several services. For example, rather than considering that Facebook has several specific variations of “Terms of Service”, it is more accurate to declare “Terms of Service” for the services “Facebook” (social network service for the general public), “Facebook Ads” (ads service for advertisers) and “Facebook Payments” (payment service for developers). On the other hand, the “Google Ads” service is a commercial suite acting as an umbrella for several pieces of software that all share the same terms, and there is thus no need to separate each of them. See practical guidelines for [provider prefixing]({{< relref "guidelines/declaring#provider-prefixing" >}}).
+
+In order to guide usage and disambiguate synonyms, we characterise each terms type along three dimensions of the commitment that is being taken in it:
+
+1. The `writer` of the document;
+2. the targeted `audience`;
+3. the `object` of the commitment.
+
+A terms type thus looks like:
+
+```json
+{
+  …
+  "Privacy Policy": {
+    "commitment": {
+      "writer": "service provider",
+      "audience": "end user",
+      "object": "personal data"
+    }
+  },
+  …
+}
+```
+
+Please note that we do not want [service-specific types](https://github.com/OpenTermsArchive/engine/pull/89) such as “Twitter Privacy Policy”. Terms types should be generic, even if only one service uses them at a given time. Otherwise, duplication occurs and [important efforts](https://github.com/OpenTermsArchive/engine/pull/88) have to be deployed to deduplicate. The triptych form “writer / audience / object” is precisely used to avoid this sort of duplication.
 
 ### Testing your declaration
 
 You can test the declarations you created or changed by running the following command:
 
-```
+```js
 npm test [$service_id [$another_service_id …]]
 ```
 
 Since this operation fetches documents and could be long, you can also validate the declaration structure only:
 
-```
+```js
 npm run test:schema [$service_id [$another_service_id …]]
 ```
 
@@ -429,7 +439,7 @@ In order to ensure consistency across declarations, all declarations files have 
 
 In order to achieve this, you can use the following command:
 
-```
+``` js
 npm run lint [$service_id [$another_service_id …]]
 ```
 
@@ -520,20 +530,3 @@ export const removeSharesButton = [
   },
 ];
 ```
-
-### Handling a terminated service
-
-If the service provider stops offering a service, the associated terms will become unavailable. To mark that service termination in Open Terms Archive and ensure tracking tentatives are stopped, while maintaining the possibility to explore the history:
-
-1. Move the existing documents declaration to the service [history file](#terms-declaration-history).
-2. Update the declaration to stop tracking all terms, by removing every `<terms type>` entries from the  `documents` key in the declaration:
-```json
-{
-  "name": "<service name>",
-  "documents": {}
-}
-```
-
-### Renaming a service
-
-The consensus is to consider that a service provider renaming a service (for example, `Twitter` to `X`) is akin to terminating the previous service and opening a new one. Therefore, to apply a service renaming, open a pull request that both [terminates the previous service](#handling-terminated-service) and adds a new [service declaration](#declaring-a-new-service) with the new service name. You can reuse the `documents` part of the original declaration, but should double-check that the selectors and URLs still match, as a service rename is most often accompanied by a new page layout, a new domain name, and sometimes entirely new terms.
