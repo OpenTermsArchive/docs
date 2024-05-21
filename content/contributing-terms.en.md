@@ -46,7 +46,7 @@ The service ID is exposed to developers. It should be easy to handle with script
   - _Example: `historielærer.dk` → `historielaerer.dk`_.
   - _Example: `туту.ру` → `tutu.ru`_.
   - _Example: `抖音短视频` → `Douyin`_.
-- Punctuation is supported, except characters that have meaning at filesystem level (`:`, `/`, `\`). These are replaced with a dash (`-`).
+- Punctuation is supported, except characters that have meaning at filesystem level (`:`, `/`, `\`). These are replaced with a dash (`-`). The dot (`.`) is supported, but the service ID cannot be solely `.` or `..` as these have specific meanings in the filesystem.
   - _Example: `Booking.com` → `Booking.com`_.
   - _Example: `Yahoo!` → `Yahoo!`_.
   - _Example: `re:start` → `re-start`_.
