@@ -2,6 +2,7 @@
   border:1Px solid var(--colorBlack200);
   padding:var(--mL);
   overflow-x: hidden;
+  max-width: 100%;
 
   & hr {
     clear: both;
