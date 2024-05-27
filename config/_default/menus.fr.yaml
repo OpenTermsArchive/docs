@@ -1,55 +1,55 @@
 header:
-  - name: Accueil
-    url: https://opentermsarchive.org
-    weight: 1
   - name: Jeux de données
-    url: https://opentermsarchive.org/fr/jeux-de-donnees
+    url: https://opentermsarchive.org/fr/jeux-de-donnees/
+    weight: 1
+  - name: Mémos
+    url: https://opentermsarchive.org/fr/memos/
     weight: 2
   - name: Documentation
     url: /fr
     weight: 3
   - name: Impact
-    url: https://opentermsarchive.org/fr/impact
+    url: https://opentermsarchive.org/fr/impact/
     weight: 4
   - name: À propos
-    url: https://opentermsarchive.org/fr/a-propos
+    url: https://opentermsarchive.org/fr/a-propos/
     weight: 5
 footer:
   - name: Accueil
     url: https://opentermsarchive.org
     weight: 1
   - name: Jeux de données
-    url: https://opentermsarchive.org/fr/jeux-de-donnees
+    url: https://opentermsarchive.org/fr/jeux-de-donnees/
     weight: 2
-  - name: Étude de cas
-    url: https://opentermsarchive.org/fr/etudes-de-cas
+  - name: Mémos
+    url: https://opentermsarchive.org/fr/memos/
     weight: 3
   - name: Documentation
     url: /fr
     weight: 4
   - name: Impact
-    url: https://opentermsarchive.org/fr/impact
+    url: https://opentermsarchive.org/fr/impact/
     weight: 5
   - name: À propos
-    url: https://opentermsarchive.org/fr/a-propos
+    url: https://opentermsarchive.org/fr/a-propos/
     weight: 6
 first_subfooter:
   - name: Statistiques
-    url: https://opentermsarchive.org/fr/stats
+    url: https://opentermsarchive.org/fr/statistiques/
     weight: 1
   - name: Média
-    url: https://opentermsarchive.org/fr/media
+    url: https://opentermsarchive.org/fr/media/
     weight: 2
   - name: Code source
     url: https://github.com/OpenTermsArchive
     weight: 3
 second_subfooter:
   - name: Mentions légales
-    url: https://opentermsarchive.org/fr/mentions-legales
+    url: https://opentermsarchive.org/fr/mentions-legales/
     weight: 1
   - name: Politique de confidentialité
-    url: https://opentermsarchive.org/fr/politique-de-confidentialite
+    url: https://opentermsarchive.org/fr/politique-de-confidentialite/
     weight: 2
   - name: 'Accessibilité : non conforme'
-    url: https://opentermsarchive.org/fr/accessibilite
+    url: https://opentermsarchive.org/fr/accessibilite/
     weight: 3
