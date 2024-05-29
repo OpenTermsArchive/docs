@@ -1,55 +1,55 @@
 header:
-  - name: Home
-    url: https://opentermsarchive.org
-    weight: 1
   - name: Datasets
-    url: https://opentermsarchive.org/datasets
+    url: https://opentermsarchive.org/en/datasets/
+    weight: 1
+  - name: Memos
+    url: https://opentermsarchive.org/en/memos/
     weight: 2
   - name: Documentation
     url: /
     weight: 3
   - name: Impact
-    url: https://opentermsarchive.org/impact
+    url: https://opentermsarchive.org/en/impact/
     weight: 4
   - name: About
-    url: https://opentermsarchive.org/about
+    url: https://opentermsarchive.org/en/about/
     weight: 5
 footer:
   - name: Home
     url: https://opentermsarchive.org
     weight: 1
   - name: Datasets
-    url: https://opentermsarchive.org/datasets
+    url: https://opentermsarchive.org/en/datasets/
     weight: 2
-  - name: Case studies
-    url: https://opentermsarchive.org/case-studies
+  - name: Memos
+    url: https://opentermsarchive.org/en/memos/
     weight: 3
   - name: Documentation
     url: /
     weight: 4
   - name: Impact
-    url: https://opentermsarchive.org/impact
+    url: https://opentermsarchive.org/en/impact/
     weight: 5
   - name: About
-    url: https://opentermsarchive.org/about
+    url: https://opentermsarchive.org/en/about/
     weight: 6
 first_subfooter:
   - name: Statistics
-    url: https://opentermsarchive.org/stats
+    url: https://opentermsarchive.org/en/stats/
     weight: 1
   - name: Media
-    url: https://opentermsarchive.org/media
+    url: https://opentermsarchive.org/en/media/
     weight: 2
   - name: Source code
     url: https://github.com/OpenTermsArchive
     weight: 3
 second_subfooter:
   - name: Legal notice
-    url: https://opentermsarchive.org/legal-notice
+    url: https://opentermsarchive.org/en/legal-notice/
     weight: 1
   - name: Privacy policy
-    url: https://opentermsarchive.org/privacy-policy
+    url: https://opentermsarchive.org/en/privacy-policy/
     weight: 2
   - name: 'Accessibility: not compliant'
-    url: https://opentermsarchive.org/accessibility
+    url: https://opentermsarchive.org/en/accessibility/
     weight: 3

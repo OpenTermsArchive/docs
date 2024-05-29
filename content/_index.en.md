@@ -73,7 +73,7 @@ A **declaration** also contains some metadata on the **service** on which the **
 Open Terms Archive **acquires** **terms** to deliver an explorable **history** of **changes**. This can be done in two ways:
 
 1. For the present and future, by **tracking**.
-2. For the past, by **importing** from an existing **fonds** such as [ToSBack](https://tosback.org), the [Internet Archive](https://archive.org/web/), [Common Crawl](https://commoncrawl.org) or any other in-house format.
+2. For the past, by **importing** from an existing **fonds** such as [ToSBack](https://tosback.org), the [Internet Archive](https://web.archive.org/), [Common Crawl](https://commoncrawl.org) or any other in-house format.
 
 ### Tracking terms
 
