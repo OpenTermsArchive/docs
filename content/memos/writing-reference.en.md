@@ -4,7 +4,7 @@ title: "Writing reference"
 
 # Writing reference
 
-Each memo must be composed of the elements detailed below. You must follow this structure when writing.
+Each memo must be composed of the elements detailed below. You must follow this structure when writing your memos.
 
 ## Title
 
@@ -34,7 +34,7 @@ Each memo must be composed of the elements detailed below. You must follow this 
 
 ## Terms types
 
-- You must fill a valid [terms type](https://github.com/OpenTermsArchive/terms-types/blob/main/termsTypes.json) (e.g., “Trackers Policy” not “Cookie Policy“).
+- You must fill a valid [terms type](https://github.com/OpenTermsArchive/terms-types).
 - Multiple terms types are allowed.
 
 **Examples**
