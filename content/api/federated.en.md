@@ -1,23 +1,23 @@
 ---
-title: Federated
+title: Federation
 weight: 3
 ---
 
-# Federated Web API [Beta]
+# Federation Web API [Beta]
 
-Open Terms Archive is a decentralised system that tracks collections of services' terms across multiple servers. Each collection operates its own API, and the federated API unifies search and discovery across collections, fostering collaboration with external applications.
+Open Terms Archive is a decentralised system that tracks collections of services' terms across multiple servers. Each collection operates its own API, and the federation API unifies search and discovery across collections, fostering collaboration with external applications.
 
-The Federated Web API exposes JSON data over HTTP. Its [documentation](http://51.89.136.45/v1/docs/) is provided in a dedicated, interactive interface.
+The Federation Web API exposes JSON data over HTTP. Its [documentation](http://162.19.74.224/federation-api/v1/docs/) is provided in a dedicated, interactive interface.
 
 That endpoint exposes both the [OpenAPI](https://swagger.io/specification/) specification if the requested `Content-Type` is JSON, and a Swagger UI for visual and interactive documentation otherwise.
 
 ## Beta
 
-This API is offered as a preview, based on a first use case [defined](https://github.com/OpenTermsArchive/engine/issues/1016) with partner [ToS;DR](https://tosdr.org). Unexpected problems or missing functionality may arise. Please provide feedback through [issues](https://github.com/OpenTermsArchive/federated-api/issues) in the dedicated repository.
+This API is offered as a preview, based on a first use case [defined](https://github.com/OpenTermsArchive/engine/issues/1016) with partner [ToS;DR](https://tosdr.org). Unexpected problems or missing functionality may arise. Please provide feedback through [issues](https://github.com/OpenTermsArchive/federation-api/issues) in the dedicated repository.
 
 ## Source code
 
-The codebase for the Federated API is available on [`github.com/OpenTermsArchive/federated-api`](https://github.com/OpenTermsArchive/federated-api).
+The codebase for the Federation API is available on [`github.com/OpenTermsArchive/federation-api`](https://github.com/OpenTermsArchive/federation-api).
 
 ## Configuring
 
@@ -25,21 +25,24 @@ The default configuration can be found in `config/default.json`. The full refere
 
 ```js
 {
-  "logger": { // Logging mechanism to be notified upon error
-    "smtp": {
-      "host": "SMTP server hostname", // Hostname of the SMTP server for sending emails
-      "username": "User for server authentication" // Password for server authentication is defined in environment variables, see the “Environment variables” section below
-    },
-    "sendMailOnError": { // Can be set to `false` to disable sending email on error
-      "to": "The address to send the email to in case of an error",
-      "from": "The address from which to send the email",
-      "sendWarnings": "Boolean. Set to true to also send email in case of warning. Default: false",
+  "@opentermsarchive/federation-api": {
+    "logger": { // Logging mechanism to be notified upon error
+      "smtp": {
+        "host": "SMTP server hostname", // Hostname of the SMTP server for sending emails
+        "username": "User for server authentication" // Password for server authentication is defined in environment variables, see the “Environment variables” section below
+      },
+      "sendMailOnError": { // Can be set to `false` to disable sending email on error
+        "to": "The address to send the email to in case of an error",
+        "from": "The address from which to send the email",
+        "sendWarnings": "Boolean. Set to true to also send email in case of warning. Default: false",
+      }
     }
+    "port": "Port number on which the server will listen for incoming connections. Default: 3333",
+    "basePath": "The base path for the API endpoints",
+    "collections": [  // Overriding this value creates a risk of splintering the federation, make sure to fully understand what happens when changing this value
+      "List of collections to federate; see below for how to configure. Default: https://opentermsarchive.org/collections.json"
+    ]
   }
-  "port": "Port number on which the server will listen for incoming connections. Default: 3333",
-  "collections": [  // Overriding this value creates a risk of splintering the federation, make sure to fully understand what happens when changing this value
-    "List of collections to federate; see below for how to configure. Default: https://opentermsarchive.org/collections.json"
-  ]
 }
 ```
 
@@ -88,4 +91,4 @@ If multiple collections share the same `id`, the latest defined collection in th
 
 ## Deploying
 
-Deployment recipes are available in a [dedicated repository](https://github.com/OpenTermsArchive/deployment). Look at the [Federated API section](https://github.com/OpenTermsArchive/deployment#federated-api-application) on the README to know how to deploy the API.
+Deployment recipes are available in a [dedicated repository](https://github.com/OpenTermsArchive/deployment).
