@@ -286,59 +286,63 @@ The default configuration can be found in `config/default.json`. The full refere
 
 ```js
 {
-  "services": {
-    "declarationsPath": "Directory containing services declarations and associated filters"
-  },
-  "recorder": {
-    "versions": {
-      "storage": {
-        "<storage-repository>": "Storage repository configuration object; see below"
+  "@opentermsarchive/engine": {
+    "trackingSchedule": "Cron expression to define the tracking schedule",
+    "services": {
+      "declarationsPath": "Directory containing services declarations and associated filters"
+    },
+    "recorder": {
+      "versions": {
+        "storage": {
+          "<storage-repository>": "Storage repository configuration object; see below"
+        }
+      },
+      "snapshots": {
+        "storage": {
+          "<storage-repository>": "Storage repository configuration object; see below"
+        }
       }
     },
-    "snapshots": {
-      "storage": {
-        "<storage-repository>": "Storage repository configuration object; see below"
-      }
-    }
-  },
-  "fetcher": {
-    "waitForElementsTimeout": "Maximum time (in milliseconds) to wait for elements to be present in the page when fetching document in a headless browser"
-    "navigationTimeout": "Maximum time (in milliseconds) to wait for page to load",
-    "language": "Language (in ISO 639-1 format) to pass in request headers"
-  },
-  "notifier": { // Notify specified mailing lists when new versions are recorded
-    "sendInBlue": { // SendInBlue API Key is defined in environment variables, see the “Environment variables” section below
-      "updatesListId": "SendInBlue contacts list ID of persons to notify on terms updates",
-      "updateTemplateId": "SendInBlue email template ID used for updates notifications"
-    }
-  },
-  "logger": { // Logging mechanism to be notified upon error
-    "smtp": {
-      "host": "SMTP server hostname",
-      "username": "User for server authentication" // Password for server authentication is defined in environment variables, see the “Environment variables” section below
+    "fetcher": {
+      "waitForElementsTimeout": "Maximum time (in milliseconds) to wait for elements to be present in the page when fetching document in a headless browser"
+      "navigationTimeout": "Maximum time (in milliseconds) to wait for page to load",
+      "language": "Language (in ISO 639-1 format) to pass in request headers"
     },
-    "sendMailOnError": { // Can be set to `false` if sending email on error is not needed
-      "to": "The address to send the email to in case of an error",
-      "from": "The address from which to send the email",
-      "sendWarnings": "Boolean. Set to true to also send email in case of warning",
-    }
-  },
-  "reporter": { // Reporter mechanism to create GitHub issues when terms content is inaccessible
-    "githubIssues": {
-      "repositories": {
-        "declarations": "GitHub repository where to create issues; expected format: <owner>/<repository>",
-        "versions": "GitHub repository of versions associated with the declarations; expected format: <owner>/<repository>",
-        "snapshots": "GitHub repository of snapshots associated with the declarations; expected format: <owner>/<repository>"
+    "notifier": { // Notify specified mailing lists when new versions are recorded
+      "sendInBlue": { // SendInBlue API Key is defined in environment variables, see the “Environment variables” section below
+        "updatesListId": "SendInBlue contacts list ID of persons to notify on terms updates",
+        "updateTemplateId": "SendInBlue email template ID used for updates notifications"
       }
+    },
+    "logger": { // Logging mechanism to be notified upon error
+      "smtp": {
+        "host": "SMTP server hostname",
+        "username": "User for server authentication" // Password for server authentication is defined in environment variables, see the “Environment variables” section below
+      },
+      "sendMailOnError": { // Can be set to `false` if sending email on error is not needed
+        "to": "The address to send the email to in case of an error",
+        "from": "The address from which to send the email",
+        "sendWarnings": "Boolean. Set to true to also send email in case of warning",
+      }
+    },
+    "reporter": { // Reporter mechanism to create GitHub issues when terms content is inaccessible
+      "githubIssues": {
+        "repositories": {
+          "declarations": "GitHub repository where to create issues; expected format: <owner>/<repository>",
+          "versions": "GitHub repository of versions associated with the declarations; expected format: <owner>/<repository>",
+          "snapshots": "GitHub repository of snapshots associated with the declarations; expected format: <owner>/<repository>"
+        }
+      }
+    },
+    "dataset": { // Release mechanism to create dataset periodically
+      "title": "Title of the dataset; recommended to be the name of the instance that generated it",
+      "versionsRepositoryURL": "GitHub repository where the dataset will be published as a release; recommended to be the versions repository for discoverability and tagging purposes",
+      "publishingSchedule": "Cron expression to define the dataset publishing schedule"
+    },
+    "collection-api": { // Collection metadata API
+      "port": "The port number on which the API will listen for incoming requests",
+      "basePath": "The base path for the API endpoints"
     }
-  },
-  "dataset": { // Release mechanism to create dataset periodically
-    "title": "Title of the dataset; recommended to be the name of the instance that generated it",
-    "versionsRepositoryURL": "GitHub repository where the dataset will be published as a release; recommended to be the versions repository for discoverability and tagging purposes"
-  },
-  "api": { // Collection metadata API
-    "port": "The port number on which the API will listen for incoming requests",
-    "basePath": "The base path for the API endpoints"
   }
 }
 ```
