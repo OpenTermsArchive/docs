@@ -287,7 +287,7 @@ The default configuration can be found in `config/default.json`. The full refere
 ```js
 {
   "@opentermsarchive/engine": {
-    "trackingSchedule": "Cron expression to define the tracking schedule",
+    "trackingSchedule": "Cron expression to define the tracking schedule; see below",
     "services": {
       "declarationsPath": "Directory containing services declarations and associated filters"
     },
@@ -337,7 +337,7 @@ The default configuration can be found in `config/default.json`. The full refere
     "dataset": { // Release mechanism to create dataset periodically
       "title": "Title of the dataset; recommended to be the name of the instance that generated it",
       "versionsRepositoryURL": "GitHub repository where the dataset will be published as a release; recommended to be the versions repository for discoverability and tagging purposes",
-      "publishingSchedule": "Cron expression to define the dataset publishing schedule"
+      "publishingSchedule": "Cron expression to define the dataset publishing schedule; see below"
     },
     "collection-api": { // Collection metadata API
       "port": "The port number on which the API will listen for incoming requests",
@@ -350,6 +350,20 @@ The default configuration can be found in `config/default.json`. The full refere
 The default configuration is merged with (and overridden by) environment-specific configuration that can be specified at startup with the `NODE_ENV` environment variable. See [node-config](https://github.com/node-config/node-config) for more information about configuration files.
 
 For development, in order to have a local configuration that overrides the existing config, it is recommended to create a `config/development.json` file.
+
+#### Schedules
+
+Schedules for tracking and dataset publication are defined using CRON expressions.
+
+A CRON expression is a string comprised of five or six fields separated by spaces, each representing a different unit of time: minute, hour, day of the month, month, and day of the week (and optionally, year). For example, the expression `30 */12 * * *` means "at minute 30 past every 12th hour of every day."
+
+Here are some examples of CRON expressions and what they represent:
+
+- `0 0 * * *`: Run at midnight every day.
+- `0 */6 * * *`: Run every 6 hours.
+- `30 2 * * MON`: Run at 2:30 AM every Monday.
+.
+Some online tools, such as [crontab.guru](https://crontab.guru), which provide a user-friendly interface can be used to create and validate CRON expressions.
 
 #### Storage repositories
 
