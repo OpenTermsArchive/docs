@@ -353,17 +353,17 @@ For development, in order to have a local configuration that overrides the exist
 
 #### Schedules
 
-Schedules for tracking and dataset publication are defined using CRON expressions.
+Schedules for tracking and dataset publication are defined using Cron expressions.
 
-A CRON expression is a string comprised of five or six fields separated by spaces, each representing a different unit of time: minute, hour, day of the month, month, and day of the week (and optionally, year). For example, the expression `30 */12 * * *` means "at minute 30 past every 12th hour of every day."
+A Cron expression is a string comprised of five or six fields separated by spaces, each representing a different unit of time: minute, hour, day of the month, month, and day of the week (and optionally, year). For example, the expression `30 */12 * * *` means "at minute 30 past every 12th hour of every day."
 
-Here are some valid examples of CRON expressions and what they represent:
+Here are some valid examples of Cron expressions and what they represent:
 
 - `0 0 * * *`: Run at midnight every day.
 - `0 */6 * * *`: Run every 6 hours.
 - `30 2 * * MON`: Run at 2:30 AM every Monday.
 .
-Some online tools, such as [crontab.guru](https://crontab.guru), provide a user-friendly interface to create and validate CRON expressions.
+Some online tools, such as [crontab.guru](https://crontab.guru), provide a user-friendly interface to create and validate Cron expressions.
 
 #### Storage repositories
 
