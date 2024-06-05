@@ -4,11 +4,11 @@ weight: 3
 aliases: /api/federated/
 ---
 
-# Federation Web API [Beta]
+# Federation API
 
-Open Terms Archive is a decentralised system that tracks collections of services' terms across multiple servers. Each collection operates its own API, and the federation API unifies search and discovery across collections, fostering collaboration with external applications.
+Open Terms Archive is a decentralised system that tracks collections of services' terms across multiple servers. Each collection operates its own API, and the Federation API unifies search and discovery across collections, fostering collaboration with external applications.
 
-The Federation Web API exposes JSON data over HTTP. Its [documentation](http://162.19.74.224/federation-api/v1/docs/) is provided in a dedicated, interactive interface.
+The Federation API exposes JSON data over HTTP. Its [documentation](http://162.19.74.224/federation-api/v1/docs/) is provided in a dedicated, interactive interface.
 
 That endpoint exposes both the [OpenAPI](https://swagger.io/specification/) specification if the requested `Content-Type` is JSON, and a Swagger UI for visual and interactive documentation otherwise.
 

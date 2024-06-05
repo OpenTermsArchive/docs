@@ -357,13 +357,13 @@ Schedules for tracking and dataset publication are defined using CRON expression
 
 A CRON expression is a string comprised of five or six fields separated by spaces, each representing a different unit of time: minute, hour, day of the month, month, and day of the week (and optionally, year). For example, the expression `30 */12 * * *` means "at minute 30 past every 12th hour of every day."
 
-Here are some examples of CRON expressions and what they represent:
+Here are some valid examples of CRON expressions and what they represent:
 
 - `0 0 * * *`: Run at midnight every day.
 - `0 */6 * * *`: Run every 6 hours.
 - `30 2 * * MON`: Run at 2:30 AM every Monday.
 .
-Some online tools, such as [crontab.guru](https://crontab.guru), which provide a user-friendly interface can be used to create and validate CRON expressions.
+Some online tools, such as [crontab.guru](https://crontab.guru), provide a user-friendly interface to create and validate CRON expressions.
 
 #### Storage repositories
 
