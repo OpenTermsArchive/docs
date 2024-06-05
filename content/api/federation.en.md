@@ -1,6 +1,7 @@
 ---
 title: Federation
 weight: 3
+aliases: /api/federated/
 ---
 
 # Federation Web API [Beta]
