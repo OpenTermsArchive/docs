@@ -272,7 +272,7 @@ On your local machine:
 - Select the pending request
 - Approve it
 
-### Update inventory
+### Add secrets
 
 #### Generate vault key
 
@@ -299,29 +299,31 @@ On your local machine:
 - Go to `https://github.com/OpenTermsArchive/<collection_name>-declarations/settings/secrets/actions`
 - Create the `ANSIBLE_VAULT_KEY` [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) by using the previously generated vault key
 
-#### Encrypt token and update inventory
+#### Encrypt token and update deployment
 
 On your local machine:
 
 - Go to the `<collection_id>-declarations` repository
 - Go to `deployment` folder
-- Encrypt token: `ansible-vault encrypt_string --name 'ota_engine_github_token' '<GitHub Token>'`
-- Update token in the inventory file `deployment/inventory.yml`: `ota_engine_github_token: !vault | <encrypted GitHub Token>`
+- Paste the token in a `.env` file under the name `OTA_ENGINE_GITHUB_TOKEN`
+- Encrypt `.env`: `ansible-vault encrypt .env`
 
 ### Set up an OTA-Bot SSH key specific to this collection
 
 #### Create the SSH key
 
 - Create a new SSH key: `ssh-keygen -t ed25519 -C bot@opentermsarchive.org -P "" -f ./<collection_name>-key`
+- Copy the generated private key file
 
-#### Encrypt private key and update inventory
+#### Encrypt private key and update deployment
 
 On your local machine:
 
 - Go to the `<collection_id>-declarations` repository
 - Go to `deployment` folder
-- Encrypt token: `ansible-vault encrypt_string --name 'ota_engine_github_bot_private_key' '<SSH PRIVATE KEY content>'`. Ensure to copy and paste the entire contents of the `<SSH PRIVATE KEY content>` **including the line breaks at the end of the file**.
-- Update token the inventory file `deployment/inventory.yml`: `ota_engine_github_bot_private_key: !vault | <encrypted private key>`
+- Paste the private key file
+- Rename it into `github-bot-private-key`
+- Encrypt key `github-bot-private-key`: `ansible-vault encrypt github-bot-private-key`
 
 #### Back key up
 
@@ -363,14 +365,15 @@ On your local machine:
 - Copy the previously generated key in the `Password` field
 - Save, commit and push
 
-#### Encrypt key and update inventory
+#### Encrypt key and update deployment
 
 On your local machine:
 
 - Go to the `<collection_id>-declarations` repository
 - Go to `deployment` folder
-- Encrypt token: `ansible-vault encrypt_string --name 'ota_engine_smtp_password' '<SMTP Key>'`
-- Update token the inventory file `deployment/inventory.yml`: `ota_engine_smtp_password: !vault | <encrypted SMTP Key>`
+- Decrypt `.env` if necessary: `ansible-vault decrypt .env`
+- Paste the key in a `.env` file under the name `OTA_ENGINE_SMTP_PASSWORD`
+- Encrypt `.env`: `ansible-vault encrypt .env`
 
 ## Test
 

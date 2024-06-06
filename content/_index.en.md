@@ -397,7 +397,7 @@ Two storage repositories are currently supported: Git and MongoDB. Each one can 
     "mongo": {
       "connectionURI": "URI for defining connection to the MongoDB instance. See https://docs.mongodb.com/manual/reference/connection-string/",
       "database": "Database name",
-      "collection": "Collection name"
+      "collection": "MongoDB collection name; not to be confused with the Open Terms Archive collection"
     }
   }
   …
@@ -408,9 +408,9 @@ Two storage repositories are currently supported: Git and MongoDB. Each one can 
 
 Environment variables can be passed in the command-line or provided in a `.env` file at the root of the repository. See `.env.example` for an example of such a file.
 
-- `SMTP_PASSWORD`: a password for email server authentication, in order to send email notifications.
-- `SENDINBLUE_API_KEY`: a SendInBlue API key, in order to send email notifications with that service.
-- `GITHUB_TOKEN`: a token with repository privileges to access the [GitHub API](https://github.com/settings/tokens).
+- `OTA_ENGINE_SMTP_PASSWORD`: a password for email server authentication, in order to send email notifications.
+- `OTA_ENGINE_SENDINBLUE_API_KEY`: a SendInBlue API key, in order to send email notifications with that service.
+- `OTA_ENGINE_GITHUB_TOKEN`: a token with repository privileges to access the [GitHub API](https://github.com/settings/tokens).
 
 If an outgoing HTTP/HTTPS proxy to access the Internet is required, it is possible to provide it through the `HTTP_PROXY` and `HTTPS_PROXY` environment variable.
 

@@ -90,6 +90,12 @@ The `collections` configuration key is an array containing URLs or specific coll
 
 If multiple collections share the same `id`, the latest defined collection in the array will be used and others with the same `id` will be ignored.
 
+### Environment variables
+
+Environment variables can be passed in the command-line or provided in a `.env` file at the root of the repository. See `.env.example` for an example of such a file.
+
+- `OTA_FEDERATION_API_SMTP_PASSWORD`: a password for email server authentication, in order to send email notifications.
+
 ## Deploying
 
 Deployment recipes are available in a [dedicated repository](https://github.com/OpenTermsArchive/deployment).
