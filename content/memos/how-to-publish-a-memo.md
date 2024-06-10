@@ -10,7 +10,7 @@ No technical skills are required.
 
 ## Prerequisites
 
-- A drafted memo compliant with the [writing reference]({{< relref "/memos/writing-reference" >}}).
+- A drafted memo compliant with the [copywriting reference]({{< relref "/memos/copywriting-reference" >}}).
 
 ## 1. Send
 

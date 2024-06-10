@@ -1,8 +1,8 @@
 ---
-title: "Writing reference"
+title: "Copywriting reference"
 ---
 
-# Writing reference
+# Copywriting reference
 
 Each memo must be composed of the elements detailed below. You must follow this structure when writing your memos.
 
