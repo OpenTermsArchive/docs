@@ -134,6 +134,19 @@ When tests fail, you can follow these steps to diagnose and address the issue:
 
 4. If the snapshot is the proper one, you can examine the generated version to check the accuracy of content selection.
 
+#### If tests keep on failing
+
+If the tests fail systematically in CI but there is at least one environment in which all tests pass, it is allowed to use admin powers to force the merge.
+
+For example, tests may fail in CI because of a 403 Access Denied error, but succeed when run on a development machine.
+
+> Bypassing protection is allowed because:
+>
+> - if the engine is updated, the problem could correct itself;
+> - if it's an anti-bot protection, it can stop from one day to the next;
+> - adding the terms prevents duplicate suggestions for additions;
+> - a service can encounter this type of error after being merged, so there is no reason to prevent it from being added with this error.
+
 ## Merging the Pull Request
 
 Beyond status checks, additional restriction requires branches to be up to date before merging. This ensures that the contribution has been tested with the latest version of the collection. This appears as a _“This branch is out-of-date with the base branch”_ warning on a pull request.
