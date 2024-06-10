@@ -107,7 +107,7 @@ Each memo must be composed of the elements detailed below. You must follow this 
 
 > **Meta expands reach against child exploitation**
 >
-> _Facebook · Community Guidelines · June 13, 2022_
+> _Facebook ▪ Community Guidelines ▪ June 13, 2022_
 >
 > The section on child exploitation for both Facebook and Instagram [expanded](https://github.com/OpenTermsArchive/france-elections-versions/commit/0396436542fa7ef8dd8ae4dd02ff0ed5500e08a2) to cover not only publications that exploit minors, but also “any activity” related to such acts.
 >
