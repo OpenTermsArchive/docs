@@ -134,12 +134,18 @@ When tests fail, you can follow these steps to diagnose and address the issue:
 
 4. If the snapshot is the proper one, you can examine the generated version to check the accuracy of content selection.
 
-**Note that if there is at least 1 environment in which the tests run well, we allow to force the merge.** For example, CI tests may fail because of a 403 error but fetch localy the document without errors. We do this because :
+#### If tests keep on failing
 
-- if the engine is updated, the problem could correct itself
-- if it's an anti-bot protection, it can stop from one day to the next
-- the issue that will be open will shows that the service is already tracked, there's no need to add it
-- a service can encounter this type of error after being merged, so there is no reason to prevent it from being added with this error
+If the tests fail systematically in CI but there is at least one environment in which all tests pass, it is allowed to use admin powers to force the merge.
+
+For example, tests may fail in CI because of a 403 Access Denied error, but succeed when run on a development machine.
+
+> Bypassing protection is allowed because:
+>
+> - if the engine is updated, the problem could correct itself;
+> - if it's an anti-bot protection, it can stop from one day to the next;
+> - adding the terms prevents duplicate suggestions for additions;
+> - a service can encounter this type of error after being merged, so there is no reason to prevent it from being added with this error.
 
 ## Merging the Pull Request
 
