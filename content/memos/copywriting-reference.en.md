@@ -78,7 +78,7 @@ Each memo must be composed of the elements detailed below. You must follow this 
 >
 > OpenAI Ireland Ltd is a Dublin-based subsidiary of OpenAI [set up](https://openai.com/blog/introducing-openai-dublin) in 2023.
 
-## Full examples
+## Complete examples
 
 ### Memo 1
 
