@@ -1,10 +1,10 @@
 ---
-title: "Browsing through terms"
+title: "Navigate through versions history"
 weight: 1
 aliases: /navigate-history/
 ---
 
-# Browsing through terms
+# Navigate through versions history
 
 {{< video src="https://cloud.opentermsarchive.org/index.php/s/DJ4rqJi5M8fAecL/download/how-to-navigate-through-versions-history-in-open-terms-archive.mp4" >}}
 
