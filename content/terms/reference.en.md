@@ -196,7 +196,7 @@ Each filter is exposed as a named function export that takes a `document` parame
 
 > The `document` parameter is actually a [JSDOM](https://github.com/jsdom/jsdom) document instance.
 
-You can learn more about usual noise and ways to handle it [in the guidelines](../guidelines/declaring#usual-noise).
+You can learn more about usual noise and ways to handle it [in the guidelines]({{< relref "guidelines/declaring#usual-noise" >}}).
 
 ### Example
 
