@@ -163,7 +163,7 @@ If in doubt about a selector, prefer making a wide selection and then removing t
 
 ### Use range selectors
 
-[Range selectors](../../contributing-terms#range-selectors) enable to select content that starts in one block and ends in another block that are not in the same tree. While they are more complex than element selectors, it is preferable to use a range selector whose start and end abide by the guidelines above than to use a bad plain selector.
+[Range selectors]({{< relref "terms/reference#range-selectors" >}}) enable to select content that starts in one block and ends in another block that are not in the same tree. While they are more complex than element selectors, it is preferable to use a range selector whose start and end abide by the guidelines above than to use a bad plain selector.
 
 #### Example
 
