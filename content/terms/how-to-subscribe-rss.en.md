@@ -1,6 +1,6 @@
 ---
 title: "How to subscribe to terms changes"
-weight: 4
+aliases: /subscribe-rss/
 ---
 
 # How to subscribe to terms changes

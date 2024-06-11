@@ -1,6 +1,7 @@
 ---
 title: "Browsing through terms"
-weight: 2
+weight: 1
+aliases: /navigate-history/
 ---
 
 # Browsing through terms
