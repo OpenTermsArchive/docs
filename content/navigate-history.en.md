@@ -5,7 +5,9 @@ weight: 2
 
 # Browsing through terms
 
-Every collection offers a public database of versions they recorded. 
+{{< video src="https://cloud.opentermsarchive.org/index.php/s/DJ4rqJi5M8fAecL/download/how-to-navigate-through-versions-history-in-open-terms-archive.mp4" >}}
+
+Every collection offers a public database of versions they recorded.
 
 For this guide, we will use the example of the Demo collection. The terms of this collection are published on the [`OpenTermsArchive/demo-versions`](https://github.com/OpenTermsArchive/demo-versions) repository.
 
