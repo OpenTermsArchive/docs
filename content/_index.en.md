@@ -98,7 +98,7 @@ Such a dataset can be generated from **versions** alone. If **snapshots** and **
 
 This documentation describes how to execute the **engine** independently from any specific **instance**. For other use cases, other parts of the documentation could be more relevant:
 
-- to contribute **declarations** to an existing **collection**, see [contributing terms]({{< relref "contributing-terms" >}});
+- to contribute **declarations** to an existing **collection**, see the [Terms reference]({{< relref "terms/reference" >}});
 - to create a new **collection**, see [creating a new collection]({{< relref "collections/create" >}}).
 
 ### Requirements
