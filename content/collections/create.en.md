@@ -386,4 +386,4 @@ On your local machine:
 To test deployment from your local machine, your SSH keys must be authorized to connect to the server.
 
 - `cd <path/to/><collection_id>-declarations/deployment`
-- `ansible-playbook opentermsarchive.deployment.engine.all`
+- `ansible-playbook opentermsarchive.deployment.deploy`
