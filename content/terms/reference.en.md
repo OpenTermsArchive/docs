@@ -5,11 +5,11 @@ weight: 4
 
 # Terms reference
 
-Terms are declared in a service declaration file, under the `documents` property. 
+Terms are declared in a service declaration file, under the `documents` property.
 
-Most of the time, terms are written in only one source document (for example [Facebook Terms of Service](https://www.facebook.com/legal/terms)) but sometimes terms can be spread across multiple online source documents, and their combination constitutes the terms (for example [Facebook Community Guidelines](https://transparency.fb.com/policies/community-standards/)). 
+Most of the time, terms are written in only one source document (for example [Facebook Terms of Service](https://www.facebook.com/legal/terms)) but sometimes terms can be spread across multiple online source documents, and their combination constitutes the terms (for example [Facebook Community Guidelines](https://transparency.fb.com/policies/community-standards/)).
 
-#### Source document
+## Source document
 
 The way in which a source document is obtained is defined in a JSON object:
 
@@ -28,13 +28,13 @@ The way in which a source document is obtained is defined in a JSON object:
 
 Let’s start by defining these keys!
 
-#### `fetch`
+## `fetch`
 
 This property should simply contain the URL at which the terms you want to track can be downloaded. HTML and PDF files are supported.
 
 When terms coexist in different languages and jurisdictions, please refer to the [scope of the collection](../#collections) to which you are contributing. This scope is usually defined in the README.
 
-#### `select`
+## `select`
 
 _This property is not needed for PDF documents._
 
@@ -42,7 +42,7 @@ Most of the time, contractual documents are exposed as web pages, with a header,
 
 The `select` value can be either a [CSS selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors), a [range selector](#range-selectors) or an array of those.
 
-##### CSS selectors
+### CSS selectors
 
 CSS selectors should be provided as a string. See the [specification](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) for how to write CSS selectors.
 
@@ -52,7 +52,7 @@ CSS selectors should be provided as a string. See the [specification](https://de
 > "select": "main"
 > ```
 
-##### Range selectors
+### Range selectors
 
 A range selector is defined with a _start_ and an _end_ CSS selector. It is also necessary to define if the range starts before or after the element targeted by the _start_ CSS selector and to define if it ends before or after the element targeted by the _end_ CSS selector.
 
@@ -74,13 +74,13 @@ To that end, a range selector is a JSON object containing two keys out of the fo
 > }
 > ```
 
-#### `remove`
+## `remove`
 
 _This property is optional._
 
 Beyond [selecting a subset of a web page](#select), some documents will have non-significant parts in the middle of otherwise significant parts. For example, they can have “go to top” links or banner ads. These can be removed by listing [CSS selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors), [range selectors](#range-selectors) or an array of them under the `remove` property.
 
-##### Example
+### Example
 
 Let's assume a web page contains the following content:
 
@@ -129,7 +129,7 @@ This result can be obtained with the following declaration:
 }
 ```
 
-##### Complex selectors examples
+### Complex selectors examples
 
 ```json
 {
@@ -164,7 +164,7 @@ This result can be obtained with the following declaration:
 }
 ```
 
-#### `executeClientScripts`
+## `executeClientScripts`
 
 _This property is optional._
 
@@ -173,7 +173,7 @@ When set to `true`, this boolean property loads the page in a headless browser t
 
 Since the performance cost of this approach is high, it is set to `false` by default, relying on the HTML content only.
 
-#### `filter`
+## `filter`
 
 _This property is optional._
 
@@ -198,7 +198,7 @@ Each filter is exposed as a named function export that takes a `document` parame
 
 You can learn more about usual noise and ways to handle it [in the guidelines](../guidelines/declaring#usual-noise).
 
-##### Example
+### Example
 
 Let's assume a service adds a unique `clickId` parameter in the query string of all link destinations. These parameters change on each page load, leading to recording noise in versions. Since links should still be recorded, it is not appropriate to use `remove` to remove the links entirely. Instead, a filter will manipulate the links destinations to remove the always-changing parameter. Concretely, the goal is to apply the following filter:
 
@@ -224,7 +224,7 @@ function removeTrackingIdsQueryParam(document) {
 }
 ```
 
-##### Example usage of declaration parameter
+### Example usage of declaration parameter
 
 The second parameter can be used to access the defined document URL or selector inside the filter.
 
@@ -251,7 +251,7 @@ export async function convertImagesToBase64(document, documentDeclaration) {
 }
 ```
 
-#### Terms with a single source document
+## Terms with a single source document
 
 In the case where terms are extracted from one single source document, they are declared by simply declaring that source document:
 
@@ -269,7 +269,7 @@ In the case where terms are extracted from one single source document, they are 
   …
 ```
 
-#### Terms with multiple source documents
+## Terms with multiple source documents
 
 When the terms are spread across multiple source documents, they should be declared by declaring their combination:
 
@@ -320,7 +320,7 @@ If some parts of the source documents are repeated, they can be factorised. For 
   …
 ```
 
-#### Terms type
+## Terms type
 
 Great, your terms declaration is now almost complete! You simply need to write it under the appropriate terms type in the `documents` JSON object within the service declaration.
 
@@ -330,26 +330,26 @@ Please note, the terms type may differ from the exact name provided by the servi
 
 If the terms you want to add don't match an existing type, you can [suggest a new one](https://github.com/OpenTermsArchive/terms-types/blob/main/CONTRIBUTING.md).
 
-### Testing your declaration
+## Testing your declaration
 
 You can test the declarations you created or changed by running the following command:
 
-```
+```sh
 npm test [$service_id [$another_service_id …]]
 ```
 
 Since this operation fetches documents and could be long, you can also validate the declaration structure only:
 
-```
+```sh
 npm run test:schema [$service_id [$another_service_id …]]
 ```
 
-#### Linting
+## Linting
 
 In order to ensure consistency across declarations, all declarations files have to be formatted homogeneously.
 
 In order to achieve this, you can use the following command:
 
-```
+```sh
 npm run lint [$service_id [$another_service_id …]]
 ```

@@ -10,11 +10,11 @@ Tracking terms is done by _declaring_ them and the service they are associated w
 
 Before adding new terms, open the [`declarations`](https://github.com/OpenTermsArchive/contrib-declarations/tree/main/declarations) folder and check if the service you want to track terms for is already declared. If a JSON file with the name of the service is already present, you can jump straight to the [Terms reference]({{< relref "terms/reference" >}}). Otherwise, keep reading!
 
-### Declaring a new service
+## Declaring a new service
 
 Before declaring a service, you will need to choose the service name and service ID. The service ID will be the name of the JSON file in which the service will be declared. It is a normalised version of the service name.
 
-### Service name
+## Service name
 
 The service name is exposed to end users. It should reflect as closely as possible the official service name, as referenced in the terms or “about” pages, so that it can be recognised easily and unambiguously.
 
@@ -36,7 +36,7 @@ The service name is exposed to end users. It should reflect as closely as possib
 
 > If you have a hard time finding the service name, check out the [practical guidelines to find the service name](../guidelines/declaring#service-name), and feel free to mention your uncertainties in the pull request! We will help you improve the service name if necessary 🙂
 
-### Service ID
+## Service ID
 
 The service ID is exposed to developers. It should be easy to handle with scripts and other tools.
 
@@ -58,7 +58,7 @@ The service ID is exposed to developers. It should be easy to handle with script
 
 > More details on the ID and naming constraints and recommendations can be found in the relevant [decision record](https://github.com/OpenTermsArchive/engine/blob/main/decision-records/0001-service-name-and-id.md).
 
-### Service declaration
+## Service declaration
 
 Once you have the [service name](#service-name) and the [service ID](#service-id), create a JSON file in the `declarations` folder named after the ID of the service you want to add, with the following structure:
 

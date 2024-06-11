@@ -13,7 +13,7 @@ All parts of a **terms** **declaration** (web location, selection, noise removal
 
 Open Terms Archive needs to keep track of this changes in order to regenerate versions history from snapshots history.
 
-### Service history
+## Service history
 
 To keep track of services declarations and filters changes, Open Terms Archive offers a versioning system. It is optional and should be added only when needed. It works by creating history files for terms declarations and filters, where each entry should be a previous valid declaration or filter function and should have an expiry date.
 
@@ -23,7 +23,7 @@ Terms declarations history files and filters history files can both evolve on th
 
 The current (latest) valid declaration has no date and should not appear in the history object: it stays in its own file, just like if there was no history at all.
 
-#### Terms declaration history
+### Terms declaration history
 
 Declarations history are stored in a history JSON file with the following name `declarations/$service_id.history.json`.
 
@@ -61,7 +61,7 @@ For example, to add a history entry for the `Terms of Service` of the service `A
 }
 ```
 
-#### Filters history
+### Filters history
 
 Filters history is declared in a filters history declaration JavaScript file with the following name: `declarations/$service_id.filters.history.js`.
 
@@ -89,12 +89,13 @@ export const removeSharesButton = [
 ];
 ```
 
-### Handling a terminated service
+## Handling a terminated service
 
 If the service provider stops offering a service, the associated terms will become unavailable. To mark that service termination in Open Terms Archive and ensure tracking tentatives are stopped, while maintaining the possibility to explore the history:
 
 1. Move the existing documents declaration to the service [history file](#terms-declaration-history).
 2. Update the declaration to stop tracking all terms, by removing every `<terms type>` entries from the  `documents` key in the declaration:
+
 ```json
 {
   "name": "<service name>",
@@ -102,6 +103,6 @@ If the service provider stops offering a service, the associated terms will beco
 }
 ```
 
-### Renaming a service
+## Renaming a service
 
-The consensus is to consider that a service provider renaming a service (for example, `Twitter` to `X`) is akin to terminating the previous service and opening a new one. Therefore, to apply a service renaming, open a pull request that both [terminates the previous service](#handling-terminated-service) and adds a new [service declaration](#declaring-a-new-service) with the new service name. You can reuse the `documents` part of the original declaration, but should double-check that the selectors and URLs still match, as a service rename is most often accompanied by a new page layout, a new domain name, and sometimes entirely new terms.
+The consensus is to consider that a service provider renaming a service (for example, `Twitter` to `X`) is akin to terminating the previous service and opening a new one. Therefore, to apply a service renaming, open a pull request that both [terminates the previous service](#handling-a-terminated-service) and adds a new [service declaration]({{< relref "terms/tracking-new-terms#declaring-a-new-service" >}}) with the new service name. You can reuse the `documents` part of the original declaration, but should double-check that the selectors and URLs still match, as a service rename is most often accompanied by a new page layout, a new domain name, and sometimes entirely new terms.
