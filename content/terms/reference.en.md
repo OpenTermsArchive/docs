@@ -1,5 +1,6 @@
 ---
-title: "Terms reference"
+title: "Reference"
+html_title: "Terms reference"
 weight: 4
 ---
 
