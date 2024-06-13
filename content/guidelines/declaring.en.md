@@ -196,17 +196,3 @@ You can only use our copyrights or [trademarks (or any similar marks)](https://l
 #### Solution
 
 Write a filter in the declaration.
-
-- - -
-
-## Using the graphical contribution interface
-
-### Blank page when contacting support
-
-While using the graphical user interface for contribution, you may come across a blank page when trying to contact the team.
-
-This may be caused by the lack of a mail program being set up in your browser.
-
-#### Solution
-
-If you use Gmail, for example, [these instructions](https://support.google.com/chrome/thread/57026170/how-to-add-gmail-as-default-mailto-handler) explain how to add Gmail as the default `mailto` handler in Chrome. Try following them and trying again.

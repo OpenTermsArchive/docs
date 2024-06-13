@@ -71,7 +71,7 @@ The pull request created will consist of fewer checks than those that add declar
 
 For pull requests that update declarations, you should focus should be on two things: history file and declaration.
 
-- **History file:** The history file is a JSON file that keeps track of a service declaration changes. It contains a `validUntil` property that specifies the date a specific version of a service declaration was last effective. You have to confirm that this date is the same as the date in the issue opened for the declaration when the bot couldn't track it for the first time. This issue is usually included in the pull request message. The history file is updated with every `update` pull request. You can find more information about the history file [here]({{< relref "terms/maintaining" >}}).
+- **History file:** The history file is a JSON file that keeps track of a service declaration changes. It contains a `validUntil` property that specifies the date a specific version of a service declaration was last effective. You have to confirm that this date is the same as the date in the issue opened for the declaration when the bot couldn't track it for the first time. This issue is usually included in the pull request message. The history file is updated with every `update` pull request. You can find more information about the history file [here]({{< relref "terms/declarations-maintenance" >}}).
 - **Declaration:** for `update` pull requests, you only look at the selectors to make sure they are **simple** and also verify the **generated version** is ok.
 
 ### Step-by-step Review Guide
@@ -83,7 +83,7 @@ For pull requests that update declarations, you should focus should be on two th
 5. Compare it with the `validUntil` property in the history file under the `Files changes` section of the pull request. If the dates are the same, proceed to approve the pull request.
 6. Merge the contribution.
 
-You can read more about maintaining declarations from the [official documentation]({{< relref "terms/maintaining" >}}).
+You can read more about maintaining declarations from the [official documentation]({{< relref "terms/declarations-maintenance" >}}).
 
 ## When to Make Changes to a Contribution
 

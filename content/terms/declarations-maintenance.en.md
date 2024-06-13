@@ -3,7 +3,7 @@ title: "Declarations maintenance"
 weight: 3
 ---
 
-# Maintaining declarations
+# Declarations maintenance
 
 All parts of a **terms** **declaration** (web location, selection, noise removal, distribution across multiple documents…) can change over time. The process of updating these elements to enable continued **tracking** is called **maintenance**. Without it, **terms** can become:
 

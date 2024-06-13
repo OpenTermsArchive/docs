@@ -4,9 +4,15 @@ weight: 1
 aliases: /navigate-history/
 ---
 
-# Navigate through versions history
+# How to navigate history
 
-{{< video src="https://cloud.opentermsarchive.org/index.php/s/DJ4rqJi5M8fAecL/download/how-to-navigate-through-versions-history-in-open-terms-archive.mp4" >}}
+## Screencast
+
+Learn how to navigate through versions history in this 4 minutes video, or scroll below for the textual version.
+
+{{< video src="https://cloud.opentermsarchive.org/index.php/s/DJ4rqJi5M8fAecL/download/how-to-navigate-through-versions-history-in-open-terms-archive.mp4#t=0.1" >}}
+
+## Manual
 
 Every collection offers a public database of versions they recorded.
 
@@ -38,7 +44,7 @@ For this guide, we will use the example of the Demo collection. The terms of thi
 
 - - -
 
-## Notes
+### Notes
 
 - For long documents, unchanged paragraphs will not be displayed by default. You can manually make them appear by clicking on the small arrows just above or just below the displayed paragraphs:
 
