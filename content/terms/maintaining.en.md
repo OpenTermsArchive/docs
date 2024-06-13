@@ -1,5 +1,5 @@
 ---
-title: "Maintaining declarations"
+title: "Declarations maintenance"
 weight: 3
 ---
 
@@ -13,7 +13,7 @@ All parts of a **terms** **declaration** (web location, selection, noise removal
 
 Open Terms Archive needs to keep track of this changes in order to regenerate versions history from snapshots history.
 
-## Service history
+## Service history reference
 
 To keep track of services declarations and filters changes, Open Terms Archive offers a versioning system. It is optional and should be added only when needed. It works by creating history files for terms declarations and filters, where each entry should be a previous valid declaration or filter function and should have an expiry date.
 
@@ -89,7 +89,7 @@ export const removeSharesButton = [
 ];
 ```
 
-## Handling a terminated service
+## How to terminate a service
 
 If the service provider stops offering a service, the associated terms will become unavailable. To mark that service termination in Open Terms Archive and ensure tracking tentatives are stopped, while maintaining the possibility to explore the history:
 
@@ -103,6 +103,6 @@ If the service provider stops offering a service, the associated terms will beco
 }
 ```
 
-## Renaming a service
+## How to rename a service
 
 The consensus is to consider that a service provider renaming a service (for example, `Twitter` to `X`) is akin to terminating the previous service and opening a new one. Therefore, to apply a service renaming, open a pull request that both [terminates the previous service](#handling-a-terminated-service) and adds a new [service declaration]({{< relref "terms/tracking-new-terms#declaring-a-new-service" >}}) with the new service name. You can reuse the `documents` part of the original declaration, but should double-check that the selectors and URLs still match, as a service rename is most often accompanied by a new page layout, a new domain name, and sometimes entirely new terms.

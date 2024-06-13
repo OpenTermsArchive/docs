@@ -1,5 +1,5 @@
 ---
-title: "How to subscribe to terms changes"
+title: "How to be notified of terms changes"
 aliases: /subscribe-rss/
 ---
 

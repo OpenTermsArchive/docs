@@ -1,5 +1,5 @@
 ---
-title: "Navigate through versions history"
+title: "How to navigate history"
 weight: 1
 aliases: /navigate-history/
 ---
