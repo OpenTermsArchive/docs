@@ -1,19 +1,9 @@
 # Contributing to this repository
 
-## Contributions to make
-
-You can add documents for tracking by submitting a pull request either using the GUI contributing tool, or by creating a JSON file. There are three kind of contributions you can make:
-
-- Adding declarations to a collection;
-- Updating declarations in a collection;
-- Removing declarations from a collection.
-
 ## 🚀 How to Contribute
 
-- You can check the open issues in this repository, assign yourself and solve them. These issues are related to terms that need to be updated. Read more from our [documentation](https://docs.opentermsarchive.org/contributing-terms/#maintaining-declarations)
-- You can also add terms to this repository either by adding JSON files or using the contribution tool
-
-You can check the documentation for detailed information on [contributing terms](https://docs.opentermsarchive.org/contributing-terms/).
+- You can check the open issues in this repository, assign yourself and solve them.
+- You can also make suggestions for additions or modifications of this documentation website.
 
 ## 📜 Read our Code of Conduct
 
