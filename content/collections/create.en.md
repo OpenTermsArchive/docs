@@ -120,7 +120,7 @@ Create the versions repository by using the [`demo-versions` repository](https:/
 #### Fill the “About” section
 
 - Set the description: “Terms versions for `<collection_name>`. Maintained by `<maintainer>`.”
-- Set website to `https://docs.opentermsarchive.org/navigate-history/`
+- Set website to `{{< ref "terms/how-to-navigate-history" >}}`
 - Add the following tags: `terms-of-service`, `terms-of-service-agreements`, `terms-and-conditions`, `open-terms-archive`.
 - Uncheck “Packages”.
 - Uncheck “Deployments”.

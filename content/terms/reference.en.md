@@ -1,86 +1,16 @@
 ---
-title: "Contributing terms"
+title: "Reference"
+html_title: "Terms reference"
 weight: 4
 ---
 
-# Contributing terms
+# Terms reference
 
-## Tracking new terms
+Terms are declared in a service declaration file, under the `documents` property.
 
-Tracking terms is done by _declaring_ them and the service they are associated with. Such a declaration is achieved by editing JSON files in the [`declarations`](https://github.com/OpenTermsArchive/contrib-declarations/tree/main/declarations) folder.
+Most of the time, terms are written in only one source document (for example [Facebook Terms of Service](https://www.facebook.com/legal/terms)) but sometimes terms can be spread across multiple online source documents, and their combination constitutes the terms (for example [Facebook Community Guidelines](https://transparency.fb.com/policies/community-standards/)).
 
-Before adding new terms, open the [`declarations`](https://github.com/OpenTermsArchive/contrib-declarations/tree/main/declarations) folder and check if the service you want to track terms for is already declared. If a JSON file with the name of the service is already present, you can jump straight to [declaring terms](#declaring-terms). Otherwise, keep reading!
-
-### Declaring a new service
-
-Before declaring a service, you will need to choose the service name and service ID. The service ID will be the name of the JSON file in which the service will be declared. It is a normalised version of the service name.
-
-### Service name
-
-The service name is exposed to end users. It should reflect as closely as possible the official service name, as referenced in the terms or “about” pages, so that it can be recognised easily and unambiguously.
-
-- The service name should be the one used by the service itself, no matter the alphabet, UTF symbols, spaces, and casing.
-  - _Example: `eBay`_.
-  - _Example: `hi5`_.
-  - _Example: `LINE`_.
-  - _Example: `App Store`_.
-  - _Example: `туту.ру` (Cyrillic)_.
-  - _Example: `抖音短视频` (Simplified Chinese characters)_.
-- Domain name extensions (TLDs) are allowed when they are part of the official service name.
-  - _Example: `Booking.com`_.
-  - _Example: `historielærer.dk`_.
-- Service names can be prefixed by the provider name, separated by a space, when it would otherwise be too generic or ambiguous.
-  - _Example: `Ads` (by Facebook) → `Facebook Ads`_.
-  - _Example: `Analytics` (by Google) → `Google Analytics`_.
-  - _Example: `Firebase` (by Google) → `Firebase`_.
-  - _Example: `App Store` (by Apple) → `App Store`_.
-
-> If you have a hard time finding the service name, check out the [practical guidelines to find the service name](../guidelines/declaring#service-name), and feel free to mention your uncertainties in the pull request! We will help you improve the service name if necessary 🙂
-
-### Service ID
-
-The service ID is exposed to developers. It should be easy to handle with scripts and other tools.
-
-- Non-ASCII characters are not supported. Service IDs are derived from the service name by normalising it into ASCII.
-  - _Example: `RTÉ` → `RTE`_.
-  - _Example: `historielærer.dk` → `historielaerer.dk`_.
-  - _Example: `туту.ру` → `tutu.ru`_.
-  - _Example: `抖音短视频` → `Douyin`_.
-- Punctuation is supported, except characters that have meaning at filesystem level (`:`, `/`, `\`). These are replaced with a dash (`-`). The dot (`.`) is supported, but the service ID cannot be solely `.` or `..` as these have specific meanings in the filesystem.
-  - _Example: `Booking.com` → `Booking.com`_.
-  - _Example: `Yahoo!` → `Yahoo!`_.
-  - _Example: `re:start` → `re-start`_.
-  - _Example: `we://` → `we---`_.
-- Capitals and spaces are supported. Casing and spacing are expected to reflect the official service name casing and spacing.
-  - _Example: `App Store` → `App Store`_.
-  - _Example: `DeviantArt` → `DeviantArt`_.
-
-> If you have a hard time defining the service ID, check out the [practical guidelines to derive the ID from the service name](../guidelines/declaring#service-id), and feel free to mention your uncertainties in the pull request! We will help you improve the service ID if necessary 🙂
-
-> More details on the ID and naming constraints and recommendations can be found in the relevant [decision record](https://github.com/OpenTermsArchive/engine/blob/main/decision-records/0001-service-name-and-id.md).
-
-### Service declaration
-
-Once you have the [service name](#service-name) and the [service ID](#service-id), create a JSON file in the `declarations` folder named after the ID of the service you want to add, with the following structure:
-
-```json
-{
-  "name": "<service name>",
-  "documents": {}
-}
-```
-
-Within the `documents` JSON object, you will now declare terms.
-
-- - -
-
-## Declaring terms
-
-Terms are declared in a service declaration file, under the `documents` property. 
-
-Most of the time, terms are written in only one source document (for example [Facebook Terms of Service](https://www.facebook.com/legal/terms)) but sometimes terms can be spread across multiple online source documents, and their combination constitutes the terms (for example [Facebook Community Guidelines](https://transparency.fb.com/policies/community-standards/)). 
-
-#### Source document
+## Source document
 
 The way in which a source document is obtained is defined in a JSON object:
 
@@ -99,13 +29,13 @@ The way in which a source document is obtained is defined in a JSON object:
 
 Let’s start by defining these keys!
 
-#### `fetch`
+## `fetch`
 
 This property should simply contain the URL at which the terms you want to track can be downloaded. HTML and PDF files are supported.
 
-When terms coexist in different languages and jurisdictions, please refer to the [scope of the collection](../#collections) to which you are contributing. This scope is usually defined in the README.
+When terms coexist in different languages and jurisdictions, please refer to the [scope of the collection]({{< relref "collections/metadata" >}}) to which you are contributing. This scope is usually defined in the README.
 
-#### `select`
+## `select`
 
 _This property is not needed for PDF documents._
 
@@ -113,7 +43,7 @@ Most of the time, contractual documents are exposed as web pages, with a header,
 
 The `select` value can be either a [CSS selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors), a [range selector](#range-selectors) or an array of those.
 
-##### CSS selectors
+### CSS selectors
 
 CSS selectors should be provided as a string. See the [specification](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) for how to write CSS selectors.
 
@@ -123,7 +53,7 @@ CSS selectors should be provided as a string. See the [specification](https://de
 > "select": "main"
 > ```
 
-##### Range selectors
+### Range selectors
 
 A range selector is defined with a _start_ and an _end_ CSS selector. It is also necessary to define if the range starts before or after the element targeted by the _start_ CSS selector and to define if it ends before or after the element targeted by the _end_ CSS selector.
 
@@ -145,13 +75,13 @@ To that end, a range selector is a JSON object containing two keys out of the fo
 > }
 > ```
 
-#### `remove`
+## `remove`
 
 _This property is optional._
 
 Beyond [selecting a subset of a web page](#select), some documents will have non-significant parts in the middle of otherwise significant parts. For example, they can have “go to top” links or banner ads. These can be removed by listing [CSS selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors), [range selectors](#range-selectors) or an array of them under the `remove` property.
 
-##### Example
+### Example
 
 Let's assume a web page contains the following content:
 
@@ -200,7 +130,7 @@ This result can be obtained with the following declaration:
 }
 ```
 
-##### Complex selectors examples
+### Complex selectors examples
 
 ```json
 {
@@ -235,7 +165,7 @@ This result can be obtained with the following declaration:
 }
 ```
 
-#### `executeClientScripts`
+## `executeClientScripts`
 
 _This property is optional._
 
@@ -244,7 +174,7 @@ When set to `true`, this boolean property loads the page in a headless browser t
 
 Since the performance cost of this approach is high, it is set to `false` by default, relying on the HTML content only.
 
-#### `filter`
+## `filter`
 
 _This property is optional._
 
@@ -267,9 +197,9 @@ Each filter is exposed as a named function export that takes a `document` parame
 
 > The `document` parameter is actually a [JSDOM](https://github.com/jsdom/jsdom) document instance.
 
-You can learn more about usual noise and ways to handle it [in the guidelines](../guidelines/declaring#usual-noise).
+You can learn more about usual noise and ways to handle it [in the guidelines]({{< relref "guidelines/declaring#usual-noise" >}}).
 
-##### Example
+### Example
 
 Let's assume a service adds a unique `clickId` parameter in the query string of all link destinations. These parameters change on each page load, leading to recording noise in versions. Since links should still be recorded, it is not appropriate to use `remove` to remove the links entirely. Instead, a filter will manipulate the links destinations to remove the always-changing parameter. Concretely, the goal is to apply the following filter:
 
@@ -295,7 +225,7 @@ function removeTrackingIdsQueryParam(document) {
 }
 ```
 
-##### Example usage of declaration parameter
+### Example usage of declaration parameter
 
 The second parameter can be used to access the defined document URL or selector inside the filter.
 
@@ -322,7 +252,7 @@ export async function convertImagesToBase64(document, documentDeclaration) {
 }
 ```
 
-#### Terms with a single source document
+## Terms with a single source document
 
 In the case where terms are extracted from one single source document, they are declared by simply declaring that source document:
 
@@ -340,7 +270,7 @@ In the case where terms are extracted from one single source document, they are 
   …
 ```
 
-#### Terms with multiple source documents
+## Terms with multiple source documents
 
 When the terms are spread across multiple source documents, they should be declared by declaring their combination:
 
@@ -391,7 +321,7 @@ If some parts of the source documents are repeated, they can be factorised. For 
   …
 ```
 
-#### Terms type
+## Terms type
 
 Great, your terms declaration is now almost complete! You simply need to write it under the appropriate terms type in the `documents` JSON object within the service declaration.
 
@@ -401,131 +331,26 @@ Please note, the terms type may differ from the exact name provided by the servi
 
 If the terms you want to add don't match an existing type, you can [suggest a new one](https://github.com/OpenTermsArchive/terms-types/blob/main/CONTRIBUTING.md).
 
-### Testing your declaration
+## Testing your declaration
 
 You can test the declarations you created or changed by running the following command:
 
-```
+```sh
 npm test [$service_id [$another_service_id …]]
 ```
 
 Since this operation fetches documents and could be long, you can also validate the declaration structure only:
 
-```
+```sh
 npm run test:schema [$service_id [$another_service_id …]]
 ```
 
-#### Linting
+## Linting
 
 In order to ensure consistency across declarations, all declarations files have to be formatted homogeneously.
 
 In order to achieve this, you can use the following command:
 
-```
+```sh
 npm run lint [$service_id [$another_service_id …]]
 ```
-
-- - -
-
-## Maintaining declarations
-
-All parts of a **terms** **declaration** (web location, selection, noise removal, distribution across multiple documents…) can change over time. The process of updating these elements to enable continued **tracking** is called **maintenance**. Without it, **terms** can become:
-
-- **unreachable**: no **snapshot** can be **recorded** at all, because the **location** changed or the **service** denies access;
-- **unextractable**: no **version** can be **extracted** from the **snapshot**, because the selection of content or some **filter** fails;
-- **noisy**: both **snapshots** and **versions** are **recorded** but the **changes** contain **noise** that should have been **filtered out**.
-
-Open Terms Archive needs to keep track of this changes in order to regenerate versions history from snapshots history.
-
-### Service history
-
-To keep track of services declarations and filters changes, Open Terms Archive offers a versioning system. It is optional and should be added only when needed. It works by creating history files for terms declarations and filters, where each entry should be a previous valid declaration or filter function and should have an expiry date.
-
-Both for terms and filters history, the expiration date is declared in a property `validUntil`. It should be the authored date and time of the last snapshot commit for which the declaration is still valid.
-
-Terms declarations history files and filters history files can both evolve on their own. Having one does not imply to create the other.
-
-The current (latest) valid declaration has no date and should not appear in the history object: it stays in its own file, just like if there was no history at all.
-
-#### Terms declaration history
-
-Declarations history are stored in a history JSON file with the following name `declarations/$service_id.history.json`.
-
-The terms history contains an object with terms types as properties. Each terms type property is an array of history entries. Each entry has the same format as a normal terms declaration, except there is the **mandatory** extra property `validUntil`.
-
-```json
-{
-  …
-  "<terms type>": [
-    {
-      "fetch": "The URL where the document can be found",
-      "executeClientScripts": "A boolean to execute client-side JavaScript loaded by the document before accessing the content, in case the DOM modifications are needed to access the content; defaults to false (fetch HTML only)",
-      "filter": "An array of service specific filter function names",
-      "remove": "A CSS selector, a range selector or an array of selectors that target the insignificant parts of the document that has to be removed. Useful to remove parts that are inside the selected parts",
-      "select": "A CSS selector, a range selector or an array of selectors that target the meaningful parts of the document, excluding elements such as headers, footers and navigation",
-      "validUntil": "The inclusive expiration date in ISO format"
-    }
-  ]
-  …
-}
-```
-
-For example, to add a history entry for the `Terms of Service` of the service `ASKfm`, create the file `declarations/ASKfm.history.json` with the following contents:
-
-```json
-{
-  "Terms of Service": [
-    {
-      "fetch": "https://ask.fm/docs/terms_of_use/?lang=en",
-      "select": "body",
-      "filter": ["add"],
-      "validUntil": "2020-10-29T21:30:00.000Z"
-    }
-  ]
-}
-```
-
-#### Filters history
-
-Filters history is declared in a filters history declaration JavaScript file with the following name: `declarations/$service_id.filters.history.js`.
-
-For each filter, a variable named like the filter must be exported. This variable should contain an array of filter history entries. Each entry is an object with the expiration date, as `validUntil` property, and the valid function for this date, under the `filter` property. Both properties are **mandatory**.
-
-```js
-export const <filterName> = [
-  {
-    validUntil: "The inclusive expiration date in ISO format",
-    filter: function() { /* body valid until the expiration of the `validUntil` date */ }
-  }
-];
-```
-
-For example, to add a history entry for the `removeSharesButton` filter of the service `ASKfm`, create the file `declarations/ASKfm.filters.history.js` with the following content:
-
-```js
-export const removeSharesButton = [
-  {
-    validUntil: '2020-08-22T11:30:21.000Z',
-    filter: async (document) => {
-      document.querySelectorAll('.shares').forEach((element) => element.remove());
-    },
-  },
-];
-```
-
-### Handling a terminated service
-
-If the service provider stops offering a service, the associated terms will become unavailable. To mark that service termination in Open Terms Archive and ensure tracking tentatives are stopped, while maintaining the possibility to explore the history:
-
-1. Move the existing documents declaration to the service [history file](#terms-declaration-history).
-2. Update the declaration to stop tracking all terms, by removing every `<terms type>` entries from the  `documents` key in the declaration:
-```json
-{
-  "name": "<service name>",
-  "documents": {}
-}
-```
-
-### Renaming a service
-
-The consensus is to consider that a service provider renaming a service (for example, `Twitter` to `X`) is akin to terminating the previous service and opening a new one. Therefore, to apply a service renaming, open a pull request that both [terminates the previous service](#handling-terminated-service) and adds a new [service declaration](#declaring-a-new-service) with the new service name. You can reuse the `documents` part of the original declaration, but should double-check that the selectors and URLs still match, as a service rename is most often accompanied by a new page layout, a new domain name, and sometimes entirely new terms.

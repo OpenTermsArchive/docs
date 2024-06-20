@@ -107,7 +107,8 @@
   & ol + h2,
   & blockquote + h2,
   & .highlight + h2,
-  & details + h2 {
+  & details + h2,
+  & video + h2{
     margin-top: var(--m2XL);
   }
 
@@ -116,7 +117,8 @@
   & ol + h3,
   & blockquote + h3,
   & .highlight + h3, 
-  & details + h3 {
+  & details + h3,
+  & video + h3 {
     margin-top: var(--mXL);
   }
 
@@ -125,7 +127,8 @@
   & ol + h4,
   & blockquote + h4,
   & .highlight + h4,
-  & details + h4 {
+  & details + h4,
+  & video + h4 {
     margin-top: var(--mL);
   }
 
@@ -134,11 +137,12 @@
   & ol + h5,
   & blockquote + h5,
   & .highlight + h5,
-  & details + h5 {
+  & details + h5,
+  & video + h5 {
     margin-top: var(--mL);
   }
 
-  & iframe {
+  & iframe, video {
     margin-bottom: var(--mL);
   }
 
