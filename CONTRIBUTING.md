@@ -2,12 +2,12 @@
 
 ## 🚀 How to Contribute
 
-- You can check the open issues in this repository, assign yourself and solve them.
-- You can also make suggestions for additions or modifications of this documentation website.
+- You can check the open issues in this repository, comment to state your interest and solve them.
+- You can also open issues to suggest additions or changes to this documentation website.
 
 ## 📜 Read our Code of Conduct
 
-Before you begin coding and collaborating, please read our [Code of Conduct](./CODE_OF_CONDUCT.md) thoroughly to understand the standards (that you are required to adhere to) for community engagement. As part of our open-source community, we hold ourselves and other contributors to a high standard of communication. As a participant and contributor to this project, you are agreeing to abide by our Code of Conduct.
+Before you begin coding and collaborating, please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to understand the standards (that you are required to adhere to) for community engagement. As part of our open-source community, we hold ourselves and other contributors to a high standard of communication. As a participant and contributor to this project, you are agreeing to abide by our Code of Conduct.
 
 ## 💻 Need Help?
 
