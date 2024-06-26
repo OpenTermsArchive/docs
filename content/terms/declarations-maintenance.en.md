@@ -110,7 +110,16 @@ The consensus is to consider that a service provider renaming a service (for exa
 ## How to get the `validUntil` date from an issue
 
 1. Go to the open issue and scroll to the last comment from `OTA-Bot`.
-2. On the date of this comment, right-click "inspect" to open your browser's code inspector. Note that sometimes, the date is not quite precise, it can be written "last month".
-![]({{< relref "." >}}declarations-maintenance-ota-bot-comment.png)
+
+2. On the date of this comment, right-click "inspect" to open your browser's code inspector.
+
+   ![]({{< relref "." >}}declarations-maintenance-ota-bot-comment.png)
+
+   Note that sometimes:
+
+   - the date is not quite precise, it can be written "last month"
+   - the last comment may be the announcement of the reopening of the issue
+
 3. Copy the value of the `datetime` attribute from the `<relative-time>` element.
-![]({{< relref "." >}}declarations-maintenance-inspector-open-get-datetime.png)
+
+   ![]({{< relref "." >}}declarations-maintenance-inspector-open-get-datetime.png)
