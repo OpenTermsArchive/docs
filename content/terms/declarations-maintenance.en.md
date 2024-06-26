@@ -111,6 +111,6 @@ The consensus is to consider that a service provider renaming a service (for exa
 
 1. Go to the open issue and scroll to the last comment from `OTA-Bot`.
 2. On the date of this comment, right-click "inspect" to open your browser's code inspector. Note that sometimes, the date is not quite precise, it can be written "last month".
-![alt text]({{< relref "." >}}ota-bot-comment.png)
+![alt text]({{< relref "." >}}declarations-maintenance-ota-bot-comment.png)
 3. Copy the value of the `datetime` attribute from the `<relative-time>` element.
-![alt text]({{< relref "." >}}inspector-open-get-datetime.png)
+![alt text]({{< relref "." >}}declarations-maintenance-inspector-open-get-datetime.png)
