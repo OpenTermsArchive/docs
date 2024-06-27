@@ -122,6 +122,6 @@ The consensus is to consider that a service provider renaming a service (for exa
    - the last comment may be the announcement of the reopening of the issue
    ![]({{< relref "." >}}declarations-maintenance-ota-bot-comment-reopened-issue.png)
 
-3. Copy the value of the `datetime` attribute from the `<relative-time>` element.
+3. The value to use as `validUntil` is the value of the `datetime` attribute from the `<relative-time>` element.
 
    ![]({{< relref "." >}}declarations-maintenance-inspector-open-get-datetime.png)
