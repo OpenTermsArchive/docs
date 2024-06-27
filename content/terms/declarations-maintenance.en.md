@@ -109,7 +109,7 @@ The consensus is to consider that a service provider renaming a service (for exa
 
 ## How to get the `validUntil` date from an issue
 
-1. Go to the open issue and scroll to the last comment from `OTA-Bot`.
+1. Go to the open issue and scroll to the last action from `OTA-Bot` (comment or issue opening).
 
 2. On the date of this comment, right-click "inspect" to open your browser's code inspector.
 
