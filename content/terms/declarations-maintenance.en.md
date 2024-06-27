@@ -118,7 +118,9 @@ The consensus is to consider that a service provider renaming a service (for exa
    Note that sometimes:
 
    - the date is not quite precise, it can be written "last month"
+   ![]({{< relref "." >}}declarations-maintenance-ota-bot-comment-last-month.png)
    - the last comment may be the announcement of the reopening of the issue
+   ![]({{< relref "." >}}declarations-maintenance-ota-bot-comment-reopened-issue.png)
 
 3. Copy the value of the `datetime` attribute from the `<relative-time>` element.
 
