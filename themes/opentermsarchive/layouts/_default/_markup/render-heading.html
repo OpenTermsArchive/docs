@@ -1,0 +1,6 @@
+<h{{ .Level }} id="{{ .Anchor }}">
+  {{ .Text | safeHTML }}
+  {{ if ne .Level 1 }}
+    <a class="title-anchor" href="#{{ .Anchor }}">🔗</a>
+  {{ end }}
+</h{{ .Level }}>

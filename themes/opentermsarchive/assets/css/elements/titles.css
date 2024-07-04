@@ -119,3 +119,18 @@ h6,
   color: var(--colorBlack800);
   line-height: 1.25;
 }
+
+.title-anchor {
+  color: var(--colorBlack400);
+  font-size: 0.8em;
+  font-weight: normal;
+  display: none;
+}
+
+h2, h3, h4, h5, h6 {
+  &:hover {
+    a.title-anchor {
+      display: inline;
+    }
+  }
+}
