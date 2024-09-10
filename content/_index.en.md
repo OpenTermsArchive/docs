@@ -60,7 +60,7 @@ A **declaration** also contains some metadata on the **service** on which the **
 >   "documents": {
 >     "Privacy Policy": {
 >       "fetch": "https://opentermsarchive.org/en/privacy-policy",
->       "select": ".TextContent_textContent__ToW2S"
+>       "select": ".textcontent"
 >     }
 >   }
 > }

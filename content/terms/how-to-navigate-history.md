@@ -10,7 +10,7 @@ aliases: /navigate-history/
 
 Learn how to navigate through versions history in this 4 minutes video, or scroll below for the textual version.
 
-{{< video src="https://cloud.opentermsarchive.org/index.php/s/62tKp78si6jtfK7/download/how-to-navigate-through-versions-history-in-open-terms-archive.mp4#t=0.1" >}}
+{{< video src="https://cloud.opentermsarchive.org/index.php/s/pNKcom6k4cETAcx/download/how-to-navigate-through-versions-history-in-open-terms-archive.mp4#t=0.1" >}}
 
 ## Manual
 
