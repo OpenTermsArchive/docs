@@ -109,6 +109,12 @@ A [Node.js](https://nodejs.org/en/download/) runtime is required to execute this
 
 ![Supported Node.js version can be found in the package.json file](https://img.shields.io/node/v/@opentermsarchive/engine?color=informational&label=Supported%20Node.js%20version)
 
+Note that older versions of `git` will work but can slow the engine down. It's recommended to use git version 2.29 or higher, and to run:
+```
+git commit-graph write --reachable --changed-paths
+```
+in the snapshot and version repositories.
+
 ### Getting started
 
 This engine is published as a [module on NPM](https://npmjs.com/package/@opentermsarchive/engine). The recommended install is as a dependency in a `package.json` file, next to a folder containing [declaration files](#declarations).
