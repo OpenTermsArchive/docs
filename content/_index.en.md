@@ -126,7 +126,7 @@ In an editor, create the following declaration file in `declarations/Open Terms 
   "documents": {
     "Privacy Policy": {
       "fetch": "https://opentermsarchive.org/en/privacy-policy",
-      "select": ".TextContent_textContent__ToW2S"
+      "select": ".textcontent"
     }
   }
 }
