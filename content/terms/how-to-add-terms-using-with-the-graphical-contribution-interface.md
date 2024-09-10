@@ -8,7 +8,7 @@ title: "How to add terms with the graphical contribution interface"
 
 Learn how add terms with the graphical contribution interface in this 6 minutes video.
 
-{{< video src="https://cloud.opentermsarchive.org/index.php/s/GYBJkDyiELoET59/download/how-to-add-terms-using-the-contribution-tool.mp4#t=0.1" >}}
+{{< video src="https://cloud.opentermsarchive.org/index.php/s/Me7CKmC2RPSK3mT/download/how-to-add-terms-using-the-contribution-tool.mp4#t=0.1" >}}
 
 ## Manual
 
