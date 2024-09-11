@@ -183,8 +183,8 @@ Before proceeding with deployment, ensure that the server meets the following re
 
 - Make sure that a non-root user has been set up on the server, if not you can create by following:
 
-  - Once logged in on your server, create a new user: `adduser <user>`. Follow the prompts to set a password for the new user and provide any additional information if required.
-  - Grant sudo privileges: `usermod -aG sudo <user>`.
+  - Once logged in on your server, create a new user: `adduser <username>`. Follow the prompts to set a password for the new user and provide any additional information if required.
+  - Grant sudo privileges: `usermod -aG sudo <username>`.
 
 - Grant `sudo` rights to the designated user without requiring a password prompt. To achieve this:
 
@@ -193,7 +193,7 @@ Before proceeding with deployment, ensure that the server meets the following re
   - Add the following line at the end of this section:
   
     ```shell
-    <user>  ALL=(ALL) NOPASSWD:ALL
+    <username>  ALL=(ALL:ALL) NOPASSWD:ALL
     ```
 
 ### Define the inventory
@@ -312,7 +312,7 @@ On your local machine:
 
 #### Create the SSH key
 
-- Create a new SSH key: `ssh-keygen -t ed25519 -C bot@opentermsarchive.org -P "" -f ./<collection_name>-key`
+- Create a new SSH key: `ssh-keygen -t ed25519 -C bot@opentermsarchive.org -P "" -f ~/.ssh/<collection_name>-key`
 - Copy the generated private key file
 
 #### Encrypt private key and update deployment
