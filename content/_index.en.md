@@ -113,7 +113,7 @@ Note that older versions of `git` will work but can slow the engine down. It's r
 ```
 git commit-graph write --reachable --changed-paths
 ```
-in the snapshot and version repositories.
+in the snapshot and version repositories. This will significantly increase performance, especially if combined with the `--skipPreRun` and `--skipSnapshots` or `--skipReadBack` options.
 
 ### Getting started
 
