@@ -1,6 +1,6 @@
 github:
   url: https://github.com/OpenTermsArchive
 mastodon: 
-  url: https://mastodon.lescommuns.org/@opentermsarchive
-  username: "@opentermsarchive@mastodon.lescommuns.org"
+  url: https://mastodon.social/@opentermsarchive
+  username: "@opentermsarchive@mastodon.social"
 email: contact@opentermsarchive.org
