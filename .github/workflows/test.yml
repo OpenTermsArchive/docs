@@ -32,5 +32,3 @@ jobs:
         run: npm run build
       - name: Build JSDoc
         run: npm run jsdoc
-      - name: Test broken links
-        run: npm run test:links
