@@ -83,13 +83,7 @@ npm run lint:js -- --fix
 
 ### Check for broken links
 
-Build the site
-
-```sh
-hugo --minify
-```
-
-and run
+To check for broken links, run the following command:
 
 ```sh
 npm run test:links
