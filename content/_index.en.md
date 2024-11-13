@@ -338,7 +338,8 @@ The default configuration can be found in `config/default.json`. The full refere
     "dataset": { // Release mechanism to create dataset periodically
       "title": "Title of the dataset; recommended to be the name of the instance that generated it",
       "versionsRepositoryURL": "GitHub or GitLab repository where the dataset will be published as a release; recommended to be the versions repository for discoverability and tagging purposes",
-      "publishingSchedule": "Cron expression to define the dataset publishing schedule; see below"
+      "publishingSchedule": "Cron expression to define the dataset publishing schedule; see below",
+      "apiBaseURL": "Base URL of the GitLab API (only relevant if 'type' is 'gitlab')"
     },
     "collection-api": { // Collection metadata API
       "port": "The port number on which the API will listen for incoming requests",
