@@ -1,4 +1,4 @@
 ---
 title: Collections
-weight: 5
+weight: 3
 ---
