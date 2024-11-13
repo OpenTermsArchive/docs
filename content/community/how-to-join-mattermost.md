@@ -21,10 +21,7 @@ After successful login, they will be redirected to the Open Term Archive workspa
 
 ![Mattermost landing page interface]({{< relref "." >}}landing-page.png)
 
-::: info
 By default, the Mattermost interface may be presented in French. If this is an issue, new members and contributors can translate the content to English using your browser’s built-in translation features.
-
-:::
 
 ## Profile setup
 
