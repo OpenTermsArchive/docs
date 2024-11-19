@@ -44,7 +44,7 @@ The Open Terms Archive workspace consists of several channels. Some are specific
 3. A drop-down menu appears. Click “Browse channels” to see the list of all available channels on the Open Terms Archive workspace.
    ![See Channels on Mattermost]({{< relref "." >}}see-channels.jpg)
 4. Find a channel that interests you from the list of available channels, and click ”join” to add it to your workspace.
-   ![Joinning Channels on Mattermost]({{< relref "." >}}joinning-channels.png)
+   ![Joining Channels on Mattermost]({{< relref "." >}}joinning-channels.png)
 
 ## New members introduction
 
