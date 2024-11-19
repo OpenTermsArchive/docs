@@ -50,7 +50,7 @@ The Open Terms Archive workspace consists of several channels. Some are specific
 
 After joining the Open Terms Archive workspace, members are encouraged to introduce themselves in the **Introduction** channel.
 
-1. New members and contributors can add the **\#Introduction** channel using the step above.
+1. New members and contributors can add the **~Introductions** channel using the step above.
 2. Briefly introduce themselves to the community.
 3. A community manager replies with a welcome message and provides further guidance on the next steps.
 
