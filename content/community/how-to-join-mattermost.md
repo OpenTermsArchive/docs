@@ -17,7 +17,7 @@ Mattermost is an open-source collaboration platform with a simple, user-friendly
 1. To get started on Mattermost, an invite link will be sent to new members and contributors.
 2. Once received, they sign up and create an account to log in.
 
-After successful login, they will be redirected to the Open Term Archive workspace, where they will automatically be added to the  **\#announcement** channel.
+After successful login, they will be redirected to the Open Term Archive workspace, where they will automatically be added to the **~announcements** channel.
 
 ![Mattermost landing page interface]({{< relref "." >}}landing-page.png)
 
