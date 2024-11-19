@@ -6,7 +6,7 @@ title: How to join Mattermost
 
 Welcome to Open Terms Archive. This document provides guidelines for onboarding new members and contributors joining the Open Terms Archive community on Mattermost.
 
-Open Terms Archive welcomes various contributors, including individual contributors, sponsors, and other entities interested in transparency from the opaqueness of terms by Big Tech services.
+Open Terms Archive welcomes various contributors, including individuals, sponsors, and other entities interested in transparency from the opaqueness of terms by Big Tech services.
 
 ## Mattermost platform
 
