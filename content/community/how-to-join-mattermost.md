@@ -38,8 +38,8 @@ This includes adding your full name, user name, pseudo (nickname), role, and pro
 
 The Open Terms Archive workspace consists of several channels. Some are specific while others are general. New members and contributors can add any channel of your choice by following these steps:
 
-1. Navigate to the "**CHANNELS**" section on the left-hand sidebar.
-2. Toggle the "**CHANNELS**" button and click on “**Add Channels**”.
+1. Navigate to the “CHANNELS” section on the left-hand sidebar.
+2. Toggle the “CHANNELS” button and click on “Add Channels”.
    ![Adding Channels on Mattermost]({{< relref "." >}}adding-channels.png)
 3. A drop-down menu appears. Click “**Browse channel**” to see the list of all available channels on the Open Terms Archive workspace.
    ![See Channels on Mattermost]({{< relref "." >}}see-channels.jpg)
