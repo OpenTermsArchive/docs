@@ -1,6 +1,6 @@
 header:
-  - name: Jeux de données
-    url: https://opentermsarchive.org/fr/jeux-de-donnees/
+  - name: Collections
+    url: https://opentermsarchive.org/fr/collections/
     weight: 1
   - name: Mémos
     url: https://opentermsarchive.org/fr/memos/
@@ -18,31 +18,41 @@ footer:
   - name: Accueil
     url: https://opentermsarchive.org
     weight: 1
+  - name: Collections
+    url: https://opentermsarchive.org/fr/collections/
+    weight: 2
   - name: Jeux de données
     url: https://opentermsarchive.org/fr/jeux-de-donnees/
-    weight: 2
+    weight: 3
   - name: Mémos
     url: https://opentermsarchive.org/fr/memos/
-    weight: 3
+    weight: 4
   - name: Documentation
     url: /fr
-    weight: 4
+    weight: 5
   - name: Impact
     url: https://opentermsarchive.org/fr/impact/
-    weight: 5
+    weight: 6
   - name: À propos
     url: https://opentermsarchive.org/fr/a-propos/
-    weight: 6
+    weight: 7
 first_subfooter:
+  - name: État des services
+    url: https://stats.uptimerobot.com/nXvrBcl0wx
+    weight: 1
+    params:
+      target: _blank
   - name: Statistiques
     url: https://opentermsarchive.org/fr/statistiques/
-    weight: 1
+    weight: 2
   - name: Média
     url: https://opentermsarchive.org/fr/media/
-    weight: 2
+    weight: 3
   - name: Code source
     url: https://github.com/OpenTermsArchive
-    weight: 3
+    weight: 4
+    params:
+      target: _blank
 second_subfooter:
   - name: Mentions légales
     url: https://opentermsarchive.org/fr/mentions-legales/

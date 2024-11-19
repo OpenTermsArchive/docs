@@ -1,6 +1,6 @@
 header:
-  - name: Datasets
-    url: https://opentermsarchive.org/en/datasets/
+  - name: Collections
+    url: https://opentermsarchive.org/en/collections/
     weight: 1
   - name: Memos
     url: https://opentermsarchive.org/en/memos/
@@ -18,31 +18,41 @@ footer:
   - name: Home
     url: https://opentermsarchive.org
     weight: 1
+  - name: Collections
+    url: https://opentermsarchive.org/en/collections/
+    weight: 2
   - name: Datasets
     url: https://opentermsarchive.org/en/datasets/
-    weight: 2
+    weight: 4
   - name: Memos
     url: https://opentermsarchive.org/en/memos/
-    weight: 3
+    weight: 4
   - name: Documentation
     url: /
-    weight: 4
+    weight: 5
   - name: Impact
     url: https://opentermsarchive.org/en/impact/
-    weight: 5
+    weight: 6
   - name: About
     url: https://opentermsarchive.org/en/about/
-    weight: 6
+    weight: 7
 first_subfooter:
+  - name: Services status
+    url: https://stats.uptimerobot.com/nXvrBcl0wx
+    weight: 1
+    params:
+      target: _blank
   - name: Statistics
     url: https://opentermsarchive.org/en/stats/
-    weight: 1
+    weight: 2
   - name: Media
     url: https://opentermsarchive.org/en/media/
-    weight: 2
-  - name: Source code
-    url: https://github.com/OpenTermsArchive
     weight: 3
+  - name: Source code
+    url: https://github.com/OpenTermsArchive/engine
+    weight: 4
+    params:
+      target: _blank
 second_subfooter:
   - name: Legal notice
     url: https://opentermsarchive.org/en/legal-notice/
