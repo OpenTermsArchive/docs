@@ -61,7 +61,7 @@ Leaving a channel is easy, just as adding a channel. In cases where a member wis
 1. Navigate to the channel you want to leave.
 2. Click on the three dots indicating the “channel options”.
    ![Channel options]({{< relref "." >}}channel-options.jpg)
-3. Select “**Leave the Canal**” from the dropdown menu and voila! You have successfully left that channel.
+3. Select “Leave the Canal” from the dropdown menu and voila! You have successfully left that channel.
    ![Leave the Canal]({{< relref "." >}}leave-the-canal.jpg)
 
 ## Conclusion
