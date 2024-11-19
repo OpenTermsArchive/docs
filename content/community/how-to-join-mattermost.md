@@ -31,7 +31,7 @@ This includes adding your full name, user name, pseudo (nickname), role, and pro
 
 1. Navigate to the uppermost right corner of Mattermost and click on the profile icon
    ![Mattermost profile page]({{< relref "." >}}profile-page.jpg)
-2. Click on the “**Modifier** ” to edit any details of your choice.
+2. Click on the “Modifier” button to edit any details of your choice.
    ![Edit profile page]({{< relref "." >}}edit-profile-page.jpg)
 
 ## Adding channels
