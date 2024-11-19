@@ -66,4 +66,4 @@ Leaving a channel is easy, just as adding a channel. In cases where a member wis
 
 ## Conclusion
 
-This onboarding process aims to help new members integrate smoothly into the Open Terms Archive community. For any questions or further assistance, members should feel free to ask in the **\#Help** channel.
+This onboarding process aims to help new members integrate smoothly into the Open Terms Archive community. For any questions or further assistance, members should feel free to ask in the **~Help** channel.
