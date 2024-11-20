@@ -323,7 +323,8 @@ The default configuration can be found in `config/default.json`. The full refere
         "to": "The address to send the email to in case of an error",
         "from": "The address from which to send the email",
         "sendWarnings": "Boolean. Set to true to also send email in case of warning",
-      }
+      },
+      "timestampPrefix": "Boolean. Set to true to prefix the timestamp of the error message with the current date (in ISO 8601 format YYYY-MM-DDTHH:MM:SSZ)"
     },
     "reporter": { // Reporter mechanism to create GitHub issues when terms content is inaccessible
       "githubIssues": {
