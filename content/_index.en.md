@@ -324,7 +324,7 @@ The default configuration can be found in `config/default.json`. The full refere
         "from": "The address from which to send the email",
         "sendWarnings": "Boolean. Set to true to also send email in case of warning",
       },
-      "timestampPrefix": "Boolean. Set to true to prefix the timestamp of the error message with the current date (in ISO 8601 format YYYY-MM-DDTHH:MM:SSZ)"
+      "timestampPrefix": "Boolean. Set to true to prefix the timestamp of the error message with the current date (in ISO 8601 format YYYY-MM-DDTHH:MM:SSZ); see below"
     },
     "reporter": { // Reporter mechanism to create GitHub issues when terms content is inaccessible
       "githubIssues": {
@@ -351,6 +351,10 @@ The default configuration can be found in `config/default.json`. The full refere
 The default configuration is merged with (and overridden by) environment-specific configuration that can be specified at startup with the `NODE_ENV` environment variable. See [node-config](https://github.com/node-config/node-config) for more information about configuration files.
 
 For development, in order to have a local configuration that overrides the existing config, it is recommended to create a `config/development.json` file.
+
+#### Logging
+
+Setting `logger.timestampPrefix` to `false` can be useful when logs are being collected by a process manager (like PM2) that already adds timestamps to log entries. This avoids duplicate timestamps in the logs.
 
 #### Schedules
 
