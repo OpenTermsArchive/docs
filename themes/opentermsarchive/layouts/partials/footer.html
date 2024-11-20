@@ -76,6 +76,9 @@
 {{ $languageSwitcherJs := resources.Get "js/languageSwitcher.js" | js.Build }}
 <script src="{{ $languageSwitcherJs.RelPermalink }}"></script>
 
+{{ $brandsJs := resources.Get "js/brands.js" | js.Build }}
+<script src="{{ $brandsJs.RelPermalink }}"></script>
+
 {{ $headerJs := resources.Get "js/header.js" | js.Build }}
 <script src="{{ $headerJs.RelPermalink }}"></script>
 
