@@ -2,39 +2,28 @@
   --svgfill: none;
 }
 
-.icon_circle {
-  background-color: var(--colorBlack400);
-  border-radius: 50%;
-  height: 28px;
-  width: 28px;
+.icon__circle-wrapper {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
-  &.icon_circle__medium {
-    height: 24px;
-    width: 24px;
-  }
+  width: 28px;
+  height: 28px;
+  background-color: var(--colorBlack400);
+  border-radius: 50%;
 }
 
-.icon_arrowDown{
-  width:1em;
-  height:1em;
+.icon__circle-wrapper--small {
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
-.icon_close{
-  width:1em;
-  height:1em;
+.icon__circle-wrapper--big {
+  width: 8.8rem;
+  height: 8.8rem;
 }
 
-.icon_github{
-  width:1em;
-  height:1em;
-}
-
-.icon_contact{
-  width:1em;
-  height:1em;
+.icon__circle-wrapper--graylight {
+  background-color: var(--colorBlack200);
 }
 
 .icon {
@@ -42,6 +31,43 @@
   height: 1em;
 }
 
+.icon--size-inherit {
+  width: inherit;
+  height: inherit;
+}
+
+.icon--medium {
+  width: 1.8em;
+  height: 1.8em;
+}
+
+.icon--big {
+  width: 2.6em;
+  height: 2.6em;
+}
+
+.icon--stroke-thin {
+  stroke-width: 1;
+}
+
+.icon--white {
+  color: var(--colorWhite);
+}
+
+.icon--primary {
+  color: var(--colorPrimary);
+}
+
+.icon--gray {
+  color: var(--colorBlack400);
+}
+
 .icon--fill-white {
   --svgfill: var(--colorWhite);
+}
+
+.icon__volunteer-contributors-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

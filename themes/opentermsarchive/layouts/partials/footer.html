@@ -1,88 +1,69 @@
 <div class="container container__hasNoPaddingY container__fluid container__hasNoPaddingX container__isGray">
   <div class="divider">
-    <hr />
+    <hr >
   </div>
-  <div class="container container__flex container__1211 container__hasNoPaddingX container__hasPaddingYSmall">
+  <div class="container container__flex container__1211 container__hasPaddingYSmall">
     <footer class="footer">
-      <div class="logo logo__medium">
-        <svg class="icon_logo"><use href="#logo"></use></svg>
-      </div>
-      <div class="footer_menus">
-        <div class="footerMenu">
-          <ul>
-			      {{ range .Site.Menus.footer }}
-              <li>
-                <a  href="{{ .URL }}">
-                  {{ .Name }}
-                </a>
-              </li>
-            {{ end }}
-          </ul>
-          <ul>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener"
-                class="a_icontext a__small footer_menus_icontext"
-                href="{{ .Param "mastodon.url" }}"
-              >
-                <span class="icon_circle icon_circle__medium mr__2XS">
-                  <svg class="icon icon--fill-white">
-                    <use href="#mastodon"></use>
-                  </svg>
-                </span>
-                <span>{{ i18n "footer.follow" }}</span>
-              </a>
-            </li>
-            <li>
-              <a
-                title="Contactez nous par email"
-                class="a_icontext a__small footer_menus_icontext"
-                href="{{ i18n "footer.contact_href" }}"
-              >
-                <span class="icon_circle icon_circle__medium mr__2XS">
-                  <svg class="icon_contact"><use href="#contact"></use></svg>
-                </span>
-                <span>{{ i18n "footer.contact" }}</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footerMenu footerMenu__isSmall footerMenu__alignRight">
-          <ul>
-			      {{ range .Site.Menus.first_subfooter }}
-              <li>
-                <a  href="{{ .URL }}">
-                  {{ .Name }}
-                </a>
-              </li>
-            {{ end }}
-		      </ul>
-		      <ul>
-			      {{ range .Site.Menus.second_subfooter }}
-              <li>
-                <a  href="{{ .URL }}">
-                  {{ .Name }}
-                </a>
-              </li>
-            {{ end }}
-          </ul>
-        </div>
-      </div>
+      <div class="footer__logo logo"><svg><use href="#logo-main"></use></svg></div>
+      <ul class="footer__main-menu">
+        {{ range .Site.Menus.footer }}
+          {{ $href := absLangURL .URL }}
+          {{ if eq .Identifier "mailto" }}
+            {{ $href = printf "mailto:%s" $.Site.Params.contact_email }}
+          {{ end }}
+          <li>
+            <a href="{{ $href }}" {{ with .Params.target }}target="{{ . }}"{{ end }}>{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+      <ul class="footer__sub-menu">
+        {{ range .Site.Menus.footer_sub }}
+          <li>
+            <a class="a--small" href="{{ .URL }}" {{ with .Params.target }}target="{{ . }}"{{ end }}>
+              {{ .Name }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+      <ul class="footer__socials">
+        <li>
+          <a class="a--icontext a--small" target="_blank" rel="me" href="{{ .Param "mastodon.url" }}" aria-label="Mastodon">
+            <span class="icon__circle-wrapper icon__circle-wrapper--small">
+              <i class="icon icon--fill-white" data-simple-icon="mastodon"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="a--icontext a--small" target="_blank" rel="me" href="{{ .Param "github.url" }}" aria-label="GitHub">
+            <span class="icon__circle-wrapper icon__circle-wrapper--small">
+              <i class="icon icon--fill-white" data-simple-icon="github"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="a--icontext a--small" target="_blank" rel="me" href="{{ .Param "linkedin.url" }}" aria-label="LinkedIn">
+            <span class="icon__circle-wrapper icon__circle-wrapper--small">
+              <i class="icon icon--fill-white" data-simple-icon="linkedin"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
     </footer>
   </div>
 </div>
 
-{{ $languageSwitcherJs := resources.Get "js/languageSwitcher.js" | js.Build }}
-<script src="{{ $languageSwitcherJs.RelPermalink }}"></script>
+{{ $iconsJs := resources.Get "js/icons.js" | js.Build }}
+<script src="{{ $iconsJs.RelPermalink }}"></script>
 
 {{ $brandsJs := resources.Get "js/brands.js" | js.Build }}
 <script src="{{ $brandsJs.RelPermalink }}"></script>
 
+{{ $languageSwitcherJs := resources.Get "js/languageSwitcher.js" | js.Build }}
+<script src="{{ $languageSwitcherJs.RelPermalink }}"></script>
+
 {{ $headerJs := resources.Get "js/header.js" | js.Build }}
 <script src="{{ $headerJs.RelPermalink }}"></script>
 
-<!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -97,4 +78,3 @@
     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<!-- End Matomo Code -->

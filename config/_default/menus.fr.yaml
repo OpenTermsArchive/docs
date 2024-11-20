@@ -36,7 +36,10 @@ footer:
   - name: À propos
     url: https://opentermsarchive.org/fr/a-propos/
     weight: 7
-first_subfooter:
+  - name: Contactez-nous
+    identifier: mailto
+    weight: 8
+footer_sub:
   - name: État des services
     url: https://stats.uptimerobot.com/nXvrBcl0wx
     weight: 1
@@ -53,13 +56,12 @@ first_subfooter:
     weight: 4
     params:
       target: _blank
-second_subfooter:
   - name: Mentions légales
     url: https://opentermsarchive.org/fr/mentions-legales/
-    weight: 1
+    weight: 5
   - name: Politique de confidentialité
     url: https://opentermsarchive.org/fr/politique-de-confidentialite/
-    weight: 2
+    weight: 6
   - name: 'Accessibilité : non conforme'
     url: https://opentermsarchive.org/fr/accessibilite/
-    weight: 3
+    weight: 7
