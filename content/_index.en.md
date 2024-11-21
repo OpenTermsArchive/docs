@@ -327,18 +327,20 @@ The default configuration can be found in `config/default.json`. The full refere
       "timestampPrefix": "Boolean. Set to true to prefix the timestamp of the error message with the current date (in ISO 8601 format YYYY-MM-DDTHH:MM:SSZ); see below"
     },
     "reporter": { // Reporter mechanism to create GitHub issues when terms content is inaccessible
-      "githubIssues": {
-        "repositories": {
-          "declarations": "GitHub repository where to create issues; expected format: <owner>/<repository>",
-          "versions": "GitHub repository of versions associated with the declarations; expected format: <owner>/<repository>",
-          "snapshots": "GitHub repository of snapshots associated with the declarations; expected format: <owner>/<repository>"
-        }
+      "type": "The type of reporter to use; can be 'github' or 'gitlab'",
+      "repositories": {
+        "declarations": "GitHub or GitLab repository where to create issues; expected format: <owner>/<repository>",
+        "versions": "GitHub or GitLab repository of versions associated with the declarations; expected format: <owner>/<repository>",
+        "snapshots": "GitHub or GitLab repository of snapshots associated with the declarations; expected format: <owner>/<repository>"
       }
+      "baseURL": "Base URL of the GitLab instance (only relevant if 'type' is 'gitlab')",
+      "apiBaseURL": "Base URL of the GitLab API (only relevant if 'type' is 'gitlab')"
     },
     "dataset": { // Release mechanism to create dataset periodically
       "title": "Title of the dataset; recommended to be the name of the instance that generated it",
-      "versionsRepositoryURL": "GitHub repository where the dataset will be published as a release; recommended to be the versions repository for discoverability and tagging purposes",
-      "publishingSchedule": "Cron expression to define the dataset publishing schedule; see below"
+      "versionsRepositoryURL": "GitHub or GitLab repository where the dataset will be published as a release; recommended to be the versions repository for discoverability and tagging purposes",
+      "publishingSchedule": "Cron expression to define the dataset publishing schedule; see below",
+      "apiBaseURL": "Base URL of the GitLab API (only relevant if 'type' is 'gitlab')"
     },
     "collection-api": { // Collection metadata API
       "port": "The port number on which the API will listen for incoming requests",
@@ -415,7 +417,11 @@ Environment variables can be passed in the command-line or provided in a `.env` 
 
 - `OTA_ENGINE_SMTP_PASSWORD`: a password for email server authentication, in order to send email notifications.
 - `OTA_ENGINE_SENDINBLUE_API_KEY`: a SendInBlue API key, in order to send email notifications with that service.
-- `OTA_ENGINE_GITHUB_TOKEN`: a token with repository privileges to access the [GitHub API](https://github.com/settings/tokens).
+- `OTA_ENGINE_GITHUB_TOKEN`: a token with repository privileges to access the [GitHub API](https://github.com/settings/tokens) to create issues and publish dataset releases.
+- `OTA_ENGINE_GITLAB_TOKEN`: a token with repository privileges to access the [GitLab API](https://gitlab.com/profile/personal_access_tokens) to create issues.
+- `OTA_ENGINE_GITLAB_RELEASES_TOKEN`: a token with repository privileges to access the [GitLab API](https://gitlab.com/profile/personal_access_tokens) to publish dataset releases.
+
+If both `OTA_ENGINE_GITHUB_TOKEN` and `OTA_ENGINE_GITLAB_TOKEN` are defined, GitHub takes precedence for dataset publishing.
 
 If an outgoing HTTP/HTTPS proxy to access the Internet is required, it is possible to provide it through the `HTTP_PROXY` and `HTTPS_PROXY` environment variable.
 
