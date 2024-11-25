@@ -68,12 +68,12 @@ Leaving a channel is easy, just as adding a channel. In cases where a member wis
 
 Here are some recommended channels to help you get started:
 
-1. **#Reuse channel**: This channel gives you access to published reports based on Open Terms Archive data. You can also share your personal published reports here.
-2. **#Situational awareness channel**: This channel helps you stay updated on initiatives from Open Terms Archive and news from other sources.
-3. **#Public relations Channel**: All communications, public presentations, events, blogs, feedback, and press releases from Open Terms Archive are posted here. Join to stay informed and share related articles.
-4. **#Help Channel**: Don’t get stuck! Join this channel to ask for assistance on any issue. 
-5. **#Module**: There are some channels prefixed with “Module” for technical contributors including **Website**, **Documentation**, **Engine**, and **Contribution Tool**.
-6. **#Collection**: There are some channels prefixed with “Collection” for different terms tracked.
+1. **~reuses**: this channel gives you access to published reports based on Open Terms Archive data. You can also share your personal published reports here.
+2. **~situational awareness**: this channel helps you stay updated on initiatives from Open Terms Archive and news from other sources.
+3. **~public relations**: all communications, public presentations, events, blogs, feedback, and press releases from Open Terms Archive are posted here. Join to stay informed and share related articles.
+4. **~help**: don’t get stuck! Join this channel to ask for assistance.
+5. **~module**: there are some channels prefixed with “Module” for technical contributors including **Website**, **Documentation**, **Engine**, and **Contribution Tool**.
+6. **~collection**: each collection has a dedicated channel prefixed with “Collection” to gather its community members and synchronise around maintenance and analysis.
 
 ## Conclusion
 
