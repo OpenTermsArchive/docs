@@ -64,6 +64,17 @@ Leaving a channel is easy, just as adding a channel. In cases where a member wis
 3. Select “Leave the Canal” from the dropdown menu and voila! You have successfully left that channel.
    ![Leave the Canal]({{< relref "." >}}leave-the-canal.jpg)
 
+## Channels description
+
+Here are some recommended channels to help you get started:
+
+1. **~reuses**: this channel gives you access to published reports based on Open Terms Archive data. You can also share your personal published reports here.
+2. **~situational awareness**: this channel helps you stay updated on initiatives from Open Terms Archive and news from other sources.
+3. **~public relations**: all communications, public presentations, events, blogs, feedback, and press releases from Open Terms Archive are posted here. Join to stay informed and share related articles.
+4. **~help**: don’t get stuck! Join this channel to ask for assistance.
+5. **~module**: there are some channels prefixed with “Module” for technical contributors including **Website**, **Documentation**, **Engine**, and **Contribution Tool**.
+6. **~collection**: each collection has a dedicated channel prefixed with “Collection” to gather its community members and synchronise around maintenance and analysis.
+
 ## Conclusion
 
 This onboarding process aims to help new members integrate smoothly into the Open Terms Archive community. For any questions or further assistance, members should feel free to ask in the **~Help** channel.
