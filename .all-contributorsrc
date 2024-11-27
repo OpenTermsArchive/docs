@@ -80,9 +80,20 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Aysha-py",
+      "name": "Aysha Muhammed",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64032658?v=4",
+      "profile": "https://github.com/Aysha-py",
+      "contributions": [
+        "doc",
+        "promotion"
+      ]
     }
   ],
   "repoType": "github",
   "commitConvention": "none",
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "commitType": "docs"
 }
