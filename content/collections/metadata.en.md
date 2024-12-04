@@ -5,9 +5,9 @@ weight: 1
 
 # Collection metadata
 
-A collection is defined by its scope, which includes various dimensions such as language, jurisdiction, and industry. To accurately describe this scope, the following metadata fields are required: `id`, `name`, `tagline`, `languages`, and `jurisdictions`. Additional fields are optional but highly recommended to facilitate better discovery, comprehension, management, and utilization.
+A collection is defined by the following metadata.
 
-Below is the list of all metadata fields:
+## Required fields
 
 | Field | Type | Description |
 |----------------|-----------------|---------------------------------------|
@@ -17,14 +17,6 @@ Below is the list of all metadata fields:
 | `description` | string | Detailed context beyond tagline |
 | `languages` | Array of strings| ISO 639 language codes allowed in collection |
 | `jurisdictions`| Array of strings| ISO 3166-2 country codes for covered jurisdictions |
-| `trackingPeriods`| object | Information about tracking schedule |
-| `dataset` | url | URL to released versions dataset |
-| `declarations` | url | URL to declarations repository |
-| `versions` | url | URL to versions repository |
-| `snapshots` | url | URL to snapshots repository |
-| `logo` | url | URL to collection logo |
-| `governance` | object | Governance information |
-| `donation` | url | URL to donation page |
 
 Example:
 
@@ -32,19 +24,36 @@ Example:
 name: Platform Governance Archive
 id: pga
 tagline: Largest global social media
+languages: [en, fr, de]
+jurisdictions: [EU]
+```
+
+## Additional fields
+
+Additional fields are optional but highly recommended to facilitate better discovery, comprehension, and utilization of the collection.
+
+| Field | Type | Description |
+|----------------|-----------------|---------------------------------------|
+| `description` | string | Detailed context beyond tagline |
+| `dataset` | url | URL to released versions dataset |
+| `declarations` | url | URL to declarations repository |
+| `versions` | url | URL to versions repository |
+| `snapshots` | url | URL to snapshots repository |
+| `logo` | url | URL to the collection's logo. Optimized PNG transparent image (min size 240px) |
+| `donation` | url | URL to donation page |
+| `trackingPeriods`| tracking periods object | see [Tracking periods](#tracking-periods) section |
+| `governance` | governance object | see [Governance](#governance) section |
+
+Example:
+
+```yaml
 description: Comprehensive collection of terms of service from major global social media platforms.
-languages:
-  - en
-  - fr
-  - de
-jurisdictions:
-  - EU
 dataset: https://github.com/OpenTermsArchive/demo-versions/releases
 declarations: https://github.com/OpenTermsArchive/demo-declarations
 versions: https://github.com/OpenTermsArchive/demo-versions
 snapshots: https://github.com/OpenTermsArchive/demo-snapshots
 logo: https://opentermsarchive.org/images/collections/demo.png
-donation: https://opentermsarchive.org/donate
+donation: https://opencollective.com/opentermsarchive
 ```
 
 ## Tracking periods
@@ -53,10 +62,10 @@ Information about when and how terms are tracked:
 
 | Field | Type | Description |
 |---------------|--------|--------------------------------------------|
-| `startDate` | date | Date when tracking began |
-| `endDate` | date | Date when tracking ended/will end. No end date means tracking is ongoing. |
-| `schedule` | string | Cron expression defining tracking frequency |
-| `serverLocation`| string| Geographic location of tracking server |
+| `startDate` | date (ISO 8601 format: YYYY-MM-DD) | The date when tracking started |
+| `endDate` | date (ISO 8601 format: YYYY-MM-DD) | The date when tracking ended or will end. If not specified, tracking is ongoing. |
+| `schedule` | string | A [cron expression](https://en.wikipedia.org/wiki/Cron#Cron_expression) that defines the tracking frequency |
+| `serverLocation`| string (city name, ISO 3166-2 country code) | The geographic location of the tracking server |
 
 Example:
 
@@ -74,21 +83,19 @@ Organizations responsible for collection roles:
 
 | Field | Type | Description |
 |---------------|-----------------|----------------------------------------|
-| `hosts` | Array of objects| Organizations hosting the collection |
-| `administrators`| Array of objects| Organizations managing the collection |
-| `curators` | Array of objects| Organizations curating the content |
-| `maintainers` | Array of objects| Organizations maintaining the technical aspects |
-| `sponsors` | Array of objects| Organizations providing support |
-
-## Organization
+| `hosts` | Array of organizations objects| Organizations hosting the collection |
+| `administrators`| Array of organizations objects| Organizations managing the collection |
+| `curators` | Array of organizations objects| Organizations curating the content |
+| `maintainers` | Array of organizations objects| Organizations maintaining the technical aspects |
+| `sponsors` | Array of organizations objects| Organizations providing support |
 
 Each organization in the governance roles is defined by the following fields:
 
 | Field | Type | Description |
 |---------------|--------|-------------------------------------------|
 | `name` | string | Name of the organization |
-| `url` | url | Website URL of the organization |
-| `logo` | url | URL to the organization's logo |
+| `url` | url | Website URL of the organization (optional) |
+| `logo` | url | URL to the organization's logo. Optimized PNG transparent image (min size 240px) (optional) |
 
 Example:
 
@@ -117,10 +124,8 @@ versions: https://github.com/OpenTermsArchive/demo-versions
 snapshots: https://github.com/OpenTermsArchive/demo-snapshots
 logo: https://opentermsarchive.org/images/collections/demo.png
 donation: https://opentermsarchive.org/donate
-languages: 
-  - en
-jurisdictions:
-  - EU
+languages: [en]
+jurisdictions: [EU]
 trackingPeriods:
   startDate: 2023-01-01
   endDate: 2024-12-31
