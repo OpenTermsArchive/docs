@@ -7,6 +7,7 @@ table {
     & tr {
 
       & th {
+        text-align: left;
         border: 1px solid var(--colorBlack300);
         padding: var(--pXS) var(--pS);
         background-color: var(--colorBlack200);
