@@ -9,7 +9,7 @@ You are considering creating a new collection to track terms with Open Terms A
 
 ## Define metadata
 
-First of all, define the [metadata]({{< relref "collections/metadata" >}}) of the collection you would like to create.
+First of all, define the [metadata]({{< relref "collections/metadata" >}}) of the collection you would like to create and keep them ready to be used when setting up the repositories.
 
 ## Check existing collections
 
@@ -79,6 +79,10 @@ Issues labels will be added by the engine as problems are encountered when track
 #### Update README
 
 - Update the README file with proper metadata: topic, maintainers, jurisdictions, languages…
+
+#### Update metadata
+
+- Update the metadata file `metadata.yml` with the collection metadata you defined earlier.
 
 ### Snapshots
 
