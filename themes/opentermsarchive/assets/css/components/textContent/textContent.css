@@ -108,7 +108,8 @@
   & blockquote + h2,
   & .highlight + h2,
   & details + h2,
-  & video + h2{
+  & video + h2
+  & table + h2 {
     margin-top: var(--m2XL);
   }
 
@@ -118,7 +119,8 @@
   & blockquote + h3,
   & .highlight + h3, 
   & details + h3,
-  & video + h3 {
+  & video + h3,
+  & table + h2 {
     margin-top: var(--mXL);
   }
 
@@ -195,14 +197,19 @@
     margin-bottom: var(--mM);
   }
 
-  & pre{
-    padding:0.8rem;
+  & pre {
+    padding: 1.5rem;
     overflow-x: scroll;
+  }
+
+  & :not(pre) > code {
+    padding: 0.2em 0.4em;
+    border-radius: 0.3em;
   }
 
   & code {
     background-color: var(--colorBlack200);
-    font-size: 0.95em;
+    font-size: 0.9em;
   }
 
   & button {
