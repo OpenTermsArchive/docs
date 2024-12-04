@@ -39,7 +39,7 @@ Additional fields are optional but highly recommended to facilitate better disco
 | `declarations` | url | URL to declarations repository |
 | `versions` | url | URL to versions repository |
 | `snapshots` | url | URL to snapshots repository |
-| `logo` | url | URL to the collection's logo. Optimized PNG transparent image (min size 240px) |
+| `logo` | url | URL to the collection's logo. Optimized PNG transparent image (min wi 240px) |
 | `donation` | url | URL to donation page |
 | `trackingPeriods`| tracking periods object | see [Tracking periods](#tracking-periods) section |
 | `governance` | governance object | see [Governance](#governance) section |
@@ -56,7 +56,7 @@ logo: https://opentermsarchive.org/images/collections/demo.png
 donation: https://opencollective.com/opentermsarchive
 ```
 
-## Tracking periods
+### Tracking periods
 
 Information about when and how terms are tracked:
 
@@ -77,7 +77,7 @@ trackingPeriods:
   serverLocation: London, GB
 ```
 
-## Governance
+### Governance
 
 Organizations responsible for collection roles:
 
@@ -95,7 +95,7 @@ Each organization in the governance roles is defined by the following fields:
 |---------------|--------|-------------------------------------------|
 | `name` | string | Name of the organization |
 | `url` | url | Website URL of the organization (optional) |
-| `logo` | url | URL to the organization's logo. Optimized PNG transparent image (min size 240px) (optional) |
+| `logo` | url | URL to the organization's logo. Optimized PNG transparent image (min width 240px) (optional) |
 
 Example:
 
