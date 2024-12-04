@@ -62,10 +62,10 @@ Information about when and how terms are tracked:
 
 | Field | Type | Description |
 |---------------|--------|--------------------------------------------|
-| `startDate` | date (ISO 8601 format: YYYY-MM-DD) | The date when tracking started |
-| `endDate` | date (ISO 8601 format: YYYY-MM-DD) | The date when tracking ended or will end. If not specified, tracking is ongoing. |
+| `startDate` | date ([ISO 8601 format: YYYY-MM-DD](https://en.wikipedia.org/wiki/ISO_8601)) | The date when tracking started |
+| `endDate` | date ([ISO 8601 format: YYYY-MM-DD](https://en.wikipedia.org/wiki/ISO_8601)) | The date when tracking ended or will end. If not specified, tracking is ongoing. |
 | `schedule` | string | A [cron expression](https://en.wikipedia.org/wiki/Cron#Cron_expression) that defines the tracking frequency |
-| `serverLocation`| string (city name, ISO 3166-2 country code) | The geographic location of the tracking server |
+| `serverLocation`| string (city name, [ISO 3166-2 country code](https://en.wikipedia.org/wiki/ISO_3166-2)) | The geographic location of the tracking server |
 
 Example:
 
