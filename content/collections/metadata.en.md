@@ -15,8 +15,8 @@ A collection is defined by the following metadata.
 | `id` | string | Unique identifier derived from name (acronyms, dash-separated) |
 | `tagline` | string | Concise description of collection topic |
 | `description` | string | Detailed context beyond tagline |
-| `languages` | Array of strings| ISO 639 language codes allowed in collection |
-| `jurisdictions`| Array of strings| ISO 3166-2 country codes for covered jurisdictions |
+| `languages` | Array of strings| [ISO 639 language codes](https://en.wikipedia.org/wiki/ISO_639) allowed in collection |
+| `jurisdictions`| Array of strings| [ISO 3166-2 country codes](https://en.wikipedia.org/wiki/ISO_3166-2) for covered jurisdictions |
 
 Example:
 
@@ -39,7 +39,7 @@ Additional fields are optional but highly recommended to facilitate better disco
 | `declarations` | url | URL to declarations repository |
 | `versions` | url | URL to versions repository |
 | `snapshots` | url | URL to snapshots repository |
-| `logo` | url | URL to the collection's logo. Optimized PNG transparent image (min wi 240px) |
+| `logo` | url | URL to the collection's logo. Optimized PNG transparent image (min width 240px) |
 | `donation` | url | URL to donation page |
 | `trackingPeriods`| tracking periods object | see [Tracking periods](#tracking-periods) section |
 | `governance` | governance object | see [Governance](#governance) section |
