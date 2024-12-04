@@ -123,7 +123,7 @@ declarations: https://github.com/OpenTermsArchive/demo-declarations
 versions: https://github.com/OpenTermsArchive/demo-versions
 snapshots: https://github.com/OpenTermsArchive/demo-snapshots
 logo: https://opentermsarchive.org/images/collections/demo.png
-donation: https://opentermsarchive.org/donate
+donation: https://opencollective.com/opentermsarchive
 languages: [en]
 jurisdictions: [EU]
 trackingPeriods:
