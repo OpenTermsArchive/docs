@@ -5,37 +5,60 @@ weight: 1
 
 # Collection metadata
 
-A collection is defined by the following metadata fields:
+A collection is defined by its scope, which includes various dimensions such as language, jurisdiction, and industry. To accurately describe this scope, the following metadata fields are required: `id`, `name`, `tagline`, `languages`, and `jurisdictions`. Additional fields are optional but highly recommended to facilitate better discovery, comprehension, management, and utilization.
 
-| JSON Field | Type | Required | Description | Example |
-|------------|------|----------|-------------|---------|
-| `name` | string | ✓ | Display name of the collection (max 3 words) | Platform Governance Archive |
-| `id` | string | ✓ | Unique identifier derived from name (acronyms, dash-separated) | `pga` |
-| `tagline` | string | ✓ | Concise description of collection topic | Largest global social media |
-| `description` | string | - | Detailed context beyond tagline | Comprehensive collection of terms of service from major global social media platforms. |
-| `languages` | Array of strings | ✓ | ISO 639 language codes allowed in collection | `["en", "fr", "de"]` |
-| `jurisdictions` | Array of strings | ✓ | ISO 3166-2 country codes for covered jurisdictions | `["EU", "global"]` |
-| `trackingPeriods` | object | - | Information about tracking schedule | see [Tracking Periods](#tracking-periods) section |
-| `dataset` | url | - | URL to released versions dataset | `https://github.com/OpenTermsArchive/demo-versions/releases` |
-| `declarations` | url | - | URL to declarations repository | `https://github.com/OpenTermsArchive/demo-declarations` |
-| `versions` | url | - | URL to versions repository | `https://github.com/OpenTermsArchive/demo-versions` |
-| `snapshots` | url | - | URL to snapshots repository | `https://github.com/OpenTermsArchive/demo-snapshots` |
-| `logo` | url | - | URL to collection logo | `https://opentermsarchive.org/images/collections/demo.png` |
-| `governance` | object | - | Governance information | see [Governance](#governance) section |
-| `donation` | url | - | URL to donation page | `https://opentermsarchive.org/donate` |
+Below is the list of all metadata fields:
+
+| Field | Type | Description |
+|----------------|-----------------|---------------------------------------|
+| `name` | string | Display name of the collection (max 3 words) |
+| `id` | string | Unique identifier derived from name (acronyms, dash-separated) |
+| `tagline` | string | Concise description of collection topic |
+| `description` | string | Detailed context beyond tagline |
+| `languages` | Array of strings| ISO 639 language codes allowed in collection |
+| `jurisdictions`| Array of strings| ISO 3166-2 country codes for covered jurisdictions |
+| `trackingPeriods`| object | Information about tracking schedule |
+| `dataset` | url | URL to released versions dataset |
+| `declarations` | url | URL to declarations repository |
+| `versions` | url | URL to versions repository |
+| `snapshots` | url | URL to snapshots repository |
+| `logo` | url | URL to collection logo |
+| `governance` | object | Governance information |
+| `donation` | url | URL to donation page |
+
+Example:
+
+```yaml
+name: Platform Governance Archive
+id: pga
+tagline: Largest global social media
+description: Comprehensive collection of terms of service from major global social media platforms.
+languages:
+  - en
+  - fr
+  - de
+jurisdictions:
+  - EU
+dataset: https://github.com/OpenTermsArchive/demo-versions/releases
+declarations: https://github.com/OpenTermsArchive/demo-declarations
+versions: https://github.com/OpenTermsArchive/demo-versions
+snapshots: https://github.com/OpenTermsArchive/demo-snapshots
+logo: https://opentermsarchive.org/images/collections/demo.png
+donation: https://opentermsarchive.org/donate
+```
 
 ## Tracking periods
 
 Information about when and how terms are tracked:
 
-| JSON Field | Type | Required | Description | Example |
-|------------|------|----------|-------------|---------|
-| `startDate` | date | - | Date when tracking began | `2023-01-01` |
-| `endDate` | date | - | Date when tracking ended/will end. No end date means tracking is ongoing. | `2024-12-31` |
-| `schedule` | string | - | Cron expression defining tracking frequency | `0 0 * * *` (daily at midnight) |
-| `serverLocation` | string | - | Geographic location of tracking server | `London, GB` |
+| Field | Type | Description |
+|---------------|--------|--------------------------------------------|
+| `startDate` | date | Date when tracking began |
+| `endDate` | date | Date when tracking ended/will end. No end date means tracking is ongoing. |
+| `schedule` | string | Cron expression defining tracking frequency |
+| `serverLocation`| string| Geographic location of tracking server |
 
-**Example:**
+Example:
 
 ```yaml
 trackingPeriods:
@@ -49,25 +72,25 @@ trackingPeriods:
 
 Organizations responsible for collection roles:
 
-| JSON Field | Type | Required | Description | Example |
-|------------|------|----------|-------------|---------|
-| `hosts` | Array of objects | - | Organizations hosting the collection | see [Organization](#organization) section |
-| `administrators` | Array of objects | - | Organizations managing the collection | see [Organization](#organization) section |
-| `curators` | Array of objects | - | Organizations curating the content | see [Organization](#organization) section |
-| `maintainers` | Array of objects | - | Organizations maintaining the technical aspects | see [Organization](#organization) section |
-| `sponsors` | Array of objects | - | Organizations providing support | see [Organization](#organization) section |
+| Field | Type | Description |
+|---------------|-----------------|----------------------------------------|
+| `hosts` | Array of objects| Organizations hosting the collection |
+| `administrators`| Array of objects| Organizations managing the collection |
+| `curators` | Array of objects| Organizations curating the content |
+| `maintainers` | Array of objects| Organizations maintaining the technical aspects |
+| `sponsors` | Array of objects| Organizations providing support |
 
 ## Organization
 
 Each organization in the governance roles is defined by the following fields:
 
-| JSON Field | Type | Required | Description | Example |
-|------------|------|----------|-------------|---------|
-| `name` | string | - | Name of the organization | `Open Terms Archive` |
-| `url` | url | - | Website URL of the organization | `https://opentermsarchive.org/` |
-| `logo` | url | - | URL to the organization's logo | `https://opentermsarchive.org/images/logo/logo.png` |
+| Field | Type | Description |
+|---------------|--------|-------------------------------------------|
+| `name` | string | Name of the organization |
+| `url` | url | Website URL of the organization |
+| `logo` | url | URL to the organization's logo |
 
-**Example:**
+Example:
 
 ```yaml
 governance:
@@ -81,29 +104,28 @@ governance:
   sponsors: []
 ```
 
-**Complete metadata example:**
+## Complete metadata example
 
 ```yaml
 id: demo
 name: Demo
 tagline: Services needed to operate the Open Terms Archive engine
-description: This demo collection serves as a reference implementation...
+description: This demo collection serves as a reference implementation…
 dataset: https://github.com/OpenTermsArchive/demo-versions/releases
 declarations: https://github.com/OpenTermsArchive/demo-declarations
 versions: https://github.com/OpenTermsArchive/demo-versions
 snapshots: https://github.com/OpenTermsArchive/demo-snapshots
 logo: https://opentermsarchive.org/images/collections/demo.png
+donation: https://opentermsarchive.org/donate
 languages: 
   - en
 jurisdictions:
   - EU
-termsTracked: 100
-servicesTracked: 50
 trackingPeriods:
   startDate: 2023-01-01
   endDate: 2024-12-31
   schedule: "0 0 * * *"
-  serverLocation: EU-WEST-1
+  serverLocation: London, GB
 governance:
   hosts: 
     - name: Ministry for Europe and Foreign Affairs
