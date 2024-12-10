@@ -14,7 +14,6 @@ A collection is defined by the following metadata.
 | `name` | string | Display name of the collection (max 3 words) |
 | `id` | string | Unique identifier derived from name (acronyms, dash-separated) |
 | `tagline` | string | Concise description of collection topic |
-| `description` | string | Detailed context beyond tagline |
 | `languages` | Array of strings| [ISO 639 language codes](https://en.wikipedia.org/wiki/ISO_639) allowed in collection |
 | `jurisdictions`| Array of strings| [ISO 3166-2 country codes](https://en.wikipedia.org/wiki/ISO_3166-2) for covered jurisdictions |
 
@@ -41,7 +40,7 @@ Additional fields are optional but highly recommended to facilitate better disco
 | `snapshots` | url | URL to snapshots repository |
 | `logo` | url | URL to the collection's logo. Optimized PNG transparent image (min width 240px) |
 | `donation` | url | URL to donation page |
-| `trackingPeriods`| tracking periods object | see [Tracking periods](#tracking-periods) section |
+| `trackingPeriods`| array of tracking periods objects | see [Tracking periods](#tracking-periods) section |
 | `governance` | governance object | see [Governance](#governance) section |
 
 Example:
@@ -71,10 +70,10 @@ Example:
 
 ```yaml
 trackingPeriods:
-  startDate: 2023-01-01
-  endDate: 2024-12-31
-  schedule: "0 0 * * *"
-  serverLocation: London, GB
+  - startDate: 2023-01-01
+    endDate: 2024-12-31
+    schedule: "0 0 * * *"
+    serverLocation: London, GB
 ```
 
 ### Governance
@@ -127,10 +126,10 @@ donation: https://opencollective.com/opentermsarchive
 languages: [en]
 jurisdictions: [EU]
 trackingPeriods:
-  startDate: 2023-01-01
-  endDate: 2024-12-31
-  schedule: "0 0 * * *"
-  serverLocation: London, GB
+  - startDate: 2023-01-01
+    endDate: 2024-12-31
+    schedule: "0 0 * * *"
+    serverLocation: London, GB
 governance:
   hosts: 
     - name: Ministry for Europe and Foreign Affairs
