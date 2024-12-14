@@ -2,6 +2,7 @@
   border:1Px solid var(--colorBlack200);
   padding:var(--mL);
   overflow-x: hidden;
+  max-width: 100%;
 
   & hr {
     clear: both;
@@ -106,7 +107,9 @@
   & ol + h2,
   & blockquote + h2,
   & .highlight + h2,
-  & details + h2 {
+  & details + h2,
+  & video + h2
+  & table + h2 {
     margin-top: var(--m2XL);
   }
 
@@ -115,7 +118,9 @@
   & ol + h3,
   & blockquote + h3,
   & .highlight + h3, 
-  & details + h3 {
+  & details + h3,
+  & video + h3,
+  & table + h2 {
     margin-top: var(--mXL);
   }
 
@@ -124,7 +129,8 @@
   & ol + h4,
   & blockquote + h4,
   & .highlight + h4,
-  & details + h4 {
+  & details + h4,
+  & video + h4 {
     margin-top: var(--mL);
   }
 
@@ -133,11 +139,12 @@
   & ol + h5,
   & blockquote + h5,
   & .highlight + h5,
-  & details + h5 {
+  & details + h5,
+  & video + h5 {
     margin-top: var(--mL);
   }
 
-  & iframe {
+  & iframe, video {
     margin-bottom: var(--mL);
   }
 
@@ -190,14 +197,19 @@
     margin-bottom: var(--mM);
   }
 
-  & pre{
-    padding:0.8rem;
+  & pre {
+    padding: 1.5rem;
     overflow-x: scroll;
+  }
+
+  & :not(pre) > code {
+    padding: 0.2em 0.4em;
+    border-radius: 0.3em;
   }
 
   & code {
     background-color: var(--colorBlack200);
-    font-size: 0.95em;
+    font-size: 0.9em;
   }
 
   & button {

@@ -1,53 +1,51 @@
-.languageSwitcher {
-  text-align: right;
+.language-switcher {
+  position: relative;
   margin-right: var(--mXS);
   font-size: 1.4rem;
-  position: relative;
-
-  &.languageSwitcher__isOpen {
-    & .languageSwitcher_items {
-      display: block;
-    }
-  }
+  text-align: right;
 }
 
-.languageSwitcher_current {
+.language-switcher--current {
   @mixin resetButton;
+
   display: flex;
-  padding: var(--pXS);
-  border-radius: 4px;
-  border: 1px solid var(--colorBlack200);
   align-items: center;
+  padding: var(--pXS);
   background-color: var(--colorWhite);
+  border: 1px solid var(--colorBlack200);
+  border-radius: 4px;
 
   & > svg {
     margin-left: var(--m2XS);
   }
-
-  @media (--tabletLarge) {
-  }
 }
 
-.languageSwitcher_items {
+.language-switcher__items {
   position: absolute;
   right: 0;
   display: flex;
+  display: none;
   flex-direction: column;
-  text-align: right;
+  margin-top: -1px;
   overflow: visible;
+  text-align: right;
+  background-color: var(--colorWhite);
   border: 1px solid var(--colorBlack200);
   border-radius: 4px;
-  margin-top: -1px;
-  display: none;
-  background-color: var(--colorWhite);
 }
 
-.languageSwitcher_item {
+.language-switcher__item {
   width: 100%;
-  white-space: nowrap;
   padding: var(--pXS);
+  white-space: nowrap;
 
-  &.languageSwitcher_item__isActive {
+  &.language-switcher__item--is-active {
     border: 1px solid red;
+  }
+}
+
+.language-switcher--is-open {
+  & .language-switcher__items {
+    display: block;
   }
 }

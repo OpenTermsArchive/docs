@@ -1,55 +1,67 @@
 header:
-  - name: Home
-    url: https://opentermsarchive.org
+  - name: Collections
+    url: https://opentermsarchive.org/en/collections/
     weight: 1
-  - name: Datasets
-    url: https://opentermsarchive.org/datasets
+  - name: Memos
+    url: https://opentermsarchive.org/en/memos/
     weight: 2
   - name: Documentation
     url: /
     weight: 3
   - name: Impact
-    url: https://opentermsarchive.org/impact
+    url: https://opentermsarchive.org/en/impact/
     weight: 4
   - name: About
-    url: https://opentermsarchive.org/about
+    url: https://opentermsarchive.org/en/about/
     weight: 5
 footer:
   - name: Home
     url: https://opentermsarchive.org
     weight: 1
-  - name: Datasets
-    url: https://opentermsarchive.org/datasets
+  - name: Collections
+    url: https://opentermsarchive.org/en/collections/
     weight: 2
-  - name: Case studies
-    url: https://opentermsarchive.org/case-studies
-    weight: 3
+  - name: Datasets
+    url: https://opentermsarchive.org/en/datasets/
+    weight: 4
+  - name: Memos
+    url: https://opentermsarchive.org/en/memos/
+    weight: 4
   - name: Documentation
     url: /
-    weight: 4
-  - name: Impact
-    url: https://opentermsarchive.org/impact
     weight: 5
-  - name: About
-    url: https://opentermsarchive.org/about
+  - name: Impact
+    url: https://opentermsarchive.org/en/impact/
     weight: 6
-first_subfooter:
+  - name: About
+    url: https://opentermsarchive.org/en/about/
+    weight: 7
+  - name: Contact-us
+    identifier: mailto
+    weight: 8
+footer_sub:
+  - name: Services status
+    url: https://stats.uptimerobot.com/nXvrBcl0wx
+    weight: 1
+    params:
+      target: _blank
   - name: Statistics
-    url: https://opentermsarchive.org/stats
-    weight: 1
+    url: https://opentermsarchive.org/en/stats/
+    weight: 2
   - name: Media
-    url: https://opentermsarchive.org/media
-    weight: 2
+    url: https://opentermsarchive.org/en/media/
+    weight: 3
   - name: Source code
-    url: https://github.com/ambanum/OpenTermsArchive
-    weight: 3
-second_subfooter:
+    url: https://github.com/OpenTermsArchive/engine
+    weight: 4
+    params:
+      target: _blank
   - name: Legal notice
-    url: https://opentermsarchive.org/legal-notice
-    weight: 1
+    url: https://opentermsarchive.org/en/legal-notice/
+    weight: 5
   - name: Privacy policy
-    url: https://opentermsarchive.org/privacy-policy
-    weight: 2
+    url: https://opentermsarchive.org/en/privacy-policy/
+    weight: 6
   - name: 'Accessibility: not compliant'
-    url: https://opentermsarchive.org/accessibility
-    weight: 3
+    url: https://opentermsarchive.org/en/accessibility/
+    weight: 7

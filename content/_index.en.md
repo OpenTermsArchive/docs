@@ -60,7 +60,7 @@ A **declaration** also contains some metadata on the **service** on which the **
 >   "documents": {
 >     "Privacy Policy": {
 >       "fetch": "https://opentermsarchive.org/en/privacy-policy",
->       "select": ".TextContent_textContent__ToW2S"
+>       "select": ".textcontent"
 >     }
 >   }
 > }
@@ -73,7 +73,7 @@ A **declaration** also contains some metadata on the **service** on which the **
 Open Terms Archive **acquires** **terms** to deliver an explorable **history** of **changes**. This can be done in two ways:
 
 1. For the present and future, by **tracking**.
-2. For the past, by **importing** from an existing **fonds** such as [ToSBack](https://tosback.org), the [Internet Archive](https://archive.org/web/), [Common Crawl](https://commoncrawl.org) or any other in-house format.
+2. For the past, by **importing** from an existing **fonds** such as [ToSBack](https://tosback.org), the [Internet Archive](https://web.archive.org/), [Common Crawl](https://commoncrawl.org) or any other in-house format.
 
 ### Tracking terms
 
@@ -98,7 +98,7 @@ Such a dataset can be generated from **versions** alone. If **snapshots** and **
 
 This documentation describes how to execute the **engine** independently from any specific **instance**. For other use cases, other parts of the documentation could be more relevant:
 
-- to contribute **declarations** to an existing **collection**, see [contributing terms]({{< relref "contributing-terms" >}});
+- to contribute **declarations** to an existing **collection**, see the [Terms reference]({{< relref "terms/reference" >}});
 - to create a new **collection**, see [creating a new collection]({{< relref "collections/create" >}}).
 
 ### Requirements
@@ -126,7 +126,7 @@ In an editor, create the following declaration file in `declarations/Open Terms 
   "documents": {
     "Privacy Policy": {
       "fetch": "https://opentermsarchive.org/en/privacy-policy",
-      "select": ".TextContent_textContent__ToW2S"
+      "select": ".textcontent"
     }
   }
 }
@@ -286,66 +286,91 @@ The default configuration can be found in `config/default.json`. The full refere
 
 ```js
 {
-  "services": {
-    "declarationsPath": "Directory containing services declarations and associated filters"
-  },
-  "recorder": {
-    "versions": {
-      "storage": {
-        "<storage-repository>": "Storage repository configuration object; see below"
+  "@opentermsarchive/engine": {
+    "trackingSchedule": "Cron expression to define the tracking schedule; see below",
+    "services": {
+      "declarationsPath": "Directory containing services declarations and associated filters"
+    },
+    "recorder": {
+      "versions": {
+        "storage": {
+          "<storage-repository>": "Storage repository configuration object; see below"
+        }
+      },
+      "snapshots": {
+        "storage": {
+          "<storage-repository>": "Storage repository configuration object; see below"
+        }
       }
     },
-    "snapshots": {
-      "storage": {
-        "<storage-repository>": "Storage repository configuration object; see below"
-      }
-    }
-  },
-  "fetcher": {
-    "waitForElementsTimeout": "Maximum time (in milliseconds) to wait for elements to be present in the page when fetching document in a headless browser"
-    "navigationTimeout": "Maximum time (in milliseconds) to wait for page to load",
-    "language": "Language (in ISO 639-1 format) to pass in request headers"
-  },
-  "notifier": { // Notify specified mailing lists when new versions are recorded
-    "sendInBlue": { // SendInBlue API Key is defined in environment variables, see the “Environment variables” section below
-      "updatesListId": "SendInBlue contacts list ID of persons to notify on terms updates",
-      "updateTemplateId": "SendInBlue email template ID used for updates notifications"
-    }
-  },
-  "logger": { // Logging mechanism to be notified upon error
-    "smtp": {
-      "host": "SMTP server hostname",
-      "username": "User for server authentication" // Password for server authentication is defined in environment variables, see the “Environment variables” section below
+    "fetcher": {
+      "waitForElementsTimeout": "Maximum time (in milliseconds) to wait for elements to be present in the page when fetching document in a headless browser"
+      "navigationTimeout": "Maximum time (in milliseconds) to wait for page to load",
+      "language": "Language (in ISO 639-1 format) to pass in request headers"
     },
-    "sendMailOnError": { // Can be set to `false` if sending email on error is not needed
-      "to": "The address to send the email to in case of an error",
-      "from": "The address from which to send the email",
-      "sendWarnings": "Boolean. Set to true to also send email in case of warning",
-    }
-  },
-  "reporter": { // Reporter mechanism to create GitHub issues when terms content is inaccessible
-    "githubIssues": {
+    "notifier": { // Notify specified mailing lists when new versions are recorded
+      "sendInBlue": { // SendInBlue API Key is defined in environment variables, see the “Environment variables” section below
+        "updatesListId": "SendInBlue contacts list ID of persons to notify on terms updates",
+        "updateTemplateId": "SendInBlue email template ID used for updates notifications"
+      }
+    },
+    "logger": { // Logging mechanism to be notified upon error
+      "smtp": {
+        "host": "SMTP server hostname",
+        "username": "User for server authentication" // Password for server authentication is defined in environment variables, see the “Environment variables” section below
+      },
+      "sendMailOnError": { // Can be set to `false` if sending email on error is not needed
+        "to": "The address to send the email to in case of an error",
+        "from": "The address from which to send the email",
+        "sendWarnings": "Boolean. Set to true to also send email in case of warning",
+      },
+      "timestampPrefix": "Boolean. Set to true to prefix the timestamp of the error message with the current date (in ISO 8601 format YYYY-MM-DDTHH:MM:SSZ); see below"
+    },
+    "reporter": { // Reporter mechanism to create GitHub issues when terms content is inaccessible
+      "type": "The type of reporter to use; can be 'github' or 'gitlab'",
       "repositories": {
-        "declarations": "GitHub repository where to create issues; expected format: <owner>/<repository>",
-        "versions": "GitHub repository of versions associated with the declarations; expected format: <owner>/<repository>",
-        "snapshots": "GitHub repository of snapshots associated with the declarations; expected format: <owner>/<repository>"
+        "declarations": "GitHub or GitLab repository where to create issues; expected format: <owner>/<repository>",
+        "versions": "GitHub or GitLab repository of versions associated with the declarations; expected format: <owner>/<repository>",
+        "snapshots": "GitHub or GitLab repository of snapshots associated with the declarations; expected format: <owner>/<repository>"
       }
+      "baseURL": "Base URL of the GitLab instance (only relevant if 'type' is 'gitlab')",
+      "apiBaseURL": "Base URL of the GitLab API (only relevant if 'type' is 'gitlab')"
+    },
+    "dataset": { // Release mechanism to create dataset periodically
+      "title": "Title of the dataset; recommended to be the name of the instance that generated it",
+      "versionsRepositoryURL": "GitHub or GitLab repository where the dataset will be published as a release; recommended to be the versions repository for discoverability and tagging purposes",
+      "publishingSchedule": "Cron expression to define the dataset publishing schedule; see below",
+      "apiBaseURL": "Base URL of the GitLab API (only relevant if 'type' is 'gitlab')"
+    },
+    "collection-api": { // Collection metadata API
+      "port": "The port number on which the API will listen for incoming requests",
+      "basePath": "The base path for the API endpoints"
     }
-  },
-  "dataset": { // Release mechanism to create dataset periodically
-    "title": "Title of the dataset; recommended to be the name of the instance that generated it",
-    "versionsRepositoryURL": "GitHub repository where the dataset will be published as a release; recommended to be the versions repository for discoverability and tagging purposes"
-  },
-  "api": { // Collection metadata API
-    "port": "The port number on which the API will listen for incoming requests",
-    "basePath": "The base path for the API endpoints"
   }
 }
 ```
 
 The default configuration is merged with (and overridden by) environment-specific configuration that can be specified at startup with the `NODE_ENV` environment variable. See [node-config](https://github.com/node-config/node-config) for more information about configuration files.
 
-In order to have a local configuration that override all exisiting config, it is recommended to create a `config/development.json` file with overridden values.
+For development, in order to have a local configuration that overrides the existing config, it is recommended to create a `config/development.json` file.
+
+#### Logging
+
+Setting `logger.timestampPrefix` to `false` can be useful when logs are being collected by a process manager (like PM2) that already adds timestamps to log entries. This avoids duplicate timestamps in the logs.
+
+#### Schedules
+
+Schedules for tracking and dataset publication are defined using Cron expressions.
+
+A Cron expression is a string comprised of five or six fields separated by spaces, each representing a different unit of time: minute, hour, day of the month, month, and day of the week (and optionally, year). For example, the expression `30 */12 * * *` means "at minute 30 past every 12th hour of every day."
+
+Here are some valid examples of Cron expressions and what they represent:
+
+- `0 0 * * *`: Run at midnight every day.
+- `0 */6 * * *`: Run every 6 hours.
+- `30 2 * * MON`: Run at 2:30 AM every Monday.
+.
+Some online tools, such as [crontab.guru](https://crontab.guru), provide a user-friendly interface to create and validate Cron expressions.
 
 #### Storage repositories
 
@@ -379,7 +404,7 @@ Two storage repositories are currently supported: Git and MongoDB. Each one can 
     "mongo": {
       "connectionURI": "URI for defining connection to the MongoDB instance. See https://docs.mongodb.com/manual/reference/connection-string/",
       "database": "Database name",
-      "collection": "Collection name"
+      "collection": "MongoDB collection name; not to be confused with the Open Terms Archive collection"
     }
   }
   …
@@ -390,9 +415,13 @@ Two storage repositories are currently supported: Git and MongoDB. Each one can 
 
 Environment variables can be passed in the command-line or provided in a `.env` file at the root of the repository. See `.env.example` for an example of such a file.
 
-- `SMTP_PASSWORD`: a password for email server authentication, in order to send email notifications.
-- `SENDINBLUE_API_KEY`: a SendInBlue API key, in order to send email notifications with that service.
-- `GITHUB_TOKEN`: a token with repository privileges to access the [GitHub API](https://github.com/settings/tokens).
+- `OTA_ENGINE_SMTP_PASSWORD`: a password for email server authentication, in order to send email notifications.
+- `OTA_ENGINE_SENDINBLUE_API_KEY`: a SendInBlue API key, in order to send email notifications with that service.
+- `OTA_ENGINE_GITHUB_TOKEN`: a token with repository privileges to access the [GitHub API](https://github.com/settings/tokens) to create issues and publish dataset releases.
+- `OTA_ENGINE_GITLAB_TOKEN`: a token with repository privileges to access the [GitLab API](https://gitlab.com/profile/personal_access_tokens) to create issues.
+- `OTA_ENGINE_GITLAB_RELEASES_TOKEN`: a token with repository privileges to access the [GitLab API](https://gitlab.com/profile/personal_access_tokens) to publish dataset releases.
+
+If both `OTA_ENGINE_GITHUB_TOKEN` and `OTA_ENGINE_GITLAB_TOKEN` are defined, GitHub takes precedence for dataset publishing.
 
 If an outgoing HTTP/HTTPS proxy to access the Internet is required, it is possible to provide it through the `HTTP_PROXY` and `HTTPS_PROXY` environment variable.
 

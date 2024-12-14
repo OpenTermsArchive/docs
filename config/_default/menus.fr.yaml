@@ -1,55 +1,67 @@
 header:
-  - name: Accueil
-    url: https://opentermsarchive.org
+  - name: Collections
+    url: https://opentermsarchive.org/fr/collections/
     weight: 1
-  - name: Jeux de données
-    url: https://opentermsarchive.org/fr/jeux-de-donnees
+  - name: Mémos
+    url: https://opentermsarchive.org/fr/memos/
     weight: 2
   - name: Documentation
     url: /fr
     weight: 3
   - name: Impact
-    url: https://opentermsarchive.org/fr/impact
+    url: https://opentermsarchive.org/fr/impact/
     weight: 4
   - name: À propos
-    url: https://opentermsarchive.org/fr/a-propos
+    url: https://opentermsarchive.org/fr/a-propos/
     weight: 5
 footer:
   - name: Accueil
     url: https://opentermsarchive.org
     weight: 1
-  - name: Jeux de données
-    url: https://opentermsarchive.org/fr/jeux-de-donnees
+  - name: Collections
+    url: https://opentermsarchive.org/fr/collections/
     weight: 2
-  - name: Étude de cas
-    url: https://opentermsarchive.org/fr/etudes-de-cas
+  - name: Jeux de données
+    url: https://opentermsarchive.org/fr/jeux-de-donnees/
     weight: 3
+  - name: Mémos
+    url: https://opentermsarchive.org/fr/memos/
+    weight: 4
   - name: Documentation
     url: /fr
-    weight: 4
-  - name: Impact
-    url: https://opentermsarchive.org/fr/impact
     weight: 5
-  - name: À propos
-    url: https://opentermsarchive.org/fr/a-propos
+  - name: Impact
+    url: https://opentermsarchive.org/fr/impact/
     weight: 6
-first_subfooter:
+  - name: À propos
+    url: https://opentermsarchive.org/fr/a-propos/
+    weight: 7
+  - name: Contactez-nous
+    identifier: mailto
+    weight: 8
+footer_sub:
+  - name: État des services
+    url: https://stats.uptimerobot.com/nXvrBcl0wx
+    weight: 1
+    params:
+      target: _blank
   - name: Statistiques
-    url: https://opentermsarchive.org/fr/stats
-    weight: 1
+    url: https://opentermsarchive.org/fr/statistiques/
+    weight: 2
   - name: Média
-    url: https://opentermsarchive.org/fr/media
-    weight: 2
+    url: https://opentermsarchive.org/fr/media/
+    weight: 3
   - name: Code source
-    url: https://github.com/ambanum/OpenTermsArchive
-    weight: 3
-second_subfooter:
+    url: https://github.com/OpenTermsArchive
+    weight: 4
+    params:
+      target: _blank
   - name: Mentions légales
-    url: https://opentermsarchive.org/fr/mentions-legales
-    weight: 1
+    url: https://opentermsarchive.org/fr/mentions-legales/
+    weight: 5
   - name: Politique de confidentialité
-    url: https://opentermsarchive.org/fr/politique-de-confidentialite
-    weight: 2
+    url: https://opentermsarchive.org/fr/politique-de-confidentialite/
+    weight: 6
   - name: 'Accessibilité : non conforme'
-    url: https://opentermsarchive.org/fr/accessibilite
-    weight: 3
+    url: https://opentermsarchive.org/fr/accessibilite/
+    weight: 7

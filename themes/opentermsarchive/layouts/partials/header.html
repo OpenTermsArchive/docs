@@ -1,75 +1,81 @@
 <div class="container container__hasNoPaddingY container__hasNoPaddingX container__fluid">
   <div class="container container__1211 container__flex container__hasNoPaddingX container__hasNoPaddingY">
     <header class="header">
-      <div class="header_logo">
-        <a href="{{ "/" | relLangURL }}">
-          <div class="logo logo__medium">
-            <svg><use href="#logo"></use></svg>
+      <div class="header__logo">
+        <a href="{{ printf "https://opentermsarchive.org/%s/" .Site.Language.Lang }}">
+          <div class="logo">
+            <svg>
+              <title>Open Terms Archive logo</title>
+              <use href="#logo-main"></use>
+            </svg>
           </div>
         </a>
       </div>
-      <div class="header_menus">
-        <nav class="headerMenu headerMenu__primary">
+      <div class="header__menus">
+        <nav class="header__menu header__menu-primary" aria-label="Primary">
           <ul>
             {{ range .Site.Menus.header }}
-              <li>
-                <a  href="{{ .URL }}">
-                  {{ .Name }}
-                </a>
-              </li>
+            <li>
+              <a href="{{ .URL }}" {{ with .Params.target }}target="{{ . }}"{{ end }}>
+                {{ .Name }}
+              </a>
+            </li>
             {{ end }}
           </ul>
         </nav>
-        <nav class="headerMenu headerMenu__secondary">
-          <div class="languageSwitcher">
-            <button class="languageSwitcher_current">
+        <nav class="header__menu header__menu-secondary" aria-label="Languages switcher">
+          <div class="language-switcher">
+            <button type="button" class="language-switcher--current">
               {{ $currentLanguage := .Site.Language.Lang }}
               {{ $currentLanguage | upper }}
-              <svg class="icon_arrowDown"><use href="#arrowDown"></use></svg>
+              <i class="icon icon--gray" data-lucide="chevron-down"></i>
             </button>
-            <div class="languageSwitcher_items">
+            <div class="language-switcher__items">
+              {{/*
+              If we have translations of this page, we display links to them.
+              Else, we link to the home page of different languages available.
+              */}}
+              {{ if .IsTranslated }}
+                {{ range .Translations }}
+                <div class="language-switcher__item">
+                  <a href="{{ .RelPermalink }}">{{ .Language.Lang | upper }}</a>
+                </div>
+                {{ end }}
+              {{ else }}
               {{ range $.Site.Home.AllTranslations }}
                 {{ if ne $currentLanguage .Language.Lang }}
-                  <div class="languageSwitcher_item">
+                  <div class="language-switcher__item">
                     <a href="{{ .RelPermalink }}">{{ .Language.Lang | upper }}</a>
                   </div>
+                  {{ end }}
                 {{ end }}
               {{ end }}
             </div>
           </div>
           <ul>
             <li>
-              <a
-                class="icon_circle"
-                target="_blank"
-                rel="noopener"
-                title="{{ i18n "header.twitter_title" }}"
-                href="{{ .Param "twitter_url" }}"
-              >
-                <svg class="icon_twitter"><use href="#twitter"></use></svg>
+              <a class="icon__circle-wrapper" target="_blank" rel="noopener" href="{{ .Param "mastodon.url" }}" aria-label="Mastodon">
+                <i class="icon icon--fill-white" data-simple-icon="mastodon"></i>
               </a>
             </li>
             <li>
-              <a
-                class="icon_circle"
-                target="_blank"
-                rel="noopener"
-                title="{{ i18n "header.github_title" }}"
-                href="{{ .Param "github_url" }}"
-              >
-                <svg class="icon_github"><use href="#github"></use></svg>
+              <a class="icon__circle-wrapper" target="_blank" rel="noopener" href="{{ .Param "github.url" }}" aria-label="GitHub">
+                <i class="icon icon--fill-white" data-simple-icon="github"></i>
+              </a>
+            </li>
+            <li>
+              <a class="icon__circle-wrapper" target="_blank" rel="noopener" href="{{ .Param "linkedin.url" }}" aria-label="LinkedIn">
+                <i class="icon icon--fill-white" data-simple-icon="linkedin"></i>
               </a>
             </li>
           </ul>
         </nav>
       </div>
-      <button type="button" class="header_openLink">
-        {{ i18n "header.menu_open" }}
-      </button>
-      <button type="button" class="header_closeLink">
-        {{ i18n "header.menu_close" }}
-        <svg class="icon_close"><use href="#close"></use></svg>
-      </button>
+      <div class="header__open-link">{{ i18n "header.menu.open" }}</div>
+      <div class="header__close-link">
+        {{ i18n "header.menu.close" }}
+        <i class="icon" data-lucide="x"></i>
+      </div>
     </header>
   </div>
 </div>

@@ -1,2 +1,12 @@
-github_url: https://github.com/ambanum/OpenTermsArchive/
-twitter_url: https://twitter.com/OpenTerms
+contact_email: contact@opentermsarchive.org
+github:
+  url: https://github.com/OpenTermsArchive
+mastodon: 
+  url: https://mastodon.social/@opentermsarchive
+  username: "@opentermsarchive@mastodon.social"
+linkedin:
+  url: https://www.linkedin.com/company/opentermsarchive/
+opencollective:
+  url: https://opencollective.com/opentermsarchive
+contribution_tool:
+  url: https://contribute.opentermsarchive.org/

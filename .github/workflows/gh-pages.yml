@@ -5,6 +5,7 @@ on:
     types: [ "engine-release" ]
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   test:
