@@ -1,11 +1,13 @@
 ---
-title: Documentation structure
+title: Open Terms Archive documentation
+linkTitle: Homepage
 weight: 1
 ---
 
 # Open Terms Archive
 
-Open Terms Archive is a decentralised system that tracks collections of services' terms across multiple servers. Each collection operates its own API, and the Federation API unifies search and discovery across collections, fostering collaboration with external applications.
+Open Terms Archive is a decentralised system that t
+racks collections of services' terms across multiple servers. Each collection operates its own API, and the Federation API unifies search and discovery across collections, fostering collaboration with external applications.
 
 ## Documentation structure
 
@@ -23,4 +25,3 @@ In this documentation you can find this kind of content:
 - [**Programmatic access**](/programmatic-access/): Access terms programmatically through Collection APIs, Federation API, CLI tools, and Node.js modules
 - [**Federation**](/federation/): How collections work together in a decentralized network
 - [**Community**](/community/): Join our community on Mattermost and contribute to the project
-

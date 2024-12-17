@@ -22,6 +22,16 @@
     li{
       border-bottom:1px solid var(--colorBlack200);
 
+      a{
+        padding: var(--mXS) var(--mS);
+        display:inline-block;
+        width:100%;
+
+        &:hover{
+          background-color:var(--colorBlack200);
+        }
+      }
+
       &:last-child{
         border:none;
       }
@@ -72,6 +82,14 @@
 
       li{
         border:none;
+
+        a{
+          padding: 0;
+
+          &:hover{
+            background-color: transparent;
+          }
+        }
       }
     }
   }

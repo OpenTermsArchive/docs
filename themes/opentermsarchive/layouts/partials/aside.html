@@ -4,6 +4,7 @@
 
 	<nav class="aside_nav">
 		<ul>
+			<li><a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Home.LinkTitle }}</a></li>
 			{{ range .Site.Sections.ByWeight }}
 				<li class="{{ if eq $currentPageSection .Section }}aside_item-current{{ end }}">
 					<details>
@@ -30,12 +31,6 @@
 							{{ end }}
 						</ul>
 					</details>
-				</li>
-			{{ end }}
-
-			{{ range where .Site.RegularPages "Section" "" }}
-				<li class="{{ if eq $currentPageTitle .Title }}aside_item-current{{ end }}">
-					<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
 				</li>
 			{{ end }}
 		</ul>
