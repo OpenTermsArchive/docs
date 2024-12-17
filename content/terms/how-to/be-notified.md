@@ -13,7 +13,7 @@ An RSS feed is a type of web page that contains information about the latest con
 
 To find out the address of the RSS feed you want to subscribe to:
 
-1. [Navigate]({{< relref "/analysis/how-to/how-to-navigate-history" >}}) to the page with the history of changes you are interested in.
+1. [Navigate]({{< relref "/analysis/how-to/navigate-history" >}}) to the page with the history of changes you are interested in.
     - For example, for the GitHub Privacy Policy of the Demo instance, this would be [this page](https://github.com/OpenTermsArchive/demo-versions/commits/main/GitHub/Privacy%20Policy.md).
 2. Copy the address of that page from your browser’s address bar.
     - For example, for the GitHub Privacy Policy of the Demo instance, this would be `https://github.com/OpenTermsArchive/demo-versions/commits/main/GitHub/Privacy%20Policy.md`.
