@@ -1,0 +1,32 @@
+.config-option {
+    padding: 2rem 0;
+}
+
+.config-option + .config-option {
+  box-shadow: inset 0 1px var(--colorBlack200);
+}
+
+.config-option .config-option-name code {
+  font-weight: 600;
+}
+
+.config-option-type {
+  color: var(--colorBlack600);
+  padding-left: 1rem;
+}
+
+.config-option-description,
+.config-option-default,
+.config-option-example {
+  padding: 1rem 0.4em;
+}
+
+.config-option-example code,
+.config-option-default code {
+  margin-left: 0.4em;
+}
+
+.config-option-example,
+.config-option-default {
+  font-size: 0.9em;
+}
