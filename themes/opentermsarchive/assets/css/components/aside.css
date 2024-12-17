@@ -78,10 +78,12 @@
 
     ul{
       padding-left:var(--mS);
-      padding-bottom:var(--mXS);
+      padding-bottom:var(--m2XS);
 
       li{
         border:none;
+        padding-top:var(--m3XS);
+        padding-bottom:var(--m3XS);
 
         a{
           padding: 0;
@@ -90,11 +92,19 @@
             background-color: transparent;
           }
         }
+
+        ul{
+          padding-bottom:0;
+          
+          li{
+            padding:0;
+          }
+        }
       }
     }
   }
 }
 
 .aside_item-current{
-  background-color:var(--colorBlack200);
+  border-left:2px solid var(--colorPrimary);
 }
