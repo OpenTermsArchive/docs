@@ -22,6 +22,10 @@
   color: rgb(154, 103, 0);
 }
 
+.config-option-details {
+  display: flex;
+}
+
 .config-option-description,
 .config-option-default,
 .config-option-example,

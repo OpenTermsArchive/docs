@@ -7,13 +7,15 @@
         {{ end }}
     </div>
     <div class="config-option-description">{{ .Get "description" | markdownify }}</div>
-    {{ if .Get "default" }}
-    <div class="config-option-default"><span>Default:</span><code>{{ .Get "default" }}</code></div>
-    {{ end }}
-    {{ if .Get "example" }}
-    <div class="config-option-example"><span>Example:</span><code>{{ .Get "example" | markdownify }}</code></div>
-    {{ end }}
-    {{ if .Get "allowedValues" }}
-    <div class="config-option-allowed-values"><span>Allowed values:</span><code>{{ .Get "allowedValues" }}</code></div>
-    {{ end }}
+    <div class="config-option-details">
+        {{ if .Get "default" }}
+        <div class="config-option-default"><span>Default:</span>{{ .Get "default" | markdownify}}</div>
+        {{ end }}
+        {{ if .Get "example" }}
+        <div class="config-option-example"><span>Example:</span>{{ .Get "example" | markdownify }}</div>
+        {{ end }}
+        {{ if .Get "allowedValues" }}
+        <div class="config-option-allowed-values"><span>Allowed values:</span>{{ .Get "allowedValues" | markdownify }}</div>
+        {{ end }}
+    </div>
 </div>
