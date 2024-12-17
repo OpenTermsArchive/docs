@@ -3,31 +3,35 @@
 	{{ $currentPageSection := .Section }}
 	<nav class="aside_nav">
 		<ul class="aside_items">
-			{{ range .Site.Pages.ByWeight }}
-				{{ if eq .Kind slice "section" "page" "home" }}
-					{{ if eq .Type "page" }}
-						<li class="aside_item {{ if eq $currentPageTitle .Title }}aside_item-current{{ end }}">
-							<a href="{{ .RelPermalink }}">{{ .Title }}</a>
-							{{ if eq $currentPageTitle .Title }}
-								{{ .Page.TableOfContents }}
-							{{ end }}
-						</li>
-					{{ end }}
-					{{ if eq .Kind "section" }}
-						<li class="aside_item {{ if eq $currentPageSection .Section }}aside_item-current{{ end }}"><span class="aside_item_section">{{ .Title }}</span>
-							<ul class="aside_subitems">
-								{{ range where .Pages "Section" .Section }}
-									<li class="aside_subitem">
-										<a href="{{ .RelPermalink }}">{{ .Title }}</a>
-										{{ if eq $currentPageTitle .Title }}
-											{{ .Page.TableOfContents }}
-										{{ end }}
-									</li>
-								{{ end }}
-							</ul>
-						</li>
-					{{ end }}
-				{{ end }}
+			{{ range .Site.Sections.ByWeight }}
+				<li class="aside_item {{ if eq $currentPageSection .Section }}aside_item-current{{ end }}">
+					<a href="{{ .RelPermalink }}" class="aside_item_section">{{ .LinkTitle }}</a>
+					<ul class="aside_subitems">
+						{{ range .RegularPages.ByWeight }}
+							<li class="aside_subitem">
+								<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+							</li>
+						{{ end }}
+						{{ range .Sections.ByWeight }}
+							<li class="aside_subitem">
+								<a href="{{ .RelPermalink }}" class="aside_item_section">{{ .LinkTitle }}</a>
+								<ul class="aside_subsubitems">
+									{{ range .RegularPages.ByWeight }}
+										<li class="aside_subsubitem">
+											<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+										</li>
+									{{ end }}
+								</ul>
+							</li>
+						{{ end }}
+					</ul>
+				</li>
+			{{ end }}
+
+			{{ range where .Site.RegularPages "Section" "" }}
+				<li class="aside_item {{ if eq $currentPageTitle .Title }}aside_item-current{{ end }}">
+					<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+				</li>
 			{{ end }}
 		</ul>
 	</nav>

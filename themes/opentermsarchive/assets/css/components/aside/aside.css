@@ -31,6 +31,10 @@
   padding-left:var(--mXS);
 }
 
+.aside_subsubitems{
+  padding-left:var(--mS);
+}
+
 .aside_item-current{
   background-color:var(--colorBlack200);
   & > a,
