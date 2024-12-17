@@ -94,3 +94,7 @@
     }
   }
 }
+
+.aside_item-current{
+  background-color:var(--colorBlack200);
+}
