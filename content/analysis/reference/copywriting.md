@@ -1,5 +1,5 @@
 ---
-title: "Copywriting reference"
+title: Copywriting
 ---
 
 # Copywriting reference

@@ -1,5 +1,5 @@
 ---
-title: "How to navigate history"
+title: Navigate history
 weight: 1
 aliases: /navigate-history/
 ---

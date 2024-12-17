@@ -1,5 +1,6 @@
 ---
-title: "How to add terms with the graphical contribution interface"
+title: Add terms with the graphical contribution interface
+linkTitle: Add terms with UI
 ---
 
 # How to add terms with the graphical contribution interface

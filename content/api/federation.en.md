@@ -1,5 +1,5 @@
 ---
-title: Federation
+title: Federation REST API
 weight: 3
 aliases: /api/federated/
 ---

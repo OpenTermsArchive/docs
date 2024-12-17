@@ -1,9 +1,9 @@
 ---
-title: Node
+title: Node.JS module
 weight: 1
 ---
 
-# Node.js API [Beta]
+# Node.js module
 
 As a Node module dependency, the engine exposes a JavaScript API that can be called in your own code. The following modules are available.
 

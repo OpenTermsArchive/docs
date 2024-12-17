@@ -1,6 +1,5 @@
 ---
-title: "Reference"
-html_title: "Terms reference"
+title: "Declaration format"
 weight: 4
 ---
 
@@ -33,7 +32,7 @@ Let’s start by defining these keys!
 
 This property should simply contain the URL at which the terms you want to track can be downloaded. HTML and PDF files are supported.
 
-When terms coexist in different languages and jurisdictions, please refer to the [scope of the collection]({{< relref "collections/metadata" >}}) to which you are contributing. This scope is usually defined in the README.
+When terms coexist in different languages and jurisdictions, please refer to the [scope of the collection]({{< relref "collections/reference/metadata" >}}) to which you are contributing. This scope is usually defined in the README.
 
 ## `select`
 
@@ -197,7 +196,7 @@ Each filter is exposed as a named function export that takes a `document` parame
 
 > The `document` parameter is actually a [JSDOM](https://github.com/jsdom/jsdom) document instance.
 
-You can learn more about usual noise and ways to handle it [in the guidelines]({{< relref "guidelines/declaring#usual-noise" >}}).
+You can learn more about usual noise and ways to handle it [in the guidelines]({{< relref "/terms/guidelines/declaring#usual-noise" >}}).
 
 ### Example
 

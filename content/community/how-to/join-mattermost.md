@@ -1,5 +1,5 @@
 ---
-title: How to join Mattermost
+title: Join Mattermost
 ---
 
 # How to join Mattermost
