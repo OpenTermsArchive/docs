@@ -1,5 +1,5 @@
 ---
-title: Setup GitHub teams
+title: Set up GitHub teams
 weight: 2
 ---
 

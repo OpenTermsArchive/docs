@@ -1,11 +1,13 @@
 ---
 title: Configuration
-weight: 3
+weight: 2
 ---
 
 # Configuration options
 
 This reference documentation details all available configuration options that can be specified in a collection's configuration file to configure the Open Terms Archive engine.
+
+As an example, see the [production configuration file](https://github.com/OpenTermsArchive/demo-declarations/blob/main/config/production.json) of the [Demo collection](https://github.com/OpenTermsArchive/demo-declarations).
 
 ## Options
 
@@ -298,7 +300,3 @@ The MongoDB storage configuration allows to store versions in a MongoDB database
     description="Collection name."
     default="`snapshots`"
 >}}
-
----
-
-As an example, see the [production configuration file](https://github.com/OpenTermsArchive/demo-declarations/blob/main/config/production.json) of the [Demo collection](https://github.com/OpenTermsArchive/demo-declarations).

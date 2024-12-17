@@ -1,6 +1,6 @@
 ---
 title: Main concepts
-weight: 2
+weight: 1
 ---
 
 ## Main concepts

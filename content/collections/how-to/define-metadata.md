@@ -1,9 +1,9 @@
 ---
-title: Define Metadata
+title: Define metadata
 weight: 2
 ---
 
-# Define Metadata
+# How to define metadata
 
 This guide will help you create the metadata.yml file for your Open Terms Archive collection.
 

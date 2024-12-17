@@ -7,6 +7,9 @@ weight: 1
 
 This reference documentation details all available metadata fields that can be specified in a collection's metadata file.
 
+As an example, see the [complete metadata file](https://github.com/OpenTermsArchive/demo-declarations/blob/main/metadata.yml) of the [Demo collection](https://github.com/OpenTermsArchive/demo-declarations).
+
+
 ## Fields
 
 {{< configOption
@@ -184,7 +187,3 @@ It also aims to promote greater transparency and accountability of these powerfu
     allowedValues="`host`, `administrator`, `curator`, `maintainer`, `sponsor`"
     required=true
 >}}
-
----
-
-As an example, see the [complete metadata file](https://github.com/OpenTermsArchive/demo-declarations/blob/main/metadata.yml) of the [Demo collection](https://github.com/OpenTermsArchive/demo-declarations).

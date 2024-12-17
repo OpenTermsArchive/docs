@@ -1,5 +1,5 @@
 ---
-title: Join the Federation
+title: Join the federation
 weight: 3
 ---
 

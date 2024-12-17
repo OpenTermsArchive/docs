@@ -1,5 +1,5 @@
 ---
-title: Node.JS module
+title: Node.js module
 weight: 1
 ---
 

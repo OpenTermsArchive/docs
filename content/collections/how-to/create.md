@@ -1,9 +1,9 @@
 ---
-title: Creating a collection
+title: Create a collection
 weight: 3
 ---
 
-# Creating a collection
+# How to create a collection
 
 You are considering creating a new collection to track terms with Open Terms Archive? Amazing!
 

@@ -1,9 +1,9 @@
 ---
-title: CLI
+title: Command line interface
 weight: 1
 ---
 
-# CLI
+# Command line interface
 
 Once the engine module is installed as a dependency within another module, the `ota` command with the following subcommands is available.
 

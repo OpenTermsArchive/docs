@@ -3,7 +3,7 @@ title: Create repositories
 weight: 1
 ---
 
-# Create Collection Repositories
+# How to create collection repositories
 
 Collections in Open Terms Archive rely on three Git repositories to hold the data:
 - Declarations repository: stores the declarations that define terms to track
@@ -19,16 +19,16 @@ Before starting, ensure you have:
 - Your collection ID and name defined
 - Your collection metadata prepared
 
-## Create Declarations Repository
+## Create declarations repository
 
-### Create from Template
+### Create from template
 
 1. Go to the [`demo-declarations`](https://github.com/OpenTermsArchive/demo-declarations) repository
 2. Click "Use this template" dropdown and select "Create a new repository"
 3. Name it `<collection_id>-declarations` (e.g. `pga-declarations`)
 4. Wait 1-2 minutes for automatic setup to complete (check `first-time-setup` action status)
 
-### Configure Repository Settings
+### Configure repository settings
 
 1. Set up the "About" section:
    - Click the cogwheel icon next to "About"
@@ -57,16 +57,16 @@ Before starting, ensure you have:
    - Update README with collection metadata
    - Update `metadata.yml` with collection metadata
 
-## Create Snapshots Repository
+## Create snapshots repository
 
-### Create from Template
+### Create from template
 
 1. Go to [`demo-snapshots`](https://github.com/OpenTermsArchive/demo-snapshots)
 2. Click "Use this template" and select "Create a new repository"
 3. Name it `<collection_id>-snapshots`
 4. Wait for automatic setup to complete
 
-### Configure Repository
+### Configure repository
 
 1. Set up "About" section:
    - Add description: "Documents snapshots for `<collection_name>`. Maintained by `<maintainer>`."
@@ -78,16 +78,16 @@ Before starting, ensure you have:
    - Disable Wikis, Issues, Discussions, and Projects
    - Disable GitHub Actions
 
-## Create Versions Repository
+## Create versions repository
 
-### Create from Template
+### Create from template
 
 1. Go to [`demo-versions`](https://github.com/OpenTermsArchive/demo-versions)
 2. Click "Use this template" and select "Create a new repository"
 3. Name it `<collection_id>-versions`
 4. Wait for automatic setup to complete
 
-### Configure Repository
+### Configure repository
 
 1. Set up "About" section:
    - Add description: "Terms versions for `<collection_name>`. Maintained by `<maintainer>`."
@@ -101,7 +101,7 @@ Before starting, ensure you have:
 
 3. Update README with collection metadata
 
-## Set up GitHub Teams
+## Set up GitHub teams
 
 For collections within the Open Terms Archive organization:
 
@@ -117,7 +117,7 @@ For collections within the Open Terms Archive organization:
 4. Add team members
 5. Add repositories to Bots team with "Write" access
 
-## Verify Setup
+## Verify setup
 
 1. Check that all repositories were created successfully
 2. Verify repository settings are correctly configured

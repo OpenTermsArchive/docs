@@ -1,9 +1,9 @@
 ---
-title: Explanation
+title: Benefits
 weight: 1
 ---
 
-# The importance of federation
+# Open Terms Archive federation
 
 Open Terms Archive is a decentralised system. It aims at enabling any entity set up their own collections and track terms on their own.
 

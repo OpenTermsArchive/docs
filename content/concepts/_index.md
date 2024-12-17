@@ -1,6 +1,6 @@
 ---
-title: Introduction
-weight: 1
+title: Concepts and principles
+weight: 10
 ---
 
 # Understanding Open Terms Archive

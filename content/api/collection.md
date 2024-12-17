@@ -3,7 +3,7 @@ title: Collection REST API
 weight: 2
 ---
 
-# Collection Web API
+# Collection REST API
 
 As Open Terms Archive is decentralised, each instance embarks its own API. The documentation relevant to the specific version of the engine on that instance is provided on that instance itself.
 

@@ -4,7 +4,7 @@ weight: 3
 aliases: /api/federated/
 ---
 
-# Federation API
+# Federation REST API
 
 Open Terms Archive is a decentralised system that tracks collections of services' terms across multiple servers. Each collection operates its own API, and the Federation API unifies search and discovery across collections, fostering collaboration with external applications.
 
