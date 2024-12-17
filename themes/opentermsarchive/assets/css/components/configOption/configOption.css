@@ -13,20 +13,31 @@
 .config-option-type {
   color: var(--colorBlack600);
   padding-left: 1rem;
+  text-transform: lowercase;
+}
+
+.config-option-required {
+  padding-left: 1rem;
+  text-transform: lowercase;
+  color: rgb(154, 103, 0);
 }
 
 .config-option-description,
 .config-option-default,
-.config-option-example {
+.config-option-example,
+.config-option-allowed-values {
   padding: 1rem 0.4em;
 }
 
 .config-option-example code,
-.config-option-default code {
+.config-option-default code,
+.config-option-allowed-values code {
   margin-left: 0.4em;
+  display: inline-block;
 }
 
 .config-option-example,
-.config-option-default {
-  font-size: 0.9em;
+.config-option-default,
+.config-option-allowed-values {
+  font-size: 0.85em;
 }
