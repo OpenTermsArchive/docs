@@ -1,35 +1,40 @@
 <aside class="aside">
 	{{ $currentPageTitle := .Title }}
 	{{ $currentPageSection := .Section }}
+
 	<nav class="aside_nav">
-		<ul class="aside_items">
+		<ul>
 			{{ range .Site.Sections.ByWeight }}
-				<li class="aside_item {{ if eq $currentPageSection .Section }}aside_item-current{{ end }}">
-					<a href="{{ .RelPermalink }}" class="aside_item_section">{{ .LinkTitle }}</a>
-					<ul class="aside_subitems">
-						{{ range .RegularPages.ByWeight }}
-							<li class="aside_subitem">
-								<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-							</li>
-						{{ end }}
-						{{ range .Sections.ByWeight }}
-							<li class="aside_subitem">
-								<a href="{{ .RelPermalink }}" class="aside_item_section">{{ .LinkTitle }}</a>
-								<ul class="aside_subsubitems">
-									{{ range .RegularPages.ByWeight }}
-										<li class="aside_subsubitem">
-											<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-										</li>
+				<li class="{{ if eq $currentPageSection .Section }}aside_item-current{{ end }}">
+					<details>
+						<summary><b>{{ .LinkTitle }}</b></summary>
+						<ul>
+							{{ range .RegularPages.ByWeight }}
+								<li>
+									<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+								</li>
+							{{ end }}
+							{{ range .Sections.ByWeight }}
+								<li>
+									{{ if .Content }}
+										<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+									{{ else }}
+										<span>{{ .LinkTitle }}</span>
 									{{ end }}
-								</ul>
-							</li>
-						{{ end }}
-					</ul>
+									<ul>
+										{{ range .RegularPages.ByWeight }}
+											<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+										{{ end }}
+									</ul>
+								</li>
+							{{ end }}
+						</ul>
+					</details>
 				</li>
 			{{ end }}
 
 			{{ range where .Site.RegularPages "Section" "" }}
-				<li class="aside_item {{ if eq $currentPageTitle .Title }}aside_item-current{{ end }}">
+				<li class="{{ if eq $currentPageTitle .Title }}aside_item-current{{ end }}">
 					<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
 				</li>
 			{{ end }}
