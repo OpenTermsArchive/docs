@@ -5,39 +5,45 @@ weight: 1
 
 # Collection metadata
 
-A collection is defined by the following metadata.
+This reference documentation details all available metadata fields that can be specified in a collection's metadata file.
 
-## Required fields
+## Fields
 
-{{< configOption name="name" type="string" description="Display name of the collection (max 3 words)" example="Platform Governance Archive" >}}
+{{< configOption name="id" type="string" description="Unique identifier derived from name (acronyms, dash-separated)" example="pga" required=true >}}
 
-{{< configOption name="id" type="string" description="Unique identifier derived from name (acronyms, dash-separated)" example="pga" >}}
+{{< configOption name="name" type="string" description="Display name of the collection (max 3 words)" example="Platform Governance Archive" required=true >}}
 
-{{< configOption name="tagline" type="string" description="Concise description of collection topic" example="Largest global social media" >}}
+{{< configOption name="tagline" type="string" description="Concise description of collection topic" example="Major global social media services" required=true >}}
 
-{{< configOption name="languages" type="Array of strings" description="[ISO 639 language codes](https://en.wikipedia.org/wiki/ISO_639) allowed in collection" example="[en, fr, de]" >}}
+{{< configOption name="languages" type="Array of strings" description="[ISO 639 language codes](https://en.wikipedia.org/wiki/ISO_639) allowed in collection" example="[en, fr, de]" required=true >}}
 
-{{< configOption name="jurisdictions" type="Array of strings" description="[ISO 3166-2 country codes](https://en.wikipedia.org/wiki/ISO_3166-2) for covered jurisdictions" example="[EU]" >}}
+{{< configOption name="jurisdictions" type="Array of strings" description="[ISO 3166-2 country codes](https://en.wikipedia.org/wiki/ISO_3166-2) for covered jurisdictions" example="[EU]" required=true >}}
 
-## Additional fields
+{{< configOption name="description" type="string" description="Detailed description of the collection" example=`The **Platform Governance Archive** (PGA) collection tracks the terms of major global social media services.
 
-{{< configOption name="description" type="string" description="Detailed context beyond tagline" example="Comprehensive collection of terms of service from major global social media platforms." >}}
+This data is maintained and analysed by the [Platform Governance Archive](https://www.platformgovernancearchive.org/) at the Universität Bremen's [Center for Media Communication and Information Research (ZeMKI)](https://www.uni-bremen.de/zemki).
 
-{{< configOption name="dataset" type="url" description="URL to released versions dataset" example="https://github.com/OpenTermsArchive/demo-versions/releases" >}}
+This initiative offers researchers, journalists and citizens the tools to analyze how platforms structure and regulate communication and interaction in our societies.
 
-{{< configOption name="declarations" type="url" description="URL to declarations repository" example="https://github.com/OpenTermsArchive/demo-declarations" >}}
+It also aims to promote greater transparency and accountability of these powerful digital services.` >}}
+  
+{{< configOption name="dataset" type="url" description="URL to released versions dataset" example="https://github.com/OpenTermsArchive/pga-versions/releases" >}}
 
-{{< configOption name="versions" type="url" description="URL to versions repository" example="https://github.com/OpenTermsArchive/demo-versions" >}}
+{{< configOption name="declarations" type="url" description="URL to declarations repository" example="https://github.com/OpenTermsArchive/pga-declarations" >}}
 
-{{< configOption name="snapshots" type="url" description="URL to snapshots repository" example="https://github.com/OpenTermsArchive/demo-snapshots" >}}
+{{< configOption name="versions" type="url" description="URL to versions repository" example="https://github.com/OpenTermsArchive/pga-versions" >}}
 
-{{< configOption name="logo" type="url" description="URL to the collection's logo. Optimized PNG transparent image (min width 240px)" example="https://opentermsarchive.org/images/collections/demo.png" >}}
+{{< configOption name="snapshots" type="url" description="URL to snapshots repository" example="https://github.com/OpenTermsArchive/pga-snapshots" >}}
 
-{{< configOption name="donation" type="url" description="URL to donation page" example="https://opencollective.com/opentermsarchive" >}}
+{{< configOption name="logo" type="url" description="URL to the collection's logo. Optimized PNG transparent image (min width 240px)" example="https://opentermsarchive.org/images/collections/pga.png" >}}
 
-{{< configOption name="trackingPeriods" type="array of tracking periods objects" description="see [Tracking periods](#tracking-periods) section" >}}
+{{< configOption name="donations" type="url" description="URL to the donations page" example="https://opencollective.com/opentermsarchive" >}}
 
-{{< configOption name="governance" type="governance object" description="see [Governance](#governance) section" >}}
+{{< configOption name="trackingPeriods" type="array of tracking periods objects" description="Tracking periods object, see [Tracking periods](#tracking-periods) section" >}}
+
+{{< configOption name="governance" type="array of entity objects" description="Entity object, see [Entity](#entity) section" >}}
+
+---
 
 ### Tracking periods
 
@@ -49,19 +55,9 @@ A collection is defined by the following metadata.
 
 {{< configOption name="serverLocation" type="string" description="The geographic location of the tracking server (city name, ISO 3166-2 country code)" example="London, GB" >}}
 
-### Governance
+---
 
-{{< configOption name="hosts" type="Array of organizations objects" description="Organizations hosting the collection" >}}
-
-{{< configOption name="administrators" type="Array of organizations objects" description="Organizations managing the collection" >}}
-
-{{< configOption name="curators" type="Array of organizations objects" description="Organizations curating the content" >}}
-
-{{< configOption name="maintainers" type="Array of organizations objects" description="Organizations maintaining the technical aspects" >}}
-
-{{< configOption name="sponsors" type="Array of organizations objects" description="Organizations providing support" >}}
-
-Each organization in the governance roles is defined by the following fields:
+### Entity
 
 {{< configOption name="name" type="string" description="Name of the organization" example="Open Terms Archive" >}}
 
@@ -69,45 +65,8 @@ Each organization in the governance roles is defined by the following fields:
 
 {{< configOption name="logo" type="url" description="URL to the organization's logo. Optimized PNG transparent image (min width 240px) (optional)" example="https://opentermsarchive.org/images/logo/logo-open-terms-archive-black.png" >}}
 
-## Complete metadata example
+{{< configOption name="roles" type="string" description="Roles of the entity within the governance" allowedValues="host, administrator, curator, maintainer, sponsor" >}}
 
-```yaml
-id: demo
-name: Demo
-tagline: Services needed to operate the Open Terms Archive engine
-description: This demo collection serves as a reference implementation…
-dataset: https://github.com/OpenTermsArchive/demo-versions/releases
-declarations: https://github.com/OpenTermsArchive/demo-declarations
-versions: https://github.com/OpenTermsArchive/demo-versions
-snapshots: https://github.com/OpenTermsArchive/demo-snapshots
-logo: https://opentermsarchive.org/images/collections/demo.png
-donation: https://opencollective.com/opentermsarchive
-languages: [en]
-jurisdictions: [EU]
-trackingPeriods:
-  - startDate: 2023-01-01
-    endDate: 2024-12-31
-    schedule: "0 0 * * *"
-    serverLocation: London, GB
-governance:
-  hosts: 
-    - name: Ministry for Europe and Foreign Affairs
-      url: https://www.diplomatie.gouv.fr/en/
-      logo: https://opentermsarchive.org/images/contributors/meae.png
-  administrators:
-    - name: Open Terms Archive
-      url: https://opentermsarchive.org/
-      logo: https://opentermsarchive.org/images/logo/logo-open-terms-archive-black.png
-  curators:
-    - name: Open Terms Archive
-      url: https://opentermsarchive.org/
-      logo: https://opentermsarchive.org/images/logo/logo-open-terms-archive-black.png
-  maintainers:
-    - name: Open Terms Archive
-      url: https://opentermsarchive.org/
-      logo: https://opentermsarchive.org/images/logo/logo-open-terms-archive-black.png
-  sponsors: 
-    - name: Ministry for Europe and Foreign Affairs
-      url: https://www.diplomatie.gouv.fr/en/
-      logo: https://opentermsarchive.org/images/contributors/meae.png
-```
+---
+
+As an example, see the [complete metadata file](https://github.com/OpenTermsArchive/demo-declarations/blob/main/metadata.yml) of the [Demo collection](https://github.com/OpenTermsArchive/demo-declarations).
