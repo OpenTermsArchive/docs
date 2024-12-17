@@ -1,38 +1,38 @@
 /* Reset */
-@import "node_modules/minireset.css/minireset.css";
+@import "/vendor/minireset.css";
 
 /* Mixins */
-@import "themes/opentermsarchive/assets/css/mixins.css";
+@import "mixins.css";
 
 /* Custom media queries and custom properties */
-@import "themes/opentermsarchive/assets/css/custom-properties.css";
-@import "themes/opentermsarchive/assets/css/custom-media-queries.css";
+@import "custom-properties.css";
+@import "custom-media-queries.css";
 
 /* Base */
-@import "themes/opentermsarchive/assets/css/base.css";
+@import "base.css";
 
 /* Elements */
-@import "themes/opentermsarchive/assets/css/elements/utility.css";
-@import "themes/opentermsarchive/assets/css/elements/sprite.css";
-@import "themes/opentermsarchive/assets/css/elements/buttons.css";
-@import "themes/opentermsarchive/assets/css/elements/fonts.css";
-@import "themes/opentermsarchive/assets/css/elements/icons.css";
-@import "themes/opentermsarchive/assets/css/elements/inlines.css";
-@import "themes/opentermsarchive/assets/css/elements/titles.css";
-@import "themes/opentermsarchive/assets/css/elements/links.css";
-@import "themes/opentermsarchive/assets/css/elements/form.css";
-@import "themes/opentermsarchive/assets/css/elements/blockquote.css";
-@import "themes/opentermsarchive/assets/css/elements/table.css";
-@import "themes/opentermsarchive/assets/css/elements/syntax.css";
+@import "/elements/utility.css";
+@import "/elements/sprite.css";
+@import "/elements/buttons.css";
+@import "/elements/fonts.css";
+@import "/elements/icons.css";
+@import "/elements/inlines.css";
+@import "/elements/titles.css";
+@import "/elements/links.css";
+@import "/elements/form.css";
+@import "/elements/blockquote.css";
+@import "/elements/table.css";
+@import "/elements/syntax.css";
 
 /* Components */
-@import "themes/opentermsarchive/assets/css/components/logo/logo.css";
-@import "themes/opentermsarchive/assets/css/components/headerMenu/headerMenu.css";
-@import "themes/opentermsarchive/assets/css/components/languageSwitcher/languageSwitcher.css";
-@import "themes/opentermsarchive/assets/css/components/container/container.css";
-@import "themes/opentermsarchive/assets/css/components/header/header.css";
-@import "themes/opentermsarchive/assets/css/components/footer/footer.css";
-@import "themes/opentermsarchive/assets/css/components/divider/divider.css";
-@import "themes/opentermsarchive/assets/css/components/textContent/textContent.css";
-@import "themes/opentermsarchive/assets/css/components/aside/aside.css";
-@import "themes/opentermsarchive/assets/css/components/configOption/configOption.css";
+@import "/components/logo.css";
+@import "/components/headerMenu.css";
+@import "/components/languageSwitcher.css";
+@import "/components/container.css";
+@import "/components/header.css";
+@import "/components/footer.css";
+@import "/components/divider.css";
+@import "/components/textContent.css";
+@import "/components/aside.css";
+@import "/components/configOption.css";
