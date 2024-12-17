@@ -78,6 +78,7 @@
 
     ul{
       padding-left:var(--mS);
+      padding-top:var(--m2XS);
       padding-bottom:var(--m2XS);
 
       li{
@@ -94,8 +95,9 @@
         }
 
         ul{
+          padding-top:0;
           padding-bottom:0;
-          
+
           li{
             padding:0;
           }
