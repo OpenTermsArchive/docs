@@ -7,15 +7,16 @@ weight: 1
 
 This tutorial will guide you through tracking your first terms.
 
-By the end, you'll have tracked a service's privacy policy. You will also have a basic understanding of how to declare a terms to track and how to run the engine.
+By the end, you'll have tracked a service's privacy policy. You will also have a basic understanding of how to run the engine to track terms.
 
 ## Prerequisites
 
-- Node.js installed on your system
-- Basic familiarity with the command line
-- A text editor
+- [Node.js](https://nodejs.org/en) is installed on your system.
+- You have basic familiarity with the command line.
+- You have basic familiarity with HTML and CSS selectors.
+- You know how to use a text editor.
 
-## Track a terms
+## Track terms
 
 ### Step 1: Set up the structure
 
@@ -34,20 +35,20 @@ By the end, you'll have tracked a service's privacy policy. You will also have a
 
 For this tutorial, we will use the Privacy Policy of Open Terms Archive as an example.
 
-1. Create a file `declarations/Open Terms Archive.js` with the basic structure, the first thing to declare is the service name:
+Create a file `declarations/Open Terms Archive.json`. The name of the file is the name of the service that will be tracked. The first thing to declare is the tracked service name:
     ```json
     {
       "name": "Open Terms Archive"
     }
     ```
 
-Now, you can add a terms you want to track to the declaration. For this example, we will use the Privacy Policy of Open Terms Archive.
+Now, you can add terms you want to track to the declaration. For this example, we will use the Privacy Policy.
 
-You can go on the open terms archive website and copy the URL of the Privacy Policy to fill the `fetch` field.
+You can go on the Open Terms Archive [website](https://opentermsarchive.org/) and copy the URL of its [Privacy Policy](https://opentermsarchive.org/en/privacy-policy/) to fill the `fetch` field.
 
 And you can inspect the HTML of the page to get the selector of the content you want to extract to fill the `select` field.
 
-2. Add the Privacy Policy document configuration:
+The resulting declaration should look something like this:
     ```json
     {
       "name": "Open Terms Archive",
@@ -73,7 +74,7 @@ And you can inspect the HTML of the page to get the selector of the content you 
     ```
 
 3. Verify the results:
-  - Check the extracted version, which should contain the Privacy Policy of Open Terms Archive in the markdown format without insignificant content (like the header, footer, etc.): `./data/versions/Open Terms Archive/Privacy Policy.md`
-  - Check the snapshot, which is the original html document of the Open Terms Archive Privacy Policy: `./data/snapshots/Open Terms Archive/Privacy Policy.html`
+  - Check the extracted version, which should contain the Privacy Policy of Open Terms Archive in the Markdown format without any other content (no header, footer…): `./data/versions/Open Terms Archive/Privacy Policy.md`.
+  - Check the snapshot, which is the original HTML document of the Open Terms Archive Privacy Policy: `./data/snapshots/Open Terms Archive/Privacy Policy.html`.
 
 Congratulations! You have tracked your first terms.
