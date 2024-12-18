@@ -3,7 +3,7 @@ title: "Declaration format"
 weight: 4
 ---
 
-# Terms reference
+# Terms declaration format reference
 
 Terms are declared in a service declaration file, under the `documents` property.
 
