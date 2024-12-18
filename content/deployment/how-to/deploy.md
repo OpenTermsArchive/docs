@@ -5,37 +5,37 @@ weight: 1
 
 # How to deploy a collection
 
-This guide will help you deploy a new Open Terms Archive collection to a server. Follow these steps in order.
+This guide will help you deploy an Open Terms Archive collection to a server.
 
 ## 1. Configure the server
 
-First, ensure your server meets all requirements:
+First, ensure your server provides unsupervised access:
 
 1. Check the SSH host key:
    ```shell
-   ssh-keyscan -t ed25519 <server_address>
+   ssh-keyscan --type=ed25519 <server_address>
    ```
    If no Ed25519 key appears, generate one on the server:
    ```shell
-   sudo ssh-keygen -t ed25519 -f /etc/ssh/ssh_host_ed25519_key
+   sudo ssh-keygen --type=ed25519 --file=/etc/ssh/ssh_host_ed25519_key
    sudo systemctl restart ssh
    ```
 
 2. Create a non-root user if needed:
    ```shell
    adduser <user>
-   usermod -aG sudo <user>
+   usermod --append --groups=sudo <user>
    ```
 
 3. Grant passwordless sudo access:
    ```shell
    # Add to /etc/sudoers:
-   <user>  ALL=(ALL) NOPASSWD:ALL
+   <user> ALL=(ALL) NOPASSWD:ALL
    ```
 
 ## 2. Set up the deployment configuration
 
-1. Clone the collection repository:
+1. Clone the collection declarations repository:
    ```shell
    git clone https://github.com/OpenTermsArchive/<collection_id>-declarations.git
    ```
@@ -55,7 +55,7 @@ First, ensure your server meets all requirements:
 
 1. On the server, generate a deployment key:
    ```shell
-   ssh-keygen -t ed25519 -q -N "" -f ~/.ssh/ota-deploy
+   ssh-keygen --type=ed25519 --quiet --passphrase="" --file=~/.ssh/ota-deploy
    cat ~/.ssh/ota-deploy.pub >> ~/.ssh/authorized_keys
    ```
 
@@ -104,7 +104,7 @@ First, ensure your server meets all requirements:
 
 1. Generate a new key:
    ```shell
-   ssh-keygen -t ed25519 -C bot@opentermsarchive.org -P "" -f ./<collection_name>-key
+   ssh-keygen --type=ed25519 --comment=bot@opentermsarchive.org --passphrase="" --file=./<collection_name>-key
    ```
 
 2. Encrypt and store the private key:
@@ -142,7 +142,7 @@ First, ensure your server meets all requirements:
 2. Via local deployment:
    ```shell
    cd <collection_id>-declarations/deployment
-   ansible-galaxy collection install -r requirements.yml
+   ansible-galaxy collection install --requirements-file requirements.yml
    ansible-playbook opentermsarchive.deployment.deploy
    ```
 
