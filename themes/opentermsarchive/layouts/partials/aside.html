@@ -10,23 +10,22 @@
 					<details {{ if eq $currentPageSection .Section }}open{{ end }}>
 						<summary><b>{{ .LinkTitle | markdownify }}</b></summary>
 						<ul>
-							{{ range .RegularPages.ByWeight }}
-								<li>
-									<a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a>
-								</li>
-							{{ end }}
-							{{ range .Sections.ByWeight }}
+							{{ $allPages := .RegularPages.ByWeight | append .Sections.ByWeight }}
+							{{ $allPages := sort $allPages "Weight" }}
+							{{ range $allPages }}
 								<li>
 									{{ if .Content }}
-										<a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a>
+											<a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a>
 									{{ else }}
-										<span>{{ .LinkTitle | markdownify }}</span>
+											<span>{{ .LinkTitle | markdownify }}</span>
 									{{ end }}
-									<ul>
-										{{ range .RegularPages.ByWeight }}
-											<li><a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a></li>
-										{{ end }}
-									</ul>
+									{{ if .IsSection }}
+										<ul>
+											{{ range .RegularPages.ByWeight }}
+												<li><a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a></li>
+											{{ end }}
+										</ul>
+									{{ end }}
 								</li>
 							{{ end }}
 						</ul>
