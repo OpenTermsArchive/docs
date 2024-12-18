@@ -1,6 +1,7 @@
 ---
 title: Benefits
 weight: 1
+aliases: /collections/federation/
 ---
 
 # Open Terms Archive federation

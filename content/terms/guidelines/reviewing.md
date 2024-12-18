@@ -1,5 +1,6 @@
 ---
 title: "Reviewing contributions"
+aliases: /guidelines/reviewing/
 ---
 
 # Reviewing contributions

@@ -1,6 +1,7 @@
 ---
 title: Create your first collection
 weight: 1
+aliases: /collections/create/
 ---
 
 # Create your first collection

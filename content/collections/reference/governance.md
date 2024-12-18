@@ -1,6 +1,7 @@
 ---
 title: Governance
 weight: 4
+aliases: /collections/governance/
 ---
 
 # Collection governance

@@ -1,6 +1,7 @@
 ---
 title: Metadata
 weight: 1
+aliases: /collections/metadata/
 ---
 
 # Collection metadata

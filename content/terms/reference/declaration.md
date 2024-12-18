@@ -1,5 +1,6 @@
 ---
 title: "Declaration format"
+aliases: "/terms/reference/"
 ---
 
 # Terms declaration format reference

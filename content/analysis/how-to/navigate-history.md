@@ -1,7 +1,9 @@
 ---
 title: Navigate history
 weight: 1
-aliases: /navigate-history/
+aliases:
+  - /navigate-history/
+  - /terms/how-to-navigate-history/
 ---
 
 # How to navigate history

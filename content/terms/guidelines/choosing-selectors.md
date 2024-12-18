@@ -1,5 +1,6 @@
 ---
 title: "Choosing selectors"
+aliases: /guidelines/choosing-selectors/
 ---
 
 # Choosing selectors

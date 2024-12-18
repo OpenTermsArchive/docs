@@ -1,5 +1,6 @@
 ---
 title: Copywriting
+aliases: /memos/copywriting-reference/
 ---
 
 # Copywriting reference

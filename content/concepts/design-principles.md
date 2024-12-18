@@ -1,6 +1,7 @@
 ---
 title: "Design principles"
 weight: 2
+aliases: /design-principles/
 ---
 
 # Design principles

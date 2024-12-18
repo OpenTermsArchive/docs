@@ -1,5 +1,6 @@
 ---
 title: Join Mattermost
+aliases: /community/how-to-join-mattermost/
 ---
 
 # How to join Mattermost

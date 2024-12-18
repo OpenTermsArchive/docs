@@ -1,6 +1,7 @@
 ---
 title: Add terms with the graphical contribution interface
 linkTitle: Add terms with UI
+aliases: /terms/how-to-add-terms-using-with-the-graphical-contribution-interface/
 ---
 
 # How to add terms with the graphical contribution interface

@@ -1,6 +1,8 @@
 ---
 title: Be notified of terms changes
-aliases: /subscribe-rss/
+aliases:
+  - /subscribe-rss/
+  - /terms/how-to-be-notified-of-terms-changes/
 ---
 
 # How to be notified of terms changes
