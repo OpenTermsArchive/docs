@@ -5,7 +5,7 @@ weight: 3
 
 ## Environment variables
 
-This reference documentation details all available environment variables that can be used to configure sensitive information.
+This reference documentation details all available environment variables that can be used to configure sensitive information. These variables can be defined in a `.env` file at the root of the collection repository.
 
 ### Engine
 
