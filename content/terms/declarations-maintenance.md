@@ -1,6 +1,6 @@
 ---
 title: "Declarations maintenance"
-weight: 3
+weight: 6
 ---
 
 # Declarations maintenance
@@ -88,40 +88,3 @@ export const removeSharesButton = [
   },
 ];
 ```
-
-## How to terminate a service
-
-If the service provider stops offering a service, the associated terms will become unavailable. To mark that service termination in Open Terms Archive and ensure tracking tentatives are stopped, while maintaining the possibility to explore the history:
-
-1. Move the existing documents declaration to the service [history file](#terms-declaration-history).
-2. Update the declaration to stop tracking all terms, by removing every `<terms type>` entries from the  `documents` key in the declaration:
-
-```json
-{
-  "name": "<service name>",
-  "documents": {}
-}
-```
-
-## How to rename a service
-
-The consensus is to consider that a service provider renaming a service (for example, `Twitter` to `X`) is akin to terminating the previous service and opening a new one. Therefore, to apply a service renaming, open a pull request that both [terminates the previous service](#how-to-terminate-a-service) and adds a new [service declaration]({{< relref "terms/tracking-new-terms#declaring-a-new-service" >}}) with the new service name. You can reuse the `documents` part of the original declaration, but should double-check that the selectors and URLs still match, as a service rename is most often accompanied by a new page layout, a new domain name, and sometimes entirely new terms.
-
-## How to get the `validUntil` date from an issue
-
-1. Go to the open issue and scroll to the last action from `OTA-Bot` (comment or issue opening).
-
-   ![]({{< relref "." >}}declarations-maintenance-ota-bot-comment.png)
-
-   Note that sometimes:
-
-   - the date is not quite precise, it can be written "last month"
-   ![]({{< relref "." >}}declarations-maintenance-ota-bot-comment-last-month.png)
-   - the last comment may be the announcement of the reopening of the issue
-   ![]({{< relref "." >}}declarations-maintenance-ota-bot-comment-reopened-issue.png)
-
-2. On the date of this comment, right-click "inspect" to open your browser's code inspector.
-
-3. The value to use as `validUntil` is the value of the `datetime` attribute from the `<relative-time>` element.
-
-   ![]({{< relref "." >}}declarations-maintenance-inspector-open-get-datetime.png)

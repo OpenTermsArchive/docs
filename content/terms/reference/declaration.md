@@ -1,6 +1,5 @@
 ---
 title: "Declaration format"
-weight: 4
 ---
 
 # Terms declaration format reference
