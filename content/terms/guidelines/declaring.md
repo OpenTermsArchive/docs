@@ -1,8 +1,8 @@
 ---
-title: "Declaring documents"
+title: "Declaring terms"
 ---
 
-# Declaring documents
+# Declaring terms
 
 ## Service name
 
@@ -29,7 +29,7 @@ title: "Declaring documents"
 
 ### Provider prefixing
 
-- If you encounter a document you want to add to a service, yet find that it would override an already-declared document for this service such as Terms of Service or Privacy Policy, and that the only solution you see would be to create a new terms type that would contain the name of the feature, then it is likely you should declare a new service, potentially duplicating existing documents.
+- If you encounter terms you want to add to a service, yet find that it would override already-declared terms for this service such as Terms of Service or Privacy Policy, and that the only solution you see would be to create a new terms type that would contain the name of the feature, then it is likely you should declare a new service, potentially duplicating existing terms.
 
 > Example: the Facebook Community Payments terms are Terms of Service. The only way to declare them in the Facebook service would be to add a “Community Payments Terms” terms type as they would otherwise conflict with Facebook's Terms of Service. It is better to declare a new service called “Facebook Payments” with its own Terms of Service. It turns out that this service also has a developer agreement, independent from the main Facebook service.
 
@@ -47,13 +47,13 @@ Noise is unwanted content in versions.
 
 ### Irrelevant content
 
-The first type of noise we try to remove is content that is not **relevant legally speaking**, and that harms **document readability**.
+The first type of noise we try to remove is content that is not **relevant legally speaking**, and that harms **terms readability**.
 
 **CSS selectors** are a first step as they permit to select an area instead of the whole page, but they let pass through content such as headers, footers, buttons, drop-down lists...
 
 **Filtering** permits to get rid of the remaining irrelevant content.
 
-A drop-down list let user select which document he would like to see but this list doesn't interest us in the final document.
+A drop-down list lets users select which terms they would like to see but this list doesn't interest us in the final version.
 
 **HTML file :**
 
