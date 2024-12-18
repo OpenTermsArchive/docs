@@ -9,9 +9,9 @@ This guide will help you define the metadata for your Open Terms Archive collect
 
 ## Prerequisites
 
-- A text editor
-- Basic understanding of YAML syntax
-- Your collection's basic information ready
+- A text editor.
+- Basic understanding of the [YAML syntax](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html).
+- Your collection's basic information ready.
 
 ## Steps
 
@@ -41,8 +41,8 @@ This guide will help you define the metadata for your Open Terms Archive collect
 
     ```yaml
     trackingPeriods:
-      - startDate: "YYYY-MM-DD"    # When tracking begins
-        schedule: "0 0 * * *"      # Cron expression for frequency
+      - startDate: "YYYY-MM-DD"     # When tracking begins
+        schedule: "0 0 * * *"       # Cron expression for frequency
         serverLocation: "City, CC"  # Server location (City, Country code)
     ```
 
