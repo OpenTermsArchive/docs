@@ -8,23 +8,23 @@
 			{{ range .Site.Sections.ByWeight }}
 				<li class="{{ if eq $currentPageSection .Section }}aside_item-current{{ end }}">
 					<details {{ if eq $currentPageSection .Section }}open{{ end }}>
-						<summary><b>{{ .LinkTitle }}</b></summary>
+						<summary><b>{{ .LinkTitle | markdownify }}</b></summary>
 						<ul>
 							{{ range .RegularPages.ByWeight }}
 								<li>
-									<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+									<a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a>
 								</li>
 							{{ end }}
 							{{ range .Sections.ByWeight }}
 								<li>
 									{{ if .Content }}
-										<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+										<a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a>
 									{{ else }}
-										<span>{{ .LinkTitle }}</span>
+										<span>{{ .LinkTitle | markdownify }}</span>
 									{{ end }}
 									<ul>
 										{{ range .RegularPages.ByWeight }}
-											<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+											<li><a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a></li>
 										{{ end }}
 									</ul>
 								</li>
