@@ -1,10 +1,10 @@
 ---
-title: "Tracking new terms"
+title: Track new terms
 weight: 2
 aliases: /contributing-terms/
 ---
 
-# Tracking new terms
+# How to track new terms
 
 Tracking terms is done by _declaring_ them and the service they are associated with. Such a declaration is achieved by editing JSON files in the [`declarations`](https://github.com/OpenTermsArchive/contrib-declarations/tree/main/declarations) folder.
 
@@ -34,7 +34,7 @@ The service name is exposed to end users. It should reflect as closely as possib
   - _Example: `Firebase` (by Google) → `Firebase`_.
   - _Example: `App Store` (by Apple) → `App Store`_.
 
-> If you have a hard time finding the service name, check out the [practical guidelines to find the service name]({{< relref "guidelines/declaring#service-name" >}}), and feel free to mention your uncertainties in the pull request! We will help you improve the service name if necessary 🙂
+> If you have a hard time finding the service name, check out the [practical guidelines to find the service name]({{< relref "/terms/guidelines/declaring#service-name" >}}), and feel free to mention your uncertainties in the pull request! We will help you improve the service name if necessary 🙂
 
 ## Service ID
 
@@ -54,7 +54,7 @@ The service ID is exposed to developers. It should be easy to handle with script
   - _Example: `App Store` → `App Store`_.
   - _Example: `DeviantArt` → `DeviantArt`_.
 
-> If you have a hard time defining the service ID, check out the [practical guidelines to derive the ID from the service name]({{< relref "guidelines/declaring#service-id" >}}), and feel free to mention your uncertainties in the pull request! We will help you improve the service ID if necessary 🙂
+> If you have a hard time defining the service ID, check out the [practical guidelines to derive the ID from the service name]({{< relref "/terms/guidelines/declaring#service-id" >}}), and feel free to mention your uncertainties in the pull request! We will help you improve the service ID if necessary 🙂
 
 > More details on the ID and naming constraints and recommendations can be found in the relevant [decision record](https://github.com/OpenTermsArchive/engine/blob/main/decision-records/0001-service-name-and-id.md).
 
