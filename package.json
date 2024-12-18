@@ -20,7 +20,7 @@
     "lint:markdown": "markdownlint *.md content/**/*.md",
     "lint:css": "stylelint \"themes/opentermsarchive/assets/css/*.css\"",
     "lint:js": "eslint themes/opentermsarchive/assets/js/",
-    "start:dev": "hugo serve --watch --logLevel debug --disableFastRender",
+    "start:dev": "hugo serve --watch --logLevel debug --disableFastRender --ignoreCache",
     "jsdoc": "npm install @opentermsarchive/engine@latest --no-save && jsdoc --configure .jsdoc.json"
   },
   "devDependencies": {
@@ -38,7 +38,6 @@
     "minireset.css": "^0.0.7",
     "postcss": "^8.4.19",
     "postcss-cli": "^10.1.0",
-    "postcss-import": "^15.0.1",
     "postcss-mixins": "^9.0.4",
     "postcss-preset-env": "^7.8.3"
   }
