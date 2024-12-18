@@ -5,11 +5,11 @@ weight: 1
 
 # Node.js module
 
-As a Node module dependency, the engine exposes a JavaScript API that can be called in your own code. The following modules are available.
+As a Node module dependency, the engine exposes a JavaScript API that can be called in your own code.
 
 ## `fetch`
 
-The `fetch` module gets the MIME type and content of a document from its URL
+`fetch` gets the MIME type and content of a document from its URL
 
 ```js
 import fetch from '@opentermsarchive/engine/fetch';
@@ -31,11 +31,11 @@ await fetch({ executeClientScripts: true, ... });
 await stopHeadlessBrowser();
 ```
 
-The `fetch` module options are defined as a [`node-config` submodule](https://github.com/node-config/node-config/wiki/Sub-Module-Configuration). The default `fetcher` configuration can be overridden by adding a `fetcher` object to the local configuration file.
+The `fetch` options are defined as a [`node-config` submodule](https://github.com/node-config/node-config/wiki/Sub-Module-Configuration). The default `fetcher` configuration can be overridden by adding a `fetcher` object to the local configuration file.
 
 ## `extract`
 
-The `extract` module transforms HTML or PDF content into a Markdown string according to a declaration.
+`extract` transforms HTML or PDF content into a Markdown string according to a declaration.
 
 ```js
 import extract from '@opentermsarchive/engine/extract';
