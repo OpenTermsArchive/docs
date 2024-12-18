@@ -116,10 +116,3 @@ For collections within the Open Terms Archive organization:
    - Versions repository: "Triage" access
 4. Add team members
 5. Add repositories to Bots team with "Write" access
-
-## Verify setup
-
-1. Check that all repositories were created successfully
-2. Verify repository settings are correctly configured
-3. Ensure team permissions are properly set
-4. Test basic operations (e.g., creating an issue, making a PR)
