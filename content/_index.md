@@ -6,7 +6,7 @@ weight: 1
 
 # Open Terms Archive documentation
 
-Open Terms Archive is a decentralised system that tracks collections of services' terms across multiple servers. Each collection operates its own API, and the Federation API unifies search and discovery across collections, fostering collaboration with external applications.
+Open Terms Archive is a decentralised system that tracks collections of services' terms across multiple servers. Each collection exposes the data it collects through datasets and through its own API. The Federation API unifies search and discovery across collections.
 
 ## Required minimal terminology
 
@@ -20,19 +20,20 @@ Before diving into the details, let's first understand the essential terminology
 
 ## Documentation structure
 
-In this documentation you can find the following kind of content to support users at different levels:
+This documentation follows the [Diátaxis](https://diataxis.fr) approach and structures content in different categories:
 
-- **Tutorials:** Step-by-step learning guides that help beginners get started with Open Terms Archive, providing foundational knowledge and hands-on experience.
-- **How-to guides:** Task-focused instructions that help experienced users accomplish specific goals efficiently and effectively.
-- **Reference:** Comprehensive technical documentation detailing system components, configuration options, and specifications for advanced users.
+- **Tutorials:** step-by-step learning guides that help beginners get started with Open Terms Archive, providing foundational knowledge and hands-on experience.
+- **How-to guides:** task-focused instructions that help experienced users accomplish specific goals efficiently and effectively.
+- **Reference:** comprehensive technical documentation detailing configuration options and specifications for advanced users.
+- **Explanations:** background knowledge that enables understanding the constraints and how choices that are made.
 
-## Main contents
+### Table of contents
 
-- **Analysis:** Provides guidance on how to analyze terms changes, from navigating through the history of tracked documents to publishing memos about significant changes, along with copywriting guidelines for creating analysis content.
-- **Community:** Provides information on how to join and participate in the Open Terms Archive community.
-- **Terms:** Provides guidance on tracking and maintaining terms declarations, reference documentation for declaration formats, and guidelines for selecting selectors and reviewing contributions.
-- **Collections:** Provides guidance on creating and managing collections of tracked terms, creating repositories and defining metadata, and detailed reference documentation for configuration options, environment variables, governance roles, and collection metadata formats.
-- **Federation:** Explains the benefits of joining the Open Terms Archive federation, and the criteria that collections must meet to be part of the federated ecosystem.
-- **Deployment:** Guides to deploy a collection.
-- **Programmatic access:** Provides documentation for programmatically interacting with Open Terms Archive.
-- **Concepts and principles:** Explains the main concepts and terminology of Open Terms Archive and fundamental design principles.
+- **Analysis:** guidance on how to analyze terms changes, from navigating through the history of tracked documents to publishing memos about significant changes.
+- **Community:** information on how to participate in the Open Terms Archive community.
+- **Terms:** guidance on tracking and maintaining terms declarations.
+- **Collections:** guidance on creating and managing collections of tracked terms.
+- **Federation:** constraints and benefits of joining the Open Terms Archive federation.
+- **Deployment:** guidance on operating an Open Terms Archive instance.
+- **Programmatic access:** documentation on the engine CLI and APIs.
+- **Concepts and principles:** main concepts, terminology and fundamental design principles of Open Terms Archive.
