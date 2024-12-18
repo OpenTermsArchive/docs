@@ -17,7 +17,7 @@ By the end, you'll have tracked a service's privacy policy. You will also have a
 
 ## Track terms
 
-### Step 1: Set up the structure
+### Step 1: Set up the directory structure
 
 1. Create a new directory:
     ```bash
@@ -73,7 +73,7 @@ The resulting declaration should look something like this:
     ```
 
 3. Verify the results:
-  - Check the extracted version, which should contain the Privacy Policy of Open Terms Archive in the Markdown format without any other content (no header, footer…): `./data/versions/Open Terms Archive/Privacy Policy.md`.
+  - Check the extracted version, which should contain the Privacy Policy of Open Terms Archive in Markdown format without any other content (no header, footer…): `./data/versions/Open Terms Archive/Privacy Policy.md`.
   - Check the snapshot, which is the original HTML document of the Open Terms Archive Privacy Policy: `./data/snapshots/Open Terms Archive/Privacy Policy.html`.
 
 Congratulations! You have tracked your first terms.

@@ -11,13 +11,13 @@ By the end, you'll have a working collection that tracks changes to a service's 
 
 ## Prerequisites
 
-- Node.js installed on your system
-- Basic familiarity with the command line
-- A text editor
+- [Node.js](https://nodejs.org/en) is installed on your system.
+- You have basic familiarity with the command line.
+- You know how to use a text editor.
 
 ## Create a collection
 
-### Step 1: Set up the project structure
+### Step 1: Set up the directory structure
 
 1. Create a new directory:
     ```bash
@@ -37,7 +37,7 @@ By the end, you'll have a working collection that tracks changes to a service's 
 
 ### Step 2: Create the service declaration
 
-4. Create a file `declarations/Open Terms Archive.js` with the basic structure, the first thing to declare is the service name:
+4. Create a file `declarations/Open Terms Archive.json` with the following content. For detailed instructions on how to structure it, follow the [Tracking terms tutorial]({{< relref "/terms/tutorials/track" >}}):
     ```json
     {
       "name": "Open Terms Archive",
@@ -52,11 +52,11 @@ By the end, you'll have a working collection that tracks changes to a service's 
 
 ### Step 2: Create the metadata file
 
-6. Create a file `metadata.yaml`:
+5. Create a file `metadata.yaml`:
     ```yaml
     id: ota-tutorial
     name: Tutorial collection
-    tagline: Learn how to create an Open Terms Archive collection
+    tagline: Learn how to create a collection
     description: |
       A step-by-step tutorial collection that guides through creating an Open Terms Archive collection.
       Track terms and conditions from websites while learning the basics of declarations, configuration, and metadata.
@@ -66,7 +66,7 @@ By the end, you'll have a working collection that tracks changes to a service's 
 
 ### Step 3: Create the configuration file
 
-5. Create a file `config/development.json` and set the tracking schedule to every minute:
+6. Create a file `config/development.json` and set the tracking schedule to every minute:
     ```json
     {
       "trackingSchedule": "* * * * *"
@@ -75,18 +75,18 @@ By the end, you'll have a working collection that tracks changes to a service's 
 
 ### Step 4: Install and run the engine
 
-1. Install the Open Terms Archive engine:
+7. Install the Open Terms Archive engine:
     ```bash
     npm install --save @opentermsarchive/engine
     ```
 
-2. Start the scheduled tracking of the declared terms:
+8. Start the scheduled tracking of the declared terms:
     ```bash
     npx ota track --schedule
     ```
 
-3. After one minute, check the results:
-  - Check the extracted version, which should contain the Privacy Policy of Open Terms Archive in the markdown format without insignificant content (like the header, footer, etc.): `./data/versions/Open Terms Archive/Privacy Policy.md`
-  - Check the snapshot, which is the original html document of the Open Terms Archive Privacy Policy: `./data/snapshots/Open Terms Archive/Privacy Policy.html`
+9. After one minute, check the results:
+  - Check the extracted version, which should contain the Privacy Policy of Open Terms Archive in Markdown format without any other content (no header, footer…): `./data/versions/Open Terms Archive/Privacy Policy.md`.
+  - Check the snapshot, which is the original HTML document of the Open Terms Archive Privacy Policy: `./data/snapshots/Open Terms Archive/Privacy Policy.html`.
 
 Congratulations! You have created your first collection.
