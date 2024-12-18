@@ -12,11 +12,11 @@ Open Terms Archive is a decentralised system that tracks collections of services
 
 Before diving into the details, let's first understand the essential terminology used throughout this documentation.
 
-- **Terms:** The contractual or non-contractual documents published by services (such as Terms of Service, Privacy Policy, Community Guidelines) that users agree to..
-- **Collection:** A set of tracked terms defined by a specific scope (such aslanguage, jurisdiction, industry, …).
-- **Declaration:** A JSON file that defines which terms to track for a service and how to track them
-- **Snapshot:** The original document (HTML, PDF, …) where the terms will be extracted.
-- **Version:** The actual terms from a snapshot after removing irrelevant elements and noise.
+- **Terms:** the contractual documents published by services (such as Terms of Service, Privacy Policy, Community Guidelines…) that users agree to.
+- **Collection:** a set of tracked terms grouped by a specific scope (such as language, jurisdiction, industry…).
+- **Declaration:** a JSON file that defines which terms to track for a service and how to track them.
+- **Snapshot:** the original source document (HTML, PDF…) from which the terms will be extracted.
+- **Version:** the textual content of the terms after filtering out irrelevant content (navigation menu, advertisements…) from a snapshot.
 
 ## Documentation structure
 
