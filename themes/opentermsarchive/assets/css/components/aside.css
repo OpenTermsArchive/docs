@@ -43,7 +43,6 @@
           padding: var(--mXS) var(--mS);
           list-style: none;
           cursor: pointer;
-          transition: 0.2s;
 
           &:hover{
             background-color:var(--colorBlack200);
@@ -54,18 +53,18 @@
             display: none;
           }
           
-          &::after{
-            content: '↓';
+          & svg{
             position: absolute;
             right: 10px;
-            top:12px;
+            top:14px;
             font-size:0.8em;
             color:var(--colorBlack400);
+            transition: transform 0.2s ease;
           }
         }
 
         &[open]{
-          summary::after{
+          summary > svg{
             transform: rotate(180deg);
           }
         }
@@ -110,3 +109,4 @@
 .aside_item-current{
   border-left:2px solid var(--colorPrimary);
 }
+
