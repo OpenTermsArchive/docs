@@ -15,7 +15,7 @@
 
 .aside_nav {
   > ul > li > details > ul > li:last-child,
-  > ul > li > details > ul > li > ul {
+  > ul > li > details > ul > li:not(:last-child) > ul {
     margin-bottom: var(--mS);
   }
 
@@ -38,7 +38,7 @@
         width: 100%;
       }
 
-      .aside_item-current {
+      .aside_item-current {        
         color: var(--colorBlack800);
 
         &::before {
@@ -75,19 +75,20 @@
           bottom: 0;
           width: 1px;
           background-color: var(--colorPrimary);
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 0;
+          border-radius: 0;
         }
 
-        & .aside_item-current::before {
-          top: 2px;
-          bottom: 2px;
-        }
+        & .aside_item-current {
+          &::before {
+            top: 2px;
+            bottom: 2px;
+          }
 
-        & .aside_item-current::after {
-          top: 0;
-          bottom: 0;
-          right: var(--mXS);
+          &::after {
+            top: 0;
+            bottom: 0;
+            right: var(--mXS);
+          }
         }
       }
 
@@ -142,12 +143,11 @@
         }
 
         > span,
-        > a {
+        a {
           padding-left: var(--mS);
         }
 
         > a {
-          padding-left: var(--mL);
           padding-top: var(--p3XS);
           padding-bottom: var(--p3XS);
         }
@@ -159,9 +159,7 @@
             padding: 0;
 
             a {
-              padding-left: var(--mL);
-              padding-top: var(--p3XS);
-              padding-bottom: var(--p3XS);
+              padding: var(--p3XS) var(--mL);
               border-radius: 4px;
             }
           }
@@ -170,4 +168,3 @@
     }
   }
 }
-
