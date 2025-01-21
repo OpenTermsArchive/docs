@@ -14,7 +14,7 @@ The Open Terms Archive community concentrates interactions on an instant chat pl
 
 **Use this [invitation link](https://community.opentermsarchive.org/signup_user_complete/?id=fb1tb45hnfnk3c88btjhsjoomc&md=link&sbr=fa) and create an account.**
 
-After successful login, you will be automatically be added to the **~announcements** channel.
+After successful login, you will be automatically be added to the **~Announcements** channel.
 
 ## 2. Profile setup
 
@@ -29,18 +29,18 @@ New members can set up their profiles by following these steps:
 
 ## 3. Introduce yourself
 
-After joining the Open Terms Archive chat, members are encouraged to briefly introduce themselves in the **Introduction** channel.
+After joining the Open Terms Archive chat, members are encouraged to briefly introduce themselves in the **~Introductions** channel.
 
 ## 4. Find your channels
 
 Here are some recommended channels to help you get started:
 
-1. **~reuses**: this channel gives you access to published reports based on Open Terms Archive data. You can also share your personal published reports here.
-2. **~situational awareness**: this channel helps you stay updated on initiatives from Open Terms Archive and news from other sources.
-3. **~public relations**: all communications, public presentations, events, blogs, feedback, and press releases from Open Terms Archive are posted here. Join to stay informed and share related articles.
-4. **~help**: don’t get stuck! Join this channel to ask for assistance.
-5. **~module**: there are some channels prefixed with “Module” for technical contributors including **Website**, **Documentation**, **Engine**, and **Contribution Tool**.
-6. **~collection**: each collection has a dedicated channel prefixed with “Collection” to gather its community members and synchronise around maintenance and analysis.
+1. **~Reuses**: this channel gives you access to published reports based on Open Terms Archive data. You can also share your personal published reports here.
+2. **~Situational awareness**: this channel helps you stay updated on initiatives from Open Terms Archive and news from other sources.
+3. **~Public relations**: all communications, public presentations, events, blogs, feedback, and press releases from Open Terms Archive are posted here. Join to stay informed and share related articles.
+4. **~Help**: don’t get stuck! Join this channel to ask for assistance.
+5. **~Module**: there are some channels prefixed with “Module” for technical contributors including **~Website**, **~Documentation**, **~Engine**, and **~Contribution Tool**.
+6. **~Collection**: each collection has a dedicated channel prefixed with “Collection” to gather its community members and synchronise around maintenance and analysis.
 
 ## Need help?
 
