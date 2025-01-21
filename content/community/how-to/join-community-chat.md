@@ -29,11 +29,7 @@ New members can set up their profiles by following these steps:
 
 ## 3. Introduce yourself
 
-After joining the Open Terms Archive chat, members are encouraged to introduce themselves in the **Introduction** channel.
-
-1. Join the **~Introductions** channel.
-2. Briefly introduce yourself to the community.
-3. A community manager replies with a welcome message and provides further guidance on the next steps.
+After joining the Open Terms Archive chat, members are encouraged to briefly introduce themselves in the **Introduction** channel.
 
 ## 4. Find your channels
 
