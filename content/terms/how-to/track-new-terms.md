@@ -6,13 +6,30 @@ aliases: /contributing-terms/
 
 # How to track new terms
 
-Tracking terms is done by _declaring_ them and the service they are associated with. Such a declaration is achieved by editing JSON files in the [`declarations`](https://github.com/OpenTermsArchive/contrib-declarations/tree/main/declarations) folder.
+This is a step by step guide to help you add declarations to the [contrib-declaration](https://github.com/OpenTermsArchive/contrib-declarations) repository. This repository is dedicated for volunteer contribution of declarations to Open Terms Archive.
 
-Before adding new terms, open the [`declarations`](https://github.com/OpenTermsArchive/contrib-declarations/tree/main/declarations) folder and check if the service you want to track terms for is already declared. If a JSON file with the name of the service is already present, you can jump straight to the [Terms reference]({{< relref "terms/reference" >}}). Otherwise, keep reading!
+Having understood briefly how a declaration is structured in JSON format, we need to look at concrete steps on how you can add these JSON files to the repository.
 
-## Declaring a new service
+## Prerequisites
 
-Before declaring a service, you will need to choose the service name and service ID. The service ID will be the name of the JSON file in which the service will be declared. It is a normalised version of the service name.
+In order to add declarations:
+
+1. You need to have [Node.js](https://nodejs.org/en/) installed on your machine. If you don't have it, you can download it from the official website [here](https://nodejs.org/en/download/).
+2. You need to have git installed on your machine. If you don't have it, you can download it from the official website [here](https://git-scm.com/downloads).
+
+## Adding a declaration
+
+To add a declaration, you need to follow these steps:
+
+1. Clone the [contrib-declaration](https://github.com/OpenTermsArchive/contrib-declarations) repository to your local machine.
+2. Create a branch that describes your contribution e.g. `add-Open-Terms-Archive-ToS` or `add-firefox-privacy-policy`
+3. Run `npm install`. This is to install all the dependencies including the Open Terms Archive engine which will allow you to test and validate your declaration to make sure it is ok.
+4. Create a JSON file with the name of the service you are adding the declaration for. This JSON file should be in the `declarations` folder of the repository. To learn more about selecting the right service name, please read the [Service name](#service-name) section below.
+5. Visit the declaration URL and use [browser developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools) to inspect the page and find the right selectors for the significant section containing the terms you want to declare.
+6. After you've properly added your selectors and structured your JSON file, you need to test and validate your JSON file to make sure it is ok. To do this, you need to run `npx ota validate --services [service name]` from the root of the repository. This will run a validation on the declaration, highlighting any changes required.
+7. If all tests are good, make a pull request to the main repository.  
+
+> If you have a hard time finding the service name, check out the [practical guidelines to find the service name]({{< relref "/terms/guidelines/declaring" >}}), and feel free to mention your uncertainties in the pull request! We will help you improve the service name if necessary 🙂
 
 ## Service name
 

@@ -1,112 +1,170 @@
 .aside {
   flex-shrink: 0;
-  margin-right:var(--mXL);
+  margin-right: var(--mXL);
   @mixin grid 3, 2;
-  border:1px solid var(--colorBlack200);
-  border-radius:4px;
+  border: 1px solid var(--colorBlack200);
+  border-radius: 4px;
 }
 
 @media (--tabletSmall) {
   .aside {
     max-width: 100%;
-    margin-bottom:var(--m2XL);
+    margin-bottom: var(--m2XL);
   }
 }
 
-.aside_nav{
-  ul{
-    color:var(--colorBlack600);
-    display:flex;
-    flex-direction:column;
+.aside_nav {
+  > ul > li > details > ul > li:last-child,
+  > ul > li > details > ul > li:not(:last-child) > ul {
+    margin-bottom: var(--mS);
+  }
 
-    li{
-      border-bottom:1px solid var(--colorBlack200);
+  ul {
+    color: var(--colorBlack600);
+    display: flex;
+    flex-direction: column;
 
-      a{
+    li {
+      position: relative;
+      border-bottom: 1px solid var(--colorBlack200);
+
+      &:last-child {
+        border: none;
+      }
+
+      a {
         padding: var(--mXS) var(--mS);
-        display:inline-block;
-        width:100%;
+        display: inline-block;
+        width: 100%;
+      }
 
-        &:hover{
-          background-color:var(--colorBlack200);
+      .aside_item-current {        
+        color: var(--colorBlack800);
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 4px;
+          background-color: var(--colorPrimary);
+          border-radius: 0 10px 10px 0;
+          z-index: 1;
+          top: var(--m2XS);
+          bottom: var(--m2XS);
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          background-color: var(--colorBlack200);
+          border-radius: 4px;
+          z-index: -1;
+          left: var(--mXS);
+          right: var(--m2XS);
+          top: var(--m2XS);
+          bottom: var(--m2XS);
         }
       }
 
-      &:last-child{
-        border:none;
+      &.aside_item-current-section {
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          width: 1px;
+          background-color: var(--colorPrimary);
+          border-radius: 0;
+        }
+
+        & .aside_item-current {
+          &::before {
+            top: 2px;
+            bottom: 2px;
+          }
+
+          &::after {
+            top: 0;
+            bottom: 0;
+            right: var(--mXS);
+          }
+        }
       }
 
-      details{
+      details {
         position: relative;
 
-        summary{
+        summary {
           padding: var(--mXS) var(--mS);
           list-style: none;
           cursor: pointer;
 
-          &:hover{
-            background-color:var(--colorBlack200);
-          }
-
           &::marker,
-          &::-webkit-details-marker{
+          &::-webkit-details-marker {
             display: none;
           }
-          
-          & svg{
+
+          & svg {
             position: absolute;
             right: 10px;
-            top:14px;
-            font-size:0.8em;
-            color:var(--colorBlack400);
+            top: 14px;
+            font-size: 0.8em;
+            color: var(--colorBlack400);
             transition: transform 0.2s ease;
+          }
+
+          &:hover::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: var(--colorBlack100);
+            z-index: -1;
           }
         }
 
-        &[open]{
-          summary > svg{
-            transform: rotate(180deg);
-          }
+        &[open] summary > svg {
+          transform: rotate(180deg);
         }
       }
 
-      span{
-        display:inline-block;
+      span {
+        display: inline-block;
       }
     }
 
-    ul{
-      padding-left:var(--mS);
-      padding-top:var(--m2XS);
-      padding-bottom:var(--m2XS);
+    ul {
+      li {
+        border: none;
 
-      li{
-        border:none;
-        padding-top:var(--m3XS);
-        padding-bottom:var(--m3XS);
-
-        a{
-          padding: 0;
-
-          &:hover{
-            background-color: transparent;
-          }
+        a {
+          padding: var(--p3XS) var(--mL);
+          border-radius: 4px;
         }
 
-        ul{
-          padding-top:0;
-          padding-bottom:0;
+        > span,
+        a {
+          padding-left: var(--mS);
+        }
 
-          li{
-            padding:0;
+        > a {
+          padding-top: var(--p3XS);
+          padding-bottom: var(--p3XS);
+        }
+
+        ul {
+          padding-top: 0;
+
+          li {
+            padding: 0;
+
+            a {
+              padding: var(--p3XS) var(--mL);
+              border-radius: 4px;
+            }
           }
         }
       }
     }
   }
 }
-
-.aside_item-current{
-  border-left:2px solid var(--colorPrimary);
-}
-
