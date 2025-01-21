@@ -1,0 +1,21 @@
+<div class="config-option">
+    <div class="config-option-name">
+        <code>{{ .Get "name" }}</code>
+        <span class="config-option-type">{{ .Get "type" }}</span>
+        {{ if .Get "required" }}
+        <span class="config-option-required">Required</span>
+        {{ end }}
+    </div>
+    <div class="config-option-description">{{ .Get "description" | markdownify }}</div>
+    <div class="config-option-details">
+        {{ if .Get "default" }}
+        <div class="config-option-default"><span>Default:</span>{{ .Get "default" | markdownify}}</div>
+        {{ end }}
+        {{ if .Get "example" }}
+        <div class="config-option-example"><span>Example:</span>{{ .Get "example" | markdownify }}</div>
+        {{ end }}
+        {{ if .Get "allowedValues" }}
+        <div class="config-option-allowed-values"><span>Allowed values:</span>{{ .Get "allowedValues" | markdownify }}</div>
+        {{ end }}
+    </div>
+</div>

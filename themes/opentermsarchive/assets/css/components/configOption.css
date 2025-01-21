@@ -1,0 +1,47 @@
+.config-option {
+    padding: 2rem 0;
+}
+
+.config-option + .config-option {
+  box-shadow: inset 0 1px var(--colorBlack200);
+}
+
+.config-option .config-option-name code {
+  font-weight: 600;
+}
+
+.config-option-type {
+  color: var(--colorBlack600);
+  padding-left: 1rem;
+  text-transform: lowercase;
+}
+
+.config-option-required {
+  padding-left: 1rem;
+  text-transform: lowercase;
+  color: rgb(154, 103, 0);
+}
+
+.config-option-details {
+  display: flex;
+}
+
+.config-option-description,
+.config-option-default,
+.config-option-example,
+.config-option-allowed-values {
+  padding: 1rem 0.4em;
+}
+
+.config-option-example code,
+.config-option-default code,
+.config-option-allowed-values code {
+  margin-left: 0.4em;
+  display: inline-block;
+}
+
+.config-option-example,
+.config-option-default,
+.config-option-allowed-values {
+  font-size: 0.85em;
+}

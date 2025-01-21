@@ -1,4 +1,4 @@
 ---
-title: API
-weight: 4
+title: Programmatic access
+weight: 8
 ---
