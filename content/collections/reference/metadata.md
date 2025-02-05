@@ -184,7 +184,7 @@ It also aims to promote greater transparency and accountability of these powerfu
 {{< configOption
     name="roles"
     type="string"
-    description="Roles of the entity within the governance"
+    description="Roles of the entity within the governance, see [Collection governance]({{< relref \"collections/reference/governance\" >}})"
     allowedValues="`host`, `administrator`, `curator`, `maintainer`, `sponsor`"
     required=true
 >}}
