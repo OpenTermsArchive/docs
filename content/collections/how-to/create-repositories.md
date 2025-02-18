@@ -7,8 +7,8 @@ weight: 1
 
 Collections in Open Terms Archive rely on three Git repositories to hold the data:
 - Declarations repository: stores the declarations that define terms to track
-- Snapshots repository: stores raw snapshots of tracked documents
-- Versions repository: stores processed versions of tracked documents
+- Snapshots repository: stores raw snapshots of tracked terms
+- Versions repository: stores processed versions of tracked terms
 
 This guide assumes you use GitHub. For other Git platforms, adapt these steps accordingly.
 
@@ -69,7 +69,7 @@ Before starting, ensure you have:
 ### Configure repository
 
 1. Set up "About" section:
-   - Add description: "Documents snapshots for `<collection_name>`. Maintained by `<maintainer>`."
+   - Add description: "Terms snapshots for `<collection_name>`. Maintained by `<maintainer>`."
    - Set website: `https://opentermsarchive.org`
    - Add standard tags
    - Uncheck "Releases", "Packages" and "Deployments"

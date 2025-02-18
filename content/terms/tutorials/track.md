@@ -51,7 +51,7 @@ The resulting declaration should look something like this:
     ```json
     {
       "name": "Open Terms Archive",
-      "documents": {
+      "terms": {
         "Privacy Policy": {
           "fetch": "https://opentermsarchive.org/en/privacy-policy",
           "select": ".textcontent"

@@ -5,7 +5,7 @@ aliases: "/terms/reference/"
 
 # Terms declaration format reference
 
-Terms are declared in a service declaration file, under the `documents` property.
+Terms are declared in a service declaration file, under the `terms` property.
 
 Most of the time, terms are written in only one source document (for example [Facebook Terms of Service](https://www.facebook.com/legal/terms)) but sometimes terms can be spread across multiple online source documents, and their combination constitutes the terms (for example [Facebook Community Guidelines](https://transparency.fb.com/policies/community-standards/)).
 
@@ -257,7 +257,7 @@ In the case where terms are extracted from one single source document, they are 
 
 ```json
   …
-  "documents": {
+  "terms": {
     "<terms type>": {
       "fetch": "…",
       "executeClientScripts": "…",
@@ -275,7 +275,7 @@ When the terms are spread across multiple source documents, they should be decla
 
 ```json
   …
-  "documents": {
+  "terms": {
     "<terms type>": {
         "combine": [
         {
@@ -302,7 +302,7 @@ If some parts of the source documents are repeated, they can be factorised. For 
 
 ```json
   …
-  "documents": {
+  "terms": {
     "<terms type>": 
       "executeClientScripts": "…",
       "filter": "…",
@@ -322,7 +322,7 @@ If some parts of the source documents are repeated, they can be factorised. For 
 
 ## Terms type
 
-Great, your terms declaration is now almost complete! You simply need to write it under the appropriate terms type in the `documents` JSON object within the service declaration.
+Great, your terms declaration is now almost complete! You simply need to write it under the appropriate terms type in the `terms` JSON object within the service declaration.
 
 In order to distinguish between the many terms that can be associated with a service and enable cross-services comparison of similar terms, we maintain a unique list of terms types in a [dedicated repository](https://github.com/OpenTermsArchive/terms-types).
 

@@ -9,4 +9,4 @@ aliases: /guidelines/targeting/
 
 Yes.
 
-For example, documents that would start applying at date in the future are legitimate candidates for tracking. You can this way track if their terms change even before they are applied.
+For example, terms that would start applying at date in the future are legitimate candidates for tracking. You can this way track if their terms change even before they are applied.

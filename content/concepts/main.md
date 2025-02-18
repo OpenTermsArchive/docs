@@ -46,7 +46,7 @@ A **declaration** also contains some metadata on the **service** on which the **
 > ```json
 > {
 >   "name": "Open Terms Archive",
->   "documents": {
+>   "terms": {
 >     "Privacy Policy": {
 >       "fetch": "https://opentermsarchive.org/en/privacy-policy",
 >       "select": ".textcontent"

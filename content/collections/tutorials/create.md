@@ -42,7 +42,7 @@ By the end, you'll have a working collection that tracks changes to a service's 
     ```json
     {
       "name": "Open Terms Archive",
-      "documents": {
+      "terms": {
         "Privacy Policy": {
           "fetch": "https://opentermsarchive.org/en/privacy-policy",
           "select": ".textcontent"
