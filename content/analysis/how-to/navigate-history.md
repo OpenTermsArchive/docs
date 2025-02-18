@@ -48,7 +48,7 @@ For this guide, we will use the example of the Demo collection. The terms of thi
 
 ### Notes
 
-- For long documents, unchanged paragraphs will not be displayed by default. You can manually make them appear by clicking on the small arrows just above or just below the displayed paragraphs:
+- For long terms, unchanged paragraphs will not be displayed by default. You can manually make them appear by clicking on the small arrows just above or just below the displayed paragraphs:
 
   ![Expand unchanged paragraphs on source diff view](/images/navigate-history/expand-source.png)  
 

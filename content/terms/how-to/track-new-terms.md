@@ -82,8 +82,8 @@ Once you have the [service name](#service-name) and the [service ID](#service-id
 ```json
 {
   "name": "<service name>",
-  "documents": {}
+  "terms": {}
 }
 ```
 
-Within the `documents` JSON object, you will now declare terms.
+Within the `terms` JSON object, you will now declare terms.

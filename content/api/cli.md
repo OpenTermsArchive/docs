@@ -10,7 +10,7 @@ Once the engine module is installed as a dependency within another module, the `
 In these commands:
 
 - `<service_id>` is the case sensitive name of the service declaration file without the extension. For example, for `Twitter.json`, the service ID is `Twitter`.
-- `<terms_type>` is the property name used under the `documents` property in the declaration to declare a terms. For example, in the getting started declaration, the terms type declared is `Privacy Policy`.
+- `<terms_type>` is the property name used under the `terms` property in the declaration to declare a terms. For example, in the getting started declaration, the terms type declared is `Privacy Policy`.
 
 ## Tracking terms
 
