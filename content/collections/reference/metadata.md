@@ -17,7 +17,7 @@ As an example, see the [complete metadata file](https://github.com/OpenTermsArch
     name="id"
     type="string"
     description="Unique identifier derived from name (acronyms, dash-separated)."
-    example="pga"
+    example="demo"
     required=true
 >}}
 
@@ -25,7 +25,7 @@ As an example, see the [complete metadata file](https://github.com/OpenTermsArch
     name="name"
     type="string"
     description="Display name of the collection."
-    example="Platform Governance Archive"
+    example="Demo Collection"
     required=true
 >}}
 
@@ -33,7 +33,7 @@ As an example, see the [complete metadata file](https://github.com/OpenTermsArch
     name="tagline"
     type="string"
     description="Concise description of collection topic."
-    example="Major global social media services"
+    example="Services used by Open Terms Archive"
     required=true
 >}}
 
@@ -57,14 +57,10 @@ As an example, see the [complete metadata file](https://github.com/OpenTermsArch
     name="description"
     type="string"
     description="Detailed description of the collection"
-    example=`The **Platform Governance Archive** (PGA) collection tracks the terms of major global social media services.
-
-This data is maintained and analysed by the [Platform Governance Archive](https://www.platformgovernancearchive.org/) at the Universität Bremen's [Center for Media Communication and Information Research (ZeMKI)](https://www.uni-bremen.de/zemki).
-
-This initiative offers researchers, journalists and citizens the tools to analyze how platforms structure and regulate communication and interaction in our societies.
-
-It also aims to promote greater transparency and accountability of these powerful digital services.
-`
+    example=`    The **Demo** collection tracks changes to the terms of use of services used by Open Terms Archive.
+    
+    This provides a reference collection for best practices and enables the Open Terms Archive Core Team to be a user of the software it produces.
+    `
     required=false
 >}}
 
@@ -72,7 +68,7 @@ It also aims to promote greater transparency and accountability of these powerfu
     name="dataset"
     type="uri"
     description="URL to the dataset releases."
-    example="https://github.com/OpenTermsArchive/pga-versions/releases"
+    example="https://github.com/OpenTermsArchive/demo-versions/releases"
     required=false
 >}}
 
@@ -80,7 +76,7 @@ It also aims to promote greater transparency and accountability of these powerfu
     name="declarations"
     type="uri"
     description="URL to the declarations repository."
-    example="https://github.com/OpenTermsArchive/pga-declarations"
+    example="https://github.com/OpenTermsArchive/demo-declarations"
     required=false
 >}}
 
@@ -88,7 +84,7 @@ It also aims to promote greater transparency and accountability of these powerfu
     name="versions"
     type="uri"
     description="URL to the versions repository."
-    example="https://github.com/OpenTermsArchive/pga-versions"
+    example="https://github.com/OpenTermsArchive/demo-versions"
     required=false
 >}}
 
@@ -96,7 +92,7 @@ It also aims to promote greater transparency and accountability of these powerfu
     name="snapshots"
     type="uri"
     description="URL to the snapshots repository."
-    example="https://github.com/OpenTermsArchive/pga-snapshots"
+    example="https://github.com/OpenTermsArchive/demo-snapshots"
     required=false
 >}}
 
@@ -111,7 +107,8 @@ It also aims to promote greater transparency and accountability of these powerfu
 {{< configOption
     name="logo"
     type="uri"
-    description="URL to the collection's logo. Optimized PNG transparent image (min width 240px)."
+    description="URL to the collection's logo. Optimized PNG transparent image (minimum width 240px)."
+    example="https://opentermsarchive.org/images/logo/logo-open-terms-archive-black.png"
     required=false
 >}}
 
@@ -133,6 +130,14 @@ It also aims to promote greater transparency and accountability of these powerfu
     name="i18n"
     type="object"
     description="Internationalization of any of the Metadata properties (except i18n itself) for different language codes"
+    example=`    fr:
+      name: Démo
+      tagline: Services utilisés par Open Terms Archive
+      governance:
+        Ministry for Europe and Foreign Affairs:
+          name: Ministère de l'Europe et des Affaires étrangères
+          url: https://www.diplomatie.gouv.fr
+    `
     required=false
 >}}
 
@@ -159,8 +164,8 @@ It also aims to promote greater transparency and accountability of these powerfu
 {{< configOption
     name="serverLocation"
     type="string"
-    description="The geographic location of the tracking server (city name, ISO 3166-2 country code)."
-    example="London, GB"
+    description="The geographic location of the tracking server (city name and ISO 3166-2 country code)."
+    example="Paris, FR"
     required=true
 >}}
 
@@ -188,7 +193,7 @@ It also aims to promote greater transparency and accountability of these powerfu
 {{< configOption
     name="logo"
     type="uri"
-    description="URL to the entity's logo. Optimized PNG transparent image (min width 240px)."
+    description="URL to the entity's logo. Optimized PNG transparent image (minimum width 240px)."
     example="https://opentermsarchive.org/images/logo/logo-open-terms-archive-black.png"
     required=false
 >}}
@@ -199,5 +204,5 @@ It also aims to promote greater transparency and accountability of these powerfu
     description="Roles of the entity within the governance, see [collection governance](https://docs.opentermsarchive.org/collections/reference/governance/)"
     allowedValues="`host`, `administrator`, `curator`, `maintainer`, `sponsor`"
     example="[host, administrator]"
-    required=false
+    required=true
 >}}
