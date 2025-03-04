@@ -8,7 +8,7 @@ aliases: /collections/metadata/
 
 This reference documentation details all available metadata fields that can be specified in a collection's metadata file.
 
-As an example, see the [complete metadata file](https://github.com/OpenTermsArchive/demo-declarations/blob/main/metadata.yml) of the [Demo collection](https://github.com/OpenTermsArchive/demo-declarations).
+As an example, see the [complete metadata file](https://github.com/OpenTermsArchive/demo-declarations/blob/main/metadata.yml) and the resulting [rendered description](https://opentermsarchive.org/en/collections/demo/) of the Demo collection.
 
 
 ## Fields
