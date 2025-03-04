@@ -122,7 +122,7 @@ The examples given throughout this reference can be seen in context in the [comp
 {{< configOption
     name="governance"
     type="object"
-    description="Map of organizations involved in the collection's governance, with organization names as keys governance object, see [Governance](#governance) section."
+    description="Map of organizations involved in the collection's governance, with organization names as keys and [governance objects](#governance) as values."
     required=false
 >}}
 
