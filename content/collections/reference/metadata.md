@@ -115,20 +115,20 @@ The examples given throughout this reference can be seen in context in the [comp
 {{< configOption
     name="trackingPeriods"
     type="array of objects"
-    description="trackingPeriods object, see [TrackingPeriods](#trackingperiods) section."
+    description="List of time periods during which terms were tracked, with their tracking configuration. Gaps between periods indicate times when tracking was interrupted. See [TrackingPeriods]({{< relref \"#trackingperiods\" >}}) section."
     required=false
 >}}
 
 {{< configOption
     name="governance"
-    type="object"
-    description="Map of organizations involved in the collection's governance, with organization names as keys and [governance objects](#governance) as values."
+    type="object of objects"
+    description="Map of organizations involved in the collection's governance, with organization names as keys and governance objects as values. See [Governance]({{< relref \"#governance\" >}}) section."
     required=false
 >}}
 
 {{< configOption
     name="i18n"
-    type="object"
+    type="object of objects"
     description="Internationalization of any of the Metadata properties (except i18n itself) for different language codes"
     example=`    fr:
       name: Démo
