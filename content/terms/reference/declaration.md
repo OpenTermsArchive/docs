@@ -1,355 +1,218 @@
 ---
-title: "Declaration format"
+title: "Service declaration"
 aliases: "/terms/reference/"
 ---
 
-# Terms declaration format reference
+# Service declaration
 
-Terms are declared in a service declaration file, under the `terms` property.
+This reference documentation details all available properties that can be specified in a service's declaration file.
 
-Most of the time, terms are written in only one source document (for example [Facebook Terms of Service](https://www.facebook.com/legal/terms)) but sometimes terms can be spread across multiple online source documents, and their combination constitutes the terms (for example [Facebook Community Guidelines](https://transparency.fb.com/policies/community-standards/)).
+The examples given throughout this reference can be seen in context in the [declarations files](https://github.com/OpenTermsArchive/demo-declarations/tree/main/declarations) from the [Demo collection](https://github.com/OpenTermsArchive/demo-declarations)
 
-## Source document
+## Properties
 
-The way in which a source document is obtained is defined in a JSON object:
+{{< configOption
+    name="name"
+    type="string"
+    description="The name of the service."
+    example="Open Terms Archive"
+    required=true
+/>}}
 
-```json
-{
-  "fetch": "The URL where the document can be found",
-  "executeClientScripts": "A boolean to execute client-side JavaScript loaded by the document before accessing the content, in case the DOM modifications are needed to access the content; defaults to false (fetch HTML only)",
-  "filter": "An array of service specific filter function names",
-  "remove": "A CSS selector, a range selector or an array of selectors that target the insignificant parts of the document that has to be removed. Useful to remove parts that are inside the selected parts",
-  "select": "A CSS selector, a range selector or an array of selectors that target the meaningful parts of the document, excluding elements such as headers, footers and navigation"
-}
-```
+{{< configOption
+    name="terms"
+    type="object of objects"
+    description=`Map of terms associated with a service, where keys are standardized term types (e.g., "Privacy Policy", "Terms of Service"), and values are term objects containing the configuration for fetching and processing each document, as detailed in the [Terms declaration]({{< relref \"#terms-declaration\" >}}) section.
 
-- For HTML files, `fetch` and `select` are mandatory.
-- For PDF files, only `fetch` is mandatory.
-
-Let’s start by defining these keys!
-
-## `fetch`
-
-This property should simply contain the URL at which the terms you want to track can be downloaded. HTML and PDF files are supported.
-
-When terms coexist in different languages and jurisdictions, please refer to the [scope of the collection]({{< relref "collections/reference/metadata" >}}) to which you are contributing. This scope is usually defined in the README.
-
-## `select`
-
-_This property is not needed for PDF documents._
-
-Most of the time, contractual documents are exposed as web pages, with a header, a footer, navigation menus, possibly ads… We aim at tracking only the significant parts of the document. In order to achieve that, the `select` property allows to extract only those parts in the process of [converting from snapshot to version](https://opentermsarchive.org/#how-it-works).
-
-The `select` value can be either a [CSS selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors), a [range selector](#range-selectors) or an array of those.
-
-### CSS selectors
-
-CSS selectors should be provided as a string. See the [specification](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) for how to write CSS selectors.
-
-> For example, the following selector will select the content in the `<main>` tag of the HTML document:
->
-> ```json
-> "select": "main"
-> ```
-
-### Range selectors
-
-A range selector is defined with a _start_ and an _end_ CSS selector. It is also necessary to define if the range starts before or after the element targeted by the _start_ CSS selector and to define if it ends before or after the element targeted by the _end_ CSS selector.
-
-To that end, a range selector is a JSON object containing two keys out of the four that are available: `startBefore`, `startAfter`, `endBefore` and `endAfter`.
-
-```json
-{
-  "start[Before|After]": "<CSS selector>",
-  "end[Before|After]": "<CSS selector>"
-}
-```
-
-> For example, the following selector will select the content between the element targeted by the CSS selector `#privacy-eea`, including it, and the element targeted by the CSS selector `footer`, excluding it:
->
-> ```json
-> {
->   "startBefore": "#privacy-eea",
->   "endBefore": "footer"
-> }
-> ```
-
-## `remove`
-
-_This property is optional._
-
-Beyond [selecting a subset of a web page](#select), some documents will have non-significant parts in the middle of otherwise significant parts. For example, they can have “go to top” links or banner ads. These can be removed by listing [CSS selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors), [range selectors](#range-selectors) or an array of them under the `remove` property.
-
-### Example
-
-Let's assume a web page contains the following content:
-
-```html
-<main>
-  <div class="filter-holder">
-    <select class="filter-options">
-        <option value="https://www.example.com/policies/user-agreement" selected>User Agreement</option>
-        <option value="https://www.example.com/policies/privacy-policy">Privacy Policy</option>
-        <option value="https://www.example.com/policies/content-policy">Content Policy</option>
-        <option value="https://www.example.com/policies/broadcasting-content-policy">Broadcasting Content Policy</option>
-    </select>
-  </div>
-  <h1>User Agreement</h1>
-  <div>…terms…</div>
-</main>
-```
-
-If only `main` is used in `select`, the following version will be extracted:
-
-```md
-User Agreement Privacy Policy Content Policy Broadcasting Content Policy Moderator Guidelines Transparency Report 2017 Transparency Report 2018 Guidelines for Law Enforcement Transparency Report 2019
-
-User Agreement
-==============
-
-…terms…
-```
-
-Whereas we want instead:
-
-```md
-User Agreement
-==============
-
-…terms…
-```
-
-This result can be obtained with the following declaration:
-
-```json
-{
-  "fetch": "https://example.com/user-agreement",
-  "select": "main",
-  "remove": ".filter-holder"
-}
-```
-
-### Complex selectors examples
-
-```json
-{
- "fetch": "https://support.google.com/adsense/answer/48182",
- "select": ".article-container",
- "remove": ".print-button, .go-to-top"
-}
-```
-
-```json
-{
- "fetch": "https://www.wechat.com/en/service_terms.html",
- "select": "#agreement",
- "remove": {
-   "startBefore": "#wechat-terms-of-service-usa-specific-terms-",
-   "endBefore": "#wechat-terms-of-service-european-union-specific-terms-"
- }
-}
-```
-
-```json
-{
- "fetch": "https://fr-fr.facebook.com/legal/terms/plain_text_terms",
- "select": "div[role=main]",
- "remove": [
-   {
-     "startBefore": "[role=\"separator\"]",
-     "endAfter": "body"
-   },
-   "[style=\"display:none\"]"
- ]
-}
-```
-
-## `executeClientScripts`
-
-_This property is optional._
-
-In some cases, the content of the document is only loaded (or is modified dynamically) by client scripts.
-When set to `true`, this boolean property loads the page in a headless browser to load all assets and execute client scripts before trying to get the document contents.
-
-Since the performance cost of this approach is high, it is set to `false` by default, relying on the HTML content only.
-
-## `filter`
-
-_This property is optional._
-
-Finally, some documents will need more complex filtering beyond simple element selection and removal, for example to remove noise (changes in textual content that are not meaningful to the terms of services). Such filters are declared as JavaScript functions that modify the downloaded web page through the [DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model).
-
-Filters take the document DOM and the terms declaration as parameters and are:
-
-- **in-place**: they modify the document structure and content directly;
-- **idempotent**: they should return the same document structure and content even if run repeatedly on their own result.
-
-Filters are loaded automatically from files named after the service they operate on. For example, filters for the Meetup service, which is declared in `declarations/Meetup.json`, are loaded from `declarations/Meetup.filters.js`.
-
-The generic function signature for a filter is:
-
-```js
-export [async] function filterName(document, documentDeclaration)
-```
-
-Each filter is exposed as a named function export that takes a `document` parameter and behaves like the `document` object in a browser DOM. These functions can be `async`, but they will still run sequentially. The whole document declaration is passed as second parameter.
-
-> The `document` parameter is actually a [JSDOM](https://github.com/jsdom/jsdom) document instance.
-
-You can learn more about usual noise and ways to handle it [in the guidelines]({{< relref "/terms/guidelines/declaring#usual-noise" >}}).
-
-### Example
-
-Let's assume a service adds a unique `clickId` parameter in the query string of all link destinations. These parameters change on each page load, leading to recording noise in versions. Since links should still be recorded, it is not appropriate to use `remove` to remove the links entirely. Instead, a filter will manipulate the links destinations to remove the always-changing parameter. Concretely, the goal is to apply the following filter:
-
-```diff
-- Read the <a href="https://example.com/example-page?clickId=349A2033B&lang=en">list of our affiliates</a>.
-+ Read the <a href="https://example.com/example-page?lang=en">list of our affiliates</a>.
-```
-
-The code below implements this filter:
-
-```js
-function removeTrackingIdsQueryParam(document) {
-  const QUERY_PARAM_TO_REMOVE = 'clickId';
-
-  document.querySelectorAll('a').forEach(link => {  // iterate over every link in the page
-    const url = new URL(link.getAttribute('href'), document.location);  // URL is part of the DOM API, see https://developer.mozilla.org/en-US/docs/Web/API/URL
-    const params = new URLSearchParams(url.search);  // URLSearchParams is part of the DOM API, see https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
-
-    params.delete(QUERY_PARAM_TO_REMOVE);  // we use the DOM API instead of RegExp because we can't know in advance in which order parameters will be written
-    url.search = params.toString();  // store the query string without the parameter
-    link.setAttribute('href', url.toString());  // write the destination URL without the parameter
-  });
-}
-```
-
-### Example usage of declaration parameter
-
-The second parameter can be used to access the defined document URL or selector inside the filter.
-
-Let's assume a service stores some of its legally-binding terms in images. To track these changes properly, images should be stored as part of the terms. By default, images are not stored since they significantly increase the document size. The filter below will store images inline in the terms, encoded in a [data URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs). In order to download the images for conversion, the base URL of the web page is needed to resolve relative links. This information is obtained from the declaration.
-
-```js
-import fetch from 'isomorphic-fetch';
-
-export async function convertImagesToBase64(document, documentDeclaration) {
-  const { fetch: baseUrl, select: selector } = documentDeclaration;
-  
-  const images = Array.from(document.querySelectorAll(`${selector} img`));
-
-  return Promise.all(images.map(async ({ src }, index) => {
-    const imageAbsoluteUrl = new URL(src, baseUrl).href;
-    const response = await fetch(imageAbsoluteUrl);
-    const mimeType = response.headers.get('content-type');
-    const content = await response.arrayBuffer();
-
-    const base64Image = btoa(String.fromCharCode(...new Uint8Array(content)));
-
-    images[index].src = `data:${mimeType};base64,${base64Image}`;
-  }));
-}
-```
-
-## Terms with a single source document
-
-In the case where terms are extracted from one single source document, they are declared by simply declaring that source document:
-
-```json
-  …
-  "terms": {
-    "<terms type>": {
-      "fetch": "…",
-      "executeClientScripts": "…",
-      "filter": "…",
-      "remove": "…",
-      "select": "…"
-    }
-  }
-  …
-```
-
-## Terms with multiple source documents
-
-When the terms are spread across multiple source documents, they should be declared by declaring their combination:
-
-```json
-  …
-  "terms": {
-    "<terms type>": {
-        "combine": [
-        {
-          "fetch": "…",
-          "executeClientScripts": "…",
-          "filter": "…",
-          "remove": "…",
-          "select": "…"
-        },
-        {
-          "fetch": "…",
-          "executeClientScripts": "…",
-          "filter": "…",
-          "remove": "…",
-          "select": "…"
-        }
-      ]
-    }
-  }
-  …
-```
-
-If some parts of the source documents are repeated, they can be factorised. For example, it is common for the structure of HTML pages to be similar from page to page, so `select`, `remove` and `filter` would be the same. These elements can be shared instead of being duplicated:
-
-```json
-  …
-  "terms": {
-    "<terms type>": 
-      "executeClientScripts": "…",
-      "filter": "…",
-      "remove": "…",
-      "select": "…",
-      "combine": [
-        {
-          "fetch": "…",
-        },
-        {
-          "fetch": "…",
-        }
-      ]
-  }
-  …
-```
-
-## Terms type
-
-Great, your terms declaration is now almost complete! You simply need to write it under the appropriate terms type in the `terms` JSON object within the service declaration.
-
-In order to distinguish between the many terms that can be associated with a service and enable cross-services comparison of similar terms, we maintain a unique list of terms types in a [dedicated repository](https://github.com/OpenTermsArchive/terms-types).
+To facilitate cross-service comparisons and ensure consistency, a standardized list of term types is maintained in a [dedicated repository](https://github.com/OpenTermsArchive/terms-types).
 
 Please note, the terms type may differ from the exact name provided by the service, but it should align with the underlying commitment. For example, some providers might call “Terms and Conditions” or “Terms of Use” what some others call “Terms of Service”.
+    `
+    required=true
+    allowedValues="See the [terms-types repository](https://github.com/OpenTermsArchive/terms-types)."
+>}}
+```json
+"terms": {
+    "Terms of Service": {
+      "fetch": "https://opencollective.com/tos",
+      "select": ".markdown"
+    },
+    "Privacy Policy": {
+      "fetch": "https://opencollective.com/privacypolicy",
+      "select": ".markdown"
+    }
+}
+```
+{{< /configOption >}}
 
-If the terms you want to add don't match an existing type, you can [suggest a new one](https://github.com/OpenTermsArchive/terms-types/blob/main/CONTRIBUTING.md).
+---
 
-## Testing your declaration
+### Terms declaration
 
-You can test the declarations you created or changed by running the following command:
+{{< configOption
+    name="fetch"
+    type="uri"
+    description="The URL where the terms document can be downloaded."
+    example="https://opentermsarchive.org/en/privacy-policy"
+    required=true
+/>}}
 
-```sh
-npm test [$service_id [$another_service_id …]]
+{{< configOption
+    name="select"
+    type="string, object or array"
+    description=`
+The way to select the parts of the document to extract. Can be:
+
+- a CSS selector string. See the [CSS Selectors specification](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+- a range selector object. See the [range selector]({{< relref \"#range-selector\" >}}) section
+- an array of those`
+    required="required for HTML documents"
+>}}
+As a direct CSS selector:
+```json
+"select": "#article-contents"
 ```
 
-Since this operation fetches documents and could be long, you can also validate the declaration structure only:
-
-```sh
-npm run test:schema [$service_id [$another_service_id …]]
+As a range selector object:
+```json
+"select": {
+    "startBefore": "h1",
+    "endBefore": "#toc-heading"
+}
 ```
 
-## Linting
+As an array of those:
+```json
+"select": [
+    "#article-contents",
+    {
+        "startBefore": "h1",
+        "endBefore": "#toc-heading"
+    }
+]
+```
+{{< /configOption >}}
 
-In order to ensure consistency across declarations, all declarations files have to be formatted homogeneously.
+{{< configOption
+    name="executeClientScripts"
+    type="boolean"
+    description=`Boolean flag to execute client-side JavaScript before accessing content.
 
-In order to achieve this, you can use the following command:
+When enabled, this loads the page in a headless browser to execute client-side scripts and load dynamic content, which is necessary when JavaScript modifies or loads content after the initial page load.`
+    default=false
+    example="true"
+/>}}
 
-```sh
-npm run lint [$service_id [$another_service_id …]]
+{{< configOption
+    name="remove"
+    type="string, object or array"
+    description=`
+The way to remove the parts of the document that are not part of the terms and can be considered as noise. Can be:
+
+- a CSS selector string. See the [CSS Selectors specification](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+- a range selector object. See the [range selector]({{< relref \"#range-selector\" >}}) section
+- an array of those`
+>}}
+As a direct CSS selector:
+```json
+"remove": ".nav, .breadcrumb"
+```
+
+As a range selector object:
+```json
+"remove": {
+    "startBefore": ".nav",
+    "endBefore": ".breadcrumb"
+}
+```
+
+As an array of those:
+```json
+"remove": [
+    ".nav, .breadcrumb",
+    {
+        "startBefore": "#contact-us",
+        "endBefore": "#footer"
+    }
+]
+```
+{{< /configOption >}}
+
+{{< configOption
+    name="filter"
+    type="array of strings"
+    description="Array of filter function names to apply. Function will be executed in the order of the array. See the [Filters]({{< relref \"/terms/explanation/filters\" >}}) section for more information."
+    example="[\"filterName1\", \"filterName2\"]"
+/>}}
+
+{{< configOption
+    name="combine"
+    type="array of objects"
+    description=`
+An array of terms declaration objects that will be combined into a single terms document. Each object in the array can contain all the same properties as a regular terms  declaration (except "combine").
+
+Common properties (can be a combination of "select", "remove", "filter" and "executeClientScripts") that are shared across all source documents can be factorized by declaring them at the root level of the terms declaration.
+    `
+>}}
+```json
+"combine": [
+    {
+        "fetch": "https://example.com/terms/part1",
+        "select": "#main-content",
+        "remove": ".ads"
+    },
+    {
+        "fetch": "https://example.com/terms/part2",
+        "select": "#main-content",
+        "remove": ".ads"
+    }
+]
+```
+{{< /configOption >}}
+
+---
+
+### Range selector
+
+{{< configOption
+    name="startBefore"
+    type="CSS selector"
+    description="The CSS selector for the element before which the range starts."
+    example="#privacy-eea"
+    required="either `startBefore` or `startAfter` is required"
+/>}}
+
+{{< configOption
+    name="startAfter"
+    type="CSS selector"
+    description="The CSS selector for the element after which the range starts."
+    example="#privacy-eea"
+    required="either `startBefore` or `startAfter` is required"
+/>}}
+
+{{< configOption
+    name="endBefore"
+    type="CSS selector"
+    description="The CSS selector for the element before which the range ends."
+    example="footer"
+    required="either `endBefore` or `endAfter` is required"
+/>}}
+
+{{< configOption
+    name="endAfter"
+    type="CSS selector"
+    description="The CSS selector for the element after which the range ends."
+    example="footer"
+    required="either `endBefore` or `endAfter` is required"
+/>}}
+
+#### Example
+
+To capture content starting from and including a privacy section up until but excluding the footer:
+
+```json
+{
+  "startBefore": "#privacy-section",
+  "endBefore": "footer"
+}
 ```
