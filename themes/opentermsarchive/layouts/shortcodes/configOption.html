@@ -1,28 +1,39 @@
+{{ $name := .Get "name" }}
+{{ $type := .Get "type" }}
+{{ $required := .Get "required" }}
+{{ $allowedValues := .Get "allowedValues" }}
+{{ $default := .Get "default" }}
+{{/* Get description either from attribute or nested content */}}
+{{ $description := .Get "description" }}
+{{ $example := .Get "example" }}
+
 <div class="config-option">
     <div class="config-option-name">
-        <code>{{ .Get "name" }}</code>
-        <span class="config-option-type">{{ .Get "type" }}</span>
-        {{ if .Get "required" }}
-        <span class="config-option-required">Required</span>
+        <code>{{ $name }}</code>
+        <span class="config-option-type">{{ $type }}</span>
+        {{ with $required }}
+            <span class="config-option-required">{{ if eq . true }}required{{ else }}{{ . | markdownify }}{{ end }}</span>
         {{ end }}
     </div>
-    <div class="config-option-description">{{ .Get "description" | markdownify }}</div>
-    <div class="config-option-details">
-        {{ if .Get "default" }}
-        <div class="config-option-default"><span>Default:</span>{{ .Get "default" | markdownify}}</div>
+    <div class="config-option-description">
+        {{ $description | markdownify | safeHTML }}
+    </div>
+    <div class="config-option-details config-option-details__{{ if .Inner }}full{{ end }}">
+        {{ if $default }}
+        <div class="config-option-default"><span>Default:</span>{{ $default | markdownify}}</div>
         {{ end }}
-        {{ if .Get "example" }}
+        {{ if or $example .Inner }}
         <div class="config-option-example"><span>Example:</span>
-            {{ $example := .Get "example" }}
-            {{ if not (strings.Contains $example "\n") }}
-                <code>{{ $example | markdownify }}</code>
+            {{ if .Inner }}
+                {{ .Inner | markdownify }}
             {{ else }}
-                {{ $example | markdownify }}
+                <code>{{ $example | markdownify }}</code>
             {{ end }}
         </div>
         {{ end }}
-        {{ if .Get "allowedValues" }}
-        <div class="config-option-allowed-values"><span>Allowed values:</span>{{ .Get "allowedValues" | markdownify }}</div>
+        {{ if $allowedValues }}
+        <div class="config-option-allowed-values"><span>Allowed values:</span><span class="config-option-allowed-values-list">{{ $allowedValues | markdownify }}</span></div>
         {{ end }}
     </div>
 </div>
+

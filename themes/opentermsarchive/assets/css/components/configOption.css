@@ -6,8 +6,10 @@
   box-shadow: inset 0 1px var(--colorBlack200);
 }
 
-.config-option .config-option-name code {
+.config-option-name code {
   font-weight: 600;
+  overflow-y: auto;
+  font-size: 1em;
 }
 
 .config-option-type {
@@ -18,12 +20,19 @@
 
 .config-option-required {
   padding-left: 1rem;
-  text-transform: lowercase;
   color: rgb(154, 103, 0);
+}
+
+.config-option-required code {
+  font-weight: 400;
 }
 
 .config-option-details {
   display: flex;
+}
+
+.config-option-details__full {
+  flex-direction: column;
 }
 
 .config-option-description,
@@ -35,7 +44,7 @@
 
 .config-option-example code,
 .config-option-default code,
-.config-option-allowed-values code {
+.config-option-allowed-values-list {
   margin-left: 0.4em;
   display: inline-block;
 }
@@ -44,4 +53,13 @@
 .config-option-default,
 .config-option-allowed-values {
   font-size: 0.85em;
+}
+
+.config-option-details_full .config-option-example {
+  overflow-y: auto;
+  width: 100%;
+}
+
+.config-option-details_full .config-option-example .highlight {
+  margin-top: 0.4em;
 }
