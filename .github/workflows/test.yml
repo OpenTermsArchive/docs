@@ -30,5 +30,3 @@ jobs:
           extended: true # Prevent error building site: POSTCSS: failed to transform, see https://gohugo.io/troubleshooting/faq/#i-get-this-feature-is-not-available-in-your-current-hugo-version
       - name: Build with Hugo
         run: npm run build
-      - name: Build JSDoc
-        run: npm run jsdoc
