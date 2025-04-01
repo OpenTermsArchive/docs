@@ -28,4 +28,4 @@ Supported operating systems:
 
 ## Location
 
-To align with our [third design principle]({{< relref "/concepts/design-principles/#3-obtain-documents-like-a-user-would" >}}), servers should be deployed in geographic regions that align with the jurisdiction the collection targets. This is crucial because some services deliver different versions of documents based on the server's location, even when the documents are supposed to be identical. Therefore, ensure your server is physically located in a country within the jurisdiction that the collection targets.
+To align with our [third design principle]({{< relref "concepts/design-principles#3-obtain-documents-like-a-user-would" >}}), servers should be deployed in geographic regions that align with the jurisdiction the collection targets. This is crucial because some services deliver different versions of documents based on the server's location, even when the documents are supposed to be identical. Therefore, ensure your server is physically located in a country within the jurisdiction that the collection targets.
