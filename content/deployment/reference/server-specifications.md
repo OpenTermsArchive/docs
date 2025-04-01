@@ -17,7 +17,7 @@ Approximately 750MB of storage is required for the engine itself, with the remai
 
 Storage requirements typically grow at a rate of less than 0.5MB per tracked terms per month on average. This growth rate varies depending on the type of service being tracked:
 
-- Large digital services, like those in the [PGA collection](https://github.com/OpenTermsArchive/pga-declarations): ~1MB per terms per month
+- Very large online platforms with large legal teams and heavy layouts: ~1MB per terms per month
 - Standard collections: ~0.1-0.3MB per terms per month
 
 ## Operating system
@@ -28,4 +28,4 @@ Supported operating systems:
 
 ## Location
 
-To align with our [third design principle]({{< relref "concepts/design-principles#3-obtain-documents-like-a-user-would" >}}), servers should be deployed in geographic regions that align with the jurisdiction the collection targets. This is crucial because some services deliver different versions of documents based on the server's location, even when the documents are supposed to be identical. Therefore, ensure your server is physically located in a country within the jurisdiction that the collection targets.
+Servers should be physically located in geographic regions that align with the jurisdiction the collection targets to ensure to [obtain documents like a user would]({{< relref "concepts/design-principles#3-obtain-documents-like-a-user-would" >}}). This is crucial because some services deliver different versions of documents based on the location of the request, even when the documents are supposed to be identical.
