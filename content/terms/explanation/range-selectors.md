@@ -4,7 +4,7 @@ title: Range selectors
 
 ## Range selectors
 
-Content between two elements in a document can be selected using a range selector, regardless of their DOM position. When no unique wrapper element exists for the whole terms content and their is no easy way to select the content with only CSS selectors, range selectors can be utilized. The concept is inspired by the [Range API](https://developer.mozilla.org/en-US/docs/Web/API/Range), where content is defined by start and end points that may be inclusive or exclusive. The format is defined as a JSON object in the following way:
+When no unique wrapper element exists for the whole terms content, there is no easy way to select the content with only CSS selectors. Content between two elements in a document can be selected using a range selector, regardless of their DOM position. The concept is inspired by the DOM [Range API](https://developer.mozilla.org/en-US/docs/Web/API/Range), where content is defined by start and end points that may be included or excluded. The format is defined as a JSON object:
 
 ```json
 {

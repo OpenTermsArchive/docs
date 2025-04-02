@@ -11,7 +11,7 @@ Filters address this need by providing a way to programmatically clean up and no
 Filters take the document DOM and the terms declaration as parameters and are:
 
 - **in-place**: they modify the document structure and content directly;
-- **idempotent**: they should return the same document structure and content even if run repeatedly on their own result.
+- **idempotent**: they return the same document structure and content even if run repeatedly on their own result.
 
 Filters are loaded automatically from files named after the service they operate on. For example, filters for the Meetup service, which is declared in `declarations/Meetup.json`, are loaded from `declarations/Meetup.filters.js`.
 
