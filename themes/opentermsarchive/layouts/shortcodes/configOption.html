@@ -3,6 +3,7 @@
 {{ $required := .Get "required" }}
 {{ $allowedValues := .Get "allowedValues" }}
 {{ $default := .Get "default" }}
+{{ $reference := .Get "reference" }}
 {{/* Get description either from attribute or nested content */}}
 {{ $description := .Get "description" }}
 {{ $example := .Get "example" }}
@@ -20,7 +21,10 @@
     </div>
     <div class="config-option-details config-option-details__{{ if .Inner }}full{{ end }}">
         {{ if $default }}
-        <div class="config-option-default"><span>Default:</span>{{ $default | markdownify}}</div>
+            <div class="config-option-default">
+                <span>Default:</span>
+                <code>{{ $default | markdownify }}</code>
+            </div>
         {{ end }}
         {{ if or $example .Inner }}
         <div class="config-option-example"><span>Example:</span>
@@ -32,7 +36,14 @@
         </div>
         {{ end }}
         {{ if $allowedValues }}
-        <div class="config-option-allowed-values"><span>Allowed values:</span><span class="config-option-allowed-values-list">{{ $allowedValues | markdownify }}</span></div>
+            {{ $values := split $allowedValues "," }}
+            <div class="config-option-allowed-values"><span>Allowed values:</span>
+                <span class="config-option-allowed-values-list">
+                    {{ range $values }}
+                        <code>{{ . | markdownify }}</code>
+                    {{ end }}
+                </span>
+            </div>
         {{ end }}
     </div>
 </div>
