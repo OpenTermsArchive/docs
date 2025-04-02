@@ -9,7 +9,7 @@ Selectors are used in Open Terms Archive declarations to specify the parts of 
 
 ## What are selectors
 
-Selectors are used in the [`select`]({{< relref "terms/reference#select" >}}) and [`remove`]({{< relref "terms/reference#remove" >}}) keys of an Open Terms Archive declaration.
+Selectors are used in the [`select`]({{< relref "terms/references#select" >}}) and [`remove`]({{< relref "terms/references#remove" >}}) keys of an Open Terms Archive declaration.
 
 The “selectors” referred to are defined by the [W3C Selectors standard](https://www.w3.org/TR/selectors/), more commonly known as “CSS Selectors”.
 
@@ -164,7 +164,7 @@ If in doubt about a selector, prefer making a wide selection and then removing t
 
 ### Use range selectors
 
-[Range selectors]({{< relref "terms/reference#range-selectors" >}}) enable to select content that starts in one block and ends in another block that are not in the same tree. While they are more complex than element selectors, it is preferable to use a range selector whose start and end abide by the guidelines above than to use a bad plain selector.
+[Range selectors]({{< relref "terms/references#range-selectors" >}}) enable to select content that starts in one block and ends in another block that are not in the same tree. While they are more complex than element selectors, it is preferable to use a range selector whose start and end abide by the guidelines above than to use a bad plain selector.
 
 #### Example
 

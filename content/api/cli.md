@@ -50,7 +50,7 @@ To export the dataset into a ZIP file and publish it on GitHub releases:
 
 {{< configOption name="ota dataset --publish [--file <filename>]" description="Export and publish dataset to GitHub releases" example="`GITHUB_TOKEN=ghp_XXXXXXXXX npx ota dataset --publish`" />}}
 
-The `GITHUB_TOKEN` can also be defined in a [`.env` file]({{< relref "collections/reference/environment-variables" >}}).
+The `GITHUB_TOKEN` can also be defined in a [`.env` file]({{< relref "collections/references/environment-variables" >}}).
 
 To export, publish the dataset and remove the local copy that was created after it has been uploaded:
 

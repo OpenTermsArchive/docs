@@ -9,7 +9,7 @@ You are considering creating a new collection to track terms with Open Terms A
 
 ## Define metadata
 
-First of all, define the [metadata]({{< relref "collections/reference/metadata" >}}) of the collection you would like to create and keep them ready to be used when setting up the repositories.
+First of all, define the [metadata]({{< relref "collections/references/metadata" >}}) of the collection you would like to create and keep them ready to be used when setting up the repositories.
 
 ## Check existing collections
 
@@ -25,10 +25,10 @@ You can inform the community by posting on the instant messaging system, or [sen
 
 ## Define governance
 
-Setting up and maintaining a collection over time needs fulfilling certain tasks on a regular basis. These tasks are handled through roles. To make sure that all these roles are covered, define the [governance]({{< relref "collections/reference/governance" >}}) of your collection.
+Setting up and maintaining a collection over time needs fulfilling certain tasks on a regular basis. These tasks are handled through roles. To make sure that all these roles are covered, define the [governance]({{< relref "collections/references/governance" >}}) of your collection.
 
 At any time, feel free to ask for help or partners in the community.
 
 ## Create repositories
 
-See the [guide to create repositories]({{< relref "collections/how-to/create-repositories" >}}) for your collection.
+See the [guide to create repositories]({{< relref "collections/how-to-guides/create-repositories" >}}) for your collection.

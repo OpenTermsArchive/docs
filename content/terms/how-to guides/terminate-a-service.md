@@ -1,5 +1,5 @@
 ---
-title: How to terminate a service
+title: How to guides terminate a service
 linkTitle: Terminate a service
 ---
 

@@ -1,4 +1,4 @@
 ---
 title: How to guides
-weight: 1
+weight: 2
 ---

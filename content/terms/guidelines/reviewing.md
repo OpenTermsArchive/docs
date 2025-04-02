@@ -72,7 +72,7 @@ The pull request created will consist of fewer checks than those that add declar
 
 For pull requests that update declarations, you should focus should be on two things: history file and declaration.
 
-- **History file:** The history file is a JSON file that keeps track of a service declaration changes. It contains a `validUntil` property that specifies the date a specific version of a service declaration was last effective. You have to confirm that this date is the same as the date in the issue opened for the declaration when the bot couldn't track it for the first time. This issue is usually included in the pull request message. The history file is updated with every `update` pull request. You can find more information about the history file [here]({{< relref "terms/explanation/declarations-maintenance" >}}).
+- **History file:** The history file is a JSON file that keeps track of a service declaration changes. It contains a `validUntil` property that specifies the date a specific version of a service declaration was last effective. You have to confirm that this date is the same as the date in the issue opened for the declaration when the bot couldn't track it for the first time. This issue is usually included in the pull request message. The history file is updated with every `update` pull request. You can find more information about the history file [here]({{< relref "terms/explanations/declarations-maintenance" >}}).
 - **Declaration:** for `update` pull requests, you only look at the selectors to make sure they are **simple** and also verify the **generated version** is ok.
 
 ### Step-by-step Review Guide
@@ -84,7 +84,7 @@ For pull requests that update declarations, you should focus should be on two th
 5. Compare it with the `validUntil` property in the history file under the `Files changes` section of the pull request. If the dates are the same, proceed to approve the pull request.
 6. Merge the contribution.
 
-You can read more about maintaining declarations from the [official documentation]({{< relref "terms/explanation/declarations-maintenance" >}}).
+You can read more about maintaining declarations from the [official documentation]({{< relref "terms/explanations/declarations-maintenance" >}}).
 
 ## When to Make Changes to a Contribution
 
@@ -94,7 +94,7 @@ In some special cases, the correction may have to do with the service name. Such
 
 ### Editing a Service ID
 
-When contributing to the project, reviewers may need to modify the Service ID of a service that is being added for tracking. This is often necessary when the service being tracked is in a language other than English, such as Chinese or French. In these cases, the Service ID usually reflects the transliteration of the service name (written in the native language). The [documentation]({{< relref "terms/reference#service-id" >}}) provides more information on this. It is important to note that the contributor can be very crucial in providing an accurate transliteration of the service name especially if the reviewer does not know the service's native language.
+When contributing to the project, reviewers may need to modify the Service ID of a service that is being added for tracking. This is often necessary when the service being tracked is in a language other than English, such as Chinese or French. In these cases, the Service ID usually reflects the transliteration of the service name (written in the native language). The [documentation]({{< relref "terms/references#service-id" >}}) provides more information on this. It is important to note that the contributor can be very crucial in providing an accurate transliteration of the service name especially if the reviewer does not know the service's native language.
 
 Since the Service ID is used as the file name of the JSON file associated with the service, it is necessary to change the file name to reflect the transliteration. Here are the steps to follow:
 

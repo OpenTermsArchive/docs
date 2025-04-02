@@ -1,6 +1,6 @@
 ---
 title: "Service declaration"
-aliases: "/terms/reference/"
+aliases: "/terms/references/"
 ---
 
 # Service declaration
@@ -141,7 +141,7 @@ As an array of those:
 {{< configOption
     name="filter"
     type="array of strings"
-    description="Array of filter function names to apply. Function will be executed in the order of the array. See the [Filters]({{< relref \"/terms/explanation/filters\" >}}) section for more information."
+    description="Array of filter function names to apply. Function will be executed in the order of the array. See the [Filters]({{< relref \"terms/references/filters\" >}}) section for more information."
     example="[\"filterName1\", \"filterName2\"]"
 />}}
 
