@@ -1,6 +1,8 @@
 ---
 title: Define metadata
 weight: 2
+aliases:
+  - /collections/how-to/create/
 ---
 
 # How to define metadata

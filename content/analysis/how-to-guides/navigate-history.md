@@ -4,6 +4,7 @@ weight: 1
 aliases:
   - /navigate-history/
   - /terms/how-to-navigate-history/
+  - /analysis/how-to/navigate-history/
 ---
 
 # How to navigate history

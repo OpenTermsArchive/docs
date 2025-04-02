@@ -3,6 +3,7 @@ title: Be notified of terms changes
 aliases:
   - /subscribe-rss/
   - /terms/how-to-be-notified-of-terms-changes/
+  - /terms/how-to/be-notified/
 ---
 
 # How to be notified of terms changes
@@ -15,7 +16,7 @@ An RSS feed is a type of web page that contains information about the latest con
 
 To find out the address of the RSS feed you want to subscribe to:
 
-1. [Navigate]({{< relref "/analysis/how-to/navigate-history" >}}) to the page with the history of changes you are interested in.
+1. [Navigate]({{< relref "/analysis/how-to-guides/navigate-history" >}}) to the page with the history of changes you are interested in.
     - For example, for the GitHub Privacy Policy of the Demo collection, this would be [this page](https://github.com/OpenTermsArchive/demo-versions/commits/main/GitHub/Privacy%20Policy.md).
 2. Copy the address of that page from your browser’s address bar.
     - For example, for the GitHub Privacy Policy of the Demo collection, this would be `https://github.com/OpenTermsArchive/demo-versions/commits/main/GitHub/Privacy%20Policy.md`.

@@ -1,6 +1,8 @@
 ---
 title: Join the federation
 weight: 3
+aliases:
+  - /federation/how-to/join/
 ---
 
 # How to join the federation

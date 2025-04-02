@@ -1,6 +1,8 @@
 ---
 title: Deploy a collection
 weight: 1
+aliases:
+  - /deployment/how-to/deploy/
 ---
 
 # How to deploy a collection

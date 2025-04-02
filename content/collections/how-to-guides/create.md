@@ -1,6 +1,8 @@
 ---
 title: Create a collection
 weight: 3
+aliases:
+  - /collections/how-to/define-metadata/
 ---
 
 # How to create a collection

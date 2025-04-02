@@ -1,7 +1,9 @@
 ---
 title: Track new terms
 weight: 2
-aliases: /contributing-terms/
+aliases: 
+  - /contributing-terms/
+  - /terms/how-to/track-new-terms/
 ---
 
 # How to track new terms

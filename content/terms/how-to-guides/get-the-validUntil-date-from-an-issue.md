@@ -1,6 +1,8 @@
 ---
 title: How to guides get the `validUntil`
 linkTitle: Get the `validUntil` date
+aliases:
+  - /terms/how-to/get-the-validuntil-date-from-an-issue/
 ---
 
 # How to get the `validUntil` date

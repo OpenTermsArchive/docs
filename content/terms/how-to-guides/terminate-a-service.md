@@ -1,6 +1,8 @@
 ---
 title: How to guides terminate a service
 linkTitle: Terminate a service
+aliases:
+  - /terms/how-to/terminate-a-service/
 ---
 
 # How to terminate a service

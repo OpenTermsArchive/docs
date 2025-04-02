@@ -1,6 +1,8 @@
 ---
 title: Create repositories
 weight: 1
+aliases:
+  - /collections/how-to/create-repositories/
 ---
 
 # How to create collection repositories

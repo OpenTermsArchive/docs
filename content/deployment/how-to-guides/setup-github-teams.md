@@ -1,6 +1,8 @@
 ---
 title: Set up GitHub teams
 weight: 2
+aliases:
+  - /deployment/how-to/setup-github-teams/
 ---
 
 # How to set up GitHub teams for a collection

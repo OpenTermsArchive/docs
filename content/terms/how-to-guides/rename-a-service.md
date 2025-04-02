@@ -1,6 +1,8 @@
 ---
 title: How to guides rename a service
 linkTitle: Rename a service
+aliases:
+  - /terms/how-to/rename-a-service/
 ---
 
 # How to rename a service
