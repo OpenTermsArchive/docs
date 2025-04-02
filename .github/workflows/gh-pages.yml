@@ -46,9 +46,6 @@ jobs:
       - name: Build with Hugo
         run: npm run build
 
-      - name: Build JSDoc
-        run: npm run jsdoc
-
       - name: Print public files
         run: |
           cd public

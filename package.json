@@ -13,20 +13,20 @@
   "license": "CC BY-SA 4.0",
   "author": "Open Terms Archive",
   "scripts": {
-    "build": "hugo --minify",
+    "build": "npm run jsdoc && hugo --minify",
     "test": "npm run lint:markdown && npm run lint:css && npm run lint:js && npm run test:links",
     "pretest:links": "npm run build",
     "test:links": "linkinator ./public --recurse --verbosity error",
     "lint:markdown": "markdownlint *.md content/**/*.md",
     "lint:css": "stylelint \"themes/opentermsarchive/assets/css/*.css\"",
     "lint:js": "eslint themes/opentermsarchive/assets/js/",
-    "start:dev": "hugo serve --watch --logLevel debug --disableFastRender --ignoreCache",
-    "jsdoc": "npm install @opentermsarchive/engine@latest --no-save && jsdoc --configure .jsdoc.json"
+    "start:dev": "npm run jsdoc && hugo serve --watch --logLevel debug --disableFastRender --ignoreCache",
+    "jsdoc": "jsdoc2md --files './node_modules/@opentermsarchive/engine/src/**/*.js' --template scripts/jsdoc/template/node.hbs -g grouped --name-format -d 4 > content/api/node.md"
   },
   "devDependencies": {
     "eslint": "^8.31.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "jsdoc": "^4.0.0",
+    "jsdoc-to-markdown": "^9.1.1",
     "linkinator": "^5.0.1",
     "lucide": "^0.460.0",
     "markdownlint-cli": "^0.32.2",
@@ -35,6 +35,7 @@
     "stylelint-config-standard": "^29.0.0"
   },
   "dependencies": {
+    "@opentermsarchive/engine": "github:OpenTermsArchive/engine#main",
     "minireset.css": "^0.0.7",
     "postcss": "^8.4.19",
     "postcss-cli": "^10.1.0",
