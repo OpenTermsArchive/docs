@@ -35,7 +35,7 @@
     "stylelint-config-standard": "^29.0.0"
   },
   "dependencies": {
-    "@opentermsarchive/engine": "latest",
+    "@opentermsarchive/engine": "github:OpenTermsArchive/engine#main",
     "minireset.css": "^0.0.7",
     "postcss": "^8.4.19",
     "postcss-cli": "^10.1.0",
