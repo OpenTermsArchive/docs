@@ -2,7 +2,7 @@
 title: "Declaring terms"
 aliases:
   - /guidelines/declaring/
-  - /terms/guideline/declaring/
+  - /terms/guidelines/declaring/
 ---
 
 # Declaring terms
