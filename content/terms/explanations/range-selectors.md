@@ -23,63 +23,43 @@ Let's take an example to see when range selectors can be useful. Given the follo
 <body>
   <main>
     <!-- Breadcrumb Navigation -->
-    <div>
-      <ol>
-        <li><a href="/">Home</a></li>
-        <li><a href="/legal">Legal</a></li>
-        <li>Terms and Conditions</li>
-      </ol>
-    </div>
-
-    <!-- Sub Navigation -->
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <a href="/legal/terms">Terms and Conditions</a>
-          </li>
-          <li>
-            <a href="/legal/privacy">Privacy Policy</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li>Terms and Conditions</li>
+    </ul>
 
     <!-- Main Content -->
-    <h1><a id="terms-title" href="#terms-title">Example Terms</a></h1>
+    <h1 id="terms-title">Example Terms</h1>
     <p>Effective as of: January 1, 2024</p>
 
-    <h2><a id="section-1" href="#section-1">1. Introduction</a></h2>
-    <p>These are example terms and conditions.</p>
+    <h2>Authorized uses</h2>
+    <p>You can use this service in the following cases:</p>
 
-    <h2><a id="section-2" href="#section-2">2. Usage</a></h2>
-    <p>Sample usage guidelines go here.</p>
+    <ul>
+      <li>At home</li>
+      <li>In your office</li>
+      <li>In a coffee shop</li>
+    </ul>
   </main>
-
-
-  <footer id="page-footer">
-    <nav>
-      <div>
-        <ul>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </footer>
+  <div>
+    <ul id="footer-menu">
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
 </body>
 
 </html>
 ```
 
-In this case, there is no unique wrapper element for the terms content which is represented by all elements after the main title in the `main` element. Here selecting the whole `main` would result in selecting elements that are not part of the terms content, like the breadcrumb and sub navigation. The range selector can be used to select the terms content by specifying the main title `#terms-title` as the start point and the footer `#page-footer` as the end point. The selection starts *before* the main title, so it includes it, and ends *before* the footer, so it excludes it.
+In this case, there is no unique wrapper element for the terms content which is represented by all elements after the main title in the `main` element. Here selecting the whole `main` would result in selecting elements that are not part of the terms content, like the breadcrumb and sub navigation. The range selector can be used to select the terms content by specifying the main title `#terms-title` as the start point and the footer `#footer-menu` as the end point. The selection starts *before* the main title, so it includes it, and ends *before* the footer, so it excludes it.
 
 So the resulting range selector is:
 
 ```json
 {
   "startBefore": "#terms-title",
-  "endBefore": "#page-footer"
+  "endBefore": "#footer-menu"
 }
 ```
 
