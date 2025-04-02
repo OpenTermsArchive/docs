@@ -1,0 +1,51 @@
+{{ $name := .Get "name" }}
+{{ $type := .Get "type" }}
+{{ $required := .Get "required" }}
+{{ $allowedValues := .Get "allowedValues" }}
+{{ $default := .Get "default" }}
+{{ $reference := .Get "reference" }}
+{{/* Get description either from attribute or nested content */}}
+{{ $description := .Get "description" }}
+{{ $example := .Get "example" }}
+
+<div class="refItem">
+  <div class="refItem-name">
+    <code>{{ $name }}</code>
+    <span class="refItem-type">{{ $type }}</span>
+    {{ with $required }}
+      <span class="refItem-required">{{ if eq . true }}required{{ else }}{{ . | markdownify }}{{ end }}</span>
+    {{ end }}
+  </div>
+  <div class="refItem-description">{{ $description | markdownify | safeHTML }}</div>
+  <div class="refItem-details refItem-details__{{ if .Inner }}full{{ end }}">
+    {{ if $default }}
+      <div class="refItem-default">
+        <span>Default:</span>
+        <code>{{ $default | markdownify }}</code>
+      </div>
+    {{ end }}
+    {{ if or $example .Inner }}
+      <div class="refItem-example"><span>Example:</span>
+        {{ if .Inner }}
+          {{ .Inner | markdownify }}
+        {{ else }}
+          <code>{{ $example | markdownify }}</code>
+        {{ end }}
+      </div>
+    {{ end }}
+    {{ if $allowedValues }}
+      {{ $values := split $allowedValues "," }}
+      <div class="refItem-allowed-values"><span>Allowed values:</span>
+        <span class="refItem-allowed-values-list">
+          {{ range $values }}
+            <code>{{ . | markdownify }}</code>
+          {{ end }}
+        </span>
+      </div>
+    {{ end }}
+    {{ if $reference }}
+      <div class="refItem-reference"><span>Reference:</span>{{ $reference | markdownify }}</div>
+    {{ end }}
+  </div>
+</div>
+

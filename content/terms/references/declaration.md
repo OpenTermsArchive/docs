@@ -11,7 +11,7 @@ The examples given throughout this reference can be seen in context in the [decl
 
 ## Properties
 
-{{< configOption
+{{< refItem
     name="name"
     type="string"
     description="The name of the service."
@@ -19,7 +19,7 @@ The examples given throughout this reference can be seen in context in the [decl
     required=true
 />}}
 
-{{< configOption
+{{< refItem
     name="terms"
     type="object of objects"
     description=`Map of terms associated with a service, where keys are standardized term types (e.g., "Privacy Policy", "Terms of Service"), and values are term objects containing the configuration for fetching and processing each document, as detailed in the [Terms declaration]({{< relref \"#terms-declaration\" >}}) section.
@@ -42,13 +42,13 @@ Please note, the terms type may differ from the exact name provided by the servi
     }
 }
 ```
-{{< /configOption >}}
+{{< /refItem >}}
 
 ---
 
 ### Terms declaration
 
-{{< configOption
+{{< refItem
     name="fetch"
     type="uri"
     description="The URL where the terms document can be downloaded."
@@ -56,7 +56,7 @@ Please note, the terms type may differ from the exact name provided by the servi
     required=true
 />}}
 
-{{< configOption
+{{< refItem
     name="select"
     type="string, object or array"
     description=`
@@ -90,9 +90,9 @@ As an array of those:
     }
 ]
 ```
-{{< /configOption >}}
+{{< /refItem >}}
 
-{{< configOption
+{{< refItem
     name="executeClientScripts"
     type="boolean"
     description=`Boolean flag to execute client-side JavaScript before accessing content.
@@ -102,7 +102,7 @@ When enabled, this loads the page in a headless browser to execute client-side s
     example="true"
 />}}
 
-{{< configOption
+{{< refItem
     name="remove"
     type="string, object or array"
     description=`
@@ -135,16 +135,16 @@ As an array of those:
     }
 ]
 ```
-{{< /configOption >}}
+{{< /refItem >}}
 
-{{< configOption
+{{< refItem
     name="filter"
     type="array of strings"
     description="Array of filter function names to apply. Function will be executed in the order of the array. See the [Filters]({{< relref \"terms/references/filters\" >}}) section for more information."
     example="[\"filterName1\", \"filterName2\"]"
 />}}
 
-{{< configOption
+{{< refItem
     name="combine"
     type="array of objects"
     description=`
@@ -167,13 +167,13 @@ Common properties (can be a combination of "select", "remove", "filter" and "exe
     }
 ]
 ```
-{{< /configOption >}}
+{{< /refItem >}}
 
 ---
 
 ### Range selector
 
-{{< configOption
+{{< refItem
     name="startBefore"
     type="CSS selector"
     description="The CSS selector for the element before which the range starts."
@@ -181,7 +181,7 @@ Common properties (can be a combination of "select", "remove", "filter" and "exe
     required="either `startBefore` or `startAfter` is required"
 />}}
 
-{{< configOption
+{{< refItem
     name="startAfter"
     type="CSS selector"
     description="The CSS selector for the element after which the range starts."
@@ -189,7 +189,7 @@ Common properties (can be a combination of "select", "remove", "filter" and "exe
     required="either `startBefore` or `startAfter` is required"
 />}}
 
-{{< configOption
+{{< refItem
     name="endBefore"
     type="CSS selector"
     description="The CSS selector for the element before which the range ends."
@@ -197,7 +197,7 @@ Common properties (can be a combination of "select", "remove", "filter" and "exe
     required="either `endBefore` or `endAfter` is required"
 />}}
 
-{{< configOption
+{{< refItem
     name="endAfter"
     type="CSS selector"
     description="The CSS selector for the element after which the range ends."

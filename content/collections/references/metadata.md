@@ -13,7 +13,7 @@ The examples given throughout this reference can be seen in context in the [comp
 
 ## Fields
 
-{{< configOption
+{{< refItem
     name="id"
     type="string"
     description="Unique identifier derived from name (acronyms, dash-separated)."
@@ -21,7 +21,7 @@ The examples given throughout this reference can be seen in context in the [comp
     required=true
 />}}
 
-{{< configOption
+{{< refItem
     name="name"
     type="string"
     description="Display name of the collection."
@@ -29,7 +29,7 @@ The examples given throughout this reference can be seen in context in the [comp
     required=true
 />}}
 
-{{< configOption
+{{< refItem
     name="tagline"
     type="string"
     description="Concise description of collection topic."
@@ -37,7 +37,7 @@ The examples given throughout this reference can be seen in context in the [comp
     required=true
 />}}
 
-{{< configOption
+{{< refItem
     name="languages"
     type="array of strings"
     description="List of [ISO 639-1 (two-letter)](https://en.wikipedia.org/wiki/ISO_639) language codes representing languages allowed in the collection."
@@ -45,7 +45,7 @@ The examples given throughout this reference can be seen in context in the [comp
     required=true
 />}}
 
-{{< configOption
+{{< refItem
     name="jurisdictions"
     type="array of strings"
     description="List of [ISO 3166-2 country codes](https://en.wikipedia.org/wiki/ISO_3166-2) representing jurisdictions covered by the collection."
@@ -53,7 +53,7 @@ The examples given throughout this reference can be seen in context in the [comp
     required=true
 />}}
 
-{{< configOption
+{{< refItem
     name="description"
     type="string"
     description="Detailed description of the collection"
@@ -66,9 +66,9 @@ description: >
 
     This provides a reference collection for best practices and enables the Open Terms Archive Core Team to be a user of the software it produces.
 ```
-{{< /configOption >}}
+{{< /refItem >}}
 
-{{< configOption
+{{< refItem
     name="dataset"
     type="uri"
     description="URL to the dataset releases."
@@ -76,7 +76,7 @@ description: >
     required=false
 />}}
 
-{{< configOption
+{{< refItem
     name="declarations"
     type="uri"
     description="URL to the declarations repository."
@@ -84,7 +84,7 @@ description: >
     required=false
 />}}
 
-{{< configOption
+{{< refItem
     name="versions"
     type="uri"
     description="URL to the versions repository."
@@ -92,7 +92,7 @@ description: >
     required=false
 />}}
 
-{{< configOption
+{{< refItem
     name="snapshots"
     type="uri"
     description="URL to the snapshots repository."
@@ -100,7 +100,7 @@ description: >
     required=false
 />}}
 
-{{< configOption
+{{< refItem
     name="donations"
     type="uri"
     description="URL to the donations page."
@@ -108,7 +108,7 @@ description: >
     required=false
 />}}
 
-{{< configOption
+{{< refItem
     name="logo"
     type="uri"
     description="URL to the collection's logo. Optimized PNG transparent image (minimum width 240px)."
@@ -116,21 +116,21 @@ description: >
     required=false
 />}}
 
-{{< configOption
+{{< refItem
     name="trackingPeriods"
     type="array of objects"
     description="List of time periods during which terms were tracked, with their tracking configuration. Gaps between periods indicate times when tracking was interrupted. See [TrackingPeriods]({{< relref \"#trackingperiods\" >}}) section."
     required=false
 />}}
 
-{{< configOption
+{{< refItem
     name="governance"
     type="object of objects"
     description="Map of organizations involved in the collection's governance, with organization names as keys and governance objects as values. See [Governance]({{< relref \"#governance\" >}}) section."
     required=false
 />}}
 
-{{< configOption
+{{< refItem
     name="i18n"
     type="object of objects"
     description="Internationalization of any of the Metadata properties (except i18n itself) for different language codes"
@@ -145,13 +145,13 @@ fr:
         name: Ministère de l'Europe et des Affaires étrangères
         url: https://www.diplomatie.gouv.fr
 ```
-{{< /configOption >}}
+{{< /refItem >}}
 
 ---
 
 ### TrackingPeriods
 
-{{< configOption
+{{< refItem
     name="startDate"
     type="date"
     description="The date when tracking started for this period (ISO 8601 format YYYY-MM-DD)."
@@ -159,7 +159,7 @@ fr:
     required=true
 />}}
 
-{{< configOption
+{{< refItem
     name="schedule"
     type="cron-expression"
     description="A [cron expression](https://en.wikipedia.org/wiki/Cron#Cron_expression) that defines the tracking frequency."
@@ -167,7 +167,7 @@ fr:
     required=true
 />}}
 
-{{< configOption
+{{< refItem
     name="serverLocation"
     type="string"
     description="The geographic location of the tracking server (city name and ISO 3166-2 country code)."
@@ -175,7 +175,7 @@ fr:
     required=true
 />}}
 
-{{< configOption
+{{< refItem
     name="endDate"
     type="date"
     description="The date when tracking ended for this period (ISO 8601 format YYYY-MM-DD). If not specified, tracking is ongoing."
@@ -188,7 +188,7 @@ fr:
 
 ### Governance
 
-{{< configOption
+{{< refItem
     name="url"
     type="uri"
     description="URL to the entity's website"
@@ -196,7 +196,7 @@ fr:
     required=false
 />}}
 
-{{< configOption
+{{< refItem
     name="logo"
     type="uri"
     description="URL to the entity's logo. Optimized PNG transparent image (minimum width 240px)."
@@ -204,7 +204,7 @@ fr:
     required=false
 />}}
 
-{{< configOption
+{{< refItem
     name="roles"
     type="array of strings"
     description="Roles of the entity within the governance, see [collection governance](https://docs.opentermsarchive.org/collections/references/governance/)"

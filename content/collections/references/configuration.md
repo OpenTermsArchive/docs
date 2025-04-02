@@ -11,14 +11,14 @@ As an example, see the [production configuration file](https://github.com/OpenTe
 
 ## Options
 
-{{< configOption
+{{< refItem
     name="trackingSchedule"
     type="string"
     description="Defines how often the engine should check for changes in terms. Uses standard cron syntax to set the schedule. By default, it runs every 12 hours at minute 30."
     default="30 */12 * * *"
 />}}
 
-{{< configOption
+{{< refItem
     name="collectionPath"
     type="string"
     description="Path to the collection's directory containing declarations directory and metadata file, relative to the engine execution location"
@@ -30,13 +30,13 @@ As an example, see the [production configuration file](https://github.com/OpenTe
 
 The recorder section manages how versions and snapshots of terms are stored, supporting multiple storage backends.
 
-{{< configOption
+{{< refItem
     name="recorder.versions.storage"
     type="object"
     description="Configuration for storing versions. Supports Git and MongoDB. See [Storage Repositories](#storage-repositories) for more information."
 />}}
 
-{{< configOption
+{{< refItem
     name="recorder.snapshots.storage"
     type="object"
     description="Configuration for storing snapshots. Supports Git and MongoDB. See [Storage Repositories](#storage-repositories) for more information."
@@ -46,21 +46,21 @@ The recorder section manages how versions and snapshots of terms are stored, sup
 
 The fetcher section configures how the engine retrieves documents from the web.
 
-{{< configOption
+{{< refItem
     name="fetcher.waitForElementsTimeout"
     type="number"
     description="Maximum wait time for elements to appear in a page (milliseconds)."
     default="10000"
 />}}
 
-{{< configOption
+{{< refItem
     name="fetcher.navigationTimeout"
     type="number"
     description="Maximum wait time for a page to load (milliseconds)."
     default="30000"
 />}}
 
-{{< configOption
+{{< refItem
     name="fetcher.language"
     type="string"
     description="Language code (ISO 639-1) for request headers."
@@ -71,14 +71,14 @@ The fetcher section configures how the engine retrieves documents from the web.
 
 The notifier section sets up how notifications are sent when new versions of terms are recorded.
 
-{{< configOption
+{{< refItem
     name="notifier.sendInBlue.updatesListId"
     type="string"
     description="SendInBlue contacts list ID of persons to notify on terms updates."
     default="850"
 />}}
 
-{{< configOption
+{{< refItem
     name="notifier.sendInBlue.updateTemplateId"
     type="string"
     description="SendInBlue email template ID used for updates notifications."
@@ -89,42 +89,42 @@ The notifier section sets up how notifications are sent when new versions of ter
 
 The logger section configures logging and error notification settings.
 
-{{< configOption
+{{< refItem
     name="logger.smtp.host"
     type="string"
     description="SMTP server hostname."
     default="smtp-relay.sendinblue.com"
 />}}
 
-{{< configOption
+{{< refItem
     name="logger.smtp.username"
     type="string"
     description="Username for SMTP server authentication."
     default="admin@opentermsarchive.org"
 />}}
 
-{{< configOption
+{{< refItem
     name="logger.sendMailOnError.to"
     type="string"
     description="Email address for error notifications."
     example="admin@example.com"
 />}}
 
-{{< configOption
+{{< refItem
     name="logger.sendMailOnError.from"
     type="string"
     description="Sender email address for error notifications."
     example="noreply@example.com"
 />}}
 
-{{< configOption
+{{< refItem
     name="logger.sendMailOnError.sendWarnings"
     type="boolean"
     description="Set to true to also send email in case of warning."
     default="false"
 />}}
 
-{{< configOption
+{{< refItem
     name="logger.timestampPrefix"
     type="boolean"
     description="Set to false to avoid duplicate timestamps if logs are managed by a process manager."
@@ -135,7 +135,7 @@ The logger section configures logging and error notification settings.
 
 The reporter section manages how issues are reported when terms content is inaccessible, supporting GitHub and GitLab.
 
-{{< configOption
+{{< refItem
     name="reporter.type"
     type="string"
     description="Type of reporter"
@@ -143,35 +143,35 @@ The reporter section manages how issues are reported when terms content is inacc
     allowedValues="github, gitlab"
 />}}
 
-{{< configOption
+{{< refItem
     name="reporter.repositories.declarations"
     type="string"
     description="Repository for creating issues."
     example="OpenTermsArchive/demo-declarations"
 />}}
 
-{{< configOption
+{{< refItem
     name="reporter.repositories.versions"
     type="string"
     description="Repository for versions."
     example="OpenTermsArchive/demo-versions"
 />}}
 
-{{< configOption
+{{< refItem
     name="reporter.repositories.snapshots"
     type="string"
     description="Repository for snapshots."
     example="OpenTermsArchive/demo-snapshots"
 />}}
 
-{{< configOption
+{{< refItem
     name="reporter.baseURL"
     type="string"
     description="Base URL for GitLab (if applicable)."
     example="https://gitlab.example.com"
 />}}
 
-{{< configOption
+{{< refItem
     name="reporter.apiBaseURL"
     type="string"
     description="API base URL for GitLab (if applicable)."
@@ -182,21 +182,21 @@ The reporter section manages how issues are reported when terms content is inacc
 
 The dataset section configures how datasets are published.
 
-{{< configOption
+{{< refItem
     name="dataset.title"
     type="string"
     description="Title of the dataset."
     default="sandbox"
 />}}
 
-{{< configOption
+{{< refItem
     name="dataset.versionsRepositoryURL"
     type="string"
     description="Repository URL for dataset releases."
     default="https://github.com/OpenTermsArchive/sandbox"
 />}}
 
-{{< configOption
+{{< refItem
     name="dataset.publishingSchedule"
     type="string"
     description="Cron expression for dataset publishing. By default, it runs every Monday at 8:30 AM."
@@ -207,7 +207,7 @@ The dataset section configures how datasets are published.
 
 The collection API section sets the parameters for the API server.
 
-{{< configOption
+{{< refItem
     name="collection-api.api.port"
     type="number"
     description="Port number for the API server."
@@ -215,7 +215,7 @@ The collection API section sets the parameters for the API server.
     required=true
 />}}
 
-{{< configOption
+{{< refItem
     name="collection-api.api.basePath"
     type="string"
     description="Base path for API endpoints."
@@ -229,7 +229,7 @@ The collection API section sets the parameters for the API server.
 
 The storage repositories section set the parameters for supported backends for storing versions and snapshots, supporting Git and MongoDB.
 
-{{< configOption
+{{< refItem
     name="storage.type"
     type="string"
     description="Type of storage backend."
@@ -241,35 +241,35 @@ The storage repositories section set the parameters for supported backends for s
 
 The Git storage configuration allows to store versions in a Git repository.
 
-{{< configOption
+{{< refItem
     name="storage.git.path"
     type="string"
     description="Path to the versions database directory."
     default="./data/versions"
 />}}
 
-{{< configOption
+{{< refItem
     name="storage.git.publish"
     type="boolean"
     description="Boolean to push changes to the origin."
     default="false"
 />}}
 
-{{< configOption
+{{< refItem
     name="storage.git.snapshotIdentiferTemplate"
     type="string"
     description="Template for snapshot ID reference. `%SNAPSHOT_ID` will be replaced with the actual snapshot ID."
     default="./data/snapshots/%SNAPSHOT_ID"
 />}}
 
-{{< configOption
+{{< refItem
     name="storage.git.author.name"
     type="string"
     description="Author name for changes."
     default="Open Terms Archive Bot"
 />}}
 
-{{< configOption
+{{< refItem
     name="storage.git.author.email"
     type="string"
     description="Author email for changes."
@@ -280,21 +280,21 @@ The Git storage configuration allows to store versions in a Git repository.
 
 The MongoDB storage configuration allows to store versions in a MongoDB database.
 
-{{< configOption
+{{< refItem
     name="storage.mongo.connectionURI"
     type="string"
     description="MongoDB connection URI."
     default="mongodb://127.0.0.1:27017"
 />}}
 
-{{< configOption
+{{< refItem
     name="storage.mongo.database"
     type="string"
     description="Database name."
     default="open-terms-archive"
 />}}
 
-{{< configOption
+{{< refItem
     name="storage.mongo.collection"
     type="string"
     description="Collection name."
