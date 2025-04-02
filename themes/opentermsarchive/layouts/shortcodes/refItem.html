@@ -21,7 +21,7 @@
     {{ if $default }}
       <div class="refItem-default">
         <span>Default:</span>
-        <code>{{ $default | markdownify }}</code>
+        <code>{{ $default | markdownify | replaceRE "<a[^>]*>(.*?)</a>" "$1" | safeHTML }}</code>
       </div>
     {{ end }}
     {{ if or $example .Inner }}
@@ -29,7 +29,7 @@
         {{ if .Inner }}
           {{ .Inner | markdownify }}
         {{ else }}
-          <code>{{ $example | markdownify }}</code>
+          <code>{{ $example | markdownify | replaceRE "<a[^>]*>(.*?)</a>" "$1" | safeHTML }}</code>
         {{ end }}
       </div>
     {{ end }}
@@ -38,7 +38,7 @@
       <div class="refItem-allowed-values"><span>Allowed values:</span>
         <span class="refItem-allowed-values-list">
           {{ range $values }}
-            <code>{{ . | markdownify }}</code>
+            <code>{{ . | markdownify | replaceRE "<a[^>]*>(.*?)</a>" "$1" | safeHTML }}</code>
           {{ end }}
         </span>
       </div>
