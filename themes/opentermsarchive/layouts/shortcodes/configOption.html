@@ -45,6 +45,9 @@
                 </span>
             </div>
         {{ end }}
+        {{ if $reference }}
+            <div class="config-option-reference"><span>Reference:</span>{{ $reference | markdownify }}</div>
+        {{ end }}
     </div>
 </div>
 

@@ -26,10 +26,9 @@ The examples given throughout this reference can be seen in context in the [decl
 
 To facilitate cross-service comparisons and ensure consistency, a standardized list of term types is maintained in a [dedicated repository](https://github.com/OpenTermsArchive/terms-types).
 
-Please note, the terms type may differ from the exact name provided by the service, but it should align with the underlying commitment. For example, some providers might call “Terms and Conditions” or “Terms of Use” what some others call “Terms of Service”.
-    `
+Please note, the terms type may differ from the exact name provided by the service, but it should align with the underlying commitment. For example, some providers might call “Terms and Conditions” or “Terms of Use” what some others call “Terms of Service”.`
     required=true
-    allowedValues="See the [terms-types repository](https://github.com/OpenTermsArchive/terms-types)."
+    reference="[Terms Types](https://github.com/OpenTermsArchive/terms-types)."
 >}}
 ```json
 "terms": {

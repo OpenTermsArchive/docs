@@ -38,7 +38,8 @@
 .config-option-description,
 .config-option-default,
 .config-option-example,
-.config-option-allowed-values {
+.config-option-allowed-values,
+.config-option-reference {
   padding: 1rem 0.4em;
 }
 
@@ -51,7 +52,8 @@
 
 .config-option-example,
 .config-option-default,
-.config-option-allowed-values {
+.config-option-allowed-values,
+.config-option-reference {
   font-size: 0.85em;
 }
 
@@ -62,4 +64,8 @@
 
 .config-option-details_full .config-option-example .highlight {
   margin-top: 0.4em;
+}
+
+.config-option-reference span{
+  margin-right: 0.4em;
 }
