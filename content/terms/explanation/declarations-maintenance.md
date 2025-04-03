@@ -1,6 +1,8 @@
 ---
 title: "Declarations maintenance"
 weight: 6
+aliases:
+  - /terms/declarations-maintenance/
 ---
 
 # Declarations maintenance

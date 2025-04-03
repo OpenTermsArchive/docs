@@ -1,5 +1,7 @@
 ---
 title: Track your first terms
+aliases:
+  - /terms/tutorials/track/
 ---
 
 # Track your first terms

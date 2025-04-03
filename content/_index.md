@@ -24,7 +24,7 @@ This documentation follows the [Diátaxis](https://diataxis.fr) approach and str
 
 - **Tutorials:** step-by-step learning guides that help beginners get started with Open Terms Archive, providing foundational knowledge and hands-on experience.
 - **How-to guides:** task-focused instructions that help experienced users accomplish specific goals efficiently and effectively.
-- **Reference:** comprehensive technical documentation detailing configuration options and specifications for advanced users.
+- **References:** comprehensive technical documentation detailing configuration options and specifications for advanced users.
 - **Explanations:** background knowledge that enables understanding the constraints and how choices that are made.
 
 ### Table of contents

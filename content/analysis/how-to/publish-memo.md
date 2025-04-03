@@ -1,6 +1,7 @@
 ---
 title: Publish a memo
-aliases: /memos/how-to-publish/
+aliases: 
+  - /memos/how-to-publish/
 ---
 
 # How to publish a memo

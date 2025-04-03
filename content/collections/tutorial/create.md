@@ -1,7 +1,9 @@
 ---
 title: Create your first collection
 weight: 1
-aliases: /collections/create/
+aliases:
+  - /collections/create/
+  - /collections/tutorials/create/
 ---
 
 # Create your first collection
@@ -38,7 +40,7 @@ By the end, you'll have a working collection that tracks changes to a service's 
 
 ### Step 2: Create the service declaration
 
-4. Create a file `declarations/Open Terms Archive.json` with the following content. For detailed instructions on how to structure it, follow the [Tracking terms tutorial]({{< relref "/terms/tutorials/track" >}}):
+4. Create a file `declarations/Open Terms Archive.json` with the following content. For detailed instructions on how to structure it, follow the [Tracking terms tutorial]({{< relref "/terms/tutorial/track" >}}):
     ```json
     {
       "name": "Open Terms Archive",

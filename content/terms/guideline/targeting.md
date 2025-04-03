@@ -1,6 +1,7 @@
 ---
 title: "Targeting"
-aliases: /guidelines/targeting/
+aliases:
+  - /terms/guidelines/targeting/
 ---
 
 # What to track?

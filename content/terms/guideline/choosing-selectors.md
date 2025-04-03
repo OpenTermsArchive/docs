@@ -1,6 +1,8 @@
 ---
 title: "Choosing selectors"
-aliases: /guidelines/choosing-selectors/
+aliases:
+  - /guidelines/choosing-selectors/
+  - /terms/guidelines/choosing-selectors/
 ---
 
 # Choosing selectors

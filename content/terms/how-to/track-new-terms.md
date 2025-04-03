@@ -1,7 +1,8 @@
 ---
 title: Track new terms
 weight: 2
-aliases: /contributing-terms/
+aliases: 
+  - /contributing-terms/
 ---
 
 # How to track new terms
@@ -29,7 +30,7 @@ To add a declaration, you need to follow these steps:
 6. After you've properly added your selectors and structured your JSON file, you need to test and validate your JSON file to make sure it is ok. To do this, you need to run `npx ota validate --services [service name]` from the root of the repository. This will run a validation on the declaration, highlighting any changes required.
 7. If all tests are good, make a pull request to the main repository.  
 
-> If you have a hard time finding the service name, check out the [practical guidelines to find the service name]({{< relref "/terms/guidelines/declaring" >}}), and feel free to mention your uncertainties in the pull request! We will help you improve the service name if necessary 🙂
+> If you have a hard time finding the service name, check out the [practical guidelines to find the service name]({{< relref "/terms/guideline/declaring" >}}), and feel free to mention your uncertainties in the pull request! We will help you improve the service name if necessary 🙂
 
 ## Service name
 
@@ -51,7 +52,7 @@ The service name is exposed to end users. It should reflect as closely as possib
   - _Example: `Firebase` (by Google) → `Firebase`_.
   - _Example: `App Store` (by Apple) → `App Store`_.
 
-> If you have a hard time finding the service name, check out the [practical guidelines to find the service name]({{< relref "/terms/guidelines/declaring#service-name" >}}), and feel free to mention your uncertainties in the pull request! We will help you improve the service name if necessary 🙂
+> If you have a hard time finding the service name, check out the [practical guidelines to find the service name]({{< relref "/terms/guideline/declaring#service-name" >}}), and feel free to mention your uncertainties in the pull request! We will help you improve the service name if necessary 🙂
 
 ## Service ID
 
@@ -71,7 +72,7 @@ The service ID is exposed to developers. It should be easy to handle with script
   - _Example: `App Store` → `App Store`_.
   - _Example: `DeviantArt` → `DeviantArt`_.
 
-> If you have a hard time defining the service ID, check out the [practical guidelines to derive the ID from the service name]({{< relref "/terms/guidelines/declaring#service-id" >}}), and feel free to mention your uncertainties in the pull request! We will help you improve the service ID if necessary 🙂
+> If you have a hard time defining the service ID, check out the [practical guidelines to derive the ID from the service name]({{< relref "/terms/guideline/declaring#service-id" >}}), and feel free to mention your uncertainties in the pull request! We will help you improve the service ID if necessary 🙂
 
 > More details on the ID and naming constraints and recommendations can be found in the relevant [decision record](https://github.com/OpenTermsArchive/engine/blob/main/decision-records/0001-service-name-and-id.md).
 

@@ -1,6 +1,8 @@
 ---
 title: "Declaring terms"
-aliases: /guidelines/declaring/
+aliases:
+  - /guidelines/declaring/
+  - /terms/guidelines/declaring/
 ---
 
 # Declaring terms

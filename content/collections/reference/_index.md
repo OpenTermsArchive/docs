@@ -1,4 +1,4 @@
 ---
-title: Reference
+title: References
 weight: 3
 ---
