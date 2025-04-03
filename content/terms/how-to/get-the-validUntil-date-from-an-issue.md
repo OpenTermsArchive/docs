@@ -1,5 +1,5 @@
 ---
-title: How to guides get the `validUntil`
+title: How to get the `validUntil`
 linkTitle: Get the `validUntil` date
 ---
 

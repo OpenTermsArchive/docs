@@ -1,5 +1,5 @@
 ---
-title: How to guides rename a service
+title: How to rename a service
 linkTitle: Rename a service
 ---
 
