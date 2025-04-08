@@ -207,7 +207,7 @@ fr:
 {{< refItem
     name="roles"
     type="array of strings"
-    description="Roles of the entity within the governance, see [collection governance](https://docs.opentermsarchive.org/collections/references/governance/)"
+    description="Roles of the entity within the governance, see [collection governance](https://docs.opentermsarchive.org/collections/reference/governance/)"
     allowedValues="host, administrator, curator, maintainer, sponsor"
     example="[host, administrator]"
     required=true
