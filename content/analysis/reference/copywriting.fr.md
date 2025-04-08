@@ -1,10 +1,10 @@
 ---
-title: Référence de rédaction
+title: Référence de rédaction de mémo
 linkTitle: Rédaction de mémo
 slug: /reference/redaction-de-memo
 ---
 
-# Référence de rédaction de mémo
+# Rédaction de mémo
 
 Chaque mémo doit être composée des éléments détaillés ci-dessous. Vous devez suivre cette structure lors de la rédaction.
 
@@ -17,13 +17,14 @@ Chaque mémo doit être composée des éléments détaillés ci-dessous. Vous de
 - Préférer les formulations actives aux formulations passives (« Meta étend la portée de… » plutôt que « La portée de… est étendue par Meta »).
 - Décrire le changement de conditions et non le nom du document. Cette information sera donnée dans les métadonnées.
 - Ne pas mettre de ponctuation.
-- Ne pas mettre de lien dans le titre parceque dans certains contextes de réutilisation le titre en entier est un lien vers le mémo.
+- Ne pas mettre de lien dans le titre parce que dans certains contextes de réutilisation le titre en entier est un lien vers le mémo.
 
 
 **Exemples**
 
-- Facebook interdit aux États de nier l’usage de la force lors d’une invasion
-- Mistral traite des données à caractère personnel aux USA et cesse d’informer de tels changements
+> Facebook interdit aux États de nier l’usage de la force lors d’une invasion
+
+> Mistral traite des données à caractère personnel aux USA et cesse d’informer de tels changements
 
 ## Nom du service
 
@@ -116,5 +117,4 @@ Chaque mémo doit être composée des éléments détaillés ci-dessous. Vous de
 >
 > Cela ouvre la question de la modération des discussions privées, alors que les plateformes sociales ont des difficultés récurrentes dans la gestion des contenus relatifs aux violences sur enfants — fin mars encore, le New-York Times [montrait](https://www.nytimes.com/2022/03/31/business/meta-child-sexual-abuse.html) que la modération reste très légère dans ce domaine, quand bien même les plateformes sont censées répertorier ce type de contenu et le [signaler aux autorités](https://www.theverge.com/2022/3/31/23005576/facebook-content-moderators-child-sexual-abuse-material-csam-policy).
 
-
-Source: [Mémo du 23 juin 2022, Édition France Élections.](https://sh1.sendinblue.com/aif98ezlolpfe.html).
+Source : [Mémo du 23 juin 2022, Édition France Élections](https://sh1.sendinblue.com/aif98ezlolpfe.html).

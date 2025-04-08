@@ -1,9 +1,9 @@
 ---
-title: Memo copywriting
+title: Memo copywriting reference
 aliases: /memos/copywriting-reference/
 ---
 
-# Memo copywriting reference
+# Memo copywriting
 
 Each memo must be composed of the elements detailed below. You must follow this structure when writing your memos.
 
@@ -20,8 +20,9 @@ Each memo must be composed of the elements detailed below. You must follow this 
 
 **Example**
 
-- Facebook bans States from denying the use of violence in an invasion
-- OpenAI specifies further plugin exports rules
+> Facebook bans States from denying the use of violence in an invasion
+
+> OpenAI specifies further plugin exports rules
 
 ## Service name
 
