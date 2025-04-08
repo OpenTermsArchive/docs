@@ -1,5 +1,5 @@
 ---
-title: "Pour commencer"
+title: "Accueil"
 weight: 1
 ---
 
