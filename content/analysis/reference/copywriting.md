@@ -1,9 +1,9 @@
 ---
-title: Copywriting
+title: Memo copywriting
 aliases: /memos/copywriting-reference/
 ---
 
-# Copywriting reference
+# Memo copywriting reference
 
 Each memo must be composed of the elements detailed below. You must follow this structure when writing your memos.
 
