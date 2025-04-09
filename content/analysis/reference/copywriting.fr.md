@@ -6,7 +6,7 @@ slug: /reference/redaction
 
 # Rédaction de mémo
 
-Chaque mémo doit être composée des éléments détaillés ci-dessous. Vous devez suivre cette structure lors de la rédaction.
+Chaque mémo doit être composé des éléments détaillés ci-dessous. Vous devez suivre cette structure lors de la rédaction.
 
 ## Titre
 
@@ -83,7 +83,7 @@ Chaque mémo doit être composée des éléments détaillés ci-dessous. Vous de
 > Le fait que les données personnelles puissent désormais être traitées aux États-Unis et non plus seulement dans l'UE a de fortes implications en matière de protection de la vie privée.
 
 
-## Exemples complet
+## Exemples complets
 
 ### Memo 1
 

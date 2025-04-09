@@ -18,7 +18,7 @@ Each memo must be composed of the elements detailed below. You must follow this 
 - Use no punctuation.
 - Do not put a link in the title because in some reuse contexts the entire title is a link to the memo.
 
-**Example**
+**Examples**
 
 > Facebook bans States from denying the use of violence in an invasion
 
