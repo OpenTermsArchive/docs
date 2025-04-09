@@ -1,6 +1,6 @@
 ---
 title: Define metadata
-weight: 2
+weight: 3
 ---
 
 # How to define metadata

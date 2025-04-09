@@ -1,6 +1,6 @@
 ---
 title: Take over a collection
-weight: 2
+weight: 4
 ---
 
 # How to take over a collection

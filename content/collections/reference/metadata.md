@@ -1,6 +1,6 @@
 ---
 title: Metadata
-weight: 1
+weight: 2
 aliases: /collections/metadata/
 ---
 

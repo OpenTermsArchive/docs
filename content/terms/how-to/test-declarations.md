@@ -1,9 +1,12 @@
 ---
-title: "Test your declarations"
-weight: 4
+title: How to test your declarations
+weight: 3
+linkTitle: Test declarations
+aliases:
+  - /terms/how-to/test-declaration/
 ---
 
-# Test your declarations
+# How to test your declarations
 
 When creating or modifying service declarations, it’s important to verify they work as expected before starting to track in production. The Open Terms Archive engine provides automated testing tools to that end.
 

@@ -1,6 +1,6 @@
 ---
 title: Environment variables
-weight: 3
+weight: 4
 ---
 
 ## Environment variables
