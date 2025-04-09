@@ -26,7 +26,7 @@ Each memo must be composed of the elements detailed below. You must follow this 
 
 ## Service name
 
-- Write the service name (not the company name, e.g., “Facebook” rather than “Meta“)
+- Write the service name and not the company name, e.g., “Facebook” rather than “Meta“.
 
 **Examples**
 
