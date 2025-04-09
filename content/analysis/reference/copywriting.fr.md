@@ -1,7 +1,7 @@
 ---
 title: Référence de rédaction de mémo
 linkTitle: Rédaction de mémo
-slug: /reference/redaction-de-memo
+slug: /reference/redaction
 ---
 
 # Rédaction de mémo
