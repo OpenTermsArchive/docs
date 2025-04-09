@@ -48,15 +48,15 @@ Chaque mémo doit être composé des éléments détaillés ci-dessous. Vous dev
 
 ## Date de modification
 
-- Utilisez le format `Jour Mois Année`.
+- Utilisez le format `jour mois année`.
 - Plusieurs dates sont autorisées.
 - Évitez les répétitions de mois ou d'années.
 
 **Exemples**
 
-> 4 mars 2024
+> 4 juin 2020
 
-> 3 novembre 2023 - 23 décembre 2023
+> 6 juin, 5 et 16 décembre 2023
 
 ## Corps de texte
 
@@ -68,7 +68,7 @@ Chaque mémo doit être composé des éléments détaillés ci-dessous. Vous dev
   - Titre du lien : « Voir le changement ».
   - Éviter les verbes « annoncer » et équivalents, car la plupart du temps les changements détectés ne sont justement pas annoncés.
 - Ne pas hésiter à citer le nouveau texte.
-  - Ne pas mettre les citations en italique, utiliser des guillemets. Les guillemets français sont « » (avec espace insécable), les guillemets sont “” (sans espace) uniquement en anglais.
+  - Ne pas mettre les citations en italique, utiliser des guillemets. Les guillemets sont « » (avec espace insécable) en français, les guillemets sont “” (sans espace) en anglais uniquement.
   - Minimiser la longueur des citations car le texte juridique est souvent très verbeux.
   - Ne citer le texte avant modification que s'il est strictement nécessaire à la compréhension du changement, pour réduire les risques de confusion et la longueur.
 - Si vous écrivez dans une langue différente de celle de la modification détectée, recherchez toujours les citations dans la version du document qui correspond à la langue d'écriture (si elle existe) au lieu de les traduire vous-même.
