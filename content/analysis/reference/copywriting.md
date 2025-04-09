@@ -49,7 +49,7 @@ Each memo must be composed of the elements detailed below. You must follow this 
 
 - Use `Month Day, Year` format.
 - Multiples dates are allowed.
-- Avoid repeating months or years.
+- Avoid repeating months or years
 
 **Examples**
 

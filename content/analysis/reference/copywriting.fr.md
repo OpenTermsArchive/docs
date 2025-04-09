@@ -48,7 +48,7 @@ Chaque mémo doit être composé des éléments détaillés ci-dessous. Vous dev
 
 ## Date de modification
 
-- Utilisez le format `Jour Mois Année`.
+- Utilisez le format `jour mois année`.
 - Plusieurs dates sont autorisées.
 - Évitez les répétitions de mois ou d'années.
 
