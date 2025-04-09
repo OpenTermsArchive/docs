@@ -49,13 +49,13 @@ Each memo must be composed of the elements detailed below. You must follow this 
 
 - Use `Month Day, Year` format.
 - Multiples dates are allowed.
-- Avoid repeating months or years
+- Avoid repeating months or years.
 
 **Examples**
 
-> March 4, 2024
+> June 4, 2020
 
-> November 3, 10 - December 16, 2023
+> June 6, December 5 and 16, 2023
 
 ## Body text
 

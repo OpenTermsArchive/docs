@@ -54,9 +54,9 @@ Chaque mémo doit être composé des éléments détaillés ci-dessous. Vous dev
 
 **Exemples**
 
-> 4 mars 2024
+> 4 juin 2020
 
-> 3 novembre 2023 - 23 décembre 2023
+> 6 juin, 5 et 16 décembre 2023
 
 ## Corps de texte
 
