@@ -15,7 +15,7 @@ Chaque mémo doit être composée des éléments détaillés ci-dessous. Vous de
 - Utiliser le nom du service comme sujet.
 - Écrire au présent.
 - Préférer les formulations actives aux formulations passives (« Meta étend la portée de… » plutôt que « La portée de… est étendue par Meta »).
-- Décrire le changement de conditions et non le nom du document. Cette information sera donnée dans les métadonnées.
+- Décrire le changement de conditions et non le nom du document. Cette information sera fournie dans les métadonnées.
 - Ne pas mettre de ponctuation.
 - Ne pas mettre de lien dans le titre parce que dans certains contextes de réutilisation le titre en entier est un lien vers le mémo.
 
@@ -28,7 +28,7 @@ Chaque mémo doit être composée des éléments détaillés ci-dessous. Vous de
 
 ## Nom du service
 
-- Inscrivez le nom du service (et non le nom de l'entreprise, par exemple « Facebook » au lieu de « Meta »).
+- Écrivez le nom du service et non le nom de l'entreprise, par exemple « Facebook » plutôt que « Meta ».
 
 **Exemples**
 
@@ -49,7 +49,7 @@ Chaque mémo doit être composée des éléments détaillés ci-dessous. Vous de
 
 ## Date de modification
 
-- Utilisez le format `Mois Jour Année`.
+- Utilisez le format `Jour Mois Année`.
 - Plusieurs dates sont autorisées.
 - Évitez les répétitions de mois ou d'années.
 
@@ -105,7 +105,7 @@ Chaque mémo doit être composée des éléments détaillés ci-dessous. Vous de
 ## Contextualisation (optionnel)
 
 - Corps du texte dans un nouveau paragraphe : contextualisation avec liens externes vers les sources les plus autoritatives possible.
-- Par exemple, expliquer quels problèmes plus larges sont traités par ce changement de politique, ou donner une perspective historique.
+- Par exemple, expliquer quels enjeux plus larges sont concernés par ce changement de politique, ou donner une perspective historique.
 
 **Exemple**
 
