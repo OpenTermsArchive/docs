@@ -69,7 +69,7 @@ Chaque mémo doit être composée des éléments détaillés ci-dessous. Vous de
   - Titre du lien : « Voir le changement ».
   - Éviter les verbes « annoncer » et équivalents, car la plupart du temps les changements détectés ne sont justement pas annoncés.
 - Ne pas hésiter à citer le nouveau texte.
-  - Ne pas mettre les citations en italique, utiliser des guillemets. En anglais, les guillemets sont “” (sans espace) en anglais et « » en français (avec espace insécable).
+  - Ne pas mettre les citations en italique, utiliser des guillemets. Les guillemets français sont « » (avec espace insécable), les guillemets sont “” (sans espace) uniquement en anglais.
   - Minimiser la longueur des citations car le texte juridique est souvent très verbeux.
   - Ne citer le texte avant modification que s'il est strictement nécessaire à la compréhension du changement, pour réduire les risques de confusion et la longueur.
 - Si vous écrivez dans une langue différente de celle de la modification détectée, recherchez toujours les citations dans la version du document qui correspond à la langue d'écriture (si elle existe) au lieu de les traduire vous-même.
