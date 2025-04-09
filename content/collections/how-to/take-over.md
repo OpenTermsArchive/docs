@@ -15,11 +15,11 @@ Before starting, ensure the collection is [abandoned]({{< relref "collections/re
 
 3. Verify that the declarations, snapshots and versions repositories are transferred and properly configured by taking a look at [this guide]({{< relref "/collections/how-to/create-repositories" >}}).
 
-3. Update Readme, and follow [this guide to update collection metadata]({{< relref "/collections/how-to/define-metadata" >}}) inside the declarations repository.
+4. Update the README.md file, and follow [this guide to update collection metadata]({{< relref "/collections/how-to/define-metadata" >}}) inside the declarations repository.
 
-4. Follow [this guide to deploy the collection]({{< relref "/deployment/how-to/deploy" >}}) on your server.
+5. Follow [this guide to deploy the collection]({{< relref "/deployment/how-to/deploy" >}}) on your server.
 
-5. Ensure continous integration and deployment is working.
+6. Ensure continous integration and deployment is working.
 
 Congratulations! You can now start maintaining the collection.
 
