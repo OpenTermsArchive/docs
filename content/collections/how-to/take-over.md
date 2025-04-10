@@ -17,6 +17,6 @@ Before starting, ensure the collection is either [abandoned]({{< relref "collect
 
 4. Update the governance in the README files and in the [collection metadata]({{< relref "/collections/how-to/define-metadata" >}}) in the declarations repository.
 
-5. Set up continous integration and deployment is working to [deploy the collection]({{< relref "/deployment/how-to/deploy" >}}) on your servers.
+5. Set up continous integration and deployment to [deploy the collection]({{< relref "/deployment/how-to/deploy" >}}) on your servers.
 
 Congratulations and thanks! You are now officially maintaining the collection.
