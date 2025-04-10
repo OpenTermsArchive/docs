@@ -1,6 +1,7 @@
 ---
 title: How to terminate a service
 linkTitle: Terminate a service
+weight: 6
 ---
 
 # How to terminate a service

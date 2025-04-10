@@ -1,35 +1,82 @@
 ---
 title: Governance
-weight: 4
+weight: 1
 aliases: /collections/governance/
 ---
 
 # Collection governance
 
-Setting up and maintaining a collection needs fulfilling certain tasks. These tasks are handled through roles. Each of these roles can be volunteer or paid, and can be handled by one single or several different entities. The Open Terms Archive core team provides processes and tools to support all of these roles.
+Setting up and maintaining a collection entails fulfilling specific tasks. These tasks are handled through roles. Each of these roles can be volunteer or paid, and can be handled by one or several different entities.
 
-This reference documentation details all available roles that can be involved in a collection's governance to ensure its proper operation and maintenance.
+This reference documentation details all roles that must be involved in a collection's governance to ensure its proper operation and maintenance.
+
+## Roles
 
 ### Host
 
-This role ensures that a server and internet access is available to run the engine on and fetch the terms, either by using its own infrastructure or renting a server on a hosting provider.
+Ensures the availability of the infrastructure required for the collection's operation.
+
+#### Responsibilities
+
+- Provide the server infrastructure (self-hosted or rented).
+- Apply hypervisor security updates if relevant.
+- Guarantee reliable internet connectivity for the server to fetch terms.
+
+---
 
 ### Administrator
 
-This role takes responsibility for ensuring that the engine and associated software tools are functional and up to date.
+Manages the technical operation of the collection's software, ensuring it runs smoothly, stays updated, and remains secure.
+
+#### Responsibilities
+
+- Ensure the engine runs at the specified schedule.
+- Ensure the public publishing of snapshots, versions, and datasets.
+- Keep the engine and deployment systems up-to-date.
+- Apply operating system security updates.
+
+---
 
 ### Curator
 
-This role decides which services and terms are welcome in the collection.
+Defines the collection's focus and ensures all included content aligns with that scope.
+
+#### Responsibilities
+
+- Clearly define the collection's scope.
+- Make the collection scope publicly available via the metadata file.
+- Verify that included services and terms match the defined scope.
+
+---
 
 ### Maintainer
 
-This role guarantees the quality of the tracked versions by reviewing contributions.
+Guarantees the integrity and quality of the collection's data by reviewing incoming contributions.
+
+#### Responsibilities
+
+- Review contributions.
+- Maintain the quality of tracked versions (e.g. removing noise, ensuring completeness).
+
+---
 
 ### Contributor
 
-This role adds declarations and keeps them up to date.
+Updates terms tracking and adds new entries.
+
+#### Responsibilities
+
+- Add service declarations.
+- Keep service declarations up to date.
+
+---
 
 ### Sponsor
 
-This optional role supports the existence of the collection by funding other roles, providing agent time, political support, or any other relevant non-operational contribution.
+Provides non-operational support such as funding or resources to facilitate the collection's success.
+
+#### Responsibilities
+
+- Provide funding or in-kind contributions for collection operations.
+- Provide political or institutional support.
+- Make other relevant non-operational contributions.

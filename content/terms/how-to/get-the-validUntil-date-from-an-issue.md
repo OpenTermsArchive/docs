@@ -1,6 +1,7 @@
 ---
-title: How to get the `validUntil`
+title: How to get the `validUntil` date
 linkTitle: Get the `validUntil` date
+weight: 7
 ---
 
 # How to get the `validUntil` date

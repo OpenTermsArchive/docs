@@ -1,6 +1,6 @@
 ---
 title: Create a collection
-weight: 3
+weight: 1
 ---
 
 # How to create a collection

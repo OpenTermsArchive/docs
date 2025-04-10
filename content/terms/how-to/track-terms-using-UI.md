@@ -1,11 +1,13 @@
 ---
-title: Add terms with the graphical contribution interface
-linkTitle: Add terms with UI
+title: How to track terms using the graphical contribution interface
+weight: 2
+linkTitle: Track terms with UI
 aliases: 
   - /terms/how-to-add-terms-using-with-the-graphical-contribution-interface/
+  - /terms/how-to/add-terms-using-ui/
 ---
 
-# How to add terms with the graphical contribution interface
+# How to track terms using the graphical contribution interface
 
 ## Screencast
 

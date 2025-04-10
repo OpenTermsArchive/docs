@@ -3,6 +3,7 @@ title: Join the community chat
 aliases:
   - /community/how-to-join-mattermost/
   - /community/how-to/join-mattermost/
+  - /community/how-to/join-community-chat/
 linkTitle: Join the chat
 ---
 

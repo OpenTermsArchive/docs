@@ -1,5 +1,7 @@
 ---
-title: Be notified of terms changes
+title: How to be notified of terms changes
+weight: 4
+linkTitle: Be notified of changes
 aliases:
   - /subscribe-rss/
   - /terms/how-to-be-notified-of-terms-changes/

@@ -1,6 +1,6 @@
 ---
 title: Create repositories
-weight: 1
+weight: 2
 ---
 
 # How to create collection repositories
