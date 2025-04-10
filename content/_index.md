@@ -1,6 +1,6 @@
 ---
 title: Open Terms Archive documentation
-linkTitle: Homepage
+linkTitle: Introduction
 weight: 1
 ---
 
