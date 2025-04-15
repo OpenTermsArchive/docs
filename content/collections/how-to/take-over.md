@@ -9,7 +9,7 @@ Before starting, ensure the collection is either [abandoned]({{< relref "collect
 
 ## Steps
 
-1. If the approval is not explicitly given in the collection's README, get it by contacting owners via email if publicly available, a GitHub issue on the collection repository or on the [community chat]({{< relref "federation/how-to/join" >}}).
+1. If the approval is not explicitly given in the collection's README, get it by contacting owners via email if publicly available, a GitHub issue on the collection repository, or on the [community chat]({{< relref "community/how-to/join" >}}).
 
 2. Ask the owners to transfer the repositories to your organization.
 
