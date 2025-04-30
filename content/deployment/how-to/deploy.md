@@ -5,20 +5,17 @@ weight: 1
 
 # How to deploy a collection
 
-This guide will help you deploy an Open Terms Archive collection to a server. The deployment is automated using [Ansible](https://docs.ansible.com/ansible/latest/index.html), a configuration management tool that will set up the Open Terms Archive engine and configure it to track your collection's terms.
+This guide will help you deploy an Open Terms Archive collection to a server. The deployment is automated using [Ansible](https://docs.ansible.com/ansible/latest/index.html) and will set up the Open Terms Archive engine and configure it to track your collection's terms.
 
 ## System Overview
 
-Before diving into the deployment steps, here's a high-level overview of how Open Terms Archive works:
+Before diving into the deployment steps, here's a quick reminder of the high-level overview of how Open Terms Archive works. 
 
-1. **Repository structure**: Each collection uses three GitHub repositories:
-   - `declarations`: Contains the terms to track, engine configuration and deployment configuration
-   - `versions`: Automatically managed repository storing versions history
-   - `snapshots`: Automatically managed repository storing snapshots history
+Each collection uses three repositories, `declarations` which contains the terms to track, the engine and deployment configuration, `versions` and `snapshots` which are automatically managed repositories storing versions and snapshots history.
 
-2. **Deployment process**: The deployment is automated through GitHub Actions. Ansible configures the server and sets up the Open Terms Archive engine. On your server, [PM2](https://pm2.keymetrics.io) starts and controls the engine.
+The deployment process is automated through GitHub Actions. Ansible configures the server and sets up the Open Terms Archive engine. On the server, [PM2](https://pm2.keymetrics.io) is used to start and control the engine.
 
-3. **Operation**: The engine runs continuously on your server, periodically checking for changes in the tracked terms. When changes are detected, it automatically commits them to the versions and snapshots repositories. Email notifications are sent when issues occur.
+When deployed, the engine runs continuously on the server, periodically checking for changes in the tracked terms. When changes are detected, it automatically commits them to the versions and snapshots repositories. When issues occur, email notifications are sent.
 
 ## Prerequisites
 
@@ -45,7 +42,7 @@ First, ensure your server provides unsupervised access:
    If no Ed25519 key appears, generate one by running the following commands on the server:
 
    ```shell
-   sudo ssh-keygen -t ed25519 --file=/etc/ssh/ssh_host_ed25519_key
+   sudo ssh-keygen -t ed25519 -f /etc/ssh/ssh_host_ed25519_key
    sudo systemctl restart ssh
    ```
 
@@ -60,23 +57,24 @@ First, ensure your server provides unsupervised access:
 
    > **Note**: The `adduser` command might not be installed by default on your system. It can be installed with `sudo apt-get install adduser`.
 
-3. Configure sudo access for this user, by running the adding the following line to the `/etc/sudoers` file on the server:
+3. Configure passwordless sudo access for this user, by running the adding the following line to the `/etc/sudoers` file on the server:
 
    ```shell
    <deployment_user> ALL=(ALL) NOPASSWD:ALL
    ```
 
-   > **Note**: While passwordless sudo access does reduce security compared to requiring a password, it is essential for full automation in deployment workflows with Ansible. The deployment process requires system-level operations (like installing packages and configuring services) that must be executed without manual intervention. To mitigate security risks, this configuration is limited to a dedicated deployment user that should only be used for deployment purposes, and the server must be properly secured with SSH key authentication.
+   > **Note**: While passwordless sudo access does reduce security compared to requiring a password, it is required for full automation in deployment workflows with Ansible. The deployment process requires system-level operations (like installing packages and configuring services) that must be executed without manual intervention. To mitigate security risks, this configuration is limited to a dedicated deployment user that should only be used for deployment purposes, and the server must be properly secured with SSH key authentication.
 
 ## 2. Set up the deployment configuration
 
-1. Clone the collection declarations repository that you want to deploy:
+1. Clone the collection declarations repository that you want to deploy and navigate to the collection folder:
 
    ```shell
    git clone https://github.com/<organization>/<collection_id>-declarations.git
+   cd <collection_id>-declarations
    ```
 
-2. Configure the inventory file `deployment/inventory.yml` with your server's IP address, deployment user (from step 1), server fingerprint (from step 1) and the repository URL:
+2. Configure the inventory file `deployment/inventory.yml` with your server's IP address, deployment user, server fingerprint and the repository URL:
 
    ```yaml
    <server_ip>:
@@ -115,10 +113,11 @@ First, ensure your server provides unsupervised access:
    - Set repository access for both declarations and versions repositories
    - Grant "Contents" and "Issues" write permissions
 
-3. Get the token approved:
-   - Have an organization admin approve the token request
+3. If relevant, get the token approved by having an organization admin approve the token request
 
-4. > _Specific to Open Terms Archive organization members_
+4. Keep this token for the next steps
+
+5. > _Specific to Open Terms Archive organization members_
    >
    > Back up the token in the shared password database by creating an entry titled "GitHub Token" in the collection folder and storing the token in this entry
 
@@ -128,14 +127,15 @@ This section uses [Ansible Vault](https://docs.ansible.com/ansible/latest/vault_
 
 1. Generate and store a vault key:
    - Generate a secure password without quotes/backticks
-   - Inside the collection folder, create `deployment/vault.key` with the password.
-   - Add the same password as `ANSIBLE_VAULT_KEY` in GitHub secrets.
+   - Inside the collection folder, create a file named `deployment/vault.key` and paste the generated password into it.
+   - Go to `https://github.com/<organization>/<collection_id>-declarations/settings/secrets/actions`
+   - Create a new secret named `ANSIBLE_VAULT_KEY` and paste the same password into it.
 
    > **Note**: The same vault key is used in two places:
    > - Locally as `vault.key` to encrypt/decrypt files during development
    > - In GitHub Actions as `ANSIBLE_VAULT_KEY` to decrypt files during automated deployment
 
-2. Store the GitHub token (from step 4), in `deployment/.env`:
+2. Store the GitHub token, generated in the previous section, in `deployment/.env`:
 
    ```shell
    OTA_ENGINE_GITHUB_TOKEN=your_token
@@ -147,13 +147,16 @@ This section uses [Ansible Vault](https://docs.ansible.com/ansible/latest/vault_
    ansible-vault encrypt .env
    ```
 
-   > **Note**: Running the command above from the `deployment` folder will ensure that the vault.key file is used as the vault key, as this folder contains an ansible.cfg file that explicitly configures this behavior.
+   > **Note**: Running the command from the `deployment` folder will ensure that the `vault.key` file is used as vault key, since this folder contains an `ansible.cfg` file that explicitly configures this behavior.
    >
    > To decrypt an encrypted file, use:
+   >
    > ```shell
    > ansible-vault decrypt deployment/.env
    > ```
+   >
    > After making changes, re-encrypt it:
+   >
    > ```shell
    > ansible-vault encrypt deployment/.env
    > ```
