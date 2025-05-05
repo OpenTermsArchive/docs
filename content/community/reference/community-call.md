@@ -8,7 +8,7 @@ The Open Terms Archive Community Call is a monthly online meeting for and by the
 
 ## Ambitions
 
-- **Get up-to-date**: the core team will open the call by highlighting the latest features and 
+- **Get up-to-date**: the core team will open the call by highlighting the latest features and updates.
 - **Discover collections**: on each call, a maintainer will present their collection.
 - **Get support**: the core team will be available to help you track and maintain existing collections.
 
