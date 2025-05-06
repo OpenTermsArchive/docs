@@ -27,8 +27,6 @@ Before starting, ensure you have:
 - A GitHub user account to automate actions such as committing entries in versions and snapshots repositories, reporting issues when tracking fails, publishing releases…
 - [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) installed on your local machine
 
-> **Note**: This guide is intended for both Open Terms Archive organization members and external contributors. Some steps marked with "_Specific to Open Terms Archive organization members_" are only relevant for organization members as they involve access to the organization's shared password database. External contributors should adapt these steps to their own security practices while following the same deployment principles.
-
 ## 1. Configure the server
 
 First, ensure your server provides unsupervised access:
@@ -100,9 +98,9 @@ First, ensure your server provides unsupervised access:
    - Go to `https://github.com/<organization>/<collection_id>-declarations/settings/secrets/actions`
    - Create a new secret named `SERVER_SSH_KEY` with the private key content
 
-3. > _Specific to Open Terms Archive organization members_
-   >
-   > Back up the keys in the shared password database by creating an entry titled "Deployment SSH Key" in the collection folder and storing both public and private keys in this entry
+{{< showIfParam "ota" >}}
+3. Back up the keys in the shared password database by creating an entry titled "Deployment SSH Key" in the collection folder and storing both public and private keys in this entry
+{{< /showIfParam >}}
 
 ## 4. Set up GitHub permissions
 
@@ -117,9 +115,9 @@ First, ensure your server provides unsupervised access:
 
 4. Keep this token for the next steps
 
-5. > _Specific to Open Terms Archive organization members_
-   >
-   > Back up the token in the shared password database by creating an entry titled "GitHub Token" in the collection folder and storing the token in this entry
+{{< showIfParam "ota" >}}
+5. Back up the token in the shared password database by creating an entry titled "GitHub Token" in the collection folder and storing the token in this entry
+{{< /showIfParam >}}
 
 ## 5. Configure and encrypt secrets
 
@@ -163,9 +161,9 @@ This section uses [Ansible Vault](https://docs.ansible.com/ansible/latest/vault_
 
 4. Commit the changes to the repository
 
-5. > _Specific to Open Terms Archive organization members_
-   >
-   > Back up the vault key in the shared password database by creating an entry titled "Vault Key" in the collection folder and storing the vault key in this entry
+{{< showIfParam "ota" >}}
+5. Back up the vault key in the shared password database by creating an entry titled "Vault Key" in the collection folder and storing the vault key in this entry
+{{< /showIfParam >}}
 
 ## 6. Set up collection-specific SSH key
 
@@ -189,9 +187,9 @@ This section uses [Ansible Vault](https://docs.ansible.com/ansible/latest/vault_
    - Go to github.com/settings/ssh/new
    - Add the public key with title "<collection_name> collection"
 
-6. > _Specific to Open Terms Archive organization members_
-   >
-   > Back up the key in the shared password database by creating an entry titled "OTA-Bot GitHub SSH key" in the collection folder and storing both public and private keys in this entry
+{{< showIfParam "ota" >}}
+6. Back up the key in the shared password database by creating an entry titled "OTA-Bot GitHub SSH key" in the collection folder and storing both public and private keys in this entry
+{{< /showIfParam >}}
 
 ## 7. Configure email notifications
 
@@ -224,9 +222,10 @@ This section describes how to configure the engine to use a specific SMTP server
    ansible-vault encrypt .env
    ```
 
-5. > _Specific to Open Terms Archive organization members_
-   > Create a new SMTP key in Brevo and name it "<collection_name> collection"
-   > Back up the key in the shared password database by creating an entry titled "SMTP Key" in the collection folder and storing the credentials in this entry
+{{< showIfParam "ota" >}}
+5. Create a new SMTP key in Brevo and name it "<collection_name> collection"
+6. Back up the key in the shared password database by creating an entry titled "SMTP Key" in the collection folder and storing the credentials in this entry
+{{< /showIfParam >}}
 
 ## 8. Test the deployment
 
