@@ -1,3 +1,22 @@
+{{/* 
+  Shortcode: showIfParam
+  Description: Shows content conditionally based on a URL parameter value.
+  
+  Usage:
+  {{% showIfParam "paramName" "expectedValue" %}}
+  Content to show when paramName=expectedValue
+  {{% /showIfParam %}}
+  
+  Parameters:
+  - paramName: The URL parameter to check (required)
+  - expectedValue: The value to match against (optional, defaults to "true")
+  
+  Example:
+  {{% showIfParam "feature" "beta" %}}
+  This content will only show when URL has ?feature=beta
+  {{% /showIfParam %}}
+*/}}
+
 {{ $param := .Get 0 }}
 {{ $value := .Get 1 | default "true" }}
 {{ $content := .Inner | markdownify }}
