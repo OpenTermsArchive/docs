@@ -7,20 +7,11 @@ weight: 1
 
 This guide will help you deploy an Open Terms Archive collection to a server. The deployment is automated using [Ansible](https://docs.ansible.com/ansible/latest/index.html) and will set up the Open Terms Archive engine and configure it to track your collection's terms.
 
-## System Overview
-
-Before diving into the deployment steps, here's a quick reminder of the high-level overview of how Open Terms Archive works. 
-
-Each collection uses three repositories, `declarations` which contains the terms to track, the engine and deployment configuration, `versions` and `snapshots` which are automatically managed repositories storing versions and snapshots history.
-
-The deployment process is automated through GitHub Actions. Ansible configures the server and sets up the Open Terms Archive engine. On the server, [PM2](https://pm2.keymetrics.io) is used to start and control the engine.
-
-When deployed, the engine runs continuously on the server, periodically checking for changes in the tracked terms. When changes are detected, it automatically commits them to the versions and snapshots repositories. When issues occur, email notifications are sent.
-
 ## Prerequisites
 
 Before starting, ensure you have:
 
+- A basic understanding of the [deployment architecture]({{< relref "deployment/reference/architecture" >}})
 - A server with admin access
 - All collections repositories created, if not, see the [guide to create repositories]({{< relref "collections/how-to/create-repositories" >}})
 - At least one declaration added to your collection
