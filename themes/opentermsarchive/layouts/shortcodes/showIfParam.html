@@ -1,0 +1,5 @@
+{{ $param := .Get 0 }}
+{{ $value := .Get 1 | default "true" }}
+{{ $content := .Inner | markdownify }}
+{{ $content = replaceRE `<([^>]+)>` (printf `<$1 show-if-param-content data-param="%s" data-value="%s" style="display: none;">` $param $value) $content }}
+{{ $content | safeHTML }}

@@ -1,0 +1,15 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const elements = document.querySelectorAll('[show-if-param-content]');
+        
+        elements.forEach(element => {
+            const param = element.dataset.param;
+            const value = element.dataset.value;
+            
+            if (urlParams.get(param) === value) {
+                element.removeAttribute('style');
+            }
+        });
+    });
+</script>
