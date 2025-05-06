@@ -31,9 +31,9 @@ Review the [supported types list](https://github.com/OpenTermsArchive/terms-type
 
 ## Long-term solution
 
-The recommended approach is to contribute your new terms type to the official list. This helps maintain consistency across collections and enables better comparison of terms across different services.
+The recommended approach is to contribute your new terms type to the official list. This enables collections interoperability and comparison of terms across different services.
 
-You can propose your new terms type for inclusion in the official list of supported types via the [dedicated repository](https://github.com/OpenTermsArchive/terms-types), following the [contribution process](https://github.com/OpenTermsArchive/terms-types/blob/main/CONTRIBUTING.md#add-new-terms-types).
+You can suggest new terms type for the official list via the dedicated [contribution process](https://github.com/OpenTermsArchive/terms-types/blob/main/CONTRIBUTING.md#add-new-terms-types).
 
 This process has the following benefits:
 
@@ -42,7 +42,7 @@ This process has the following benefits:
 - It helps build a more comprehensive and useful shared list
 - Enables better comparison of terms across different services
 
-This solution can take some time to have your terms type to be approved, so if you need a faster solution, you can proceed with the following temporary solutions.
+Inclusion in the official terms types list has a delay for consensus building. In the meantime, you can proceed with the following temporary solutions.
 
 ## Temporary solutions
 

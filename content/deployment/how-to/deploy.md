@@ -24,7 +24,7 @@ Before starting, ensure you have:
 - A server with admin access
 - All collections repositories created, if not, see the [guide to create repositories]({{< relref "collections/how-to/create-repositories" >}})
 - At least one declaration added to your collection
-- A GitHub user account dedicated to bot-related actions (commit entries in versions and snapshots repositories, report issues when tracking fails, publish releases, …)
+- A GitHub user account to automate actions such as committing entries in versions and snapshots repositories, reporting issues when tracking fails, publishing releases…
 - [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) installed on your local machine
 
 > **Note**: This guide is intended for both Open Terms Archive organization members and external contributors. Some steps marked with "_Specific to Open Terms Archive organization members_" are only relevant for organization members as they involve access to the organization's shared password database. External contributors should adapt these steps to their own security practices while following the same deployment principles.
@@ -57,7 +57,7 @@ First, ensure your server provides unsupervised access:
 
    > **Note**: The `adduser` command might not be installed by default on your system. It can be installed with `sudo apt-get install adduser`.
 
-3. Configure passwordless sudo access for this user, by running the adding the following line to the `/etc/sudoers` file on the server:
+3. Configure passwordless sudo access for this user, by adding the following line to the `/etc/sudoers` file on the server:
 
    ```shell
    <deployment_user> ALL=(ALL) NOPASSWD:ALL
