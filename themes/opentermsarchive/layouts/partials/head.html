@@ -1,7 +1,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>{{ with .Param "html_title" }}{{ . }}{{ else }}{{ .Title }}{{ end }}</title>
-	<meta name="description" content="{{ .Description }}" />
+	<meta name="description" content="{{ with .Param "html_description"}}{{ . }}{{ else }}{{ .Summary | truncate 160 }}{{ end }}">
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	{{ $styles := resources.Get "css/loader.css" | toCSS | postCSS (dict "config" "./assets/css/postcss.config.js" "inlineImports" true) }}
   {{ if hugo.IsProduction }}{{ $styles = $styles | minify | fingerprint | resources.PostProcess }}{{ end }}
