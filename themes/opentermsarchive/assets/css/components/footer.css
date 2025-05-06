@@ -15,6 +15,10 @@
       & a {
         display: inline-flex;
         color: var(--colorBlack600);
+
+        &:hover {
+          color: var(--colorSecondary);
+        }
       }
     }
   }
