@@ -1,0 +1,3 @@
+[show-if-param-content] {
+  background-color: color-mix(in srgb, var(--colorPrimary) 10%, var(--colorWhite));
+}

@@ -15,6 +15,10 @@
       & a {
         display: inline-flex;
         color: var(--colorBlack600);
+
+        &:hover {
+          color: var(--colorSecondary);
+        }
       }
     }
   }
@@ -29,7 +33,7 @@
 }
 
 .footer__main-menu {
-  gap: var(--m2XS) var(--mS);
+  gap: var(--m2XS) var(--mM);
 }
 
 .footer__sub-menu {

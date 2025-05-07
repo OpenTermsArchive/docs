@@ -36,7 +36,7 @@ footer:
   - name: About
     url: https://opentermsarchive.org/en/about/
     weight: 7
-  - name: Contact-us
+  - name: Contact us
     identifier: mailto
     weight: 8
 footer_sub:

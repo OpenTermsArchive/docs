@@ -171,6 +171,11 @@
     }
   }
 
+  & ol + ol,
+  & ul + ul {
+    margin-top: calc((var(--mL) * -1) + var(--m2XS));
+  }
+
   & li {
     position: relative;
     margin-bottom: var(--m2XS);

@@ -1,6 +1,6 @@
 ---
 title: Terminate a collection
-weight: 3
+weight: 4
 ---
 
 # How to terminate a collection
