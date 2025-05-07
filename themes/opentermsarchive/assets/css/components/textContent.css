@@ -173,7 +173,7 @@
 
   & ol + ol,
   & ul + ul {
-    margin-top: calc(var(--mL) * -1);
+    margin-top: calc((var(--mL) * -1) + var(--m2XS));
   }
 
   & li {
