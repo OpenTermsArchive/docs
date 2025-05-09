@@ -29,9 +29,11 @@ Storage usage typically grows at a rate of 0.5 MB per tracked terms per month o
 
 ## Operating system
 
-Supported operating systems:
-- Ubuntu 20.04 or higher
-- Debian 11 or higher
+The Open Terms Archive engine is [continuously tested](https://github.com/OpenTermsArchive/engine/blob/main/.github/workflows/test.yml#L12-L15) and guaranteed to work on the following operating systems:
+
+- Ubuntu 22.04
+- macOS 14
+- Windows Server 2022
 
 ## Location
 
