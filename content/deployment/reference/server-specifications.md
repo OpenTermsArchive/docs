@@ -46,4 +46,4 @@ Please [report](https://github.com/OpenTermsArchive/engine/issues/new) any incom
 
 ## Location
 
-Servers should be physically located in geographic regions that align with the jurisdiction the collection targets to ensure to [obtain documents like a user would]({{< relref "concepts/design-principles#3-obtain-documents-like-a-user-would" >}}). This is crucial because some services deliver different versions of documents based on the location of the request, even when the documents are supposed to be identical.
+Servers must be physically located in geographic regions that belong to the jurisdiction the collection targets to ensure to [obtain documents like a user would]({{< relref "concepts/design-principles#3-obtain-documents-like-a-user-would" >}}). This is crucial because some services deliver different versions of documents based on the inferred location of the request, even when the documents are supposed to be identical and located at the same URL.
