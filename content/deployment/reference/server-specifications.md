@@ -35,6 +35,15 @@ The Open Terms Archive engine is [continuously tested](https://github.com/Open
 - macOS 14
 - Windows Server 2022
 
+The following operating systems should be compatible, but are not guaranteed:
+
+- Debian 11 or higher
+- Ubuntu 24.04 or higher
+- macOS 15 or higher
+- Windows Server 2025
+
+Please [report](https://github.com/OpenTermsArchive/engine/issues/new) any incompatibility with more recent versions of Ubuntu, macOS or Windows.
+
 ## Location
 
 Servers should be physically located in geographic regions that align with the jurisdiction the collection targets to ensure to [obtain documents like a user would]({{< relref "concepts/design-principles#3-obtain-documents-like-a-user-would" >}}). This is crucial because some services deliver different versions of documents based on the location of the request, even when the documents are supposed to be identical.
