@@ -20,6 +20,7 @@ To find out the address of the RSS feed you want to subscribe to:
 1. [Navigate]({{< relref "/analysis/how-to/navigate-history" >}}) to the page with the history of changes you are interested in.
     - For example, for the GitHub Privacy Policy of the Demo collection, this would be [this page](https://github.com/OpenTermsArchive/demo-versions/commits/main/GitHub/Privacy%20Policy.md).
 2. Copy the address of that page from your browser’s address bar.
+    - In the address, if they are present, replace the words `blob` or `tree` with `commits`.
     - For example, for the GitHub Privacy Policy of the Demo collection, this would be `https://github.com/OpenTermsArchive/demo-versions/commits/main/GitHub/Privacy%20Policy.md`.
 3. Append `.atom` at the end of this address.
     - For example, for the GitHub Privacy Policy of the Demo collection, this would become `https://github.com/OpenTermsArchive/demo-versions/commits/main/GitHub/Privacy%20Policy.md.atom`.
