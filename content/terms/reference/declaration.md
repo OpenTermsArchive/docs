@@ -97,7 +97,7 @@ As an array of those:
     type="boolean"
     description=`Boolean flag to execute client-side JavaScript before accessing content.
 
-When enabled, this loads the page in a headless browser to execute client-side scripts and load dynamic content, which is necessary when JavaScript modifies or loads content after the initial page load. If undefined, the engine will automatically balance performance and tracking success rate, defaulting to not executing scripts and escalating to headless browser if needed.`
+When enabled, this loads the page in a headless browser to execute client-side scripts and load dynamic content, which is necessary when JavaScript modifies or loads content after the initial page load. If undefined, the engine will automatically balance performance and tracking success rate, defaulting to not executing scripts and escalating to headless browser if the page fails to load.`
     default="undefined"
     example="true"
 />}}
