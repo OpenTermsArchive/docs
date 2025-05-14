@@ -1,3 +1,69 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>References on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/terms/reference/</link><description>Recent content in References on Open Terms Archive documentation</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/terms/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Filters</title><link>https://docs.opentermsarchive.org/terms/reference/filters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/reference/filters/</guid><description>Filters Some documents require more complex filtering beyond basic element selection and removal. For example, web pages often contain dynamically generated content like tracking IDs in URLs that change on each page load. While these elements are part of the page, they are not meaningful to the terms content itself. If such dynamic content is included in the archived versions, it creates a lot of insignificant versions and pollutes the archive with noise that makes it harder to identify actual changes to the terms.</description></item><item><title>Service declaration</title><link>https://docs.opentermsarchive.org/terms/reference/declaration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/reference/declaration/</guid><description>Service declaration This reference documentation details all available properties that can be specified in a service&amp;rsquo;s declaration file.
-The examples given throughout this reference can be seen in context in the declarations files from the Demo collection
-Properties 🔗 name string required The name of the service. Example: Open Terms Archive terms object of objects required Map of terms associated with a service, where keys are standardized term types (e.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>References on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/terms/reference/</link><description>Recent content in References on Open Terms Archive documentation</description><generator>Hugo</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/terms/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Filters</title><link>https://docs.opentermsarchive.org/terms/reference/filters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/reference/filters/</guid><description>&lt;h1 id="filters">
+ Filters
+ 
+&lt;/h1>
+&lt;p>Some documents require more complex filtering beyond basic element selection and removal. For example, web pages often contain dynamically generated content like tracking IDs in URLs that change on each page load. While these elements are part of the page, they are not meaningful to the terms content itself. If such dynamic content is included in the archived versions, it creates a lot of insignificant versions and pollutes the archive with noise that makes it harder to identify actual changes to the terms.&lt;/p></description></item><item><title>Service declaration</title><link>https://docs.opentermsarchive.org/terms/reference/declaration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/reference/declaration/</guid><description>&lt;h1 id="service-declaration">
+ Service declaration
+ 
+&lt;/h1>
+&lt;p>This reference documentation details all available properties that can be specified in a service&amp;rsquo;s declaration file.&lt;/p>
+&lt;p>The examples given throughout this reference can be seen in context in the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations/tree/main/declarations">declarations files&lt;/a> from the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations">Demo collection&lt;/a>&lt;/p>
+&lt;h2 id="properties">
+ Properties
+ 
+ &lt;a class="title-anchor" href="#properties">🔗&lt;/a>
+ 
+&lt;/h2>
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem">
+ &lt;div class="refItem-name">
+ &lt;code>name&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;span class="refItem-required">required&lt;/span>
+ 
+ &lt;/div>
+ &lt;div class="refItem-description">The name of the service.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;code>Open Terms Archive&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem">
+ &lt;div class="refItem-name">
+ &lt;code>terms&lt;/code>
+ &lt;span class="refItem-type">object of objects&lt;/span>
+ 
+ &lt;span class="refItem-required">required&lt;/span>
+ 
+ &lt;/div>
+ &lt;div class="refItem-description">&lt;p>Map of terms associated with a service, where keys are standardized term types (e.g., &amp;ldquo;Privacy Policy&amp;rdquo;, &amp;ldquo;Terms of Service&amp;rdquo;), and values are term objects containing the configuration for fetching and processing each document, as detailed in the &lt;a href="#terms-declaration">Terms declaration&lt;/a> section.&lt;/p></description></item></channel></rss>

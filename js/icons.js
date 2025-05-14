@@ -132,45 +132,10 @@
 /*! Bundled license information:
 
 lucide/dist/esm/createElement.js:
-  (**
-   * @license lucide v0.460.0 - ISC
-   *
-   * This source code is licensed under the ISC license.
-   * See the LICENSE file in the root directory of this source tree.
-   *)
-
 lucide/dist/esm/replaceElement.js:
-  (**
-   * @license lucide v0.460.0 - ISC
-   *
-   * This source code is licensed under the ISC license.
-   * See the LICENSE file in the root directory of this source tree.
-   *)
-
 lucide/dist/esm/defaultAttributes.js:
-  (**
-   * @license lucide v0.460.0 - ISC
-   *
-   * This source code is licensed under the ISC license.
-   * See the LICENSE file in the root directory of this source tree.
-   *)
-
 lucide/dist/esm/icons/chevron-down.js:
-  (**
-   * @license lucide v0.460.0 - ISC
-   *
-   * This source code is licensed under the ISC license.
-   * See the LICENSE file in the root directory of this source tree.
-   *)
-
 lucide/dist/esm/icons/x.js:
-  (**
-   * @license lucide v0.460.0 - ISC
-   *
-   * This source code is licensed under the ISC license.
-   * See the LICENSE file in the root directory of this source tree.
-   *)
-
 lucide/dist/esm/lucide.js:
   (**
    * @license lucide v0.460.0 - ISC

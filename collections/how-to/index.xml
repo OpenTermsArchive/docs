@@ -1,12 +1,133 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>How to guides on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/collections/how-to/</link><description>Recent content in How to guides on Open Terms Archive documentation</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/collections/how-to/index.xml" rel="self" type="application/rss+xml"/><item><title>Create a collection</title><link>https://docs.opentermsarchive.org/collections/how-to/create/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/create/</guid><description>How to create a collection You are considering creating a new collection to track terms with Open Terms Archive? Amazing!
-Define metadata 🔗 First of all, define the metadata of the collection you would like to create and keep them ready to be used when setting up the repositories.
-Check existing collections 🔗 Now that you have a clear idea what you would like to track, double-check that there are no existing federated collections that you could contribute to.</description></item><item><title>Create repositories</title><link>https://docs.opentermsarchive.org/collections/how-to/create-repositories/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/create-repositories/</guid><description>How to create collection repositories Collections in Open Terms Archive rely on three Git repositories to hold the data:
-Declarations repository: stores the declarations that define terms to track Snapshots repository: stores raw snapshots of tracked terms Versions repository: stores processed versions of tracked terms This guide assumes you use GitHub. For other Git platforms, adapt these steps accordingly.
-Prerequisites 🔗 Before starting, ensure you have:
-A GitHub account with permissions to create repositories Your collection ID and name defined Your collection metadata prepared Create declarations repository 🔗 Create from template 🔗 Go to the demo-declarations repository Click &amp;ldquo;Use this template&amp;rdquo; dropdown and select &amp;ldquo;Create a new repository&amp;rdquo; Name it &amp;lt;collection_id&amp;gt;-declarations (e.</description></item><item><title>Define metadata</title><link>https://docs.opentermsarchive.org/collections/how-to/define-metadata/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/define-metadata/</guid><description>How to define metadata This guide will help you define the metadata for your Open Terms Archive collection.
-Prerequisites 🔗 A text editor. Basic understanding of the YAML syntax. Your collection&amp;rsquo;s basic information ready. Steps 🔗 Create a new file named metadata.yml in your collection&amp;rsquo;s root directory.
-Define the required basic information:
-name: &amp;#34;Your Collection Name&amp;#34; # Keep it under 3 words id: &amp;#34;your-collection-id&amp;#34; # Create a simple dash-separated identifier tagline: &amp;#34;Brief description&amp;#34; # Write a one-line collection summary languages: [&amp;#34;en&amp;#34;] # List ISO 639 language codes jurisdictions: [&amp;#34;US&amp;#34;] # List ISO 3166-2 country codes Add detailed description and repositories URLs:</description></item><item><title>Terminate a collection</title><link>https://docs.opentermsarchive.org/collections/how-to/terminate/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/terminate/</guid><description>How to terminate a collection If you don&amp;rsquo;t have the resources to maintain a collection anymore, follow these steps to properly terminate it. This will make it clear to users and potential successors that it is no longer actively maintained and can be taken over.
-Steps 🔗 Announce the intention to terminate the collection in the community chat to inform users and make potential new maintainers aware. Give at least one month notice to that others have time to share their intention to take over the collection before proceeding to the next step.</description></item><item><title>Take over a collection</title><link>https://docs.opentermsarchive.org/collections/how-to/take-over/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/take-over/</guid><description>How to take over a collection Before starting, ensure the collection is either abandoned or terminated. In any case, keep all original licenses, history, and attributions.
-Steps 🔗 If the approval is not explicitly given in the collection&amp;rsquo;s README, get it by contacting owners via email if publicly available, a GitHub issue on the collection repository, or on the community chat.
-Ask the owners to transfer the repositories to your organization.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>How to guides on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/collections/how-to/</link><description>Recent content in How to guides on Open Terms Archive documentation</description><generator>Hugo</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/collections/how-to/index.xml" rel="self" type="application/rss+xml"/><item><title>Create a collection</title><link>https://docs.opentermsarchive.org/collections/how-to/create/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/create/</guid><description>&lt;h1 id="how-to-create-a-collection">
+ How to create a collection
+ 
+&lt;/h1>
+&lt;p>You are considering creating a new collection to track terms with Open Terms Archive? Amazing!&lt;/p>
+&lt;h2 id="define-metadata">
+ Define metadata
+ 
+ &lt;a class="title-anchor" href="#define-metadata">🔗&lt;/a>
+ 
+&lt;/h2>
+&lt;p>First of all, define the &lt;a href="https://docs.opentermsarchive.org/collections/reference/metadata/">metadata&lt;/a> of the collection you would like to create and keep them ready to be used when setting up the repositories.&lt;/p>
+&lt;h2 id="check-existing-collections">
+ Check existing collections
+ 
+ &lt;a class="title-anchor" href="#check-existing-collections">🔗&lt;/a>
+ 
+&lt;/h2>
+&lt;p>Now that you have a clear idea what you would like to track, double-check that there are no &lt;a href="https://opentermsarchive.org/#collections">existing federated collections&lt;/a> that you could contribute to. If you have a doubt about whether some terms you want to track would fit a collection, reach out to the collection maintainers.&lt;/p></description></item><item><title>Create repositories</title><link>https://docs.opentermsarchive.org/collections/how-to/create-repositories/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/create-repositories/</guid><description>&lt;h1 id="how-to-create-collection-repositories">
+ How to create collection repositories
+ 
+&lt;/h1>
+&lt;p>Collections in Open Terms Archive rely on three Git repositories to hold the data:&lt;/p>
+&lt;ul>
+&lt;li>Declarations repository: stores the declarations that define terms to track&lt;/li>
+&lt;li>Snapshots repository: stores raw snapshots of tracked terms&lt;/li>
+&lt;li>Versions repository: stores processed versions of tracked terms&lt;/li>
+&lt;/ul>
+&lt;p>This guide assumes you use GitHub. For other Git platforms, adapt these steps accordingly.&lt;/p>
+&lt;h2 id="prerequisites">
+ Prerequisites
+ 
+ &lt;a class="title-anchor" href="#prerequisites">🔗&lt;/a>
+ 
+&lt;/h2>
+&lt;p>Before starting, ensure you have:&lt;/p>
+&lt;ul>
+&lt;li>A GitHub account with permissions to create repositories&lt;/li>
+&lt;li>Your collection ID and name defined&lt;/li>
+&lt;li>Your collection metadata prepared&lt;/li>
+&lt;/ul>
+&lt;h2 id="create-declarations-repository">
+ Create declarations repository
+ 
+ &lt;a class="title-anchor" href="#create-declarations-repository">🔗&lt;/a>
+ 
+&lt;/h2>
+&lt;h3 id="create-from-template">
+ Create from template
+ 
+ &lt;a class="title-anchor" href="#create-from-template">🔗&lt;/a>
+ 
+&lt;/h3>
+&lt;ol>
+&lt;li>Go to the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations">&lt;code>demo-declarations&lt;/code>&lt;/a> repository&lt;/li>
+&lt;li>Click &amp;ldquo;Use this template&amp;rdquo; dropdown and select &amp;ldquo;Create a new repository&amp;rdquo;&lt;/li>
+&lt;li>Name it &lt;code>&amp;lt;collection_id&amp;gt;-declarations&lt;/code> (e.g. &lt;code>pga-declarations&lt;/code>)&lt;/li>
+&lt;li>Wait 1-2 minutes for automatic setup to complete (check &lt;code>first-time-setup&lt;/code> action status)&lt;/li>
+&lt;/ol>
+&lt;h3 id="configure-repository-settings">
+ Configure repository settings
+ 
+ &lt;a class="title-anchor" href="#configure-repository-settings">🔗&lt;/a>
+ 
+&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Set up the &amp;ldquo;About&amp;rdquo; section:&lt;/p></description></item><item><title>Define metadata</title><link>https://docs.opentermsarchive.org/collections/how-to/define-metadata/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/define-metadata/</guid><description>&lt;h1 id="how-to-define-metadata">
+ How to define metadata
+ 
+&lt;/h1>
+&lt;p>This guide will help you define the metadata for your Open Terms Archive collection.&lt;/p>
+&lt;h2 id="prerequisites">
+ Prerequisites
+ 
+ &lt;a class="title-anchor" href="#prerequisites">🔗&lt;/a>
+ 
+&lt;/h2>
+&lt;ul>
+&lt;li>A text editor.&lt;/li>
+&lt;li>Basic understanding of the &lt;a href="https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html">YAML syntax&lt;/a>.&lt;/li>
+&lt;li>Your collection&amp;rsquo;s basic information ready.&lt;/li>
+&lt;/ul>
+&lt;h2 id="steps">
+ Steps
+ 
+ &lt;a class="title-anchor" href="#steps">🔗&lt;/a>
+ 
+&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Create a new file named &lt;code>metadata.yml&lt;/code> in your collection&amp;rsquo;s root directory.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Define the required basic information:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;Your Collection Name&amp;#34;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Keep it under 3 words&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">id&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;your-collection-id&amp;#34;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Create a simple dash-separated identifier&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">tagline&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;Brief description&amp;#34;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Write a one-line collection summary&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">languages&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;en&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># List ISO 639 language codes&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">jurisdictions&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;US&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># List ISO 3166-2 country codes&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Add detailed description and repositories URLs:&lt;/p></description></item><item><title>Terminate a collection</title><link>https://docs.opentermsarchive.org/collections/how-to/terminate/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/terminate/</guid><description>&lt;h1 id="how-to-terminate-a-collection">
+ How to terminate a collection
+ 
+&lt;/h1>
+&lt;p>If you don&amp;rsquo;t have the resources to maintain a collection anymore, follow these steps to properly terminate it. This will make it clear to users and potential successors that it is no longer actively maintained and can be taken over.&lt;/p>
+&lt;h2 id="steps">
+ Steps
+ 
+ &lt;a class="title-anchor" href="#steps">🔗&lt;/a>
+ 
+&lt;/h2>
+&lt;ol>
+&lt;li>Announce the intention to terminate the collection in the &lt;a href="https://docs.opentermsarchive.org/federation/how-to/join/">community chat&lt;/a> to inform users and make potential new maintainers aware. Give at least one month notice to that others have time to share their intention to take over the collection before proceeding to the next step.&lt;/li>
+&lt;/ol>
+&lt;p>If no-one has come forward after one month, you can proceed to the next step.&lt;/p></description></item><item><title>Take over a collection</title><link>https://docs.opentermsarchive.org/collections/how-to/take-over/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/take-over/</guid><description>&lt;h1 id="how-to-take-over-a-collection">
+ How to take over a collection
+ 
+&lt;/h1>
+&lt;p>Before starting, ensure the collection is either &lt;a href="https://docs.opentermsarchive.org/collections/reference/status/#abandoned">abandoned&lt;/a> or &lt;a href="https://docs.opentermsarchive.org/collections/reference/status/#terminated">terminated&lt;/a>. In any case, keep all original licenses, history, and attributions.&lt;/p>
+&lt;h2 id="steps">
+ Steps
+ 
+ &lt;a class="title-anchor" href="#steps">🔗&lt;/a>
+ 
+&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>If the approval is not explicitly given in the collection&amp;rsquo;s README, get it by contacting owners via email if publicly available, a GitHub issue on the collection repository, or on the &lt;a href="https://docs.opentermsarchive.org/community/how-to/join/">community chat&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Ask the owners to transfer the repositories to your organization.&lt;/p></description></item></channel></rss>
