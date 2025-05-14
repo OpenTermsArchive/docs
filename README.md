@@ -10,15 +10,25 @@ Pages and sections are ordered on the “end user” to “core team member” s
 
 ### Dependencies
 
-This website is built using [Hugo](https://gohugo.io), a static website editor, and uses [Node.js](https://nodejs.org).
+#### Hugo
 
-To build it, [install Hugo](https://gohugo.io/getting-started/installing/) (>= v0.114.0) and [Node.js](https://nodejs.org), and then:
+[Install Hugo](https://gohugo.io/getting-started/installing/) in version `0.147.1` edition `extended`.
+
+##### With Homebrew
+
+1. Add Open Terms Archive homebrew tap: `brew tap OpenTermsArchive/homebrew-tap https://github.com/OpenTermsArchive/homebrew-tap`
+2. Install Hugo: `brew install hugo@0.147.1`
+
+See [Open Terms Archive homebrew tap](https://github.com/OpenTermsArchive/homebrew-tap) for more information.
+
+#### Node.js and npm dependencies
+
+[Install Node.js](https://nodejs.org), then install npm dependencies with the following commands:
 
 ```sh
 git clone https://github.com/OpenTermsArchive/docs
 cd docs
 npm install
-hugo
 ```
 
 ## Usage
