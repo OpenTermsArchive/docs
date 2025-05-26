@@ -36,20 +36,29 @@ By the end, you'll have tracked a service's privacy policy. You will also have a
 
 For this tutorial, we will use the Privacy Policy of Open Terms Archive as an example.
 
-Create a file `declarations/Open Terms Archive.json`. The name of the file is the name of the service that will be tracked. The first thing to declare is the tracked service name:
+1. Create a file `declarations/Open Terms Archive.json`. The name of the file is the name of the service that will be tracked. The first thing to declare is the tracked service name:
+
     ```json
     {
       "name": "Open Terms Archive"
     }
     ```
 
-Now, you can add terms you want to track to the declaration. For this example, we will use the Privacy Policy.
+2. Find the URL of Open Terms Archive Privacy Policy by browsing [the website](https://opentermsarchive.org), copy the URL and fill the `fetch` field with.
 
-You can go on the Open Terms Archive [website](https://opentermsarchive.org/) and copy the URL of its [Privacy Policy](https://opentermsarchive.org/en/privacy-policy/) to fill the `fetch` field.
+    ```json
+    {
+      "name": "Open Terms Archive",
+      "terms": {
+        "Privacy Policy": {
+          "fetch": "https://opentermsarchive.org/en/privacy-policy"
+        }
+      }
+    }
+    ```
 
-And you can inspect the HTML of the page to get the selector of the content you want to extract to fill the `select` field.
+3. [Use a DOM inspector](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Debugging_HTML#using_a_dom_inspector) on the Open Terms Archive [Privacy Policy page](https://opentermsarchive.org/en/privacy-policy) to get the [CSS selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors) of the content you want to extract. Add it to the `select` field. The final declaration should look like this:
 
-The resulting declaration should look something like this:
     ```json
     {
       "name": "Open Terms Archive",
@@ -74,8 +83,7 @@ The resulting declaration should look something like this:
     npx ota track
     ```
 
-3. Verify the results:
-  - Check the extracted version, which should contain the Privacy Policy of Open Terms Archive in Markdown format without any other content (no header, footer…): `./data/versions/Open Terms Archive/Privacy Policy.md`.
-  - Check the snapshot, which is the original HTML document of the Open Terms Archive Privacy Policy: `./data/snapshots/Open Terms Archive/Privacy Policy.html`.
+3. Verify the results by checking the extracted version in `./data/versions/Open Terms Archive/Privacy Policy.md` file, which should contain only the meaningful content of the Privacy Policy in Markdown format.
 
-Congratulations! You have tracked your first terms.
+Congratulations! You have tracked your first terms locally.
+
