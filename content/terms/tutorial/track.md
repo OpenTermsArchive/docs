@@ -44,7 +44,7 @@ For this tutorial, we will use the Privacy Policy of Open Terms Archive as an ex
     }
     ```
 
-2. Add the Privacy Policy to track by going to the Open Terms Archive [website](https://opentermsarchive.org/) and copying the URL of its [Privacy Policy](https://opentermsarchive.org/en/privacy-policy/) to fill the `fetch` field.
+2. Find the URL of Open Terms Archive Privacy Policy by browsing [the website](https://opentermsarchive.org), copy the URL and fill the `fetch` field with.
 
     ```json
     {
@@ -57,7 +57,7 @@ For this tutorial, we will use the Privacy Policy of Open Terms Archive as an ex
     }
     ```
 
-3. Inspect the HTML of the page to get the selector of the content you want to extract and add it to the `select` field. The final declaration should look like this:
+3. [Use a DOM inspector](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Debugging_HTML#using_a_dom_inspector) on the Open Terms Archive [Privacy Policy page](https://opentermsarchive.org/en/privacy-policy) to get the [CSS selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors) of the content you want to extract. Add it to the `select` field. The final declaration should look like this:
 
     ```json
     {
@@ -83,7 +83,7 @@ For this tutorial, we will use the Privacy Policy of Open Terms Archive as an ex
     npx ota track
     ```
 
-3. Verify the results by checking the extracted version in `./data/versions/Open Terms Archive/Privacy Policy.md`, which should contain only the Privacy Policy content in Markdown format.
+3. Verify the results by checking the extracted version in `./data/versions/Open Terms Archive/Privacy Policy.md` file, which should contain only the meaningful content of the Privacy Policy in Markdown format.
 
 Congratulations! You have tracked your first terms locally.
 
