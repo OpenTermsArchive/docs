@@ -8,7 +8,7 @@ weight: 3
 A **collection** can **join** the Open Terms Archive **federation** if it abides by the following quality criteria:
 
 1. Clearly defined [collection metadata]({{< relref "collections/reference/metadata" >}}).
-2. Clearly defined [collection governance]({{< relref "collections/reference/governance" >}}).
+2. Clearly defined [collection governance]({{< relref "collections/reference/roles" >}}).
 3. The vast majority of **versions** are readable, as evidenced by a sample assessment.
 4. **Frequency** of at least one track a day, as evidenced by snapshots.
 5. Public and open-licensed **declarations**, as evidenced by the `LICENSE` file in the declarations repository.
