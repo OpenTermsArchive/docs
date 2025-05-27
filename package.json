@@ -21,7 +21,7 @@
     "lint:css": "stylelint \"themes/opentermsarchive/assets/css/*.css\"",
     "lint:js": "eslint themes/opentermsarchive/assets/js/",
     "start:dev": "npm run jsdoc && hugo serve --watch --logLevel debug --disableFastRender --ignoreCache",
-    "jsdoc": "jsdoc2md --files './node_modules/@opentermsarchive/engine/src/**/*.js' --template scripts/jsdoc/template/node.hbs -g grouped --name-format -d 4 > content/api/node.md"
+    "jsdoc": "jsdoc2md --files './node_modules/@opentermsarchive/engine/src/**/*.js' --template scripts/jsdoc/template/node.hbs -g grouped --name-format -d 4 > content/reference/programmatic-access/node-module.md"
   },
   "devDependencies": {
     "eslint": "^8.31.0",
