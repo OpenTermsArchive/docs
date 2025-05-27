@@ -13,15 +13,16 @@
   --gridGutterWidth: 24px;
 
   /* Colors */
-  --colorPrimary: #0496ff;
+  --colorPrimary: #2d63ff;
+  --colorPrimary300: #c5d9ff;
   --colorSecondary: #0b08a0;
   --colorTertiary: #f9dd3f;
-  --colorDarkedSecondary: #b4656f;
   --colorError: #ec368d;
   --colorSuccess: #11ebc3;
   --colorBlack900: #010613;
   --colorBlack850: #171717;
   --colorBlack800: #333;
+  --colorBlack700: #454545;
   --colorBlack600: #5e5e5e;
   --colorBlack400: #999;
   --colorBlack300: #d6d6d6;
@@ -29,27 +30,39 @@
   --colorBlack100: #fafafa;
   --colorWhite: #fefffd;
 
+  /* Sizes */
+  --3xs: 2px;
+  --2xs: 4px;
+  --xs: 8px;
+  --s: 12px;
+  --m: 16px;
+  --l: 24px;
+  --xl: 36px;
+  --2xl: 48px;
+  --3xl: 64px;
+  --4xl: 96px;
+
   /* Padding & margin */
-  --p3XS: 2px;
-  --p2XS: 4px;
-  --pXS: 8px;
-  --pS: 12px;
-  --pM: 16px;
-  --pL: 24px;
-  --pXL: 36px;
-  --p2XL: 48px;
-  --p3XL: 64px;
-  --p4XL: 96px;
-  --m3XS: 2px;
-  --m2XS: 4px;
-  --mXS: 8px;
-  --mS: 12px;
-  --mM: 16px;
-  --mL: 24px;
-  --mXL: 36px;
-  --m2XL: 48px;
-  --m3XL: 64px;
-  --m4XL: 96px;
+  --p3XS: var(--3xs);
+  --p2XS: var(--2xs);
+  --pXS: var(--xs);
+  --pS: var(--s);
+  --pM: var(--m);
+  --pL: var(--l);
+  --pXL: var(--xl);
+  --p2XL: var(--2xl);
+  --p3XL: var(--3xl);
+  --p4XL: var(--4xl);
+  --m3XS: var(--3xs);
+  --m2XS: var(--2xs);
+  --mXS: var(--xs);
+  --mS: var(--s);
+  --mM: var(--m);
+  --mL: var(--l);
+  --mXL: var(--xl);
+  --m2XL: var(--2xl);
+  --m3XL: var(--3xl);
+  --m4XL: var(--4xl);
 
   /* Breakpoints */
   --bpMobileSmall: 320px;

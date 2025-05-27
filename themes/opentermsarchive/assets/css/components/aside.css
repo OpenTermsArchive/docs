@@ -2,8 +2,6 @@
   flex-shrink: 0;
   margin-right: var(--mXL);
   @mixin grid 3, 2;
-  border: 1px solid var(--colorBlack200);
-  border-radius: 4px;
 }
 
 @media (--tabletSmall) {
@@ -14,157 +12,56 @@
 }
 
 .aside_nav {
-  > ul > li > details > ul > li:last-child,
-  > ul > li > details > ul > li:not(:last-child) > ul {
-    margin-bottom: var(--mS);
-  }
-
   ul {
     color: var(--colorBlack600);
     display: flex;
+    gap:var(--m3XS);
     flex-direction: column;
 
     li {
-      position: relative;
-      border-bottom: 1px solid var(--colorBlack200);
-
-      &:last-child {
-        border: none;
-      }
-
-      a {
-        padding: var(--mXS) var(--mS);
-        display: inline-block;
-        width: 100%;
-      }
-
-      .aside_item-current {        
-        color: var(--colorBlack800);
-
-        &::before {
-          content: '';
-          position: absolute;
-          left: 0;
-          width: 4px;
-          background-color: var(--colorPrimary);
-          border-radius: 0 10px 10px 0;
-          z-index: 1;
-          top: var(--m2XS);
-          bottom: var(--m2XS);
-        }
-
-        &::after {
-          content: '';
-          position: absolute;
-          background-color: var(--colorBlack200);
-          border-radius: 4px;
-          z-index: -1;
-          left: var(--mXS);
-          right: var(--m2XS);
-          top: var(--m2XS);
-          bottom: var(--m2XS);
-        }
-      }
-
-      &.aside_item-current-section {
-        &::before {
-          content: '';
-          position: absolute;
-          left: 0;
-          top: 0;
-          bottom: 0;
-          width: 1px;
-          background-color: var(--colorPrimary);
-          border-radius: 0;
-        }
-
-        & .aside_item-current {
-          &::before {
-            top: 2px;
-            bottom: 2px;
-          }
-
-          &::after {
-            top: 0;
-            bottom: 0;
-            right: var(--mXS);
-          }
-        }
-      }
-
-      details {
-        position: relative;
-
-        summary {
-          padding: var(--mXS) var(--mS);
-          list-style: none;
-          cursor: pointer;
-
-          &::marker,
-          &::-webkit-details-marker {
-            display: none;
-          }
-
-          & svg {
-            position: absolute;
-            right: 10px;
-            top: 14px;
-            font-size: 0.8em;
-            color: var(--colorBlack400);
-            transition: transform 0.2s ease;
-          }
-
-          &:hover::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background-color: var(--colorBlack100);
-            z-index: -1;
-          }
-        }
-
-        &[open] summary > svg {
-          transform: rotate(180deg);
-        }
-      }
-
-      span {
-        display: inline-block;
-      }
-    }
-
-    ul {
-      li {
-        border: none;
-
-        a {
-          padding: var(--p3XS) var(--mL);
-          border-radius: 4px;
-        }
-
-        > span,
-        a {
-          padding-left: var(--mS);
-        }
-
-        > a {
-          padding-top: var(--p3XS);
-          padding-bottom: var(--p3XS);
-        }
-
-        ul {
-          padding-top: 0;
-
-          li {
-            padding: 0;
-
-            a {
-              padding: var(--p3XS) var(--mL);
-              border-radius: 4px;
-            }
+      & ul {
+        & li {
+          & ul {
+            border-left:1px solid var(--colorBlack300);
+            padding-left:var(--pXS);
           }
         }
       }
     }
   }
+}
+
+.aside_item-current {
+  font-weight: bold;
+  z-index:1;
+  position:relative;
+  
+  & a{
+    color: var(--colorBlack800);
+  }
+  
+  &:before{
+    content:"";
+    position:absolute;
+    left:calc(var(--xs) * -1);
+    right:0;
+    top:calc(var(--3xs) * -1);
+    bottom:calc(var(--3xs) * -1);
+    width:calc(100% + var(--xs));
+    height:calc(100% + var(--2xs));
+    z-index:-1;
+    background-color: var(--colorBlack200);
+  }
+}
+
+.aside_item-section{
+  display:inline-block;
+  margin-top:var(--mXS);
+  color: var(--colorBlack600);
+}
+
+.aside_item-subsection{
+  display:inline-block;
+  margin-top:var(--m2XS);
+  color: var(--colorBlack600);
 }

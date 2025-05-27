@@ -1,37 +1,39 @@
-<aside class="aside">
-	{{ $currentPageSection := .Section }}
-	{{ $currentPageRelPermalink := .RelPermalink }}
+{{ $currentPageSection := .Section }}
+{{ $currentPageRelPermalink := .RelPermalink }}
 
-	<nav class="aside_nav">
-		<ul>
-			<li ><b><a class="{{ if eq $currentPageRelPermalink .Site.Home.RelPermalink }}aside_item-current{{ end }}" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Home.LinkTitle }}</a></b></li>
-			{{ range .Site.Sections.ByWeight }}
-				<li class="{{ if eq $currentPageSection .Section }}aside_item-current-section{{ end }}">
-					<details {{ if eq $currentPageSection .Section }}open{{ end }}>
-						<summary><b>{{ .LinkTitle | markdownify }}</b> <i class="icon" data-lucide="chevron-down"></i></summary>
-						<ul>
-							{{ $allPages := .RegularPages.ByWeight | append .Sections.ByWeight }}
-							{{ $allPages := sort $allPages "Weight" }}
-							{{ range $allPages }}
-								<li>
-									{{ if .Content }}
-											<a class="{{ if eq $currentPageRelPermalink .RelPermalink }}aside_item-current{{ end }}" href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a>
-									{{ else }}
-											<span class="{{ if eq $currentPageRelPermalink .RelPermalink }}aside_item-current{{ end }}">{{ .LinkTitle | markdownify }}</span>
-									{{ end }}
-									{{ if .IsSection }}
-										<ul>
-											{{ range .RegularPages.ByWeight }}
-												<li><a class="{{ if eq $currentPageRelPermalink .RelPermalink }}aside_item-current{{ end }}" href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a></li>
-											{{ end }}
-										</ul>
-									{{ end }}
-								</li>
-							{{ end }}
-						</ul>
-					</details>
-				</li>
-			{{ end }}
-		</ul>
-	</nav>
+<aside class="aside">
+  <nav class="aside_nav">
+    <ul>
+      {{ range where .Site.Pages "Section" "" }}
+        <li {{ if eq $currentPageRelPermalink .RelPermalink }}class="aside_item-current"{{ end }}>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+      {{ range .Site.Sections.ByWeight }}
+        <li {{ if eq $currentPageSection .Section }}class="aside_item-current-section"{{ end }}>
+          {{ $allPages := .RegularPages.ByWeight | append .Sections.ByWeight }}
+          {{ $allPages := sort $allPages "Weight" }}
+          <span class="aside_item-section"><b>{{ .LinkTitle | markdownify  }}</b></span>
+          <ul>
+            {{ range $allPages }}
+              {{ if .Content }}
+                <li {{ if eq $currentPageRelPermalink .RelPermalink }}class="aside_item-current"{{ end }}><a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a></li>
+              {{ else }}
+                <li><span class="aside_item-subsection">{{ .LinkTitle | markdownify }}</span></li>
+              {{ end }}
+              {{ if .IsSection }}
+                <li>
+                  <ul>
+                    {{ range .RegularPages.ByWeight }}
+                      <li {{ if eq $currentPageRelPermalink .RelPermalink }}class="aside_item-current"{{ end }}><a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a></li>
+                    {{ end }}
+                  </ul>
+                </li>
+              {{ end }}
+            {{ end }}
+         </ul>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
 </aside>
