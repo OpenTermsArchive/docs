@@ -88,13 +88,13 @@ Ensures the integrity, quality, and accuracy of the collection’s terms. Manage
 
 - Review and validate new service declarations
 - Verify service declarations against scope criteria
-- Check service names match official branding
+- Ensure service declarations follow Open Terms Archive guidelines (service names, service IDs, terms types, filters, history, …)
 - Validate completeness of extracted terms
 - Manage repository issues and pull requests
 - Provide feedback to contributors
 - Report issues to system administrator
 - Refer scope conflicts in contributions to curator to open potential scope updates
-- Report issues on the engine repository
+- Refer issues identified in contributions to the most relevant actor (scope conflicts to curator, tracking issues to system administrator, bugs to the core team…)
 
 ---
 
@@ -112,11 +112,9 @@ Expands and maintains the collection's coverage by contributing and updating ser
 
 - Research and identify new services to track
 - Create and update service declarations
-- Verify terms URLs and accessibility
 - Validate terms selection and extraction
 - Report issues to maintainers
-- Update outdated service information
-- Report issues on the engine repository
+- Report issues affecting contributions to maintainers
 
 ---
 
@@ -134,8 +132,7 @@ Analyses terms changes to identify significant changes and produce reports in va
 - Monitor and review terms changes
 - Identify significant changes
 - Produce reports
-- Flag critical changes to maintainers
-- Report issues affecting analysis
+- Report issues affecting analysis to maintainers
 
 ---
 
