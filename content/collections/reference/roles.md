@@ -92,7 +92,6 @@ Ensures the integrity, quality, and accuracy of the collection’s terms. Manage
 - Validate completeness of extracted terms
 - Manage repository issues and pull requests
 - Provide feedback to contributors
-- Report issues to system administrator
 - Refer issues identified in contributions to the most relevant actor (scope conflicts to curator, tracking issues to system administrator, bugs to the core team…)
 
 ---
