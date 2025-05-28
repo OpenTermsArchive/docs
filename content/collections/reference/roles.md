@@ -9,10 +9,7 @@ aliases:
 
 # Collection roles reference
 
-
 Each role represents a set of responsibilities and tasks that contribute to the collection’s success. A role can be filled by one or multiple people or organisations, and one entity can fulfill multiple roles. All roles can be either volunteer or paid positions, depending on the collection’s resources and needs.
-
-This reference guide serves as a practical tool for collection organizers. It helps them understand the different roles needed for a collection, assign responsibilities effectively, ensure all necessary tasks are covered, and plan for long-term sustainability.
 
 ## Roles
 
