@@ -70,6 +70,11 @@
     cursor:pointer;
     color: var(--colorBlack800);
 
+    &::marker,
+    &::-webkit-details-marker {
+      display: none;
+    }
+
     & .icon{
       margin-top:var(--3xs);
     }
