@@ -110,8 +110,6 @@ Expands and maintains the collection's coverage by contributing and updating ser
 
 - Research and identify new services to track
 - Create and update service declarations
-- Validate terms selection and extraction
-- Report issues to maintainers
 - Report issues affecting contributions to maintainers
 
 ---
