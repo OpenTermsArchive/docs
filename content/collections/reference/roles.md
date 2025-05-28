@@ -9,9 +9,8 @@ aliases:
 
 # Collection roles reference
 
-A collection in Open Terms Archive is a set of tracked terms from various services, organized around a specific purpose or theme. This document outlines the different roles involved in operating and maintaining a collection.
 
-Each role represents a set of responsibilities and tasks that contribute to the collection's success. A role can be filled by one or multiple people, and one person can fulfill multiple roles. All roles can be either volunteer or paid positions, depending on the collection's resources and needs.
+Each role represents a set of responsibilities and tasks that contribute to the collection’s success. A role can be filled by one or multiple people or organisations, and one entity can fulfill multiple roles. All roles can be either volunteer or paid positions, depending on the collection’s resources and needs.
 
 This reference guide serves as a practical tool for collection organizers. It helps them understand the different roles needed for a collection, assign responsibilities effectively, ensure all necessary tasks are covered, and plan for long-term sustainability.
 
@@ -55,39 +54,38 @@ Manages the technical operation of the collection's engine, ensuring it runs smo
 - Update Open Terms Archive engine and deployment system
 - Monitor and restart engine if needed
 - Investigate and resolve technical issues through log analysis
-- Verify regular updates of snapshots, versions, and datasets
+- Ensure that snapshots, versions and datasets are published
 - Report bugs and suggest improvements to engine repository
 
 ---
 
 ### Curator
 
-Defines the purpose of the collection, defines its boundaries and ensures all included content aligns with that purpose.
+Defines the purpose and scope of the collection and ensures all included content aligns with it.
 
 #### Responsibilities
 
-- Define and maintain collection's strategic direction
+- Define and maintain the collection’s strategic direction
 - Ensure collection content aligns with defined purpose
-- Guide collection's evolution and growth
 
 #### Tasks
 
 - Define and document collection scope
-- Review and approve scope changes
-- Communicate scope decisions to maintainers and contributors
-- Evaluate collection's alignment with purpose
+- Define and document level of openness to third-party contributions
+- Answer any questions related to scope that emerge from maintainers and contributors
+- Communicate scope updates to maintainers and contributors
+- Ensure collection’s alignment with original purpose
 
 ---
 
 ### Maintainer
 
-Ensures the integrity, quality, and accuracy of the collection's terms while managing community contributions.
+Ensures the integrity, quality, and accuracy of the collection’s terms. Manages incoming contributions.
 
 #### Responsibilities
 
 - Ensure quality and accuracy of collection terms
-- Manage and facilitate community contributions
-- Maintain quality of tracked terms
+- Manage and facilitate contributions
 
 #### Tasks
 
@@ -98,7 +96,7 @@ Ensures the integrity, quality, and accuracy of the collection's terms while man
 - Manage repository issues and pull requests
 - Provide feedback to contributors
 - Report issues to system administrator
-- Suggest scope improvements to curator
+- Refer scope conflicts in contributions to curator to open potential scope updates
 - Report issues on the engine repository
 
 ---
@@ -138,7 +136,6 @@ Provides non-operational support such as funding or resources to facilitate the 
 #### Tasks
 
 - Provide and manage funding
-- Allocate required resources
 - Support collection promotion
 - Leverage network for visibility
 - Advocate for collection adoption
@@ -147,7 +144,7 @@ Provides non-operational support such as funding or resources to facilitate the 
 
 ### Analyst
 
-Analyzes terms changes to identify significant modifications and produce actionable insights.
+Analyses terms changes to identify significant changes and produce reports in various formats.
 
 #### Responsibilities
 
@@ -157,11 +154,9 @@ Analyzes terms changes to identify significant modifications and produce actiona
 #### Tasks
 
 - Monitor and review terms changes
-- Identify significant modifications
-- Write detailed analysis reports
-- Create regular digest reports
+- Identify significant changes
+- Produce reports
 - Flag critical changes to maintainers
-- Provide analysis materials to diffusers
 - Report issues affecting analysis
 
 ---
