@@ -120,25 +120,6 @@ Expands and maintains the collection's coverage by contributing and updating ser
 
 ---
 
-### Sponsor
-
-Provides non-operational support such as funding or resources to facilitate the collection's success.
-
-#### Responsibilities
-
-- Ensure long-term financial sustainability
-- Provide necessary resources for operations
-- Enhance collection's reputation and reach
-
-#### Tasks
-
-- Provide and manage funding
-- Support collection promotion
-- Leverage network for visibility
-- Advocate for collection adoption
-
----
-
 ### Analyst
 
 Analyses terms changes to identify significant changes and produce reports in various formats.
@@ -175,3 +156,22 @@ Promotes collection and disseminates analysis to relevant audiences.
 - Maintain social media presence
 - Track communication metrics
 - Engage with community
+
+---
+
+### Sponsor
+
+Provides non-operational support such as funding or resources to facilitate the collection's success.
+
+#### Responsibilities
+
+- Ensure long-term financial sustainability
+- Provide necessary resources for operations
+- Enhance collection's reputation and reach
+
+#### Tasks
+
+- Provide and manage funding
+- Support collection promotion
+- Leverage network for visibility
+- Advocate for collection adoption
