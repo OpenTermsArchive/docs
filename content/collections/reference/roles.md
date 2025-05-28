@@ -93,7 +93,6 @@ Ensures the integrity, quality, and accuracy of the collection’s terms. Manage
 - Manage repository issues and pull requests
 - Provide feedback to contributors
 - Report issues to system administrator
-- Refer scope conflicts in contributions to curator to open potential scope updates
 - Refer issues identified in contributions to the most relevant actor (scope conflicts to curator, tracking issues to system administrator, bugs to the core team…)
 
 ---
