@@ -1,5 +1,5 @@
 ---
-title: Service declaration
+title: Service declarations
 weight: 3
 ---
 

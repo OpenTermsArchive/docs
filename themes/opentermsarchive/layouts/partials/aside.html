@@ -22,7 +22,7 @@
               {{ if .IsSection }}
                 <li>
                   <details {{ if eq $currentPageRelPermalink .RelPermalink }}open{{ end }}>
-                    <summary class="aside_item-subsection">{{ .LinkTitle | markdownify }}<i class="icon" data-lucide="chevron-down"></i></summary>
+                    <summary class="aside_item-subsection">{{ .LinkTitle | markdownify }} <span class="aside_item-subsection-count">{{ len .RegularPages }}</span><i class="icon" data-lucide="chevron-down"></i></summary>
                     <ul>
                       {{ range .RegularPages.ByWeight }}
                         <li {{ if eq $currentPageRelPermalink .RelPermalink }}class="aside_item-current"{{ end }}><a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a></li>

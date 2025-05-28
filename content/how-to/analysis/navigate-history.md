@@ -1,5 +1,5 @@
 ---
-title: Navigate history
+title: Browse terms history
 weight: 3
 ---
 

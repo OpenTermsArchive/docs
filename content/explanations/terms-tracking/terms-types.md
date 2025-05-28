@@ -1,5 +1,5 @@
 ---
-title: Terms types
+title: Terms categories
 weight: 3
 ---
 

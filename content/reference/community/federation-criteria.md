@@ -1,5 +1,5 @@
 ---
-title: Federation Criteria
+title: Federation criteria
 weight: 2
 ---
 

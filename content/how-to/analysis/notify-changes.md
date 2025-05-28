@@ -1,5 +1,5 @@
 ---
-title: Be notified on changes
+title: Monitor terms changes
 weight: 2
 ---
 

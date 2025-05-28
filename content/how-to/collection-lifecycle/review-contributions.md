@@ -1,5 +1,5 @@
 ---
-title: Reviewing contributions
+title: Review contributions
 weight: 7
 ---
 

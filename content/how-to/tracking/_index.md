@@ -1,4 +1,4 @@
 ---
-title: Tracking
+title: Terms tracking
 weight: 2
 ---

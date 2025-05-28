@@ -1,5 +1,5 @@
 ---
-title: Publish a memo
+title: Publish memos
 weight: 4
 ---
 

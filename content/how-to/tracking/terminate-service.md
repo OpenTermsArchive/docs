@@ -1,5 +1,5 @@
 ---
-title: Terminate a service
+title: End service tracking
 weight: 8
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Architecture
+title: System architecture
 weight: 1
 ---
 

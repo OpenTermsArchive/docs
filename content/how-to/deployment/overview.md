@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Deploy a collection
 weight: 2
 ---
 

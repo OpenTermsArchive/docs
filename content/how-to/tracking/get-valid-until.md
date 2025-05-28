@@ -1,5 +1,5 @@
 ---
-title: Get the validUntil date
+title: Define validity periods
 weight: 5
 ---
 

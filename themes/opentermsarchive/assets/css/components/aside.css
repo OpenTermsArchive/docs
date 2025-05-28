@@ -50,14 +50,25 @@
     flex-direction: column;
 
     li {
+      margin-top: 4px;
       & ul {
         & li {
           & ul {
             margin-top:var(--2xs);
             border-left:1px solid var(--colorBlack300);
-            padding-left:var(--pXS);
-            /* margin-left:var(--mXS); */
+            padding-left:0.8em;
+            margin-left: -0.8em;
           }
+        }
+      }
+    }
+  }
+
+  details{
+    &[open]{
+      & summary{
+        > svg {
+          transform: rotate(0deg);
         }
       }
     }
@@ -69,6 +80,7 @@
     gap:var(--2xs);
     cursor:pointer;
     color: var(--colorBlack800);
+    margin-top: 0;
 
     &::marker,
     &::-webkit-details-marker {
@@ -78,6 +90,28 @@
     & .icon{
       margin-top:var(--3xs);
     }
+    position: relative;
+
+    & svg {
+      transform: rotate(-90deg);
+      color: var(--colorBlack400);
+      font-size:0.8em;
+      transition: transform 0.2s ease;
+      position:absolute;
+      left: -1.5em;
+    }
+  }
+
+  .aside_item-subsection-count{
+    background-color: var(--colorBlack200);
+    padding: 0em 0.5em;
+    border-radius: 1em;
+    font-size:0.60em;
+    color: var(--colorBlack700);
+    /* display:none; */
+    display:none;
+    vertical-align: middle;
+
   }
 }
 

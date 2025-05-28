@@ -1,5 +1,5 @@
 ---
-title: Federation Benefits
+title: Federation benefits
 weight: 1
 ---
 

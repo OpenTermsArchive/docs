@@ -1,5 +1,5 @@
 ---
-title: Service naming
+title: Service naming conventions
 weight: 5
 ---
 

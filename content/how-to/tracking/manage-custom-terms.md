@@ -1,5 +1,5 @@
 ---
-title: Manage a custom terms type
+title: Manage custom terms types
 weight: 6
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Test declarations
+title: Validate declarations
 weight: 4
 ---
 

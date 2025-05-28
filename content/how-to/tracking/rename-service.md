@@ -1,5 +1,5 @@
 ---
-title: Rename a service
+title: Update service names
 weight: 7
 ---
 
