@@ -28,11 +28,11 @@ In these commands:
 
 ## Validating declarations
 
-{{< refItem name="ota validate [--services <service_id>...] [--types <terms_type>...]" description="Check that all declarations allow recording a snapshot and a version properly. If service IDs are provided, check only those services." example="npx ota validate --services \"Facebook\" \"LinkedIn\" --types \"Privacy Policy\" \"Terms of Service\"" />}}
+{{< refItem name="ota validate declarations [--services <service_id>...] [--types <terms_type>...]" description="Check that all declarations allow recording a snapshot and a version properly. If service IDs are provided, check only those services." example="npx ota validate declarations --services \"Facebook\" --types \"Privacy Policy\"" />}}
 
-{{< refItem name="ota validate --schema-only [--services <service_id>...] [--types <terms_type>...]" description="Check that all declarations are readable by the engine. Allows for a much faster check of declarations, but does not check that the terms are actually accessible." example="npx ota validate --schema-only --services \"Facebook\" \"LinkedIn\" --types \"Privacy Policy\" \"Terms of Service\"" />}}
+{{< refItem name="ota validate declarations --schema-only [--services <service_id>...] [--types <terms_type>...]" description="Check that all declarations are readable by the engine. Allows for a much faster check of declarations, but does not check that the terms are actually accessible." example="npx ota validate declarations --schema-only --services \"Facebook\" --types \"Privacy Policy\"" />}}
 
-{{< refItem name="ota validate --modified" description="Run ota validate only on files that have been modified in Git" example="npx ota validate --modified" />}}
+{{< refItem name="ota validate declarations --modified" description="Run ota validate only on files that have been modified in Git" example="npx ota validate declarations --modified" />}}
 
 ## Linting declarations
 
@@ -41,6 +41,10 @@ In these commands:
 {{< refItem name="ota lint --fix [--services <service_id>...]" description="Automatically correct formatting mistakes and ensure that all declarations are standardised" example="npx ota lint --fix" />}}
 
 {{< refItem name="ota lint --modified" description="Run ota lint only on files that have been modified in Git" example="npx ota lint --modified" />}}
+
+## Validating metadata file
+
+{{< refItem name="ota validate metadata" description="Check that the metadata file structure is valid" example="npx ota validate metadata" />}}
 
 ## Publishing dataset
 
