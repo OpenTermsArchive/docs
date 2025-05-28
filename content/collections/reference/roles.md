@@ -81,7 +81,7 @@ Ensures the integrity, quality, and accuracy of the collection’s terms. Manage
 
 #### Responsibilities
 
-- Ensure quality and accuracy of collection terms
+- Ensure quality of collection terms
 - Manage and facilitate contributions
 
 #### Tasks
