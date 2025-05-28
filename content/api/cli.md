@@ -42,6 +42,10 @@ In these commands:
 
 {{< refItem name="ota lint --modified" description="Run ota lint only on files that have been modified in Git" example="npx ota lint --modified" />}}
 
+## Validating metadata file
+
+{{< refItem name="ota validate metadata" description="Check that the metadata file structure is valid" example="npx ota validate metadata" />}}
+
 ## Publishing dataset
 
 {{< refItem name="ota dataset [--file <filename>]" description="Export the versions dataset into a ZIP file and publish it to GitHub releases. The dataset title and the URL of the versions repository are defined in the configuration." example="npx ota dataset --file dataset.zip" />}}
