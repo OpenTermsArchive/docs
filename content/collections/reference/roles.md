@@ -119,7 +119,7 @@ Analyses terms changes to identify significant changes and produce reports in va
 
 #### Responsibilities
 
-- Identify and analyze meaningful terms changes
+- Identify and analyse meaningful terms changes
 - Produce insights from changes
 
 #### Tasks

@@ -11,14 +11,14 @@ aliases:
 
 ### Casing
 
-- In order to find the service name casing, rely first on the page title (easily found in search results). Do not rely on the logo as it can be stylized differently. Example with Facebook:
-![facebook search](https://user-images.githubusercontent.com/222463/91416484-baaa3a00-e84f-11ea-94cf-8805d17aa711.png)
-- If it is still ambiguous, rely on Wikipedia as a source. However, make sure to differentiate the _service_ from the _provider_ company's name. Example with “DeviantArt”, a service (which used to be stylized deviantArt until 2014) by the limited liability company “deviantArt”:
+- In order to find the service name casing, rely first on the page title (easily found in search results). Do not rely on the logo as it can be stylised differently. Example with Facebook:
+![Facebook search](https://user-images.githubusercontent.com/222463/91416484-baaa3a00-e84f-11ea-94cf-8805d17aa711.png)
+- If it is still ambiguous, rely on Wikipedia as a source. However, make sure to differentiate the _service_ from the _provider_ company's name. Example with “DeviantArt”, a service (which used to be stylised deviantArt until 2014) by the limited liability company “deviantArt”:
 ![deviantArt search](https://user-images.githubusercontent.com/222463/91416936-5b98f500-e850-11ea-80fe-a50be27356e3.png)
 
 ### Terms used by several services
 
-- If you want to add terms which happen to be shared with another service from the same parent company, be specific in naming the exact service you want to track. For instance, you may find that a company like Github uses the same terms for its code hosting and its AI assistant. While this does not mean that the terms for GitHub (code hosting) are the only terms of GitHub Copilot (assistant), it does mean that these two services have terms that are represented in the same document. In tracking terms for one of these services, say Github Copilot, be specific in naming it as the service you want to track. This way, if GitHub was to introduce dedicated terms for each of these services in the future, their locations can be updated without having to create new terms since the service already existed before.
+- If you want to add terms which happen to be shared with another service from the same parent company, be specific in naming the exact service you want to track. For instance, you may find that a company like GitHub uses the same terms for its code hosting and its AI assistant. While this does not mean that the terms for GitHub (code hosting) are the only terms of GitHub Copilot (assistant), it does mean that these two services have terms that are represented in the same document. In tracking terms for one of these services, say GitHub Copilot, be specific in naming it as the service you want to track. This way, if GitHub was to introduce dedicated terms for each of these services in the future, their locations can be updated without having to create new terms since the service already existed before.
 
 - - -
 

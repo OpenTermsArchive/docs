@@ -5,7 +5,7 @@ weight: 4
 
 # How to terminate a collection
 
-If you don't have the resources to maintain a collection anymore, follow these steps to properly terminate it. This will make it clear to users and potential successors that it is no longer actively maintained and can be taken over.
+If you don't have the resources to maintain a collection any more, follow these steps to properly terminate it. This will make it clear to users and potential successors that it is no longer actively maintained and can be taken over.
 
 ## Steps
 

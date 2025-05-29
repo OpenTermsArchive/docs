@@ -15,13 +15,13 @@ The Open Terms Archive community concentrates interactions on an instant chat pl
 
 **Use this [invitation link](https://community.opentermsarchive.org/signup_user_complete/?id=fb1tb45hnfnk3c88btjhsjoomc&md=link&sbr=fa) and create an account.**
 
-After successful login, you will be automatically be added to the **~Announcements** channel.
+After successful login, you will be automatically be added to the **~Announcements** channel.
 
 ## 2. Profile setup
 
-Once you're all set, the next thing is to set up your profile. A complete profile sets you up for meaningful interactions and connections with members interested in tracking the same terms.
+The next thing is to set up your profile. A complete profile sets you up for meaningful interactions and connections with members interested in tracking the same terms.
 
-This includes adding your full name, user name, pseudo (nickname), role, and profile picture.
+This includes adding your full name, user name, nickname, role, and profile picture.
 
 New members can set up their profiles by following these steps:
 
@@ -30,7 +30,7 @@ New members can set up their profiles by following these steps:
 
 ## 3. Introduce yourself
 
-After joining the Open Terms Archive chat, members are encouraged to briefly introduce themselves in the **~Introductions** channel.
+After joining the Open Terms Archive chat, members are encouraged to introduce themselves in the **~Introductions** channel.
 
 ## 4. Find your channels
 

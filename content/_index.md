@@ -29,7 +29,7 @@ This documentation follows the [Diátaxis](https://diataxis.fr) approach and str
 
 ### Table of contents
 
-- **Analysis:** guidance on how to analyze terms changes, from navigating through the history of tracked terms to publishing memos about significant changes.
+- **Analysis:** guidance on how to analyse terms changes, from navigating through the history of tracked terms to publishing memos about significant changes.
 - **Community:** information on how to participate in the Open Terms Archive community.
 - **Terms:** guidance on tracking and maintaining terms declarations.
 - **Collections:** guidance on creating and managing collections of tracked terms.

@@ -15,7 +15,7 @@ A **collection** can **join** the Open Terms Archive **federation** if it abides
 6. Public and open-licensed **snapshots**, as evidenced by the `LICENSE` file in the snapshots repository.
 7. Public and open-licensed **versions**, as evidenced by the `LICENSE` file in the versions repository.
 8. Regular, public, and open-licensed **dataset** releases, as evidenced by the `LICENSE` file in the datasets.
-9. Publicly accessible API with median response time under 20ms, as evidenced by uptime tracking logs.
+9. Publicly accessible API with median response time under 20 ms, as evidenced by uptime tracking logs.
 10. Abide by all Open Terms Archive software and data licenses.
 
 For detailed instructions on joining the federation, refer to the [How to Join the Federation guide]({{< relref "federation/how-to/join" >}}).

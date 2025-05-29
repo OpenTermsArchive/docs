@@ -31,6 +31,6 @@ Collection may be functional but shows clear signs of neglect.
 
 Collection has voluntarily ceased all operational activities.
 
-- No terms are tracked anymore, though historical records remain accessible for reference purposes.
+- No terms are tracked any more, though historical records remain accessible for reference purposes.
 - No technical maintenance is performed.
 - All [roles]({{< relref "collections/reference/roles" >}}) are inactive.

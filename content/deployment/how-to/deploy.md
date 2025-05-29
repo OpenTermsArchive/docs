@@ -156,7 +156,7 @@ This section uses [Ansible Vault](https://docs.ansible.com/ansible/latest/vault_
    ansible-vault encrypt .env
    ```
 
-   > **Note**: Running the command from the `deployment` folder will ensure that the `vault.key` file is used as vault key, since this folder contains an `ansible.cfg` file that explicitly configures this behavior.
+   > **Note**: Running the command from the `deployment` folder will ensure that the `vault.key` file is used as vault key, since this folder contains an `ansible.cfg` file that explicitly configures this behaviour.
    >
    > To decrypt an encrypted file, use:
    >

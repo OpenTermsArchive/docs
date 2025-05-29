@@ -15,9 +15,9 @@ Approximately 750 MB of storage is required for the engine itself, with the rem
 
 ## Storage
 
-Recommended storage: 10 GB, with resizable partitioning to enable growth over time.
+Recommended storage: 10 GB, with resizeable partitioning to enable growth over time.
 
-Storage usage typically grows at a rate of 0.5 MB per tracked terms per month on average for latin scripts. This growth rate varies depending on the type of service being tracked:
+Storage usage typically grows at a rate of 0.5 MB per tracked terms per month on average for Latin scripts. This growth rate varies depending on the type of service being tracked:
 
 - Services with large legal teams and heavy website layouts: ~1 MB per terms per month
 - Smaller services: ~0.1-0.3 MB per terms per month

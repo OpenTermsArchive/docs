@@ -15,7 +15,7 @@ Selectors are used in the [`select`]({{< relref "terms/reference#select" >}}) an
 
 The “selectors” referred to are defined by the [W3C Selectors standard](https://www.w3.org/TR/selectors/), more commonly known as “CSS Selectors”.
 
-An easy-to-read introduction to CSS Selectors can be found on [mdn web docs](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors).
+An easy-to-read introduction to CSS Selectors can be found on [MDN web docs](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors).
 
 ## Choosing durable selectors eases maintenance
 
