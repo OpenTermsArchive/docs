@@ -25,7 +25,7 @@ You can inform the community by posting on the instant messaging system, or [sen
 
 ## Define governance
 
-Setting up and maintaining a collection over time needs fulfilling certain tasks on a regular basis. These tasks are handled through roles. To make sure that all these roles are covered, define the [governance]({{< relref "collections/reference/governance" >}}) of your collection.
+Setting up and maintaining a collection over time needs fulfilling certain tasks on a regular basis. These tasks are handled through roles. To make sure that all these roles are covered, define the [governance]({{< relref "collections/reference/roles" >}}) of your collection.
 
 At any time, feel free to ask for help or partners in the community.
 
