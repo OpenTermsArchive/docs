@@ -30,7 +30,6 @@ Ensures the availability of the infrastructure required for the collection's ope
 - Configure server for required outbound requests
 - Provide server access credentials to administrator
 - Document access procedures
-- Perform regular server maintenance
 - Coordinate maintenance windows with administrator
 
 ---
@@ -90,7 +89,7 @@ Ensures the integrity, quality, and accuracy of the collection’s terms. Manage
 - Verify service declarations against scope criteria
 - Ensure service declarations follow Open Terms Archive guidelines (service names, service IDs, terms types, filters, history, …)
 - Validate completeness of extracted terms
-- Manage repository issues and pull requests
+- Facilitate discussions in issues and pull requests
 - Provide feedback to contributors
 - Refer issues identified in contributions to the most relevant actor (scope conflicts to curator, tracking issues to system administrator, bugs to the core team…)
 
