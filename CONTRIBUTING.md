@@ -6,8 +6,14 @@ First of all, thanks for taking the time to contribute! 🎉👍
 
 Before you begin coding and collaborating, please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to understand the standards for interacting in this community. As a participant and contributor to this project, you agree to abide by our Code of Conduct.
 
+## Architecture
 
+This documentation follows the [Diátaxis](https://diataxis.fr) approach and structures content in different categories:
 
+- **Tutorials:** step-by-step learning guides that help beginners get started with Open Terms Archive, providing foundational knowledge and hands-on experience.
+- **How-to guides:** task-focused instructions that help experienced users accomplish specific goals efficiently and effectively.
+- **References:** comprehensive technical documentation detailing configuration options and specifications for advanced users.
+- **Explanations:** background knowledge that enables understanding the constraints and how choices that are made.
 
 
 
