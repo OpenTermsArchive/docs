@@ -5,7 +5,7 @@
 &lt;p>A &lt;strong>collection&lt;/strong> can &lt;strong>join&lt;/strong> the Open Terms Archive &lt;strong>federation&lt;/strong> if it abides by the following quality criteria:&lt;/p>
 &lt;ol>
 &lt;li>Clearly defined &lt;a href="https://docs.opentermsarchive.org/collections/reference/metadata/">collection metadata&lt;/a>.&lt;/li>
-&lt;li>Clearly defined &lt;a href="https://docs.opentermsarchive.org/collections/reference/governance/">collection governance&lt;/a>.&lt;/li>
+&lt;li>Clearly defined &lt;a href="https://docs.opentermsarchive.org/collections/reference/roles/">collection governance&lt;/a>.&lt;/li>
 &lt;li>The vast majority of &lt;strong>versions&lt;/strong> are readable, as evidenced by a sample assessment.&lt;/li>
 &lt;li>&lt;strong>Frequency&lt;/strong> of at least one track a day, as evidenced by snapshots.&lt;/li>
 &lt;li>Public and open-licensed &lt;strong>declarations&lt;/strong>, as evidenced by the &lt;code>LICENSE&lt;/code> file in the declarations repository.&lt;/li>

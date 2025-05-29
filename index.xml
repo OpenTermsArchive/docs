@@ -147,25 +147,7 @@
  &lt;a class="title-anchor" href="#1-configure-the-server">🔗&lt;/a>
  
 &lt;/h2>
-&lt;p>First, ensure your server provides unsupervised access:&lt;/p></description></item><item><title>Governance</title><link>https://docs.opentermsarchive.org/collections/reference/governance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/governance/</guid><description>&lt;h1 id="collection-governance">
- Collection governance
- 
-&lt;/h1>
-&lt;p>Setting up and maintaining a collection entails fulfilling specific tasks. These tasks are handled through roles. Each of these roles can be volunteer or paid, and can be handled by one or several different entities.&lt;/p>
-&lt;p>This reference documentation details all roles that must be involved in a collection&amp;rsquo;s governance to ensure its proper operation and maintenance.&lt;/p>
-&lt;h2 id="roles">
- Roles
- 
- &lt;a class="title-anchor" href="#roles">🔗&lt;/a>
- 
-&lt;/h2>
-&lt;h3 id="host">
- Host
- 
- &lt;a class="title-anchor" href="#host">🔗&lt;/a>
- 
-&lt;/h3>
-&lt;p>Ensures the availability of the infrastructure required for the collection&amp;rsquo;s operation.&lt;/p></description></item><item><title>Main concepts</title><link>https://docs.opentermsarchive.org/concepts/main/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/concepts/main/</guid><description>&lt;h2 id="main-concepts">
+&lt;p>First, ensure your server provides unsupervised access:&lt;/p></description></item><item><title>Main concepts</title><link>https://docs.opentermsarchive.org/concepts/main/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/concepts/main/</guid><description>&lt;h2 id="main-concepts">
  Main concepts
  
  &lt;a class="title-anchor" href="#main-concepts">🔗&lt;/a>
@@ -246,7 +228,24 @@
 &lt;/h5>
 &lt;p>Represents a source document containing web content and metadata for extraction.&lt;br>
 Includes the document location, selectors for content inclusion/exclusion,&lt;br>
-content filters, raw content data, and MIME type information.&lt;/p></description></item><item><title>Understanding terms types</title><link>https://docs.opentermsarchive.org/terms/explanation/terms-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/explanation/terms-types/</guid><description>&lt;h1 id="terms-types-a-foundation-of-a-consistent-archive">
+content filters, raw content data, and MIME type information.&lt;/p></description></item><item><title>Collection roles reference</title><link>https://docs.opentermsarchive.org/collections/reference/roles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/roles/</guid><description>&lt;h1 id="collection-roles-reference">
+ Collection roles reference
+ 
+&lt;/h1>
+&lt;p>Each role represents a set of responsibilities and tasks that contribute to the collection’s success. A role can be filled by one or multiple people or organisations, and one entity can fulfill multiple roles. All roles can be either volunteer or paid positions, depending on the collection’s resources and needs.&lt;/p>
+&lt;h2 id="roles">
+ Roles
+ 
+ &lt;a class="title-anchor" href="#roles">🔗&lt;/a>
+ 
+&lt;/h2>
+&lt;h3 id="host">
+ Host
+ 
+ &lt;a class="title-anchor" href="#host">🔗&lt;/a>
+ 
+&lt;/h3>
+&lt;p>Ensures the availability of the infrastructure required for the collection&amp;rsquo;s operation.&lt;/p></description></item><item><title>Understanding terms types</title><link>https://docs.opentermsarchive.org/terms/explanation/terms-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/explanation/terms-types/</guid><description>&lt;h1 id="terms-types-a-foundation-of-a-consistent-archive">
  Terms types: a foundation of a consistent archive
  
 &lt;/h1>
@@ -1073,7 +1072,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;span class="refItem-required">required&lt;/span>
  
  &lt;/div>
- &lt;div class="refItem-description">Roles of the entity within the governance, see &lt;a href="https://docs.opentermsarchive.org/collections/reference/governance/">collection governance&lt;/a>&lt;/div>
+ &lt;div class="refItem-description">Roles of the entity within the governance, see &lt;a href="https://docs.opentermsarchive.org/collections/reference/roles/">collection governance&lt;/a>&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
  
@@ -1266,7 +1265,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;p>A &lt;strong>collection&lt;/strong> can &lt;strong>join&lt;/strong> the Open Terms Archive &lt;strong>federation&lt;/strong> if it abides by the following quality criteria:&lt;/p>
 &lt;ol>
 &lt;li>Clearly defined &lt;a href="https://docs.opentermsarchive.org/collections/reference/metadata/">collection metadata&lt;/a>.&lt;/li>
-&lt;li>Clearly defined &lt;a href="https://docs.opentermsarchive.org/collections/reference/governance/">collection governance&lt;/a>.&lt;/li>
+&lt;li>Clearly defined &lt;a href="https://docs.opentermsarchive.org/collections/reference/roles/">collection governance&lt;/a>.&lt;/li>
 &lt;li>The vast majority of &lt;strong>versions&lt;/strong> are readable, as evidenced by a sample assessment.&lt;/li>
 &lt;li>&lt;strong>Frequency&lt;/strong> of at least one track a day, as evidenced by snapshots.&lt;/li>
 &lt;li>Public and open-licensed &lt;strong>declarations&lt;/strong>, as evidenced by the &lt;code>LICENSE&lt;/code> file in the declarations repository.&lt;/li>
@@ -1551,7 +1550,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;ul>
 &lt;li>The collection saves records regularly through actively maintained and updated terms declarations. The number of tracked terms remains stable or increases over time. The versions quality is high.&lt;/li>
 &lt;li>Technical maintenance includes regular dependency updates, access to the latest engine features, and benefits from all infrastructure updates.&lt;/li>
-&lt;li>All &lt;a href="https://docs.opentermsarchive.org/collections/reference/governance/">roles&lt;/a> are fulfilled.&lt;/li>
+&lt;li>All &lt;a href="https://docs.opentermsarchive.org/collections/reference/roles/">roles&lt;/a> are fulfilled.&lt;/li>
 &lt;/ul>
 &lt;hr>
 &lt;h3 id="abandoned">
