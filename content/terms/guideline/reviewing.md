@@ -102,7 +102,7 @@ Since the Service ID is used as the file name of the JSON file associated with t
 
 1. Open the pull request associated with the contribution and service.
 2. Navigate to the "Files changed" tab of the pull request. Here, you will see the files being changed by the contribution, including the JSON file of the service.
-3. To edit the file, click on the three dots button on the right side of the file name and select "Edit file". This will open the file in the Github editor.
+3. To edit the file, click on the three dots button on the right side of the file name and select "Edit file". This will open the file in the GitHub editor.
 4. From here, you can change the file name from the current Service ID to the new Service ID, which represents the transliteration of the service name.
 5. Once you have made the changes, commit them and review the pull request as usual. If everything checks out, you can merge the pull request.
 
@@ -153,7 +153,7 @@ For example, tests may fail in CI because of a 403 Access Denied error, but succ
 ## Merging the Pull Request
 
 Beyond status checks, additional restriction requires branches to be up to date before merging. This ensures that the contribution has been tested with the latest version of the collection. This appears as a _“This branch is out-of-date with the base branch”_ warning on a pull request.
-You can fix this using the Github interface, by clicking on the arrow button next to the “Update Branch” button, and select “Update with Rebase”.
+You can fix this using the GitHub interface, by clicking on the arrow button next to the “Update Branch” button, and select “Update with Rebase”.
 
 ## Contributions FAQ
 
