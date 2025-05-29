@@ -11,6 +11,9 @@ Before you begin coding and collaborating, please read our [Code of Conduct](./C
 
 
 
+## Modifying content
+
+Start by identifying the page you would like to add the content to by [navigating the documentation](https://docs.opentermsarchive.org). Once you have found the best location, find the [associated source document](https://github.com/OpenTermsArchive/docs/tree/main/content) and edit it. If there is no existing best location, think of the page where you would like to find it and create that page by clicking “Add file” in the [source folder](https://github.com/OpenTermsArchive/docs/tree/main/content).
 
 ## Workflow
 
