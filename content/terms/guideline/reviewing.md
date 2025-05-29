@@ -75,7 +75,7 @@ The pull request created will consist of fewer checks than those that add declar
 For pull requests that update declarations, you should focus should be on two things: history file and declaration.
 
 - **History file:** The history file is a JSON file that keeps track of a service declaration changes. It contains a `validUntil` property that specifies the date a specific version of a service declaration was last effective. You have to confirm that this date is the same as the date in the issue opened for the declaration when the bot couldn't track it for the first time. This issue is usually included in the pull request message. The history file is updated with every `update` pull request. You can find more information about the history file [here]({{< relref "terms/explanation/declarations-maintenance" >}}).
-- **Declaration:** for `update` pull requests, you only look at the selectors to make sure they are **simple** and also verify the **generated version** is ok.
+- **Declaration:** for `update` pull requests, you only look at the selectors to make sure they are **simple** and also verify the **generated version** is okay.
 
 ### Step-by-step Review Guide
 
@@ -129,7 +129,7 @@ Once the pull request has been merged, delete the copy you made of the branch wi
 
 When tests fail, you can follow these steps to diagnose and address the issue:
 
-1. Begin by analyzing any error messages or warnings provided by the test output. These messages can often provide meaningful information to identify the source of the problem. Pay attention to specific issues such as schema validation errors, inaccessible web locations or inaccessible content selection.
+1. Begin by analysing any error messages or warnings provided by the test output. These messages can often provide meaningful information to identify the source of the problem. Pay attention to specific issues such as schema validation errors, inaccessible web locations or inaccessible content selection.
 
 2. For a deeper investigation, you can access the snapshots and versions generated during the test run. Navigate to the summary page of the failing workflow. Scroll down to the "Artifacts" section located at the bottom of the page. Click on `snapshots_and_versions` to download them.
 

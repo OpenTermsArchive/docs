@@ -15,7 +15,9 @@ This documentation follows the [Diátaxis](https://diataxis.fr) approach and str
 - **References:** comprehensive technical documentation detailing configuration options and specifications for advanced users.
 - **Explanations:** background knowledge that enables understanding the constraints and how choices that are made.
 
+## Copywriting
 
+- Use [British English spelling](https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences), not American English.
 
 ## Modifying content
 

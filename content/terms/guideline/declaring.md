@@ -11,9 +11,9 @@ aliases:
 
 ### Casing
 
-- In order to find the service name casing, rely first on the page title (easily found in search results). Do not rely on the logo as it can be stylized differently. Example with Facebook:
-![facebook search](https://user-images.githubusercontent.com/222463/91416484-baaa3a00-e84f-11ea-94cf-8805d17aa711.png)
-- If it is still ambiguous, rely on Wikipedia as a source. However, make sure to differentiate the _service_ from the _provider_ company's name. Example with “DeviantArt”, a service (which used to be stylized deviantArt until 2014) by the limited liability company “deviantArt”:
+- In order to find the service name casing, rely first on the page title (easily found in search results). Do not rely on the logo as it can be stylised differently. Example with Facebook:
+![Facebook search](https://user-images.githubusercontent.com/222463/91416484-baaa3a00-e84f-11ea-94cf-8805d17aa711.png)
+- If it is still ambiguous, rely on Wikipedia as a source. However, make sure to differentiate the _service_ from the _provider_ company's name. Example with “DeviantArt”, a service (which used to be stylised deviantArt until 2014) by the limited liability company “deviantArt”:
 ![deviantArt search](https://user-images.githubusercontent.com/222463/91416936-5b98f500-e850-11ea-80fe-a50be27356e3.png)
 
 ### Terms used by several services
