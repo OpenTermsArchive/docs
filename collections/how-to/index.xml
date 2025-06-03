@@ -53,7 +53,7 @@
 &lt;/h3>
 &lt;ol>
 &lt;li>Go to the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations">&lt;code>demo-declarations&lt;/code>&lt;/a> repository&lt;/li>
-&lt;li>Click &amp;ldquo;Use this template&amp;rdquo; dropdown and select &amp;ldquo;Create a new repository&amp;rdquo;&lt;/li>
+&lt;li>Click the &amp;ldquo;Use this template&amp;rdquo; drop-down menu and select &amp;ldquo;Create a new repository&amp;rdquo;&lt;/li>
 &lt;li>Name it &lt;code>&amp;lt;collection_id&amp;gt;-declarations&lt;/code> (e.g. &lt;code>pga-declarations&lt;/code>)&lt;/li>
 &lt;li>Wait 1-2 minutes for automatic setup to complete (check &lt;code>first-time-setup&lt;/code> action status)&lt;/li>
 &lt;/ol>
@@ -104,7 +104,7 @@
  How to terminate a collection
  
 &lt;/h1>
-&lt;p>If you don&amp;rsquo;t have the resources to maintain a collection anymore, follow these steps to properly terminate it. This will make it clear to users and potential successors that it is no longer actively maintained and can be taken over.&lt;/p>
+&lt;p>If you don&amp;rsquo;t have the resources to maintain a collection any more, follow these steps to properly terminate it. This will make it clear to users and potential successors that it is no longer actively maintained and can be taken over.&lt;/p>
 &lt;h2 id="steps">
  Steps
  

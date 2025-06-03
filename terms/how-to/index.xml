@@ -69,7 +69,7 @@
  How to terminate a service
  
 &lt;/h1>
-&lt;p>If the service provider stops offering a service, the associated terms will become unavailable. To mark that service termination in Open Terms Archive and ensure tracking tentatives are stopped, while maintaining the possibility to explore the history:&lt;/p>
+&lt;p>If the service provider stops offering a service, the associated terms will become unavailable. To mark that service termination in Open Terms Archive and ensure tracking attempts are stopped, while maintaining the possibility to explore the history:&lt;/p>
 &lt;ol>
 &lt;li>Move the existing terms declaration to the service &lt;a href="https://docs.opentermsarchive.org/terms/how-to/terminate-a-service/#terms-declaration-history">history file&lt;/a>.&lt;/li>
 &lt;li>Update the declaration to stop tracking all terms, by removing every &lt;code>&amp;lt;terms type&amp;gt;&lt;/code> entries from the &lt;code>terms&lt;/code> key in the declaration:&lt;/li>

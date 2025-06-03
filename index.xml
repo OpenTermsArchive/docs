@@ -317,7 +317,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/h3>
 &lt;ol>
 &lt;li>Go to the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations">&lt;code>demo-declarations&lt;/code>&lt;/a> repository&lt;/li>
-&lt;li>Click &amp;ldquo;Use this template&amp;rdquo; dropdown and select &amp;ldquo;Create a new repository&amp;rdquo;&lt;/li>
+&lt;li>Click the &amp;ldquo;Use this template&amp;rdquo; drop-down menu and select &amp;ldquo;Create a new repository&amp;rdquo;&lt;/li>
 &lt;li>Name it &lt;code>&amp;lt;collection_id&amp;gt;-declarations&lt;/code> (e.g. &lt;code>pga-declarations&lt;/code>)&lt;/li>
 &lt;li>Wait 1-2 minutes for automatic setup to complete (check &lt;code>first-time-setup&lt;/code> action status)&lt;/li>
 &lt;/ol>
@@ -1119,7 +1119,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;a class="title-anchor" href="#storage">🔗&lt;/a>
  
 &lt;/h2>
-&lt;p>Recommended storage: 10 GB, with resizable partitioning to enable growth over time.&lt;/p></description></item><item><title>Set up GitHub teams</title><link>https://docs.opentermsarchive.org/deployment/how-to/setup-github-teams/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/deployment/how-to/setup-github-teams/</guid><description>&lt;h1 id="how-to-set-up-github-teams-for-a-collection">
+&lt;p>Recommended storage: 10 GB, with resizeable partitioning to enable growth over time.&lt;/p></description></item><item><title>Set up GitHub teams</title><link>https://docs.opentermsarchive.org/deployment/how-to/setup-github-teams/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/deployment/how-to/setup-github-teams/</guid><description>&lt;h1 id="how-to-set-up-github-teams-for-a-collection">
  How to set up GitHub teams for a collection
  
 &lt;/h1>
@@ -1272,7 +1272,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;li>Public and open-licensed &lt;strong>snapshots&lt;/strong>, as evidenced by the &lt;code>LICENSE&lt;/code> file in the snapshots repository.&lt;/li>
 &lt;li>Public and open-licensed &lt;strong>versions&lt;/strong>, as evidenced by the &lt;code>LICENSE&lt;/code> file in the versions repository.&lt;/li>
 &lt;li>Regular, public, and open-licensed &lt;strong>dataset&lt;/strong> releases, as evidenced by the &lt;code>LICENSE&lt;/code> file in the datasets.&lt;/li>
-&lt;li>Publicly accessible API with median response time under 20ms, as evidenced by uptime tracking logs.&lt;/li>
+&lt;li>Publicly accessible API with median response time under 20 ms, as evidenced by uptime tracking logs.&lt;/li>
 &lt;li>Abide by all Open Terms Archive software and data licenses.&lt;/li>
 &lt;/ol>
 &lt;p>For detailed instructions on joining the federation, refer to the &lt;a href="https://docs.opentermsarchive.org/federation/how-to/join/">How to Join the Federation guide&lt;/a>.&lt;/p></description></item><item><title>Define metadata</title><link>https://docs.opentermsarchive.org/collections/how-to/define-metadata/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/define-metadata/</guid><description>&lt;h1 id="how-to-define-metadata">
@@ -1521,7 +1521,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  How to terminate a collection
  
 &lt;/h1>
-&lt;p>If you don&amp;rsquo;t have the resources to maintain a collection anymore, follow these steps to properly terminate it. This will make it clear to users and potential successors that it is no longer actively maintained and can be taken over.&lt;/p>
+&lt;p>If you don&amp;rsquo;t have the resources to maintain a collection any more, follow these steps to properly terminate it. This will make it clear to users and potential successors that it is no longer actively maintained and can be taken over.&lt;/p>
 &lt;h2 id="steps">
  Steps
  
@@ -1589,7 +1589,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  How to terminate a service
  
 &lt;/h1>
-&lt;p>If the service provider stops offering a service, the associated terms will become unavailable. To mark that service termination in Open Terms Archive and ensure tracking tentatives are stopped, while maintaining the possibility to explore the history:&lt;/p>
+&lt;p>If the service provider stops offering a service, the associated terms will become unavailable. To mark that service termination in Open Terms Archive and ensure tracking attempts are stopped, while maintaining the possibility to explore the history:&lt;/p>
 &lt;ol>
 &lt;li>Move the existing terms declaration to the service &lt;a href="https://docs.opentermsarchive.org/terms/how-to/terminate-a-service/#terms-declaration-history">history file&lt;/a>.&lt;/li>
 &lt;li>Update the declaration to stop tracking all terms, by removing every &lt;code>&amp;lt;terms type&amp;gt;&lt;/code> entries from the &lt;code>terms&lt;/code> key in the declaration:&lt;/li>
@@ -1634,7 +1634,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/h2>
 &lt;p>Selectors are used in the &lt;a href="https://docs.opentermsarchive.org/terms/reference/#select">&lt;code>select&lt;/code>&lt;/a> and &lt;a href="https://docs.opentermsarchive.org/terms/reference/#remove">&lt;code>remove&lt;/code>&lt;/a> keys of an Open Terms Archive declaration.&lt;/p>
 &lt;p>The “selectors” referred to are defined by the &lt;a href="https://www.w3.org/TR/selectors/">W3C Selectors standard&lt;/a>, more commonly known as “CSS Selectors”.&lt;/p>
-&lt;p>An easy-to-read introduction to CSS Selectors can be found on &lt;a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors">mdn web docs&lt;/a>.&lt;/p>
+&lt;p>An easy-to-read introduction to CSS Selectors can be found on &lt;a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors">MDN web docs&lt;/a>.&lt;/p>
 &lt;h2 id="choosing-durable-selectors-eases-maintenance">
  Choosing durable selectors eases maintenance
  
@@ -1687,9 +1687,9 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  
 &lt;/h3>
 &lt;ul>
-&lt;li>In order to find the service name casing, rely first on the page title (easily found in search results). Do not rely on the logo as it can be stylized differently. Example with Facebook:&lt;br>
-&lt;img src="https://user-images.githubusercontent.com/222463/91416484-baaa3a00-e84f-11ea-94cf-8805d17aa711.png" alt="facebook search">&lt;/li>
-&lt;li>If it is still ambiguous, rely on Wikipedia as a source. However, make sure to differentiate the &lt;em>service&lt;/em> from the &lt;em>provider&lt;/em> company&amp;rsquo;s name. Example with “DeviantArt”, a service (which used to be stylized deviantArt until 2014) by the limited liability company “deviantArt”:&lt;br>
+&lt;li>In order to find the service name casing, rely first on the page title (easily found in search results). Do not rely on the logo as it can be stylised differently. Example with Facebook:&lt;br>
+&lt;img src="https://user-images.githubusercontent.com/222463/91416484-baaa3a00-e84f-11ea-94cf-8805d17aa711.png" alt="Facebook search">&lt;/li>
+&lt;li>If it is still ambiguous, rely on Wikipedia as a source. However, make sure to differentiate the &lt;em>service&lt;/em> from the &lt;em>provider&lt;/em> company&amp;rsquo;s name. Example with “DeviantArt”, a service (which used to be stylised deviantArt until 2014) by the limited liability company “deviantArt”:&lt;br>
 &lt;img src="https://user-images.githubusercontent.com/222463/91416936-5b98f500-e850-11ea-80fe-a50be27356e3.png" alt="deviantArt search">&lt;/li>
 &lt;/ul>
 &lt;h3 id="terms-used-by-several-services">
@@ -1699,7 +1699,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  
 &lt;/h3>
 &lt;ul>
-&lt;li>If you want to add terms which happen to be shared with another service from the same parent company, be specific in naming the exact service you want to track. For instance, you may find that a company like Github uses the same terms for its code hosting and its AI assistant. While this does not mean that the terms for GitHub (code hosting) are the only terms of GitHub Copilot (assistant), it does mean that these two services have terms that are represented in the same document. In tracking terms for one of these services, say Github Copilot, be specific in naming it as the service you want to track. This way, if GitHub was to introduce dedicated terms for each of these services in the future, their locations can be updated without having to create new terms since the service already existed before.&lt;/li>
+&lt;li>If you want to add terms which happen to be shared with another service from the same parent company, be specific in naming the exact service you want to track. For instance, you may find that a company like GitHub uses the same terms for its code hosting and its AI assistant. While this does not mean that the terms for GitHub (code hosting) are the only terms of GitHub Copilot (assistant), it does mean that these two services have terms that are represented in the same document. In tracking terms for one of these services, say GitHub Copilot, be specific in naming it as the service you want to track. This way, if GitHub was to introduce dedicated terms for each of these services in the future, their locations can be updated without having to create new terms since the service already existed before.&lt;/li>
 &lt;/ul>
 &lt;hr>
 &lt;h2 id="service-id">
@@ -1745,14 +1745,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  
 &lt;/h2>
 &lt;p>&lt;strong>Use this &lt;a href="https://community.opentermsarchive.org/signup_user_complete/?id=fb1tb45hnfnk3c88btjhsjoomc&amp;amp;md=link&amp;amp;sbr=fa">invitation link&lt;/a> and create an account.&lt;/strong>&lt;/p>
-&lt;p>After successful login, you will be automatically be added to the &lt;strong>~Announcements&lt;/strong> channel.&lt;/p>
+&lt;p>After successful login, you will be automatically be added to the &lt;strong>~Announcements&lt;/strong> channel.&lt;/p>
 &lt;h2 id="2-profile-setup">
  2. Profile setup
  
  &lt;a class="title-anchor" href="#2-profile-setup">🔗&lt;/a>
  
 &lt;/h2>
-&lt;p>Once you&amp;rsquo;re all set, the next thing is to set up your profile. A complete profile sets you up for meaningful interactions and connections with members interested in tracking the same terms.&lt;/p></description></item><item><title>Memo copywriting reference</title><link>https://docs.opentermsarchive.org/analysis/reference/copywriting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/analysis/reference/copywriting/</guid><description>&lt;h1 id="memo-copywriting">
+&lt;p>The next thing is to set up your profile. A complete profile sets you up for meaningful interactions and connections with members interested in tracking the same terms.&lt;/p></description></item><item><title>Memo copywriting reference</title><link>https://docs.opentermsarchive.org/analysis/reference/copywriting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/analysis/reference/copywriting/</guid><description>&lt;h1 id="memo-copywriting">
  Memo copywriting
  
 &lt;/h1>

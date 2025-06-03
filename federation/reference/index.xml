@@ -12,7 +12,7 @@
 &lt;li>Public and open-licensed &lt;strong>snapshots&lt;/strong>, as evidenced by the &lt;code>LICENSE&lt;/code> file in the snapshots repository.&lt;/li>
 &lt;li>Public and open-licensed &lt;strong>versions&lt;/strong>, as evidenced by the &lt;code>LICENSE&lt;/code> file in the versions repository.&lt;/li>
 &lt;li>Regular, public, and open-licensed &lt;strong>dataset&lt;/strong> releases, as evidenced by the &lt;code>LICENSE&lt;/code> file in the datasets.&lt;/li>
-&lt;li>Publicly accessible API with median response time under 20ms, as evidenced by uptime tracking logs.&lt;/li>
+&lt;li>Publicly accessible API with median response time under 20 ms, as evidenced by uptime tracking logs.&lt;/li>
 &lt;li>Abide by all Open Terms Archive software and data licenses.&lt;/li>
 &lt;/ol>
 &lt;p>For detailed instructions on joining the federation, refer to the &lt;a href="https://docs.opentermsarchive.org/federation/how-to/join/">How to Join the Federation guide&lt;/a>.&lt;/p></description></item></channel></rss>
