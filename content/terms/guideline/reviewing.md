@@ -75,7 +75,7 @@ The pull request created will consist of fewer checks than those that add declar
 For pull requests that update declarations, you should focus should be on two things: history file and declaration.
 
 - **History file:** The history file is a JSON file that keeps track of a service declaration changes. It contains a `validUntil` property that specifies the date a specific version of a service declaration was last effective. You have to confirm that this date is the same as the date in the issue opened for the declaration when the bot couldn't track it for the first time. This issue is usually included in the pull request message. The history file is updated with every `update` pull request. You can find more information about the history file [here]({{< relref "terms/explanation/declarations-maintenance" >}}).
-- **Declaration:** for `update` pull requests, you only look at the selectors to make sure they are **simple** and also verify the **generated version** is ok.
+- **Declaration:** for `update` pull requests, you only look at the selectors to make sure they are **simple** and also verify the **generated version** is okay.
 
 ### Step-by-step Review Guide
 
@@ -102,7 +102,7 @@ Since the Service ID is used as the file name of the JSON file associated with t
 
 1. Open the pull request associated with the contribution and service.
 2. Navigate to the "Files changed" tab of the pull request. Here, you will see the files being changed by the contribution, including the JSON file of the service.
-3. To edit the file, click on the three dots button on the right side of the file name and select "Edit file". This will open the file in the Github editor.
+3. To edit the file, click on the three dots button on the right side of the file name and select "Edit file". This will open the file in the GitHub editor.
 4. From here, you can change the file name from the current Service ID to the new Service ID, which represents the transliteration of the service name.
 5. Once you have made the changes, commit them and review the pull request as usual. If everything checks out, you can merge the pull request.
 
@@ -129,7 +129,7 @@ Once the pull request has been merged, delete the copy you made of the branch wi
 
 When tests fail, you can follow these steps to diagnose and address the issue:
 
-1. Begin by analyzing any error messages or warnings provided by the test output. These messages can often provide meaningful information to identify the source of the problem. Pay attention to specific issues such as schema validation errors, inaccessible web locations or inaccessible content selection.
+1. Begin by analysing any error messages or warnings provided by the test output. These messages can often provide meaningful information to identify the source of the problem. Pay attention to specific issues such as schema validation errors, inaccessible web locations or inaccessible content selection.
 
 2. For a deeper investigation, you can access the snapshots and versions generated during the test run. Navigate to the summary page of the failing workflow. Scroll down to the "Artifacts" section located at the bottom of the page. Click on `snapshots_and_versions` to download them.
 
@@ -153,7 +153,7 @@ For example, tests may fail in CI because of a 403 Access Denied error, but succ
 ## Merging the Pull Request
 
 Beyond status checks, additional restriction requires branches to be up to date before merging. This ensures that the contribution has been tested with the latest version of the collection. This appears as a _“This branch is out-of-date with the base branch”_ warning on a pull request.
-You can fix this using the Github interface, by clicking on the arrow button next to the “Update Branch” button, and select “Update with Rebase”.
+You can fix this using the GitHub interface, by clicking on the arrow button next to the “Update Branch” button, and select “Update with Rebase”.
 
 ## Contributions FAQ
 

@@ -24,7 +24,7 @@ Before starting, ensure you have:
 ### Create from template
 
 1. Go to the [`demo-declarations`](https://github.com/OpenTermsArchive/demo-declarations) repository
-2. Click "Use this template" dropdown and select "Create a new repository"
+2. Click the "Use this template" drop-down menu and select "Create a new repository"
 3. Name it `<collection_id>-declarations` (e.g. `pga-declarations`)
 4. Wait 1-2 minutes for automatic setup to complete (check `first-time-setup` action status)
 
