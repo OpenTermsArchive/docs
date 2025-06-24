@@ -17,7 +17,7 @@ The Open Terms Archive Community Call is a monthly online meeting for and by the
 ## Frequency and format
 
 - When: First Wednesday of the month
-- Time: 09:00 - 10:00 UTC
+- Time: 08:00 - 9:00 UTC
 - Duration: 1 hour
 - Join link: [https://meet.jit.si/OpenTermsArchiveCommunityCall](https://meet.jit.si/OpenTermsArchiveCommunityCall)
 
