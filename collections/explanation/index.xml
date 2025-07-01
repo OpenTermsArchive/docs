@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Explanations on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/collections/explanation/</link><description>Recent content in Explanations on Open Terms Archive documentation</description><generator>Hugo</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/collections/explanation/index.xml" rel="self" type="application/rss+xml"/><item><title>Reporting</title><link>https://docs.opentermsarchive.org/collections/explanation/reporting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/explanation/reporting/</guid><description>&lt;h1 id="reporting">
+ Reporting
+ 
+&lt;/h1>
+&lt;p>Once services are declared in a collection and this collection starts tracking these terms, it becomes crucial to monitor whether the tracking is functioning properly. It is important to know if there are any terms whose tracking has been interrupted or has failed.&lt;/p>
+&lt;h2 id="how-the-reporting-system-works">
+ How the reporting system works
+ 
+ &lt;a class="title-anchor" href="#how-the-reporting-system-works">🔗&lt;/a>
+ 
+&lt;/h2>
+&lt;p>To address this need, the Open Terms Archive engine implements an automated reporting system that creates issues in the declarations repository. This system helps maintainers stay informed about which terms are not being tracked and why.&lt;/p></description></item></channel></rss>

@@ -228,7 +228,18 @@
 &lt;/h5>
 &lt;p>Represents a source document containing web content and metadata for extraction.&lt;br>
 Includes the document location, selectors for content inclusion/exclusion,&lt;br>
-content filters, raw content data, and MIME type information.&lt;/p></description></item><item><title>Collection roles reference</title><link>https://docs.opentermsarchive.org/collections/reference/roles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/roles/</guid><description>&lt;h1 id="collection-roles-reference">
+content filters, raw content data, and MIME type information.&lt;/p></description></item><item><title>Reporting</title><link>https://docs.opentermsarchive.org/collections/explanation/reporting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/explanation/reporting/</guid><description>&lt;h1 id="reporting">
+ Reporting
+ 
+&lt;/h1>
+&lt;p>Once services are declared in a collection and this collection starts tracking these terms, it becomes crucial to monitor whether the tracking is functioning properly. It is important to know if there are any terms whose tracking has been interrupted or has failed.&lt;/p>
+&lt;h2 id="how-the-reporting-system-works">
+ How the reporting system works
+ 
+ &lt;a class="title-anchor" href="#how-the-reporting-system-works">🔗&lt;/a>
+ 
+&lt;/h2>
+&lt;p>To address this need, the Open Terms Archive engine implements an automated reporting system that creates issues in the declarations repository. This system helps maintainers stay informed about which terms are not being tracked and why.&lt;/p></description></item><item><title>Collection roles reference</title><link>https://docs.opentermsarchive.org/collections/reference/roles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/roles/</guid><description>&lt;h1 id="collection-roles-reference">
  Collection roles reference
  
 &lt;/h1>
