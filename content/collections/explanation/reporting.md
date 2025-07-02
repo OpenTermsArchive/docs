@@ -19,11 +19,9 @@ The reporting system uses labels to categorize issues and indicate what action i
 
 ### Auto-managed labels
 
-All labels that are marked with `- Auto-managed by OTA engine` in their description are managed by the engine. These labels should:
+All labels that are marked with `- Auto-managed by OTA engine` visible in their description on hover are automatically managed by the engine.
 
-- **Not** be manually added to issues by maintainers
-- **Not** be modified or removed from issues by maintainers
-- **Not** have their descriptions or colors edited by maintainers
+**These labels should not be manually added to issues, modified or removed from them, nor should their descriptions or colors be edited by maintainers.**
 
 The engine will automatically manage these labels as needed.
 
