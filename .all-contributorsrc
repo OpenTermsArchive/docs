@@ -108,6 +108,33 @@
       "contributions": [
         "ideas"
       ]
+    },
+    {
+      "login": "zenobioarn",
+      "name": "Zenobio de Almeida",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189729038?v=4",
+      "profile": "https://github.com/zenobioarn",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "Kissaki",
+      "name": "Jan Klass",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93181?v=4",
+      "profile": "https://kcode.de/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "taniki",
+      "name": "tam kien duong",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27315?v=4",
+      "profile": "https://11d.im",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",

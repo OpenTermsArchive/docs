@@ -67,7 +67,7 @@ The engine automatically creates issues in the declarations repository to notify
 
 ## Configuration files
 
-The system's behavior is controlled through several key configuration files:
+The system's behaviour is controlled through several key configuration files:
 
 - `inventory.yml`: Defines server address and deployment parameters
 - `production.json`: Stores application-specific settings

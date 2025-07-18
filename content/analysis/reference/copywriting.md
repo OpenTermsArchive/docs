@@ -86,7 +86,7 @@ Each memo must be composed of the elements detailed below. You must follow this 
 
 > **Midjourney strengthens policies on intellectual property infringements**
 >
-> Midjourney ▪ Terms of Service ▪ December 23, 2023_
+> _Midjourney ▪ Terms of Service ▪ December 23, 2023_
 >
 > Midjourney introduced an explicit [prohibition](https://github.com/OpenTermsArchive/GenAI-versions/commit/2cb30a2b4b338a4dffbeab9add8262cec78a3062) regarding the infringement of others’ intellectual property rights in its conditions for service availability and quality, mentioning the possibility of legal action and permanent ban from the service.
 >
