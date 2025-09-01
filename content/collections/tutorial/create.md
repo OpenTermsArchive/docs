@@ -14,7 +14,7 @@ By the end, you'll have a working collection that tracks changes to a service's 
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/en) is installed on your system.
+- [Node.js](https://nodejs.org/en) (version >=16.0.0 and < 23.0.0) is installed on your system.
 - You have basic familiarity with the command line.
 - You know how to use a text editor.
 
