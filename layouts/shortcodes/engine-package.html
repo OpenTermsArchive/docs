@@ -1,0 +1,13 @@
+{{ $enginePackage := readFile "node_modules/@opentermsarchive/engine/package.json" | unmarshal }}
+{{ $key := .Get "key" }}
+
+{{ $value := $enginePackage }}
+{{ range split $key "." }}
+  {{ $value = index $value . }}
+{{ end }}
+
+{{- if $value -}}
+  {{- $value -}}
+{{- else -}}
+  {{- warnf "Key '%s' not found in engine package.json" $key -}}
+{{- end -}}
