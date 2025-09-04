@@ -120,17 +120,26 @@ h6,
   line-height: 1.25;
 }
 
+.title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title-link:hover {
+  color: inherit;
+}
+
 .title-anchor {
-  color: var(--colorBlack400);
   font-size: 0.8em;
   font-weight: normal;
-  display: none;
+  opacity: 0;
+  transition: opacity 0.1s ease;
 }
 
 h2, h3, h4, h5, h6 {
-  &:hover {
-    a.title-anchor {
-      display: inline;
+  .title-link:hover {
+    .title-anchor {
+      opacity: 1;
     }
   }
 }

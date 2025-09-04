@@ -1,5 +1,5 @@
-/* Background */ .bg { background-color: var(--colorBlack200); }
-/* PreWrapper */ .chroma { background-color: var(--colorBlack200); font-size: 1.4rem; }
+/* Background */ .bg { background-color: var(--colorBlack100); border-radius: 0.2em; }
+/* PreWrapper */ .chroma { background-color: var(--colorBlack100); font-size: 1.4rem; border-radius: 0.2em;}
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err { color: var(--colorError); }
 /* CodeLine */ .chroma .cl {  }
@@ -72,11 +72,11 @@
 /* CommentPreproc */ .chroma .cp { color: #67707b; font-style: italic }
 /* CommentPreprocFile */ .chroma .cpf { color: #67707b; font-style: italic }
 /* Generic */ .chroma .g {  }
-/* GenericDeleted */ .chroma .gd {  }
+/* GenericDeleted */ .chroma .gd { background-color: rgb(255, 206, 203); }
 /* GenericEmph */ .chroma .ge {  }
 /* GenericError */ .chroma .gr {  }
 /* GenericHeading */ .chroma .gh {  }
-/* GenericInserted */ .chroma .gi {  }
+/* GenericInserted */ .chroma .gi { background-color:  rgb(172, 238, 187); }
 /* GenericOutput */ .chroma .go {  }
 /* GenericPrompt */ .chroma .gp {  }
 /* GenericStrong */ .chroma .gs {  }

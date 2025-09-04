@@ -6,6 +6,14 @@
   box-shadow: inset 0 1px var(--colorBlack200);
 }
 
+.refItem-name {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color:inherit
+}
+
 .refItem-name code {
   font-weight: 600;
   overflow-y: auto;
@@ -25,6 +33,26 @@
 
 .refItem-required code {
   font-weight: 400;
+}
+
+.refItem-anchor-icon {
+  opacity: 0;
+  color: var(--colorBlack600);
+  text-decoration: none;
+  transition: opacity 0.1s ease;
+}
+
+.refItem-name:hover .refItem-anchor-icon {
+  opacity: 1;
+}
+
+.refItem-anchor-icon:hover {
+  color: var(--colorBlack800);
+}
+
+.refItem-anchor-icon {
+  width: 1em;
+  height: 1em;
 }
 
 .refItem-details {

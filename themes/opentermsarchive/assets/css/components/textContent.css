@@ -214,8 +214,10 @@
   }
 
   & code {
-    background-color: var(--colorBlack200);
+    background-color: var(--colorBlack100);
     font-size: 0.9em;
+    white-space: pre-wrap;
+    border-radius: 0.2em;
   }
 
   & button {
