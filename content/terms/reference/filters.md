@@ -41,8 +41,8 @@ Can be used as follows in the declaration:
   "name": "<service name>",
   "terms": {
     "<terms type>": {
-      "fetch": "<fetch URL>",
-      "select": "<select CSS selector>",
+      "fetch": "<URL>",
+      "select": "<CSS or Range selectors>",
       "filter": [
         "customFilter"
       ]
@@ -55,7 +55,7 @@ Can be used as follows in the declaration:
 
 ```js
 // <service name>.filters.js
-export function customParameterizedFilter(document, parameters) {
+export function customParameterizedFilter(document, params) {
   // filter logic here
 }
 ```
@@ -68,11 +68,11 @@ Can be used as follows in the declaration:
   "name": "<service name>",
   "terms": {
     "<terms type>": {
-      "fetch": "<fetch URL>",
-      "select": "<select CSS selector>",
+      "fetch": "<URL>",
+      "select": "<CSS or Range selectors>",
       "filter": [
         {
-          "customParameterizedFilter": "params"
+          "customParameterizedFilter": ["param1", "param2"]
         }
       ]
     }
