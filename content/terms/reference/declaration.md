@@ -140,7 +140,7 @@ As an array of those:
 {{< refItem
     name="filter"
     type="array of strings or objects"
-    description="Array of filter functions to apply. Each item can be either a string (function name) or an object (function name as key, parameters as value). Functions will be executed in the order of the array. See the [Filters]({{< relref \"terms/reference/~~filters\" >}}) section for more information."
+    description="Array of filter functions to apply. Each item can be either a string (function name) or an object (function name as key, parameters as value). Functions will be executed in the order of the array. See the [Filters]({{< relref \"terms/reference/filters\" >}}) section for more information."
 >}}
 ```json
 "filter": [
