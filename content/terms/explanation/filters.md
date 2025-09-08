@@ -7,15 +7,19 @@ weight: 3
 
 Filters solve [noise]({{< relref "/terms/guideline/declaring/#usual-noise" >}}) issues in terms versions that cannot be addressed with direct selection or removal of content using CSS selectors or range selectors.
 
-## Why filters are needed
+## When filters are needed
 
-Web pages often contain dynamically generated content or content that cannot be targeted with CSS selectors that creates noise in the recorded version, for example:
+Filters are necessary when standard CSS selectors and range selectors cannot adequately address noise in terms versions. They provide a solution for complex content manipulation that goes beyond simple selection and removal.
 
-- Tracking parameters in URLs, for example `utm_source`, `utm_medium`, …
-- Content that are date based and can change between visits, for example "Updated X days ago" can be converted to a "Last updated on YYYY-MM-DD".
-- Dynamic elements with changing classes or IDs
+Use filters when:
 
-Without filters, this dynamic content creates changes that are not meaningful to the terms.
+- **CSS selectors are insufficient**: When noise appears within content that can't be targeted with selectors or [range selectors]({{< relref "terms/explanation/range-selectors" >}}) with the [`select`]({{< relref "terms/reference/declaration/#ref-select" >}}) and [`remove`]({{< relref "terms/reference/declaration/#ref-remove" >}}) properties.
+- **Content is dynamically generated**: When elements change on each page load, such as:
+  - Tracking parameters in URLs (e.g., `utm_source`, `utm_medium`)
+  - Dynamic elements with changing classes or IDs
+- **Complex tasks are needed**: When content transformation is needed such as:
+  - Converting images to base64 to store them in the terms version.
+  - Converting date-based content to a more stable format (e.g., "Updated X days ago" to "Last updated on YYYY-MM-DD")
 
 ## How filters work
 
@@ -25,15 +29,16 @@ Filters are JavaScript functions that receive a JSDOM document instance and can 
 
 When designing filters, follow these core principles:
 
-- **Be specific**: Target only the noise you want to remove. Avoid broad selectors that might accidentally remove important content.
-- **Be safe**: Ensure your filter doesn't accidentally remove important content. Always check that the generated version still contains the whole terms content.
-- **Be idempotent**: Your filter should produce the same result even if run multiple times on its own output. This ensures consistency and prevents unexpected behavior.
-- **Be efficient**: Use efficient DOM queries and avoid unnecessary operations. Process only the elements you need to modify.
+- **Be specific**: Target only the noise you want to remove. Avoid broad selectors that might accidentally remove important content. 
 
-## When to use filters
+  > For example, if your filter converts relative dates to absolute dates, use `.metadata time` not `time` which might also affect important effective dates within the terms content.
 
-Use filters when:
+- **Be idempotent**: Filters should produce the same result even if run multiple times on their own output. This ensures consistency and prevents unexpected behavior.
 
-- **CSS selectors are insufficient**: When noise appears within content that can't be targeted with selectors or [range selectors]({{< relref "terms/explanation/range-selectors" >}}) with the [`select`]({{< relref "terms/reference/declaration/#ref-select" >}}) and [`remove`]({{< relref "terms/reference/declaration/#ref-remove" >}}) properties.
-- **Meaningful content is dynamic**: When elements change on each page load, for example "Updated X days ago" can be converted to a "Last updated on YYYY-MM-DD".
-- **Patterns are complex**: When simple removal isn't possible, for example removing all the tracking parameters in URLs.
+  > For example, if your filter adds section numbers like "1." to headings, check if numbers already exist to prevent "1. Privacy Policy" from becoming "1. 1. Privacy Policy" on repeated runs.
+
+- **Be efficient**: Use efficient DOM queries and avoid unnecessary operations. Process only the elements you need to modify.  
+  
+  > For example, if your filter updates timestamp elements with a specific class, use `document.querySelector('.timestamp')` instead of `document.querySelectorAll('*')` followed by filtering for timestamp elements.
+
+- **Be safe**: Filters should not accidentally remove important content. The generated version should always be checked after adding a filter to ensure it still contains the whole terms content.

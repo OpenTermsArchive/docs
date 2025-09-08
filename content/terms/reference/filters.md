@@ -11,12 +11,19 @@ Filters are JavaScript functions that take the document DOM as parameter and are
 
 The generic function signature for a filter is:
 
+- For simple filters:
+
 ```js
-export [async] function filterName(document, [parameters])
+export [async] function filterName(document, [documentDeclaration])
 ```
 
-Each filter is exposed as a named function export that takes a `document` parameter and behaves like the `document` object in a browser DOM.
-> The `document` parameter is actually a [JSDOM](https://github.com/jsdom/jsdom) document instance.
+- For filters with parameters:
+
+```js
+export [async] function filterName(document, parameters, [documentDeclaration])
+```
+
+Each filter is exposed as a named function export that takes a `document` parameter and behaves like the `document` object in a browser DOM. The `document` parameter is actually a [JSDOM](https://github.com/jsdom/jsdom) document instance.
 
 These functions can be `async`, but they will still run sequentially.
 
@@ -53,7 +60,7 @@ Can be used as follows in the declaration:
 
 ```js
 export function convertTimeAgoToDate(document) {
-  const timeElements = document.querySelectorAll('time');
+  const timeElements = document.querySelectorAll('.metadata time');
   
   timeElements.forEach(timeElement => {
     const dateTimeValue = timeElement.getAttribute('datetime');
@@ -81,8 +88,8 @@ export function convertTimeAgoToDate(document) {
 Result:
 
 ```diff
-- <p class="meta-data">Last update: <time datetime="2025-06-23T11:16:36Z" title="06/23/2025, 13:16" data-datetime="relative">2 months ago</time></p>
-+ <p class="meta-data">Last update: 2025-06-23T11:16:36Z</p>
+- <p class="metadata">Last update: <time datetime="2025-06-23T11:16:36Z" title="06/23/2025, 13:16" data-datetime="relative">2 months ago</time></p>
++ <p class="metadata">Last update: 2025-06-23T11:16:36Z</p>
 ```
 
 ### Filter with parameters
