@@ -3,7 +3,7 @@ title: Apply filters
 weight: 7
 ---
 
-# Apply filters
+# How to apply filters
 
 This guide explains how to apply filters to existing declarations to remove meaningless content that changes on each page load or that cannot be removed with CSS selectors to avoid noise in the terms changes history.
 
