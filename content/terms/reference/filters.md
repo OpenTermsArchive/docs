@@ -18,8 +18,6 @@ export [async] function filterName(document, [parameters])
 Each filter is exposed as a named function export that takes a `document` parameter and behaves like the `document` object in a browser DOM.
 > The `document` parameter is actually a [JSDOM](https://github.com/jsdom/jsdom) document instance.
 
-Filters can have parameters that are passed as second parameter.
-
 These functions can be `async`, but they will still run sequentially.
 
 ## Usage

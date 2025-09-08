@@ -14,9 +14,9 @@ This guide explains how to apply filters to existing declarations to remove mean
 
 ## Step 1: Check for built-in filters
 
-[Built-in filters]({{< relref "/terms/reference/built-in-filters" >}}) are pre-defined functions that handle common noise patterns. They're the easiest way to clean up content without writing custom code.
+Built-in filters are pre-defined functions that handle common noise patterns. They're the easiest way to clean up content without writing custom code.
 
-Review the available built-in filters in the [filters reference]({{< relref "/terms/reference/built-in-filters" >}}) to find one that matches your needs.
+Review the available [built-in filters]({{< relref "/terms/reference/built-in-filters" >}}) to find if one matches your needs.
 
 If you find a suitable built-in filter, proceed to [Step 2](#step-2-declare-the-filter), otherwise you will need to create a custom filter.
 
@@ -33,7 +33,7 @@ Create a JavaScript file with the same name as your service declaration but with
 Define your filter function following this signature:
 
 ```js
-export function myCustomFilter(document, parameters, documentDeclaration) {
+export function myCustomFilter(document, [parameters]) {
   // Your filter logic here
 }
 ```
@@ -42,7 +42,6 @@ export function myCustomFilter(document, parameters, documentDeclaration) {
 
 - `document`: JSDOM document instance representing the web page
 - `parameters`: Values passed from the declaration (optional)
-- `documentDeclaration`: The complete declaration object (optional)
 
 **Example: Remove session IDs from text content**
 
