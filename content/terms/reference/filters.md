@@ -175,7 +175,7 @@ Result:
 import fetch from 'isomorphic-fetch';
 
 export async function convertImagesToBase64(document, selector, documentDeclaration) {
-  const images = Array.from(document.querySelectorAll(`selector`));
+  const images = Array.from(document.querySelectorAll(selector));
 
   return Promise.all(images.map(async ({ src }, index) => {
     if (src.startsWith('data:')) {
