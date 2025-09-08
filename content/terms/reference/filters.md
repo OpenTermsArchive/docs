@@ -49,7 +49,7 @@ Can be used as follows in the declaration:
 }
 ```
 
-Example:
+#### Example
 
 ```js
 export function convertTimeAgoToDate(document) {
@@ -114,13 +114,15 @@ Can be used as follows in the declaration:
 }
 ```
 
-Example:
+#### Example 1
 
 ```js
-export function removeLinksWithText(document, text) {
+export function removeLinksWithText(document, textArray) {
   const links = document.querySelectorAll('a');
+  const textsToRemove = Array.isArray(textArray) ? textArray : [textArray];
+  
   links.forEach(link => {
-    if (link.textContent.trim() === text) {
+    if (textsToRemove.includes(link.textContent.trim())) {
       link.remove();
     }
   });
@@ -135,8 +137,7 @@ export function removeLinksWithText(document, text) {
       "fetch": "https://example.com/privacy",
       "select": ".content",
       "filter": [
-        { "removeLinksWithText": "Return to previous section" }
-        { "removeLinksWithText": "Go to next section" }
+        { "removeLinksWithText": ["Return to previous section", "Go to next section"] }
       ]
     }
   }
@@ -159,4 +160,52 @@ Result:
 -   <a href="#section2">Return to previous section</a>
     <p>...</p>
   </div>
+```
+
+#### Example 2
+
+```js
+import fetch from 'isomorphic-fetch';
+
+export async function convertImagesToBase64(document, selector, documentDeclaration) {
+  const images = Array.from(document.querySelectorAll(`selector`));
+
+  return Promise.all(images.map(async ({ src }, index) => {
+    if (src.startsWith('data:')) {
+      return; // Already a data-URI, skip
+    }
+
+    const imageUrl = new URL(src, documentDeclaration.fetch).href; // Ensure url is absolute
+    const response = await fetch(imageUrl);
+    const mimeType = response.headers.get('content-type');
+    const content = await response.arrayBuffer();
+
+    const base64Content = btoa(String.fromCharCode(...new Uint8Array(content)));
+
+    images[index].src = `data:${mimeType};base64,${base64Content}`;
+  }));
+  
+}
+```
+
+```json
+{
+  "name": "MyService",
+  "terms": {
+    "Privacy Policy": {
+      "fetch": "https://example.com/privacy",
+      "select": ".content",
+      "filter": [
+        { "convertImagesToBase64": ".meaningful-illustration" }
+      ]
+    }
+  }
+}
+```
+
+Result:
+
+```diff
+- <img src="https://example.com/image.png" class="meaningful-illustration">
++ <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA..." class="meaningful-illustration">
 ```
