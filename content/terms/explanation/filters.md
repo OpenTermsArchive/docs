@@ -5,11 +5,11 @@ weight: 3
 
 # Filters
 
-Filters solve noise issues in terms versions that cannot be addressed with direct selection or removal of content using CSS selectors or range selectors.
+Filters solve [noise]({{< relref "/terms/guideline/declaring/#usual-noise" >}}) issues in terms versions that cannot be addressed with direct selection or removal of content using CSS selectors or range selectors.
 
 ## Why filters are needed
 
-Web pages often contain dynamically generated content or content that cannot be targeted with CSS selectors that creates noise in the archive:
+Web pages often contain dynamically generated content or content that cannot be targeted with CSS selectors that creates noise in the recorded version, for example:
 
 - Tracking parameters in URLs, for example `utm_source`, `utm_medium`, …
 - Content that are date based and can change between visits, for example "Updated X days ago" can be converted to a "Last updated on YYYY-MM-DD".
