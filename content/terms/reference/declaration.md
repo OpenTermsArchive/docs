@@ -146,7 +146,7 @@ As an array of those:
 "filter": [
     "filterName1",
     {
-        "filterName2": "params"
+        "filterName2": "param"
     }
 ]
 ```

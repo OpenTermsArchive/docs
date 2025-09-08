@@ -49,6 +49,42 @@ Can be used as follows in the declaration:
 }
 ```
 
+Example:
+
+```js
+export function convertTimeAgoToDate(document) {
+  const timeElements = document.querySelectorAll('time');
+  
+  timeElements.forEach(timeElement => {
+    const dateTimeValue = timeElement.getAttribute('datetime');
+    const textNode = document.createTextNode(dateTimeValue);
+    timeElement.parentNode.replaceChild(textNode, timeElement);
+  });
+}
+```
+
+```json
+{
+  "name": "MyService",
+  "terms": {
+    "Privacy Policy": {
+      "fetch": "https://example.com/privacy",
+      "select": ".content",
+      "filter": [
+        "convertTimeAgoToDate"
+      ]
+    }
+  }
+}
+```
+
+Result:
+
+```diff
+- <p class="meta-data">Last update: <time datetime="2025-06-23T11:16:36Z" title="06/23/2025, 13:16" data-datetime="relative">2 months ago</time></p>
++ <p class="meta-data">Last update: 2025-06-23T11:16:36Z</p>
+```
+
 ### Filter with parameters
 
 ```js
@@ -76,4 +112,51 @@ Can be used as follows in the declaration:
     }
   }
 }
+```
+
+Example:
+
+```js
+export function removeLinksWithText(document, text) {
+  const links = document.querySelectorAll('a');
+  links.forEach(link => {
+    if (link.textContent.trim() === text) {
+      link.remove();
+    }
+  });
+}
+```
+
+```json
+{
+  "name": "MyService",
+  "terms": {
+    "Privacy Policy": {
+      "fetch": "https://example.com/privacy",
+      "select": ".content",
+      "filter": [
+        { "removeLinksWithText": "Return to previous section" }
+        { "removeLinksWithText": "Go to next section" }
+      ]
+    }
+  }
+}
+```
+
+Result:
+
+```diff
+  <div id="section1">
+-   <a href="#section2">Go to next section</a>
+    <p>...</p>
+  </div>
+  <div id="section2">
+-   <a href="#section1">Return to previous section</a>
+-   <a href="#section3">Go to next section</a>
+    <p>...</p>
+  </div>
+  <div id="section3">
+-   <a href="#section2">Return to previous section</a>
+    <p>...</p>
+  </div>
 ```
