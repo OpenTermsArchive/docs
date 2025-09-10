@@ -83,6 +83,16 @@
   // node_modules/lucide/dist/esm/icons/chevron-down.js
   var ChevronDown = ["svg", defaultAttributes, [["path", { d: "m6 9 6 6 6-6" }]]];
 
+  // node_modules/lucide/dist/esm/icons/link.js
+  var Link = [
+    "svg",
+    defaultAttributes,
+    [
+      ["path", { d: "M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" }],
+      ["path", { d: "M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" }]
+    ]
+  ];
+
   // node_modules/lucide/dist/esm/icons/x.js
   var X = [
     "svg",
@@ -124,7 +134,8 @@
   createIcons({
     icons: {
       X,
-      ChevronDown
+      ChevronDown,
+      Link
     },
     attrs: { "aria-hidden": true }
   });
@@ -135,6 +146,7 @@ lucide/dist/esm/createElement.js:
 lucide/dist/esm/replaceElement.js:
 lucide/dist/esm/defaultAttributes.js:
 lucide/dist/esm/icons/chevron-down.js:
+lucide/dist/esm/icons/link.js:
 lucide/dist/esm/icons/x.js:
 lucide/dist/esm/lucide.js:
   (**

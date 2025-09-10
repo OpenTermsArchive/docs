@@ -1,30 +1,51 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/</link><description>Recent content on Open Terms Archive documentation</description><generator>Hugo</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Deployment architecture</title><link>https://docs.opentermsarchive.org/deployment/reference/architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/deployment/reference/architecture/</guid><description>&lt;h1 id="deployment-architecture">
+ 
  Deployment architecture
+ 
+
  
 &lt;/h1>
 &lt;p>This document provides an overview of the key components and elements involved in the deployment process of a collection.&lt;/p>
 &lt;h2 id="repository-structure">
+ 
+ &lt;a class="title-link" href="#repository-structure">
+ 
  Repository structure
  
- &lt;a class="title-anchor" href="#repository-structure">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>A collection is defined by three repositories that work together to manage and track terms.&lt;/p>
 &lt;p>The declarations repository, &lt;code>&amp;lt;collection_name&amp;gt;-declarations&lt;/code>, serves as the primary workspace for collection maintainers, containing declarations of the terms to track along with engine and deployment configurations.&lt;/p>
 &lt;p>This repository is complemented by two automatically managed repositories:&lt;/p></description></item><item><title>Benefits</title><link>https://docs.opentermsarchive.org/federation/benefits/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/federation/benefits/</guid><description>&lt;h1 id="open-terms-archive-federation">
+ 
  Open Terms Archive federation
+ 
+
  
 &lt;/h1>
 &lt;p>Open Terms Archive is a decentralised system. It aims at enabling any entity set up their own collections and track terms on their own.&lt;/p>
 &lt;p>In order to maximise &lt;strong>discoverability&lt;/strong>, &lt;strong>collaboration&lt;/strong> and &lt;strong>political power&lt;/strong>, public collections are federated within a single ecosystem. This makes their data mutually discoverable and enables mutualising effort.&lt;/p>
 &lt;h2 id="benefits-of-joining-the-federation">
+ 
+ &lt;a class="title-link" href="#benefits-of-joining-the-federation">
+ 
  Benefits of joining the federation
  
- &lt;a class="title-anchor" href="#benefits-of-joining-the-federation">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>A collection that joins the federation enjoys the following benefits:&lt;/p></description></item><item><title>Command line interface</title><link>https://docs.opentermsarchive.org/api/cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/api/cli/</guid><description>&lt;h1 id="command-line-interface">
+ 
  Command line interface
+ 
+
  
 &lt;/h1>
 &lt;p>Once the engine module is installed as a dependency within another module, the &lt;code>ota&lt;/code> command with the following subcommands is available.&lt;/p>
@@ -34,9 +55,15 @@
 &lt;li>&lt;code>&amp;lt;terms_type&amp;gt;&lt;/code> is the property name used under the &lt;code>terms&lt;/code> property in the declaration to declare a terms. For example, in the getting started declaration, the terms type declared is &lt;code>Privacy Policy&lt;/code>.&lt;/li>
 &lt;/ul>
 &lt;h2 id="tracking-terms">
+ 
+ &lt;a class="title-link" href="#tracking-terms">
+ 
  Tracking terms
  
- &lt;a class="title-anchor" href="#tracking-terms">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 
@@ -49,12 +76,14 @@
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-ota-track">
+ &lt;a href="#ref-ota-track" class="refItem-name">
  &lt;code>ota track&lt;/code>
  &lt;span class="refItem-type">&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">Track the current terms of services according to provided declarations. The declarations, snapshots and versions paths are defined in the configuration.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -73,33 +102,57 @@
 
 &lt;blockquote>
 &lt;p>Note that the snapshots and versions will be recorded at the moment the command is executed, on top of the existing local history. If a shared history already exists and the goal is to add on top of it, that history has to be downloaded before executing that command.&lt;/p></description></item><item><title>Create a collection</title><link>https://docs.opentermsarchive.org/collections/how-to/create/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/create/</guid><description>&lt;h1 id="how-to-create-a-collection">
+ 
  How to create a collection
+ 
+
  
 &lt;/h1>
 &lt;p>You are considering creating a new collection to track terms with Open Terms Archive? Amazing!&lt;/p>
 &lt;h2 id="define-metadata">
+ 
+ &lt;a class="title-link" href="#define-metadata">
+ 
  Define metadata
  
- &lt;a class="title-anchor" href="#define-metadata">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>First of all, define the &lt;a href="https://docs.opentermsarchive.org/collections/reference/metadata/">metadata&lt;/a> of the collection you would like to create and keep them ready to be used when setting up the repositories.&lt;/p>
 &lt;h2 id="check-existing-collections">
+ 
+ &lt;a class="title-link" href="#check-existing-collections">
+ 
  Check existing collections
  
- &lt;a class="title-anchor" href="#check-existing-collections">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>Now that you have a clear idea what you would like to track, double-check that there are no &lt;a href="https://opentermsarchive.org/#collections">existing federated collections&lt;/a> that you could contribute to. If you have a doubt about whether some terms you want to track would fit a collection, reach out to the collection maintainers.&lt;/p></description></item><item><title>Create your first collection</title><link>https://docs.opentermsarchive.org/collections/tutorial/create/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/tutorial/create/</guid><description>&lt;h1 id="create-your-first-collection">
+ 
  Create your first collection
+ 
+
  
 &lt;/h1>
 &lt;p>This tutorial will guide you through creating your first Open Terms Archive collection.&lt;/p>
 &lt;p>By the end, you&amp;rsquo;ll have a working collection that tracks changes to a service&amp;rsquo;s privacy policy. You will also have a basic understanding of how to create a collection.&lt;/p>
 &lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
  Prerequisites
  
- &lt;a class="title-anchor" href="#prerequisites">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;ul>
@@ -116,28 +169,49 @@
 &lt;li>You know how to use a text editor.&lt;/li>
 &lt;/ul>
 &lt;h2 id="create-a-collection">
+ 
+ &lt;a class="title-link" href="#create-a-collection">
+ 
  Create a collection
  
- &lt;a class="title-anchor" href="#create-a-collection">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;h3 id="step-1-set-up-the-directory-structure">
+ 
+ &lt;a class="title-link" href="#step-1-set-up-the-directory-structure">
+ 
  Step 1: Set up the directory structure
  
- &lt;a class="title-anchor" href="#step-1-set-up-the-directory-structure">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h3>
 &lt;ol>
 &lt;li>
 &lt;p>Create a new directory:&lt;/p></description></item><item><title>Deploy a collection</title><link>https://docs.opentermsarchive.org/deployment/how-to/deploy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/deployment/how-to/deploy/</guid><description>&lt;h1 id="how-to-deploy-a-collection">
+ 
  How to deploy a collection
+ 
+
  
 &lt;/h1>
 &lt;p>This guide will help you deploy an Open Terms Archive collection to a server. The deployment is automated using &lt;a href="https://docs.ansible.com/ansible/latest/index.html">Ansible&lt;/a> and will set up the Open Terms Archive engine and configure it to track your collection&amp;rsquo;s terms.&lt;/p>
 &lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
  Prerequisites
  
- &lt;a class="title-anchor" href="#prerequisites">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>Before starting, ensure you have:&lt;/p>
@@ -150,26 +224,47 @@
 &lt;li>&lt;a href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html">Ansible&lt;/a> installed on your local machine&lt;/li>
 &lt;/ul>
 &lt;h2 id="1-configure-the-server">
+ 
+ &lt;a class="title-link" href="#1-configure-the-server">
+ 
  1. Configure the server
  
- &lt;a class="title-anchor" href="#1-configure-the-server">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>First, ensure your server provides unsupervised access:&lt;/p></description></item><item><title>Main concepts</title><link>https://docs.opentermsarchive.org/concepts/main/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/concepts/main/</guid><description>&lt;h2 id="main-concepts">
+ 
+ &lt;a class="title-link" href="#main-concepts">
+ 
  Main concepts
  
- &lt;a class="title-anchor" href="#main-concepts">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>Words in bold are &lt;a href="https://en.wikipedia.org/wiki/Domain-driven_design">business domain names&lt;/a>.&lt;/p>
 &lt;p>&lt;strong>Services&lt;/strong> have &lt;strong>terms&lt;/strong> written in &lt;strong>documents&lt;/strong>, contractual (Terms of Services, Privacy Policy…) or not (Community Guidelines, Deceased User Policy…), that can change over time. Open Terms Archive enables users rights advocates, regulatory bodies and interested citizens to follow the &lt;strong>changes&lt;/strong> to these &lt;strong>terms&lt;/strong>, to be notified whenever a new &lt;strong>version&lt;/strong> is published, to explore their entire &lt;strong>history&lt;/strong> and to collaborate in analysing them. This free and open-source engine is developed to support these goals.&lt;/p></description></item><item><title>Navigate history</title><link>https://docs.opentermsarchive.org/analysis/how-to/navigate-history/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/analysis/how-to/navigate-history/</guid><description>&lt;h1 id="how-to-navigate-history">
+ 
  How to navigate history
+ 
+
  
 &lt;/h1>
 &lt;h2 id="screencast">
+ 
+ &lt;a class="title-link" href="#screencast">
+ 
  Screencast
  
- &lt;a class="title-anchor" href="#screencast">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>Learn how to navigate through versions history in this 4 minutes video, or scroll below for the textual version.&lt;/p>
@@ -178,9 +273,15 @@
 &lt;/video>
 
 &lt;h2 id="manual">
+ 
+ &lt;a class="title-link" href="#manual">
+ 
  Manual
  
- &lt;a class="title-anchor" href="#manual">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>Every collection offers a public database of versions they recorded.&lt;/p>
@@ -188,15 +289,24 @@
 &lt;ul>
 &lt;li>
 &lt;p>From the &lt;a href="https://github.com/OpenTermsArchive/demo-versions">repository page&lt;/a>, open the folder of the service of your choice by clicking on it. For example, &lt;a href="https://github.com/OpenTermsArchive/demo-versions/tree/main/GitHub">GitHub&lt;/a>:&lt;/p></description></item><item><title>Node.js module</title><link>https://docs.opentermsarchive.org/api/node/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/api/node/</guid><description>&lt;h1 id="nodejs-module">
+ 
  Node.js module
+ 
+
  
 &lt;/h1>
 &lt;p>As a Node module dependency, the engine exposes a JavaScript API that can be called in your own code.&lt;/p>
 &lt;!-- markdownlint-disable -->
 &lt;h4 id="classes">
+ 
+ &lt;a class="title-link" href="#classes">
+ 
  Classes
  
- &lt;a class="title-anchor" href="#classes">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h4>
 &lt;ul>
@@ -207,9 +317,15 @@
 &lt;/li>
 &lt;/ul>
 &lt;h4 id="functions">
+ 
+ &lt;a class="title-link" href="#functions">
+ 
  Functions
  
- &lt;a class="title-anchor" href="#functions">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h4>
 &lt;ul>
@@ -221,86 +337,152 @@
 &lt;hr>
 &lt;p>&lt;a name="SourceDocument">&lt;/a>&lt;/p>
 &lt;h4 id="sourcedocument">
+ 
+ &lt;a class="title-link" href="#sourcedocument">
+ 
  SourceDocument
  
- &lt;a class="title-anchor" href="#sourcedocument">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h4>
 &lt;p>&lt;strong>Kind&lt;/strong>: global class&lt;br>
 &lt;a name="new_SourceDocument_new">&lt;/a>&lt;/p>
 &lt;h5 id="new-sourcedocumentparams">
+ 
+ &lt;a class="title-link" href="#new-sourcedocumentparams">
+ 
  &lt;code>new SourceDocument(params)&lt;/code>
  
- &lt;a class="title-anchor" href="#new-sourcedocumentparams">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h5>
 &lt;p>Represents a source document containing web content and metadata for extraction.&lt;br>
 Includes the document location, selectors for content inclusion/exclusion,&lt;br>
 content filters, raw content data, and MIME type information.&lt;/p></description></item><item><title>Reporting</title><link>https://docs.opentermsarchive.org/collections/explanation/reporting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/explanation/reporting/</guid><description>&lt;h1 id="reporting">
+ 
  Reporting
+ 
+
  
 &lt;/h1>
 &lt;p>Over the lifetime of a collection, services will change the location, layout or distribution of their terms. This can impact tracking. In order to ensure continuous data collection, maintainers need to know if the tracking of any terms fails. To address this need, the Open Terms Archive engine automatically reports failures by opening issues in the declarations repository.&lt;/p>
 &lt;h2 id="how-the-reporting-system-works">
+ 
+ &lt;a class="title-link" href="#how-the-reporting-system-works">
+ 
  How the reporting system works
  
- &lt;a class="title-anchor" href="#how-the-reporting-system-works">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>When some terms fail to track, an issue is opened that explains the reason for failure and is labelled based on the cause of the tracking interruption. The system also automatically closes issues when tracking resumes.&lt;/p></description></item><item><title>Collection roles reference</title><link>https://docs.opentermsarchive.org/collections/reference/roles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/roles/</guid><description>&lt;h1 id="collection-roles-reference">
+ 
  Collection roles reference
+ 
+
  
 &lt;/h1>
 &lt;p>Each role represents a set of responsibilities and tasks that contribute to the collection’s success. A role can be filled by one or multiple people or organisations, and one entity can fulfill multiple roles. All roles can be either volunteer or paid positions, depending on the collection’s resources and needs.&lt;/p>
 &lt;h2 id="roles">
+ 
+ &lt;a class="title-link" href="#roles">
+ 
  Roles
  
- &lt;a class="title-anchor" href="#roles">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;h3 id="host">
+ 
+ &lt;a class="title-link" href="#host">
+ 
  Host
  
- &lt;a class="title-anchor" href="#host">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h3>
 &lt;p>Ensures the availability of the infrastructure required for the collection&amp;rsquo;s operation.&lt;/p></description></item><item><title>Understanding terms types</title><link>https://docs.opentermsarchive.org/terms/explanation/terms-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/explanation/terms-types/</guid><description>&lt;h1 id="terms-types-a-foundation-of-a-consistent-archive">
+ 
  Terms types: a foundation of a consistent archive
+ 
+
  
 &lt;/h1>
 &lt;h2 id="what-are-terms-types">
+ 
+ &lt;a class="title-link" href="#what-are-terms-types">
+ 
  What are terms types?
  
- &lt;a class="title-anchor" href="#what-are-terms-types">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>Terms types are standardized categories that classify the different kinds of terms and conditions documents, serving as a common language for organizing and comparing terms across services.&lt;/p>
 &lt;h2 id="why-standardized-terms-types-are-needed">
+ 
+ &lt;a class="title-link" href="#why-standardized-terms-types-are-needed">
+ 
  Why standardized terms types are needed
  
- &lt;a class="title-anchor" href="#why-standardized-terms-types-are-needed">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>Services often use different names for the same type of terms. For instance, &amp;ldquo;Terms and Conditions&amp;rdquo; might be called &amp;ldquo;Terms of Use&amp;rdquo; or &amp;ldquo;Terms of Service&amp;rdquo; by different services. This kind of inconsistency creates significant challenges in finding and comparing similar terms documents across different services. It also makes it difficult to maintain a consistent structure in all collections, and to ensure a comprehensive coverage of all legal documents.&lt;/p></description></item><item><title>Track new terms</title><link>https://docs.opentermsarchive.org/terms/how-to/track-terms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/track-terms/</guid><description>&lt;h1 id="how-to-track-new-terms">
+ 
  How to track new terms
+ 
+
  
 &lt;/h1>
 &lt;p>This is a step by step guide to help you add declarations to the &lt;a href="https://github.com/OpenTermsArchive/contrib-declarations">contrib-declaration&lt;/a> repository. This repository is dedicated for volunteer contribution of declarations to Open Terms Archive.&lt;/p>
 &lt;p>Having understood briefly how a declaration is structured in JSON format, we need to look at concrete steps on how you can add these JSON files to the repository.&lt;/p>
 &lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
  Prerequisites
  
- &lt;a class="title-anchor" href="#prerequisites">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>In order to add declarations:&lt;/p></description></item><item><title>Collection REST API</title><link>https://docs.opentermsarchive.org/api/collection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/api/collection/</guid><description>&lt;h1 id="collection-rest-api">
+ 
  Collection REST API
+ 
+
  
 &lt;/h1>
 &lt;p>As Open Terms Archive is decentralised, each instance embarks its own API. The documentation relevant to the specific version of the engine on that instance is provided on that instance itself.&lt;/p>
 &lt;p>The Collection API exposes JSON data over HTTP. Its &lt;a href="https://swagger.io/specification/">OpenAPI&lt;/a> specification can be found at &lt;code>http://localhost:&amp;lt;port&amp;gt;/&amp;lt;basePath&amp;gt;/&amp;lt;API version&amp;gt;/docs&lt;/code>.&lt;/p>
 &lt;p>That endpoint exposes both the OpenAPI specification if the requested &lt;code>Content-Type&lt;/code> is JSON, and a Swagger UI for visual and interactive documentation otherwise.&lt;/p></description></item><item><title>Create repositories</title><link>https://docs.opentermsarchive.org/collections/how-to/create-repositories/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/create-repositories/</guid><description>&lt;h1 id="how-to-create-collection-repositories">
+ 
  How to create collection repositories
+ 
+
  
 &lt;/h1>
 &lt;p>Collections in Open Terms Archive rely on three Git repositories to hold the data:&lt;/p>
@@ -311,65 +493,57 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/ul>
 &lt;p>This guide assumes you use GitHub. For other Git platforms, adapt these steps accordingly.&lt;/p>
 &lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
  Prerequisites
  
- &lt;a class="title-anchor" href="#prerequisites">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
-&lt;p>Before starting, ensure you have:&lt;/p>
-&lt;ul>
-&lt;li>A GitHub account with permissions to create repositories&lt;/li>
-&lt;li>Your collection ID and name defined&lt;/li>
-&lt;li>Your collection metadata prepared&lt;/li>
-&lt;/ul>
-&lt;h2 id="create-declarations-repository">
- Create declarations repository
+&lt;p>Before starting, ensure you have:&lt;/p></description></item><item><title>Design principles</title><link>https://docs.opentermsarchive.org/concepts/design-principles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/concepts/design-principles/</guid><description>&lt;h1 id="design-principles">
  
- &lt;a class="title-anchor" href="#create-declarations-repository">🔗&lt;/a>
- 
-&lt;/h2>
-&lt;h3 id="create-from-template">
- Create from template
- 
- &lt;a class="title-anchor" href="#create-from-template">🔗&lt;/a>
- 
-&lt;/h3>
-&lt;ol>
-&lt;li>Go to the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations">&lt;code>demo-declarations&lt;/code>&lt;/a> repository&lt;/li>
-&lt;li>Click the &amp;ldquo;Use this template&amp;rdquo; drop-down menu and select &amp;ldquo;Create a new repository&amp;rdquo;&lt;/li>
-&lt;li>Name it &lt;code>&amp;lt;collection_id&amp;gt;-declarations&lt;/code> (e.g. &lt;code>pga-declarations&lt;/code>)&lt;/li>
-&lt;li>Wait 1-2 minutes for automatic setup to complete (check &lt;code>first-time-setup&lt;/code> action status)&lt;/li>
-&lt;/ol>
-&lt;h3 id="configure-repository-settings">
- Configure repository settings
- 
- &lt;a class="title-anchor" href="#configure-repository-settings">🔗&lt;/a>
- 
-&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>Set up the &amp;ldquo;About&amp;rdquo; section:&lt;/p></description></item><item><title>Design principles</title><link>https://docs.opentermsarchive.org/concepts/design-principles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/concepts/design-principles/</guid><description>&lt;h1 id="design-principles">
  Design principles
+ 
+
  
 &lt;/h1>
 &lt;p>These overarching principles guide technical and governance decisions. They are fundamental and can only be changed through community consensus, based on a thorough impact assessment.&lt;/p>
 &lt;p>Each principle has a name, a rationale, and potential implementation examples or guidelines.&lt;/p>
 &lt;h2 id="1-never-trust-the-services">
+ 
+ &lt;a class="title-link" href="#1-never-trust-the-services">
+ 
  1. Never trust the services
  
- &lt;a class="title-anchor" href="#1-never-trust-the-services">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>A major goal of Open Terms Archive is to enable assessing the loyalty of services towards their end users. Since loyalty is not assumed, trust can not be warranted.&lt;/p></description></item><item><title>Metadata</title><link>https://docs.opentermsarchive.org/collections/reference/metadata/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/metadata/</guid><description>&lt;h1 id="collection-metadata">
+ 
  Collection metadata
+ 
+
  
 &lt;/h1>
 &lt;p>This reference documentation details all available metadata fields that can be specified in a collection&amp;rsquo;s metadata file.&lt;/p>
 &lt;p>The examples given throughout this reference can be seen in context in the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations/blob/main/metadata.yml">complete metadata file&lt;/a> and rendered in the &lt;a href="https://opentermsarchive.org/en/collections/demo/">collection page&lt;/a> of the Demo collection.&lt;/p>
 &lt;h2 id="fields">
+ 
+ &lt;a class="title-link" href="#fields">
+ 
  Fields
  
- &lt;a class="title-anchor" href="#fields">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 
@@ -382,14 +556,16 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-id">
+ &lt;a href="#ref-id" class="refItem-name">
  &lt;code>id&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">Unique identifier derived from name (acronyms, dash-separated).&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -416,14 +592,16 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-name">
+ &lt;a href="#ref-name" class="refItem-name">
  &lt;code>name&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">Display name of the collection.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -450,14 +628,16 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-tagline">
+ &lt;a href="#ref-tagline" class="refItem-name">
  &lt;code>tagline&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">Concise description of collection topic.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -484,14 +664,16 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-languages">
+ &lt;a href="#ref-languages" class="refItem-name">
  &lt;code>languages&lt;/code>
  &lt;span class="refItem-type">array of strings&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">List of &lt;a href="https://en.wikipedia.org/wiki/ISO_639">ISO 639-1 (two-letter)&lt;/a> language codes representing languages allowed in the collection.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -518,14 +700,16 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-jurisdictions">
+ &lt;a href="#ref-jurisdictions" class="refItem-name">
  &lt;code>jurisdictions&lt;/code>
  &lt;span class="refItem-type">array of strings&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">List of &lt;a href="https://en.wikipedia.org/wiki/ISO_3166-2">ISO 3166-2 country codes&lt;/a> representing jurisdictions covered by the collection.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -552,12 +736,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-description">
+ &lt;a href="#ref-description" class="refItem-name">
  &lt;code>description&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">Detailed description of the collection&lt;/div>
  &lt;div class="refItem-details refItem-details__full">
  
@@ -588,12 +774,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-dataset">
+ &lt;a href="#ref-dataset" class="refItem-name">
  &lt;code>dataset&lt;/code>
  &lt;span class="refItem-type">uri&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">URL to the dataset releases.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -620,12 +808,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-declarations">
+ &lt;a href="#ref-declarations" class="refItem-name">
  &lt;code>declarations&lt;/code>
  &lt;span class="refItem-type">uri&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">URL to the declarations repository.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -652,12 +842,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-versions">
+ &lt;a href="#ref-versions" class="refItem-name">
  &lt;code>versions&lt;/code>
  &lt;span class="refItem-type">uri&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">URL to the versions repository.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -684,12 +876,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-snapshots">
+ &lt;a href="#ref-snapshots" class="refItem-name">
  &lt;code>snapshots&lt;/code>
  &lt;span class="refItem-type">uri&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">URL to the snapshots repository.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -716,12 +910,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-donations">
+ &lt;a href="#ref-donations" class="refItem-name">
  &lt;code>donations&lt;/code>
  &lt;span class="refItem-type">uri&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">URL to the donations page.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -748,12 +944,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-logo">
+ &lt;a href="#ref-logo" class="refItem-name">
  &lt;code>logo&lt;/code>
  &lt;span class="refItem-type">uri&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">URL to the collection&amp;rsquo;s logo. Optimized PNG transparent image (minimum width 240px).&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -780,12 +978,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-trackingperiods">
+ &lt;a href="#ref-trackingperiods" class="refItem-name">
  &lt;code>trackingPeriods&lt;/code>
  &lt;span class="refItem-type">array of objects&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">List of time periods during which terms were tracked, with their tracking configuration. Gaps between periods indicate times when tracking was interrupted. See &lt;a href="#trackingperiods">TrackingPeriods&lt;/a> section.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -806,12 +1006,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-governance">
+ &lt;a href="#ref-governance" class="refItem-name">
  &lt;code>governance&lt;/code>
  &lt;span class="refItem-type">object of objects&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">Map of organizations involved in the collection&amp;rsquo;s governance, with organization names as keys and governance objects as values. See &lt;a href="#governance">Governance&lt;/a> section.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -832,12 +1034,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-i18n">
+ &lt;a href="#ref-i18n" class="refItem-name">
  &lt;code>i18n&lt;/code>
  &lt;span class="refItem-type">object of objects&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">Internationalization of any of the Metadata properties (except i18n itself) for different language codes&lt;/div>
  &lt;div class="refItem-details refItem-details__full">
  
@@ -863,9 +1067,15 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 &lt;hr>
 &lt;h3 id="trackingperiods">
+ 
+ &lt;a class="title-link" href="#trackingperiods">
+ 
  TrackingPeriods
  
- &lt;a class="title-anchor" href="#trackingperiods">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h3>
 
@@ -878,14 +1088,16 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-startdate">
+ &lt;a href="#ref-startdate" class="refItem-name">
  &lt;code>startDate&lt;/code>
  &lt;span class="refItem-type">date&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">The date when tracking started for this period (ISO 8601 format YYYY-MM-DD).&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -912,14 +1124,16 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-schedule">
+ &lt;a href="#ref-schedule" class="refItem-name">
  &lt;code>schedule&lt;/code>
  &lt;span class="refItem-type">cron-expression&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">A &lt;a href="https://en.wikipedia.org/wiki/Cron#Cron_expression">cron expression&lt;/a> that defines the tracking frequency.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -946,14 +1160,16 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-serverlocation">
+ &lt;a href="#ref-serverlocation" class="refItem-name">
  &lt;code>serverLocation&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">The geographic location of the tracking server (city name and ISO 3166-2 country code).&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -980,12 +1196,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-enddate">
+ &lt;a href="#ref-enddate" class="refItem-name">
  &lt;code>endDate&lt;/code>
  &lt;span class="refItem-type">date&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">The date when tracking ended for this period (ISO 8601 format YYYY-MM-DD). If not specified, tracking is ongoing.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1004,9 +1222,15 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 &lt;hr>
 &lt;h3 id="governance">
+ 
+ &lt;a class="title-link" href="#governance">
+ 
  Governance
  
- &lt;a class="title-anchor" href="#governance">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h3>
 
@@ -1019,12 +1243,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-url">
+ &lt;a href="#ref-url" class="refItem-name">
  &lt;code>url&lt;/code>
  &lt;span class="refItem-type">uri&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">URL to the entity&amp;rsquo;s website&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1051,12 +1277,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-logo">
+ &lt;a href="#ref-logo" class="refItem-name">
  &lt;code>logo&lt;/code>
  &lt;span class="refItem-type">uri&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">URL to the entity&amp;rsquo;s logo. Optimized PNG transparent image (minimum width 240px).&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1083,14 +1311,16 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-roles">
+ &lt;a href="#ref-roles" class="refItem-name">
  &lt;code>roles&lt;/code>
  &lt;span class="refItem-type">array of strings&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">Roles of the entity within the governance, see &lt;a href="https://docs.opentermsarchive.org/collections/reference/roles/">collection governance&lt;/a>&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1122,7 +1352,10 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  
  &lt;/div>
 &lt;/div></description></item><item><title>Server specifications</title><link>https://docs.opentermsarchive.org/deployment/reference/server-specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/deployment/reference/server-specifications/</guid><description>&lt;h1 id="server-specifications">
+ 
  Server specifications
+ 
+
  
 &lt;/h1>
 &lt;p>The minimum server specifications are:&lt;/p>
@@ -1133,20 +1366,35 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/ul>
 &lt;p>Approximately 750 MB of storage is required for the engine itself, with the remaining space allocated for data generated by the engine. Storage capacity should be calculated based on the scope and expected lifetime of the collection.&lt;/p>
 &lt;h2 id="storage">
+ 
+ &lt;a class="title-link" href="#storage">
+ 
  Storage
  
- &lt;a class="title-anchor" href="#storage">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>Recommended storage: 10 GB, with resizeable partitioning to enable growth over time.&lt;/p></description></item><item><title>Set up GitHub teams</title><link>https://docs.opentermsarchive.org/deployment/how-to/setup-github-teams/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/deployment/how-to/setup-github-teams/</guid><description>&lt;h1 id="how-to-set-up-github-teams-for-a-collection">
+ 
  How to set up GitHub teams for a collection
+ 
+
  
 &lt;/h1>
 &lt;p>This guide explains how to configure GitHub teams and permissions for a new collection in the Open Terms Archive organization. For third-party collections outside the organization, you can handle permissions according to your own needs.&lt;/p>
 &lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
  Prerequisites
  
- &lt;a class="title-anchor" href="#prerequisites">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;ul>
@@ -1156,21 +1404,36 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;li>The three collection repositories (declarations, snapshots, versions) already created&lt;/li>
 &lt;/ul>
 &lt;h2 id="steps">
+ 
+ &lt;a class="title-link" href="#steps">
+ 
  Steps
  
- &lt;a class="title-anchor" href="#steps">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;ol>
 &lt;li>
 &lt;p>Create the collection team:&lt;/p></description></item><item><title>How to track terms using the graphical contribution interface</title><link>https://docs.opentermsarchive.org/terms/how-to/track-terms-using-ui/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/track-terms-using-ui/</guid><description>&lt;h1 id="how-to-track-terms-using-the-graphical-contribution-interface">
+ 
  How to track terms using the graphical contribution interface
+ 
+
  
 &lt;/h1>
 &lt;h2 id="screencast">
+ 
+ &lt;a class="title-link" href="#screencast">
+ 
  Screencast
  
- &lt;a class="title-anchor" href="#screencast">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>Learn how add terms with the graphical contribution interface in this 6 minutes video.&lt;/p>
@@ -1179,28 +1442,49 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/video>
 
 &lt;h2 id="manual">
+ 
+ &lt;a class="title-link" href="#manual">
+ 
  Manual
  
- &lt;a class="title-anchor" href="#manual">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;h3 id="blank-page-when-contacting-support">
+ 
+ &lt;a class="title-link" href="#blank-page-when-contacting-support">
+ 
  Blank page when contacting support
  
- &lt;a class="title-anchor" href="#blank-page-when-contacting-support">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h3>
 &lt;p>While using the graphical user interface for contribution, you may come across a blank page when trying to contact the team.&lt;/p>
 &lt;p>This may be caused by the lack of a mail program being set up in your browser.&lt;/p></description></item><item><title>Configuration</title><link>https://docs.opentermsarchive.org/collections/reference/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/configuration/</guid><description>&lt;h1 id="configuration-options">
+ 
  Configuration options
+ 
+
  
 &lt;/h1>
 &lt;p>This reference documentation details all available configuration options that can be specified in a collection&amp;rsquo;s configuration file to configure the Open Terms Archive engine.&lt;/p>
 &lt;p>As an example, see the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations/blob/main/config/production.json">production configuration file&lt;/a> of the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations">Demo collection&lt;/a>.&lt;/p>
 &lt;h2 id="options">
+ 
+ &lt;a class="title-link" href="#options">
+ 
  Options
  
- &lt;a class="title-anchor" href="#options">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 
@@ -1213,12 +1497,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-trackingschedule">
+ &lt;a href="#ref-trackingschedule" class="refItem-name">
  &lt;code>trackingSchedule&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">Defines how often the engine should check for changes in terms. Uses standard cron syntax to set the schedule. By default, it runs every 12 hours at minute 30.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1244,12 +1530,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-collectionpath">
+ &lt;a href="#ref-collectionpath" class="refItem-name">
  &lt;code>collectionPath&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">Path to the collection&amp;rsquo;s directory containing declarations directory and metadata file, relative to the engine execution location&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1272,13 +1560,22 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 &lt;h3 id="recorder">
+ 
+ &lt;a class="title-link" href="#recorder">
+ 
  Recorder
  
- &lt;a class="title-anchor" href="#recorder">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h3>
 &lt;p>The recorder section manages how versions and snapshots of terms are stored, supporting multiple storage backends.&lt;/p></description></item><item><title>Criteria</title><link>https://docs.opentermsarchive.org/federation/reference/criteria/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/federation/reference/criteria/</guid><description>&lt;h1 id="federation-criteria">
+ 
  Federation criteria
+ 
+
  
 &lt;/h1>
 &lt;p>A &lt;strong>collection&lt;/strong> can &lt;strong>join&lt;/strong> the Open Terms Archive &lt;strong>federation&lt;/strong> if it abides by the following quality criteria:&lt;/p>
@@ -1295,14 +1592,23 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;li>Abide by all Open Terms Archive software and data licenses.&lt;/li>
 &lt;/ol>
 &lt;p>For detailed instructions on joining the federation, refer to the &lt;a href="https://docs.opentermsarchive.org/federation/how-to/join/">How to Join the Federation guide&lt;/a>.&lt;/p></description></item><item><title>Define metadata</title><link>https://docs.opentermsarchive.org/collections/how-to/define-metadata/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/define-metadata/</guid><description>&lt;h1 id="how-to-define-metadata">
+ 
  How to define metadata
+ 
+
  
 &lt;/h1>
 &lt;p>This guide will help you define the metadata for your Open Terms Archive collection.&lt;/p>
 &lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
  Prerequisites
  
- &lt;a class="title-anchor" href="#prerequisites">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;ul>
@@ -1311,9 +1617,15 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;li>Your collection&amp;rsquo;s basic information ready.&lt;/li>
 &lt;/ul>
 &lt;h2 id="steps">
+ 
+ &lt;a class="title-link" href="#steps">
+ 
  Steps
  
- &lt;a class="title-anchor" href="#steps">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;ol>
@@ -1330,44 +1642,112 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>Add detailed description and repositories URLs:&lt;/p></description></item><item><title>Federation REST API</title><link>https://docs.opentermsarchive.org/api/federation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/api/federation/</guid><description>&lt;h1 id="federation-rest-api">
+ 
  Federation REST API
+ 
+
  
 &lt;/h1>
 &lt;p>Open Terms Archive is a decentralised system that tracks collections of services&amp;rsquo; terms across multiple servers. Each collection operates its own API, and the Federation API unifies search and discovery across collections, fostering collaboration with external applications.&lt;/p>
 &lt;p>The Federation API exposes JSON data over HTTP. Its &lt;a href="http://162.19.74.224/federation-api/v1/docs/">documentation&lt;/a> is provided in a dedicated, interactive interface.&lt;/p>
-&lt;p>That endpoint exposes both the &lt;a href="https://swagger.io/specification/">OpenAPI&lt;/a> specification if the requested &lt;code>Content-Type&lt;/code> is JSON, and a Swagger UI for visual and interactive documentation otherwise.&lt;/p></description></item><item><title>Join the federation</title><link>https://docs.opentermsarchive.org/federation/how-to/join/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/federation/how-to/join/</guid><description>&lt;h1 id="how-to-join-the-federation">
+&lt;p>That endpoint exposes both the &lt;a href="https://swagger.io/specification/">OpenAPI&lt;/a> specification if the requested &lt;code>Content-Type&lt;/code> is JSON, and a Swagger UI for visual and interactive documentation otherwise.&lt;/p></description></item><item><title>Filters</title><link>https://docs.opentermsarchive.org/terms/explanation/filters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/explanation/filters/</guid><description>&lt;h1 id="filters">
+ 
+ Filters
+ 
+
+ 
+&lt;/h1>
+&lt;p>Filters enable solving &lt;a href="https://docs.opentermsarchive.org/terms/guideline/declaring/#usual-noise">noise&lt;/a> issues in versions that cannot be addressed with direct selection or removal of content using selectors.&lt;/p>
+&lt;h2 id="when-filters-are-needed">
+ 
+ &lt;a class="title-link" href="#when-filters-are-needed">
+ 
+ When filters are needed
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>Use filters when:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Content selectors are insufficient&lt;/strong>, for example when noise appears within content that can&amp;rsquo;t be targeted with CSS selectors or &lt;a href="https://docs.opentermsarchive.org/terms/explanation/range-selectors/">range selectors&lt;/a> with the &lt;a href="https://docs.opentermsarchive.org/terms/reference/declaration/#ref-select">&lt;code>select&lt;/code>&lt;/a> and &lt;a href="https://docs.opentermsarchive.org/terms/reference/declaration/#ref-remove">&lt;code>remove&lt;/code>&lt;/a> properties.&lt;/li>
+&lt;li>&lt;strong>Content is dynamically generated&lt;/strong>, for example when elements change on each page load with changing classes or IDs that cannot be targeted with &lt;a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors">attribute selectors&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Complex tasks are needed&lt;/strong>, for example when content transformation is required such as converting images to base64 to store them in the terms version or converting date-based content to a stable format (like “Updated X days ago” to “Last updated on YYYY-MM-DD”).&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-filters-work">
+ 
+ &lt;a class="title-link" href="#how-filters-work">
+ 
+ How filters work
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>Filters are JavaScript functions that can manipulate the DOM structure directly. They modify the document structure and content in-place.&lt;/p></description></item><item><title>Join the federation</title><link>https://docs.opentermsarchive.org/federation/how-to/join/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/federation/how-to/join/</guid><description>&lt;h1 id="how-to-join-the-federation">
+ 
  How to join the federation
+ 
+
  
 &lt;/h1>
 &lt;p>An official request for joining the federation can be sent by the collection administrator or curator to the core team over email, GitHub or instant messages. That request should contain all necessary content or links that enable assessing the criteria.&lt;/p>
 &lt;p>The core team will confirm reception of the request and assess the criteria within 4 weeks. The result of the assessment will be provided to the requester through the same means the request was sent, along with a positive decision or a list of improvements that need to be done before a new request can be sent.&lt;/p></description></item><item><title>How to test your declarations</title><link>https://docs.opentermsarchive.org/terms/how-to/test-declarations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/test-declarations/</guid><description>&lt;h1 id="how-to-test-your-declarations">
+ 
  How to test your declarations
+ 
+
  
 &lt;/h1>
 &lt;p>When creating or modifying service declarations, it’s important to verify they work as expected before starting to track in production. The Open Terms Archive engine provides automated testing tools to that end.&lt;/p>
 &lt;p>The basic usage to test all declarations in a collection is:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">npx ota validate declarations
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="testing-specific-services">
+ 
+ &lt;a class="title-link" href="#testing-specific-services">
+ 
  Testing specific services
  
- &lt;a class="title-anchor" href="#testing-specific-services">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>When iterating over a specific declaration, or to narrow down testing in larger collections, the &lt;code>--services&lt;/code> and &lt;code>--terms&lt;/code> options enable testing a single service declaration, or even single terms:&lt;/p></description></item><item><title>How to be notified of terms changes</title><link>https://docs.opentermsarchive.org/terms/how-to/be-notified/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/be-notified/</guid><description>&lt;h1 id="how-to-be-notified-of-terms-changes">
+ 
  How to be notified of terms changes
+ 
+
  
 &lt;/h1>
 &lt;p>An RSS feed is a type of web page that contains information about the latest content published by a website, such as the date of publication and the address where you can view it. When this resource is updated, a feed reader app automatically notifies you and you can see the update. You can receive notification for a specific service or document by subscribing to RSS feeds.&lt;/p></description></item><item><title>Environment variables</title><link>https://docs.opentermsarchive.org/collections/reference/environment-variables/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/environment-variables/</guid><description>&lt;h2 id="environment-variables">
+ 
+ &lt;a class="title-link" href="#environment-variables">
+ 
  Environment variables
  
- &lt;a class="title-anchor" href="#environment-variables">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>This reference documentation details all available environment variables that can be used to configure sensitive information. These variables can be defined in a &lt;code>.env&lt;/code> file at the root of the collection repository.&lt;/p>
 &lt;h3 id="engine">
+ 
+ &lt;a class="title-link" href="#engine">
+ 
  Engine
  
- &lt;a class="title-anchor" href="#engine">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h3>
 
@@ -1380,12 +1760,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-ota-engine-smtp-password">
+ &lt;a href="#ref-ota-engine-smtp-password" class="refItem-name">
  &lt;code>OTA_ENGINE_SMTP_PASSWORD&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">SMTP password for email error notifications.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1406,12 +1788,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-ota-engine-sendinblue-api-key">
+ &lt;a href="#ref-ota-engine-sendinblue-api-key" class="refItem-name">
  &lt;code>OTA_ENGINE_SENDINBLUE_API_KEY&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">API key for SendInBlue.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1432,12 +1816,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-ota-engine-github-token">
+ &lt;a href="#ref-ota-engine-github-token" class="refItem-name">
  &lt;code>OTA_ENGINE_GITHUB_TOKEN&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">GitHub token for API access.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1458,12 +1844,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-ota-engine-gitlab-token">
+ &lt;a href="#ref-ota-engine-gitlab-token" class="refItem-name">
  &lt;code>OTA_ENGINE_GITLAB_TOKEN&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">GitLab token for API access.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1484,12 +1872,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-ota-engine-gitlab-releases-token">
+ &lt;a href="#ref-ota-engine-gitlab-releases-token" class="refItem-name">
  &lt;code>OTA_ENGINE_GITLAB_RELEASES_TOKEN&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">GitLab token for dataset releases.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1502,9 +1892,15 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 &lt;hr>
 &lt;h3 id="federation-api">
+ 
+ &lt;a class="title-link" href="#federation-api">
+ 
  Federation API
  
- &lt;a class="title-anchor" href="#federation-api">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h3>
 
@@ -1517,12 +1913,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-ota-federation-api-smtp-password">
+ &lt;a href="#ref-ota-federation-api-smtp-password" class="refItem-name">
  &lt;code>OTA_FEDERATION_API_SMTP_PASSWORD&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">SMTP password for email error notifications.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1531,38 +1929,62 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  
  &lt;/div>
 &lt;/div></description></item><item><title>Manage a custom terms type</title><link>https://docs.opentermsarchive.org/terms/how-to/manage-custom-terms-type/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/manage-custom-terms-type/</guid><description>&lt;h1 id="how-to-manage-a-custom-terms-type">
+ 
  How to manage a custom terms type
+ 
+
  
 &lt;/h1>
 &lt;p>When tracking terms and conditions across different services, you might encounter situations where a service uses terms types that aren&amp;rsquo;t yet supported by Open Terms Archive.&lt;/p>
 &lt;p>This guide will help you handle these custom terms types effectively, whether you&amp;rsquo;re working on a new collection or expanding an existing one.&lt;/p>
 &lt;p>&lt;em>To better understand what terms types are and how they work, you can read our &lt;a href="https://docs.opentermsarchive.org/terms/explanation/terms-types/">detailed explanation&lt;/a>.&lt;/em>&lt;/p></description></item><item><title>Terminate a collection</title><link>https://docs.opentermsarchive.org/collections/how-to/terminate/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/terminate/</guid><description>&lt;h1 id="how-to-terminate-a-collection">
+ 
  How to terminate a collection
+ 
+
  
 &lt;/h1>
 &lt;p>If you don&amp;rsquo;t have the resources to maintain a collection any more, follow these steps to properly terminate it. This will make it clear to users and potential successors that it is no longer actively maintained and can be taken over.&lt;/p>
 &lt;h2 id="steps">
+ 
+ &lt;a class="title-link" href="#steps">
+ 
  Steps
  
- &lt;a class="title-anchor" href="#steps">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;ol>
 &lt;li>Announce the intention to terminate the collection in the &lt;a href="https://docs.opentermsarchive.org/federation/how-to/join/">community chat&lt;/a> to inform users and make potential new maintainers aware. Give at least one month notice to that others have time to share their intention to take over the collection before proceeding to the next step.&lt;/li>
 &lt;/ol>
 &lt;p>If no-one has come forward after one month, you can proceed to the next step.&lt;/p></description></item><item><title>How to rename a service</title><link>https://docs.opentermsarchive.org/terms/how-to/rename-a-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/rename-a-service/</guid><description>&lt;h1 id="how-to-rename-a-service">
+ 
  How to rename a service
+ 
+
  
 &lt;/h1>
 &lt;p>The consensus is to consider that a service provider renaming a service (for example, &lt;code>Twitter&lt;/code> to &lt;code>X&lt;/code>) is akin to terminating the previous service and opening a new one. Therefore, to apply a service renaming, open a pull request that both &lt;a href="https://docs.opentermsarchive.org/terms/how-to/terminate-a-service/">terminates the previous service&lt;/a> and adds a new &lt;a href="https://docs.opentermsarchive.org/terms/how-to/track-terms/#declaring-a-new-service">service declaration&lt;/a> with the new service name. You can reuse the &lt;code>terms&lt;/code> part of the original declaration, but should double-check that the selectors and URLs still match, as a service rename is most often accompanied by a new page layout, a new domain name, and sometimes entirely new terms.&lt;/p></description></item><item><title>Status</title><link>https://docs.opentermsarchive.org/collections/reference/status/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/status/</guid><description>&lt;h1 id="collection-status">
+ 
  Collection status
+ 
+
  
 &lt;/h1>
 &lt;p>This reference documentation outlines the different status levels that a collection can have within the system. Understanding these statuses is crucial for users to assess a collection&amp;rsquo;s quality and reliability.&lt;/p>
 &lt;h3 id="active">
+ 
+ &lt;a class="title-link" href="#active">
+ 
  Active
  
- &lt;a class="title-anchor" href="#active">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h3>
 &lt;p>The optimal operational state for a collection.&lt;/p>
@@ -1573,20 +1995,35 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/ul>
 &lt;hr>
 &lt;h3 id="abandoned">
+ 
+ &lt;a class="title-link" href="#abandoned">
+ 
  Abandoned
  
- &lt;a class="title-anchor" href="#abandoned">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h3>
 &lt;p>Collection may be functional but shows clear signs of neglect.&lt;/p></description></item><item><title>Take over a collection</title><link>https://docs.opentermsarchive.org/collections/how-to/take-over/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/take-over/</guid><description>&lt;h1 id="how-to-take-over-a-collection">
+ 
  How to take over a collection
+ 
+
  
 &lt;/h1>
 &lt;p>Before starting, ensure the collection is either &lt;a href="https://docs.opentermsarchive.org/collections/reference/status/#abandoned">abandoned&lt;/a> or &lt;a href="https://docs.opentermsarchive.org/collections/reference/status/#terminated">terminated&lt;/a>. In any case, keep all original licenses, history, and attributions.&lt;/p>
 &lt;h2 id="steps">
+ 
+ &lt;a class="title-link" href="#steps">
+ 
  Steps
  
- &lt;a class="title-anchor" href="#steps">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;ol>
@@ -1595,7 +2032,10 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/li>
 &lt;li>
 &lt;p>Ask the owners to transfer the repositories to your organization.&lt;/p></description></item><item><title>Declarations maintenance</title><link>https://docs.opentermsarchive.org/terms/explanation/declarations-maintenance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/explanation/declarations-maintenance/</guid><description>&lt;h1 id="declarations-maintenance">
+ 
  Declarations maintenance
+ 
+
  
 &lt;/h1>
 &lt;p>All parts of a &lt;strong>terms&lt;/strong> &lt;strong>declaration&lt;/strong> (web location, selection, noise removal, distribution across multiple documents…) can change over time. The process of updating these elements to enable continued &lt;strong>tracking&lt;/strong> is called &lt;strong>maintenance&lt;/strong>. Without it, &lt;strong>terms&lt;/strong> can become:&lt;/p>
@@ -1605,7 +2045,10 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;li>&lt;strong>noisy&lt;/strong>: both &lt;strong>snapshots&lt;/strong> and &lt;strong>versions&lt;/strong> are &lt;strong>recorded&lt;/strong> but the &lt;strong>changes&lt;/strong> contain &lt;strong>noise&lt;/strong> that should have been &lt;strong>filtered out&lt;/strong>.&lt;/li>
 &lt;/ul>
 &lt;p>Open Terms Archive needs to keep track of this changes in order to regenerate versions history from snapshots history.&lt;/p></description></item><item><title>How to terminate a service</title><link>https://docs.opentermsarchive.org/terms/how-to/terminate-a-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/terminate-a-service/</guid><description>&lt;h1 id="how-to-terminate-a-service">
+ 
  How to terminate a service
+ 
+
  
 &lt;/h1>
 &lt;p>If the service provider stops offering a service, the associated terms will become unavailable. To mark that service termination in Open Terms Archive and ensure tracking attempts are stopped, while maintaining the possibility to explore the history:&lt;/p>
@@ -1617,14 +2060,59 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;name&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;&amp;lt;service name&amp;gt;&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;terms&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>How to get the `validUntil` date</title><link>https://docs.opentermsarchive.org/terms/how-to/get-the-validuntil-date-from-an-issue/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/get-the-validuntil-date-from-an-issue/</guid><description>&lt;h1 id="how-to-get-the-validuntil-date">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Apply filters</title><link>https://docs.opentermsarchive.org/terms/how-to/apply-filters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/apply-filters/</guid><description>&lt;h1 id="how-to-apply-filters">
+ 
+ How to apply filters
+ 
+
+ 
+&lt;/h1>
+&lt;p>This guide explains how to add filters to existing declarations to remove meaningless content that cannot be removed with CSS selectors, to prevent noise in the versions.&lt;/p>
+&lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
+ Prerequisites
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;ul>
+&lt;li>An existing terms declaration file.&lt;/li>
+&lt;li>Having already identified the noise to remove and having double-checked it cannot be removed with CSS selectors with the &lt;a href="https://docs.opentermsarchive.org/terms/reference/declaration/#ref-remove">&lt;code>remove&lt;/code>&lt;/a> property.&lt;/li>
+&lt;/ul>
+&lt;h2 id="step-1-check-for-built-in-filters">
+ 
+ &lt;a class="title-link" href="#step-1-check-for-built-in-filters">
+ 
+ Step 1: Check for built-in filters
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>Built-in filters are pre-defined functions that handle common noise patterns. They are the easiest way to clean up content.&lt;/p></description></item><item><title>How to get the `validUntil` date</title><link>https://docs.opentermsarchive.org/terms/how-to/get-the-validuntil-date-from-an-issue/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/get-the-validuntil-date-from-an-issue/</guid><description>&lt;h1 id="how-to-get-the-validuntil-date">
+ 
  How to get the &lt;code>validUntil&lt;/code> date
+ 
+
  
 &lt;/h1>
 &lt;h2 id="from-a-github-issue">
+ 
+ &lt;a class="title-link" href="#from-a-github-issue">
+ 
  From a GitHub issue
  
- &lt;a class="title-anchor" href="#from-a-github-issue">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;ol>
@@ -1640,51 +2128,123 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>On the date of this comment, right-click &amp;ldquo;inspect&amp;rdquo; to open your browser&amp;rsquo;s code inspector.&lt;/p></description></item><item><title>Choosing selectors</title><link>https://docs.opentermsarchive.org/terms/guideline/choosing-selectors/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/guideline/choosing-selectors/</guid><description>&lt;h1 id="choosing-selectors">
+&lt;p>On the date of this comment, right-click &amp;ldquo;inspect&amp;rdquo; to open your browser&amp;rsquo;s code inspector.&lt;/p></description></item><item><title>Built-in filters</title><link>https://docs.opentermsarchive.org/terms/reference/built-in-filters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/reference/built-in-filters/</guid><description>&lt;h1 id="built-in-filters">
+ 
+ Built-in filters
+ 
+
+ 
+&lt;/h1>
+&lt;p>This reference details all available built-in &lt;a href="https://docs.opentermsarchive.org/terms/explanation/filters/">filters&lt;/a> that can be applied to avoid noise in versions.&lt;/p>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-removequeryparams">
+ &lt;a href="#ref-removequeryparams" class="refItem-name">
+ &lt;code>removeQueryParams&lt;/code>
+ &lt;span class="refItem-type">&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">Removes specified query parameters from URLs in links and images.&lt;/div>
+ &lt;div class="refItem-details refItem-details__full">
+ 
+ 
+ &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;filter&amp;#34;&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;removeQueryParams&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;utm_source&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;utm_medium&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-diff" data-lang="diff">&lt;span class="line">&lt;span class="cl">&lt;span class="gd">- &amp;lt;p&amp;gt;Read the &amp;lt;a href=&amp;#34;https://example.com/example-page?utm_source=OGB&amp;amp;utm_medium=website&amp;amp;lang=en&amp;#34;&amp;gt;list of our affiliates&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gd">&lt;/span>&lt;span class="gi">+ &amp;lt;p&amp;gt;Read the &amp;lt;a href=&amp;#34;https://example.com/example-page?lang=en&amp;#34;&amp;gt;list of our affiliates&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+ 
+ &lt;/div>
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div></description></item><item><title>Choosing selectors</title><link>https://docs.opentermsarchive.org/terms/guideline/choosing-selectors/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/guideline/choosing-selectors/</guid><description>&lt;h1 id="choosing-selectors">
+ 
  Choosing selectors
+ 
+
  
 &lt;/h1>
 &lt;p>Selectors are used in Open Terms Archive declarations to specify the parts of documents that should be recorded.&lt;/p>
 &lt;h2 id="what-are-selectors">
+ 
+ &lt;a class="title-link" href="#what-are-selectors">
+ 
  What are selectors
  
- &lt;a class="title-anchor" href="#what-are-selectors">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>Selectors are used in the &lt;a href="https://docs.opentermsarchive.org/terms/reference/#select">&lt;code>select&lt;/code>&lt;/a> and &lt;a href="https://docs.opentermsarchive.org/terms/reference/#remove">&lt;code>remove&lt;/code>&lt;/a> keys of an Open Terms Archive declaration.&lt;/p>
 &lt;p>The “selectors” referred to are defined by the &lt;a href="https://www.w3.org/TR/selectors/">W3C Selectors standard&lt;/a>, more commonly known as “CSS Selectors”.&lt;/p>
-&lt;p>An easy-to-read introduction to CSS Selectors can be found on &lt;a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors">MDN web docs&lt;/a>.&lt;/p>
-&lt;h2 id="choosing-durable-selectors-eases-maintenance">
- Choosing durable selectors eases maintenance
+&lt;p>An easy-to-read introduction to CSS Selectors can be found on &lt;a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors">MDN web docs&lt;/a>.&lt;/p></description></item><item><title>Community call</title><link>https://docs.opentermsarchive.org/community/reference/community-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/community/reference/community-call/</guid><description>&lt;h1 id="community-call">
  
- &lt;a class="title-anchor" href="#choosing-durable-selectors-eases-maintenance">🔗&lt;/a>
- 
-&lt;/h2>
-&lt;p>The design of web pages containing terms can evolve over time, leading to changes in their HTML (more precisely, to their &lt;a href="https://en.wikipedia.org/wiki/Document_Object_Model">DOM&lt;/a>) which may render ineffective the selectors that were initially chosen. That means they may no longer target the significant parts, breaking the ability to continuously record terms changes. When this happens, selectors must be updated to specify the meaningful parts of the terms.&lt;/p></description></item><item><title>Community call</title><link>https://docs.opentermsarchive.org/community/reference/community-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/community/reference/community-call/</guid><description>&lt;h1 id="community-call">
  Community call
+ 
+
  
 &lt;/h1>
 &lt;p>The Open Terms Archive Community Call is a monthly online meeting for and by the community.&lt;/p>
 &lt;h2 id="special-edition-friday-sept-12-0800-utc">
+ 
+ &lt;a class="title-link" href="#special-edition-friday-sept-12-0800-utc">
+ 
  Special edition! Friday, Sept 12 08:00 UTC
  
- &lt;a class="title-anchor" href="#special-edition-friday-sept-12-0800-utc">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>We’re back from summer break and kicking off a new season with a special edition of the community call. Join us to meet new team members, hear about product updates from the summer, and discover what’s coming next for Open Terms Archive.&lt;/p></description></item><item><title>Declaring terms</title><link>https://docs.opentermsarchive.org/terms/guideline/declaring/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/guideline/declaring/</guid><description>&lt;h1 id="declaring-terms">
+ 
  Declaring terms
+ 
+
  
 &lt;/h1>
 &lt;h2 id="service-name">
+ 
+ &lt;a class="title-link" href="#service-name">
+ 
  Service name
  
- &lt;a class="title-anchor" href="#service-name">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;h3 id="casing">
+ 
+ &lt;a class="title-link" href="#casing">
+ 
  Casing
  
- &lt;a class="title-anchor" href="#casing">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h3>
 &lt;ul>
@@ -1694,9 +2254,15 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;img src="https://user-images.githubusercontent.com/222463/91416936-5b98f500-e850-11ea-80fe-a50be27356e3.png" alt="deviantArt search">&lt;/li>
 &lt;/ul>
 &lt;h3 id="terms-used-by-several-services">
+ 
+ &lt;a class="title-link" href="#terms-used-by-several-services">
+ 
  Terms used by several services
  
- &lt;a class="title-anchor" href="#terms-used-by-several-services">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h3>
 &lt;ul>
@@ -1704,15 +2270,27 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/ul>
 &lt;hr>
 &lt;h2 id="service-id">
+ 
+ &lt;a class="title-link" href="#service-id">
+ 
  Service ID
  
- &lt;a class="title-anchor" href="#service-id">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;h3 id="normalisation">
+ 
+ &lt;a class="title-link" href="#normalisation">
+ 
  Normalisation
  
- &lt;a class="title-anchor" href="#normalisation">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h3>
 &lt;ol>
@@ -1721,9 +2299,15 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;li>As a last resort, use the domain name.&lt;/li>
 &lt;/ol>
 &lt;h3 id="provider-prefixing">
+ 
+ &lt;a class="title-link" href="#provider-prefixing">
+ 
  Provider prefixing
  
- &lt;a class="title-anchor" href="#provider-prefixing">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h3>
 &lt;ul>
@@ -1731,37 +2315,83 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/ul>
 &lt;blockquote>
 &lt;p>Example: the Facebook Community Payments terms are Terms of Service. The only way to declare them in the Facebook service would be to add a “Community Payments Terms” terms type as they would otherwise conflict with Facebook&amp;rsquo;s Terms of Service. It is better to declare a new service called “Facebook Payments” with its own Terms of Service. It turns out that this service also has a developer agreement, independent from the main Facebook service.&lt;/p></description></item><item><title>Filters</title><link>https://docs.opentermsarchive.org/terms/reference/filters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/reference/filters/</guid><description>&lt;h1 id="filters">
+ 
  Filters
  
+
+ 
 &lt;/h1>
-&lt;p>Some documents require more complex filtering beyond basic element selection and removal. For example, web pages often contain dynamically generated content like tracking IDs in URLs that change on each page load. While these elements are part of the page, they are not meaningful to the terms content itself. If such dynamic content is included in the archived versions, it creates a lot of insignificant versions and pollutes the archive with noise that makes it harder to identify actual changes to the terms.&lt;/p></description></item><item><title>Join the community chat</title><link>https://docs.opentermsarchive.org/community/how-to/join/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/community/how-to/join/</guid><description>&lt;h1 id="how-to-join-the-community-chat">
+&lt;p>Filters are JavaScript functions that take the document DOM as parameter and are:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>in-place&lt;/strong>: they modify the document structure and content directly;&lt;/li>
+&lt;li>&lt;strong>idempotent&lt;/strong>: they return the same document structure and content even if run repeatedly on their own result.&lt;/li>
+&lt;li>&lt;strong>ordered&lt;/strong>: they are run sequentially in the order specified in the declaration.&lt;/li>
+&lt;/ul>
+&lt;p>Learn more about the concept and constraints on the &lt;a href="https://docs.opentermsarchive.org/terms/explanation/filters/">filters explanation&lt;/a>.&lt;/p>
+&lt;h2 id="signature">
+ 
+ &lt;a class="title-link" href="#signature">
+ 
+ Signature
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>The generic function signature for a filter is:&lt;/p></description></item><item><title>Join the community chat</title><link>https://docs.opentermsarchive.org/community/how-to/join/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/community/how-to/join/</guid><description>&lt;h1 id="how-to-join-the-community-chat">
+ 
  How to join the community chat
+ 
+
  
 &lt;/h1>
 &lt;p>The Open Terms Archive community concentrates interactions on an instant chat platform where every contributor and user is welcome. The following how-to guide will help you get into the community chat.&lt;/p>
 &lt;h2 id="1-create-an-account">
+ 
+ &lt;a class="title-link" href="#1-create-an-account">
+ 
  1. Create an account
  
- &lt;a class="title-anchor" href="#1-create-an-account">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>&lt;strong>Use this &lt;a href="https://community.opentermsarchive.org/signup_user_complete/?id=fb1tb45hnfnk3c88btjhsjoomc&amp;amp;md=link&amp;amp;sbr=fa">invitation link&lt;/a> and create an account.&lt;/strong>&lt;/p>
 &lt;p>After successful login, you will be automatically be added to the &lt;strong>~Announcements&lt;/strong> channel.&lt;/p>
 &lt;h2 id="2-profile-setup">
+ 
+ &lt;a class="title-link" href="#2-profile-setup">
+ 
  2. Profile setup
  
- &lt;a class="title-anchor" href="#2-profile-setup">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>The next thing is to set up your profile. A complete profile sets you up for meaningful interactions and connections with members interested in tracking the same terms.&lt;/p></description></item><item><title>Memo copywriting reference</title><link>https://docs.opentermsarchive.org/analysis/reference/copywriting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/analysis/reference/copywriting/</guid><description>&lt;h1 id="memo-copywriting">
+ 
  Memo copywriting
+ 
+
  
 &lt;/h1>
 &lt;p>Each memo must be composed of the elements detailed below. You must follow this structure when writing your memos.&lt;/p>
 &lt;h2 id="title">
+ 
+ &lt;a class="title-link" href="#title">
+ 
  Title
  
- &lt;a class="title-anchor" href="#title">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;ul>
@@ -1775,61 +2405,93 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;li>Do not put a link in the title because in some reuse contexts the entire title is a link to the memo.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>Examples&lt;/strong>&lt;/p></description></item><item><title>Publish a memo</title><link>https://docs.opentermsarchive.org/analysis/how-to/publish-memo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/analysis/how-to/publish-memo/</guid><description>&lt;h1 id="how-to-publish-a-memo">
+ 
  How to publish a memo
+ 
+
  
 &lt;/h1>
 &lt;p>This guide will help you publish a memo on &lt;a href="https://opentermsarchive.org/en/memos/">opentermsarchive.org/en/memos&lt;/a>.&lt;/p>
 &lt;p>No technical skills are required.&lt;/p>
 &lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
  Prerequisites
  
- &lt;a class="title-anchor" href="#prerequisites">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;ul>
 &lt;li>A drafted memo compliant with the &lt;a href="https://docs.opentermsarchive.org/analysis/reference/copywriting/">copywriting reference&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;h2 id="1-send">
+ 
+ &lt;a class="title-link" href="#1-send">
+ 
  1. Send
  
- &lt;a class="title-anchor" href="#1-send">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
-&lt;p>&lt;a href="mailto:contact@opentermsarchive.org?subject=Publish%20a%20memo&amp;amp;body=Dear%20Core%20team%2C%0A%0AI%20would%20like%20to%20publish%20the%20memo%20below.%0A%0AIt%20is%20based%20on%20my%20original%20work%2C%20and%20I%20have%20reviewed%20the%20reference%20at%20docs.opentermsarchive.org%2Fmemos%2Fwriting-reference%2F%20and%20I%20have%20made%20sure%20the%20content%20complies%20with%20it%20before%20sending%20this%20text%20to%20you.%0A%0AI%20understand%20that%20it%20might%20take%20up%20to%20two%20weeks%20for%20this%20text%20to%20be%20reviewed.%0A%0AHave%20a%20good%20day%21">Send your memo&lt;/a> by writing it in the body of the email or as a file attachment. Feel free to add any comments or questions you may have about the content or format.&lt;/p>
-&lt;h2 id="2-review">
- 2. Review
+&lt;p>&lt;a href="mailto:contact@opentermsarchive.org?subject=Publish%20a%20memo&amp;amp;body=Dear%20Core%20team%2C%0A%0AI%20would%20like%20to%20publish%20the%20memo%20below.%0A%0AIt%20is%20based%20on%20my%20original%20work%2C%20and%20I%20have%20reviewed%20the%20reference%20at%20docs.opentermsarchive.org%2Fmemos%2Fwriting-reference%2F%20and%20I%20have%20made%20sure%20the%20content%20complies%20with%20it%20before%20sending%20this%20text%20to%20you.%0A%0AI%20understand%20that%20it%20might%20take%20up%20to%20two%20weeks%20for%20this%20text%20to%20be%20reviewed.%0A%0AHave%20a%20good%20day%21">Send your memo&lt;/a> by writing it in the body of the email or as a file attachment. Feel free to add any comments or questions you may have about the content or format.&lt;/p></description></item><item><title>Range selectors</title><link>https://docs.opentermsarchive.org/terms/explanation/range-selectors/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/explanation/range-selectors/</guid><description>&lt;h2 id="range-selectors">
  
- &lt;a class="title-anchor" href="#2-review">🔗&lt;/a>
+ &lt;a class="title-link" href="#range-selectors">
  
-&lt;/h2>
-&lt;p>The Open Terms Archive core team will review your memo as quickly as possible.&lt;/p></description></item><item><title>Range selectors</title><link>https://docs.opentermsarchive.org/terms/explanation/range-selectors/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/explanation/range-selectors/</guid><description>&lt;h2 id="range-selectors">
  Range selectors
  
- &lt;a class="title-anchor" href="#range-selectors">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>When no unique wrapper element exists for the whole terms content, there is no easy way to select the content with only CSS selectors. Content between two elements in a document can be selected using a range selector, regardless of their DOM position. The concept is inspired by the DOM &lt;a href="https://developer.mozilla.org/en-US/docs/Web/API/Range">Range API&lt;/a>, where content is defined by start and end points that may be included or excluded. The format is defined as a JSON object:&lt;/p></description></item><item><title>Reviewing contributions</title><link>https://docs.opentermsarchive.org/terms/guideline/reviewing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/guideline/reviewing/</guid><description>&lt;h1 id="reviewing-contributions">
+ 
  Reviewing contributions
+ 
+
  
 &lt;/h1>
 &lt;p>Thank you for showing interest in reviewing contributions made to Open Terms Archive. This document is intended to help you get started and provide some guidelines for reviewing contributions.&lt;/p>
 &lt;h2 id="why-is-this-important">
+ 
+ &lt;a class="title-link" href="#why-is-this-important">
+ 
  Why is this important?
  
- &lt;a class="title-anchor" href="#why-is-this-important">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>We want to make sure that the contributions made to the project are of high quality and that they are in line with the vision of the project. We also want to make sure that the contributions are reviewed in a timely manner so that the contributors can get feedback and continue to contribute to the project.&lt;br>
 This is where volunteer reviewers come in to help. Reviewers are people who have volunteered to review contributions made to the project. They are not paid for their work, but they are given credit for their work.&lt;/p></description></item><item><title>Service declaration</title><link>https://docs.opentermsarchive.org/terms/reference/declaration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/reference/declaration/</guid><description>&lt;h1 id="service-declaration">
+ 
  Service declaration
+ 
+
  
 &lt;/h1>
 &lt;p>This reference documentation details all available properties that can be specified in a service&amp;rsquo;s declaration file.&lt;/p>
 &lt;p>The examples given throughout this reference can be seen in context in the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations/tree/main/declarations">declarations files&lt;/a> from the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations">Demo collection&lt;/a>&lt;/p>
 &lt;h2 id="properties">
+ 
+ &lt;a class="title-link" href="#properties">
+ 
  Properties
  
- &lt;a class="title-anchor" href="#properties">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 
@@ -1842,14 +2504,16 @@ This is where volunteer reviewers come in to help. Reviewers are people who have
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-name">
+ &lt;a href="#ref-name" class="refItem-name">
  &lt;code>name&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">The name of the service.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1876,35 +2540,55 @@ This is where volunteer reviewers come in to help. Reviewers are people who have
 
 
 
-&lt;div class="refItem">
- &lt;div class="refItem-name">
+
+&lt;div class="refItem" id="ref-terms">
+ &lt;a href="#ref-terms" class="refItem-name">
  &lt;code>terms&lt;/code>
  &lt;span class="refItem-type">object of objects&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
- &lt;/div>
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
  &lt;div class="refItem-description">&lt;p>Map of terms associated with a service, where keys are standardized term types (e.g., &amp;ldquo;Privacy Policy&amp;rdquo;, &amp;ldquo;Terms of Service&amp;rdquo;), and values are term objects containing the configuration for fetching and processing each document, as detailed in the &lt;a href="#terms-declaration">Terms declaration&lt;/a> section.&lt;/p></description></item><item><title>Targeting</title><link>https://docs.opentermsarchive.org/terms/guideline/targeting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/guideline/targeting/</guid><description>&lt;h1 id="what-to-track">
+ 
  What to track?
+ 
+
  
 &lt;/h1>
 &lt;h2 id="can-i-track-terms-that-are-not-applicable-yet">
+ 
+ &lt;a class="title-link" href="#can-i-track-terms-that-are-not-applicable-yet">
+ 
  Can I track terms that are not applicable yet?
  
- &lt;a class="title-anchor" href="#can-i-track-terms-that-are-not-applicable-yet">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;p>Yes.&lt;/p>
 &lt;p>For example, terms that would start applying at date in the future are legitimate candidates for tracking. You can this way track if their terms change even before they are applied.&lt;/p></description></item><item><title>Track your first terms</title><link>https://docs.opentermsarchive.org/terms/tutorial/track/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/tutorial/track/</guid><description>&lt;h1 id="track-your-first-terms">
+ 
  Track your first terms
+ 
+
  
 &lt;/h1>
 &lt;p>This tutorial will guide you through tracking your first terms.&lt;/p>
 &lt;p>By the end, you&amp;rsquo;ll have tracked a service&amp;rsquo;s privacy policy. You will also have a basic understanding of how to run the engine to track terms.&lt;/p>
 &lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
  Prerequisites
  
- &lt;a class="title-anchor" href="#prerequisites">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;ul>
@@ -1922,15 +2606,27 @@ This is where volunteer reviewers come in to help. Reviewers are people who have
 &lt;li>You know how to use a text editor.&lt;/li>
 &lt;/ul>
 &lt;h2 id="track-terms">
+ 
+ &lt;a class="title-link" href="#track-terms">
+ 
  Track terms
  
- &lt;a class="title-anchor" href="#track-terms">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h2>
 &lt;h3 id="step-1-set-up-the-directory-structure">
+ 
+ &lt;a class="title-link" href="#step-1-set-up-the-directory-structure">
+ 
  Step 1: Set up the directory structure
  
- &lt;a class="title-anchor" href="#step-1-set-up-the-directory-structure">🔗&lt;/a>
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
  
 &lt;/h3>
 &lt;ol>
