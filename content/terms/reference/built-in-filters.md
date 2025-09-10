@@ -4,13 +4,11 @@ title: "Built-in filters"
 
 # Built-in filters
 
-This reference documentation details all available built-in filters that can be used to avoid noise in the terms content.
-
-## Filters
+This reference details all available built-in [filters]({{< relref "terms/explanation/filters" >}}) that can be applied to avoid noise in versions.
 
 {{< refItem
     name="removeQueryParams"
-    description="Removes specified query parameters from URLs in links and images within the terms content"
+    description="Removes specified query parameters from URLs in links and images."
 >}}
 
 ```json
@@ -20,8 +18,6 @@ This reference documentation details all available built-in filters that can be 
     }
 ]
 ```
-
-Result:
 
 ```diff
 - <p>Read the <a href="https://example.com/example-page?utm_source=OGB&utm_medium=website&lang=en">list of our affiliates</a>.</p>

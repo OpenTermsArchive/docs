@@ -8,16 +8,21 @@ Filters are JavaScript functions that take the document DOM as parameter and are
 
 - **in-place**: they modify the document structure and content directly;
 - **idempotent**: they return the same document structure and content even if run repeatedly on their own result.
+- **ordered**: they are run sequentially in the order specified in the declaration.
+
+Learn more about the concept and constraints on the [filters explanation]({{< relref "terms/explanation/filters" >}}).
+
+## Signature
 
 The generic function signature for a filter is:
 
-- For simple filters:
+- For filters that take no parameter:
 
 ```js
 export [async] function filterName(document, [documentDeclaration])
 ```
 
-- For filters with parameters:
+- For filters that take parameters:
 
 ```js
 export [async] function filterName(document, parameters, [documentDeclaration])
@@ -29,7 +34,7 @@ These functions can be `async`, but they will still run sequentially.
 
 ## Usage
 
-### Simple filter
+### Filters that take no parameter
 
 ```js
 // <service name>.filters.js
@@ -75,7 +80,7 @@ export function convertTimeAgoToDate(document) {
   "name": "MyService",
   "terms": {
     "Privacy Policy": {
-      "fetch": "https://example.com/privacy",
+      "fetch": "https://my.service.example/privacy",
       "select": ".content",
       "filter": [
         "convertTimeAgoToDate"
@@ -141,7 +146,7 @@ export function removeLinksWithText(document, textArray) {
   "name": "MyService",
   "terms": {
     "Privacy Policy": {
-      "fetch": "https://example.com/privacy",
+      "fetch": "https://my.service.example/privacy",
       "select": ".content",
       "filter": [
         { "removeLinksWithText": ["Return to previous section", "Go to next section"] }
@@ -200,7 +205,7 @@ export async function convertImagesToBase64(document, selector, documentDeclarat
   "name": "MyService",
   "terms": {
     "Privacy Policy": {
-      "fetch": "https://example.com/privacy",
+      "fetch": "https://my.service.example/privacy",
       "select": ".content",
       "filter": [
         { "convertImagesToBase64": ".meaningful-illustration" }
@@ -213,6 +218,6 @@ export async function convertImagesToBase64(document, selector, documentDeclarat
 Result:
 
 ```diff
-- <img src="https://example.com/image.png" class="meaningful-illustration">
+- <img src="https://my.service.example/image.png" class="meaningful-illustration">
 + <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA..." class="meaningful-illustration">
 ```

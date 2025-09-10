@@ -5,32 +5,34 @@ weight: 7
 
 # How to apply filters
 
-This guide explains how to apply filters to existing declarations to remove meaningless content that changes on each page load or that cannot be removed with CSS selectors to avoid noise in the terms changes history.
+This guide explains how to add filters to existing declarations to remove meaningless content that cannot be removed with CSS selectors, to prevent noise in the versions.
 
 ## Prerequisites
 
-- An existing terms declaration file
-- Identified the noise you want to remove and ensure it cannot be removed with CSS selectors with the [`remove`]({{< relref "terms/reference/declaration/#ref-remove" >}}) property.
+- An existing terms declaration file.
+- Having already identified the noise to remove and having double-checked it cannot be removed with CSS selectors with the [`remove`]({{< relref "terms/reference/declaration/#ref-remove" >}}) property.
 
 ## Step 1: Check for built-in filters
 
-Built-in filters are pre-defined functions that handle common noise patterns. They're the easiest way to clean up content without writing custom code.
+Built-in filters are pre-defined functions that handle common noise patterns. They are the easiest way to clean up content.
 
 Review the available [built-in filters]({{< relref "/terms/reference/built-in-filters" >}}) to find if one matches your needs.
 
-If you find a suitable built-in filter, proceed to [Step 2](#step-2-declare-the-filter), otherwise you will need to create a custom filter.
+If you find a suitable built-in filter, proceed to [Step 3](#step-3-declare-the-filter), otherwise you will need to create a custom filter.
 
-### Create a custom filter (optional)
+## Step 2: Create a custom filter _(optional)_
 
-If no built-in filter matches your needs, you'll need to create a custom filter. This requires JavaScript knowledge and familiarity with DOM manipulation.
+If no built-in filter matches your needs, you will need to create a custom filter. This requires JavaScript knowledge and familiarity with DOM manipulation.
 
-#### Create the filter file
+### Create the filter file
 
-Create a JavaScript file with the same name as your service declaration but with `.filters.js` extension. For example, if your declaration is `declarations/MyService.json`, create `declarations/MyService.filters.js`.
+Create a JavaScript file in the same folder and with the same name as your service declaration, but with `.filters.js` extension.
 
-#### Write the filter function
+> For example, if your declaration is `declarations/MyService.json`, create `declarations/MyService.filters.js`.
 
-Define your filter function following this signature:
+### Write the filter function
+
+Define your filter function with the following signature:
 
 ```js
 export function myCustomFilter(document, [parameters]) {
@@ -38,12 +40,12 @@ export function myCustomFilter(document, [parameters]) {
 }
 ```
 
-**Parameters:**
+#### Parameters
 
 - `document`: JSDOM document instance representing the web page
-- `parameters`: Values passed from the declaration (optional)
+- `parameters`: values passed from the declaration _(optional)_
 
-**Example: Remove session IDs from text content**
+#### Example: Remove session IDs from text content
 
 For example, let's say you want to remove session IDs from text content:
 
@@ -61,7 +63,7 @@ You can implement this filter as follows:
 ```js
 export function removeSessionIds(document) {
   // Find all paragraphs that might contain session IDs
-  const paragraphs = document.querySelectorAll('p.session-id');
+  const paragraphs = document.querySelectorAll('.session-id');
   
   paragraphs.forEach(paragraph => {
     let text = paragraph.textContent;
@@ -84,20 +86,20 @@ Result after applying the filter:
 + <p class="session-id">Last updated on 2023-12-07</p>
 ```
 
-## Step 2: Declare the filter
+## Step 3: Declare the filter
 
-Open your service declaration file (e.g., `declarations/MyService.json`) and locate the `filter` property of the specific terms you want to apply the filter to. If it doesn't exist, add it as an array.
+Open your service declaration file (e.g. `declarations/MyService.json`) and locate the `filter` property of the specific terms you want to apply the filter to. If it doesn't exist, add it as an array.
 
 ### Filter without parameters
 
-For filters that don't require parameters, add the filter name as a string:
+For filters that don’t require parameters, add the filter name as a string:
 
 ```json
 {
   "name": "MyService",
   "terms": {
     "Privacy Policy": {
-      "fetch": "https://my.service.com/en/privacy-policy",
+      "fetch": "https://my.service.example/en/privacy-policy",
       "select": ".textcontent",
       "filter": [
         "removeSessionIds"
@@ -107,16 +109,16 @@ For filters that don't require parameters, add the filter name as a string:
 }
 ```
 
-### Parameterized filter
+### Filter with parameters
 
-For filters that require parameters, use an object format, for example with the built-in filter `removeQueryParams` to remove query parameters from URLs:
+For filters that take parameters, use an object format, for example with the built-in filter `removeQueryParams` to remove query parameters from URLs:
 
 ```json
 {
   "name": "MyService",
   "terms": {
     "Privacy Policy": {
-      "fetch": "https://my.service.com/en/privacy-policy",
+      "fetch": "https://my.service.example/en/privacy-policy",
       "select": ".textcontent",
       "filter": [
         {
@@ -137,7 +139,7 @@ You can combine multiple filters in the same declaration:
   "name": "MyService",
   "terms": {
     "Privacy Policy": {
-      "fetch": "https://my.service.com/en/privacy-policy",
+      "fetch": "https://my.service.example/en/privacy-policy",
       "select": ".textcontent",
       "filter": [
         {
@@ -150,7 +152,7 @@ You can combine multiple filters in the same declaration:
 }
 ```
 
-## Step 3: Test the filter
+## Step 4: Test the filter
 
 After adding the filter, test your declaration to ensure it works correctly:
 
