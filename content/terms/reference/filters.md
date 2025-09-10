@@ -4,51 +4,224 @@ title: "Filters"
 
 # Filters
 
-Some documents require more complex filtering beyond basic element selection and removal. For example, web pages often contain dynamically generated content like tracking IDs in URLs that change on each page load. While these elements are part of the page, they are not meaningful to the terms content itself. If such dynamic content is included in the archived versions, it creates a lot of insignificant versions and pollutes the archive with noise that makes it harder to identify actual changes to the terms.
-
-Filters address this need by providing a way to programmatically clean up and normalize the content before archiving. They are implemented as JavaScript functions that can manipulate the downloaded web page using the [DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model), allowing for sophisticated content transformations beyond what's possible with simple CSS selectors.
-
-Filters take the document DOM and the terms declaration as parameters and are:
+Filters are JavaScript functions that take the document DOM as parameter and are:
 
 - **in-place**: they modify the document structure and content directly;
 - **idempotent**: they return the same document structure and content even if run repeatedly on their own result.
+- **ordered**: they are run sequentially in the order specified in the declaration.
 
-Filters are loaded automatically from files named after the service they operate on. For example, filters for the Meetup service, which is declared in `declarations/Meetup.json`, are loaded from `declarations/Meetup.filters.js`.
+Learn more about the concept and constraints on the [filters explanation]({{< relref "terms/explanation/filters" >}}).
+
+## Signature
 
 The generic function signature for a filter is:
 
-```js
-export [async] function filterName(document, documentDeclaration)
-```
-
-Each filter is exposed as a named function export that takes a `document` parameter and behaves like the `document` object in a browser DOM. These functions can be `async`, but they will still run sequentially. The whole document declaration is passed as second parameter.
-
-> The `document` parameter is actually a [JSDOM](https://github.com/jsdom/jsdom) document instance.
-
-You can learn more about usual noise and ways to handle it [in the guidelines]({{< relref "/terms/guideline/declaring#usual-noise" >}}).
-
-### Example
-
-Let's assume a service adds a unique `clickId` parameter in the query string of all link destinations. These parameters change on each page load, leading to recording noise in versions. Since links should still be recorded, it is not appropriate to use `remove` to remove the links entirely. Instead, a filter will manipulate the links destinations to remove the always-changing parameter. Concretely, the goal is to apply the following filter:
-
-```diff
-- Read the <a href="https://example.com/example-page?clickId=349A2033B&lang=en">list of our affiliates</a>.
-+ Read the <a href="https://example.com/example-page?lang=en">list of our affiliates</a>.
-```
-
-The code below implements this filter:
+- For filters that take no parameter:
 
 ```js
-function removeTrackingIdsQueryParam(document) {
-  const QUERY_PARAM_TO_REMOVE = 'clickId';
+export [async] function filterName(document, [documentDeclaration])
+```
 
-  document.querySelectorAll('a').forEach(link => {  // iterate over every link in the page
-    const url = new URL(link.getAttribute('href'), document.location);  // URL is part of the DOM API, see https://developer.mozilla.org/en-US/docs/Web/API/URL
-    const params = new URLSearchParams(url.search);  // URLSearchParams is part of the DOM API, see https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
+- For filters that take parameters:
 
-    params.delete(QUERY_PARAM_TO_REMOVE);  // we use the DOM API instead of RegExp because we can't know in advance in which order parameters will be written
-    url.search = params.toString();  // store the query string without the parameter
-    link.setAttribute('href', url.toString());  // write the destination URL without the parameter
+```js
+export [async] function filterName(document, parameters, [documentDeclaration])
+```
+
+Each filter is exposed as a named function export that takes a `document` parameter and behaves like the `document` object in a browser DOM. The `document` parameter is actually a [JSDOM](https://github.com/jsdom/jsdom) document instance.
+
+These functions can be `async`, but they will still run sequentially.
+
+## Usage
+
+### Filters that take no parameter
+
+```js
+// <service name>.filters.js
+export function customFilter(document) {
+  // filter logic here
+}
+```
+
+Can be used as follows in the declaration:
+
+```json
+// <service name>.json
+{
+  "name": "<service name>",
+  "terms": {
+    "<terms type>": {
+      "fetch": "<URL>",
+      "select": "<CSS or Range selectors>",
+      "filter": [
+        "customFilter"
+      ]
+    }
+  }
+}
+```
+
+#### Example
+
+```js
+export function convertTimeAgoToDate(document) {
+  const timeElements = document.querySelectorAll('.metadata time');
+  
+  timeElements.forEach(timeElement => {
+    const dateTimeValue = timeElement.getAttribute('datetime');
+    const textNode = document.createTextNode(dateTimeValue);
+    timeElement.parentNode.replaceChild(textNode, timeElement);
   });
 }
 ```
+
+```json
+{
+  "name": "MyService",
+  "terms": {
+    "Privacy Policy": {
+      "fetch": "https://my.service.example/privacy",
+      "select": ".content",
+      "filter": [
+        "convertTimeAgoToDate"
+      ]
+    }
+  }
+}
+```
+
+Result:
+
+```diff
+- <p class="metadata">Last update: <time datetime="2025-06-23T11:16:36Z" title="06/23/2025, 13:16" data-datetime="relative">2 months ago</time></p>
++ <p class="metadata">Last update: 2025-06-23T11:16:36Z</p>
+```
+
+### Filter with parameters
+
+```js
+// <service name>.filters.js
+export function customParameterizedFilter(document, params) {
+  // filter logic here
+}
+```
+
+Can be used as follows in the declaration:
+
+```json
+// <service name>.json
+{
+  "name": "<service name>",
+  "terms": {
+    "<terms type>": {
+      "fetch": "<URL>",
+      "select": "<CSS or Range selectors>",
+      "filter": [
+        {
+          "customParameterizedFilter": ["param1", "param2"]
+        }
+      ]
+    }
+  }
+}
+```
+
+#### Example 1
+
+```js
+export function removeLinksWithText(document, textArray) {
+  const links = document.querySelectorAll('a');
+  const textsToRemove = Array.isArray(textArray) ? textArray : [textArray];
+  
+  links.forEach(link => {
+    if (textsToRemove.includes(link.textContent.trim())) {
+      link.remove();
+    }
+  });
+}
+```
+
+```json
+{
+  "name": "MyService",
+  "terms": {
+    "Privacy Policy": {
+      "fetch": "https://my.service.example/privacy",
+      "select": ".content",
+      "filter": [
+        { "removeLinksWithText": ["Return to previous section", "Go to next section"] }
+      ]
+    }
+  }
+}
+```
+
+Result:
+
+```diff
+  <div id="section1">
+-   <a href="#section2">Go to next section</a>
+    <p>...</p>
+  </div>
+  <div id="section2">
+-   <a href="#section1">Return to previous section</a>
+-   <a href="#section3">Go to next section</a>
+    <p>...</p>
+  </div>
+  <div id="section3">
+-   <a href="#section2">Return to previous section</a>
+    <p>...</p>
+  </div>
+```
+
+#### Example 2
+
+```js
+import fetch from 'isomorphic-fetch';
+
+export async function convertImagesToBase64(document, selector, documentDeclaration) {
+  const images = Array.from(document.querySelectorAll(selector));
+
+  return Promise.all(images.map(async ({ src }, index) => {
+    if (src.startsWith('data:')) {
+      return; // Already a data-URI, skip
+    }
+
+    const imageUrl = new URL(src, documentDeclaration.fetch).href; // Ensure url is absolute
+    const response = await fetch(imageUrl);
+    const mimeType = response.headers.get('content-type');
+    const content = await response.arrayBuffer();
+
+    const base64Content = btoa(String.fromCharCode(...new Uint8Array(content)));
+
+    images[index].src = `data:${mimeType};base64,${base64Content}`;
+  }));
+  
+}
+```
+
+```json
+{
+  "name": "MyService",
+  "terms": {
+    "Privacy Policy": {
+      "fetch": "https://my.service.example/privacy",
+      "select": ".content",
+      "filter": [
+        { "convertImagesToBase64": ".meaningful-illustration" }
+      ]
+    }
+  }
+}
+```
+
+Result:
+
+```diff
+- <img src="https://my.service.example/image.png" class="meaningful-illustration">
++ <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA..." class="meaningful-illustration">
+```
+
+## Third-party libraries
+
+As can be seen in the last example, third-party libraries can be imported in the filters. These should be declared in the `package.json` of the collection to be available.
