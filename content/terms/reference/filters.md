@@ -221,3 +221,7 @@ Result:
 - <img src="https://my.service.example/image.png" class="meaningful-illustration">
 + <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA..." class="meaningful-illustration">
 ```
+
+## Third-party libraries
+
+As can be seen in the last example, third-party libraries can be imported in the filters. These should be declared in the `package.json` of the collection to be available.
