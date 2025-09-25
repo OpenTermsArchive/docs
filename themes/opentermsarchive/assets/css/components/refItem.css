@@ -55,8 +55,8 @@
   height: 1em;
 }
 
-.refItem-details {
-  display: flex;
+.refItem-details .refItem-label{
+  font-weight: 600;
 }
 
 .refItem-details__full {
