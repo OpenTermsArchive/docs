@@ -10,9 +10,10 @@ This reference documentation details all available metadata fields that can be s
 
 The examples given throughout this reference can be seen in context in the [complete metadata file](https://github.com/OpenTermsArchive/demo-declarations/blob/main/metadata.yml) and rendered in the [collection page](https://opentermsarchive.org/en/collections/demo/) of the Demo collection.
 
-
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THE FOLLOWING SECTION MANUALLY -->
 ## Fields
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="id"
     type="string"
@@ -21,6 +22,7 @@ The examples given throughout this reference can be seen in context in the [comp
     required=true
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="name"
     type="string"
@@ -29,6 +31,7 @@ The examples given throughout this reference can be seen in context in the [comp
     required=true
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="tagline"
     type="string"
@@ -37,6 +40,7 @@ The examples given throughout this reference can be seen in context in the [comp
     required=true
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="languages"
     type="array of strings"
@@ -45,6 +49,7 @@ The examples given throughout this reference can be seen in context in the [comp
     required=true
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="jurisdictions"
     type="array of strings"
@@ -53,6 +58,7 @@ The examples given throughout this reference can be seen in context in the [comp
     required=true
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="description"
     type="string"
@@ -67,6 +73,7 @@ This provides a reference collection for best practices and enables the Open Ter
 ```
 {{< /refItem >}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="dataset"
     type="uri"
@@ -75,6 +82,7 @@ This provides a reference collection for best practices and enables the Open Ter
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="declarations"
     type="uri"
@@ -83,6 +91,7 @@ This provides a reference collection for best practices and enables the Open Ter
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="versions"
     type="uri"
@@ -91,6 +100,7 @@ This provides a reference collection for best practices and enables the Open Ter
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="snapshots"
     type="uri"
@@ -99,6 +109,7 @@ This provides a reference collection for best practices and enables the Open Ter
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="donations"
     type="uri"
@@ -107,6 +118,7 @@ This provides a reference collection for best practices and enables the Open Ter
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="logo"
     type="uri"
@@ -115,6 +127,7 @@ This provides a reference collection for best practices and enables the Open Ter
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="trackingPeriods"
     type="array of objects"
@@ -122,6 +135,7 @@ This provides a reference collection for best practices and enables the Open Ter
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="governance"
     type="object of objects"
@@ -129,6 +143,7 @@ This provides a reference collection for best practices and enables the Open Ter
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="i18n"
     type="object of objects"
@@ -151,6 +166,7 @@ fr:
 
 ### TrackingPeriods
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="startDate"
     type="date"
@@ -159,6 +175,7 @@ fr:
     required=true
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="schedule"
     type="cron-expression"
@@ -167,6 +184,7 @@ fr:
     required=true
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="serverLocation"
     type="string"
@@ -175,6 +193,7 @@ fr:
     required=true
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="endDate"
     type="date"
@@ -188,6 +207,7 @@ fr:
 
 ### Governance
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="url"
     type="uri"
@@ -196,6 +216,7 @@ fr:
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="logo"
     type="uri"
@@ -204,6 +225,7 @@ fr:
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="roles"
     type="array of strings"

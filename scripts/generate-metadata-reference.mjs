@@ -83,7 +83,8 @@ function generateConfigOption(propertyName, propertyData, requiredProperties, in
   if (hasMultilineExample) {
     const multilineExample = propertyData.example.replace(/\\n/g, '\n');
 
-    return `${indent}{{< refItem
+    return `<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+${indent}{{< refItem
 ${indent}    name="${propertyName.replace(/"/g, '\\"')}"
 ${indent}    type="${propertyType}"
 ${indent}    description="${description.replace(/"/g, '\\"')}"
@@ -96,7 +97,8 @@ ${indent}{{< /refItem >}}
 `;
   }
 
-  return `${indent}{{< refItem
+  return `<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+${indent}{{< refItem
 ${indent}    name="${propertyName.replace(/"/g, '\\"')}"
 ${indent}    type="${propertyType}"
 ${indent}    description="${description.replace(/"/g, '\\"')}"
