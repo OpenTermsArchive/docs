@@ -14,6 +14,7 @@
   "author": "Open Terms Archive",
   "scripts": {
     "build": "npm run jsdoc && hugo --minify",
+    "generate-metadata-reference": "node scripts/generate-metadata-reference.mjs",
     "jsdoc": "jsdoc2md --files './node_modules/@opentermsarchive/engine/src/**/*.js' --template scripts/jsdoc/template/node.hbs -g grouped --name-format -d 4 > content/api/node.md",
     "lint:css": "stylelint \"themes/opentermsarchive/assets/css/*.css\"",
     "lint:js": "eslint themes/opentermsarchive/assets/js/",
@@ -26,6 +27,7 @@
   "dependencies": {
     "@opentermsarchive/engine": "github:OpenTermsArchive/engine#main",
     "minireset.css": "^0.0.7",
+    "node-fetch": "^3.3.2",
     "postcss": "^8.4.19",
     "postcss-cli": "^10.1.0",
     "postcss-mixins": "^9.0.4",
