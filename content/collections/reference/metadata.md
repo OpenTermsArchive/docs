@@ -10,9 +10,10 @@ This reference documentation details all available metadata fields that can be s
 
 The examples given throughout this reference can be seen in context in the [complete metadata file](https://github.com/OpenTermsArchive/demo-declarations/blob/main/metadata.yml) and rendered in the [collection page](https://opentermsarchive.org/en/collections/demo/) of the Demo collection.
 
-
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THE FOLLOWING SECTION MANUALLY -->
 ## Fields
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="id"
     type="string"
@@ -21,6 +22,7 @@ The examples given throughout this reference can be seen in context in the [comp
     required=true
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="name"
     type="string"
@@ -29,14 +31,16 @@ The examples given throughout this reference can be seen in context in the [comp
     required=true
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="tagline"
     type="string"
     description="Concise description of collection topic."
-    example="Services used by Open Terms Archive"
+    example="Services used by Open Terms Archive"
     required=true
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="languages"
     type="array of strings"
@@ -45,6 +49,7 @@ The examples given throughout this reference can be seen in context in the [comp
     required=true
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="jurisdictions"
     type="array of strings"
@@ -53,21 +58,22 @@ The examples given throughout this reference can be seen in context in the [comp
     required=true
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="description"
     type="string"
     description="Detailed description of the collection"
     required=false
 >}}
-
 ```yaml
-description: >
-    The **Demo** collection tracks changes to the terms of use of services used by Open Terms Archive.
+The **Demo** collection tracks changes to the terms of use of services used by Open Terms Archive.
 
-    This provides a reference collection for best practices and enables the Open Terms Archive Core Team to be a user of the software it produces.
+This provides a reference collection for best practices and enables the Open Terms Archive Core Team to be a user of the software it produces.
+
 ```
 {{< /refItem >}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="dataset"
     type="uri"
@@ -76,6 +82,7 @@ description: >
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="declarations"
     type="uri"
@@ -84,6 +91,7 @@ description: >
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="versions"
     type="uri"
@@ -92,6 +100,7 @@ description: >
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="snapshots"
     type="uri"
@@ -100,6 +109,7 @@ description: >
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="donations"
     type="uri"
@@ -108,6 +118,7 @@ description: >
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="logo"
     type="uri"
@@ -116,6 +127,7 @@ description: >
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="trackingPeriods"
     type="array of objects"
@@ -123,6 +135,7 @@ description: >
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="governance"
     type="object of objects"
@@ -130,6 +143,7 @@ description: >
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="i18n"
     type="object of objects"
@@ -138,12 +152,13 @@ description: >
 >}}
 ```yaml
 fr:
-    name: Démo
-    tagline: Services utilisés par Open Terms Archive
-    governance:
+  name: Démo
+  tagline: Services utilisés par Open Terms Archive
+  governance:
     Ministry for Europe and Foreign Affairs:
-        name: Ministère de l'Europe et des Affaires étrangères
-        url: https://www.diplomatie.gouv.fr
+      name: Ministère de l'Europe et des Affaires étrangères
+      url: https://www.diplomatie.gouv.fr
+
 ```
 {{< /refItem >}}
 
@@ -151,6 +166,7 @@ fr:
 
 ### TrackingPeriods
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="startDate"
     type="date"
@@ -159,6 +175,7 @@ fr:
     required=true
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="schedule"
     type="cron-expression"
@@ -167,6 +184,7 @@ fr:
     required=true
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="serverLocation"
     type="string"
@@ -175,6 +193,7 @@ fr:
     required=true
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="endDate"
     type="date"
@@ -188,6 +207,7 @@ fr:
 
 ### Governance
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="url"
     type="uri"
@@ -196,6 +216,7 @@ fr:
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="logo"
     type="uri"
@@ -204,11 +225,12 @@ fr:
     required=false
 />}}
 
+<!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 {{< refItem
     name="roles"
     type="array of strings"
-    description="Roles of the entity within the governance, see [collection governance](https://docs.opentermsarchive.org/collections/reference/roles/)"
-    allowedValues="host, administrator, curator, maintainer, sponsor"
-    example="[host, administrator]"
+    description="Roles of the entity within the governance, see [collection governance](https://docs.opentermsarchive.org/collections/reference/governance/)"
+    allowedValues="`host`, `sysadmin`, `curator`, `maintainer`, `contributor`, `analyst`, `diffuser`, `sponsor`"
+    example="[host, sysadmin]"
     required=true
 />}}

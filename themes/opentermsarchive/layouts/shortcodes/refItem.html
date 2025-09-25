@@ -26,18 +26,9 @@
         <code>{{ $default | markdownify | replaceRE "<a[^>]*>(.*?)</a>" "$1" | safeHTML }}</code>
       </div>
     {{ end }}
-    {{ if or $example .Inner }}
-      <div class="refItem-example"><span>Example:</span>
-        {{ if .Inner }}
-          {{ .Inner | markdownify }}
-        {{ else }}
-          <code>{{ $example | markdownify | replaceRE "<a[^>]*>(.*?)</a>" "$1" | safeHTML }}</code>
-        {{ end }}
-      </div>
-    {{ end }}
     {{ if $allowedValues }}
       {{ $values := split $allowedValues "," }}
-      <div class="refItem-allowed-values"><span>Allowed values:</span>
+      <div class="refItem-allowed-values"><span class="refItem-label">Allowed values</span>
         <span class="refItem-allowed-values-list">
           {{ range $values }}
             <code>{{ . | markdownify | replaceRE "<a[^>]*>(.*?)</a>" "$1" | safeHTML }}</code>
@@ -45,8 +36,17 @@
         </span>
       </div>
     {{ end }}
+    {{ if or $example .Inner }}
+      <div class="refItem-example"><span class="refItem-label">Example</span>
+        {{ if .Inner }}
+          {{ .Inner | markdownify }}
+        {{ else }}
+          <code>{{ $example | markdownify | replaceRE "<a[^>]*>(.*?)</a>" "$1" | safeHTML }}</code>
+        {{ end }}
+      </div>
+    {{ end }}
     {{ if $reference }}
-      <div class="refItem-reference"><span>Reference:</span>{{ $reference | markdownify }}</div>
+      <div class="refItem-reference"><span class="refItem-label">Reference</span>{{ $reference | markdownify }}</div>
     {{ end }}
   </div>
 </div>
