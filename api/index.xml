@@ -45,12 +45,12 @@
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>npx ota track&lt;/code>
  
  &lt;/div>
- 
  
  
  &lt;/div>
@@ -102,7 +102,7 @@
 &lt;li>&lt;a href="https://docs.opentermsarchive.org/api/node/#extract">&lt;code>extract(sourceDocument)&lt;/code>&lt;/a> ⇒ &lt;code>Promise.&amp;lt;string&amp;gt;&lt;/code>&lt;/li>
 &lt;li>&lt;a href="https://docs.opentermsarchive.org/api/node/#launchHeadlessBrowser">&lt;code>launchHeadlessBrowser()&lt;/code>&lt;/a> ⇒ &lt;code>Promise.&amp;lt;puppeteer.Browser&amp;gt;&lt;/code>&lt;/li>
 &lt;li>&lt;a href="https://docs.opentermsarchive.org/api/node/#stopHeadlessBrowser">&lt;code>stopHeadlessBrowser()&lt;/code>&lt;/a> ⇒ &lt;code>Promise.&amp;lt;void&amp;gt;&lt;/code>&lt;/li>
-&lt;li>&lt;a href="https://docs.opentermsarchive.org/api/node/#fetch">&lt;code>fetch(params)&lt;/code>&lt;/a> ⇒ &lt;code>Promise.&amp;lt;{mimeType: string, content: (string|Buffer)}&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;a href="https://docs.opentermsarchive.org/api/node/#fetch">&lt;code>fetch(params)&lt;/code>&lt;/a> ⇒ &lt;code>Promise.&amp;lt;{mimeType: string, content: (string|Buffer), fetcher: string}&amp;gt;&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;hr>
 &lt;p>&lt;a name="SourceDocument">&lt;/a>&lt;/p>

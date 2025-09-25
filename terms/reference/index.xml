@@ -28,7 +28,8 @@
  &lt;div class="refItem-details refItem-details__full">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;filter&amp;#34;&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="p">[&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
@@ -40,7 +41,6 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
  
  &lt;/div>
- 
  
  
  &lt;/div>
@@ -115,12 +115,12 @@
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>Open Terms Archive&lt;/code>
  
  &lt;/div>
- 
  
  
  &lt;/div>

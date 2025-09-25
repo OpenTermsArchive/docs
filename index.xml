@@ -88,12 +88,12 @@
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>npx ota track&lt;/code>
  
  &lt;/div>
- 
  
  
  &lt;/div>
@@ -164,7 +164,7 @@
  
 
  
-&amp;gt;=16.0.0) is installed on your system.&lt;/li>
+&amp;gt;=20.0.0 &amp;lt; 23.0.0) is installed on your system.&lt;/li>
 &lt;li>You have basic familiarity with the command line.&lt;/li>
 &lt;li>You know how to use a text editor.&lt;/li>
 &lt;/ul>
@@ -332,7 +332,7 @@
 &lt;li>&lt;a href="https://docs.opentermsarchive.org/api/node/#extract">&lt;code>extract(sourceDocument)&lt;/code>&lt;/a> ⇒ &lt;code>Promise.&amp;lt;string&amp;gt;&lt;/code>&lt;/li>
 &lt;li>&lt;a href="https://docs.opentermsarchive.org/api/node/#launchHeadlessBrowser">&lt;code>launchHeadlessBrowser()&lt;/code>&lt;/a> ⇒ &lt;code>Promise.&amp;lt;puppeteer.Browser&amp;gt;&lt;/code>&lt;/li>
 &lt;li>&lt;a href="https://docs.opentermsarchive.org/api/node/#stopHeadlessBrowser">&lt;code>stopHeadlessBrowser()&lt;/code>&lt;/a> ⇒ &lt;code>Promise.&amp;lt;void&amp;gt;&lt;/code>&lt;/li>
-&lt;li>&lt;a href="https://docs.opentermsarchive.org/api/node/#fetch">&lt;code>fetch(params)&lt;/code>&lt;/a> ⇒ &lt;code>Promise.&amp;lt;{mimeType: string, content: (string|Buffer)}&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;a href="https://docs.opentermsarchive.org/api/node/#fetch">&lt;code>fetch(params)&lt;/code>&lt;/a> ⇒ &lt;code>Promise.&amp;lt;{mimeType: string, content: (string|Buffer), fetcher: string}&amp;gt;&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;hr>
 &lt;p>&lt;a name="SourceDocument">&lt;/a>&lt;/p>
@@ -534,6 +534,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/h1>
 &lt;p>This reference documentation details all available metadata fields that can be specified in a collection&amp;rsquo;s metadata file.&lt;/p>
 &lt;p>The examples given throughout this reference can be seen in context in the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations/blob/main/metadata.yml">complete metadata file&lt;/a> and rendered in the &lt;a href="https://opentermsarchive.org/en/collections/demo/">collection page&lt;/a> of the Demo collection.&lt;/p>
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THE FOLLOWING SECTION MANUALLY -->
 &lt;h2 id="fields">
  
  &lt;a class="title-link" href="#fields">
@@ -546,6 +547,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
  
 &lt;/h2>
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -570,18 +572,19 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>demo&lt;/code>
  
  &lt;/div>
  
  
- 
  &lt;/div>
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -606,18 +609,19 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>Demo Collection&lt;/code>
  
  &lt;/div>
  
  
- 
  &lt;/div>
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -642,18 +646,19 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
  
- &lt;code>Services used by Open Terms Archive&lt;/code>
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>Services used by Open Terms Archive&lt;/code>
  
  &lt;/div>
- 
  
  
  &lt;/div>
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -678,18 +683,19 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>[en, fr, de]&lt;/code>
  
  &lt;/div>
  
  
- 
  &lt;/div>
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -714,18 +720,19 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>[EU]&lt;/code>
  
  &lt;/div>
  
  
- 
  &lt;/div>
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -748,22 +755,22 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__full">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
  
- &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">description&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="sd">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> The **Demo** collection tracks changes to the terms of use of services used by Open Terms Archive.
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> This provides a reference collection for best practices and enables the Open Terms Archive Core Team to be a user of the software it produces.&lt;/span>&lt;span class="w">
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="l">The **Demo** collection tracks changes to the terms of use of services used by Open Terms Archive.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="l">This provides a reference collection for best practices and enables the Open Terms Archive Core Team to be a user of the software it produces.&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
  
  &lt;/div>
- 
  
  
  &lt;/div>
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -786,18 +793,19 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>https://github.com/OpenTermsArchive/demo-versions/releases&lt;/code>
  
  &lt;/div>
  
  
- 
  &lt;/div>
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -820,18 +828,19 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>https://github.com/OpenTermsArchive/demo-declarations&lt;/code>
  
  &lt;/div>
  
  
- 
  &lt;/div>
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -854,18 +863,19 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>https://github.com/OpenTermsArchive/demo-versions&lt;/code>
  
  &lt;/div>
  
  
- 
  &lt;/div>
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -888,18 +898,19 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>https://github.com/OpenTermsArchive/demo-snapshots&lt;/code>
  
  &lt;/div>
  
  
- 
  &lt;/div>
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -922,18 +933,19 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>https://opencollective.com/opentermsarchive&lt;/code>
  
  &lt;/div>
  
  
- 
  &lt;/div>
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -956,18 +968,19 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>https://opentermsarchive.org/images/logo/logo-open-terms-archive-black.png&lt;/code>
  
  &lt;/div>
  
  
- 
  &lt;/div>
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -996,6 +1009,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -1024,6 +1038,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -1046,7 +1061,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__full">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">fr&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Démo&lt;/span>&lt;span class="w">
@@ -1058,7 +1074,6 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
  
  &lt;/div>
- 
  
  
  &lt;/div>
@@ -1078,6 +1093,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
  
 &lt;/h3>
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -1102,18 +1118,19 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>2023-01-01&lt;/code>
  
  &lt;/div>
  
  
- 
  &lt;/div>
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -1138,18 +1155,19 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>0 0 * * *&lt;/code>
  
  &lt;/div>
  
  
- 
  &lt;/div>
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -1174,18 +1192,19 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>Paris, FR&lt;/code>
  
  &lt;/div>
  
  
- 
  &lt;/div>
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -1208,12 +1227,12 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>2023-12-01&lt;/code>
  
  &lt;/div>
- 
  
  
  &lt;/div>
@@ -1233,6 +1252,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
  
 &lt;/h3>
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -1255,18 +1275,19 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>https://opentermsarchive.org/&lt;/code>
  
  &lt;/div>
  
  
- 
  &lt;/div>
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -1289,18 +1310,19 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>https://opentermsarchive.org/images/logo/logo-open-terms-archive-black.png&lt;/code>
  
  &lt;/div>
  
  
- 
  &lt;/div>
 &lt;/div>
 
 
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
 
 
 
@@ -1321,32 +1343,38 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
- &lt;div class="refItem-description">Roles of the entity within the governance, see &lt;a href="https://docs.opentermsarchive.org/collections/reference/roles/">collection governance&lt;/a>&lt;/div>
+ &lt;div class="refItem-description">Roles of the entity within the governance, see &lt;a href="https://docs.opentermsarchive.org/collections/reference/governance/">collection governance&lt;/a>&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
  
- &lt;code>[host, administrator]&lt;/code>
+ &lt;div class="refItem-allowed-values">&lt;span class="refItem-label">Allowed values&lt;/span>
+ &lt;span class="refItem-allowed-values-list">
  
+ &lt;code>&lt;code>host&lt;/code>&lt;/code>
+ 
+ &lt;code>&lt;code>sysadmin&lt;/code>&lt;/code>
+ 
+ &lt;code>&lt;code>curator&lt;/code>&lt;/code>
+ 
+ &lt;code>&lt;code>maintainer&lt;/code>&lt;/code>
+ 
+ &lt;code>&lt;code>contributor&lt;/code>&lt;/code>
+ 
+ &lt;code>&lt;code>analyst&lt;/code>&lt;/code>
+ 
+ &lt;code>&lt;code>diffuser&lt;/code>&lt;/code>
+ 
+ &lt;code>&lt;code>sponsor&lt;/code>&lt;/code>
+ 
+ &lt;/span>
  &lt;/div>
  
  
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
- &lt;div class="refItem-allowed-values">&lt;span>Allowed values:&lt;/span>
- &lt;span class="refItem-allowed-values-list">
+ &lt;code>[host, sysadmin]&lt;/code>
  
- &lt;code>host&lt;/code>
- 
- &lt;code>administrator&lt;/code>
- 
- &lt;code>curator&lt;/code>
- 
- &lt;code>maintainer&lt;/code>
- 
- &lt;code>sponsor&lt;/code>
- 
- &lt;/span>
  &lt;/div>
  
  
@@ -1547,12 +1575,12 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;/div>
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>../collections/demo-declarations&lt;/code>
  
  &lt;/div>
- 
  
  
  &lt;/div>
@@ -2158,7 +2186,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;div class="refItem-details refItem-details__full">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;filter&amp;#34;&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="p">[&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
@@ -2170,7 +2199,6 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
  
  &lt;/div>
- 
  
  
  &lt;/div>
@@ -2518,12 +2546,12 @@ This is where volunteer reviewers come in to help. Reviewers are people who have
  &lt;div class="refItem-details refItem-details__">
  
  
- &lt;div class="refItem-example">&lt;span>Example:&lt;/span>
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
  
  &lt;code>Open Terms Archive&lt;/code>
  
  &lt;/div>
- 
  
  
  &lt;/div>
@@ -2600,7 +2628,7 @@ This is where volunteer reviewers come in to help. Reviewers are people who have
  
 
  
-&amp;gt;=16.0.0) is installed on your system.&lt;/li>
+&amp;gt;=20.0.0 &amp;lt; 23.0.0) is installed on your system.&lt;/li>
 &lt;li>You have basic familiarity with the command line.&lt;/li>
 &lt;li>You have basic familiarity with HTML and CSS selectors.&lt;/li>
 &lt;li>You know how to use a text editor.&lt;/li>
