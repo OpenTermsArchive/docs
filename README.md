@@ -99,6 +99,14 @@ To check for broken links, run the following command:
 npm run test:links
 ```
 
+### Generate collection metadata reference
+
+To generate collection metadata reference, run the following command:
+
+```sh
+npm run generate-metadata-reference
+```
+
 ## Deployment
 
 The `main` branch is used on production and automatically deployed through GitHub pages. Refer to the configuration file `.github/workflows/gh-pages.yml`.
