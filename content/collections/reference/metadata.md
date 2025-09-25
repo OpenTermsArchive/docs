@@ -33,7 +33,7 @@ The examples given throughout this reference can be seen in context in the [comp
     name="tagline"
     type="string"
     description="Concise description of collection topic."
-    example="Services used by Open Terms Archive"
+    example="Services used by Open Terms Archive"
     required=true
 />}}
 
@@ -59,12 +59,11 @@ The examples given throughout this reference can be seen in context in the [comp
     description="Detailed description of the collection"
     required=false
 >}}
-
 ```yaml
-description: >
-    The **Demo** collection tracks changes to the terms of use of services used by Open Terms Archive.
+The **Demo** collection tracks changes to the terms of use of services used by Open Terms Archive.
 
-    This provides a reference collection for best practices and enables the Open Terms Archive Core Team to be a user of the software it produces.
+This provides a reference collection for best practices and enables the Open Terms Archive Core Team to be a user of the software it produces.
+
 ```
 {{< /refItem >}}
 
@@ -138,12 +137,13 @@ description: >
 >}}
 ```yaml
 fr:
-    name: Démo
-    tagline: Services utilisés par Open Terms Archive
-    governance:
+  name: Démo
+  tagline: Services utilisés par Open Terms Archive
+  governance:
     Ministry for Europe and Foreign Affairs:
-        name: Ministère de l'Europe et des Affaires étrangères
-        url: https://www.diplomatie.gouv.fr
+      name: Ministère de l'Europe et des Affaires étrangères
+      url: https://www.diplomatie.gouv.fr
+
 ```
 {{< /refItem >}}
 
@@ -207,8 +207,8 @@ fr:
 {{< refItem
     name="roles"
     type="array of strings"
-    description="Roles of the entity within the governance, see [collection governance](https://docs.opentermsarchive.org/collections/reference/roles/)"
-    allowedValues="host, administrator, curator, maintainer, sponsor"
-    example="[host, administrator]"
+    description="Roles of the entity within the governance, see [collection governance](https://docs.opentermsarchive.org/collections/reference/governance/)"
+    allowedValues="`host`, `sysadmin`, `curator`, `maintainer`, `contributor`, `analyst`, `diffuser`, `sponsor`"
+    example="[host, sysadmin]"
     required=true
 />}}
