@@ -4,6 +4,7 @@ linkTitle: Roles
 weight: 1
 aliases: 
   - /collections/governance/
+  - /collections/reference/governance/
   - /collections/reference/roles/
 ---
 
