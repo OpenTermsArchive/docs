@@ -48,19 +48,37 @@ In these commands:
 
 ## Publishing dataset
 
-{{< refItem name="ota dataset [--file <filename>]" description="Export the versions dataset into a ZIP file and publish it to GitHub releases. The dataset title and the URL of the versions repository are defined in the configuration." example="npx ota dataset --file dataset.zip" />}}
+{{< refItem name="ota dataset [--file <filename>]" description="Export the versions dataset into a ZIP file. The dataset title is defined in the configuration." example="npx ota dataset --file dataset.zip" />}}
 
-To export the dataset into a ZIP file and publish it on GitHub releases:
+To export the dataset into a ZIP file and publish it to configured platforms (GitHub releases, GitLab releases, and/or data.gouv.fr):
 
-{{< refItem name="ota dataset --publish [--file <filename>]" description="Export and publish dataset to GitHub releases" example="GITHUB_TOKEN=ghp_XXXXXXXXX npx ota dataset --publish" />}}
+{{< refItem name="ota dataset --publish [--file <filename>]" description="Export and publish dataset to all configured platforms" example="npx ota dataset --publish" />}}
 
-The `GITHUB_TOKEN` can also be defined in a [`.env` file]({{< relref "collections/reference/environment-variables" >}}).
+The dataset can be published to multiple platforms simultaneously:
+
+- **GitHub releases**: Requires `OTA_ENGINE_GITHUB_TOKEN` environment variable
+- **GitLab releases**: Requires `OTA_ENGINE_GITLAB_TOKEN` environment variable (used only if GitHub token is not configured)
+- **data.gouv.fr**: Requires `OTA_ENGINE_DATAGOUV_API_KEY` environment variable and `dataset.datagouv.datasetId` in configuration
+
+These environment variables can be defined in a [`.env` file]({{< relref "collections/reference/environment-variables" >}}).
+
+> **Note**: If both GitHub and GitLab tokens are configured, GitHub takes precedence. data.gouv.fr can be used alongside either GitHub or GitLab.
 
 To export, publish the dataset and remove the local copy that was created after it has been uploaded:
 
-{{< refItem name="ota dataset --publish --remove-local-copy [--file <filename>]" description="Export, publish dataset and remove local copy after upload" example="GITHUB_TOKEN=ghp_XXXXXXXXX npx ota dataset --publish --remove-local-copy" />}}
+{{< refItem name="ota dataset --publish --remove-local-copy [--file <filename>]" description="Export, publish dataset and remove local copy after upload" example="npx ota dataset --publish --remove-local-copy" />}}
 
-{{< refItem name="ota dataset --schedule [--file <filename>]" description="Schedule export, publishing and local copy removal" example="GITHUB_TOKEN=ghp_XXXXXXXXX npx ota dataset --schedule --publish --remove-local-copy" />}}
+{{< refItem name="ota dataset --schedule [--file <filename>]" description="Schedule export, publishing and local copy removal" example="npx ota dataset --schedule --publish --remove-local-copy" />}}
+
+### Setting up data.gouv.fr publishing
+
+Before publishing to data.gouv.fr for the first time, you need to:
+
+1. Create a dataset on [data.gouv.fr](https://www.data.gouv.fr/) or [demo.data.gouv.fr](https://demo.data.gouv.fr/) (for testing)
+2. Copy the dataset ID from the URL (e.g., `6914a64b17a0a91bb0a61222`)
+3. Add it to your configuration at `dataset.datagouv.datasetId`
+4. Set `dataset.datagouv.useDemo` to `true` if using the demo environment
+5. Set the `OTA_ENGINE_DATAGOUV_API_KEY` environment variable with your API key
 
 ## Exposing the collection API
 

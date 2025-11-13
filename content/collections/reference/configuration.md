@@ -180,7 +180,7 @@ The reporter section manages how issues are reported when terms content is inacc
 
 ### Dataset
 
-The dataset section configures how datasets are published.
+The dataset section configures how datasets are published. Datasets can be published to GitHub releases, GitLab releases, and/or data.gouv.fr. If both GitHub and GitLab tokens are configured, GitHub takes precedence.
 
 {{< refItem
     name="dataset.title"
@@ -201,6 +201,24 @@ The dataset section configures how datasets are published.
     type="string"
     description="Cron expression for dataset publishing. By default, it runs every Monday at 8:30 AM."
     default="30 8 * * MON"
+/>}}
+
+#### data.gouv.fr publishing
+
+The data.gouv.fr section configures publishing to the French government's open data platform.
+
+{{< refItem
+    name="dataset.datagouv.datasetId"
+    type="string"
+    description="ID of the dataset on data.gouv.fr. Required for publishing to data.gouv.fr. Must be created manually on the data.gouv.fr website."
+    example="6914a64b17a0a91bb0a61222"
+/>}}
+
+{{< refItem
+    name="dataset.datagouv.useDemo"
+    type="boolean"
+    description="Set to true to use the demo.data.gouv.fr environment for testing."
+    default="false"
 />}}
 
 ### Collection API
