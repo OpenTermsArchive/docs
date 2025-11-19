@@ -28,7 +28,7 @@ In these commands:
 
 ## Applying technical upgrades
 
-{{< refItem name="ota apply-technical-upgrades" description="Apply technical upgrades by regenerating versions from existing snapshots with updated declarations/engine. This also fetches missing snapshots for newly added source documents in combined terms. Versions created during this process are labeled as technical upgrades to avoid false notifications." example="npx ota apply-technical-upgrades" />}}
+{{< refItem name="ota apply-technical-upgrades" description="Apply technical upgrades by generating new versions from the latest snapshots using updated declarations, engine logic, or dependencies, and by retrieving any missing snapshots for newly added source documents. Versions created during this process are labeled as technical upgrades to avoid false notifications." example="npx ota apply-technical-upgrades" />}}
 
 {{< refItem name="ota apply-technical-upgrades --help" description="Show help and available options for apply-technical-upgrades command" example="npx ota apply-technical-upgrades --help" />}}
 
