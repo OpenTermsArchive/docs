@@ -7,7 +7,7 @@ weight: 5
 
 ## What is the technical upgrades process
 
-The **technical upgrade** process creates new **versions** by re-extracting content from the **latest snapshots** when there are changes not in service terms content, but in the system that extracts them (declarations, filters, engine, or dependencies).
+The technical upgrade process creates new versions by re-extracting content from the latest snapshots when there are changes not in service terms content, but in the system that extracts them (declarations, filters, engine, or dependencies).
 
 ## Why technical upgrades are important
 
@@ -35,7 +35,7 @@ For each tracked terms:
 
 ### Selector or filter changes
 
-**Example:**
+Example:
 
 ```json
 // Before: missing section C
@@ -55,7 +55,7 @@ For each tracked terms:
 }
 ```
 
-**What happens:**
+What happens:
 
 - Retrieves the latest snapshot
 - Re-extracts content using updated selectors and/or filters
@@ -63,7 +63,7 @@ For each tracked terms:
 
 ### Adding new source documents to combined terms
 
-**Example:**
+Example:
 
 ```json
 // Before: 2 source documents
@@ -88,7 +88,7 @@ For each tracked terms:
 }
 ```
 
-**What happens:**
+What happens:
 
 - Fetches and records snapshots **only for new source documents**
 - Retrieves latest snapshots for existing source documents
@@ -96,7 +96,7 @@ For each tracked terms:
 
 ### Location changes
 
-**What happens:**
+What happens:
 
 Nothing, technical upgrades do not fetch from new locations. Location changes represent a genuine change in how the service publishes their terms and should be tracked as a regular content change.
 
@@ -104,12 +104,12 @@ Nothing, technical upgrades do not fetch from new locations. Location changes re
 
 When you upgrade the engine or dependencies, extraction logic may change even if declarations remain the same.
 
-**Examples:**
+Examples:
 
 - Engine improves HTML entity decoding so `&nbsp;` entities are converted to regular spaces instead of appearing literally in versions
 - Library improves table support so complex tables preserve their structure as Markdown tables instead of being converted to plain text
 
-**What happens:**
+What happens:
 
 - Retrieves the latest snapshot for each terms
 - Re-extracts using updated code
