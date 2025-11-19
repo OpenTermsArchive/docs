@@ -115,12 +115,6 @@ When you upgrade the engine or dependencies, extraction logic may change even if
 - Re-extracts using updated code
 - Creates a new version marked as a technical upgrade if output differs
 
-### Special cases
-
-**No existing version:** For terms that have never been tracked before, the technical upgrade is skipped because there is no existing version to upgrade.
-
-**Missing snapshots:** Technical upgrades cannot extract content without snapshots. If a source document has no snapshot, no version can be created. However, for combined terms, if you add a new source document to the declaration, technical upgrades will fetch and record snapshots only for these newly added documents, then combine them with existing snapshots to create the upgraded version.
-
 ## Technical upgrade markers
 
 Versions created during technical upgrades are marked with:
@@ -132,8 +126,4 @@ Versions created during technical upgrades are marked with:
 
 Technical upgrades run automatically with `npx ota track`.
 
-To run them separately:
-
-```bash
-npx ota apply-technical-upgrades
-```
+To run them separately, see the [apply-technical-upgrades command]({{< relref "api/cli#applying-technical-upgrades" >}}).
