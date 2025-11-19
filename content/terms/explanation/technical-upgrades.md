@@ -120,7 +120,7 @@ What happens:
 Versions created during technical upgrades are marked with:
 
 - `isTechnicalUpgrade: true` in version metadata
-- Commit message specify it by starting by `Apply technical or declaration upgrade on …`
+- Commit message specify it by starting by `Apply technical or declaration upgrade on <service_id> <terms_type>`
 
 ## Running technical upgrades
 
