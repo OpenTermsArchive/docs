@@ -14,7 +14,7 @@ In these commands:
 
 ## Tracking terms
 
-{{< refItem name="ota track" description="Track the current terms of services according to provided declarations. The declarations, snapshots and versions paths are defined in the configuration." example="npx ota track" />}}
+{{< refItem name="ota track" description="Track the current terms of services according to provided declarations. The declarations, snapshots and versions paths are defined in the configuration. This command automatically runs a technical upgrade pass first to apply any engine, dependency, or declaration updates before tracking." example="npx ota track" />}}
 
 > Note that the snapshots and versions will be recorded at the moment the command is executed, on top of the existing local history. If a shared history already exists and the goal is to add on top of it, that history has to be downloaded before executing that command.
 
@@ -25,6 +25,16 @@ In these commands:
 {{< refItem name="ota track [--services <service_id>...] [--types <terms_type>...]" description="Track specific terms types of specific services only" example="npx ota track --services \"Facebook\" \"LinkedIn\" --types \"Privacy Policy\" \"Terms of Service\"" />}}
 
 {{< refItem name="ota track --schedule [--services <service_id>...] [--types <terms_type>...]" description="Track terms on the schedule defined in the configuration" example="npx ota track --schedule" />}}
+
+## Applying technical upgrades
+
+{{< refItem name="ota apply-technical-upgrades" description="Apply technical upgrades by generating new versions from the latest snapshots using updated declarations, engine logic, or dependencies, and by retrieving any missing snapshots for newly added source documents. Versions created during this process are labeled as technical upgrades to avoid false notifications." example="npx ota apply-technical-upgrades" />}}
+
+{{< refItem name="ota apply-technical-upgrades --help" description="Show help and available options for apply-technical-upgrades command" example="npx ota apply-technical-upgrades --help" />}}
+
+{{< refItem name="ota apply-technical-upgrades [--services <service_id>...]" description="Apply technical upgrades to specific services only" example="npx ota apply-technical-upgrades --services \"Facebook\" \"LinkedIn\"" />}}
+
+{{< refItem name="ota apply-technical-upgrades [--services <service_id>...] [--types <terms_type>...]" description="Apply technical upgrades to specific terms types of specific services only" example="npx ota apply-technical-upgrades --services \"Facebook\" \"LinkedIn\" --types \"Privacy Policy\" \"Terms of Service\"" />}}
 
 ## Validating declarations
 
