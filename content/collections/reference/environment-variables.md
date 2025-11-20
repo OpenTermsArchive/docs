@@ -19,10 +19,10 @@ This reference documentation details all available environment variables that ca
 
 {{< refItem name="OTA_ENGINE_GITLAB_RELEASES_TOKEN" type="string" description="GitLab token for dataset releases." />}}
 
-{{< refItem name="OTA_ENGINE_DATAGOUV_API_KEY" type="string" description="API key for data.gouv.fr dataset publishing. Requires dataset.datagouv.datasetId to be configured." />}}
+{{< refItem name="OTA_ENGINE_DATAGOUV_API_KEY" type="string" description="API key for data.gouv.fr dataset publishing." />}}
 
 ---
 
-### Federation API 
+### Federation API
 
 {{< refItem name="OTA_FEDERATION_API_SMTP_PASSWORD" type="string" description="SMTP password for email error notifications." />}}
