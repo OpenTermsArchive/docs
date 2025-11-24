@@ -180,7 +180,7 @@ The reporter section manages how issues are reported when terms content is inacc
 
 ### Dataset
 
-The dataset section configures how datasets are published.
+The dataset section configures how datasets are published. Datasets can be published to GitHub releases, GitLab releases, and/or data.gouv.fr. If both GitHub and GitLab tokens are configured, GitHub takes precedence.
 
 {{< refItem
     name="dataset.title"
@@ -199,8 +199,40 @@ The dataset section configures how datasets are published.
 {{< refItem
     name="dataset.publishingSchedule"
     type="string"
-    description="Cron expression for dataset publishing. By default, it runs every Monday at 8:30 AM."
+    description="Cron expression for dataset publishing. By default, it runs every Monday at 8:30 AM. If publishing to data.gouv.fr, remember to update `dataset.datagouv.frequency` to match the actual publishing frequency."
     default="30 8 * * MON"
+/>}}
+
+#### data.gouv.fr publishing
+
+The data.gouv.fr section configures publishing to the French government's open data platform. Either `datasetId` or `organizationIdOrSlug` must be configured.
+
+{{< refItem
+    name="dataset.datagouv.datasetId"
+    type="string"
+    description="ID of an existing dataset on data.gouv.fr. Use this to publish to an existing dataset. Either this or `organizationIdOrSlug` is required."
+    example="6914a64b17a0a91bb0a61222"
+/>}}
+
+{{< refItem
+    name="dataset.datagouv.organizationIdOrSlug"
+    type="string"
+    description="ID or slug of the organization on data.gouv.fr. Use this to automatically create and publish a dataset. The dataset will be created with the title from `dataset.title` if it doesn't exist. Either this or `datasetId` is required."
+    example="open-terms-archive"
+/>}}
+
+{{< refItem
+    name="dataset.datagouv.frequency"
+    type="string"
+    description="Update frequency of the dataset. Used when creating or updating a dataset on data.gouv.fr. See [data.gouv.fr API](https://www.data.gouv.fr/api/1/datasets/frequencies/) for all allowed values."
+    example="weekly"
+/>}}
+
+{{< refItem
+    name="dataset.datagouv.useDemo"
+    type="boolean"
+    description="Set to `true` to use the demo.data.gouv.fr environment for testing."
+    default="false"
 />}}
 
 ### Collection API
