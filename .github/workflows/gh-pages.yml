@@ -28,7 +28,7 @@ jobs:
         run: npm ci
 
       - name: Set Hugo up
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f
         with:
           hugo-version: '0.147.1'
           extended: true # Prevent error building site: POSTCSS: failed to transform, see https://gohugo.io/troubleshooting/faq/#i-get-this-feature-is-not-available-in-your-current-hugo-version
@@ -52,7 +52,7 @@ jobs:
           find . -print
 
       - name: Deploy ./public directory to the remote gh-pages branch
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           cname: docs.opentermsarchive.org
