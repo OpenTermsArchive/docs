@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>How to guides on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/collections/how-to/</link><description>Recent content in How to guides on Open Terms Archive documentation</description><generator>Hugo</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/collections/how-to/index.xml" rel="self" type="application/rss+xml"/><item><title>Create a collection</title><link>https://docs.opentermsarchive.org/collections/how-to/create/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/create/</guid><description>&lt;h1 id="how-to-create-a-collection">
+ 
+ How to create a collection
+ 
+
+ 
+&lt;/h1>
+&lt;p>You are considering creating a new collection to track terms with Open Terms Archive? Amazing!&lt;/p>
+&lt;h2 id="define-metadata">
+ 
+ &lt;a class="title-link" href="#define-metadata">
+ 
+ Define metadata
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>First of all, define the &lt;a href="https://docs.opentermsarchive.org/collections/reference/metadata/">metadata&lt;/a> of the collection you would like to create and keep them ready to be used when setting up the repositories.&lt;/p>
+&lt;h2 id="check-existing-collections">
+ 
+ &lt;a class="title-link" href="#check-existing-collections">
+ 
+ Check existing collections
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>Now that you have a clear idea what you would like to track, double-check that there are no &lt;a href="https://opentermsarchive.org/#collections">existing federated collections&lt;/a> that you could contribute to. If you have a doubt about whether some terms you want to track would fit a collection, reach out to the collection maintainers.&lt;/p></description></item><item><title>Create repositories</title><link>https://docs.opentermsarchive.org/collections/how-to/create-repositories/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/create-repositories/</guid><description>&lt;h1 id="how-to-create-collection-repositories">
+ 
+ How to create collection repositories
+ 
+
+ 
+&lt;/h1>
+&lt;p>Collections in Open Terms Archive rely on three Git repositories to hold the data:&lt;/p>
+&lt;ul>
+&lt;li>Declarations repository: stores the declarations that define terms to track&lt;/li>
+&lt;li>Snapshots repository: stores raw snapshots of tracked terms&lt;/li>
+&lt;li>Versions repository: stores processed versions of tracked terms&lt;/li>
+&lt;/ul>
+&lt;p>This guide assumes you use GitHub. For other Git platforms, adapt these steps accordingly.&lt;/p>
+&lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
+ Prerequisites
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>Before starting, ensure you have:&lt;/p></description></item><item><title>Define metadata</title><link>https://docs.opentermsarchive.org/collections/how-to/define-metadata/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/define-metadata/</guid><description>&lt;h1 id="how-to-define-metadata">
+ 
+ How to define metadata
+ 
+
+ 
+&lt;/h1>
+&lt;p>This guide will help you define the metadata for your Open Terms Archive collection.&lt;/p>
+&lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
+ Prerequisites
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;ul>
+&lt;li>A text editor.&lt;/li>
+&lt;li>Basic understanding of the &lt;a href="https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html">YAML syntax&lt;/a>.&lt;/li>
+&lt;li>Your collection&amp;rsquo;s basic information ready.&lt;/li>
+&lt;/ul>
+&lt;h2 id="steps">
+ 
+ &lt;a class="title-link" href="#steps">
+ 
+ Steps
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Create a new file named &lt;code>metadata.yml&lt;/code> in your collection&amp;rsquo;s root directory.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Define the required basic information:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;Your Collection Name&amp;#34;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Keep it under 3 words&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">id&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;your-collection-id&amp;#34;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Create a simple dash-separated identifier&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">tagline&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;Brief description&amp;#34;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Write a one-line collection summary&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">languages&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;en&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># List ISO 639 language codes&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">jurisdictions&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;US&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># List ISO 3166-2 country codes&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Add detailed description and repositories URLs:&lt;/p></description></item><item><title>Terminate a collection</title><link>https://docs.opentermsarchive.org/collections/how-to/terminate/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/terminate/</guid><description>&lt;h1 id="how-to-terminate-a-collection">
+ 
+ How to terminate a collection
+ 
+
+ 
+&lt;/h1>
+&lt;p>If you don&amp;rsquo;t have the resources to maintain a collection any more, follow these steps to properly terminate it. This will make it clear to users and potential successors that it is no longer actively maintained and can be taken over.&lt;/p>
+&lt;h2 id="steps">
+ 
+ &lt;a class="title-link" href="#steps">
+ 
+ Steps
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;ol>
+&lt;li>Announce the intention to terminate the collection in the &lt;a href="https://docs.opentermsarchive.org/federation/how-to/join/">community chat&lt;/a> to inform users and make potential new maintainers aware. Give at least one month notice to that others have time to share their intention to take over the collection before proceeding to the next step.&lt;/li>
+&lt;/ol>
+&lt;p>If no-one has come forward after one month, you can proceed to the next step.&lt;/p></description></item><item><title>Take over a collection</title><link>https://docs.opentermsarchive.org/collections/how-to/take-over/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/take-over/</guid><description>&lt;h1 id="how-to-take-over-a-collection">
+ 
+ How to take over a collection
+ 
+
+ 
+&lt;/h1>
+&lt;p>Before starting, ensure the collection is either &lt;a href="https://docs.opentermsarchive.org/collections/reference/status/#abandoned">abandoned&lt;/a> or &lt;a href="https://docs.opentermsarchive.org/collections/reference/status/#terminated">terminated&lt;/a>. In any case, keep all original licenses, history, and attributions.&lt;/p>
+&lt;h2 id="steps">
+ 
+ &lt;a class="title-link" href="#steps">
+ 
+ Steps
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>If the approval is not explicitly given in the collection&amp;rsquo;s README, get it by contacting owners via email if publicly available, a GitHub issue on the collection repository, or on the &lt;a href="https://docs.opentermsarchive.org/community/how-to/join/">community chat&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Ask the owners to transfer the repositories to your organization.&lt;/p></description></item><item><title>Publish to data.gouv.fr</title><link>https://docs.opentermsarchive.org/collections/how-to/publish-to-datagouv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/publish-to-datagouv/</guid><description>&lt;h1 id="how-to-publish-datasets-to-datagouvfr">
+ 
+ How to publish datasets to data.gouv.fr
+ 
+
+ 
+&lt;/h1>
+&lt;p>This guide explains how to configure your collection to automatically publish datasets to &lt;a href="https://www.data.gouv.fr/">data.gouv.fr&lt;/a>, the French government&amp;rsquo;s open data platform.&lt;/p>
+&lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
+ Prerequisites
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;ul>
+&lt;li>A &lt;a href="https://www.data.gouv.fr/">data.gouv.fr&lt;/a> account&lt;/li>
+&lt;li>An API key from your data.gouv.fr account settings&lt;/li>
+&lt;li>Either an existing dataset or an organization where you can create datasets&lt;/li>
+&lt;/ul>
+&lt;h2 id="choose-your-approach">
+ 
+ &lt;a class="title-link" href="#choose-your-approach">
+ 
+ Choose your approach
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>There are two ways to publish datasets to data.gouv.fr:&lt;/p></description></item></channel></rss>

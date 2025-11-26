@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Programmatic access on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/api/</link><description>Recent content in Programmatic access on Open Terms Archive documentation</description><generator>Hugo</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/api/index.xml" rel="self" type="application/rss+xml"/><item><title>Command line interface</title><link>https://docs.opentermsarchive.org/api/cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/api/cli/</guid><description>&lt;h1 id="command-line-interface">
+ 
+ Command line interface
+ 
+
+ 
+&lt;/h1>
+&lt;p>Once the engine module is installed as a dependency within another module, the &lt;code>ota&lt;/code> command with the following subcommands is available.&lt;/p>
+&lt;p>In these commands:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>&amp;lt;service_id&amp;gt;&lt;/code> is the case sensitive name of the service declaration file without the extension. For example, for &lt;code>Twitter.json&lt;/code>, the service ID is &lt;code>Twitter&lt;/code>.&lt;/li>
+&lt;li>&lt;code>&amp;lt;terms_type&amp;gt;&lt;/code> is the property name used under the &lt;code>terms&lt;/code> property in the declaration to declare a terms. For example, in the getting started declaration, the terms type declared is &lt;code>Privacy Policy&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="tracking-terms">
+ 
+ &lt;a class="title-link" href="#tracking-terms">
+ 
+ Tracking terms
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-ota-track">
+ &lt;a href="#ref-ota-track" class="refItem-name">
+ &lt;code>ota track&lt;/code>
+ &lt;span class="refItem-type">&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">Track the current terms of services according to provided declarations. The declarations, snapshots and versions paths are defined in the configuration. This command automatically runs a technical upgrade pass first to apply any engine, dependency, or declaration updates before tracking.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>npx ota track&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;blockquote>
+&lt;p>Note that the snapshots and versions will be recorded at the moment the command is executed, on top of the existing local history. If a shared history already exists and the goal is to add on top of it, that history has to be downloaded before executing that command.&lt;/p></description></item><item><title>Node.js module</title><link>https://docs.opentermsarchive.org/api/node/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/api/node/</guid><description>&lt;h1 id="nodejs-module">
+ 
+ Node.js module
+ 
+
+ 
+&lt;/h1>
+&lt;p>As a Node module dependency, the engine exposes a JavaScript API that can be called in your own code.&lt;/p>
+&lt;!-- markdownlint-disable -->
+&lt;h4 id="classes">
+ 
+ &lt;a class="title-link" href="#classes">
+ 
+ Classes
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.opentermsarchive.org/api/node/#SourceDocument">SourceDocument&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.opentermsarchive.org/api/node/#new_SourceDocument_new">&lt;code>new SourceDocument(params)&lt;/code>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="functions">
+ 
+ &lt;a class="title-link" href="#functions">
+ 
+ Functions
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.opentermsarchive.org/api/node/#extract">&lt;code>extract(sourceDocument)&lt;/code>&lt;/a> ⇒ &lt;code>Promise.&amp;lt;string&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;a href="https://docs.opentermsarchive.org/api/node/#launchHeadlessBrowser">&lt;code>launchHeadlessBrowser()&lt;/code>&lt;/a> ⇒ &lt;code>Promise.&amp;lt;puppeteer.Browser&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;a href="https://docs.opentermsarchive.org/api/node/#stopHeadlessBrowser">&lt;code>stopHeadlessBrowser()&lt;/code>&lt;/a> ⇒ &lt;code>Promise.&amp;lt;void&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;a href="https://docs.opentermsarchive.org/api/node/#fetch">&lt;code>fetch(params)&lt;/code>&lt;/a> ⇒ &lt;code>Promise.&amp;lt;{mimeType: string, content: (string|Buffer), fetcher: string}&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;a name="SourceDocument">&lt;/a>&lt;/p>
+&lt;h4 id="sourcedocument">
+ 
+ &lt;a class="title-link" href="#sourcedocument">
+ 
+ SourceDocument
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h4>
+&lt;p>&lt;strong>Kind&lt;/strong>: global class&lt;br>
+&lt;a name="new_SourceDocument_new">&lt;/a>&lt;/p>
+&lt;h5 id="new-sourcedocumentparams">
+ 
+ &lt;a class="title-link" href="#new-sourcedocumentparams">
+ 
+ &lt;code>new SourceDocument(params)&lt;/code>
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h5>
+&lt;p>Represents a source document containing web content and metadata for extraction.&lt;br>
+Includes the document location, selectors for content inclusion/exclusion,&lt;br>
+content filters, raw content data, and MIME type information.&lt;/p></description></item><item><title>Collection REST API</title><link>https://docs.opentermsarchive.org/api/collection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/api/collection/</guid><description>&lt;h1 id="collection-rest-api">
+ 
+ Collection REST API
+ 
+
+ 
+&lt;/h1>
+&lt;p>As Open Terms Archive is decentralised, each instance embarks its own API. The documentation relevant to the specific version of the engine on that instance is provided on that instance itself.&lt;/p>
+&lt;p>The Collection API exposes JSON data over HTTP. Its &lt;a href="https://swagger.io/specification/">OpenAPI&lt;/a> specification can be found at &lt;code>http://localhost:&amp;lt;port&amp;gt;/&amp;lt;basePath&amp;gt;/&amp;lt;API version&amp;gt;/docs&lt;/code>.&lt;/p>
+&lt;p>That endpoint exposes both the OpenAPI specification if the requested &lt;code>Content-Type&lt;/code> is JSON, and a Swagger UI for visual and interactive documentation otherwise.&lt;/p></description></item><item><title>Federation REST API</title><link>https://docs.opentermsarchive.org/api/federation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/api/federation/</guid><description>&lt;h1 id="federation-rest-api">
+ 
+ Federation REST API
+ 
+
+ 
+&lt;/h1>
+&lt;p>Open Terms Archive is a decentralised system that tracks collections of services&amp;rsquo; terms across multiple servers. Each collection operates its own API, and the Federation API unifies search and discovery across collections, fostering collaboration with external applications.&lt;/p>
+&lt;p>The Federation API exposes JSON data over HTTP. Its &lt;a href="http://162.19.74.224/federation-api/v1/docs/">documentation&lt;/a> is provided in a dedicated, interactive interface.&lt;/p>
+&lt;p>That endpoint exposes both the &lt;a href="https://swagger.io/specification/">OpenAPI&lt;/a> specification if the requested &lt;code>Content-Type&lt;/code> is JSON, and a Swagger UI for visual and interactive documentation otherwise.&lt;/p></description></item></channel></rss>

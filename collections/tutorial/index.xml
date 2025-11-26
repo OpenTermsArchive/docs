@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorials on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/collections/tutorial/</link><description>Recent content in Tutorials on Open Terms Archive documentation</description><generator>Hugo</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/collections/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>Create your first collection</title><link>https://docs.opentermsarchive.org/collections/tutorial/create/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/tutorial/create/</guid><description>&lt;h1 id="create-your-first-collection">
+ 
+ Create your first collection
+ 
+
+ 
+&lt;/h1>
+&lt;p>This tutorial will guide you through creating your first Open Terms Archive collection.&lt;/p>
+&lt;p>By the end, you&amp;rsquo;ll have a working collection that tracks changes to a service&amp;rsquo;s privacy policy. You will also have a basic understanding of how to create a collection.&lt;/p>
+&lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
+ Prerequisites
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://nodejs.org/en">Node.js&lt;/a> (version 
+
+
+
+
+ 
+
+ 
+&amp;gt;=20.0.0 &amp;lt; 23.0.0) is installed on your system.&lt;/li>
+&lt;li>You have basic familiarity with the command line.&lt;/li>
+&lt;li>You know how to use a text editor.&lt;/li>
+&lt;/ul>
+&lt;h2 id="create-a-collection">
+ 
+ &lt;a class="title-link" href="#create-a-collection">
+ 
+ Create a collection
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;h3 id="step-1-set-up-the-directory-structure">
+ 
+ &lt;a class="title-link" href="#step-1-set-up-the-directory-structure">
+ 
+ Step 1: Set up the directory structure
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Create a new directory:&lt;/p></description></item></channel></rss>

@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>References on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/collections/reference/</link><description>Recent content in References on Open Terms Archive documentation</description><generator>Hugo</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/collections/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Collection roles reference</title><link>https://docs.opentermsarchive.org/collections/reference/roles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/roles/</guid><description>&lt;h1 id="collection-roles-reference">
+ 
+ Collection roles reference
+ 
+
+ 
+&lt;/h1>
+&lt;p>Each role represents a set of responsibilities and tasks that contribute to the collection’s success. A role can be filled by one or multiple people or organisations, and one entity can fulfill multiple roles. All roles can be either volunteer or paid positions, depending on the collection’s resources and needs.&lt;/p>
+&lt;h2 id="roles">
+ 
+ &lt;a class="title-link" href="#roles">
+ 
+ Roles
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;h3 id="host">
+ 
+ &lt;a class="title-link" href="#host">
+ 
+ Host
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h3>
+&lt;p>Ensures the availability of the infrastructure required for the collection&amp;rsquo;s operation.&lt;/p></description></item><item><title>Metadata</title><link>https://docs.opentermsarchive.org/collections/reference/metadata/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/metadata/</guid><description>&lt;h1 id="collection-metadata">
+ 
+ Collection metadata
+ 
+
+ 
+&lt;/h1>
+&lt;p>This reference documentation details all available metadata fields that can be specified in a collection&amp;rsquo;s metadata file.&lt;/p>
+&lt;p>The examples given throughout this reference can be seen in context in the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations/blob/main/metadata.yml">complete metadata file&lt;/a> and rendered in the &lt;a href="https://opentermsarchive.org/en/collections/demo/">collection page&lt;/a> of the Demo collection.&lt;/p>
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THE FOLLOWING SECTION MANUALLY -->
+&lt;h2 id="fields">
+ 
+ &lt;a class="title-link" href="#fields">
+ 
+ Fields
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-id">
+ &lt;a href="#ref-id" class="refItem-name">
+ &lt;code>id&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;span class="refItem-required">required&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">Unique identifier derived from name (acronyms, dash-separated).&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>demo&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-name">
+ &lt;a href="#ref-name" class="refItem-name">
+ &lt;code>name&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;span class="refItem-required">required&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">Display name of the collection.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>Demo Collection&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-tagline">
+ &lt;a href="#ref-tagline" class="refItem-name">
+ &lt;code>tagline&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;span class="refItem-required">required&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">Concise description of collection topic.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>Services used by Open Terms Archive&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-languages">
+ &lt;a href="#ref-languages" class="refItem-name">
+ &lt;code>languages&lt;/code>
+ &lt;span class="refItem-type">array of strings&lt;/span>
+ 
+ &lt;span class="refItem-required">required&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">List of &lt;a href="https://en.wikipedia.org/wiki/ISO_639">ISO 639-1 (two-letter)&lt;/a> language codes representing languages allowed in the collection.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>[en, fr, de]&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-jurisdictions">
+ &lt;a href="#ref-jurisdictions" class="refItem-name">
+ &lt;code>jurisdictions&lt;/code>
+ &lt;span class="refItem-type">array of strings&lt;/span>
+ 
+ &lt;span class="refItem-required">required&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">List of &lt;a href="https://en.wikipedia.org/wiki/ISO_3166-2">ISO 3166-2 country codes&lt;/a> representing jurisdictions covered by the collection.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>[EU]&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-description">
+ &lt;a href="#ref-description" class="refItem-name">
+ &lt;code>description&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">Detailed description of the collection&lt;/div>
+ &lt;div class="refItem-details refItem-details__full">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="l">The **Demo** collection tracks changes to the terms of use of services used by Open Terms Archive.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="l">This provides a reference collection for best practices and enables the Open Terms Archive Core Team to be a user of the software it produces.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-dataset">
+ &lt;a href="#ref-dataset" class="refItem-name">
+ &lt;code>dataset&lt;/code>
+ &lt;span class="refItem-type">uri&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">URL to the dataset releases.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>https://github.com/OpenTermsArchive/demo-versions/releases&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-declarations">
+ &lt;a href="#ref-declarations" class="refItem-name">
+ &lt;code>declarations&lt;/code>
+ &lt;span class="refItem-type">uri&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">URL to the declarations repository.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>https://github.com/OpenTermsArchive/demo-declarations&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-versions">
+ &lt;a href="#ref-versions" class="refItem-name">
+ &lt;code>versions&lt;/code>
+ &lt;span class="refItem-type">uri&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">URL to the versions repository.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>https://github.com/OpenTermsArchive/demo-versions&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-snapshots">
+ &lt;a href="#ref-snapshots" class="refItem-name">
+ &lt;code>snapshots&lt;/code>
+ &lt;span class="refItem-type">uri&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">URL to the snapshots repository.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>https://github.com/OpenTermsArchive/demo-snapshots&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-donations">
+ &lt;a href="#ref-donations" class="refItem-name">
+ &lt;code>donations&lt;/code>
+ &lt;span class="refItem-type">uri&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">URL to the donations page.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>https://opencollective.com/opentermsarchive&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-logo">
+ &lt;a href="#ref-logo" class="refItem-name">
+ &lt;code>logo&lt;/code>
+ &lt;span class="refItem-type">uri&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">URL to the collection&amp;rsquo;s logo. Optimized PNG transparent image (minimum width 240px).&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>https://opentermsarchive.org/images/logo/logo-open-terms-archive-black.png&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-trackingperiods">
+ &lt;a href="#ref-trackingperiods" class="refItem-name">
+ &lt;code>trackingPeriods&lt;/code>
+ &lt;span class="refItem-type">array of objects&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">List of time periods during which terms were tracked, with their tracking configuration. Gaps between periods indicate times when tracking was interrupted. See &lt;a href="#trackingperiods">TrackingPeriods&lt;/a> section.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-governance">
+ &lt;a href="#ref-governance" class="refItem-name">
+ &lt;code>governance&lt;/code>
+ &lt;span class="refItem-type">object of objects&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">Map of organizations involved in the collection&amp;rsquo;s governance, with organization names as keys and governance objects as values. See &lt;a href="#governance">Governance&lt;/a> section.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-i18n">
+ &lt;a href="#ref-i18n" class="refItem-name">
+ &lt;code>i18n&lt;/code>
+ &lt;span class="refItem-type">object of objects&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">Internationalization of any of the Metadata properties (except i18n itself) for different language codes&lt;/div>
+ &lt;div class="refItem-details refItem-details__full">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">fr&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Démo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">tagline&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Services utilisés par Open Terms Archive&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">governance&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">Ministry for Europe and Foreign Affairs&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Ministère de l&amp;#39;Europe et des Affaires étrangères&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">url&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://www.diplomatie.gouv.fr&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;hr>
+&lt;h3 id="trackingperiods">
+ 
+ &lt;a class="title-link" href="#trackingperiods">
+ 
+ TrackingPeriods
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h3>
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-startdate">
+ &lt;a href="#ref-startdate" class="refItem-name">
+ &lt;code>startDate&lt;/code>
+ &lt;span class="refItem-type">date&lt;/span>
+ 
+ &lt;span class="refItem-required">required&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">The date when tracking started for this period (ISO 8601 format YYYY-MM-DD).&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>2023-01-01&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-schedule">
+ &lt;a href="#ref-schedule" class="refItem-name">
+ &lt;code>schedule&lt;/code>
+ &lt;span class="refItem-type">cron-expression&lt;/span>
+ 
+ &lt;span class="refItem-required">required&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">A &lt;a href="https://en.wikipedia.org/wiki/Cron#Cron_expression">cron expression&lt;/a> that defines the tracking frequency.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>0 0 * * *&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-serverlocation">
+ &lt;a href="#ref-serverlocation" class="refItem-name">
+ &lt;code>serverLocation&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;span class="refItem-required">required&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">The geographic location of the tracking server (city name and ISO 3166-2 country code).&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>Paris, FR&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-enddate">
+ &lt;a href="#ref-enddate" class="refItem-name">
+ &lt;code>endDate&lt;/code>
+ &lt;span class="refItem-type">date&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">The date when tracking ended for this period (ISO 8601 format YYYY-MM-DD). If not specified, tracking is ongoing.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>2023-12-01&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;hr>
+&lt;h3 id="governance">
+ 
+ &lt;a class="title-link" href="#governance">
+ 
+ Governance
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h3>
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-url">
+ &lt;a href="#ref-url" class="refItem-name">
+ &lt;code>url&lt;/code>
+ &lt;span class="refItem-type">uri&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">URL to the entity&amp;rsquo;s website&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>https://opentermsarchive.org/&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-logo">
+ &lt;a href="#ref-logo" class="refItem-name">
+ &lt;code>logo&lt;/code>
+ &lt;span class="refItem-type">uri&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">URL to the entity&amp;rsquo;s logo. Optimized PNG transparent image (minimum width 240px).&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>https://opentermsarchive.org/images/logo/logo-open-terms-archive-black.png&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-roles">
+ &lt;a href="#ref-roles" class="refItem-name">
+ &lt;code>roles&lt;/code>
+ &lt;span class="refItem-type">array of strings&lt;/span>
+ 
+ &lt;span class="refItem-required">required&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">Roles of the entity within the governance, see &lt;a href="https://docs.opentermsarchive.org/collections/reference/governance/">collection governance&lt;/a>&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-allowed-values">&lt;span class="refItem-label">Allowed values&lt;/span>
+ &lt;span class="refItem-allowed-values-list">
+ 
+ &lt;code>&lt;code>host&lt;/code>&lt;/code>
+ 
+ &lt;code>&lt;code>sysadmin&lt;/code>&lt;/code>
+ 
+ &lt;code>&lt;code>curator&lt;/code>&lt;/code>
+ 
+ &lt;code>&lt;code>maintainer&lt;/code>&lt;/code>
+ 
+ &lt;code>&lt;code>contributor&lt;/code>&lt;/code>
+ 
+ &lt;code>&lt;code>analyst&lt;/code>&lt;/code>
+ 
+ &lt;code>&lt;code>diffuser&lt;/code>&lt;/code>
+ 
+ &lt;code>&lt;code>sponsor&lt;/code>&lt;/code>
+ 
+ &lt;/span>
+ &lt;/div>
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>[host, sysadmin]&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div></description></item><item><title>Configuration</title><link>https://docs.opentermsarchive.org/collections/reference/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/configuration/</guid><description>&lt;h1 id="configuration-options">
+ 
+ Configuration options
+ 
+
+ 
+&lt;/h1>
+&lt;p>This reference documentation details all available configuration options that can be specified in a collection&amp;rsquo;s configuration file to configure the Open Terms Archive engine.&lt;/p>
+&lt;p>As an example, see the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations/blob/main/config/production.json">production configuration file&lt;/a> of the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations">Demo collection&lt;/a>.&lt;/p>
+&lt;h2 id="options">
+ 
+ &lt;a class="title-link" href="#options">
+ 
+ Options
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-trackingschedule">
+ &lt;a href="#ref-trackingschedule" class="refItem-name">
+ &lt;code>trackingSchedule&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">Defines how often the engine should check for changes in terms. Uses standard cron syntax to set the schedule. By default, it runs every 12 hours at minute 30.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ &lt;div class="refItem-default">
+ &lt;span>Default:&lt;/span>
+ &lt;code>30 */12 * * *&lt;/code>
+ &lt;/div>
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-collectionpath">
+ &lt;a href="#ref-collectionpath" class="refItem-name">
+ &lt;code>collectionPath&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">Path to the collection&amp;rsquo;s directory containing declarations directory and metadata file, relative to the engine execution location&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ &lt;div class="refItem-default">
+ &lt;span>Default:&lt;/span>
+ &lt;code>./&lt;/code>
+ &lt;/div>
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>../collections/demo-declarations&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;h3 id="recorder">
+ 
+ &lt;a class="title-link" href="#recorder">
+ 
+ Recorder
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h3>
+&lt;p>The recorder section manages how versions and snapshots of terms are stored, supporting multiple storage backends.&lt;/p></description></item><item><title>Environment variables</title><link>https://docs.opentermsarchive.org/collections/reference/environment-variables/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/environment-variables/</guid><description>&lt;h2 id="environment-variables">
+ 
+ &lt;a class="title-link" href="#environment-variables">
+ 
+ Environment variables
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>This reference documentation details all available environment variables that can be used to configure sensitive information. These variables can be defined in a &lt;code>.env&lt;/code> file at the root of the collection repository.&lt;/p>
+&lt;h3 id="engine">
+ 
+ &lt;a class="title-link" href="#engine">
+ 
+ Engine
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h3>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-ota-engine-smtp-password">
+ &lt;a href="#ref-ota-engine-smtp-password" class="refItem-name">
+ &lt;code>OTA_ENGINE_SMTP_PASSWORD&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">SMTP password for email error notifications.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-ota-engine-sendinblue-api-key">
+ &lt;a href="#ref-ota-engine-sendinblue-api-key" class="refItem-name">
+ &lt;code>OTA_ENGINE_SENDINBLUE_API_KEY&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">API key for SendInBlue.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-ota-engine-github-token">
+ &lt;a href="#ref-ota-engine-github-token" class="refItem-name">
+ &lt;code>OTA_ENGINE_GITHUB_TOKEN&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">GitHub token for API access and dataset publishing. If both GitHub and GitLab tokens are configured, GitHub takes precedence for dataset publishing.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-ota-engine-gitlab-token">
+ &lt;a href="#ref-ota-engine-gitlab-token" class="refItem-name">
+ &lt;code>OTA_ENGINE_GITLAB_TOKEN&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">GitLab token for API access and dataset publishing. Used only if GitHub token is not configured.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-ota-engine-gitlab-releases-token">
+ &lt;a href="#ref-ota-engine-gitlab-releases-token" class="refItem-name">
+ &lt;code>OTA_ENGINE_GITLAB_RELEASES_TOKEN&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">GitLab token for dataset releases.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-ota-engine-datagouv-api-key">
+ &lt;a href="#ref-ota-engine-datagouv-api-key" class="refItem-name">
+ &lt;code>OTA_ENGINE_DATAGOUV_API_KEY&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">API key for data.gouv.fr dataset publishing.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;hr>
+&lt;h3 id="federation-api">
+ 
+ &lt;a class="title-link" href="#federation-api">
+ 
+ Federation API
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h3>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-ota-federation-api-smtp-password">
+ &lt;a href="#ref-ota-federation-api-smtp-password" class="refItem-name">
+ &lt;code>OTA_FEDERATION_API_SMTP_PASSWORD&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">SMTP password for email error notifications.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div></description></item><item><title>Status</title><link>https://docs.opentermsarchive.org/collections/reference/status/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/status/</guid><description>&lt;h1 id="collection-status">
+ 
+ Collection status
+ 
+
+ 
+&lt;/h1>
+&lt;p>This reference documentation outlines the different status levels that a collection can have within the system. Understanding these statuses is crucial for users to assess a collection&amp;rsquo;s quality and reliability.&lt;/p>
+&lt;h3 id="active">
+ 
+ &lt;a class="title-link" href="#active">
+ 
+ Active
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h3>
+&lt;p>The optimal operational state for a collection.&lt;/p>
+&lt;ul>
+&lt;li>The collection saves records regularly through actively maintained and updated terms declarations. The number of tracked terms remains stable or increases over time. The versions quality is high.&lt;/li>
+&lt;li>Technical maintenance includes regular dependency updates, access to the latest engine features, and benefits from all infrastructure updates.&lt;/li>
+&lt;li>All &lt;a href="https://docs.opentermsarchive.org/collections/reference/roles/">roles&lt;/a> are fulfilled.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="abandoned">
+ 
+ &lt;a class="title-link" href="#abandoned">
+ 
+ Abandoned
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h3>
+&lt;p>Collection may be functional but shows clear signs of neglect.&lt;/p></description></item></channel></rss>

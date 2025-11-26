@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>How to guides on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/deployment/how-to/</link><description>Recent content in How to guides on Open Terms Archive documentation</description><generator>Hugo</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/deployment/how-to/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploy a collection</title><link>https://docs.opentermsarchive.org/deployment/how-to/deploy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/deployment/how-to/deploy/</guid><description>&lt;h1 id="how-to-deploy-a-collection">
+ 
+ How to deploy a collection
+ 
+
+ 
+&lt;/h1>
+&lt;p>This guide will help you deploy an Open Terms Archive collection to a server. The deployment is automated using &lt;a href="https://docs.ansible.com/ansible/latest/index.html">Ansible&lt;/a> and will set up the Open Terms Archive engine and configure it to track your collection&amp;rsquo;s terms.&lt;/p>
+&lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
+ Prerequisites
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>Before starting, ensure you have:&lt;/p>
+&lt;ul>
+&lt;li>A basic understanding of the &lt;a href="https://docs.opentermsarchive.org/deployment/reference/architecture/">deployment architecture&lt;/a>&lt;/li>
+&lt;li>A server with admin access&lt;/li>
+&lt;li>All collections repositories created, if not, see the &lt;a href="https://docs.opentermsarchive.org/collections/how-to/create-repositories/">guide to create repositories&lt;/a>&lt;/li>
+&lt;li>At least one declaration added to your collection&lt;/li>
+&lt;li>A GitHub user account to automate actions such as committing entries in versions and snapshots repositories, reporting issues when tracking fails, publishing releases…&lt;/li>
+&lt;li>&lt;a href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html">Ansible&lt;/a> installed on your local machine&lt;/li>
+&lt;/ul>
+&lt;h2 id="1-configure-the-server">
+ 
+ &lt;a class="title-link" href="#1-configure-the-server">
+ 
+ 1. Configure the server
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>First, ensure your server provides unsupervised access:&lt;/p></description></item><item><title>Set up GitHub teams</title><link>https://docs.opentermsarchive.org/deployment/how-to/setup-github-teams/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/deployment/how-to/setup-github-teams/</guid><description>&lt;h1 id="how-to-set-up-github-teams-for-a-collection">
+ 
+ How to set up GitHub teams for a collection
+ 
+
+ 
+&lt;/h1>
+&lt;p>This guide explains how to configure GitHub teams and permissions for a new collection in the Open Terms Archive organization. For third-party collections outside the organization, you can handle permissions according to your own needs.&lt;/p>
+&lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
+ Prerequisites
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;ul>
+&lt;li>Admin access to the OpenTermsArchive GitHub organization&lt;/li>
+&lt;li>The collection name and icon&lt;/li>
+&lt;li>List of team members to add&lt;/li>
+&lt;li>The three collection repositories (declarations, snapshots, versions) already created&lt;/li>
+&lt;/ul>
+&lt;h2 id="steps">
+ 
+ &lt;a class="title-link" href="#steps">
+ 
+ Steps
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Create the collection team:&lt;/p></description></item></channel></rss>

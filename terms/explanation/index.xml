@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Explanations on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/terms/explanation/</link><description>Recent content in Explanations on Open Terms Archive documentation</description><generator>Hugo</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/terms/explanation/index.xml" rel="self" type="application/rss+xml"/><item><title>Understanding terms types</title><link>https://docs.opentermsarchive.org/terms/explanation/terms-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/explanation/terms-types/</guid><description>&lt;h1 id="terms-types-a-foundation-of-a-consistent-archive">
+ 
+ Terms types: a foundation of a consistent archive
+ 
+
+ 
+&lt;/h1>
+&lt;h2 id="what-are-terms-types">
+ 
+ &lt;a class="title-link" href="#what-are-terms-types">
+ 
+ What are terms types?
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>Terms types are standardized categories that classify the different kinds of terms and conditions documents, serving as a common language for organizing and comparing terms across services.&lt;/p>
+&lt;h2 id="why-standardized-terms-types-are-needed">
+ 
+ &lt;a class="title-link" href="#why-standardized-terms-types-are-needed">
+ 
+ Why standardized terms types are needed
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>Services often use different names for the same type of terms. For instance, &amp;ldquo;Terms and Conditions&amp;rdquo; might be called &amp;ldquo;Terms of Use&amp;rdquo; or &amp;ldquo;Terms of Service&amp;rdquo; by different services. This kind of inconsistency creates significant challenges in finding and comparing similar terms documents across different services. It also makes it difficult to maintain a consistent structure in all collections, and to ensure a comprehensive coverage of all legal documents.&lt;/p></description></item><item><title>Filters</title><link>https://docs.opentermsarchive.org/terms/explanation/filters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/explanation/filters/</guid><description>&lt;h1 id="filters">
+ 
+ Filters
+ 
+
+ 
+&lt;/h1>
+&lt;p>Filters enable solving &lt;a href="https://docs.opentermsarchive.org/terms/guideline/declaring/#usual-noise">noise&lt;/a> issues in versions that cannot be addressed with direct selection or removal of content using selectors.&lt;/p>
+&lt;h2 id="when-filters-are-needed">
+ 
+ &lt;a class="title-link" href="#when-filters-are-needed">
+ 
+ When filters are needed
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>Use filters when:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Content selectors are insufficient&lt;/strong>, for example when noise appears within content that can&amp;rsquo;t be targeted with CSS selectors or &lt;a href="https://docs.opentermsarchive.org/terms/explanation/range-selectors/">range selectors&lt;/a> with the &lt;a href="https://docs.opentermsarchive.org/terms/reference/declaration/#ref-select">&lt;code>select&lt;/code>&lt;/a> and &lt;a href="https://docs.opentermsarchive.org/terms/reference/declaration/#ref-remove">&lt;code>remove&lt;/code>&lt;/a> properties.&lt;/li>
+&lt;li>&lt;strong>Content is dynamically generated&lt;/strong>, for example when elements change on each page load with changing classes or IDs that cannot be targeted with &lt;a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors">attribute selectors&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Complex tasks are needed&lt;/strong>, for example when content transformation is required such as converting images to base64 to store them in the terms version or converting date-based content to a stable format (like “Updated X days ago” to “Last updated on YYYY-MM-DD”).&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-filters-work">
+ 
+ &lt;a class="title-link" href="#how-filters-work">
+ 
+ How filters work
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>Filters are JavaScript functions that can manipulate the DOM structure directly. They modify the document structure and content in-place.&lt;/p></description></item><item><title>Technical upgrades</title><link>https://docs.opentermsarchive.org/terms/explanation/technical-upgrades/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/explanation/technical-upgrades/</guid><description>&lt;h1 id="technical-upgrades">
+ 
+ Technical upgrades
+ 
+
+ 
+&lt;/h1>
+&lt;h2 id="what-is-the-technical-upgrades-process">
+ 
+ &lt;a class="title-link" href="#what-is-the-technical-upgrades-process">
+ 
+ What is the technical upgrades process
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>The technical upgrade process creates new versions by re-extracting content from the latest snapshots when there are changes not in service terms content, but in the system that extracts them (declarations, filters, engine, or dependencies).&lt;/p>
+&lt;h2 id="why-technical-upgrades-are-important">
+ 
+ &lt;a class="title-link" href="#why-technical-upgrades-are-important">
+ 
+ Why technical upgrades are important
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>Technical upgrades solve the critical problem of &lt;strong>distinguishing between actual content changes and extraction improvements&lt;/strong>.&lt;/p></description></item><item><title>Declarations maintenance</title><link>https://docs.opentermsarchive.org/terms/explanation/declarations-maintenance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/explanation/declarations-maintenance/</guid><description>&lt;h1 id="declarations-maintenance">
+ 
+ Declarations maintenance
+ 
+
+ 
+&lt;/h1>
+&lt;p>All parts of a &lt;strong>terms&lt;/strong> &lt;strong>declaration&lt;/strong> (web location, selection, noise removal, distribution across multiple documents…) can change over time. The process of updating these elements to enable continued &lt;strong>tracking&lt;/strong> is called &lt;strong>maintenance&lt;/strong>. Without it, &lt;strong>terms&lt;/strong> can become:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>unreachable&lt;/strong>: no &lt;strong>snapshot&lt;/strong> can be &lt;strong>recorded&lt;/strong> at all, because the &lt;strong>location&lt;/strong> changed or the &lt;strong>service&lt;/strong> denies access;&lt;/li>
+&lt;li>&lt;strong>unextractable&lt;/strong>: no &lt;strong>version&lt;/strong> can be &lt;strong>extracted&lt;/strong> from the &lt;strong>snapshot&lt;/strong>, because the selection of content or some &lt;strong>filter&lt;/strong> fails;&lt;/li>
+&lt;li>&lt;strong>noisy&lt;/strong>: both &lt;strong>snapshots&lt;/strong> and &lt;strong>versions&lt;/strong> are &lt;strong>recorded&lt;/strong> but the &lt;strong>changes&lt;/strong> contain &lt;strong>noise&lt;/strong> that should have been &lt;strong>filtered out&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;p>Open Terms Archive needs to keep track of this changes in order to regenerate versions history from snapshots history.&lt;/p></description></item><item><title>Range selectors</title><link>https://docs.opentermsarchive.org/terms/explanation/range-selectors/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/explanation/range-selectors/</guid><description>&lt;h2 id="range-selectors">
+ 
+ &lt;a class="title-link" href="#range-selectors">
+ 
+ Range selectors
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>When no unique wrapper element exists for the whole terms content, there is no easy way to select the content with only CSS selectors. Content between two elements in a document can be selected using a range selector, regardless of their DOM position. The concept is inspired by the DOM &lt;a href="https://developer.mozilla.org/en-US/docs/Web/API/Range">Range API&lt;/a>, where content is defined by start and end points that may be included or excluded. The format is defined as a JSON object:&lt;/p></description></item></channel></rss>

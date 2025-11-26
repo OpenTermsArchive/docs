@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Explanations on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/collections/explanation/</link><description>Recent content in Explanations on Open Terms Archive documentation</description><generator>Hugo</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/collections/explanation/index.xml" rel="self" type="application/rss+xml"/><item><title>Reporting</title><link>https://docs.opentermsarchive.org/collections/explanation/reporting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/explanation/reporting/</guid><description>&lt;h1 id="reporting">
+ 
+ Reporting
+ 
+
+ 
+&lt;/h1>
+&lt;p>Over the lifetime of a collection, services will change the location, layout or distribution of their terms. This can impact tracking. In order to ensure continuous data collection, maintainers need to know if the tracking of any terms fails. To address this need, the Open Terms Archive engine automatically reports failures by opening issues in the declarations repository.&lt;/p>
+&lt;h2 id="how-the-reporting-system-works">
+ 
+ &lt;a class="title-link" href="#how-the-reporting-system-works">
+ 
+ How the reporting system works
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>When some terms fail to track, an issue is opened that explains the reason for failure and is labelled based on the cause of the tracking interruption. The system also automatically closes issues when tracking resumes.&lt;/p></description></item></channel></rss>

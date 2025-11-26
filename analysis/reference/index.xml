@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>References on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/analysis/reference/</link><description>Recent content in References on Open Terms Archive documentation</description><generator>Hugo</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/analysis/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Memo copywriting reference</title><link>https://docs.opentermsarchive.org/analysis/reference/copywriting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/analysis/reference/copywriting/</guid><description>&lt;h1 id="memo-copywriting">
+ 
+ Memo copywriting
+ 
+
+ 
+&lt;/h1>
+&lt;p>Each memo must be composed of the elements detailed below. You must follow this structure when writing your memos.&lt;/p>
+&lt;h2 id="title">
+ 
+ &lt;a class="title-link" href="#title">
+ 
+ Title
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;ul>
+&lt;li>Write a short declarative sentence to highlight the key change.&lt;/li>
+&lt;li>140 characters maximum.&lt;/li>
+&lt;li>Use the name of the service as the subject.&lt;/li>
+&lt;li>Write in the present tense.&lt;/li>
+&lt;li>Prefer active phrasings over passive (e.g., “Microsoft expands reach” rather than “Reach expanded by Microsoft“).&lt;/li>
+&lt;li>Describe the policy change, not the name of the document. This information will be given in the metadata below.&lt;/li>
+&lt;li>Use no punctuation.&lt;/li>
+&lt;li>Do not put a link in the title because in some reuse contexts the entire title is a link to the memo.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Examples&lt;/strong>&lt;/p></description></item></channel></rss>

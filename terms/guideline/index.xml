@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Guidelines on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/terms/guideline/</link><description>Recent content in Guidelines on Open Terms Archive documentation</description><generator>Hugo</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/terms/guideline/index.xml" rel="self" type="application/rss+xml"/><item><title>Choosing selectors</title><link>https://docs.opentermsarchive.org/terms/guideline/choosing-selectors/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/guideline/choosing-selectors/</guid><description>&lt;h1 id="choosing-selectors">
+ 
+ Choosing selectors
+ 
+
+ 
+&lt;/h1>
+&lt;p>Selectors are used in Open Terms Archive declarations to specify the parts of documents that should be recorded.&lt;/p>
+&lt;h2 id="what-are-selectors">
+ 
+ &lt;a class="title-link" href="#what-are-selectors">
+ 
+ What are selectors
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>Selectors are used in the &lt;a href="https://docs.opentermsarchive.org/terms/reference/#select">&lt;code>select&lt;/code>&lt;/a> and &lt;a href="https://docs.opentermsarchive.org/terms/reference/#remove">&lt;code>remove&lt;/code>&lt;/a> keys of an Open Terms Archive declaration.&lt;/p>
+&lt;p>The “selectors” referred to are defined by the &lt;a href="https://www.w3.org/TR/selectors/">W3C Selectors standard&lt;/a>, more commonly known as “CSS Selectors”.&lt;/p>
+&lt;p>An easy-to-read introduction to CSS Selectors can be found on &lt;a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors">MDN web docs&lt;/a>.&lt;/p></description></item><item><title>Declaring terms</title><link>https://docs.opentermsarchive.org/terms/guideline/declaring/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/guideline/declaring/</guid><description>&lt;h1 id="declaring-terms">
+ 
+ Declaring terms
+ 
+
+ 
+&lt;/h1>
+&lt;h2 id="service-name">
+ 
+ &lt;a class="title-link" href="#service-name">
+ 
+ Service name
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;h3 id="casing">
+ 
+ &lt;a class="title-link" href="#casing">
+ 
+ Casing
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h3>
+&lt;ul>
+&lt;li>In order to find the service name casing, rely first on the page title (easily found in search results). Do not rely on the logo as it can be stylised differently. Example with Facebook:&lt;br>
+&lt;img src="https://user-images.githubusercontent.com/222463/91416484-baaa3a00-e84f-11ea-94cf-8805d17aa711.png" alt="Facebook search">&lt;/li>
+&lt;li>If it is still ambiguous, rely on Wikipedia as a source. However, make sure to differentiate the &lt;em>service&lt;/em> from the &lt;em>provider&lt;/em> company&amp;rsquo;s name. Example with “DeviantArt”, a service (which used to be stylised deviantArt until 2014) by the limited liability company “deviantArt”:&lt;br>
+&lt;img src="https://user-images.githubusercontent.com/222463/91416936-5b98f500-e850-11ea-80fe-a50be27356e3.png" alt="deviantArt search">&lt;/li>
+&lt;/ul>
+&lt;h3 id="terms-used-by-several-services">
+ 
+ &lt;a class="title-link" href="#terms-used-by-several-services">
+ 
+ Terms used by several services
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h3>
+&lt;ul>
+&lt;li>If you want to add terms which happen to be shared with another service from the same parent company, be specific in naming the exact service you want to track. For instance, you may find that a company like GitHub uses the same terms for its code hosting and its AI assistant. While this does not mean that the terms for GitHub (code hosting) are the only terms of GitHub Copilot (assistant), it does mean that these two services have terms that are represented in the same document. In tracking terms for one of these services, say GitHub Copilot, be specific in naming it as the service you want to track. This way, if GitHub was to introduce dedicated terms for each of these services in the future, their locations can be updated without having to create new terms since the service already existed before.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="service-id">
+ 
+ &lt;a class="title-link" href="#service-id">
+ 
+ Service ID
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;h3 id="normalisation">
+ 
+ &lt;a class="title-link" href="#normalisation">
+ 
+ Normalisation
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h3>
+&lt;ol>
+&lt;li>For non-roman alphabets (Cyrillic, ideograms…), use the service-provided transliteration.&lt;/li>
+&lt;li>For diacritics: normalise the string to its &lt;code>NFD&lt;/code> normal UTF form, then remove the entire combining character class. &lt;a href="https://stackoverflow.com/a/37511463/594053">Details&lt;/a>.&lt;/li>
+&lt;li>As a last resort, use the domain name.&lt;/li>
+&lt;/ol>
+&lt;h3 id="provider-prefixing">
+ 
+ &lt;a class="title-link" href="#provider-prefixing">
+ 
+ Provider prefixing
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h3>
+&lt;ul>
+&lt;li>If you encounter terms you want to add to a service, yet find that it would override already-declared terms for this service such as Terms of Service or Privacy Policy, and that the only solution you see would be to create a new terms type that would contain the name of the feature, then it is likely you should declare a new service, potentially duplicating existing terms.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Example: the Facebook Community Payments terms are Terms of Service. The only way to declare them in the Facebook service would be to add a “Community Payments Terms” terms type as they would otherwise conflict with Facebook&amp;rsquo;s Terms of Service. It is better to declare a new service called “Facebook Payments” with its own Terms of Service. It turns out that this service also has a developer agreement, independent from the main Facebook service.&lt;/p></description></item><item><title>Reviewing contributions</title><link>https://docs.opentermsarchive.org/terms/guideline/reviewing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/guideline/reviewing/</guid><description>&lt;h1 id="reviewing-contributions">
+ 
+ Reviewing contributions
+ 
+
+ 
+&lt;/h1>
+&lt;p>Thank you for showing interest in reviewing contributions made to Open Terms Archive. This document is intended to help you get started and provide some guidelines for reviewing contributions.&lt;/p>
+&lt;h2 id="why-is-this-important">
+ 
+ &lt;a class="title-link" href="#why-is-this-important">
+ 
+ Why is this important?
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>We want to make sure that the contributions made to the project are of high quality and that they are in line with the vision of the project. We also want to make sure that the contributions are reviewed in a timely manner so that the contributors can get feedback and continue to contribute to the project.&lt;br>
+This is where volunteer reviewers come in to help. Reviewers are people who have volunteered to review contributions made to the project. They are not paid for their work, but they are given credit for their work.&lt;/p></description></item><item><title>Targeting</title><link>https://docs.opentermsarchive.org/terms/guideline/targeting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/guideline/targeting/</guid><description>&lt;h1 id="what-to-track">
+ 
+ What to track?
+ 
+
+ 
+&lt;/h1>
+&lt;h2 id="can-i-track-terms-that-are-not-applicable-yet">
+ 
+ &lt;a class="title-link" href="#can-i-track-terms-that-are-not-applicable-yet">
+ 
+ Can I track terms that are not applicable yet?
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>Yes.&lt;/p>
+&lt;p>For example, terms that would start applying at date in the future are legitimate candidates for tracking. You can this way track if their terms change even before they are applied.&lt;/p></description></item></channel></rss>

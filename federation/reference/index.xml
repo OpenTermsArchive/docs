@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>References on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/federation/reference/</link><description>Recent content in References on Open Terms Archive documentation</description><generator>Hugo</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/federation/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Criteria</title><link>https://docs.opentermsarchive.org/federation/reference/criteria/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/federation/reference/criteria/</guid><description>&lt;h1 id="federation-criteria">
+ 
+ Federation criteria
+ 
+
+ 
+&lt;/h1>
+&lt;p>A &lt;strong>collection&lt;/strong> can &lt;strong>join&lt;/strong> the Open Terms Archive &lt;strong>federation&lt;/strong> if it abides by the following quality criteria:&lt;/p>
+&lt;ol>
+&lt;li>Clearly defined &lt;a href="https://docs.opentermsarchive.org/collections/reference/metadata/">collection metadata&lt;/a>.&lt;/li>
+&lt;li>Clearly defined &lt;a href="https://docs.opentermsarchive.org/collections/reference/roles/">collection governance&lt;/a>.&lt;/li>
+&lt;li>The vast majority of &lt;strong>versions&lt;/strong> are readable, as evidenced by a sample assessment.&lt;/li>
+&lt;li>&lt;strong>Frequency&lt;/strong> of at least one track a day, as evidenced by snapshots.&lt;/li>
+&lt;li>Public and open-licensed &lt;strong>declarations&lt;/strong>, as evidenced by the &lt;code>LICENSE&lt;/code> file in the declarations repository.&lt;/li>
+&lt;li>Public and open-licensed &lt;strong>snapshots&lt;/strong>, as evidenced by the &lt;code>LICENSE&lt;/code> file in the snapshots repository.&lt;/li>
+&lt;li>Public and open-licensed &lt;strong>versions&lt;/strong>, as evidenced by the &lt;code>LICENSE&lt;/code> file in the versions repository.&lt;/li>
+&lt;li>Regular, public, and open-licensed &lt;strong>dataset&lt;/strong> releases, as evidenced by the &lt;code>LICENSE&lt;/code> file in the datasets.&lt;/li>
+&lt;li>Publicly accessible API with median response time under 20 ms, as evidenced by uptime tracking logs.&lt;/li>
+&lt;li>Abide by all Open Terms Archive software and data licenses.&lt;/li>
+&lt;/ol>
+&lt;p>For detailed instructions on joining the federation, refer to the &lt;a href="https://docs.opentermsarchive.org/federation/how-to/join/">How to Join the Federation guide&lt;/a>.&lt;/p></description></item></channel></rss>

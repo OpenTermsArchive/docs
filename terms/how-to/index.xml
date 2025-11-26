@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>How to guides on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/terms/how-to/</link><description>Recent content in How to guides on Open Terms Archive documentation</description><generator>Hugo</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/terms/how-to/index.xml" rel="self" type="application/rss+xml"/><item><title>Track new terms</title><link>https://docs.opentermsarchive.org/terms/how-to/track-terms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/track-terms/</guid><description>&lt;h1 id="how-to-track-new-terms">
+ 
+ How to track new terms
+ 
+
+ 
+&lt;/h1>
+&lt;p>This is a step by step guide to help you add declarations to the &lt;a href="https://github.com/OpenTermsArchive/contrib-declarations">contrib-declaration&lt;/a> repository. This repository is dedicated for volunteer contribution of declarations to Open Terms Archive.&lt;/p>
+&lt;p>Having understood briefly how a declaration is structured in JSON format, we need to look at concrete steps on how you can add these JSON files to the repository.&lt;/p>
+&lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
+ Prerequisites
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>In order to add declarations:&lt;/p></description></item><item><title>How to track terms using the graphical contribution interface</title><link>https://docs.opentermsarchive.org/terms/how-to/track-terms-using-ui/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/track-terms-using-ui/</guid><description>&lt;h1 id="how-to-track-terms-using-the-graphical-contribution-interface">
+ 
+ How to track terms using the graphical contribution interface
+ 
+
+ 
+&lt;/h1>
+&lt;h2 id="screencast">
+ 
+ &lt;a class="title-link" href="#screencast">
+ 
+ Screencast
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>Learn how add terms with the graphical contribution interface in this 6 minutes video.&lt;/p>
+&lt;video width="100%" height="auto" controls>
+ &lt;source src="https://cloud.opentermsarchive.org/index.php/s/Me7CKmC2RPSK3mT/download/how-to-add-terms-using-the-contribution-tool.mp4#t=0.1" />
+&lt;/video>
+
+&lt;h2 id="manual">
+ 
+ &lt;a class="title-link" href="#manual">
+ 
+ Manual
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;h3 id="blank-page-when-contacting-support">
+ 
+ &lt;a class="title-link" href="#blank-page-when-contacting-support">
+ 
+ Blank page when contacting support
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h3>
+&lt;p>While using the graphical user interface for contribution, you may come across a blank page when trying to contact the team.&lt;/p>
+&lt;p>This may be caused by the lack of a mail program being set up in your browser.&lt;/p></description></item><item><title>How to test your declarations</title><link>https://docs.opentermsarchive.org/terms/how-to/test-declarations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/test-declarations/</guid><description>&lt;h1 id="how-to-test-your-declarations">
+ 
+ How to test your declarations
+ 
+
+ 
+&lt;/h1>
+&lt;p>When creating or modifying service declarations, it’s important to verify they work as expected before starting to track in production. The Open Terms Archive engine provides automated testing tools to that end.&lt;/p>
+&lt;p>The basic usage to test all declarations in a collection is:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">npx ota validate declarations
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="testing-specific-services">
+ 
+ &lt;a class="title-link" href="#testing-specific-services">
+ 
+ Testing specific services
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>When iterating over a specific declaration, or to narrow down testing in larger collections, the &lt;code>--services&lt;/code> and &lt;code>--terms&lt;/code> options enable testing a single service declaration, or even single terms:&lt;/p></description></item><item><title>How to be notified of terms changes</title><link>https://docs.opentermsarchive.org/terms/how-to/be-notified/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/be-notified/</guid><description>&lt;h1 id="how-to-be-notified-of-terms-changes">
+ 
+ How to be notified of terms changes
+ 
+
+ 
+&lt;/h1>
+&lt;p>An RSS feed is a type of web page that contains information about the latest content published by a website, such as the date of publication and the address where you can view it. When this resource is updated, a feed reader app automatically notifies you and you can see the update. You can receive notification for a specific service or document by subscribing to RSS feeds.&lt;/p></description></item><item><title>Manage a custom terms type</title><link>https://docs.opentermsarchive.org/terms/how-to/manage-custom-terms-type/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/manage-custom-terms-type/</guid><description>&lt;h1 id="how-to-manage-a-custom-terms-type">
+ 
+ How to manage a custom terms type
+ 
+
+ 
+&lt;/h1>
+&lt;p>When tracking terms and conditions across different services, you might encounter situations where a service uses terms types that aren&amp;rsquo;t yet supported by Open Terms Archive.&lt;/p>
+&lt;p>This guide will help you handle these custom terms types effectively, whether you&amp;rsquo;re working on a new collection or expanding an existing one.&lt;/p>
+&lt;p>&lt;em>To better understand what terms types are and how they work, you can read our &lt;a href="https://docs.opentermsarchive.org/terms/explanation/terms-types/">detailed explanation&lt;/a>.&lt;/em>&lt;/p></description></item><item><title>How to rename a service</title><link>https://docs.opentermsarchive.org/terms/how-to/rename-a-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/rename-a-service/</guid><description>&lt;h1 id="how-to-rename-a-service">
+ 
+ How to rename a service
+ 
+
+ 
+&lt;/h1>
+&lt;p>The consensus is to consider that a service provider renaming a service (for example, &lt;code>Twitter&lt;/code> to &lt;code>X&lt;/code>) is akin to terminating the previous service and opening a new one. Therefore, to apply a service renaming, open a pull request that both &lt;a href="https://docs.opentermsarchive.org/terms/how-to/terminate-a-service/">terminates the previous service&lt;/a> and adds a new &lt;a href="https://docs.opentermsarchive.org/terms/how-to/track-terms/#declaring-a-new-service">service declaration&lt;/a> with the new service name. You can reuse the &lt;code>terms&lt;/code> part of the original declaration, but should double-check that the selectors and URLs still match, as a service rename is most often accompanied by a new page layout, a new domain name, and sometimes entirely new terms.&lt;/p></description></item><item><title>How to terminate a service</title><link>https://docs.opentermsarchive.org/terms/how-to/terminate-a-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/terminate-a-service/</guid><description>&lt;h1 id="how-to-terminate-a-service">
+ 
+ How to terminate a service
+ 
+
+ 
+&lt;/h1>
+&lt;p>If the service provider stops offering a service, the associated terms will become unavailable. To mark that service termination in Open Terms Archive and ensure tracking attempts are stopped, while maintaining the possibility to explore the history:&lt;/p>
+&lt;ol>
+&lt;li>Move the existing terms declaration to the service &lt;a href="https://docs.opentermsarchive.org/terms/explanation/declarations-maintenance/#service-history-reference">history file&lt;/a>.&lt;/li>
+&lt;li>Update the declaration to stop tracking all terms, by removing every &lt;code>&amp;lt;terms type&amp;gt;&lt;/code> entries from the &lt;code>terms&lt;/code> key in the declaration:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;name&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;&amp;lt;service name&amp;gt;&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;terms&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Apply filters</title><link>https://docs.opentermsarchive.org/terms/how-to/apply-filters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/apply-filters/</guid><description>&lt;h1 id="how-to-apply-filters">
+ 
+ How to apply filters
+ 
+
+ 
+&lt;/h1>
+&lt;p>This guide explains how to add filters to existing declarations to remove meaningless content that cannot be removed with CSS selectors, to prevent noise in the versions.&lt;/p>
+&lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
+ Prerequisites
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;ul>
+&lt;li>An existing terms declaration file.&lt;/li>
+&lt;li>Having already identified the noise to remove and having double-checked it cannot be removed with CSS selectors with the &lt;a href="https://docs.opentermsarchive.org/terms/reference/declaration/#ref-remove">&lt;code>remove&lt;/code>&lt;/a> property.&lt;/li>
+&lt;/ul>
+&lt;h2 id="step-1-check-for-built-in-filters">
+ 
+ &lt;a class="title-link" href="#step-1-check-for-built-in-filters">
+ 
+ Step 1: Check for built-in filters
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>Built-in filters are pre-defined functions that handle common noise patterns. They are the easiest way to clean up content.&lt;/p></description></item><item><title>How to get the `validUntil` date</title><link>https://docs.opentermsarchive.org/terms/how-to/get-the-validuntil-date-from-an-issue/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/how-to/get-the-validuntil-date-from-an-issue/</guid><description>&lt;h1 id="how-to-get-the-validuntil-date">
+ 
+ How to get the &lt;code>validUntil&lt;/code> date
+ 
+
+ 
+&lt;/h1>
+&lt;h2 id="from-a-github-issue">
+ 
+ &lt;a class="title-link" href="#from-a-github-issue">
+ 
+ From a GitHub issue
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Go to the open issue and scroll to the last action from &lt;code>OTA-Bot&lt;/code> (comment or issue opening).&lt;/p>
+&lt;p>&lt;img src="https://docs.opentermsarchive.org/terms/how-to/declarations-maintenance-ota-bot-comment.png" alt="">&lt;/p>
+&lt;p>Note that sometimes:&lt;/p>
+&lt;ul>
+&lt;li>the date is not quite precise, it can be written &amp;ldquo;last month&amp;rdquo;&lt;br>
+&lt;img src="https://docs.opentermsarchive.org/terms/how-to/declarations-maintenance-ota-bot-comment-last-month.png" alt="">&lt;/li>
+&lt;li>the last comment may be the announcement of the reopening of the issue&lt;br>
+&lt;img src="https://docs.opentermsarchive.org/terms/how-to/declarations-maintenance-ota-bot-comment-reopened-issue.png" alt="">&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>On the date of this comment, right-click &amp;ldquo;inspect&amp;rdquo; to open your browser&amp;rsquo;s code inspector.&lt;/p></description></item></channel></rss>

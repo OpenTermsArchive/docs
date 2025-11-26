@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Accueil on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/fr/</link><description>Recent content in Accueil on Open Terms Archive documentation</description><generator>Hugo</generator><language>fr</language><atom:link href="https://docs.opentermsarchive.org/fr/index.xml" rel="self" type="application/rss+xml"/><item><title>Référence de rédaction de mémo</title><link>https://docs.opentermsarchive.org/fr/analyses/reference/redaction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/fr/analyses/reference/redaction/</guid><description>&lt;h1 id="rédaction-de-mémo">
+ 
+ Rédaction de mémo
+ 
+
+ 
+&lt;/h1>
+&lt;p>Chaque mémo doit être composé des éléments détaillés ci-dessous. Vous devez suivre cette structure lors de la rédaction.&lt;/p>
+&lt;h2 id="titre">
+ 
+ &lt;a class="title-link" href="#titre">
+ 
+ Titre
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;ul>
+&lt;li>Rédiger une courte phrase déclarative pour mettre en avant le changement clé.&lt;/li>
+&lt;li>140 caractères maximum.&lt;/li>
+&lt;li>Utiliser le nom du service comme sujet.&lt;/li>
+&lt;li>Écrire au présent.&lt;/li>
+&lt;li>Préférer les formulations actives aux formulations passives (« Meta étend la portée de… » plutôt que « La portée de… est étendue par Meta »).&lt;/li>
+&lt;li>Décrire le changement de conditions et non le nom du document. Cette information sera fournie dans les métadonnées.&lt;/li>
+&lt;li>Ne pas mettre de ponctuation.&lt;/li>
+&lt;li>Ne pas mettre de lien dans le titre parce que dans certains contextes de réutilisation le titre en entier est un lien vers le mémo.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Exemples&lt;/strong>&lt;/p></description></item></channel></rss>

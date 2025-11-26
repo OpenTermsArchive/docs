@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>References on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/terms/reference/</link><description>Recent content in References on Open Terms Archive documentation</description><generator>Hugo</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/terms/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Built-in filters</title><link>https://docs.opentermsarchive.org/terms/reference/built-in-filters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/reference/built-in-filters/</guid><description>&lt;h1 id="built-in-filters">
+ 
+ Built-in filters
+ 
+
+ 
+&lt;/h1>
+&lt;p>This reference details all available built-in &lt;a href="https://docs.opentermsarchive.org/terms/explanation/filters/">filters&lt;/a> that can be applied to avoid noise in versions.&lt;/p>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-removequeryparams">
+ &lt;a href="#ref-removequeryparams" class="refItem-name">
+ &lt;code>removeQueryParams&lt;/code>
+ &lt;span class="refItem-type">&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">Removes specified query parameters from URLs in links and images.&lt;/div>
+ &lt;div class="refItem-details refItem-details__full">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;filter&amp;#34;&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;removeQueryParams&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;utm_source&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;utm_medium&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-diff" data-lang="diff">&lt;span class="line">&lt;span class="cl">&lt;span class="gd">- &amp;lt;p&amp;gt;Read the &amp;lt;a href=&amp;#34;https://example.com/example-page?utm_source=OGB&amp;amp;utm_medium=website&amp;amp;lang=en&amp;#34;&amp;gt;list of our affiliates&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gd">&lt;/span>&lt;span class="gi">+ &amp;lt;p&amp;gt;Read the &amp;lt;a href=&amp;#34;https://example.com/example-page?lang=en&amp;#34;&amp;gt;list of our affiliates&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div></description></item><item><title>Filters</title><link>https://docs.opentermsarchive.org/terms/reference/filters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/reference/filters/</guid><description>&lt;h1 id="filters">
+ 
+ Filters
+ 
+
+ 
+&lt;/h1>
+&lt;p>Filters are JavaScript functions that take the document DOM as parameter and are:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>in-place&lt;/strong>: they modify the document structure and content directly;&lt;/li>
+&lt;li>&lt;strong>idempotent&lt;/strong>: they return the same document structure and content even if run repeatedly on their own result.&lt;/li>
+&lt;li>&lt;strong>ordered&lt;/strong>: they are run sequentially in the order specified in the declaration.&lt;/li>
+&lt;/ul>
+&lt;p>Learn more about the concept and constraints on the &lt;a href="https://docs.opentermsarchive.org/terms/explanation/filters/">filters explanation&lt;/a>.&lt;/p>
+&lt;h2 id="signature">
+ 
+ &lt;a class="title-link" href="#signature">
+ 
+ Signature
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>The generic function signature for a filter is:&lt;/p></description></item><item><title>Service declaration</title><link>https://docs.opentermsarchive.org/terms/reference/declaration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/reference/declaration/</guid><description>&lt;h1 id="service-declaration">
+ 
+ Service declaration
+ 
+
+ 
+&lt;/h1>
+&lt;p>This reference documentation details all available properties that can be specified in a service&amp;rsquo;s declaration file.&lt;/p>
+&lt;p>The examples given throughout this reference can be seen in context in the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations/tree/main/declarations">declarations files&lt;/a> from the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations">Demo collection&lt;/a>&lt;/p>
+&lt;h2 id="properties">
+ 
+ &lt;a class="title-link" href="#properties">
+ 
+ Properties
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-name">
+ &lt;a href="#ref-name" class="refItem-name">
+ &lt;code>name&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;span class="refItem-required">required&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">The name of the service.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ &lt;div class="refItem-example">&lt;span class="refItem-label">Example&lt;/span>
+ 
+ &lt;code>Open Terms Archive&lt;/code>
+ 
+ &lt;/div>
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-terms">
+ &lt;a href="#ref-terms" class="refItem-name">
+ &lt;code>terms&lt;/code>
+ &lt;span class="refItem-type">object of objects&lt;/span>
+ 
+ &lt;span class="refItem-required">required&lt;/span>
+ 
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;div class="refItem-description">&lt;p>Map of terms associated with a service, where keys are standardized term types (e.g., &amp;ldquo;Privacy Policy&amp;rdquo;, &amp;ldquo;Terms of Service&amp;rdquo;), and values are term objects containing the configuration for fetching and processing each document, as detailed in the &lt;a href="#terms-declaration">Terms declaration&lt;/a> section.&lt;/p></description></item></channel></rss>

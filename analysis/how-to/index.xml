@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>How to guides on Open Terms Archive documentation</title><link>https://docs.opentermsarchive.org/analysis/how-to/</link><description>Recent content in How to guides on Open Terms Archive documentation</description><generator>Hugo</generator><language>en</language><atom:link href="https://docs.opentermsarchive.org/analysis/how-to/index.xml" rel="self" type="application/rss+xml"/><item><title>Navigate history</title><link>https://docs.opentermsarchive.org/analysis/how-to/navigate-history/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/analysis/how-to/navigate-history/</guid><description>&lt;h1 id="how-to-navigate-history">
+ 
+ How to navigate history
+ 
+
+ 
+&lt;/h1>
+&lt;h2 id="screencast">
+ 
+ &lt;a class="title-link" href="#screencast">
+ 
+ Screencast
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>Learn how to navigate through versions history in this 4 minutes video, or scroll below for the textual version.&lt;/p>
+&lt;video width="100%" height="auto" controls>
+ &lt;source src="https://cloud.opentermsarchive.org/index.php/s/pNKcom6k4cETAcx/download/how-to-navigate-through-versions-history-in-open-terms-archive.mp4#t=0.1" />
+&lt;/video>
+
+&lt;h2 id="manual">
+ 
+ &lt;a class="title-link" href="#manual">
+ 
+ Manual
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>Every collection offers a public database of versions they recorded.&lt;/p>
+&lt;p>For this guide, we will use the example of the Demo collection. The terms of this collection are published on the &lt;a href="https://github.com/OpenTermsArchive/demo-versions">&lt;code>OpenTermsArchive/demo-versions&lt;/code>&lt;/a> repository.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>From the &lt;a href="https://github.com/OpenTermsArchive/demo-versions">repository page&lt;/a>, open the folder of the service of your choice by clicking on it. For example, &lt;a href="https://github.com/OpenTermsArchive/demo-versions/tree/main/GitHub">GitHub&lt;/a>:&lt;/p></description></item><item><title>Publish a memo</title><link>https://docs.opentermsarchive.org/analysis/how-to/publish-memo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/analysis/how-to/publish-memo/</guid><description>&lt;h1 id="how-to-publish-a-memo">
+ 
+ How to publish a memo
+ 
+
+ 
+&lt;/h1>
+&lt;p>This guide will help you publish a memo on &lt;a href="https://opentermsarchive.org/en/memos/">opentermsarchive.org/en/memos&lt;/a>.&lt;/p>
+&lt;p>No technical skills are required.&lt;/p>
+&lt;h2 id="prerequisites">
+ 
+ &lt;a class="title-link" href="#prerequisites">
+ 
+ Prerequisites
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;ul>
+&lt;li>A drafted memo compliant with the &lt;a href="https://docs.opentermsarchive.org/analysis/reference/copywriting/">copywriting reference&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="1-send">
+ 
+ &lt;a class="title-link" href="#1-send">
+ 
+ 1. Send
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>&lt;a href="mailto:contact@opentermsarchive.org?subject=Publish%20a%20memo&amp;amp;body=Dear%20Core%20team%2C%0A%0AI%20would%20like%20to%20publish%20the%20memo%20below.%0A%0AIt%20is%20based%20on%20my%20original%20work%2C%20and%20I%20have%20reviewed%20the%20reference%20at%20docs.opentermsarchive.org%2Fmemos%2Fwriting-reference%2F%20and%20I%20have%20made%20sure%20the%20content%20complies%20with%20it%20before%20sending%20this%20text%20to%20you.%0A%0AI%20understand%20that%20it%20might%20take%20up%20to%20two%20weeks%20for%20this%20text%20to%20be%20reviewed.%0A%0AHave%20a%20good%20day%21">Send your memo&lt;/a> by writing it in the body of the email or as a file attachment. Feel free to add any comments or questions you may have about the content or format.&lt;/p></description></item></channel></rss>
