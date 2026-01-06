@@ -186,7 +186,7 @@ The dataset section configures how datasets are published. Datasets can be publi
     name="dataset.title"
     type="string"
     description="Title of the dataset."
-    default="sandbox"
+    example="Contrib collection dataset"
     required=true
 />}}
 
@@ -194,7 +194,7 @@ The dataset section configures how datasets are published. Datasets can be publi
     name="dataset.versionsRepositoryURL"
     type="string"
     description="Repository URL for dataset releases. Also used to generate the dataset README."
-    default="https://github.com/OpenTermsArchive/sandbox"
+    example="https://github.com/OpenTermsArchive/contrib-versions"
     required=true
 />}}
 
