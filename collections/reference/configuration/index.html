@@ -82,22 +82,27 @@ EN
 <code>https://api.gitlab.example.com</code></div></div></div><h3 id=dataset><a class=title-link href=#dataset>Dataset
 <i class="title-anchor icon" data-lucide=link></i></a></h3><p>The dataset section configures how datasets are published. Datasets can be published to GitHub releases, GitLab releases, and/or data.gouv.fr. If both GitHub and GitLab tokens are configured, GitHub takes precedence.</p><div class=refItem id=ref-dataset-title><a href=#ref-dataset-title class=refItem-name><code>dataset.title</code>
 <span class=refItem-type>string</span>
-<i class="refItem-anchor-icon icon" data-lucide=link></i></a><div class=refItem-description>Title of the dataset.</div><div class="refItem-details refItem-details__"><div class=refItem-default><span>Default:</span>
-<code>sandbox</code></div></div></div><div class=refItem id=ref-dataset-versionsrepositoryurl><a href=#ref-dataset-versionsrepositoryurl class=refItem-name><code>dataset.versionsRepositoryURL</code>
+<span class=refItem-required>required</span>
+<i class="refItem-anchor-icon icon" data-lucide=link></i></a><div class=refItem-description>Title of the dataset.</div><div class="refItem-details refItem-details__"><div class=refItem-example><span class=refItem-label>Example</span>
+<code>Contrib collection dataset</code></div></div></div><div class=refItem id=ref-dataset-versionsrepositoryurl><a href=#ref-dataset-versionsrepositoryurl class=refItem-name><code>dataset.versionsRepositoryURL</code>
 <span class=refItem-type>string</span>
-<i class="refItem-anchor-icon icon" data-lucide=link></i></a><div class=refItem-description>Repository URL for dataset releases.</div><div class="refItem-details refItem-details__"><div class=refItem-default><span>Default:</span>
-<code>https://github.com/OpenTermsArchive/sandbox</code></div></div></div><div class=refItem id=ref-dataset-publishingschedule><a href=#ref-dataset-publishingschedule class=refItem-name><code>dataset.publishingSchedule</code>
+<span class=refItem-required>required</span>
+<i class="refItem-anchor-icon icon" data-lucide=link></i></a><div class=refItem-description>Repository URL for dataset releases. Also used to generate the dataset README.</div><div class="refItem-details refItem-details__"><div class=refItem-example><span class=refItem-label>Example</span>
+<code>https://github.com/OpenTermsArchive/contrib-versions</code></div></div></div><div class=refItem id=ref-dataset-publishingschedule><a href=#ref-dataset-publishingschedule class=refItem-name><code>dataset.publishingSchedule</code>
 <span class=refItem-type>string</span>
 <i class="refItem-anchor-icon icon" data-lucide=link></i></a><div class=refItem-description>Cron expression for dataset publishing. By default, it runs every Monday at 8:30 AM. If publishing to data.gouv.fr, remember to update <code>dataset.datagouv.frequency</code> to match the actual publishing frequency.</div><div class="refItem-details refItem-details__"><div class=refItem-default><span>Default:</span>
 <code>30 8 * * MON</code></div></div></div><h4 id=datagouvfr-publishing><a class=title-link href=#datagouvfr-publishing>data.gouv.fr publishing
 <i class="title-anchor icon" data-lucide=link></i></a></h4><p>The data.gouv.fr section configures publishing to the French government&rsquo;s open data platform. Either <code>datasetId</code> or <code>organizationIdOrSlug</code> must be configured.</p><div class=refItem id=ref-dataset-datagouv-datasetid><a href=#ref-dataset-datagouv-datasetid class=refItem-name><code>dataset.datagouv.datasetId</code>
 <span class=refItem-type>string</span>
+<span class=refItem-required>required</span>
 <i class="refItem-anchor-icon icon" data-lucide=link></i></a><div class=refItem-description>ID of an existing dataset on data.gouv.fr. Use this to publish to an existing dataset. Either this or <code>organizationIdOrSlug</code> is required.</div><div class="refItem-details refItem-details__"><div class=refItem-example><span class=refItem-label>Example</span>
 <code>6914a64b17a0a91bb0a61222</code></div></div></div><div class=refItem id=ref-dataset-datagouv-organizationidorslug><a href=#ref-dataset-datagouv-organizationidorslug class=refItem-name><code>dataset.datagouv.organizationIdOrSlug</code>
 <span class=refItem-type>string</span>
+<span class=refItem-required>required</span>
 <i class="refItem-anchor-icon icon" data-lucide=link></i></a><div class=refItem-description>ID or slug of the organization on data.gouv.fr. Use this to automatically create and publish a dataset. The dataset will be created with the title from <code>dataset.title</code> if it doesn&rsquo;t exist. Either this or <code>datasetId</code> is required.</div><div class="refItem-details refItem-details__"><div class=refItem-example><span class=refItem-label>Example</span>
 <code>open-terms-archive</code></div></div></div><div class=refItem id=ref-dataset-datagouv-frequency><a href=#ref-dataset-datagouv-frequency class=refItem-name><code>dataset.datagouv.frequency</code>
 <span class=refItem-type>string</span>
+<span class=refItem-required>required</span>
 <i class="refItem-anchor-icon icon" data-lucide=link></i></a><div class=refItem-description>Update frequency of the dataset. Used when creating or updating a dataset on data.gouv.fr. See <a href=https://www.data.gouv.fr/api/1/datasets/frequencies/>data.gouv.fr API</a> for all allowed values.</div><div class="refItem-details refItem-details__"><div class=refItem-example><span class=refItem-label>Example</span>
 <code>weekly</code></div></div></div><div class=refItem id=ref-dataset-datagouv-usedemo><a href=#ref-dataset-datagouv-usedemo class=refItem-name><code>dataset.datagouv.useDemo</code>
 <span class=refItem-type>boolean</span>
