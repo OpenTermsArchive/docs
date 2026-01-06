@@ -186,14 +186,16 @@ The dataset section configures how datasets are published. Datasets can be publi
     name="dataset.title"
     type="string"
     description="Title of the dataset."
-    default="sandbox"
+    example="Contrib collection dataset"
+    required=true
 />}}
 
 {{< refItem
     name="dataset.versionsRepositoryURL"
     type="string"
-    description="Repository URL for dataset releases."
-    default="https://github.com/OpenTermsArchive/sandbox"
+    description="Repository URL for dataset releases. Also used to generate the dataset README."
+    example="https://github.com/OpenTermsArchive/contrib-versions"
+    required=true
 />}}
 
 {{< refItem
@@ -212,6 +214,7 @@ The data.gouv.fr section configures publishing to the French government's open d
     type="string"
     description="ID of an existing dataset on data.gouv.fr. Use this to publish to an existing dataset. Either this or `organizationIdOrSlug` is required."
     example="6914a64b17a0a91bb0a61222"
+    required=true
 />}}
 
 {{< refItem
@@ -219,6 +222,7 @@ The data.gouv.fr section configures publishing to the French government's open d
     type="string"
     description="ID or slug of the organization on data.gouv.fr. Use this to automatically create and publish a dataset. The dataset will be created with the title from `dataset.title` if it doesn't exist. Either this or `datasetId` is required."
     example="open-terms-archive"
+    required=true
 />}}
 
 {{< refItem
@@ -226,6 +230,7 @@ The data.gouv.fr section configures publishing to the French government's open d
     type="string"
     description="Update frequency of the dataset. Used when creating or updating a dataset on data.gouv.fr. See [data.gouv.fr API](https://www.data.gouv.fr/api/1/datasets/frequencies/) for all allowed values."
     example="weekly"
+    required=true
 />}}
 
 {{< refItem
