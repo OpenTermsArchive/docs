@@ -35,6 +35,11 @@
   font-weight: 400;
 }
 
+.refItem-anchor{
+  padding-left: 1rem;
+  padding-top: 0.2rem;
+}
+
 .refItem-anchor-icon {
   opacity: 0;
   color: var(--colorBlack600);
