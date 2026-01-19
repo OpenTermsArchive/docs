@@ -93,7 +93,14 @@ The logger section configures logging and error notification settings.
     name="logger.smtp.host"
     type="string"
     description="SMTP server hostname."
-    default="smtp-relay.sendinblue.com"
+    default="smtp-relay.brevo.com"
+/>}}
+
+{{< refItem
+    name="logger.smtp.port"
+    type="number"
+    description="SMTP server port."
+    default="587"
 />}}
 
 {{< refItem
