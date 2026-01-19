@@ -10,14 +10,16 @@
 {{ $anchorID := $name | lower | replaceRE "[^a-z0-9-]" "-" | replaceRE "-+" "-" | replaceRE "^-" "" | replaceRE "-$" "" }}
 
 <div class="refItem" id="ref-{{ $anchorID }}">
-  <a href="#ref-{{ $anchorID }}"  class="refItem-name">
-      <code>{{ $name }}</code>
-      <span class="refItem-type">{{ $type }}</span>
-      {{ with $required }}
-        <span class="refItem-required">{{ if eq . true }}required{{ else }}{{ . | markdownify }}{{ end }}</span>
-      {{ end }}
+  <div class="refItem-name">
+    <code>{{ $name }}</code>
+    <span class="refItem-type">{{ $type }}</span>
+    {{ with $required }}
+    <span class="refItem-required">{{ if eq . true }}required{{ else }}{{ . | markdownify }}{{ end }}</span>
+    {{ end }}
+    <a class="refItem-anchor" href="#ref-{{ $anchorID }}">
       <i class="refItem-anchor-icon icon" data-lucide="link"></i>
-  </a>
+    </a>
+  </div>
   <div class="refItem-description">{{ $description | markdownify | safeHTML }}</div>
   <div class="refItem-details refItem-details__{{ if .Inner }}full{{ end }}">
     {{ if $default }}
