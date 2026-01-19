@@ -18,12 +18,14 @@
 
 
 &lt;div class="refItem" id="ref-removequeryparams">
- &lt;a href="#ref-removequeryparams" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>removeQueryParams&lt;/code>
  &lt;span class="refItem-type">&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-removequeryparams">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">Removes specified query parameters from URLs in links and images.&lt;/div>
  &lt;div class="refItem-details refItem-details__full">
  
@@ -103,14 +105,16 @@
 
 
 &lt;div class="refItem" id="ref-name">
- &lt;a href="#ref-name" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>name&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-name">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">The name of the service.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -139,12 +143,14 @@
 
 
 &lt;div class="refItem" id="ref-terms">
- &lt;a href="#ref-terms" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>terms&lt;/code>
  &lt;span class="refItem-type">object of objects&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-terms">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">&lt;p>Map of terms associated with a service, where keys are standardized term types (e.g., &amp;ldquo;Privacy Policy&amp;rdquo;, &amp;ldquo;Terms of Service&amp;rdquo;), and values are term objects containing the configuration for fetching and processing each document, as detailed in the &lt;a href="#terms-declaration">Terms declaration&lt;/a> section.&lt;/p></description></item></channel></rss>

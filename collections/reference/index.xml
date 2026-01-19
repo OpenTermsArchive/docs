@@ -65,14 +65,16 @@
 
 
 &lt;div class="refItem" id="ref-id">
- &lt;a href="#ref-id" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>id&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-id">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">Unique identifier derived from name (acronyms, dash-separated).&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -102,14 +104,16 @@
 
 
 &lt;div class="refItem" id="ref-name">
- &lt;a href="#ref-name" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>name&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-name">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">Display name of the collection.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -139,14 +143,16 @@
 
 
 &lt;div class="refItem" id="ref-tagline">
- &lt;a href="#ref-tagline" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>tagline&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-tagline">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">Concise description of collection topic.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -176,14 +182,16 @@
 
 
 &lt;div class="refItem" id="ref-languages">
- &lt;a href="#ref-languages" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>languages&lt;/code>
  &lt;span class="refItem-type">array of strings&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-languages">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">List of &lt;a href="https://en.wikipedia.org/wiki/ISO_639">ISO 639-1 (two-letter)&lt;/a> language codes representing languages allowed in the collection.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -213,14 +221,16 @@
 
 
 &lt;div class="refItem" id="ref-jurisdictions">
- &lt;a href="#ref-jurisdictions" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>jurisdictions&lt;/code>
  &lt;span class="refItem-type">array of strings&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-jurisdictions">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">List of &lt;a href="https://en.wikipedia.org/wiki/ISO_3166-2">ISO 3166-2 country codes&lt;/a> representing jurisdictions covered by the collection.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -250,12 +260,14 @@
 
 
 &lt;div class="refItem" id="ref-description">
- &lt;a href="#ref-description" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>description&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-description">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">Detailed description of the collection&lt;/div>
  &lt;div class="refItem-details refItem-details__full">
  
@@ -288,12 +300,14 @@
 
 
 &lt;div class="refItem" id="ref-dataset">
- &lt;a href="#ref-dataset" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>dataset&lt;/code>
  &lt;span class="refItem-type">uri&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-dataset">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">URL to the dataset releases.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -323,12 +337,14 @@
 
 
 &lt;div class="refItem" id="ref-declarations">
- &lt;a href="#ref-declarations" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>declarations&lt;/code>
  &lt;span class="refItem-type">uri&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-declarations">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">URL to the declarations repository.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -358,12 +374,14 @@
 
 
 &lt;div class="refItem" id="ref-versions">
- &lt;a href="#ref-versions" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>versions&lt;/code>
  &lt;span class="refItem-type">uri&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-versions">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">URL to the versions repository.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -393,12 +411,14 @@
 
 
 &lt;div class="refItem" id="ref-snapshots">
- &lt;a href="#ref-snapshots" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>snapshots&lt;/code>
  &lt;span class="refItem-type">uri&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-snapshots">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">URL to the snapshots repository.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -428,12 +448,14 @@
 
 
 &lt;div class="refItem" id="ref-donations">
- &lt;a href="#ref-donations" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>donations&lt;/code>
  &lt;span class="refItem-type">uri&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-donations">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">URL to the donations page.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -463,12 +485,14 @@
 
 
 &lt;div class="refItem" id="ref-logo">
- &lt;a href="#ref-logo" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>logo&lt;/code>
  &lt;span class="refItem-type">uri&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-logo">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">URL to the collection&amp;rsquo;s logo. Optimized PNG transparent image (minimum width 240px).&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -498,12 +522,14 @@
 
 
 &lt;div class="refItem" id="ref-trackingperiods">
- &lt;a href="#ref-trackingperiods" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>trackingPeriods&lt;/code>
  &lt;span class="refItem-type">array of objects&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-trackingperiods">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">List of time periods during which terms were tracked, with their tracking configuration. Gaps between periods indicate times when tracking was interrupted. See &lt;a href="#trackingperiods">TrackingPeriods&lt;/a> section.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -527,12 +553,14 @@
 
 
 &lt;div class="refItem" id="ref-governance">
- &lt;a href="#ref-governance" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>governance&lt;/code>
  &lt;span class="refItem-type">object of objects&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-governance">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">Map of organizations involved in the collection&amp;rsquo;s governance, with organization names as keys and governance objects as values. See &lt;a href="#governance">Governance&lt;/a> section.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -556,12 +584,14 @@
 
 
 &lt;div class="refItem" id="ref-i18n">
- &lt;a href="#ref-i18n" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>i18n&lt;/code>
  &lt;span class="refItem-type">object of objects&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-i18n">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">Internationalization of any of the Metadata properties (except i18n itself) for different language codes&lt;/div>
  &lt;div class="refItem-details refItem-details__full">
  
@@ -611,14 +641,16 @@
 
 
 &lt;div class="refItem" id="ref-startdate">
- &lt;a href="#ref-startdate" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>startDate&lt;/code>
  &lt;span class="refItem-type">date&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-startdate">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">The date when tracking started for this period (ISO 8601 format YYYY-MM-DD).&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -648,14 +680,16 @@
 
 
 &lt;div class="refItem" id="ref-schedule">
- &lt;a href="#ref-schedule" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>schedule&lt;/code>
  &lt;span class="refItem-type">cron-expression&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-schedule">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">A &lt;a href="https://en.wikipedia.org/wiki/Cron#Cron_expression">cron expression&lt;/a> that defines the tracking frequency.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -685,14 +719,16 @@
 
 
 &lt;div class="refItem" id="ref-serverlocation">
- &lt;a href="#ref-serverlocation" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>serverLocation&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-serverlocation">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">The geographic location of the tracking server (city name and ISO 3166-2 country code).&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -722,12 +758,14 @@
 
 
 &lt;div class="refItem" id="ref-enddate">
- &lt;a href="#ref-enddate" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>endDate&lt;/code>
  &lt;span class="refItem-type">date&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-enddate">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">The date when tracking ended for this period (ISO 8601 format YYYY-MM-DD). If not specified, tracking is ongoing.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -770,12 +808,14 @@
 
 
 &lt;div class="refItem" id="ref-url">
- &lt;a href="#ref-url" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>url&lt;/code>
  &lt;span class="refItem-type">uri&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-url">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">URL to the entity&amp;rsquo;s website&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -805,12 +845,14 @@
 
 
 &lt;div class="refItem" id="ref-logo">
- &lt;a href="#ref-logo" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>logo&lt;/code>
  &lt;span class="refItem-type">uri&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-logo">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">URL to the entity&amp;rsquo;s logo. Optimized PNG transparent image (minimum width 240px).&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -840,14 +882,16 @@
 
 
 &lt;div class="refItem" id="ref-roles">
- &lt;a href="#ref-roles" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>roles&lt;/code>
  &lt;span class="refItem-type">array of strings&lt;/span>
  
  &lt;span class="refItem-required">required&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-roles">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">Roles of the entity within the governance, see &lt;a href="https://docs.opentermsarchive.org/collections/reference/governance/">collection governance&lt;/a>&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -917,12 +961,14 @@
 
 
 &lt;div class="refItem" id="ref-trackingschedule">
- &lt;a href="#ref-trackingschedule" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>trackingSchedule&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-trackingschedule">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">Defines how often the engine should check for changes in terms. Uses standard cron syntax to set the schedule. By default, it runs every 12 hours at minute 30.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -950,12 +996,14 @@
 
 
 &lt;div class="refItem" id="ref-collectionpath">
- &lt;a href="#ref-collectionpath" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>collectionPath&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-collectionpath">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">Path to the collection&amp;rsquo;s directory containing declarations directory and metadata file, relative to the engine execution location&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1026,12 +1074,14 @@
 
 
 &lt;div class="refItem" id="ref-ota-engine-smtp-password">
- &lt;a href="#ref-ota-engine-smtp-password" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>OTA_ENGINE_SMTP_PASSWORD&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-ota-engine-smtp-password">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">SMTP password for email error notifications.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1054,12 +1104,14 @@
 
 
 &lt;div class="refItem" id="ref-ota-engine-sendinblue-api-key">
- &lt;a href="#ref-ota-engine-sendinblue-api-key" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>OTA_ENGINE_SENDINBLUE_API_KEY&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-ota-engine-sendinblue-api-key">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">API key for SendInBlue.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1082,12 +1134,14 @@
 
 
 &lt;div class="refItem" id="ref-ota-engine-github-token">
- &lt;a href="#ref-ota-engine-github-token" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>OTA_ENGINE_GITHUB_TOKEN&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-ota-engine-github-token">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">GitHub token for API access and dataset publishing. If both GitHub and GitLab tokens are configured, GitHub takes precedence for dataset publishing.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1110,12 +1164,14 @@
 
 
 &lt;div class="refItem" id="ref-ota-engine-gitlab-token">
- &lt;a href="#ref-ota-engine-gitlab-token" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>OTA_ENGINE_GITLAB_TOKEN&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-ota-engine-gitlab-token">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">GitLab token for API access and dataset publishing. Used only if GitHub token is not configured.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1138,12 +1194,14 @@
 
 
 &lt;div class="refItem" id="ref-ota-engine-gitlab-releases-token">
- &lt;a href="#ref-ota-engine-gitlab-releases-token" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>OTA_ENGINE_GITLAB_RELEASES_TOKEN&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-ota-engine-gitlab-releases-token">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">GitLab token for dataset releases.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1166,12 +1224,14 @@
 
 
 &lt;div class="refItem" id="ref-ota-engine-datagouv-api-key">
- &lt;a href="#ref-ota-engine-datagouv-api-key" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>OTA_ENGINE_DATAGOUV_API_KEY&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-ota-engine-datagouv-api-key">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">API key for data.gouv.fr dataset publishing.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
@@ -1207,12 +1267,14 @@
 
 
 &lt;div class="refItem" id="ref-ota-federation-api-smtp-password">
- &lt;a href="#ref-ota-federation-api-smtp-password" class="refItem-name">
+ &lt;div class="refItem-name">
  &lt;code>OTA_FEDERATION_API_SMTP_PASSWORD&lt;/code>
  &lt;span class="refItem-type">string&lt;/span>
  
+ &lt;a class="refItem-anchor" href="#ref-ota-federation-api-smtp-password">
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
+ &lt;/div>
  &lt;div class="refItem-description">SMTP password for email error notifications.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
