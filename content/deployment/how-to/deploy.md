@@ -218,7 +218,7 @@ This section uses [Ansible Vault](https://docs.ansible.com/ansible/latest/vault_
 
 This section describes how to configure the engine to use a specific SMTP server to send email notifications when it encounters errors during the tracking process. This helps you stay informed about issues that need attention and allows you to restart the tracking process if needed.
 
-1. Get the SMTP credentials (host, username, password) from your email provider
+1. Get the SMTP credentials (host, port, username, password) from your email provider
 
 2. Update collection SMTP configuration within the `logger` key of `@opentermsarchive/engine` in the `config/production.json` file:
 
@@ -226,10 +226,13 @@ This section describes how to configure the engine to use a specific SMTP server
       "logger": {
          "smtp": {
             "host": "<smtp_host>",
+            "port": <smtp_port>,
             "username": "<smtp_username>"
          },
       },
    ```
+
+   > **Note**: The default port is 587. If your hosting provider blocks standard SMTP ports (25, 465, 587), you can try to use port 2525 as an alternative.
 
 3. Store the password in `deployment/.env`:
 
