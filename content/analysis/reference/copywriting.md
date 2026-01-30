@@ -132,7 +132,7 @@ Add an annotation in the meta data of the memo draft specifying the topic.
 > The section on child exploitation for both Facebook and Instagram [expanded](https://github.com/OpenTermsArchive/france-elections-versions/commit/0396436542fa7ef8dd8ae4dd02ff0ed5500e08a2) to cover not only publications that exploit minors, but also “any activity” related to such acts.
 >
 > This opens up the question of moderation of private discussions, as social platforms show difficulties in managing content related to child abuse —as recently as late March, the New York Times [showed](https://www.nytimes.com/2022/03/31/business/meta-child-sexual-abuse.html) that moderation remains very light in this area, even though platforms are supposed to list this type of content and [report it](https://www.theverge.com/2022/3/31/23005576/facebook-content-moderators-child-sexual-abuse-material-csam-policy) to authorities.
->
-> Source: [June 23, 2022 Memo on French Elections](https://sh1.sendinblue.com/aijgxqzlolpfe.html).
+
+Source: [June 23, 2022 Memo on French Elections](https://sh1.sendinblue.com/aijgxqzlolpfe.html).
 
 Note: The "Scope of a Memo" section and underlined sentences in the "Body Text" section are newly added. Rest of the text is same as before.
