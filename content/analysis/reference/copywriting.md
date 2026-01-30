@@ -52,7 +52,7 @@ Add an annotation in the meta data of the memo draft specifying the topic.
 
 ## Terms types
 
-- You must fill a valid [__terms type__](https://github.com/OpenTermsArchive/terms-types).
+- You must fill a valid [terms type](https://github.com/OpenTermsArchive/terms-types).
 - Multiple terms types are allowed.
 
 **Examples**
@@ -92,11 +92,11 @@ Add an annotation in the meta data of the memo draft specifying the topic.
 
 **Example**
 
-> OpenAI [__specified__](https://github.com/OpenTermsArchive/GenAI-versions/commit/30f1df7d18676c57a0ae1c43c3ccdfc264535cb3) that, as far as European (EEA and Swiss) developers were concerned, their Agreement is with OpenAI Ireland Ltd. OpenAI stopped acting as a separate controller of personal data, and developers now have to present a privacy notice to their users prior to processing their data.
+> OpenAI [specified](https://github.com/OpenTermsArchive/GenAI-versions/commit/30f1df7d18676c57a0ae1c43c3ccdfc264535cb3) that, as far as European (EEA and Swiss) developers were concerned, their Agreement is with OpenAI Ireland Ltd. OpenAI stopped acting as a separate controller of personal data, and developers now have to present a privacy notice to their users prior to processing their data.
 >
 > OpenAI also extended export restrictions to plugins “located” in countries embargoed or sanctioned by the US. This provision previously concerned only plugin owners.
 >
-> OpenAI Ireland Ltd is a Dublin-based subsidiary of OpenAI [__set up__](https://openai.com/blog/introducing-openai-dublin) in 2023.
+> OpenAI Ireland Ltd is a Dublin-based subsidiary of OpenAI [set up](https://openai.com/blog/introducing-openai-dublin) in 2023.
 
 ## Complete examples
 
@@ -106,7 +106,7 @@ Add an annotation in the meta data of the memo draft specifying the topic.
 >
 > *Midjourney ▪ Terms of Service ▪ December 23, 2023*
 >
-> Midjourney introduced an explicit [__prohibition__](https://github.com/OpenTermsArchive/GenAI-versions/commit/2cb30a2b4b338a4dffbeab9add8262cec78a3062) regarding the infringement of others’ intellectual property rights in its conditions for service availability and quality, mentioning the possibility of legal action and permanent ban from the service.
+> Midjourney introduced an explicit [prohibition](https://github.com/OpenTermsArchive/GenAI-versions/commit/2cb30a2b4b338a4dffbeab9add8262cec78a3062) regarding the infringement of others’ intellectual property rights in its conditions for service availability and quality, mentioning the possibility of legal action and permanent ban from the service.
 >
 > Previously, legal action was only mentioned where the violation of intellectual property rights resulted in financial detriment to Midjourney.
 
@@ -116,9 +116,9 @@ Add an annotation in the meta data of the memo draft specifying the topic.
 >
 > *Instagram ▪ Community Guidelines ▪ March 28, 2022*
 >
-> On March 28, Instagram [__updated__](https://github.com/OpenTermsArchive/france-elections-versions/commit/1be4b836e3012344558b60d8f9f871bc42cfa4ca?short_path=c108c01#diff-c108c013f0b8769389f20259465cb81324e805f4334bcda6931344e16f999441) its intellectual property community rules, prohibiting the posting of content that “facilitates copyright infringement through unauthorized devices or services.” The text presents a list of cases in which users would risk infringing the copyright of a third party or even merely “facilitating” such infringement, even if they did not intend to do so. After the previously listed cases, which include “you purchased or downloaded the content” or “you saw others post the same content,” Instagram adds that users risk infringing copyright if they “use an unauthorized streaming device or service (examples: a ‘jailbroken’ or ‘loaded’ app or service).”
+> On March 28, Instagram [updated](https://github.com/OpenTermsArchive/france-elections-versions/commit/1be4b836e3012344558b60d8f9f871bc42cfa4ca?short_path=c108c01#diff-c108c013f0b8769389f20259465cb81324e805f4334bcda6931344e16f999441) its intellectual property community rules, prohibiting the posting of content that “facilitates copyright infringement through unauthorized devices or services.” The text presents a list of cases in which users would risk infringing the copyright of a third party or even merely “facilitating” such infringement, even if they did not intend to do so. After the previously listed cases, which include “you purchased or downloaded the content” or “you saw others post the same content,” Instagram adds that users risk infringing copyright if they “use an unauthorized streaming device or service (examples: a ‘jailbroken’ or ‘loaded’ app or service).”
 
-## **Contextualisation (optional)**
+## Contextualisation (optional)
 
 - Body text in a new paragraph: contextualisation with external links to the most authoritative sources available.
 - For example, explain which wider problems are tackled by this policy change, or give a historical perspective on the change.
@@ -129,10 +129,10 @@ Add an annotation in the meta data of the memo draft specifying the topic.
 >
 > *Facebook ▪ Community Guidelines ▪ June 13, 2022*
 >
-> The section on child exploitation for both Facebook and Instagram [__expanded__](https://github.com/OpenTermsArchive/france-elections-versions/commit/0396436542fa7ef8dd8ae4dd02ff0ed5500e08a2) to cover not only publications that exploit minors, but also “any activity” related to such acts.
+> The section on child exploitation for both Facebook and Instagram [expanded](https://github.com/OpenTermsArchive/france-elections-versions/commit/0396436542fa7ef8dd8ae4dd02ff0ed5500e08a2) to cover not only publications that exploit minors, but also “any activity” related to such acts.
 >
-> This opens up the question of moderation of private discussions, as social platforms show difficulties in managing content related to child abuse —as recently as late March, the New York Times [__showed__](https://www.nytimes.com/2022/03/31/business/meta-child-sexual-abuse.html) that moderation remains very light in this area, even though platforms are supposed to list this type of content and [__report it__](https://www.theverge.com/2022/3/31/23005576/facebook-content-moderators-child-sexual-abuse-material-csam-policy) to authorities.
+> This opens up the question of moderation of private discussions, as social platforms show difficulties in managing content related to child abuse —as recently as late March, the New York Times [showed](https://www.nytimes.com/2022/03/31/business/meta-child-sexual-abuse.html) that moderation remains very light in this area, even though platforms are supposed to list this type of content and [report it](https://www.theverge.com/2022/3/31/23005576/facebook-content-moderators-child-sexual-abuse-material-csam-policy) to authorities.
 >
-> Source: [__June 23, 2022 Memo on French Elections__](https://sh1.sendinblue.com/aijgxqzlolpfe.html).
+> Source: [June 23, 2022 Memo on French Elections](https://sh1.sendinblue.com/aijgxqzlolpfe.html).
 
 Note: The "Scope of a Memo" section and underlined sentences in the "Body Text" section are newly added. Rest of the text is same as before.
