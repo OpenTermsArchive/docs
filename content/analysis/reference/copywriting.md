@@ -92,11 +92,11 @@ Add an annotation in the meta data of the memo draft specifying the topic.
 
 **Example**
 
-OpenAI [__specified__](https://github.com/OpenTermsArchive/GenAI-versions/commit/30f1df7d18676c57a0ae1c43c3ccdfc264535cb3) that, as far as European (EEA and Swiss) developers were concerned, their Agreement is with OpenAI Ireland Ltd. OpenAI stopped acting as a separate controller of personal data, and developers now have to present a privacy notice to their users prior to processing their data.
-
-OpenAI also extended export restrictions to plugins “located” in countries embargoed or sanctioned by the US. This provision previously concerned only plugin owners.
-
-OpenAI Ireland Ltd is a Dublin-based subsidiary of OpenAI [__set up__](https://openai.com/blog/introducing-openai-dublin) in 2023.
+> OpenAI [__specified__](https://github.com/OpenTermsArchive/GenAI-versions/commit/30f1df7d18676c57a0ae1c43c3ccdfc264535cb3) that, as far as European (EEA and Swiss) developers were concerned, their Agreement is with OpenAI Ireland Ltd. OpenAI stopped acting as a separate controller of personal data, and developers now have to present a privacy notice to their users prior to processing their data.
+>
+> OpenAI also extended export restrictions to plugins “located” in countries embargoed or sanctioned by the US. This provision previously concerned only plugin owners.
+>
+> OpenAI Ireland Ltd is a Dublin-based subsidiary of OpenAI [__set up__](https://openai.com/blog/introducing-openai-dublin) in 2023.
 
 ## Complete examples
 
