@@ -63,7 +63,7 @@ Add an annotation in the meta data of the memo draft specifying the topic.
 
 ## Date modified
 
-- Use Month Day, Year format.
+- Use `Month Day, Year` format.
 - Multiples dates are allowed.
 - Avoid repeating months or years
 
