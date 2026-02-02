@@ -47,7 +47,7 @@ Identify topics from the following list:
 - 140 characters maximum.
 - Use the name of the service as the subject.
 - Write in the present tense.
-  - Prefer active phrasings over passive (e.g. ‘Microsoft expands reach’ rather than ‘Reach expanded by Microsoft’).
+- Prefer active phrasings over passive (e.g. ‘Microsoft expands reach’ rather than ‘Reach expanded by Microsoft’).
 - Describe the policy change, not the name of the document. This information will be given in the metadata below.
 - Use no punctuation.
 - Use international title casings (i.e. only the first letter of the leading word should be in capital).
