@@ -5,23 +5,41 @@ aliases: /memos/copywriting-reference/
 
 # Memo copywriting
 
-Each memo must be composed of the elements detailed below. You must follow this structure when writing your memos.
+## Purpose of a memo
 
-## Scope of a Memo
+Memos aim at a short analysis of detected changes, whose is *diff* the atomic unit.
+They must first describe what has been added and what has been deleted.
+Their secondary objective is to provide materials to demonstrate matters of interest and further investigations.
 
-If the diff has changes related to more than one topic, write separate memos for each topic. Identify topics from the following list:
+## Structure of a memo
 
-- Privacy and Surveillance: Data collection, use, storage, and retention, informed consent, transparency
-- Cybersecurity: Data breaches, security mechanisms, verification and authentication processes
-- Censorship: Content prohibitions and restrictions, reporting mechanisms
-- Access and Accessibility: Access to services, discrimination/exclusion risks
-- Mis/Disinformation: Definitions of false/harmful content, content sharing, verification and reporting mechanisms
-- Hate Speech: Definitions of violent content, content sharing, reporting mechanisms
-- Algorithmic Accountability: Data use in AI training
-- Data Sovereignty: Data governance, cross-border data flows
-- Copyright: Fair use and licensing rules, verification and reporting mechanisms, monetisation
+A memo has:
 
-Add an annotation in the meta data of the memo draft specifying the topic.
+- a title,
+- metadata (service name, term type and modification date),
+- Paragraphs describing the changes,
+- Optional paragraphs providing context for the changes.
+
+Each item is explained in detail.
+
+## Scope of a memo
+
+If the diff has changes related to more than one topic, write separate memos for each topic.
+Identify topics from the following list:
+
+| Topic | Subtopics |
+|----------------------------|----------------------------------------------------------------------------------------------|
+| Privacy and Surveillance | Data collection, use, storage, and retention, informed consent, transparency |
+| Cybersecurity | Data breaches, security mechanisms, verification and authentication processes |
+| Censorship | Content prohibitions and restrictions, reporting mechanisms |
+| Access and Accessibility: | Access to services, discrimination/exclusion risks |
+| Mis/Disinformation | Definitions of false/harmful content, content sharing, verification and reporting mechanisms |
+| Hate Speech | Definitions of violent content, content sharing, reporting mechanisms |
+| Algorithmic Accountability | Data use in AI training |
+| Data Sovereignty | Data governance, cross-border data flows |
+| Copyright | Fair use and licensing rules, verification and reporting mechanisms, monetisation |
+
+- Include topics in the frontmatter metadata of the draft.
 
 ## Title
 
@@ -29,9 +47,10 @@ Add an annotation in the meta data of the memo draft specifying the topic.
 - 140 characters maximum.
 - Use the name of the service as the subject.
 - Write in the present tense.
-- Prefer active phrasings over passive (e.g., “Microsoft expands reach” rather than “Reach expanded by Microsoft“).
+- Prefer active phrasings over passive (e.g. “Microsoft expands reach” rather than “Reach expanded by Microsoft“).
 - Describe the policy change, not the name of the document. This information will be given in the metadata below.
 - Use no punctuation.
+- Use international title casings (i.e. only the first letter of the leading word should be in capital).
 - Do not put a link in the title because in some reuse contexts the entire title is a link to the memo.
 
 **Examples**
@@ -76,7 +95,7 @@ Add an annotation in the meta data of the memo draft specifying the topic.
 ## Body text
 
 - Describe changes in a neutral, objective, non-judgmental manner.
-  - Write in the past tense (e.g., “added”, “removed”…).
+  - Write in the past tense (e.g. “added”, “removed”…).
   - Bolden the most important point.
   - Do not repeat the date, it is already in the metadata.
 - Systematically add a link to the diff on this action verb.
@@ -88,7 +107,12 @@ Add an annotation in the meta data of the memo draft specifying the topic.
   - Only quote the text before modification if it is strictly necessary to understand the change, to reduce the risk of confusion and length.
 - __If changes have been made in a specific jurisdiction, mention it in the memo. Do not mention jurisdiction when changes have been made globally.__
 - If you write in a different language than the detected change, always look for citations in the version of the document that matches the language of writing if it exists instead of translating them yourself.
-- __Use UK English throughout (e.g., “organisation” and not “organization”)__
+- __Use British English throughout__
+  - “organisation” and not “organization”
+  - No full point in abbreviations
+  - See also
+    - [Guardian style guide](https://www.theguardian.com/guardian-style-guide-a)
+    - *New Hart's Rules. The Oxford Style Guide*, 2014
 
 **Example**
 
@@ -122,6 +146,7 @@ Add an annotation in the meta data of the memo draft specifying the topic.
 
 - Body text in a new paragraph: contextualisation with external links to the most authoritative sources available.
 - For example, explain which wider problems are tackled by this policy change, or give a historical perspective on the change.
+- For clarity, separate body text and contextual elements instead of grouping all changes in a single paragraph and then a lengthy context paragraph with multiple threads.
 
 **Example**
 
