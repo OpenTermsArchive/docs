@@ -17,8 +17,8 @@ A memo has:
 
 - a title,
 - metadata (service name, term type and modification date),
-- Paragraphs describing the changes,
-- Optional paragraphs providing context for the changes.
+- paragraphs describing the changes,
+- optional paragraphs providing context for the changes.
 
 Each item is explained in detail.
 
