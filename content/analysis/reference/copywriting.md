@@ -1,14 +1,15 @@
 ---
-title: Memo copywriting reference
+title: Memo copywriting
 aliases: /memos/copywriting-reference/
 ---
 
 # Memo copywriting
 
-Memos are short analyses of detected changes, whose _[diff](https://en.wikipedia.org/wiki/Diff)_ is the atomic unit.
+Memos are short explanations of a specific change in some terms of a service.
 
-- They must first describe what has been added and what has been deleted.
-- Their secondary objective is to provide materials to demonstrate matters of interest and further investigations.
+- They remove the technical and expertise barriers needed to interpret a textual change.
+- They can provide additional context to make sense of that change, such as outlining the regulation, geopolitical tensions or public controversy that likely led to it.
+- They can also highlight the potential consequences of that change on the users and partners of the service, as well as potential real-world harms to society.
 
 ## Structure
 
@@ -91,13 +92,12 @@ Each of these components is explained in detail below.
   - Do not italicise citations, use quotes.
   - Minimise the length of citations because legal text is often very wordy.
   - Only quote the text before modification if it is strictly necessary to understand the change, to reduce the risk of confusion and length.
-- __If changes have been made in a specific jurisdiction, mention it in the memo. Do not mention jurisdiction when changes have been made globally.__
+- If changes have been made in a specific jurisdiction, mention it in the memo. Do not mention jurisdiction when changes have been made globally.
 - If you write in a different language than the detected change, always look for citations in the version of the document that matches the language of writing if it exists instead of translating them yourself.
-- __Use British English throughout__
-  - “organisation” and not “organization”
+- Use British English throughout (e.g. “organisation” and not “organization”).
   - Don't use full stops in abbreviations (e.g. write “EU” and “USA” instead of “E.U.” and “U.S.A.”).
   - For more details, follow the [Guardian style guide](https://www.theguardian.com/guardian-style-guide-a).
-    - *New Hart’s Rules. The Oxford Style Guide*, 2014
+    - *New Hart’s Rules. The Oxford Style Guide*, 2014.
 
 **Example**
 
