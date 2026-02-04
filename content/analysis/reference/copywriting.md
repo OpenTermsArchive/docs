@@ -16,10 +16,10 @@ Memos are short explanations of a specific change in some terms of a service.
 A memo must contain:
 
 - [a title](#title);
-- [a services name](#service-name);
+- [a service name](#service-name);
 - [a terms type](#terms-types);
-- [a modification date](#date-modified);
-- [a body text](#body-text).
+- a [change date](#date-modified);
+- [body text](#body-text).
 
 It may also contain:
 
@@ -48,7 +48,7 @@ Each of these components is explained in detail below.
 
 ## Service name
 
-- Write the service name and not the company name, e.g., “Facebook” rather than “Meta”.
+- Write the service name and not the company name (e.g. “Facebook” rather than “Meta”).
 
 **Examples**
 
@@ -94,10 +94,9 @@ Each of these components is explained in detail below.
   - Only quote the text before modification if it is strictly necessary to understand the change, to reduce the risk of confusion and length.
 - If changes have been made in a specific jurisdiction, mention it in the memo. Do not mention jurisdiction when changes have been made globally.
 - If you write in a different language than the detected change, always look for citations in the version of the document that matches the language of writing if it exists instead of translating them yourself.
-- Use British English throughout (e.g. “organisation” and not “organization”).
+- Use British English (e.g. “organisation” and not “organization”).
   - Don't use full stops in abbreviations (e.g. write “EU” and “USA” instead of “E.U.” and “U.S.A.”).
-  - For more details, follow the [Guardian style guide](https://www.theguardian.com/guardian-style-guide-a).
-    - *New Hart’s Rules. The Oxford Style Guide*, 2014.
+  - For more details, follow the [Guardian style guide](https://www.theguardian.com/guardian-style-guide-a) and The Oxford Style Guide (New Hart’s Rules, 2014).
 
 **Example**
 
@@ -114,7 +113,7 @@ Each of these components is explained in detail below.
 | Privacy and Surveillance | Data collection, use, storage, and retention, informed consent, transparency |
 | Cybersecurity | Data breaches, security mechanisms, verification and authentication processes |
 | Censorship | Content prohibitions and restrictions, reporting mechanisms |
-| Access and Accessibility: | Access to services, discrimination/exclusion risks |
+| Access and Accessibility | Access to services, discrimination/exclusion risks |
 | Mis/Disinformation | Definitions of false/harmful content, content sharing, verification and reporting mechanisms |
 | Hate Speech | Definitions of violent content, content sharing, reporting mechanisms |
 | Algorithmic Accountability | Data use in AI training |
