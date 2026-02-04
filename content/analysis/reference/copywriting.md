@@ -15,16 +15,16 @@ Memos are short explanations of a specific change in some terms of a service.
 
 A memo must contain:
 
-- [a title](#title);
-- [a service name](#service-name);
-- [a terms type](#terms-types);
+- a [title](#title);
+- a [service name](#service-name);
+- a [terms type](#terms-types);
 - a [change date](#date-modified);
 - [body text](#body-text).
 
 It may also contain:
 
-- [a topic](#topic-optional);
-- [a context](#contextualisation-optional).
+- [context](#contextualisation-optional);
+- a [topic](#topic-optional).
 
 Each of these components is explained in detail below.
 
@@ -104,9 +104,16 @@ Each of these components is explained in detail below.
 >
 > OpenAI also extended export restrictions to plugins ‘located’ in countries embargoed or sanctioned by the US. This provision previously concerned only plugin owners.
 
+## Context _(optional)_
+
+The goal of the context is to help the general public make sense of the changes, which can often be applied in reaction to a geopolitical or regulatory tension. To that end, explain which wider problems are tackled by this policy change, or give a historical perspective on the change. Depending on your production goals, you might want to focus on specific angles such as real-world harms, capital concentration, geopolitical evolutions… all are valid, and this section simply describes how to integrate these additional perspectives in a memo so that they don’t take over the change analysis itself.
+
+- Write the contextualisation text in a new paragraph.
+- Add external links to the most authoritative sources available.
+
 ## Topic _(optional)_
 
-- You can fill a topic by identifying it from the following list:
+Changes can sometimes address several topics at once, making it difficult to narrow the memos down to a clear issue. In such cases, **write separate memos for each topic**. To support splitting, the taxonomy below can help identify topics to group the changes into that should each warrant their own memo.
 
 | Topic | Subtopics |
 |----------------------------|----------------------------------------------------------------------------------------------|
@@ -119,15 +126,6 @@ Each of these components is explained in detail below.
 | Algorithmic Accountability | Data use in AI training |
 | Data Sovereignty | Data governance, cross-border data flows |
 | Copyright | Fair use and licensing rules, verification and reporting mechanisms, monetisation |
-
-Changes can sometimes address several topics at once, making it difficult to narrow the memos down to a clear issue. In such cases, **write separate memos for each topic**. To support splitting, the taxonomy below can help identify topics to group the changes into that should each warrant their own memo.
-
-## Context _(optional)_
-
-The goal of the context is to help the general public make sense of the changes, which can often be applied in reaction to a geopolitical or regulatory tension. To that end, explain which wider problems are tackled by this policy change, or give a historical perspective on the change. Depending on your production goals, you might want to focus on specific angles such as real-world harms, capital concentration, geopolitical evolutions… all are valid, and this section simply describes how to integrate these additional perspectives in a memo so that they don’t take over the change analysis itself.
-
-- Write the contextualisation text in a new paragraph.
-- Add external links to the most authoritative sources available.
 
 #### Example
 
