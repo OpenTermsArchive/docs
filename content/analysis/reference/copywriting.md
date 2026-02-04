@@ -5,7 +5,7 @@ aliases: /memos/copywriting-reference/
 
 # Memo copywriting
 
-Memos are short analysis of detected changes, whose is *[diff](https://en.wikipedia.org/wiki/Diff)* the atomic unit.
+Memos are short analyses of detected changes, whose _[diff](https://en.wikipedia.org/wiki/Diff)_ is the atomic unit.
 
 - They must first describe what has been added and what has been deleted.
 - Their secondary objective is to provide materials to demonstrate matters of interest and further investigations.
@@ -23,9 +23,9 @@ A memo must contain:
 It may also contain:
 
 - [a topic](#topic-optional);
-- [a contextualisation](#contextualisation-optional).
+- [a context](#contextualisation-optional).
 
-Each element is explained in detail below.
+Each of these components is explained in detail below.
 
 ## Title
 
@@ -95,9 +95,8 @@ Each element is explained in detail below.
 - If you write in a different language than the detected change, always look for citations in the version of the document that matches the language of writing if it exists instead of translating them yourself.
 - __Use British English throughout__
   - “organisation” and not “organization”
-  - No full point in abbreviations
-  - See also
-    - [Guardian style guide](https://www.theguardian.com/guardian-style-guide-a)
+  - Don't use full stops in abbreviations (e.g. write “EU” and “USA” instead of “E.U.” and “U.S.A.”).
+  - For more details, follow the [Guardian style guide](https://www.theguardian.com/guardian-style-guide-a).
     - *New Hart’s Rules. The Oxford Style Guide*, 2014
 
 **Example**
@@ -106,7 +105,7 @@ Each element is explained in detail below.
 >
 > OpenAI also extended export restrictions to plugins ‘located’ in countries embargoed or sanctioned by the US. This provision previously concerned only plugin owners.
 
-## Topic (optional)
+## Topic _(optional)_
 
 - You can fill a topic by identifying it from the following list:
 
@@ -122,16 +121,16 @@ Each element is explained in detail below.
 | Data Sovereignty | Data governance, cross-border data flows |
 | Copyright | Fair use and licensing rules, verification and reporting mechanisms, monetisation |
 
-Please note that if the diff has changes related to more than one topic, write separate memos for each topic.
+Changes can sometimes address several topics at once, making it difficult to narrow the memos down to a clear issue. In such cases, **write separate memos for each topic**. To support splitting, the taxonomy below can help identify topics to group the changes into that should each warrant their own memo.
 
-## Contextualisation (optional)
+## Context _(optional)_
 
-Explain which wider problems are tackled by this policy change, or give a historical perspective on the change.
+The goal of the context is to help the general public make sense of the changes, which can often be applied in reaction to a geopolitical or regulatory tension. To that end, explain which wider problems are tackled by this policy change, or give a historical perspective on the change. Depending on your production goals, you might want to focus on specific angles such as real-world harms, capital concentration, geopolitical evolutions… all are valid, and this section simply describes how to integrate these additional perspectives in a memo so that they don’t take over the change analysis itself.
 
 - Write the contextualisation text in a new paragraph.
 - Add external links to the most authoritative sources available.
 
-**Example**
+#### Example
 
 > [...]
 >
