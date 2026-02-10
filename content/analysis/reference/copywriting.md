@@ -11,6 +11,11 @@ Memos are short explanations of a specific change in some terms of a service.
 - They can provide additional context to make sense of that change, such as outlining the regulation, geopolitical tensions or public controversy that likely led to it.
 - They can also highlight the potential consequences of that change on the users and partners of the service, as well as potential real-world harms to society.
 
+The purpose of this document is to provide guidance on:
+
+- copywriting, production of content shaped as a memo;
+- copyediting, alignment of typography and spelling within Open Terms Archive publications.
+
 ## Structure
 
 A memo must contain:
@@ -154,3 +159,43 @@ Source: [June 23, 2022 Memo on French Elections](https://sh1.sendinblue.com/aijg
 > *Instagram ▪ Community Guidelines ▪ March 28, 2022 ▪ Copyright*
 >
 > On March 28, Instagram [updated](https://github.com/OpenTermsArchive/france-elections-versions/commit/1be4b836e3012344558b60d8f9f871bc42cfa4ca?short_path=c108c01#diff-c108c013f0b8769389f20259465cb81324e805f4334bcda6931344e16f999441) its intellectual property community rules, prohibiting the posting of content that ‘facilitates copyright infringement through unauthorized devices or services.’ The text presents a list of cases in which users would risk infringing the copyright of a third party or even merely ‘facilitating’ such infringement, even if they did not intend to do so. After the previously listed cases, which include ‘you purchased or downloaded the content’ or ‘you saw others post the same content,’ Instagram adds that users risk infringing copyright if they ‘use an unauthorized streaming device or service (examples: a “jailbroken” or “loaded” app or service).’
+
+## House style
+
+Mainly following the modern British English style but with exceptions.
+Here are Open Terms Archive specificities.
+
+### title
+
+- Use capital only for the initial letter of the first word.
+
+### dates
+
+- While mostly using a modern British English style, dates are formatted following a US style : month in letter, day in number, a comma and then year in number.
+- Use capital for the initial letter of a month.
+- Use cardinal numbers (one, two, three) and not ordinal numbers (first, second, third).
+- Do not use the ending *-st*, *-rd*, or *-th* in conjunction with a figure as in *February 10th, 2026*.
+- Don't use an all-figure form in order to avoid doubt and confusion with US and international styles.
+
+### quotations
+
+- curly quotes (`“”‘’`) and not straight quotes (`"'`)
+  - using the compose key
+    - `“` : `compose + " + <`
+    - `”` : `compose + " + >`
+    - `‘` : `compose + ' + <`
+    - `’` : `compose + ' + >`
+- double quotation marks
+  - single quotation marks for a quotation within a quotation.
+
+### abbreviations
+
+- abbreviations (Inc.)
+  - Full point at the end.
+- contractions (Dr)
+  - No full point at the end.
+  - Exceptions: St. for street to avoid confusion with St for Saint
+- acronyms (NATO)
+  - No full point.
+- initialisms, initial letters of words but not pronounced as words (UN)
+  - No full point.
