@@ -113,7 +113,7 @@ The goal of the context is to help the general public make sense of the changes,
 
 ## Topic _(optional)_
 
-Changes can sometimes address several topics at once, making it difficult to narrow the memos down to a clear issue. In such cases, **write separate memos for each topic**. To support splitting, the taxonomy below can help identify topics to group the changes into that should each warrant their own memo.
+Changes can sometimes address several topics at once, making it difficult to narrow the memos down to a clear issue. In such cases, **write separate memos for each topic**. To support splitting, the taxonomy below can help identify topics that each warrant their own memo.
 
 | Topic | Subtopics |
 |----------------------------|----------------------------------------------------------------------------------------------|
