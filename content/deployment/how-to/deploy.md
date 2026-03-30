@@ -232,7 +232,7 @@ This section describes how to configure the engine to use a specific SMTP server
       },
    ```
 
-   > **Note**: If the default port (587) is blocked by your hosting provider, you can try using 2525 as an alternative.
+   > **Note**: If port 587 is blocked by your hosting provider, you can try using 2525 as an alternative.
 
 3. Store the password in `deployment/.env`:
 
