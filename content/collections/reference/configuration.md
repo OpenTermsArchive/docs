@@ -75,21 +75,18 @@ The logger section configures logging and error notification settings.
     name="logger.smtp.host"
     type="string"
     description="SMTP server hostname."
-    default="smtp-relay.brevo.com"
 />}}
 
 {{< refItem
     name="logger.smtp.port"
     type="number"
     description="SMTP server port."
-    default="587"
 />}}
 
 {{< refItem
     name="logger.smtp.username"
     type="string"
     description="Username for SMTP server authentication."
-    default="admin@opentermsarchive.org"
 />}}
 
 {{< refItem
