@@ -67,24 +67,6 @@ The fetcher section configures how the engine retrieves documents from the web.
     default="en"
 />}}
 
-### Notifier
-
-The notifier section sets up how notifications are sent when new versions of terms are recorded.
-
-{{< refItem
-    name="notifier.sendInBlue.updatesListId"
-    type="string"
-    description="SendInBlue contacts list ID of persons to notify on terms updates."
-    default="850"
-/>}}
-
-{{< refItem
-    name="notifier.sendInBlue.updateTemplateId"
-    type="string"
-    description="SendInBlue email template ID used for updates notifications."
-    default="7"
-/>}}
-
 ### Logger
 
 The logger section configures logging and error notification settings.
@@ -93,21 +75,18 @@ The logger section configures logging and error notification settings.
     name="logger.smtp.host"
     type="string"
     description="SMTP server hostname."
-    default="smtp-relay.brevo.com"
 />}}
 
 {{< refItem
     name="logger.smtp.port"
     type="number"
     description="SMTP server port."
-    default="587"
 />}}
 
 {{< refItem
     name="logger.smtp.username"
     type="string"
     description="Username for SMTP server authentication."
-    default="admin@opentermsarchive.org"
 />}}
 
 {{< refItem

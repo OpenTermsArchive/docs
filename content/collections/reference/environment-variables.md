@@ -11,8 +11,6 @@ This reference documentation details all available environment variables that ca
 
 {{< refItem name="OTA_ENGINE_SMTP_PASSWORD" type="string" description="SMTP password for email error notifications." />}}
 
-{{< refItem name="OTA_ENGINE_SENDINBLUE_API_KEY" type="string" description="API key for SendInBlue." />}}
-
 {{< refItem name="OTA_ENGINE_GITHUB_TOKEN" type="string" description="GitHub token for API access and dataset publishing. If both GitHub and GitLab tokens are configured, GitHub takes precedence for dataset publishing." />}}
 
 {{< refItem name="OTA_ENGINE_GITLAB_TOKEN" type="string" description="GitLab token for API access and dataset publishing. Used only if GitHub token is not configured." />}}
