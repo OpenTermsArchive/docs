@@ -13,18 +13,18 @@ Memos are short explanations of a specific change in some terms of a service.
 
 ## Structure
 
-A memo must contain:
-
+A memo consists of:
 - a [title](#title);
-- a [service name](#service-name);
+
+followed by the following metadata elements:
+- a [service name](#service-name);&é
 - a [terms type](#terms-types);
-- a [change date](#date-modified);
-- [body text](#body-text).
+- a [change date](#change-date);
+- an optional [topic](#topic-optional);
 
-It may also contain:
-
-- [context](#contextualisation-optional);
-- a [topic](#topic-optional).
+and contains:
+- a [body text](#body-text);
+- an optional [context](#contextualisation-optional).
 
 Each of these components is explained in detail below.
 
@@ -67,7 +67,7 @@ Each of these components is explained in detail below.
 
 > Community Guidelines, Terms of Service, Privacy Policy
 
-## Date modified
+## Change date
 
 - Use `Month Day, Year` format.
 - Avoid repeating months or years.
@@ -78,6 +78,29 @@ Each of these components is explained in detail below.
 > June 4, 2020
 
 > June 6, December 5 and 16, 2023
+
+## Topic _(optional)_
+
+Changes can sometimes address several topics at once, making it difficult to narrow the memos down to a clear issue. In such cases, **write separate memos for each topic**. To support splitting, the taxonomy below can help identify topics that each warrant their own memo.
+
+| Topic | Subtopics |
+|----------------------------|----------------------------------------------------------------------------------------------|
+| Privacy and Surveillance | Data collection, use, storage, and retention, informed consent, transparency |
+| Cybersecurity | Data breaches, security mechanisms, verification and authentication processes |
+| Censorship | Content prohibitions and restrictions, reporting mechanisms |
+| Access and Accessibility | Access to services, discrimination/exclusion risks |
+| Mis/Disinformation | Definitions of false/harmful content, content sharing, verification and reporting mechanisms |
+| Hate Speech | Definitions of violent content, content sharing, reporting mechanisms |
+| Algorithmic Accountability | Data use in AI training |
+| Data Sovereignty | Data governance, cross-border data flows |
+| Copyright | Fair use and licensing rules, verification and reporting mechanisms, monetisation |
+
+**Examples**
+
+> Hate Speech
+
+> Algorithmic Accountability
+
 
 ## Body text
 
@@ -111,23 +134,7 @@ The goal of the context is to help the general public make sense of the changes,
 - Write the contextualisation text in a new paragraph.
 - Add external links to the most authoritative sources available.
 
-## Topic _(optional)_
-
-Changes can sometimes address several topics at once, making it difficult to narrow the memos down to a clear issue. In such cases, **write separate memos for each topic**. To support splitting, the taxonomy below can help identify topics that each warrant their own memo.
-
-| Topic | Subtopics |
-|----------------------------|----------------------------------------------------------------------------------------------|
-| Privacy and Surveillance | Data collection, use, storage, and retention, informed consent, transparency |
-| Cybersecurity | Data breaches, security mechanisms, verification and authentication processes |
-| Censorship | Content prohibitions and restrictions, reporting mechanisms |
-| Access and Accessibility | Access to services, discrimination/exclusion risks |
-| Mis/Disinformation | Definitions of false/harmful content, content sharing, verification and reporting mechanisms |
-| Hate Speech | Definitions of violent content, content sharing, reporting mechanisms |
-| Algorithmic Accountability | Data use in AI training |
-| Data Sovereignty | Data governance, cross-border data flows |
-| Copyright | Fair use and licensing rules, verification and reporting mechanisms, monetisation |
-
-#### Example
+**Example**
 
 > [...]
 >
