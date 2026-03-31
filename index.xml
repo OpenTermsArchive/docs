@@ -2559,48 +2559,32 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
  
 &lt;/h2>
-&lt;p>The next thing is to set up your profile. A complete profile sets you up for meaningful interactions and connections with members interested in tracking the same terms.&lt;/p></description></item><item><title>Memo copywriting reference</title><link>https://docs.opentermsarchive.org/analysis/reference/copywriting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/analysis/reference/copywriting/</guid><description>&lt;h1 id="memo-copywriting">
+&lt;p>The next thing is to set up your profile. A complete profile sets you up for meaningful interactions and connections with members interested in tracking the same terms.&lt;/p></description></item><item><title>Memo copywriting</title><link>https://docs.opentermsarchive.org/analysis/reference/copywriting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/analysis/reference/copywriting/</guid><description>&lt;h1 id="memo-copywriting">
  
  Memo copywriting
  
 
  
 &lt;/h1>
-&lt;h2 id="purpose-of-a-memo">
- 
- &lt;a class="title-link" href="#purpose-of-a-memo">
- 
- Purpose of a memo
- 
- &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
- &lt;/a>
- 
-
- 
-&lt;/h2>
-&lt;p>Memos aim at a short analysis of detected changes, whose is &lt;em>diff&lt;/em> the atomic unit.&lt;br>
-They must first describe what has been added and what has been deleted.&lt;br>
-Their secondary objective is to provide materials to demonstrate matters of interest and further investigations.&lt;/p>
-&lt;h2 id="structure-of-a-memo">
- 
- &lt;a class="title-link" href="#structure-of-a-memo">
- 
- Structure of a memo
- 
- &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
- &lt;/a>
- 
-
- 
-&lt;/h2>
-&lt;p>A memo has:&lt;/p>
+&lt;p>Memos are short explanations of a specific change in some terms of a service.&lt;/p>
 &lt;ul>
-&lt;li>a title,&lt;/li>
-&lt;li>metadata (service name, term type and modification date),&lt;/li>
-&lt;li>paragraphs describing the changes,&lt;/li>
-&lt;li>optional paragraphs providing context for the changes.&lt;/li>
+&lt;li>They remove the technical and expertise barriers needed to interpret a textual change.&lt;/li>
+&lt;li>They can provide additional context to make sense of that change, such as outlining the regulation, geopolitical tensions or public controversy that likely led to it.&lt;/li>
+&lt;li>They can also highlight the potential consequences of that change on the users and partners of the service, as well as potential real-world harms to society.&lt;/li>
 &lt;/ul>
-&lt;p>Each item is explained in detail.&lt;/p></description></item><item><title>Publish a memo</title><link>https://docs.opentermsarchive.org/analysis/how-to/publish-memo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/analysis/how-to/publish-memo/</guid><description>&lt;h1 id="how-to-publish-a-memo">
+&lt;h2 id="structure">
+ 
+ &lt;a class="title-link" href="#structure">
+ 
+ Structure
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h2>
+&lt;p>A memo consists of:&lt;/p></description></item><item><title>Publish a memo</title><link>https://docs.opentermsarchive.org/analysis/how-to/publish-memo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/analysis/how-to/publish-memo/</guid><description>&lt;h1 id="how-to-publish-a-memo">
  
  How to publish a memo
  
