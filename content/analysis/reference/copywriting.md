@@ -17,7 +17,7 @@ A memo consists of:
 - a [title](#title);
 
 followed by the following metadata elements:
-- a [service name](#service-name);&é
+- a [service name](#service-name);
 - a [terms type](#terms-types);
 - a [change date](#change-date);
 - an optional [topic](#topic-optional);
