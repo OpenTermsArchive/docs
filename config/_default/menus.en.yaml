@@ -2,8 +2,8 @@ header:
   - name: Collections
     url: https://opentermsarchive.org/en/collections/
     weight: 1
-  - name: Memos
-    url: https://opentermsarchive.org/en/memos/
+  - name: Publications
+    url: https://opentermsarchive.org/en/publications/
     weight: 2
   - name: Documentation
     url: /
