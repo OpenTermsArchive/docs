@@ -7,7 +7,7 @@ weight: 2
 
 As Open Terms Archive is decentralised, each instance embarks its own API. The documentation relevant to the specific version of the engine on that instance is provided on that instance itself.
 
-The Collection API exposes JSON data over HTTP. Its [OpenAPI](https://swagger.io/specification/) specification can be found at `http://localhost:<port>/<basePath>/<API version>/docs`.
+The Collection API exposes data over HTTP: versioning data in JSON format and [Atom feeds]({{< relref "/terms/how-to/be-notified" >}}) for subscription. Its [OpenAPI](https://swagger.io/specification/) specification can be found at `http://localhost:<port>/<basePath>/<API version>/docs`.
 
 That endpoint exposes both the OpenAPI specification if the requested `Content-Type` is JSON, and a Swagger UI for visual and interactive documentation otherwise.
 
