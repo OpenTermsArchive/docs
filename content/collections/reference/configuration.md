@@ -246,6 +246,20 @@ The collection API section sets the parameters for the API server.
     required=true
 />}}
 
+{{< refItem
+    name="collection-api.feed.limit"
+    type="number"
+    description="Maximum number of entries returned by feed endpoints."
+    default="100"
+/>}}
+
+{{< refItem
+    name="collection-api.feed.versionUrlTemplate"
+    type="string"
+    description="Template for the `alternate` link of feed entries. `%VERSION_ID` will be replaced with the actual version ID."
+    example="https://github.com/OpenTermsArchive/demo-versions/commit/%VERSION_ID"
+/>}}
+
 ---
 
 ## Storage Repositories
