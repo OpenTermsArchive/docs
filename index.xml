@@ -479,7 +479,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  
 &lt;/h1>
 &lt;p>As Open Terms Archive is decentralised, each instance embarks its own API. The documentation relevant to the specific version of the engine on that instance is provided on that instance itself.&lt;/p>
-&lt;p>The Collection API exposes JSON data over HTTP. Its &lt;a href="https://swagger.io/specification/">OpenAPI&lt;/a> specification can be found at &lt;code>http://localhost:&amp;lt;port&amp;gt;/&amp;lt;basePath&amp;gt;/&amp;lt;API version&amp;gt;/docs&lt;/code>.&lt;/p>
+&lt;p>The Collection API exposes data over HTTP: versioning data in JSON format and &lt;a href="https://docs.opentermsarchive.org/terms/how-to/be-notified/">Atom feeds&lt;/a> for subscription. Its &lt;a href="https://swagger.io/specification/">OpenAPI&lt;/a> specification can be found at &lt;code>http://localhost:&amp;lt;port&amp;gt;/&amp;lt;basePath&amp;gt;/&amp;lt;API version&amp;gt;/docs&lt;/code>.&lt;/p>
 &lt;p>That endpoint exposes both the OpenAPI specification if the requested &lt;code>Content-Type&lt;/code> is JSON, and a Swagger UI for visual and interactive documentation otherwise.&lt;/p></description></item><item><title>Create repositories</title><link>https://docs.opentermsarchive.org/collections/how-to/create-repositories/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/create-repositories/</guid><description>&lt;h1 id="how-to-create-collection-repositories">
  
  How to create collection repositories
@@ -1803,7 +1803,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
  
 &lt;/h1>
-&lt;p>An RSS feed is a type of web page that contains information about the latest content published by a website, such as the date of publication and the address where you can view it. When this resource is updated, a feed reader app automatically notifies you and you can see the update. You can receive notification for a specific service or document by subscribing to RSS feeds.&lt;/p></description></item><item><title>Environment variables</title><link>https://docs.opentermsarchive.org/collections/reference/environment-variables/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/environment-variables/</guid><description>&lt;h2 id="environment-variables">
+&lt;p>An Atom feed is a type of web page that contains information about the latest content published by a website, such as the date of publication and the address where you can view it. When this resource is updated, a feed reader app automatically notifies you and you can see the update. You can receive notification for a specific service or terms type by subscribing to Atom feeds.&lt;/p></description></item><item><title>Environment variables</title><link>https://docs.opentermsarchive.org/collections/reference/environment-variables/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/environment-variables/</guid><description>&lt;h2 id="environment-variables">
  
  &lt;a class="title-link" href="#environment-variables">
  

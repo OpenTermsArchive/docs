@@ -144,7 +144,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  
 &lt;/h1>
 &lt;p>As Open Terms Archive is decentralised, each instance embarks its own API. The documentation relevant to the specific version of the engine on that instance is provided on that instance itself.&lt;/p>
-&lt;p>The Collection API exposes JSON data over HTTP. Its &lt;a href="https://swagger.io/specification/">OpenAPI&lt;/a> specification can be found at &lt;code>http://localhost:&amp;lt;port&amp;gt;/&amp;lt;basePath&amp;gt;/&amp;lt;API version&amp;gt;/docs&lt;/code>.&lt;/p>
+&lt;p>The Collection API exposes data over HTTP: versioning data in JSON format and &lt;a href="https://docs.opentermsarchive.org/terms/how-to/be-notified/">Atom feeds&lt;/a> for subscription. Its &lt;a href="https://swagger.io/specification/">OpenAPI&lt;/a> specification can be found at &lt;code>http://localhost:&amp;lt;port&amp;gt;/&amp;lt;basePath&amp;gt;/&amp;lt;API version&amp;gt;/docs&lt;/code>.&lt;/p>
 &lt;p>That endpoint exposes both the OpenAPI specification if the requested &lt;code>Content-Type&lt;/code> is JSON, and a Swagger UI for visual and interactive documentation otherwise.&lt;/p></description></item><item><title>Federation REST API</title><link>https://docs.opentermsarchive.org/api/federation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/api/federation/</guid><description>&lt;h1 id="federation-rest-api">
  
  Federation REST API

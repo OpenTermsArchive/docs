@@ -109,7 +109,13 @@ EN
 <span class=refItem-type>string</span>
 <span class=refItem-required>required</span>
 <a class=refItem-anchor href=#ref-collection-api-api-basepath><i class="refItem-anchor-icon icon" data-lucide=link></i></a></div><div class=refItem-description>Base path for API endpoints.</div><div class="refItem-details refItem-details__"><div class=refItem-example><span class=refItem-label>Example</span>
-<code>/collection-api</code></div></div></div><hr><h2 id=storage-repositories><a class=title-link href=#storage-repositories>Storage Repositories
+<code>/collection-api</code></div></div></div><div class=refItem id=ref-collection-api-feed-limit><div class=refItem-name><code>collection-api.feed.limit</code>
+<span class=refItem-type>number</span>
+<a class=refItem-anchor href=#ref-collection-api-feed-limit><i class="refItem-anchor-icon icon" data-lucide=link></i></a></div><div class=refItem-description>Maximum number of entries returned by feed endpoints.</div><div class="refItem-details refItem-details__"><div class=refItem-default><span>Default:</span>
+<code>100</code></div></div></div><div class=refItem id=ref-collection-api-feed-versionurltemplate><div class=refItem-name><code>collection-api.feed.versionUrlTemplate</code>
+<span class=refItem-type>string</span>
+<a class=refItem-anchor href=#ref-collection-api-feed-versionurltemplate><i class="refItem-anchor-icon icon" data-lucide=link></i></a></div><div class=refItem-description>Template for the <code>alternate</code> link of feed entries. <code>%VERSION_ID</code> will be replaced with the actual version ID.</div><div class="refItem-details refItem-details__"><div class=refItem-example><span class=refItem-label>Example</span>
+<code>https://github.com/OpenTermsArchive/demo-versions/commit/%VERSION_ID</code></div></div></div><hr><h2 id=storage-repositories><a class=title-link href=#storage-repositories>Storage Repositories
 <i class="title-anchor icon" data-lucide=link></i></a></h2><p>The storage repositories section set the parameters for supported backends for storing versions and snapshots, supporting Git and MongoDB.</p><div class=refItem id=ref-storage-type><div class=refItem-name><code>storage.type</code>
 <span class=refItem-type>string</span>
 <a class=refItem-anchor href=#ref-storage-type><i class="refItem-anchor-icon icon" data-lucide=link></i></a></div><div class=refItem-description>Type of storage backend.</div><div class="refItem-details refItem-details__"><div class=refItem-default><span>Default:</span>
