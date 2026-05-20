@@ -43,7 +43,7 @@
         {{ if .Inner }}
           {{ .Inner | markdownify }}
         {{ else }}
-          <code>{{ $example | markdownify | replaceRE "<a[^>]*>(.*?)</a>" "$1" | safeHTML }}</code>
+          <code>{{ $example }}</code>
         {{ end }}
       </div>
     {{ end }}
