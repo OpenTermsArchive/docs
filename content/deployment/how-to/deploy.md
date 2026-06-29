@@ -85,7 +85,7 @@ First, ensure your server provides unsupervised access:
    <server_ip>:
       ansible_user: <deployment_user>
       ed25519_fingerprint: <server_ssh_fingerprint>
-      ota_source_repository: https://github.com/<organization>/<collection_id>-declarations.git
+      ota_collection_repository: https://github.com/<organization>/<collection_id>-declarations.git
    ```
 
 3. Add the server fingerprint to GitHub, to allow the deployment workflow to uniquely identify the server:
