@@ -63,7 +63,7 @@ The fetcher section configures how the engine retrieves documents from the web.
 {{< refItem
     name="fetcher.language"
     type="string"
-    description="Language code (ISO 639-1) for request headers."
+    description="Comma-separated priority list of language tags used for the `Accept-Language` request header and the browser language, e.g. `en` or `en-IE,en-GB,en`. Quality factors (`;q=…`) are not supported."
     default="en"
 />}}
 
