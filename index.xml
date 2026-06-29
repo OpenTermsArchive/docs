@@ -1815,7 +1815,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
  
 &lt;/h2>
-&lt;p>This reference documentation details all available environment variables that can be used to configure sensitive information. These variables can be defined in a &lt;code>.env&lt;/code> file at the root of the collection repository.&lt;/p>
+&lt;p>This reference documentation details the environment variables used to configure sensitive credentials and the runtime behaviour of the engine. These variables can be defined in a &lt;code>.env&lt;/code> file at the root of the collection repository.&lt;/p>
 &lt;h3 id="engine">
  
  &lt;a class="title-link" href="#engine">
@@ -1969,6 +1969,126 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;/a>
  &lt;/div>
  &lt;div class="refItem-description">API key for data.gouv.fr dataset publishing.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-ota-engine-fetcher-no-sandbox">
+ &lt;div class="refItem-name">
+ &lt;code>OTA_ENGINE_FETCHER_NO_SANDBOX&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;a class="refItem-anchor" href="#ref-ota-engine-fetcher-no-sandbox">
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="refItem-description">Set to any value to launch the headless browser without its sandbox, for containerised environments such as Docker where the sandbox cannot run.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-ota-engine-fetcher-no-headless">
+ &lt;div class="refItem-name">
+ &lt;code>OTA_ENGINE_FETCHER_NO_HEADLESS&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;a class="refItem-anchor" href="#ref-ota-engine-fetcher-no-headless">
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="refItem-description">Set to any value to run the browser with a visible window instead of headless, which is useful for debugging fetching issues.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-https-proxy">
+ &lt;div class="refItem-name">
+ &lt;code>HTTPS_PROXY&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;a class="refItem-anchor" href="#ref-https-proxy">
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="refItem-description">Proxy URL for the engine&amp;rsquo;s outgoing HTTPS traffic, such as document fetching and GitLab issue reporting.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-http-proxy">
+ &lt;div class="refItem-name">
+ &lt;code>HTTP_PROXY&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;a class="refItem-anchor" href="#ref-http-proxy">
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="refItem-description">Proxy URL for the engine&amp;rsquo;s outgoing HTTP traffic. Also used as a fallback when &lt;code>HTTPS_PROXY&lt;/code> is not set.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
  
