@@ -57,7 +57,7 @@ This guide will help you define the metadata for your Open Terms Archive collect
     - name: "Admin entity"
       url: "https://admin-website.com"
       logo: "https://path-to-logo.png"
-      roles: ["administrator"]
+      roles: ["sysadmin"]
     ```
 
 6. Add optional fields as needed:
