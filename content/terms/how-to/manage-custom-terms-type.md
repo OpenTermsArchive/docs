@@ -46,7 +46,7 @@ If you need a faster solution for production use, you can fork the terms-types r
 ```json
 {
   "dependencies": {
-    "@opentermsarchive/engine": "5.0.3",
+    "@opentermsarchive/engine": "^14.0.0",
     "@opentermsarchive/terms-types": "<your-organization-or-username>/terms-types#main"
   }
 }
