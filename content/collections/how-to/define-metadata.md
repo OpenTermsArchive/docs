@@ -52,18 +52,18 @@ This guide will help you define the metadata for your Open Terms Archive collect
     governance:
     - name: "Host entity"
       url: "https://entity-website.com"
-      logo: "https://path-to-logo.png"
+      logo: "https://path-to-logo.png"  # Transparent PNG, min width 240px, legible on light background
       roles: ["curator", "maintainer"]
     - name: "Admin entity"
       url: "https://admin-website.com"
-      logo: "https://path-to-logo.png"
+      logo: "https://path-to-logo.png"  # Transparent PNG, min width 240px, legible on light background
       roles: ["sysadmin"]
     ```
 
 6. Add optional fields as needed:
 
     ```yaml
-    logo: "https://path-to-collection-logo.png"
+    logo: "https://path-to-collection-logo.png"  # Transparent PNG, min width 240px, legible on light background
     donations: "https://donation-page-url.com"
     ```
 
