@@ -40,3 +40,21 @@ With explicit parameters:
 ```
 
 {{< /refItem >}}
+
+{{< refItem
+    name="convertSpacesToStandard"
+    description="Replaces Unicode space separators, such as non-breaking spaces or narrow no-break spaces, with a regular space in text content."
+>}}
+
+```json
+"filter": [
+    "convertSpacesToStandard"
+]
+```
+
+```diff
+- <p>Read the list of our&nbsp;affiliates.</p>
++ <p>Read the list of our affiliates.</p>
+```
+
+{{< /refItem >}}
