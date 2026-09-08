@@ -8,8 +8,23 @@ This reference details all available built-in [filters]({{< relref "terms/explan
 
 {{< refItem
     name="removeQueryParams"
-    description="Removes specified query parameters from URLs in links and images."
+    description="Removes query parameters from URLs in links and images. Without parameters, removes well-known tracking parameters such as `utm_source` or `fbclid`, listed in the [engine source code](https://github.com/OpenTermsArchive/engine/blob/main/src/archivist/extract/exposedFilters.js). Declaring parameters replaces this default list."
 >}}
+
+With the default parameters:
+
+```json
+"filter": [
+    "removeQueryParams"
+]
+```
+
+```diff
+- <p>Read the <a href="https://example.com/example-page?utm_source=OGB&fbclid=IwAR2xK9&lang=en">list of our affiliates</a>.</p>
++ <p>Read the <a href="https://example.com/example-page?lang=en">list of our affiliates</a>.</p>
+```
+
+With explicit parameters:
 
 ```json
 "filter": [
