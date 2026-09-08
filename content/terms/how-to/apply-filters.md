@@ -109,7 +109,7 @@ For filters that don’t require parameters, add the filter name as a string:
 }
 ```
 
-Built-in filters declared this way use their default parameters. For example, `removeQueryParams` alone removes the well-known tracking parameters listed in its [reference]({{< relref "terms/reference/built-in-filters/#ref-removequeryparams" >}}).
+Built-in filters declared this way use their default parameters. For example, `removeQueryParams` alone removes the well-known tracking parameters described in its [reference]({{< relref "terms/reference/built-in-filters/#ref-removequeryparams" >}}).
 
 ### Filter with parameters
 
