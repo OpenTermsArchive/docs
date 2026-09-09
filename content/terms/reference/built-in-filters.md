@@ -39,6 +39,22 @@ With explicit parameters:
 + <p>Read the <a href="https://example.com/example-page?lang=en">list of our affiliates</a>.</p>
 ```
 
+To keep the default parameters and remove additional ones, declare the filter twice, as filters are applied in order:
+
+```json
+"filter": [
+    "removeQueryParams",
+    {
+        "removeQueryParams": ["ref"]
+    }
+]
+```
+
+```diff
+- <p>Read the <a href="https://example.com/example-page?utm_source=OGB&ref=footer&lang=en">list of our affiliates</a>.</p>
++ <p>Read the <a href="https://example.com/example-page?lang=en">list of our affiliates</a>.</p>
+```
+
 {{< /refItem >}}
 
 {{< refItem
