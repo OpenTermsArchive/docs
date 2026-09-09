@@ -109,9 +109,11 @@ For filters that don’t require parameters, add the filter name as a string:
 }
 ```
 
+Built-in filters declared this way use their default parameters. For example, `removeQueryParams` alone removes the well-known tracking parameters described in its [reference]({{< relref "terms/reference/built-in-filters/#ref-removequeryparams" >}}).
+
 ### Filter with parameters
 
-For filters that take parameters, use an object format, for example with the built-in filter `removeQueryParams` to remove query parameters from URLs:
+For filters that take parameters, use an object format, for example with the built-in filter `removeQueryParams` to choose which query parameters to remove from URLs:
 
 ```json
 {
