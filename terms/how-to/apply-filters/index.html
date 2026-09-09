@@ -57,8 +57,8 @@ EN
 </span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl>  <span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></div><h3 id=filter-with-parameters><a class=title-link href=#filter-with-parameters>Filter with parameters
-<i class="title-anchor icon" data-lucide=link></i></a></h3><p>For filters that take parameters, use an object format, for example with the built-in filter <code>removeQueryParams</code> to remove query parameters from URLs:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=p>{</span>
+</span></span></code></pre></div><p>Built-in filters declared this way use their default parameters. For example, <code>removeQueryParams</code> alone removes the well-known tracking parameters described in its <a href=/terms/reference/built-in-filters/#ref-removequeryparams>reference</a>.</p><h3 id=filter-with-parameters><a class=title-link href=#filter-with-parameters>Filter with parameters
+<i class="title-anchor icon" data-lucide=link></i></a></h3><p>For filters that take parameters, use an object format, for example with the built-in filter <code>removeQueryParams</code> to choose which query parameters to remove from URLs:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=p>{</span>
 </span></span><span class=line><span class=cl>  <span class=nt>&#34;name&#34;</span><span class=p>:</span> <span class=s2>&#34;MyService&#34;</span><span class=p>,</span>
 </span></span><span class=line><span class=cl>  <span class=nt>&#34;terms&#34;</span><span class=p>:</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=nt>&#34;Privacy Policy&#34;</span><span class=p>:</span> <span class=p>{</span>
