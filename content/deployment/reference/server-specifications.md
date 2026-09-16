@@ -22,6 +22,8 @@ Storage usage typically grows at a rate of 0.5 MB per tracked terms per month o
 - Services with large legal teams and heavy website layouts: ~1 MB per terms per month
 - Smaller services: ~0.1-0.3 MB per terms per month
 
+If datasets are generated with `ota dataset`, the latest archive is kept in the directory defined by [`dataset.storagePath`]({{< relref "collections/reference/configuration#ref-dataset-storagepath" >}}). Plan enough space for two archives, as the new one is written before the previous one is deleted.
+
 ### Examples
 
 - Tracking 5 very large social media platforms on their 5 most common terms types (such as Terms of Service, Privacy Policy, Trackers Policy, Developer Agreement, Community Guidelines) would require approximately 300 MB of additional storage per year.
