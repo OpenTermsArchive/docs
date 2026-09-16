@@ -73,7 +73,7 @@ EN
 <span class=refItem-type>string</span>
 <a class=refItem-anchor href=#ref-reporter-apibaseurl><i class="refItem-anchor-icon icon" data-lucide=link></i></a></div><div class=refItem-description>API base URL for GitLab (if applicable).</div><div class="refItem-details refItem-details__"><div class=refItem-example><span class=refItem-label>Example</span>
 <code>https://api.gitlab.example.com</code></div></div></div><h3 id=dataset><a class=title-link href=#dataset>Dataset
-<i class="title-anchor icon" data-lucide=link></i></a></h3><p>The dataset section configures how datasets are published. Datasets can be published to GitHub releases, GitLab releases, and/or data.gouv.fr. If both GitHub and GitLab tokens are configured, GitHub takes precedence.</p><div class=refItem id=ref-dataset-title><div class=refItem-name><code>dataset.title</code>
+<i class="title-anchor icon" data-lucide=link></i></a></h3><p>The dataset section configures how datasets are generated, stored and published. The latest generated dataset is stored locally and exposed through the <a href=/api/collection/>Collection API</a>. It can also be published to GitHub releases, GitLab releases, and/or data.gouv.fr. If both GitHub and GitLab tokens are configured, GitHub takes precedence.</p><div class=refItem id=ref-dataset-title><div class=refItem-name><code>dataset.title</code>
 <span class=refItem-type>string</span>
 <span class=refItem-required>required</span>
 <a class=refItem-anchor href=#ref-dataset-title><i class="refItem-anchor-icon icon" data-lucide=link></i></a></div><div class=refItem-description>Title of the dataset.</div><div class="refItem-details refItem-details__"><div class=refItem-example><span class=refItem-label>Example</span>
@@ -84,7 +84,10 @@ EN
 <code>https://github.com/OpenTermsArchive/contrib-versions</code></div></div></div><div class=refItem id=ref-dataset-publishingschedule><div class=refItem-name><code>dataset.publishingSchedule</code>
 <span class=refItem-type>string</span>
 <a class=refItem-anchor href=#ref-dataset-publishingschedule><i class="refItem-anchor-icon icon" data-lucide=link></i></a></div><div class=refItem-description>Cron expression for dataset publishing. By default, it runs every Monday at 8:30 AM. If publishing to data.gouv.fr, remember to update <code>dataset.datagouv.frequency</code> to match the actual publishing frequency.</div><div class="refItem-details refItem-details__"><div class=refItem-default><span>Default:</span>
-<code>30 8 * * MON</code></div></div></div><h4 id=datagouvfr-publishing><a class=title-link href=#datagouvfr-publishing>data.gouv.fr publishing
+<code>30 8 * * MON</code></div></div></div><div class=refItem id=ref-dataset-storagepath><div class=refItem-name><code>dataset.storagePath</code>
+<span class=refItem-type>string</span>
+<a class=refItem-anchor href=#ref-dataset-storagepath><i class="refItem-anchor-icon icon" data-lucide=link></i></a></div><div class=refItem-description>Path to the directory where the latest generated dataset archive is stored, alongside a <code>metadata.json</code> file describing it. This directory is managed by the engine, which deletes any <code>.zip</code> archive it does not reference at each generation, so it must not be shared with other files. Its content is exposed by the Collection API.</div><div class="refItem-details refItem-details__"><div class=refItem-default><span>Default:</span>
+<code>./data/datasets</code></div></div></div><h4 id=datagouvfr-publishing><a class=title-link href=#datagouvfr-publishing>data.gouv.fr publishing
 <i class="title-anchor icon" data-lucide=link></i></a></h4><p>The data.gouv.fr section configures publishing to the French government&rsquo;s open data platform. Either <code>datasetId</code> or <code>organizationIdOrSlug</code> must be configured.</p><div class=refItem id=ref-dataset-datagouv-datasetid><div class=refItem-name><code>dataset.datagouv.datasetId</code>
 <span class=refItem-type>string</span>
 <span class=refItem-required>required</span>
