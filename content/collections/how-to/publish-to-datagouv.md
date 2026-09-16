@@ -68,7 +68,7 @@ In your collection's configuration file (e.g., `config/production.json`), add th
 }
 ```
 
-### 3. Configure for testing (optional)
+### 2. Configure for testing (optional)
 
 If you want to test with the demo environment first, add `useDemo`:
 
@@ -84,7 +84,7 @@ If you want to test with the demo environment first, add `useDemo`:
 }
 ```
 
-### 4. Set the API key
+### 3. Set the API key
 
 Create a `.env` file at the root of your collection repository (if it doesn't already exist) and add your data.gouv.fr API key:
 
@@ -107,10 +107,10 @@ This will create and publish a dataset to data.gouv.fr. Check the output to veri
 To automatically publish datasets on a schedule, use the `--schedule` flag:
 
 ```bash
-npx ota dataset --schedule --publish --remove-local-copy
+npx ota dataset --schedule --publish
 ```
 
-This will publish datasets according to the schedule defined in your configuration (by default, every Monday at 8:30 AM).
+This will publish datasets according to the schedule defined in your configuration (by default, every Monday at 8:30 AM). The latest generated dataset is also kept locally and served by the [Collection API]({{< relref "api/collection" >}}).
 
 ## Publishing to multiple platforms
 

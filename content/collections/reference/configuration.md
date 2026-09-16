@@ -166,7 +166,7 @@ The reporter section manages how issues are reported when terms content is inacc
 
 ### Dataset
 
-The dataset section configures how datasets are published. Datasets can be published to GitHub releases, GitLab releases, and/or data.gouv.fr. If both GitHub and GitLab tokens are configured, GitHub takes precedence.
+The dataset section configures how datasets are generated, stored and published. The latest generated dataset is stored locally and exposed through the [Collection API]({{< relref "api/collection" >}}). It can also be published to GitHub releases, GitLab releases, and/or data.gouv.fr. If both GitHub and GitLab tokens are configured, GitHub takes precedence.
 
 {{< refItem
     name="dataset.title"
@@ -189,6 +189,13 @@ The dataset section configures how datasets are published. Datasets can be publi
     type="string"
     description="Cron expression for dataset publishing. By default, it runs every Monday at 8:30 AM. If publishing to data.gouv.fr, remember to update `dataset.datagouv.frequency` to match the actual publishing frequency."
     default="30 8 * * MON"
+/>}}
+
+{{< refItem
+    name="dataset.storagePath"
+    type="string"
+    description="Path to the directory where the latest generated dataset archive is stored, alongside a `metadata.json` file describing it. This directory is managed by the engine, which deletes any `.zip` archive it does not reference at each generation, so it must not be shared with other files. Its content is exposed by the Collection API."
+    default="./data/datasets"
 />}}
 
 #### data.gouv.fr publishing

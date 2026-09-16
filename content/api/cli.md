@@ -58,9 +58,11 @@ In these commands:
 
 ## Publishing dataset
 
-{{< refItem name="ota dataset [--file <filename>]" description="Export the versions dataset into a ZIP file. The dataset title is defined in the configuration." example="npx ota dataset --file dataset.zip" />}}
+{{< refItem name="ota dataset [--file <filename>]" description="Export the versions dataset into a ZIP file, stored in the directory defined by `dataset.storagePath` in the configuration (`./data/datasets` by default) alongside a `metadata.json` file describing it. The file name defaults to the dataset title, defined in the configuration, followed by the current date. Only the latest dataset is kept: previous archives in that directory are deleted." example="npx ota dataset --file dataset.zip" />}}
 
-To export the dataset into a ZIP file and publish it to configured platforms (GitHub releases, GitLab releases, and/or data.gouv.fr):
+The latest dataset is exposed by the [Collection API]({{< relref "api/collection" >}}).
+
+To also publish the dataset to configured platforms (GitHub releases, GitLab releases, and/or data.gouv.fr):
 
 {{< refItem name="ota dataset --publish [--file <filename>]" description="Export and publish dataset to all configured platforms" example="npx ota dataset --publish" />}}
 
@@ -74,11 +76,11 @@ These environment variables can be defined in a [`.env` file]({{< relref "collec
 
 > **Note**: If both GitHub and GitLab tokens are configured, GitHub takes precedence. data.gouv.fr can be used alongside either GitHub or GitLab.
 
-To export, publish the dataset and remove the local copy that was created after it has been uploaded:
+To export, and optionally publish, the dataset on the schedule defined by `dataset.publishingSchedule` in the configuration:
 
-{{< refItem name="ota dataset --publish --remove-local-copy [--file <filename>]" description="Export, publish dataset and remove local copy after upload" example="npx ota dataset --publish --remove-local-copy" />}}
+{{< refItem name="ota dataset --schedule [--publish] [--file <filename>]" description="Export, and optionally publish, the dataset on the schedule defined in the configuration" example="npx ota dataset --schedule --publish" />}}
 
-{{< refItem name="ota dataset --schedule [--file <filename>]" description="Schedule export, publishing and local copy removal" example="npx ota dataset --schedule --publish --remove-local-copy" />}}
+> **Note**: The `--remove-local-copy` option was removed in engine v16, as the local copy is now the reference dataset served by the Collection API. Remove it from the `dataset:schedule` script of the collection `package.json`, otherwise the command fails with an unknown option error.
 
 ## Exposing the collection API
 

@@ -23,6 +23,8 @@ Subscribe to changes across the entire collection: `{collection-api-endpoint}/fe
 
 Subscribe to changes for all terms of a specific service: `{collection-api-endpoint}/feed/{serviceId}`
 
+The service ID is case sensitive: it is the name of the service declaration file without the extension.
+
 > For example, for all terms of GitHub in the Demo collection: `http://162.19.74.224/collection-api/v1/feed/GitHub`
 
 ## For one terms type of a service
