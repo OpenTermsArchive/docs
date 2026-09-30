@@ -5,10 +5,11 @@ weight: 2
 
 # How to create collection repositories
 
-Collections in Open Terms Archive rely on three Git repositories to hold the data:
+Collections in Open Terms Archive rely on three Git repositories to hold the data, and optionally a fourth one to publish tracking results:
 - Declarations repository: stores the declarations that define terms to track
 - Snapshots repository: stores raw snapshots of tracked terms
 - Versions repository: stores processed versions of tracked terms
+- Tracking results repository (optional): stores the tracking status of each terms and the lifecycle of each tracking run
 
 This guide assumes you use GitHub. For other Git platforms, adapt these steps accordingly.
 
@@ -101,6 +102,49 @@ Before starting, ensure you have:
 
 3. Update README with collection metadata
 
+## Create tracking results repository
+
+This repository is optional: without it, the engine records tracking results on the server only, without publishing them.
+
+### Create repository
+
+1. [Create a new repository](https://github.com/new) named `<collection_id>-tracking-results`
+2. Check "Add a README file", as the deployment can only clone a repository that has at least one commit
+
+### Configure repository
+
+1. Set up "About" section:
+   - Add description: "Tracking results for `<collection_name>`. Maintained by `<maintainer>`."
+   - Set website: `https://opentermsarchive.org`
+   - Add standard tags
+   - Uncheck "Releases", "Packages" and "Deployments"
+
+2. Configure features:
+   - Disable Wikis, Issues, Discussions, and Projects
+   - Disable GitHub Actions
+
+### Declare repository
+
+In the `config/production.json` file of the declarations repository, declare the tracking results repository and enable its publication:
+
+```json
+{
+  "@opentermsarchive/engine": {
+    "tracking-results": {
+      "storage": {
+        "git": {
+          "repository": "git@github.com:<organization>/<collection_id>-tracking-results.git",
+          "path": "./data/tracking-results",
+          "publish": true
+        }
+      }
+    }
+  }
+}
+```
+
+The deployment clones the repository declared in `repository` on the server, and `publish` makes the engine push the tracking results at the end of each tracking run, which it does not do by default. See the [configuration reference]({{< relref "collections/reference/configuration#tracking-results" >}}) for all options.
+
 ## Set up GitHub teams
 
 For collections within the Open Terms Archive organization:
@@ -114,5 +158,6 @@ For collections within the Open Terms Archive organization:
    - Declarations repository: "Maintain" access
    - Snapshots repository: "Triage" access
    - Versions repository: "Triage" access
+   - Tracking results repository, if any: "Triage" access
 4. Add team members
 5. Add repositories to Bots team with "Write" access

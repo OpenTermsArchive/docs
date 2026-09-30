@@ -44,7 +44,7 @@ The recorder section manages how versions and snapshots of terms are stored, sup
 
 ### Tracking results
 
-The tracking results section configures the repository in which the engine records the tracking status of each terms and the lifecycle of each tracking run. Tracking results are recorded by default; set `tracking-results` to `null` to disable them.
+The tracking results section configures the repository in which the engine records the tracking status of each terms and the lifecycle of each tracking run. Tracking results are recorded by default; set `tracking-results` to `null` to disable them. To publish them, see [how to create the tracking results repository]({{< relref "collections/how-to/create-repositories#create-tracking-results-repository" >}}).
 
 {{< refItem
     name="tracking-results.storage.type"
