@@ -63,7 +63,7 @@
 &lt;li>Admin access to the OpenTermsArchive GitHub organization&lt;/li>
 &lt;li>The collection name and icon&lt;/li>
 &lt;li>List of team members to add&lt;/li>
-&lt;li>The three collection repositories (declarations, snapshots, versions) already created&lt;/li>
+&lt;li>The collection repositories (declarations, snapshots, versions and, if any, tracking results) already created&lt;/li>
 &lt;/ul>
 &lt;h2 id="steps">
  

@@ -38,26 +38,14 @@
 
  
 &lt;/h1>
-&lt;p>Collections in Open Terms Archive rely on three Git repositories to hold the data:&lt;/p>
+&lt;p>Collections in Open Terms Archive rely on three Git repositories to hold the data, and optionally a fourth one to publish tracking results:&lt;/p>
 &lt;ul>
 &lt;li>Declarations repository: stores the declarations that define terms to track&lt;/li>
 &lt;li>Snapshots repository: stores raw snapshots of tracked terms&lt;/li>
 &lt;li>Versions repository: stores processed versions of tracked terms&lt;/li>
+&lt;li>Tracking results repository (optional): stores the tracking status of each terms and the lifecycle of each tracking run&lt;/li>
 &lt;/ul>
-&lt;p>This guide assumes you use GitHub. For other Git platforms, adapt these steps accordingly.&lt;/p>
-&lt;h2 id="prerequisites">
- 
- &lt;a class="title-link" href="#prerequisites">
- 
- Prerequisites
- 
- &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
- &lt;/a>
- 
-
- 
-&lt;/h2>
-&lt;p>Before starting, ensure you have:&lt;/p></description></item><item><title>Define metadata</title><link>https://docs.opentermsarchive.org/collections/how-to/define-metadata/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/define-metadata/</guid><description>&lt;h1 id="how-to-define-metadata">
+&lt;p>This guide assumes you use GitHub. For other Git platforms, adapt these steps accordingly.&lt;/p></description></item><item><title>Define metadata</title><link>https://docs.opentermsarchive.org/collections/how-to/define-metadata/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/define-metadata/</guid><description>&lt;h1 id="how-to-define-metadata">
  
  How to define metadata
  
