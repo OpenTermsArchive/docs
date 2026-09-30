@@ -10,14 +10,15 @@ This document provides an overview of the key components and elements involved i
 
 ## Repository structure
 
-A collection is defined by three repositories that work together to manage and track terms.
+A collection is defined by three repositories, and optionally a fourth one, that work together to manage and track terms.
 
 The declarations repository, `<collection_name>-declarations`, serves as the primary workspace for collection maintainers, containing declarations of the terms to track along with engine and deployment configurations.
 
-This repository is complemented by two automatically managed repositories:
+This repository is complemented by automatically managed repositories:
 
 - The versions repository, `<collection_name>-versions`, which maintains a chronological history of terms changes in their readable format
 - The snapshots repository, `<collection_name>-snapshots`, which maintains a chronological history of the original source document (HTML, PDF…) from which the terms will be extracted
+- The optional tracking results repository, `<collection_name>-tracking-results`, which maintains a chronological history of the tracking status of each terms and of each tracking run
 
 These repositories must be considered as databases and are automatically updated by the engine whenever changes are detected in the tracked terms.
 
@@ -59,7 +60,7 @@ The vault system uses a master password, `vault.key` to encrypt and decrypt sens
 
 [GitHub Actions](https://docs.github.com/en/actions) and [Ansible](https://www.ansible.com/) automate the deployment process. GitHub Actions runs the workflow while Ansible configures the server and deploys the engine.
 
-A dedicated GitHub user account is used for bot-related actions such as committing entries in versions and snapshots repositories, reporting issues when tracking fails, and publishing releases. This account is configured with specific permissions to perform these automated tasks.
+A dedicated GitHub user account is used for bot-related actions such as committing entries in versions, snapshots and tracking results repositories, reporting issues when tracking fails, and publishing releases. This account is configured with specific permissions to perform these automated tasks.
 
 The engine sends email notifications to collection administrators when errors or issues occur during the tracking process, enabling prompt intervention when needed.
 

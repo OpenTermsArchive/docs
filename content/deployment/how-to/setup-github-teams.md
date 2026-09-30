@@ -12,7 +12,7 @@ This guide explains how to configure GitHub teams and permissions for a new coll
 - Admin access to the OpenTermsArchive GitHub organization
 - The collection name and icon
 - List of team members to add
-- The three collection repositories (declarations, snapshots, versions) already created
+- The collection repositories (declarations, snapshots, versions and, if any, tracking results) already created
 
 ## Steps
 
@@ -34,13 +34,14 @@ This guide explains how to configure GitHub teams and permissions for a new coll
    2. Add the declarations repository with "Maintain" access
    3. Add the snapshots repository with "Triage" access
    4. Add the versions repository with "Triage" access
+   5. Add the tracking results repository, if any, with "Triage" access
 
-   > Note: Snapshots and versions repositories are limited to "Triage" access to prevent data corruption
+   > Note: Snapshots, versions and tracking results repositories are limited to "Triage" access to prevent data corruption
 
 4. Configure bot access:
    1. Navigate to the Bots team
    2. Go to the "Repositories" tab
-   3. Add all three repositories (declarations, snapshots, versions) with "Write" access
+   3. Add all the collection repositories (declarations, snapshots, versions and, if any, tracking results) with "Write" access
 
 ## Verification
 
