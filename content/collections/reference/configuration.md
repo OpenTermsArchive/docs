@@ -42,6 +42,46 @@ The recorder section manages how versions and snapshots of terms are stored, sup
     description="Configuration for storing snapshots. Supports Git and MongoDB. See [Storage Repositories](#storage-repositories) for more information."
 />}}
 
+### Tracking results
+
+The tracking results section configures the repository in which the engine records the tracking status of each terms and the lifecycle of each tracking run. Tracking results are recorded by default; set `tracking-results` to `null` to disable them.
+
+{{< refItem
+    name="tracking-results.storage.type"
+    type="string"
+    description="Type of storage backend. Only Git is supported, as its history is what makes tracking results tamper-evident."
+    default="git"
+    allowedValues="git"
+/>}}
+
+{{< refItem
+    name="tracking-results.storage.git.path"
+    type="string"
+    description="Path to the tracking results repository."
+    default="./data/tracking-results"
+/>}}
+
+{{< refItem
+    name="tracking-results.storage.git.publish"
+    type="boolean"
+    description="Set to `true` to push the tracking results to the `origin` remote of the repository at the end of each tracking run. Unlike versions and snapshots, tracking results are not published by default in production."
+    default="false"
+/>}}
+
+{{< refItem
+    name="tracking-results.storage.git.author.name"
+    type="string"
+    description="Author name for changes."
+    default="Open Terms Archive Bot"
+/>}}
+
+{{< refItem
+    name="tracking-results.storage.git.author.email"
+    type="string"
+    description="Author email for changes."
+    default="bot@opentermsarchive.org"
+/>}}
+
 ### Fetcher
 
 The fetcher section configures how the engine retrieves documents from the web.
