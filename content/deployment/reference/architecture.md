@@ -48,7 +48,7 @@ The deployment process uses a dedicated SSH key pair, `ota-deploy`, for secure s
 
 A separate collection-specific SSH key pair, `<collection_name>-key`, enables the engine to perform GitHub actions as a bot user.
 
-Access to GitHub repositories is controlled through a fine-grained access token, `OTA_ENGINE_GITHUB_TOKEN`, that provides specific permissions for repository management.
+Access to GitHub repositories is controlled through a fine-grained access token that provides specific permissions for repository management, provided to the engine as `OTA_ENGINE_GITHUB_TOKEN` to publish datasets and to the issue reporter as `OTA_ISSUE_REPORTER_GITHUB_TOKEN` to report tracking failures.
 
 ### Secret management
 
@@ -64,7 +64,7 @@ A dedicated GitHub user account is used for bot-related actions such as committi
 
 The engine sends email notifications to collection administrators when errors or issues occur during the tracking process, enabling prompt intervention when needed.
 
-The engine automatically creates issues in the declarations repository to notify collection maintainers when terms can no longer be tracked. These issues provide details about the tracking failure to allow maintainers to investigate and resolve the problem.
+The [issue reporter]({{< relref "collections/how-to/report-tracking-failures" >}}) automatically creates issues in the declarations repository to notify collection maintainers when terms can no longer be tracked, from the tracking results recorded by the engine. These issues provide details about the tracking failure to allow maintainers to investigate and resolve the problem.
 
 ## Configuration files
 
