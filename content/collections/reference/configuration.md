@@ -157,53 +157,6 @@ The logger section configures logging and error notification settings.
     default="true"
 />}}
 
-### Reporter
-
-The reporter section manages how issues are reported when terms content is inaccessible, supporting GitHub and GitLab.
-
-{{< refItem
-    name="reporter.type"
-    type="string"
-    description="Type of reporter"
-    example="github"
-    allowedValues="github, gitlab"
-/>}}
-
-{{< refItem
-    name="reporter.repositories.declarations"
-    type="string"
-    description="Repository for creating issues."
-    example="OpenTermsArchive/demo-declarations"
-/>}}
-
-{{< refItem
-    name="reporter.repositories.versions"
-    type="string"
-    description="Repository for versions."
-    example="OpenTermsArchive/demo-versions"
-/>}}
-
-{{< refItem
-    name="reporter.repositories.snapshots"
-    type="string"
-    description="Repository for snapshots."
-    example="OpenTermsArchive/demo-snapshots"
-/>}}
-
-{{< refItem
-    name="reporter.baseURL"
-    type="string"
-    description="Base URL for GitLab (if applicable)."
-    example="https://gitlab.example.com"
-/>}}
-
-{{< refItem
-    name="reporter.apiBaseURL"
-    type="string"
-    description="API base URL for GitLab (if applicable)."
-    example="https://api.gitlab.example.com"
-/>}}
-
 ### Dataset
 
 The dataset section configures how datasets are generated, stored and published. The latest generated dataset is stored locally and exposed through the [Collection API]({{< relref "api/collection" >}}). It can also be published to GitHub releases, GitLab releases, and/or data.gouv.fr. If both GitHub and GitLab tokens are configured, GitHub takes precedence.
