@@ -33,6 +33,8 @@ This reference documentation details the environment variables used to configure
 
 {{< refItem name="OTA_ISSUE_REPORTER_GITLAB_TOKEN" type="string" description="GitLab token of the account managing the issues of the declarations repository, required when the reporter type is `gitlab`." />}}
 
+{{< refItem name="HTTPS_PROXY" anchorPrefix="issue-reporter" type="string" description="Proxy URL for the issue reporter's requests to GitLab. Not used with GitHub." />}}
+
 {{< refItem name="OTA_ISSUE_REPORTER_SMTP_PASSWORD" type="string" description="SMTP password for email error notifications of the reporter." />}}
 
 ---
