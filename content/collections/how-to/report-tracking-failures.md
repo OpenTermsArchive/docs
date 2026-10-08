@@ -75,7 +75,7 @@ The issues can also be synchronized once, without scheduling, with `npm run issu
 Up to engine v16 included, the reporter was part of the engine and configured under the `@opentermsarchive/engine.reporter` key. To migrate a collection:
 
 1. Install the module as described above.
-2. Move the `type`, `repositories`, `baseURL` and `apiBaseURL` entries from `@opentermsarchive/engine.reporter` to `@opentermsarchive/issue-reporter`, and add the `collectionApi.url` entry. The legacy `githubIssues` form is not supported.
+2. Move the `type`, `repositories`, `baseURL` and `apiBaseURL` entries from `@opentermsarchive/engine.reporter` to `@opentermsarchive/issue-reporter`, and add the `collectionApi.url` entry. If the configuration uses the legacy `githubIssues` entry, replace it with `"type": "github"` next to the same `repositories`, as the module does not infer the type of the forge.
 3. Provide the token of the forge to the module in the `.env` file:
    - On GitHub, add `OTA_ISSUE_REPORTER_GITHUB_TOKEN`, with the same token as `OTA_ENGINE_GITHUB_TOKEN` or a dedicated one. Keep `OTA_ENGINE_GITHUB_TOKEN` if the engine publishes datasets to GitHub releases, as it still uses it to do so.
    - On GitLab, rename `OTA_ENGINE_GITLAB_TOKEN` to `OTA_ISSUE_REPORTER_GITLAB_TOKEN`, as the engine no longer uses it. The engine publishes datasets to GitLab releases with `OTA_ENGINE_GITLAB_RELEASES_TOKEN`.
