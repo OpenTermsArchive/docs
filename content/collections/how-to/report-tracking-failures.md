@@ -72,7 +72,7 @@ The issues can also be synchronized once, without scheduling, with `npm run issu
 
 ## Migrate from the engine reporter
 
-Until engine v16, the reporter was part of the engine and configured under the `@opentermsarchive/engine.reporter` key. To migrate a collection:
+Up to engine v16 included, the reporter was part of the engine and configured under the `@opentermsarchive/engine.reporter` key. To migrate a collection:
 
 1. Install the module as described above.
 2. Move the `type`, `repositories`, `baseURL` and `apiBaseURL` entries from `@opentermsarchive/engine.reporter` to `@opentermsarchive/issue-reporter`, and add the `collectionApi.url` entry. The legacy `githubIssues` form is not supported.
