@@ -13,9 +13,7 @@ This reference documentation details the environment variables used to configure
 
 {{< refItem name="OTA_ENGINE_GITHUB_TOKEN" type="string" description="GitHub token for dataset publishing. If both GitHub and GitLab tokens are configured, GitHub takes precedence." />}}
 
-{{< refItem name="OTA_ENGINE_GITLAB_TOKEN" type="string" description="GitLab token for dataset publishing. Used only if GitHub token is not configured." />}}
-
-{{< refItem name="OTA_ENGINE_GITLAB_RELEASES_TOKEN" type="string" description="GitLab token for dataset releases." />}}
+{{< refItem name="OTA_ENGINE_GITLAB_RELEASES_TOKEN" type="string" description="GitLab token for dataset publishing. Used only if GitHub token is not configured." />}}
 
 {{< refItem name="OTA_ENGINE_DATAGOUV_API_KEY" type="string" description="API key for data.gouv.fr dataset publishing." />}}
 

@@ -69,7 +69,7 @@ To also publish the dataset to configured platforms (GitHub releases, GitLab rel
 The dataset can be published to multiple platforms simultaneously:
 
 - **GitHub releases**: Requires `OTA_ENGINE_GITHUB_TOKEN` environment variable
-- **GitLab releases**: Requires `OTA_ENGINE_GITLAB_TOKEN` environment variable (used only if GitHub token is not configured)
+- **GitLab releases**: Requires `OTA_ENGINE_GITLAB_RELEASES_TOKEN` environment variable (used only if GitHub token is not configured)
 - **data.gouv.fr**: Requires `OTA_ENGINE_DATAGOUV_API_KEY` environment variable. To set up data.gouv.fr publishing, see the [guide to publish datasets to data.gouv.fr]({{< relref "collections/how-to/publish-to-datagouv" >}}).
 
 These environment variables can be defined in a [`.env` file]({{< relref "collections/reference/environment-variables" >}}).
