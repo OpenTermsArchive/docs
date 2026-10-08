@@ -88,8 +88,8 @@ To export, and optionally publish, the dataset on the schedule defined by `datas
 
 ## Reporting tracking failures
 
-Once the [issue reporter]({{< relref "collections/how-to/report-tracking-failures" >}}) module is installed as a dependency within a collection, the `ota-issue-reporter` command with the following subcommands is available.
+Once the [issue reporter]({{< relref "collections/how-to/report-tracking-failures" >}}) module is installed as a dependency within a collection, the `ota-issue-reporter` command is available.
 
 {{< refItem name="ota-issue-reporter sync" description="Synchronize the issues of the declarations repository with the tracking results of the latest completed tracking run served by the Collection API, then exit. The forge, the repositories and the Collection API are defined in the configuration." example="npx ota-issue-reporter sync" />}}
 
-{{< refItem name="ota-issue-reporter sync --schedule" description="Keep running and synchronize the issues at every new completed tracking run, checking for one on the schedule defined in the configuration" example="npx ota-issue-reporter sync --schedule" />}}
+{{< refItem name="ota-issue-reporter sync --schedule" description="Keep running and synchronize the issues at every new completed tracking run, checking for one on the schedule defined in the configuration." example="npx ota-issue-reporter sync --schedule" />}}
