@@ -5,7 +5,7 @@ weight: 4
 
 ## Environment variables
 
-This reference documentation details the environment variables used to configure sensitive credentials and the runtime behaviour of the engine. These variables can be defined in a `.env` file at the root of the collection repository.
+This reference documentation details the environment variables used to configure sensitive credentials and the runtime behaviour of the engine and of the modules that run alongside it. These variables can be defined in a `.env` file at the root of the collection repository.
 
 ### Engine
 
