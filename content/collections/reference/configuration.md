@@ -343,6 +343,7 @@ The MongoDB storage configuration allows to store versions in a MongoDB database
 The following options configure the [issue reporter]({{< relref "collections/how-to/report-tracking-failures" >}}), under the `@opentermsarchive/issue-reporter` key of the configuration file.
 
 {{< refItem
+    anchorPrefix="issue-reporter"
     name="type"
     type="string"
     description="Type of forge hosting the declarations repository."
@@ -352,6 +353,7 @@ The following options configure the [issue reporter]({{< relref "collections/how
 />}}
 
 {{< refItem
+    anchorPrefix="issue-reporter"
     name="repositories.declarations"
     type="string"
     description="Repository hosting the declarations, in which the issues are created, in the `<owner>/<repo>` format."
@@ -360,6 +362,7 @@ The following options configure the [issue reporter]({{< relref "collections/how
 />}}
 
 {{< refItem
+    anchorPrefix="issue-reporter"
     name="repositories.versions"
     type="string"
     description="Repository hosting the versions, to link the latest version of the terms from the issues."
@@ -367,6 +370,7 @@ The following options configure the [issue reporter]({{< relref "collections/how
 />}}
 
 {{< refItem
+    anchorPrefix="issue-reporter"
     name="repositories.snapshots"
     type="string"
     description="Repository hosting the snapshots, to link the latest snapshots of the terms from the issues."
@@ -374,6 +378,7 @@ The following options configure the [issue reporter]({{< relref "collections/how
 />}}
 
 {{< refItem
+    anchorPrefix="issue-reporter"
     name="baseURL"
     type="string"
     description="Base URL of the GitLab instance (if applicable)."
@@ -381,6 +386,7 @@ The following options configure the [issue reporter]({{< relref "collections/how
 />}}
 
 {{< refItem
+    anchorPrefix="issue-reporter"
     name="apiBaseURL"
     type="string"
     description="Base URL of the API of the GitLab instance (if applicable)."
@@ -388,6 +394,7 @@ The following options configure the [issue reporter]({{< relref "collections/how
 />}}
 
 {{< refItem
+    anchorPrefix="issue-reporter"
     name="collectionApi.url"
     type="string"
     description="URL of the Collection API of the collection, including its base path and version."
@@ -396,6 +403,7 @@ The following options configure the [issue reporter]({{< relref "collections/how
 />}}
 
 {{< refItem
+    anchorPrefix="issue-reporter"
     name="schedule"
     type="string"
     description="Cron expression of the checks for a new completed tracking run, when run with `--schedule`."
@@ -403,6 +411,7 @@ The following options configure the [issue reporter]({{< relref "collections/how
 />}}
 
 {{< refItem
+    anchorPrefix="issue-reporter"
     name="logger.timestampPrefix"
     type="boolean"
     description="Prefix log lines with a timestamp."
@@ -410,6 +419,7 @@ The following options configure the [issue reporter]({{< relref "collections/how
 />}}
 
 {{< refItem
+    anchorPrefix="issue-reporter"
     name="logger.sendMailOnError"
     type="object"
     description="Set to `{ \"to\": \"<recipient>\", \"from\": \"<sender>\" }` to send errors by email, which requires the `logger.smtp` entries and the `OTA_ISSUE_REPORTER_SMTP_PASSWORD` environment variable."
@@ -417,6 +427,7 @@ The following options configure the [issue reporter]({{< relref "collections/how
 />}}
 
 {{< refItem
+    anchorPrefix="issue-reporter"
     name="logger.smtp.host"
     type="string"
     description="SMTP server sending the error emails."
@@ -424,6 +435,7 @@ The following options configure the [issue reporter]({{< relref "collections/how
 />}}
 
 {{< refItem
+    anchorPrefix="issue-reporter"
     name="logger.smtp.port"
     type="number"
     description="Port of the SMTP server."
@@ -431,6 +443,7 @@ The following options configure the [issue reporter]({{< relref "collections/how
 />}}
 
 {{< refItem
+    anchorPrefix="issue-reporter"
     name="logger.smtp.username"
     type="string"
     description="Username on the SMTP server."

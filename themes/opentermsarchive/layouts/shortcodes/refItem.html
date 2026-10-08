@@ -7,7 +7,9 @@
 {{/* Get description either from attribute or nested content */}}
 {{ $description := .Get "description" }}
 {{ $example := .Get "example" }}
-{{ $anchorID := $name | lower | replaceRE "[^a-z0-9-]" "-" | replaceRE "-+" "-" | replaceRE "^-" "" | replaceRE "-$" "" }}
+{{ $anchorSource := $name }}
+{{ with .Get "anchorPrefix" }}{{ $anchorSource = print . "-" $name }}{{ end }}
+{{ $anchorID := $anchorSource | lower | replaceRE "[^a-z0-9-]" "-" | replaceRE "-+" "-" | replaceRE "^-" "" | replaceRE "-$" "" }}
 
 <div class="refItem" id="ref-{{ $anchorID }}">
   <div class="refItem-name">
