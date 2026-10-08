@@ -16,7 +16,7 @@ Before starting, ensure you have:
 
 ## Install the module
 
-1. Add the module to the collection, in the same directory as the engine:
+1. Add the module to the dependencies of the collection, at its root, next to the engine:
 
    ```shell
    npm install @opentermsarchive/issue-reporter
