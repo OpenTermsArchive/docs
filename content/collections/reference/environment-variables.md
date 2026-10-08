@@ -21,9 +21,9 @@ This reference documentation details the environment variables used to configure
 
 {{< refItem name="OTA_ENGINE_FETCHER_NO_HEADLESS" type="string" description="Set to any value to run the browser with a visible window instead of headless, which is useful for debugging fetching issues." />}}
 
-{{< refItem name="HTTPS_PROXY" type="string" description="Proxy URL for the engine's outgoing HTTPS traffic, such as document fetching." />}}
+{{< refItem name="HTTPS_PROXY" type="string" description="Proxy URL for the engine's outgoing HTTPS traffic, such as document fetching and dataset publishing to GitLab. The lowercase `https_proxy` variable is also supported and takes precedence." />}}
 
-{{< refItem name="HTTP_PROXY" type="string" description="Proxy URL for the engine's outgoing HTTP traffic. Also used as a fallback when `HTTPS_PROXY` is not set." />}}
+{{< refItem name="HTTP_PROXY" type="string" description="Proxy URL for the engine's outgoing HTTP traffic. Also used as a fallback when `HTTPS_PROXY` is not set. The lowercase `http_proxy` variable is also supported and takes precedence." />}}
 
 ---
 
