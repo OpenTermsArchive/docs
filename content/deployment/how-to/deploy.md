@@ -144,10 +144,11 @@ This section uses [Ansible Vault](https://docs.ansible.com/ansible/latest/vault_
    > - Locally as `vault.key` to encrypt/decrypt files during development
    > - In GitHub Actions as `ANSIBLE_VAULT_KEY` to decrypt files during automated deployment
 
-2. Store the GitHub token, generated in the previous section, in `deployment/.env`:
+2. Store the GitHub token, generated in the previous section, in `deployment/.env`, for the engine to publish datasets and for the [issue reporter]({{< relref "collections/how-to/report-tracking-failures" >}}) to create issues:
 
    ```shell
    OTA_ENGINE_GITHUB_TOKEN=<github_token>
+   OTA_ISSUE_REPORTER_GITHUB_TOKEN=<github_token>
    ```
 
 3. Encrypt the `.env` file by running the following command inside the `deployment` folder of the collection:

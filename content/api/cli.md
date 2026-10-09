@@ -69,7 +69,7 @@ To also publish the dataset to configured platforms (GitHub releases, GitLab rel
 The dataset can be published to multiple platforms simultaneously:
 
 - **GitHub releases**: Requires `OTA_ENGINE_GITHUB_TOKEN` environment variable
-- **GitLab releases**: Requires `OTA_ENGINE_GITLAB_TOKEN` environment variable (used only if GitHub token is not configured)
+- **GitLab releases**: Requires `OTA_ENGINE_GITLAB_RELEASES_TOKEN` environment variable (used only if GitHub token is not configured)
 - **data.gouv.fr**: Requires `OTA_ENGINE_DATAGOUV_API_KEY` environment variable. To set up data.gouv.fr publishing, see the [guide to publish datasets to data.gouv.fr]({{< relref "collections/how-to/publish-to-datagouv" >}}).
 
 These environment variables can be defined in a [`.env` file]({{< relref "collections/reference/environment-variables" >}}).
@@ -85,3 +85,11 @@ To export, and optionally publish, the dataset on the schedule defined by `datas
 ## Exposing the collection API
 
 {{< refItem name="ota serve" description="Start the collection Web API server. The Web API will be available under `<http://localhost>:<port>/<basePath>/<apiVersion>/<resource>`. The server port and base path are defined in the configuration." example="npx ota serve" />}}
+
+## Reporting tracking failures
+
+Once the [issue reporter]({{< relref "collections/how-to/report-tracking-failures" >}}) module is installed as a dependency within a collection, the `ota-issue-reporter` command is available.
+
+{{< refItem name="ota-issue-reporter sync" description="Synchronize the issues of the declarations repository with the tracking results of the latest completed tracking run served by the Collection API, then exit. The forge, the repositories and the Collection API are defined in the configuration." example="npx ota-issue-reporter sync" />}}
+
+{{< refItem name="ota-issue-reporter sync --schedule" description="Keep running and synchronize the issues at every new completed tracking run, checking for one on the schedule defined in the configuration." example="npx ota-issue-reporter sync --schedule" />}}

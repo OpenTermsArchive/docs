@@ -5,7 +5,7 @@ weight: 3
 
 # Configuration options
 
-This reference documentation details all available configuration options that can be specified in a collection's configuration file to configure the Open Terms Archive engine.
+This reference documentation details all available configuration options that can be specified in a collection's configuration file to configure the Open Terms Archive engine, under the `@opentermsarchive/engine` key, and the [issue reporter]({{< relref "collections/how-to/report-tracking-failures" >}}), under the `@opentermsarchive/issue-reporter` key.
 
 As an example, see the [production configuration file](https://github.com/OpenTermsArchive/demo-declarations/blob/main/config/production.json) of the [Demo collection](https://github.com/OpenTermsArchive/demo-declarations).
 
@@ -155,53 +155,6 @@ The logger section configures logging and error notification settings.
     type="boolean"
     description="Set to false to avoid duplicate timestamps if logs are managed by a process manager."
     default="true"
-/>}}
-
-### Reporter
-
-The reporter section manages how issues are reported when terms content is inaccessible, supporting GitHub and GitLab.
-
-{{< refItem
-    name="reporter.type"
-    type="string"
-    description="Type of reporter"
-    example="github"
-    allowedValues="github, gitlab"
-/>}}
-
-{{< refItem
-    name="reporter.repositories.declarations"
-    type="string"
-    description="Repository for creating issues."
-    example="OpenTermsArchive/demo-declarations"
-/>}}
-
-{{< refItem
-    name="reporter.repositories.versions"
-    type="string"
-    description="Repository for versions."
-    example="OpenTermsArchive/demo-versions"
-/>}}
-
-{{< refItem
-    name="reporter.repositories.snapshots"
-    type="string"
-    description="Repository for snapshots."
-    example="OpenTermsArchive/demo-snapshots"
-/>}}
-
-{{< refItem
-    name="reporter.baseURL"
-    type="string"
-    description="Base URL for GitLab (if applicable)."
-    example="https://gitlab.example.com"
-/>}}
-
-{{< refItem
-    name="reporter.apiBaseURL"
-    type="string"
-    description="API base URL for GitLab (if applicable)."
-    example="https://api.gitlab.example.com"
 />}}
 
 ### Dataset
@@ -383,4 +336,116 @@ The MongoDB storage configuration allows to store versions in a MongoDB database
     type="string"
     description="Collection name."
     default="snapshots"
+/>}}
+
+## Issue reporter
+
+The following options configure the [issue reporter]({{< relref "collections/how-to/report-tracking-failures" >}}), under the `@opentermsarchive/issue-reporter` key of the configuration file.
+
+{{< refItem
+    anchorPrefix="issue-reporter"
+    name="type"
+    type="string"
+    description="Type of forge hosting the declarations repository."
+    example="github"
+    allowedValues="github, gitlab"
+    required=true
+/>}}
+
+{{< refItem
+    anchorPrefix="issue-reporter"
+    name="repositories.declarations"
+    type="string"
+    description="Repository hosting the declarations, in which the issues are created, in the `<owner>/<repo>` format."
+    example="OpenTermsArchive/demo-declarations"
+    required=true
+/>}}
+
+{{< refItem
+    anchorPrefix="issue-reporter"
+    name="repositories.versions"
+    type="string"
+    description="Repository hosting the versions, to link the latest version of the terms from the issues."
+    example="OpenTermsArchive/demo-versions"
+/>}}
+
+{{< refItem
+    anchorPrefix="issue-reporter"
+    name="repositories.snapshots"
+    type="string"
+    description="Repository hosting the snapshots, to link the latest snapshots of the terms from the issues."
+    example="OpenTermsArchive/demo-snapshots"
+/>}}
+
+{{< refItem
+    anchorPrefix="issue-reporter"
+    name="baseURL"
+    type="string"
+    description="Base URL of the GitLab instance (if applicable)."
+    default="https://gitlab.com"
+/>}}
+
+{{< refItem
+    anchorPrefix="issue-reporter"
+    name="apiBaseURL"
+    type="string"
+    description="Base URL of the API of the GitLab instance (if applicable)."
+    default="https://gitlab.com/api/v4"
+/>}}
+
+{{< refItem
+    anchorPrefix="issue-reporter"
+    name="collectionApi.url"
+    type="string"
+    description="URL of the Collection API of the collection, including its base path and version."
+    example="http://127.0.0.1:3000/collection-api/v1"
+    required=true
+/>}}
+
+{{< refItem
+    anchorPrefix="issue-reporter"
+    name="schedule"
+    type="string"
+    description="Cron expression of the checks for a new completed tracking run, when run with `--schedule`."
+    default="*/15 * * * *"
+/>}}
+
+{{< refItem
+    anchorPrefix="issue-reporter"
+    name="logger.timestampPrefix"
+    type="boolean"
+    description="Prefix log lines with a timestamp."
+    default="true"
+/>}}
+
+{{< refItem
+    anchorPrefix="issue-reporter"
+    name="logger.sendMailOnError"
+    type="object"
+    description="Set to `{ \"to\": \"<recipient>\", \"from\": \"<sender>\" }` to send errors by email, which requires the `logger.smtp` entries and the `OTA_ISSUE_REPORTER_SMTP_PASSWORD` environment variable."
+    default="false"
+/>}}
+
+{{< refItem
+    anchorPrefix="issue-reporter"
+    name="logger.smtp.host"
+    type="string"
+    description="SMTP server sending the error emails."
+    example="smtp-relay.brevo.com"
+/>}}
+
+{{< refItem
+    anchorPrefix="issue-reporter"
+    name="logger.smtp.port"
+    type="number"
+    description="Port of the SMTP server."
+    example="587"
+/>}}
+
+{{< refItem
+    anchorPrefix="issue-reporter"
+    name="logger.smtp.username"
+    type="string"
+    description="Username on the SMTP server."
+    example="admin@opentermsarchive.org"
 />}}
