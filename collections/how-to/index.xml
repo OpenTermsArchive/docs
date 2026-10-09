@@ -180,4 +180,11 @@
 
  
 &lt;/h2>
-&lt;p>There are two ways to publish datasets to data.gouv.fr:&lt;/p></description></item></channel></rss>
+&lt;p>There are two ways to publish datasets to data.gouv.fr:&lt;/p></description></item><item><title>Report tracking failures</title><link>https://docs.opentermsarchive.org/collections/how-to/report-tracking-failures/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/report-tracking-failures/</guid><description>&lt;h1 id="how-to-report-tracking-failures-as-issues">
+ 
+ How to report tracking failures as issues
+ 
+
+ 
+&lt;/h1>
+&lt;p>The &lt;a href="https://github.com/OpenTermsArchive/issue-reporter">issue reporter&lt;/a> module reports the tracking failures of a collection as issues on the software forge hosting its declarations, on GitHub or GitLab, so that contributors can restore the tracking of the terms concerned. It reads the tracking results that the engine records and exposes through the &lt;a href="https://docs.opentermsarchive.org/api/collection/">Collection API&lt;/a>, and keeps the issues in sync with them. To understand how issues are opened, labelled and closed, see the &lt;a href="https://docs.opentermsarchive.org/collections/explanation/reporting/">reporting explanation&lt;/a>.&lt;/p></description></item></channel></rss>

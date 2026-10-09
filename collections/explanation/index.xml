@@ -5,7 +5,7 @@
 
  
 &lt;/h1>
-&lt;p>Over the lifetime of a collection, services will change the location, layout or distribution of their terms. This can impact tracking. In order to ensure continuous data collection, maintainers need to know if the tracking of any terms fails. To address this need, the Open Terms Archive engine automatically reports failures by opening issues in the declarations repository.&lt;/p>
+&lt;p>Over the lifetime of a collection, services will change the location, layout or distribution of their terms. This can impact tracking. In order to ensure continuous data collection, maintainers need to know if the tracking of any terms fails. To address this need, the &lt;a href="https://docs.opentermsarchive.org/collections/how-to/report-tracking-failures/">issue reporter&lt;/a> module automatically reports failures by opening issues in the declarations repository.&lt;/p>
 &lt;h2 id="how-the-reporting-system-works">
  
  &lt;a class="title-link" href="#how-the-reporting-system-works">
@@ -18,4 +18,4 @@
 
  
 &lt;/h2>
-&lt;p>When some terms fail to track, an issue is opened that explains the reason for failure and is labelled based on the cause of the tracking interruption. The system also automatically closes issues when tracking resumes.&lt;/p></description></item></channel></rss>
+&lt;p>The engine records the outcome of each tracking in the &lt;a href="https://docs.opentermsarchive.org/collections/reference/configuration/#tracking-results">tracking results&lt;/a> and exposes them through the &lt;a href="https://docs.opentermsarchive.org/api/collection/">Collection API&lt;/a>. The issue reporter runs alongside the engine and checks regularly whether a new tracking run has completed. When one has, it reconciles the whole state of the issues with the tracking results of that run:&lt;/p></description></item></channel></rss>

@@ -76,6 +76,8 @@
 
 
 
+
+
 &lt;div class="refItem" id="ref-ota-track">
  &lt;div class="refItem-name">
  &lt;code>ota track&lt;/code>
@@ -372,7 +374,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
  
 &lt;/h1>
-&lt;p>Over the lifetime of a collection, services will change the location, layout or distribution of their terms. This can impact tracking. In order to ensure continuous data collection, maintainers need to know if the tracking of any terms fails. To address this need, the Open Terms Archive engine automatically reports failures by opening issues in the declarations repository.&lt;/p>
+&lt;p>Over the lifetime of a collection, services will change the location, layout or distribution of their terms. This can impact tracking. In order to ensure continuous data collection, maintainers need to know if the tracking of any terms fails. To address this need, the &lt;a href="https://docs.opentermsarchive.org/collections/how-to/report-tracking-failures/">issue reporter&lt;/a> module automatically reports failures by opening issues in the declarations repository.&lt;/p>
 &lt;h2 id="how-the-reporting-system-works">
  
  &lt;a class="title-link" href="#how-the-reporting-system-works">
@@ -385,7 +387,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
  
 &lt;/h2>
-&lt;p>When some terms fail to track, an issue is opened that explains the reason for failure and is labelled based on the cause of the tracking interruption. The system also automatically closes issues when tracking resumes.&lt;/p></description></item><item><title>Collection roles reference</title><link>https://docs.opentermsarchive.org/collections/reference/roles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/roles/</guid><description>&lt;h1 id="collection-roles-reference">
+&lt;p>The engine records the outcome of each tracking in the &lt;a href="https://docs.opentermsarchive.org/collections/reference/configuration/#tracking-results">tracking results&lt;/a> and exposes them through the &lt;a href="https://docs.opentermsarchive.org/api/collection/">Collection API&lt;/a>. The issue reporter runs alongside the engine and checks regularly whether a new tracking run has completed. When one has, it reconciles the whole state of the issues with the tracking results of that run:&lt;/p></description></item><item><title>Collection roles reference</title><link>https://docs.opentermsarchive.org/collections/reference/roles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/reference/roles/</guid><description>&lt;h1 id="collection-roles-reference">
  
  Collection roles reference
  
@@ -547,6 +549,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
+
+
 &lt;div class="refItem" id="ref-id">
  &lt;div class="refItem-name">
  &lt;code>id&lt;/code>
@@ -575,6 +579,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -625,6 +631,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
+
+
 &lt;div class="refItem" id="ref-tagline">
  &lt;div class="refItem-name">
  &lt;code>tagline&lt;/code>
@@ -653,6 +661,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -703,6 +713,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
+
+
 &lt;div class="refItem" id="ref-jurisdictions">
  &lt;div class="refItem-name">
  &lt;code>jurisdictions&lt;/code>
@@ -731,6 +743,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -782,6 +796,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
+
+
 &lt;div class="refItem" id="ref-dataset">
  &lt;div class="refItem-name">
  &lt;code>dataset&lt;/code>
@@ -808,6 +824,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -856,6 +874,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
+
+
 &lt;div class="refItem" id="ref-versions">
  &lt;div class="refItem-name">
  &lt;code>versions&lt;/code>
@@ -882,6 +902,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -930,6 +952,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
+
+
 &lt;div class="refItem" id="ref-donations">
  &lt;div class="refItem-name">
  &lt;code>donations&lt;/code>
@@ -956,6 +980,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -1004,6 +1030,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
+
+
 &lt;div class="refItem" id="ref-trackingperiods">
  &lt;div class="refItem-name">
  &lt;code>trackingPeriods&lt;/code>
@@ -1035,6 +1063,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
+
+
 &lt;div class="refItem" id="ref-governance">
  &lt;div class="refItem-name">
  &lt;code>governance&lt;/code>
@@ -1055,6 +1085,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -1123,6 +1155,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
+
+
 &lt;div class="refItem" id="ref-startdate">
  &lt;div class="refItem-name">
  &lt;code>startDate&lt;/code>
@@ -1151,6 +1185,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -1201,6 +1237,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
+
+
 &lt;div class="refItem" id="ref-serverlocation">
  &lt;div class="refItem-name">
  &lt;code>serverLocation&lt;/code>
@@ -1229,6 +1267,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -1290,6 +1330,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
+
+
 &lt;div class="refItem" id="ref-url">
  &lt;div class="refItem-name">
  &lt;code>url&lt;/code>
@@ -1327,6 +1369,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
+
+
 &lt;div class="refItem" id="ref-logo">
  &lt;div class="refItem-name">
  &lt;code>logo&lt;/code>
@@ -1353,6 +1397,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -1533,7 +1579,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
  
 &lt;/h1>
-&lt;p>This reference documentation details all available configuration options that can be specified in a collection&amp;rsquo;s configuration file to configure the Open Terms Archive engine.&lt;/p>
+&lt;p>This reference documentation details all available configuration options that can be specified in a collection&amp;rsquo;s configuration file to configure the Open Terms Archive engine, under the &lt;code>@opentermsarchive/engine&lt;/code> key, and the &lt;a href="https://docs.opentermsarchive.org/collections/how-to/report-tracking-failures/">issue reporter&lt;/a>, under the &lt;code>@opentermsarchive/issue-reporter&lt;/code> key.&lt;/p>
 &lt;p>As an example, see the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations/blob/main/config/production.json">production configuration file&lt;/a> of the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations">Demo collection&lt;/a>.&lt;/p>
 &lt;h2 id="options">
  
@@ -1547,6 +1593,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
  
 &lt;/h2>
+
+
 
 
 
@@ -1580,6 +1628,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  
  &lt;/div>
 &lt;/div>
+
+
 
 
 
@@ -1801,7 +1851,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
  
 &lt;/h2>
-&lt;p>This reference documentation details the environment variables used to configure sensitive credentials and the runtime behaviour of the engine. These variables can be defined in a &lt;code>.env&lt;/code> file at the root of the collection repository.&lt;/p>
+&lt;p>This reference documentation details the environment variables used to configure sensitive credentials and the runtime behaviour of the engine and of the modules that run alongside it. These variables can be defined in a &lt;code>.env&lt;/code> file at the root of the collection repository.&lt;/p>
 &lt;h3 id="engine">
  
  &lt;a class="title-link" href="#engine">
@@ -1814,6 +1864,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
  
 &lt;/h3>
+
+
 
 
 
@@ -1855,6 +1907,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
+
+
 &lt;div class="refItem" id="ref-ota-engine-github-token">
  &lt;div class="refItem-name">
  &lt;code>OTA_ENGINE_GITHUB_TOKEN&lt;/code>
@@ -1864,7 +1918,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
  &lt;/div>
- &lt;div class="refItem-description">GitHub token for API access and dataset publishing. If both GitHub and GitLab tokens are configured, GitHub takes precedence for dataset publishing.&lt;/div>
+ &lt;div class="refItem-description">GitHub token for dataset publishing. If both GitHub and GitLab tokens are configured, GitHub takes precedence.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
  
@@ -1874,34 +1928,6 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-&lt;div class="refItem" id="ref-ota-engine-gitlab-token">
- &lt;div class="refItem-name">
- &lt;code>OTA_ENGINE_GITLAB_TOKEN&lt;/code>
- &lt;span class="refItem-type">string&lt;/span>
- 
- &lt;a class="refItem-anchor" href="#ref-ota-engine-gitlab-token">
- &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
- &lt;/a>
- &lt;/div>
- &lt;div class="refItem-description">GitLab token for API access and dataset publishing. Used only if GitHub token is not configured.&lt;/div>
- &lt;div class="refItem-details refItem-details__">
- 
- 
- 
- 
- &lt;/div>
-&lt;/div>
 
 
 
@@ -1924,7 +1950,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
  &lt;/div>
- &lt;div class="refItem-description">GitLab token for dataset releases.&lt;/div>
+ &lt;div class="refItem-description">GitLab token for dataset publishing. Used only if GitHub token is not configured.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
  
@@ -1932,6 +1958,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  
  &lt;/div>
 &lt;/div>
+
+
 
 
 
@@ -1975,6 +2003,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
+
+
 &lt;div class="refItem" id="ref-ota-engine-fetcher-no-sandbox">
  &lt;div class="refItem-name">
  &lt;code>OTA_ENGINE_FETCHER_NO_SANDBOX&lt;/code>
@@ -1992,6 +2022,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  
  &lt;/div>
 &lt;/div>
+
+
 
 
 
@@ -2035,6 +2067,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
 
 
+
+
 &lt;div class="refItem" id="ref-https-proxy">
  &lt;div class="refItem-name">
  &lt;code>HTTPS_PROXY&lt;/code>
@@ -2044,7 +2078,7 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
  &lt;/div>
- &lt;div class="refItem-description">Proxy URL for the engine&amp;rsquo;s outgoing HTTPS traffic, such as document fetching and GitLab issue reporting.&lt;/div>
+ &lt;div class="refItem-description">Proxy URL for the engine&amp;rsquo;s outgoing HTTPS traffic, such as document fetching and dataset publishing to GitLab. The lowercase &lt;code>https_proxy&lt;/code> variable is also supported and takes precedence.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
  
@@ -2052,6 +2086,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  
  &lt;/div>
 &lt;/div>
+
+
 
 
 
@@ -2074,7 +2110,148 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
  &lt;/div>
- &lt;div class="refItem-description">Proxy URL for the engine&amp;rsquo;s outgoing HTTP traffic. Also used as a fallback when &lt;code>HTTPS_PROXY&lt;/code> is not set.&lt;/div>
+ &lt;div class="refItem-description">Proxy URL for the engine&amp;rsquo;s outgoing HTTP traffic. Also used as a fallback when &lt;code>HTTPS_PROXY&lt;/code> is not set. The lowercase &lt;code>http_proxy&lt;/code> variable is also supported and takes precedence.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;hr>
+&lt;h3 id="issue-reporter">
+ 
+ &lt;a class="title-link" href="#issue-reporter">
+ 
+ Issue reporter
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-ota-issue-reporter-github-token">
+ &lt;div class="refItem-name">
+ &lt;code>OTA_ISSUE_REPORTER_GITHUB_TOKEN&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;a class="refItem-anchor" href="#ref-ota-issue-reporter-github-token">
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="refItem-description">GitHub token of the account managing the issues of the declarations repository, required when the reporter type is &lt;code>github&lt;/code>.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-ota-issue-reporter-gitlab-token">
+ &lt;div class="refItem-name">
+ &lt;code>OTA_ISSUE_REPORTER_GITLAB_TOKEN&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;a class="refItem-anchor" href="#ref-ota-issue-reporter-gitlab-token">
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="refItem-description">GitLab token of the account managing the issues of the declarations repository, required when the reporter type is &lt;code>gitlab&lt;/code>.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-issue-reporter-https-proxy">
+ &lt;div class="refItem-name">
+ &lt;code>HTTPS_PROXY&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;a class="refItem-anchor" href="#ref-issue-reporter-https-proxy">
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="refItem-description">Proxy URL for the issue reporter&amp;rsquo;s requests to GitLab. Not used with GitHub.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-ota-issue-reporter-smtp-password">
+ &lt;div class="refItem-name">
+ &lt;code>OTA_ISSUE_REPORTER_SMTP_PASSWORD&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;a class="refItem-anchor" href="#ref-ota-issue-reporter-smtp-password">
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="refItem-description">SMTP password for email error notifications of the reporter.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
  
@@ -2097,6 +2274,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 
  
 &lt;/h3>
+
+
 
 
 
@@ -2393,7 +2572,14 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>On the date of this comment, right-click &amp;ldquo;inspect&amp;rdquo; to open your browser&amp;rsquo;s code inspector.&lt;/p></description></item><item><title>Built-in filters</title><link>https://docs.opentermsarchive.org/terms/reference/built-in-filters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/reference/built-in-filters/</guid><description>&lt;h1 id="built-in-filters">
+&lt;p>On the date of this comment, right-click &amp;ldquo;inspect&amp;rdquo; to open your browser&amp;rsquo;s code inspector.&lt;/p></description></item><item><title>Report tracking failures</title><link>https://docs.opentermsarchive.org/collections/how-to/report-tracking-failures/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/collections/how-to/report-tracking-failures/</guid><description>&lt;h1 id="how-to-report-tracking-failures-as-issues">
+ 
+ How to report tracking failures as issues
+ 
+
+ 
+&lt;/h1>
+&lt;p>The &lt;a href="https://github.com/OpenTermsArchive/issue-reporter">issue reporter&lt;/a> module reports the tracking failures of a collection as issues on the software forge hosting its declarations, on GitHub or GitLab, so that contributors can restore the tracking of the terms concerned. It reads the tracking results that the engine records and exposes through the &lt;a href="https://docs.opentermsarchive.org/api/collection/">Collection API&lt;/a>, and keeps the issues in sync with them. To understand how issues are opened, labelled and closed, see the &lt;a href="https://docs.opentermsarchive.org/collections/explanation/reporting/">reporting explanation&lt;/a>.&lt;/p></description></item><item><title>Built-in filters</title><link>https://docs.opentermsarchive.org/terms/reference/built-in-filters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.opentermsarchive.org/terms/reference/built-in-filters/</guid><description>&lt;h1 id="built-in-filters">
  
  Built-in filters
  
@@ -2401,6 +2587,8 @@ content filters, raw content data, and MIME type information.&lt;/p></descriptio
  
 &lt;/h1>
 &lt;p>This reference details all available built-in &lt;a href="https://docs.opentermsarchive.org/terms/explanation/filters/">filters&lt;/a> that can be applied to avoid noise in versions.&lt;/p>
+
+
 
 
 
@@ -2765,6 +2953,8 @@ This is where volunteer reviewers come in to help. Reviewers are people who have
 
 
 
+
+
 &lt;div class="refItem" id="ref-name">
  &lt;div class="refItem-name">
  &lt;code>name&lt;/code>
@@ -2790,6 +2980,8 @@ This is where volunteer reviewers come in to help. Reviewers are people who have
  
  &lt;/div>
 &lt;/div>
+
+
 
 
 

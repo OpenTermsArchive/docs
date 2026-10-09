@@ -64,6 +64,8 @@
 
 
 
+
+
 &lt;div class="refItem" id="ref-id">
  &lt;div class="refItem-name">
  &lt;code>id&lt;/code>
@@ -92,6 +94,8 @@
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -142,6 +146,8 @@
 
 
 
+
+
 &lt;div class="refItem" id="ref-tagline">
  &lt;div class="refItem-name">
  &lt;code>tagline&lt;/code>
@@ -170,6 +176,8 @@
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -220,6 +228,8 @@
 
 
 
+
+
 &lt;div class="refItem" id="ref-jurisdictions">
  &lt;div class="refItem-name">
  &lt;code>jurisdictions&lt;/code>
@@ -248,6 +258,8 @@
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -299,6 +311,8 @@
 
 
 
+
+
 &lt;div class="refItem" id="ref-dataset">
  &lt;div class="refItem-name">
  &lt;code>dataset&lt;/code>
@@ -325,6 +339,8 @@
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -373,6 +389,8 @@
 
 
 
+
+
 &lt;div class="refItem" id="ref-versions">
  &lt;div class="refItem-name">
  &lt;code>versions&lt;/code>
@@ -399,6 +417,8 @@
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -447,6 +467,8 @@
 
 
 
+
+
 &lt;div class="refItem" id="ref-donations">
  &lt;div class="refItem-name">
  &lt;code>donations&lt;/code>
@@ -473,6 +495,8 @@
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -521,6 +545,8 @@
 
 
 
+
+
 &lt;div class="refItem" id="ref-trackingperiods">
  &lt;div class="refItem-name">
  &lt;code>trackingPeriods&lt;/code>
@@ -552,6 +578,8 @@
 
 
 
+
+
 &lt;div class="refItem" id="ref-governance">
  &lt;div class="refItem-name">
  &lt;code>governance&lt;/code>
@@ -572,6 +600,8 @@
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -640,6 +670,8 @@
 
 
 
+
+
 &lt;div class="refItem" id="ref-startdate">
  &lt;div class="refItem-name">
  &lt;code>startDate&lt;/code>
@@ -668,6 +700,8 @@
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -718,6 +752,8 @@
 
 
 
+
+
 &lt;div class="refItem" id="ref-serverlocation">
  &lt;div class="refItem-name">
  &lt;code>serverLocation&lt;/code>
@@ -746,6 +782,8 @@
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -807,6 +845,8 @@
 
 
 
+
+
 &lt;div class="refItem" id="ref-url">
  &lt;div class="refItem-name">
  &lt;code>url&lt;/code>
@@ -844,6 +884,8 @@
 
 
 
+
+
 &lt;div class="refItem" id="ref-logo">
  &lt;div class="refItem-name">
  &lt;code>logo&lt;/code>
@@ -870,6 +912,8 @@
 
 
 &lt;!-- GENERATED DOCUMENTATION DO NOT EDIT THIS MANUALLY -->
+
+
 
 
 
@@ -935,7 +979,7 @@
 
  
 &lt;/h1>
-&lt;p>This reference documentation details all available configuration options that can be specified in a collection&amp;rsquo;s configuration file to configure the Open Terms Archive engine.&lt;/p>
+&lt;p>This reference documentation details all available configuration options that can be specified in a collection&amp;rsquo;s configuration file to configure the Open Terms Archive engine, under the &lt;code>@opentermsarchive/engine&lt;/code> key, and the &lt;a href="https://docs.opentermsarchive.org/collections/how-to/report-tracking-failures/">issue reporter&lt;/a>, under the &lt;code>@opentermsarchive/issue-reporter&lt;/code> key.&lt;/p>
 &lt;p>As an example, see the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations/blob/main/config/production.json">production configuration file&lt;/a> of the &lt;a href="https://github.com/OpenTermsArchive/demo-declarations">Demo collection&lt;/a>.&lt;/p>
 &lt;h2 id="options">
  
@@ -949,6 +993,8 @@
 
  
 &lt;/h2>
+
+
 
 
 
@@ -982,6 +1028,8 @@
  
  &lt;/div>
 &lt;/div>
+
+
 
 
 
@@ -1049,7 +1097,7 @@
 
  
 &lt;/h2>
-&lt;p>This reference documentation details the environment variables used to configure sensitive credentials and the runtime behaviour of the engine. These variables can be defined in a &lt;code>.env&lt;/code> file at the root of the collection repository.&lt;/p>
+&lt;p>This reference documentation details the environment variables used to configure sensitive credentials and the runtime behaviour of the engine and of the modules that run alongside it. These variables can be defined in a &lt;code>.env&lt;/code> file at the root of the collection repository.&lt;/p>
 &lt;h3 id="engine">
  
  &lt;a class="title-link" href="#engine">
@@ -1062,6 +1110,8 @@
 
  
 &lt;/h3>
+
+
 
 
 
@@ -1103,6 +1153,8 @@
 
 
 
+
+
 &lt;div class="refItem" id="ref-ota-engine-github-token">
  &lt;div class="refItem-name">
  &lt;code>OTA_ENGINE_GITHUB_TOKEN&lt;/code>
@@ -1112,7 +1164,7 @@
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
  &lt;/div>
- &lt;div class="refItem-description">GitHub token for API access and dataset publishing. If both GitHub and GitLab tokens are configured, GitHub takes precedence for dataset publishing.&lt;/div>
+ &lt;div class="refItem-description">GitHub token for dataset publishing. If both GitHub and GitLab tokens are configured, GitHub takes precedence.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
  
@@ -1122,34 +1174,6 @@
 &lt;/div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-&lt;div class="refItem" id="ref-ota-engine-gitlab-token">
- &lt;div class="refItem-name">
- &lt;code>OTA_ENGINE_GITLAB_TOKEN&lt;/code>
- &lt;span class="refItem-type">string&lt;/span>
- 
- &lt;a class="refItem-anchor" href="#ref-ota-engine-gitlab-token">
- &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
- &lt;/a>
- &lt;/div>
- &lt;div class="refItem-description">GitLab token for API access and dataset publishing. Used only if GitHub token is not configured.&lt;/div>
- &lt;div class="refItem-details refItem-details__">
- 
- 
- 
- 
- &lt;/div>
-&lt;/div>
 
 
 
@@ -1172,7 +1196,7 @@
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
  &lt;/div>
- &lt;div class="refItem-description">GitLab token for dataset releases.&lt;/div>
+ &lt;div class="refItem-description">GitLab token for dataset publishing. Used only if GitHub token is not configured.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
  
@@ -1180,6 +1204,8 @@
  
  &lt;/div>
 &lt;/div>
+
+
 
 
 
@@ -1223,6 +1249,8 @@
 
 
 
+
+
 &lt;div class="refItem" id="ref-ota-engine-fetcher-no-sandbox">
  &lt;div class="refItem-name">
  &lt;code>OTA_ENGINE_FETCHER_NO_SANDBOX&lt;/code>
@@ -1240,6 +1268,8 @@
  
  &lt;/div>
 &lt;/div>
+
+
 
 
 
@@ -1283,6 +1313,8 @@
 
 
 
+
+
 &lt;div class="refItem" id="ref-https-proxy">
  &lt;div class="refItem-name">
  &lt;code>HTTPS_PROXY&lt;/code>
@@ -1292,7 +1324,7 @@
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
  &lt;/div>
- &lt;div class="refItem-description">Proxy URL for the engine&amp;rsquo;s outgoing HTTPS traffic, such as document fetching and GitLab issue reporting.&lt;/div>
+ &lt;div class="refItem-description">Proxy URL for the engine&amp;rsquo;s outgoing HTTPS traffic, such as document fetching and dataset publishing to GitLab. The lowercase &lt;code>https_proxy&lt;/code> variable is also supported and takes precedence.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
  
@@ -1300,6 +1332,8 @@
  
  &lt;/div>
 &lt;/div>
+
+
 
 
 
@@ -1322,7 +1356,148 @@
  &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
  &lt;/a>
  &lt;/div>
- &lt;div class="refItem-description">Proxy URL for the engine&amp;rsquo;s outgoing HTTP traffic. Also used as a fallback when &lt;code>HTTPS_PROXY&lt;/code> is not set.&lt;/div>
+ &lt;div class="refItem-description">Proxy URL for the engine&amp;rsquo;s outgoing HTTP traffic. Also used as a fallback when &lt;code>HTTPS_PROXY&lt;/code> is not set. The lowercase &lt;code>http_proxy&lt;/code> variable is also supported and takes precedence.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+&lt;hr>
+&lt;h3 id="issue-reporter">
+ 
+ &lt;a class="title-link" href="#issue-reporter">
+ 
+ Issue reporter
+ 
+ &lt;i class="title-anchor icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ 
+
+ 
+&lt;/h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-ota-issue-reporter-github-token">
+ &lt;div class="refItem-name">
+ &lt;code>OTA_ISSUE_REPORTER_GITHUB_TOKEN&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;a class="refItem-anchor" href="#ref-ota-issue-reporter-github-token">
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="refItem-description">GitHub token of the account managing the issues of the declarations repository, required when the reporter type is &lt;code>github&lt;/code>.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-ota-issue-reporter-gitlab-token">
+ &lt;div class="refItem-name">
+ &lt;code>OTA_ISSUE_REPORTER_GITLAB_TOKEN&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;a class="refItem-anchor" href="#ref-ota-issue-reporter-gitlab-token">
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="refItem-description">GitLab token of the account managing the issues of the declarations repository, required when the reporter type is &lt;code>gitlab&lt;/code>.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-issue-reporter-https-proxy">
+ &lt;div class="refItem-name">
+ &lt;code>HTTPS_PROXY&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;a class="refItem-anchor" href="#ref-issue-reporter-https-proxy">
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="refItem-description">Proxy URL for the issue reporter&amp;rsquo;s requests to GitLab. Not used with GitHub.&lt;/div>
+ &lt;div class="refItem-details refItem-details__">
+ 
+ 
+ 
+ 
+ &lt;/div>
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="refItem" id="ref-ota-issue-reporter-smtp-password">
+ &lt;div class="refItem-name">
+ &lt;code>OTA_ISSUE_REPORTER_SMTP_PASSWORD&lt;/code>
+ &lt;span class="refItem-type">string&lt;/span>
+ 
+ &lt;a class="refItem-anchor" href="#ref-ota-issue-reporter-smtp-password">
+ &lt;i class="refItem-anchor-icon icon" data-lucide="link">&lt;/i>
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="refItem-description">SMTP password for email error notifications of the reporter.&lt;/div>
  &lt;div class="refItem-details refItem-details__">
  
  
@@ -1345,6 +1520,8 @@
 
  
 &lt;/h3>
+
+
 
 
 
